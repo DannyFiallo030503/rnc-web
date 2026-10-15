@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Django / local data
+*.sqlite3
+/staticfiles/
+/media/
+.env
+.env.*
+!.env.example
+*.sqlite3-*
+/storage/
+/private/
+/uploads/
+/backups/
+*.log
+
+# Documentación de trabajo y evidencias locales (referencia: rnc-research)
+/docs/
+/doc/
+*.docx
+*.pdf
+*.mdj
+
+# Resultados y herramientas generadas durante la revisión
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+/test-results/
+/playwright-report/
+/screenshots/
+/artifacts/
+
+# Datos de entrada: solo se versionan fixtures sintéticas explícitas
+*.csv
+!analytics/fixtures/consulta_demo_sintetica.csv
+!analytics/fixtures/tasas_sinteticas.csv
+*.xlsx
+*.xls
+*.sql
+*.dump
+*.bak
+*.pem
+*.key
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
