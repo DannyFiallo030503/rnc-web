@@ -1,0 +1,3 @@
+{% for page in page_navigation %}
+<a href="{% url 'public_site:'|add:page.name %}" title="{{ page.label }}" {% if request.resolver_match.url_name == page.name %}aria-current="page"{% endif %}>{% include "includes/nav_icon.html" with icon=page.icon %}<span class="nav-label">{{ page.label }}</span></a>
+{% endfor %}

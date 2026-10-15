@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Acceso restringido · RNC Cuba{% endblock %}
+{% block content %}
+<section class="login-page" aria-labelledby="access-title">
+  <div class="login-card">
+    <p class="eyebrow"><span class="eyebrow-line"></span> Acceso restringido</p>
+    <h1 id="access-title">Acceso restringido</h1>
+    <p class="login-intro">Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar consultando las estadísticas públicas.</p>
+    <a class="text-link" href="{% url 'public_site:home' %}">Volver al inicio <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+{% endblock %}

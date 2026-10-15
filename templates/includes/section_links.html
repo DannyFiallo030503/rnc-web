@@ -1,0 +1,3 @@
+{% for section in section_navigation %}
+<a href="#{{ section.anchor }}" title="{{ section.label }}">{% include "includes/nav_icon.html" with icon="section" %}<span class="nav-label">{{ section.label }}</span></a>
+{% endfor %}

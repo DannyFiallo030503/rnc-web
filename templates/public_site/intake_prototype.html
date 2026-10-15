@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Administración de cortes · RNC Cuba{% endblock %}
+
+{% block content %}
+<section class="admin-page" aria-labelledby="admin-title">
+  <div class="admin-heading">
+    <div>
+      <p class="eyebrow"><span class="eyebrow-line"></span> Administración</p>
+      <h1 id="admin-title">Cortes estadísticos</h1>
+      <p>Consulta el estado de incorporación y publicación de los cortes de incidencia.</p>
+    </div>
+    <div class="admin-actions">
+      {% if can_manage_users %}<a class="admin-public-link" href="{% url 'admin:index' %}">Gestionar usuarios <span aria-hidden="true">↗</span></a>{% endif %}
+      <a class="admin-public-link" href="{% url 'public_site:home' %}">Ver portal público <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <section class="admin-summary" id="resumen" aria-label="Resumen de cortes">
+    <article><span>Publicados</span><strong>0</strong><small>Cortes disponibles en el portal</small></article>
+    <article><span>En revisión</span><strong>0</strong><small>Cortes en proceso</small></article>
+    <article><span>Retirados</span><strong>0</strong><small>Cortes no visibles al público</small></article>
+  </section>
+
+  <section class="admin-panel" id="cortes" aria-labelledby="recent-cuts-title">
+    <div class="admin-panel-heading">
+      <div><p class="output-overline">Publicaciones</p><h2 id="recent-cuts-title">Cortes recientes</h2></div>
+      <span class="admin-total">0 cortes</span>
+    </div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabla de resultados con desplazamiento horizontal">
+      <table class="result-table admin-table">
+        <caption>Cortes estadísticos disponibles para gestión.</caption>
+        <thead><tr><th scope="col">Corte</th><th scope="col">Período</th><th scope="col">Estado</th><th scope="col">Actualización</th><th scope="col">Responsable</th></tr></thead>
+        <tbody><tr><td class="table-empty" colspan="5">No hay cortes registrados.</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="admin-process" id="proceso" aria-labelledby="process-title">
+    <div><p class="output-overline">Proceso de gestión</p><h2 id="process-title">Incorporación y publicación</h2></div>
+    <ol>
+      <li><span>01</span><div><strong>Incorporación</strong><small>Registro del corte y procedencia</small></div></li>
+      <li><span>02</span><div><strong>Revisión técnica</strong><small>Verificación de estructura e integridad</small></div></li>
+      <li><span>03</span><div><strong>Publicación</strong><small>Disponibilidad de estadísticas aprobadas</small></div></li>
+    </ol>
+  </section>
+</section>
+{% endblock %}

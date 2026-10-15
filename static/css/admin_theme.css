@@ -1,0 +1,59 @@
+/* Keep Django's tested administrative forms with the portal's visual identity. */
+:root, html[data-theme="light"] {
+  --primary: #087e78;
+  --secondary: #075e5b;
+  --accent: #e4f2ee;
+  --body-bg: #f5f4ef;
+  --body-fg: #172a2d;
+  --body-quiet-color: #526565;
+  --body-loud-color: #172a2d;
+  --header-bg: #075e5b;
+  --header-color: #fffefa;
+  --header-branding-color: #fffefa;
+  --header-link-color: #fffefa;
+  --breadcrumbs-bg: #e4f2ee;
+  --breadcrumbs-fg: #435f54;
+  --breadcrumbs-link-fg: #075e5b;
+  --link-fg: #075e5b;
+  --link-hover-color: #064e4c;
+  --link-selected-fg: #075e5b;
+  --hairline-color: #e2e8e1;
+  --border-color: #d3ddd2;
+  --darkened-bg: #edf2eb;
+  --selected-bg: #e4f2ee;
+  --selected-row: #e4f2ee;
+  --button-bg: #087e78;
+  --button-hover-bg: #075e5b;
+  --default-button-bg: #075e5b;
+  --default-button-hover-bg: #064e4c;
+  --font-family-primary: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+html[data-theme="dark"] {
+  --primary: #2a8983;
+  --secondary: #174744;
+  --accent: #c7e6de;
+  --header-bg: #174744;
+  --header-branding-color: #e4f2ee;
+  --breadcrumbs-bg: #1e3735;
+  --link-fg: #8ed4c9;
+  --link-hover-color: #bcf0e6;
+  --selected-row: #21413d;
+}
+#header { gap: 18px; flex-wrap: wrap; padding-block: 22px; }
+#site-name { display: flex; align-items: baseline; gap: 18px; font-weight: 700; font-size: 23px; }
+#site-name span { font-weight: 400; opacity: .8; }
+#site-name small { font-size: 13px; font-weight: 400; }
+.rnc-admin-navigation { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; }
+.rnc-admin-navigation a { color: var(--header-link-color); text-decoration: none; }
+.rnc-admin-navigation a:hover { text-decoration: underline; }
+#content h1 { font-weight: 600; letter-spacing: -.025em; }
+.module, #changelist, .submit-row { border-radius: 6px; overflow: hidden; }
+.module h2, .module caption { padding: 13px 16px; }
+#changelist .actions { padding-block: 14px; }
+#changelist table { font-size: 14px; }
+.button, input[type="submit"], input[type="button"], .submit-row input { border-radius: 4px; }
+@media (max-width: 767px) {
+  #header { align-items: flex-start; padding: 18px; }
+  #site-name { flex-wrap: wrap; gap: 8px 14px; }
+  .rnc-admin-navigation { margin-top: 4px; }
+}
