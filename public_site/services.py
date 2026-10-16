@@ -1,5 +1,6 @@
 """Private synthetic delivery contract. Never maps the confidential RNC CSV."""
 
+import re
 import csv
 import hashlib
 import io
@@ -98,6 +99,21 @@ def _ingest(upload, title, user):
             ):
                 raise ValueError(
                     f"Fila {number}: solo se admite el contrato sintético de demostración."
+                )
+            from .validation import validate_text
+            from django.core.exceptions import ValidationError
+
+            try:
+                validate_text(r["name"], "person-name")
+            except ValidationError as exc:
+                raise ValueError(
+                    f"Fila {number}: nombre sintético con formato no admitido."
+                ) from exc
+            if not re.fullmatch(
+                r"SYN-P-[A-Za-z0-9-]+", r["person_id"]
+            ) or not re.fullmatch(r"SYN-T-[A-Za-z0-9-]+", r["tumor_id"]):
+                raise ValueError(
+                    f"Fila {number}: formato de identificador sintético no admitido."
                 )
             if (
                 r["territory"] not in territories

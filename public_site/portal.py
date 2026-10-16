@@ -11,7 +11,7 @@ from django.http import FileResponse, HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from .access import require, can
-from .forms import UploadForm
+from .forms import UploadForm, DecisionForm, ExplorerForm
 from .exports import export_result
 from .models import Delivery, AuditEvent
 from .services import (
@@ -91,41 +91,27 @@ def explorer(request):
     from .services import WEIGHTS
 
     options["age"] = [a for a in WEIGHTS if a in options["age"]]
-    params = {
-        k: request.GET.get(k, "") if request.GET.get(k, "") in opts else ""
-        for k, opts in options.items()
+    query = request.GET.copy()
+    if not delivery:
+        query.clear()
+    defaults = {
+        "dimension": "site",
+        "unit": "tumors",
+        "metric": "count",
+        "chart": "bar",
     }
-    for key, allowed, default in [
-        ("dimension", DIMENSIONS, "site"),
-        ("unit", {"tumors": 1, "persons": 1}, "tumors"),
-        ("metric", METRICS, "count"),
-        ("chart", CHARTS, "bar"),
-    ]:
-        params[key] = request.GET.get(key, default)
-        if params[key] not in allowed:
-            params[key] = default
-    errors = []
-    if params["chart"] == "line" and params["dimension"] != "period":
-        errors.append("Las líneas requieren la dimensión período.")
-    if params["metric"] == "asr" and (
-        params["age"] or params["dimension"] == "age_group"
-    ):
-        errors.append("El ajuste por edad requiere todos los grupos de edad.")
-    if params["chart"] in {"grouped", "stacked", "percent"} and (
-        params["sex"] or params["dimension"] == "sex"
-    ):
-        errors.append("La comparación por sexo requiere ambos sexos y otra dimensión.")
-    if params["chart"] in {"stacked", "percent"} and params["metric"] != "count":
-        errors.append(
-            "Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni porcentajes."
-        )
-    if params["chart"] in {"pie", "doughnut"} and (
-        params["metric"] not in {"count", "share"}
-        or (params["unit"] == "persons" and params["dimension"] != "sex")
-    ):
-        errors.append(
-            "La composición requiere conteos o porcentajes de categorías excluyentes; una persona puede aparecer en varias categorías."
-        )
+    for key, value in defaults.items():
+        if key not in query:
+            query[key] = value
+    form = ExplorerForm(
+        query, options=options, dimensions=DIMENSIONS, charts=CHARTS, metrics=METRICS
+    )
+    valid = form.is_valid()
+    params = {key: form.cleaned_data.get(key, "") for key in options}
+    params.update(
+        {key: form.cleaned_data.get(key, value) for key, value in defaults.items()}
+    )
+    errors = [str(e) for values in form.errors.values() for e in values]
     table, total = results(params, rows) if rows and not errors else ([], summary([]))
     if params["chart"] in {"pie", "doughnut"} and len(table) > 8:
         errors.append(
@@ -141,6 +127,9 @@ def explorer(request):
         errors.append(
             "No hay cobertura de población completa para el ajuste seleccionado."
         )
+    for error in errors:
+        if not any(error in list(values) for values in form.errors.values()):
+            form.add_error("metric" if "población" in error else "chart", error)
     datasets = [
         {"label": METRICS[params["metric"]], "data": [r["value"] for r in table]}
     ]
@@ -239,6 +228,7 @@ def explorer(request):
         request,
         "public_site/explorer.html",
         {
+            "form": form,
             "filters": params,
             "options": options,
             "dimensions": DIMENSIONS,
@@ -256,7 +246,10 @@ def explorer(request):
 
 @require("operate_deliveries")
 def administration(request):
-    form = UploadForm(request.POST or None, request.FILES or None)
+    form = UploadForm(
+        request.POST if request.method == "POST" else None,
+        request.FILES if request.method == "POST" else None,
+    )
     if request.method == "POST" and form.is_valid():
         try:
             delivery = ingest(
@@ -269,7 +262,7 @@ def administration(request):
             return redirect("public_site:delivery", pk=delivery.pk)
         except (ValueError, OverflowError) as exc:
             form.add_error(
-                None,
+                "file",
                 (
                     str(exc)
                     if isinstance(exc, ValueError)
@@ -303,6 +296,9 @@ def delivery(request, pk):
             "delivery": obj,
             "may_publish": can(request.user, "publish_deliveries"),
             "events": AuditEvent.objects.filter(target=str(pk)),
+            "decision_form": DecisionForm(
+                initial={"action": "revoke" if obj.status == "published" else "publish"}
+            ),
         },
     )
 
@@ -310,19 +306,33 @@ def delivery(request, pk):
 @require_POST
 @require("publish_deliveries")
 def delivery_action(request, pk):
-    get_object_or_404(Delivery, pk=pk)
-    reason = request.POST.get("reason", "").strip()
-    if not 10 <= len(reason) <= 250:
-        messages.error(request, "Indique un motivo de entre 10 y 250 caracteres.")
-    else:
+    obj = get_object_or_404(Delivery, pk=pk)
+    form = DecisionForm(request.POST)
+    if form.is_valid():
         try:
-            transition(pk, request.POST.get("action"), request.user, reason)
+            transition(
+                pk,
+                form.cleaned_data["action"],
+                request.user,
+                form.cleaned_data["reason"],
+            )
             messages.success(
                 request, "Estado actualizado. El portal público ya refleja este cambio."
             )
+            return redirect("public_site:delivery", pk=pk)
         except ValueError as exc:
-            messages.error(request, str(exc))
-    return redirect("public_site:delivery", pk=pk)
+            form.add_error(None, str(exc))
+    return render(
+        request,
+        "public_site/delivery.html",
+        {
+            "delivery": obj,
+            "may_publish": True,
+            "events": AuditEvent.objects.filter(target=str(pk)),
+            "decision_form": form,
+        },
+        status=400,
+    )
 
 
 @require("operate_deliveries")

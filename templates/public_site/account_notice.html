@@ -1,1 +1,2 @@
-{% extends "base.html" %}{% block content %}<section class="panel account-panel"><h1>{{ heading }}</h1><p>{{ intro }}</p><div class="actions"><a class="primary-link" href="{% url 'public_site:login' %}">Iniciar sesión</a><a href="{% url 'public_site:home' %}">Ir al inicio</a></div></section>{% endblock %}
+{% extends "base.html" %}
+{% block content %}<section class="panel account-panel"><h1>{{ heading }}</h1><p>{{ intro }}</p><div class="actions">{% if user.is_authenticated %}<a class="primary-link" href="{% if has_admin_access %}{% url 'public_site:intake_prototype' %}{% else %}{% url 'public_site:home' %}{% endif %}">Continuar</a>{% else %}<a class="primary-link" href="{% url 'public_site:login' %}">Iniciar sesión</a>{% endif %}</div></section>{% endblock %}

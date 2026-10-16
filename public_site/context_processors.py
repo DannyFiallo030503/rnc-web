@@ -24,7 +24,22 @@ def navigation(request):
         "password_change": "Cambiar contraseña",
         "password_reset": "Recuperar acceso",
     }
+    display_name = (
+        request.user.get_short_name() or request.user.get_username()
+        if request.user.is_authenticated
+        else ""
+    )
+    if has_admin_access(request.user):
+        role_label = "Administrador de soporte"
+    elif can(request.user, "publish_deliveries"):
+        role_label = "Responsable de publicación"
+    elif can(request.user, "operate_deliveries"):
+        role_label = "Operador de cargas"
+    else:
+        role_label = "Consulta pública"
     return {
+        "account_display_name": display_name,
+        "account_role_label": role_label,
         "page_navigation": pages,
         "section_navigation": [],
         "current_page_label": next(

@@ -8,7 +8,7 @@
   const kind = payload.type;
   const circular = ["pie", "doughnut"].includes(kind);
   const stacked = ["stacked", "percent"].includes(kind);
-  new Chart(canvas, {
+  const chart = new Chart(canvas, {
     type: circular ? kind : kind === "line" ? "line" : "bar",
     data: {
       labels: payload.labels,
@@ -35,4 +35,11 @@
       },
     },
   });
+  // Recompute when an initially off-screen canvas first becomes visible.
+  if ("IntersectionObserver" in window) {
+    const observer=new IntersectionObserver(entries=>{
+      if(entries.some(entry=>entry.isIntersecting)) { chart.resize();chart.update("none");observer.disconnect(); }
+    },{threshold:0.05});
+    observer.observe(canvas);
+  }
 })();

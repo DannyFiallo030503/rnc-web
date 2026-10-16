@@ -29,19 +29,13 @@ if (sidebarToggle && workspace) {
   });
 }
 
-if (mobileMenu) {
-  mobileMenu.addEventListener("click", (event) => {
-    if (event.target.closest("a")) mobileMenu.open = false;
+document.querySelectorAll("[data-header-menu]").forEach((menu)=>{
+  menu.addEventListener("toggle",()=>{
+    if(menu.open)document.querySelectorAll("[data-header-menu]").forEach(other=>{if(other!==menu)other.open=false;});
   });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && mobileMenu.open) {
-      mobileMenu.open = false;
-      mobileMenu.querySelector("summary").focus();
-    }
+  menu.addEventListener("click",event=>{if(event.target.closest("a"))menu.open=false;});
+  document.addEventListener("keydown",event=>{
+    if(event.key==="Escape" && menu.open){menu.open=false;menu.querySelector("summary").focus();}
   });
-  document.addEventListener("click", (event) => {
-    if (mobileMenu.open && !mobileMenu.contains(event.target)) {
-      mobileMenu.open = false;
-    }
-  });
-}
+  document.addEventListener("click",event=>{if(menu.open && !menu.contains(event.target))menu.open=false;});
+});

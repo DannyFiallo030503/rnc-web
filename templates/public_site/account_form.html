@@ -1,1 +1,17 @@
-{% extends "base.html" %}{% block content %}<section class="panel account-panel"><p class="eyebrow">Cuenta y seguridad</p><h1>{{ heading }}</h1><p>{{ intro }}</p>{% if validlink == False %}<p class="notice error">El enlace no es válido o ha caducado. Solicite uno nuevo.</p><a href="{% url 'public_site:password_reset' %}">Solicitar enlace</a>{% else %}<form method="post" class="portal-form">{% csrf_token %}{{ form.as_p }}{% if editing_account %}<label class="check-label"><input type="checkbox" name="invite" value="1"> Reenviar enlace para establecer contraseña</label>{% endif %}<button class="apply-filters" type="submit">{{ submit_label }}</button></form>{% endif %}<p><a href="{% url 'public_site:home' %}">Volver al inicio</a></p></section>{% endblock %}
+{% extends "base.html" %}
+{% block content %}
+<section class="panel account-panel">
+  <p class="eyebrow">Cuenta y seguridad</p><h1>{{ heading }}</h1><p>{{ intro }}</p>
+  {% if validlink == False %}
+    <div class="notice error" role="alert">El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo.</div><a class="primary-link" href="{% url 'public_site:password_reset' %}">Solicitar enlace</a>
+  {% else %}
+  <form method="post" class="portal-form" data-validate {% if request.resolver_match.url_name == 'user_create' or request.resolver_match.url_name == 'user_edit' %}data-account-form{% endif %}>
+    {% csrf_token %}
+    <p class="form-instructions">Los campos con <span aria-hidden="true">*</span> son obligatorios.</p>
+    {% if request.resolver_match.url_name == 'user_create' or request.resolver_match.url_name == 'user_edit' %}{% include "includes/form_fields.html" with grid=True %}{% else %}{% include "includes/form_fields.html" %}{% endif %}
+    {% if editing_account %}<div class="form-field checkbox-field"><div class="checkbox-control"><input type="checkbox" id="id_invite" name="invite" value="1" {% if request.POST.invite %}checked{% endif %}><label for="id_invite">Reenviar enlace para establecer contraseña</label></div></div>{% endif %}
+    <div class="form-actions"><button class="apply-filters" type="submit">{{ submit_label }}</button>{% if request.resolver_match.url_name == 'user_create' or request.resolver_match.url_name == 'user_edit' %}<a class="secondary-link" href="{% url 'public_site:users' %}">Cancelar</a>{% endif %}</div>
+  </form>
+  {% endif %}
+</section>
+{% endblock %}

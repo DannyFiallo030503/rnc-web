@@ -13,7 +13,13 @@ from django.urls import reverse, reverse_lazy
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from .access import require
-from .forms import AccountForm
+from .forms import (
+    AccountForm,
+    SearchForm,
+    ChangePasswordForm,
+    RecoveryForm,
+    NewPasswordForm,
+)
 from .models import AccountPolicy, AccountMail
 from .services import audit
 
@@ -62,6 +68,7 @@ def invitation(user):
 
 
 class ResetRequest(auth_views.PasswordResetView):
+    form_class = RecoveryForm
     template_name = "public_site/account_form.html"
     success_url = reverse_lazy("public_site:password_reset_done")
     extra_context = {
@@ -88,6 +95,7 @@ class ResetRequest(auth_views.PasswordResetView):
 
 
 class PasswordChange(auth_views.PasswordChangeView):
+    form_class = ChangePasswordForm
     template_name = "public_site/account_form.html"
     success_url = reverse_lazy("public_site:password_change_done")
     extra_context = {
@@ -106,6 +114,7 @@ class PasswordChange(auth_views.PasswordChangeView):
 
 
 class ResetConfirm(auth_views.PasswordResetConfirmView):
+    form_class = NewPasswordForm
     template_name = "public_site/account_form.html"
     success_url = reverse_lazy("public_site:password_reset_complete")
     extra_context = {
@@ -125,7 +134,8 @@ class ResetConfirm(auth_views.PasswordResetConfirmView):
 
 @require("manage_accounts")
 def users(request):
-    q = request.GET.get("q", "")[:100]
+    search_form = SearchForm(request.GET)
+    q = search_form.cleaned_data["q"] if search_form.is_valid() else ""
     from django.db.models import OuterRef, Subquery
 
     queryset = (
@@ -140,6 +150,8 @@ def users(request):
             )
         )
     )
+    if search_form.errors:
+        queryset = queryset.none()
     if q:
         from django.db.models import Q
 
@@ -152,7 +164,11 @@ def users(request):
     return render(
         request,
         "public_site/users.html",
-        {"page": Paginator(queryset, 12).get_page(request.GET.get("page")), "q": q},
+        {
+            "page": Paginator(queryset, 12).get_page(request.GET.get("page")),
+            "q": q,
+            "search_form": search_form,
+        },
     )
 
 
@@ -166,7 +182,11 @@ def user_edit(request, pk=None):
         if user.is_superuser or "superadmin" in roles
         else next((r for r in ["publisher", "operator"] if r in roles), "reader")
     )
-    form = AccountForm(request.POST or None, instance=user, initial={"role": role})
+    form = AccountForm(
+        request.POST if request.method == "POST" else None,
+        instance=user,
+        initial={"role": role},
+    )
     if request.method == "POST" and form.is_valid():
         # Support privileges are delegated only by existing superadmins.
         from .access import has_admin_access

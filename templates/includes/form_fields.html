@@ -1,0 +1,28 @@
+{% load form_ui %}
+<div class="form-error-summary" data-error-summary tabindex="-1" {% if not form.errors %}hidden{% endif %}>
+  <strong>Revise los campos indicados</strong>
+  <ul data-error-links>
+    {% for field in form %}{% for error in field.errors %}<li>{% if field.is_hidden %}{{ field.label }}: {{ error }}{% else %}<a href="#{{ field.id_for_label }}">{{ field.label }}: {{ error }}</a>{% endif %}</li>{% endfor %}{% endfor %}
+    {% for error in form.non_field_errors %}<li>{{ error }}</li>{% endfor %}
+  </ul>
+</div>
+{% if grid %}<div class="form-grid">{% endif %}
+{% for field in form %}
+  {% if field.is_hidden %}{{ field }}{% else %}
+  <div class="form-field{% if field.field.widget.input_type == 'checkbox' %} checkbox-field{% endif %}{% if field.errors %} has-error{% endif %}" data-field="{{ field.name }}">
+    {% if field.field.widget.input_type == 'checkbox' %}
+      <div class="checkbox-control">{% field_control field %}<label for="{{ field.id_for_label }}">{{ field.label }}</label></div>
+    {% else %}
+      <label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %}<span class="required-mark" aria-hidden="true"> *</span>{% else %}<span class="optional-mark"> · Opcional</span>{% endif %}</label>
+      {% if field.field.widget.input_type == 'file' %}
+      <div class="file-picker"><span class="file-picker-button" aria-hidden="true">Seleccionar CSV</span><span class="file-picker-name" data-file-name>No se ha seleccionado un archivo</span>{% field_control field %}</div>
+      {% if form.is_bound and form.errors %}<div class="field-help">Vuelva a seleccionar el CSV para reenviar el formulario.</div>{% endif %}
+      {% else %}{% field_control field %}{% endif %}
+    {% endif %}
+    {% if field.help_text %}<div class="field-help" id="{{ field.auto_id }}_help">{{ field.help_text|safe }}</div>{% endif %}
+    <div class="field-error" id="{{ field.auto_id }}_error" aria-live="polite" {% if not field.errors %}hidden{% endif %}>{% for error in field.errors %}<span>{{ error }}</span>{% endfor %}</div>
+  </div>
+  {% endif %}
+{% endfor %}
+
+{% if grid %}</div>{% endif %}

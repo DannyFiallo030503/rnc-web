@@ -1,10 +1,12 @@
 from django.contrib.auth.views import LoginView
 from django.urls import reverse
 from .access import can
+from .forms import LoginForm
 
 
 class RoleLoginView(LoginView):
     template_name = "public_site/login.html"
+    authentication_form = LoginForm
 
     def post(self, request, *args, **kwargs):
         from .accounts import limited
