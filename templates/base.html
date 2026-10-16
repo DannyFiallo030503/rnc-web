@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="{% static 'css/site.css' %}">
     <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
     <script src="{% static 'js/navigation.js' %}" defer></script>
+    {% if chart_payload %}
+    <script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>
+    <script src="{% static 'js/charts.js' %}" defer></script>
+    {% endif %}
   </head>
   <body id="arriba">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -26,8 +30,8 @@
       </nav>
       <div class="account-nav">
         {% if user.is_authenticated %}
-          <span class="account-name">{{ user.get_username }}</span>
-          {% if can_manage_users %}<a href="{% url 'admin:index' %}">Usuarios</a>{% endif %}
+          <a class="account-name" href="{% url 'public_site:password_change' %}" title="Cambiar contraseña">{{ user.get_username }}</a>
+          {% if can_manage_users %}<a href="{% url 'public_site:users' %}">Usuarios</a>{% endif %}
           <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión</button></form>
         {% else %}
           <a class="login-link" href="{% url 'public_site:login' %}">Iniciar sesión</a>
@@ -39,7 +43,7 @@
           <nav aria-label="Páginas del sitio">{% include "includes/page_links.html" %}</nav>
           {% if section_navigation %}<nav aria-label="Secciones de esta página"><p class="menu-label">En esta página</p>{% include "includes/section_links.html" %}</nav>{% endif %}
           {% if user.is_authenticated %}
-            {% if can_manage_users %}<a href="{% url 'admin:index' %}">Gestionar usuarios</a>{% endif %}
+            {% if can_manage_users %}<a href="{% url 'public_site:users' %}">Gestionar usuarios</a>{% endif %}
             <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión</button></form>
           {% else %}<a href="{% url 'public_site:login' %}">Iniciar sesión</a>{% endif %}
         </div>
@@ -53,7 +57,7 @@
           <div id="sidebar-navigation">
           <p class="menu-label">Navegación</p>
           <nav class="sidebar-pages" aria-label="Páginas">{% include "includes/page_links.html" %}</nav>
-          {% if can_manage_users %}<nav class="sidebar-pages" aria-label="Gestión de usuarios"><a href="{% url 'admin:index' %}" title="Gestionar usuarios">{% include "includes/nav_icon.html" with icon="users" %}<span class="nav-label">Usuarios y roles</span></a></nav>{% endif %}
+          {% if can_manage_users %}<nav class="sidebar-pages" aria-label="Gestión de usuarios"><a href="{% url 'public_site:users' %}" title="Gestionar usuarios" {% if request.resolver_match.url_name == 'users' or request.resolver_match.url_name == 'user_edit' or request.resolver_match.url_name == 'user_create' %}aria-current="page"{% endif %}>{% include "includes/nav_icon.html" with icon="users" %}<span class="nav-label">Usuarios y roles</span></a></nav>{% endif %}
           {% if section_navigation %}<div class="sidebar-divider"></div>
           <p class="menu-label">En esta página</p>
           <nav class="sidebar-sections" aria-label="Índice de la página">{% include "includes/section_links.html" %}</nav>{% endif %}
@@ -67,6 +71,7 @@
           <span aria-current="page">{{ current_page_label }}</span>
         </nav>
         <main id="contenido" tabindex="-1">
+          {% for message in messages %}<div class="notice {{ message.tags }}" role="status">{{ message }}</div>{% endfor %}
           {% block content %}{% endblock %}
         </main>
       </div>
@@ -78,7 +83,7 @@
         <nav aria-label="Navegación del pie de página"><h2>Accesos</h2>{% include "includes/page_links.html" %}</nav>
         <nav aria-label="Consulta pública"><h2>Consulta pública</h2><a href="{% url 'public_site:home' %}#explorador">Estadísticas publicadas</a><a href="{% url 'public_site:home' %}#criterios">Cómo leer los resultados</a><a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a></nav>
       </div>
-      <div class="footer-bottom"><span>Registro Nacional de Cáncer · Cuba</span><span>Información estadística agregada</span></div>
+      <div class="footer-bottom"><span>Registro Nacional de Cáncer · Cuba</span><span>Datos sintéticos · No son estadísticas oficiales</span></div>
     </footer>
   </body>
 </html>

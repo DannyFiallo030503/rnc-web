@@ -14,7 +14,21 @@ def ensure_superadmin_group(sender, using, **kwargs):
     if sender.label != "auth":
         return
     group, _ = Group.objects.using(using).get_or_create(name=SUPERADMIN_GROUP)
-    permissions = Permission.objects.using(using).filter(
-        content_type__app_label="auth"
-    )
+    permissions = Permission.objects.using(using).filter(content_type__app_label="auth")
     group.permissions.set(permissions)
+
+
+@receiver(post_migrate)
+def ensure_operational_roles(sender, using, **kwargs):
+    if sender.label != "public_site":
+        return
+    for name, codenames in {
+        "operator": ["operate_deliveries"],
+        "publisher": ["operate_deliveries", "publish_deliveries"],
+    }.items():
+        group, _ = Group.objects.using(using).get_or_create(name=name)
+        group.permissions.set(
+            Permission.objects.using(using).filter(
+                content_type__app_label="public_site", codename__in=codenames
+            )
+        )

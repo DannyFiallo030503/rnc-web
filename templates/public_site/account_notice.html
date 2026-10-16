@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<section class="panel account-panel"><h1>{{ heading }}</h1><p>{{ intro }}</p><div class="actions"><a class="primary-link" href="{% url 'public_site:login' %}">Iniciar sesión</a><a href="{% url 'public_site:home' %}">Ir al inicio</a></div></section>{% endblock %}

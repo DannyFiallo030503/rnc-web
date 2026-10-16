@@ -1,0 +1,1 @@
+<ol class="activity-list">{% for event in events %}<li><strong>{{ event.action }}</strong> · {{ event.actor.username }} <time>{{ event.created_at|date:'d/m/Y H:i' }}</time>{% if event.reason %}<p>{{ event.reason }}</p>{% endif %}</li>{% empty %}<li>No hay acciones registradas.</li>{% endfor %}</ol>

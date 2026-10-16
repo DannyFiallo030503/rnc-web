@@ -18,6 +18,7 @@
       <input id="id_password" name="password" type="password" autocomplete="current-password" required {% if form.errors %}aria-invalid="true" aria-describedby="login-error"{% endif %}>
       <button class="apply-filters" type="submit">Entrar <span aria-hidden="true">→</span></button>
     </form>
+    <p><a href="{% url 'public_site:password_reset' %}">¿Olvidó su contraseña?</a></p>
     <p class="login-footnote">Las cuentas son creadas y gestionadas por el equipo administrador. No hay registro público.</p>
   </div>
 </section>
