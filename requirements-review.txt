@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional browser review; never required to serve the application.
+playwright==1.64.0

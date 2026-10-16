@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Exploración de datos sintéticos · RNC{% endblock %}
+
+{% block content %}
+<section class="synthetic-page" aria-labelledby="synthetic-title">
+  <div class="synthetic-heading">
+    <p class="eyebrow"><span class="eyebrow-line"></span> Consulta estadística</p>
+    <h1 id="synthetic-title">Explorador de incidencia</h1>
+    <p>Consulta indicadores y distribuciones por período, territorio, sexo, edad y localización.</p>
+  </div>
+
+  <aside class="synthetic-warning" role="note" aria-label="Aviso sobre los datos">
+    <strong>Demostración con cifras sintéticas</strong>
+    <span>Los conteos de tumores y personas son inventados. Se muestran provincias cubanas y categorías anatómicas reconocibles; las tasas no son resultados oficiales del RNC ni de ONEI.</span>
+  </aside>
+
+  <form method="get" class="synthetic-filters" id="consulta" aria-label="Filtros de consulta">
+    <label for="filter-year">Período
+      <select id="filter-year" name="year">
+        <option value="" {% if not filters.year %}selected{% endif %}>Todos los períodos</option>
+        {% for value in options.year %}<option value="{{ value }}" {% if filters.year == value|stringformat:"s" %}selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select>
+    </label>
+    <label for="filter-territory">Territorio
+      <select id="filter-territory" name="territory">
+        <option value="" {% if not filters.territory %}selected{% endif %}>Todos los territorios</option>
+        {% for value in options.territory %}<option value="{{ value }}" {% if filters.territory == value %}selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select>
+    </label>
+    <label for="filter-sex">Sexo
+      <select id="filter-sex" name="sex">
+        <option value="" {% if not filters.sex %}selected{% endif %}>Todos</option>
+        {% for value in options.sex %}<option value="{{ value }}" {% if filters.sex == value %}selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select>
+    </label>
+    <label for="filter-age">Grupo de edad
+      <select id="filter-age" name="age">
+        <option value="" {% if not filters.age %}selected{% endif %}>Todos los grupos</option>
+        {% for value in options.age %}<option value="{{ value }}" {% if filters.age == value %}selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select>
+    </label>
+    <label for="filter-site">Localización
+      <select id="filter-site" name="site">
+        <option value="" {% if not filters.site %}selected{% endif %}>Todas las localizaciones</option>
+        {% for value in options.site %}<option value="{{ value }}" {% if filters.site == value %}selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select>
+    </label>
+    <label for="filter-unit">Unidad de conteo
+      <select id="filter-unit" name="unit">
+        <option value="tumors" {% if filters.unit == "tumors" %}selected{% endif %}>Tumores</option>
+        <option value="persons" {% if filters.unit == "persons" %}selected{% endif %}>Personas distintas</option>
+      </select>
+    </label>
+    <label for="filter-measure">Indicador de tasa
+      <select id="filter-measure" name="measure">
+        <option value="crude" {% if filters.measure == "crude" %}selected{% endif %}>Tasa cruda</option>
+        <option value="asr" {% if filters.measure == "asr" %}selected{% endif %}>Tasa ajustada por edad</option>
+      </select>
+    </label>
+    <button class="apply-filters" type="submit">Actualizar consulta <span aria-hidden="true">→</span></button>
+    <button class="synthetic-export" type="submit" name="format" value="csv">Descargar tabla CSV</button>
+    <a class="synthetic-reset" href="{% url 'public_site:synthetic_explorer' %}">Restablecer filtros</a>
+  </form>
+
+  {% if data %}
+  <div class="synthetic-summary" id="indicadores" aria-label="Indicadores principales">
+    <article><span>Tumores registrados</span><strong>{{ data.summary.tumors }}</strong><small>Conteo agregado del conjunto seleccionado</small></article>
+    <article><span>Personas distintas</span><strong>{{ data.summary.persons }}</strong><small>Las personas pueden presentar más de un tumor</small></article>
+    <article class="{% if not asr_selected %}adjusted-summary{% endif %}"><span>{{ data.measure_label }}</span><strong>{% if asr_selected and age_selected %}—{% else %}{{ data.selected_rate|floatformat:1 }}{% endif %}</strong><small>Por 100 000 · {% if filters.unit == "persons" %}personas{% else %}tumores{% endif %}{% if asr_selected %} · Segi–Doll{% endif %}{% if asr_selected and age_selected %}; requiere todos los grupos de edad{% endif %}</small></article>
+    <article class="{% if asr_selected %}adjusted-summary{% endif %}"><span>{{ data.other_measure_label }}</span><strong>{% if asr_selected %}{% if age_selected %}—{% else %}{{ data.other_rate|floatformat:1 }}{% endif %}{% else %}{{ data.other_rate|floatformat:1 }}{% endif %}</strong><small>Por 100 000 · {% if filters.unit == "persons" %}personas{% else %}tumores{% endif %}{% if asr_selected and age_selected %}; no disponible para una sola edad{% endif %}</small></article>
+  </div>
+
+  <p class="synthetic-method-note"><strong>Lectura metodológica</strong> Los denominadores se modelaron con población provincial ONEI y estructura por edad y sexo de 2024 como referencia; no sustituyen la serie oficial compatible con cada corte. El ajuste directo usa Segi–Doll como método candidato y, al combinar períodos, suma las poblaciones anuales modeladas.</p>
+
+  <div class="synthetic-charts" id="graficos">
+    <section class="synthetic-chart" aria-labelledby="age-chart-title">
+      <div class="synthetic-chart-heading"><div><p class="output-overline">Perfil por edad</p><h2 id="age-chart-title">Tasa específica por grupo</h2></div><span>Por 100 000</span></div>
+      <ul class="bar-chart age-bar-chart">
+        {% for row in data.age_rows %}
+        <li><span class="bar-label">{{ row.age }}</span><span class="bar-track" aria-label="Tasa {% if filters.unit == 'persons' %}{{ row.person_rate|floatformat:1 }}{% else %}{{ row.tumor_rate|floatformat:1 }}{% endif %} por 100 000"><span class="bar-fill teal-fill" style="width:{{ row.bar_width }}%"></span></span><strong>{% if filters.unit == "persons" %}{{ row.person_rate|floatformat:1 }}{% else %}{{ row.tumor_rate|floatformat:1 }}{% endif %}</strong></li>
+        {% endfor %}
+      </ul>
+      <p class="chart-caption">La escala muestra tasas de {{ data.unit_label|lower }}; la tabla conserva ambos conteos.</p>
+    </section>
+
+    <section class="synthetic-chart" aria-labelledby="trend-chart-title">
+      <div class="synthetic-chart-heading"><div><p class="output-overline">Serie temporal</p><h2 id="trend-chart-title">Evolución anual</h2></div><span>{{ data.unit_label }}</span></div>
+      <ul class="bar-chart trend-bar-chart">
+        {% for item in data.trend %}
+        <li><span class="bar-label">{{ item.year }}</span><span class="bar-track" aria-label="{{ item.count }} {{ data.unit_label|lower }}"><span class="bar-fill coral-fill" style="width:{{ item.bar_width }}%"></span></span><strong>{{ item.count }}</strong></li>
+        {% endfor %}
+      </ul>
+      <p class="chart-caption">La serie mantiene los filtros de territorio, sexo, edad y localización; incluye todos los períodos.</p>
+    </section>
+
+    <section class="synthetic-chart site-chart" aria-labelledby="site-chart-title">
+      <div class="synthetic-chart-heading"><div><p class="output-overline">Distribución</p><h2 id="site-chart-title">Casos por localización</h2></div><span>{{ data.unit_label }}</span></div>
+      <ul class="bar-chart site-bar-chart">
+        {% for item in data.site_summary %}
+        <li><span class="site-label">{{ item.label }}</span><span class="bar-track" aria-label="{{ item.value }} {{ data.unit_label|lower }}"><span class="bar-fill teal-fill" style="width:{{ item.bar_width }}%"></span></span><strong>{{ item.value }}</strong></li>
+        {% endfor %}
+      </ul>
+      <p class="chart-caption">Se muestran todas las localizaciones para los demás filtros seleccionados.</p>
+    </section>
+  </div>
+
+  <section class="synthetic-table-section" id="detalle" aria-labelledby="age-table-title">
+    <div class="synthetic-chart-heading"><div><p class="output-overline">Detalle tabular</p><h2 id="age-table-title">Resultados por grupo de edad</h2></div><span>{{ data.age_rows|length }} filas</span></div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Tabla de resultados con desplazamiento horizontal">
+      <table class="result-table synthetic-table">
+        <caption>Conteos, frecuencia relativa dentro de la selección y tasas específicas por 100 000.</caption>
+        <thead><tr><th scope="col">Edad</th><th scope="col">Tumores</th><th scope="col">Personas</th><th scope="col">Frecuencia tumores</th><th scope="col">Frecuencia personas</th><th scope="col">Tasa tumores</th><th scope="col">Tasa personas</th></tr></thead>
+        <tbody>{% for row in data.age_rows %}<tr><th scope="row">{{ row.age }}</th><td>{{ row.tumors }}</td><td>{{ row.persons }}</td><td>{{ row.tumor_share|floatformat:1 }} %</td><td>{{ row.person_share|floatformat:1 }} %</td><td>{{ row.tumor_rate|floatformat:1 }}</td><td>{{ row.person_rate|floatformat:1 }}</td></tr>{% endfor %}</tbody>
+      </table>
+    </div>
+    <p class="synthetic-table-note">Los porcentajes se calculan sobre el total de tumores o personas distintas de la selección. Los grupos por edad son los quinquenales clásicos; 85+ es el grupo abierto.</p>
+  </section>
+  {% else %}
+  <section class="synthetic-table-section" role="status"><h2>No hay resultados</h2><p>La combinación de filtros no tiene datos en este conjunto sintético.</p></section>
+  {% endif %}
+</section>
+{% endblock %}

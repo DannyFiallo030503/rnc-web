@@ -1,0 +1,6 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% block title %}{{ title }} · Administración RNC{% endblock %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'css/admin_theme.css' %}"><link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">{% endblock %}
+{% block branding %}<div id="site-name"><a href="{% url 'public_site:intake_prototype' %}">RNC <span>/ Cuba</span></a><small>Administración</small></div>{% endblock %}
+{% block nav-global %}<nav class="rnc-admin-navigation" aria-label="Navegación RNC"><a href="{% url 'public_site:intake_prototype' %}">Cortes estadísticos</a><a href="{% url 'public_site:home' %}">Portal público</a></nav>{% endblock %}

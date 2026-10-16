@@ -1,0 +1,84 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta name="description" content="Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba.">
+    <title>{% block title %}RNC · Estadísticas de cáncer en Cuba{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+    <script src="{% static 'js/navigation.js' %}" defer></script>
+  </head>
+  <body id="arriba">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="brand" href="{% if not user.is_authenticated %}{% url 'public_site:login' %}{% elif has_admin_access %}{% url 'public_site:intake_prototype' %}{% else %}{% url 'public_site:home' %}{% endif %}" aria-label="{% if not user.is_authenticated %}RNC Cuba · Iniciar sesión{% elif has_admin_access %}RNC Cuba · Administración{% else %}RNC Cuba · Inicio{% endif %}" title="{% if not user.is_authenticated %}Iniciar sesión{% elif has_admin_access %}Abrir administración{% else %}Inicio{% endif %}">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-copy">
+          <span class="brand-name">RNC <span class="brand-divider">/</span> Cuba</span>
+          <span class="brand-caption">Registro Nacional de Cáncer</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="Navegación principal">
+        {% include "includes/page_links.html" %}
+      </nav>
+      <div class="account-nav">
+        {% if user.is_authenticated %}
+          <span class="account-name">{{ user.get_username }}</span>
+          {% if can_manage_users %}<a href="{% url 'admin:index' %}">Usuarios</a>{% endif %}
+          <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión</button></form>
+        {% else %}
+          <a class="login-link" href="{% url 'public_site:login' %}">Iniciar sesión</a>
+        {% endif %}
+      </div>
+      <details class="mobile-menu">
+        <summary>Menú <span aria-hidden="true">☰</span></summary>
+        <div class="mobile-menu-panel">
+          <nav aria-label="Páginas del sitio">{% include "includes/page_links.html" %}</nav>
+          {% if section_navigation %}<nav aria-label="Secciones de esta página"><p class="menu-label">En esta página</p>{% include "includes/section_links.html" %}</nav>{% endif %}
+          {% if user.is_authenticated %}
+            {% if can_manage_users %}<a href="{% url 'admin:index' %}">Gestionar usuarios</a>{% endif %}
+            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión</button></form>
+          {% else %}<a href="{% url 'public_site:login' %}">Iniciar sesión</a>{% endif %}
+        </div>
+      </details>
+    </header>
+
+    <div class="workspace-shell">
+      <aside class="site-sidebar" id="site-sidebar" aria-label="Navegación lateral">
+        <div class="sidebar-inner">
+          <button class="sidebar-toggle" type="button" aria-controls="sidebar-navigation" aria-expanded="true" aria-label="Plegar barra lateral" title="Plegar barra lateral" hidden>{% include "includes/nav_icon.html" with icon="chevron" %}<span class="toggle-label">Plegar menú</span></button>
+          <div id="sidebar-navigation">
+          <p class="menu-label">Navegación</p>
+          <nav class="sidebar-pages" aria-label="Páginas">{% include "includes/page_links.html" %}</nav>
+          {% if can_manage_users %}<nav class="sidebar-pages" aria-label="Gestión de usuarios"><a href="{% url 'admin:index' %}" title="Gestionar usuarios">{% include "includes/nav_icon.html" with icon="users" %}<span class="nav-label">Usuarios y roles</span></a></nav>{% endif %}
+          {% if section_navigation %}<div class="sidebar-divider"></div>
+          <p class="menu-label">En esta página</p>
+          <nav class="sidebar-sections" aria-label="Índice de la página">{% include "includes/section_links.html" %}</nav>{% endif %}
+          <a class="sidebar-home" href="{% url 'public_site:home' %}" title="Volver al inicio">{% include "includes/nav_icon.html" with icon="home" %}<span class="nav-label">Volver al inicio</span></a>
+          </div>
+        </div>
+      </aside>
+      <div class="page-body">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+          {% if request.resolver_match.url_name != "home" %}<a href="{% url 'public_site:home' %}">Inicio</a><span aria-hidden="true">/</span>{% endif %}
+          <span aria-current="page">{{ current_page_label }}</span>
+        </nav>
+        <main id="contenido" tabindex="-1">
+          {% block content %}{% endblock %}
+        </main>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-about"><a class="footer-brand" href="{% url 'public_site:home' %}">RNC <span>/ Cuba</span></a><p>Registro Nacional de Cáncer</p><p>Consulta de estadísticas de incidencia y resultados agregados.</p></div>
+        <nav aria-label="Navegación del pie de página"><h2>Accesos</h2>{% include "includes/page_links.html" %}</nav>
+        <nav aria-label="Consulta pública"><h2>Consulta pública</h2><a href="{% url 'public_site:home' %}#explorador">Estadísticas publicadas</a><a href="{% url 'public_site:home' %}#criterios">Cómo leer los resultados</a><a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a></nav>
+      </div>
+      <div class="footer-bottom"><span>Registro Nacional de Cáncer · Cuba</span><span>Información estadística agregada</span></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+name: Repository policy
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  repository-policy:
+    name: repository-policy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require develop from this repository
+        env:
+          SOURCE_BRANCH: ${{ github.head_ref }}
+          SOURCE_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
+          TARGET_REPOSITORY: ${{ github.repository }}
+        run: |
+          if [ "$SOURCE_BRANCH" != develop ] || [ "$SOURCE_REPOSITORY" != "$TARGET_REPOSITORY" ]; then
+            echo 'Las PR hacia main deben proceder de develop de este repositorio.'
+            exit 1
+          fi
+      - name: Checkout proposed tree
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Reject private data and work artifacts
+        shell: python
+        run: |
+          import pathlib
+          import subprocess
+          import sys
+
+          synthetic = {
+              'analytics/fixtures/consulta_demo_sintetica.csv',
+              'analytics/fixtures/tasas_sinteticas.csv',
+          }
+          forbidden_dirs = {
+              'docs', 'doc', 'storage', 'private', 'uploads', 'backups',
+              'media', 'staticfiles', 'test-results', 'playwright-report',
+              'screenshots', 'artifacts', 'htmlcov', '.venv', 'venv',
+              '__pycache__', '.pytest_cache', '.git',
+          }
+          forbidden_suffixes = {
+              '.csv', '.xlsx', '.xls', '.sql', '.dump', '.bak', '.sqlite3',
+              '.db', '.docx', '.pdf', '.mdj', '.log', '.pyc', '.pem', '.key',
+          }
+          files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          rejected = []
+          for filename in filter(None, files):
+              path = pathlib.PurePosixPath(filename)
+              name = path.name.lower()
+              parts = {part.lower() for part in path.parts}
+              if filename in synthetic:
+                  continue
+              forbidden = (
+                  bool(parts & forbidden_dirs)
+                  or path.suffix.lower() in forbidden_suffixes
+                  or (name.startswith('.env') and name != '.env.example')
+                  or name.startswith('.coverage')
+                  or '.sqlite3-' in name
+                  or name in {'coverage.xml', 'bd para dani.csv'}
+              )
+              if forbidden:
+                  rejected.append(filename)
+          if rejected:
+              print('Archivos no permitidos en main:')
+              print('\n'.join(rejected))
+              sys.exit(1)
+          print('Política de archivos cumplida. No sustituye una revisión de secretos o datos personales.')
