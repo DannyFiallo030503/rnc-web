@@ -8,13 +8,20 @@
     <meta name="description" content="Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba.">
     <title>{% block title %}RNC · Estadísticas de cáncer en Cuba{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
     <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
     <script src="{% static 'js/navigation.js' %}" defer></script>
+    <script src="{% static 'js/session-sync.js' %}" defer></script>
+    <script src="{% static 'js/forms.js' %}" defer></script>
+    {% if chart_payload.labels %}
+    <script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>
+    <script src="{% static 'js/charts.js' %}" defer></script>
+    {% endif %}
   </head>
-  <body id="arriba">
+  <body id="arriba" data-session-identity="{{ session_identity }}">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
-      <a class="brand" href="{% if not user.is_authenticated %}{% url 'public_site:login' %}{% elif has_admin_access %}{% url 'public_site:intake_prototype' %}{% else %}{% url 'public_site:home' %}{% endif %}" aria-label="{% if not user.is_authenticated %}RNC Cuba · Iniciar sesión{% elif has_admin_access %}RNC Cuba · Administración{% else %}RNC Cuba · Inicio{% endif %}" title="{% if not user.is_authenticated %}Iniciar sesión{% elif has_admin_access %}Abrir administración{% else %}Inicio{% endif %}">
+      <a class="brand" href="{% if portal_login_available and user.is_authenticated and has_admin_access %}{% url 'public_site:intake_prototype' %}{% else %}{% url 'public_site:home' %}{% endif %}" aria-label="RNC Cuba · Inicio" title="Inicio">
         <span class="brand-mark" aria-hidden="true">R</span>
         <span class="brand-copy">
           <span class="brand-name">RNC <span class="brand-divider">/</span> Cuba</span>
@@ -24,24 +31,31 @@
       <nav class="header-nav" aria-label="Navegación principal">
         {% include "includes/page_links.html" %}
       </nav>
-      <div class="account-nav">
+      {% if portal_login_available %}<div class="account-nav">
         {% if user.is_authenticated %}
-          <span class="account-name">{{ user.get_username }}</span>
-          {% if can_manage_users %}<a href="{% url 'admin:index' %}">Usuarios</a>{% endif %}
-          <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión</button></form>
-        {% else %}
-          <a class="login-link" href="{% url 'public_site:login' %}">Iniciar sesión</a>
-        {% endif %}
-      </div>
-      <details class="mobile-menu">
+        <details class="account-menu" data-header-menu>
+          <summary><span class="account-avatar" aria-hidden="true">{{ account_display_name|first|upper }}</span><span class="account-copy"><strong>{{ account_display_name }}</strong><small>{{ account_role_label }}</small></span><span class="menu-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="account-dropdown">
+            <div class="account-dropdown-heading"><span>Sesión iniciada</span><strong>{{ user.get_username }}</strong></div>
+            {% if has_admin_access %}<a href="{% url 'public_site:intake_prototype' %}">{% include "includes/nav_icon.html" with icon="folder" %}Administración</a>{% endif %}
+            {% if can_manage_users %}<a href="{% url 'public_site:users' %}">{% include "includes/nav_icon.html" with icon="users" %}Usuarios y permisos</a>{% endif %}
+            <a href="{% url 'public_site:password_change' %}"><svg class="menu-symbol" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4" y="8" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 8V5a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.5"/></svg>Cambiar contraseña</a>
+            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit"><svg class="menu-symbol" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M8 4H4v12h4M8 10h9m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Cerrar sesión y cambiar de cuenta</button></form>
+          </div>
+        </details>
+        {% else %}<a class="login-link" href="{% url 'public_site:login' %}"><svg width="16" height="18" viewBox="0 0 20 22" fill="none" aria-hidden="true"><rect x="3" y="9" width="14" height="11" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M6 9V6a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="14" r="1.5" fill="currentColor"/></svg>Acceso del personal</a>{% endif %}
+      </div>{% else %}<div class="account-nav"><span>Estadísticas públicas</span></div>{% endif %}
+      <details class="mobile-menu" data-header-menu>
         <summary>Menú <span aria-hidden="true">☰</span></summary>
         <div class="mobile-menu-panel">
           <nav aria-label="Páginas del sitio">{% include "includes/page_links.html" %}</nav>
           {% if section_navigation %}<nav aria-label="Secciones de esta página"><p class="menu-label">En esta página</p>{% include "includes/section_links.html" %}</nav>{% endif %}
-          {% if user.is_authenticated %}
-            {% if can_manage_users %}<a href="{% url 'admin:index' %}">Gestionar usuarios</a>{% endif %}
-            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión</button></form>
-          {% else %}<a href="{% url 'public_site:login' %}">Iniciar sesión</a>{% endif %}
+          {% if portal_login_available and user.is_authenticated %}
+            <div class="mobile-account"><span class="account-avatar" aria-hidden="true">{{ account_display_name|first|upper }}</span><div><strong>{{ account_display_name }}</strong><small>{{ account_role_label }}</small></div></div>
+            <a href="{% url 'public_site:password_change' %}">Cambiar contraseña</a>
+            {% if can_manage_users %}<a href="{% url 'public_site:users' %}">Gestionar usuarios</a>{% endif %}
+            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión y cambiar de cuenta</button></form>
+          {% elif portal_login_available %}<a href="{% url 'public_site:login' %}">Acceso del personal</a>{% endif %}
         </div>
       </details>
     </header>
@@ -53,11 +67,11 @@
           <div id="sidebar-navigation">
           <p class="menu-label">Navegación</p>
           <nav class="sidebar-pages" aria-label="Páginas">{% include "includes/page_links.html" %}</nav>
-          {% if can_manage_users %}<nav class="sidebar-pages" aria-label="Gestión de usuarios"><a href="{% url 'admin:index' %}" title="Gestionar usuarios">{% include "includes/nav_icon.html" with icon="users" %}<span class="nav-label">Usuarios y roles</span></a></nav>{% endif %}
+          {% if can_manage_users %}<nav class="sidebar-pages" aria-label="Gestión de usuarios"><a href="{% url 'public_site:users' %}" title="Gestionar usuarios" {% if request.resolver_match.url_name == 'users' or request.resolver_match.url_name == 'user_edit' or request.resolver_match.url_name == 'user_create' %}aria-current="page"{% endif %}>{% include "includes/nav_icon.html" with icon="users" %}<span class="nav-label">Usuarios y roles</span></a></nav>{% endif %}
           {% if section_navigation %}<div class="sidebar-divider"></div>
           <p class="menu-label">En esta página</p>
           <nav class="sidebar-sections" aria-label="Índice de la página">{% include "includes/section_links.html" %}</nav>{% endif %}
-          <a class="sidebar-home" href="{% url 'public_site:home' %}" title="Volver al inicio">{% include "includes/nav_icon.html" with icon="home" %}<span class="nav-label">Volver al inicio</span></a>
+
           </div>
         </div>
       </aside>
@@ -67,18 +81,20 @@
           <span aria-current="page">{{ current_page_label }}</span>
         </nav>
         <main id="contenido" tabindex="-1">
+          {% for message in messages %}<div class="notice {{ message.tags }}" role="status">{{ message }}</div>{% endfor %}
           {% block content %}{% endblock %}
         </main>
       </div>
     </div>
 
     <footer class="site-footer">
+      <div class="footer-topline"><span class="footer-kicker">RNC / CUBA</span><span class="footer-data-tag"><span aria-hidden="true"></span>Entorno con datos sintéticos</span></div>
       <div class="footer-grid">
-        <div class="footer-about"><a class="footer-brand" href="{% url 'public_site:home' %}">RNC <span>/ Cuba</span></a><p>Registro Nacional de Cáncer</p><p>Consulta de estadísticas de incidencia y resultados agregados.</p></div>
-        <nav aria-label="Navegación del pie de página"><h2>Accesos</h2>{% include "includes/page_links.html" %}</nav>
-        <nav aria-label="Consulta pública"><h2>Consulta pública</h2><a href="{% url 'public_site:home' %}#explorador">Estadísticas publicadas</a><a href="{% url 'public_site:home' %}#criterios">Cómo leer los resultados</a><a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a></nav>
+        <div class="footer-about"><a class="footer-brand" href="{% url 'public_site:home' %}">Información que acerca<br>las estadísticas a las personas.</a><p>Registro Nacional de Cáncer de Cuba.<br>Consulta de incidencia y resultados agregados.</p></div>
+        <nav aria-label="Navegación del pie de página"><h2>Explorar</h2>{% include "includes/page_links.html" %}</nav>
+        <nav aria-label="Ayuda y acceso"><h2>Información y acceso</h2><a href="{% url 'public_site:home' %}#criterios">Cómo leer los resultados</a>{% if portal_login_available %}{% if user.is_authenticated %}<a href="{% url 'public_site:password_change' %}">Seguridad de mi cuenta</a>{% else %}<a href="{% url 'public_site:login' %}">Acceso del personal</a>{% endif %}{% endif %}<a href="#arriba" class="footer-up">Subir al comienzo <span aria-hidden="true">↑</span></a></nav>
       </div>
-      <div class="footer-bottom"><span>Registro Nacional de Cáncer · Cuba</span><span>Información estadística agregada</span></div>
+      <div class="footer-bottom"><span>Registro Nacional de Cáncer · Cuba</span><span>Los datos de esta instalación son inventados. No representan estadísticas oficiales.</span></div>
     </footer>
   </body>
 </html>

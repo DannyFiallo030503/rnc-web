@@ -1,3 +1,7 @@
 # Django 6.1 supports the Python 3.12 runtime available in the project workspace.
 # Keep this version provisional until the RNC/CUJAE deployment environment is confirmed.
 Django==6.1.2
+
+# Graph/image/PDF and spreadsheet export, served locally.
+matplotlib==3.11.2
+openpyxl==3.1.5

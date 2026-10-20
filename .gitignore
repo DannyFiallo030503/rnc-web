@@ -16,6 +16,7 @@ env/
 *.sqlite3-*
 /storage/
 /private/
+/public_releases/
 /uploads/
 /backups/
 *.log
@@ -42,6 +43,7 @@ coverage.xml
 *.csv
 !analytics/fixtures/consulta_demo_sintetica.csv
 !analytics/fixtures/tasas_sinteticas.csv
+!analytics/fixtures/catalogo_unidades_informantes_manual_vii.csv
 *.xlsx
 *.xls
 *.sql

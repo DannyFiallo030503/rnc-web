@@ -1,0 +1,28 @@
+{% extends "base_public.html" %}
+{% block content %}<div class="page-heading"><p class="eyebrow">Consulta estadística</p><h1>Explorador de incidencia</h1><p>Elija los datos y construya la visualización que necesita. <span class="badge">Datos sintéticos</span></p></div>
+{% if not delivery %}<section class="panel empty-state" role="status"><h2>No hay resultados</h2><p>Actualmente no hay un corte publicado. Las consultas y descargas estarán disponibles cuando se publique una nueva versión.</p></section>{% else %}
+<form method="get" class="panel" id="query-form" data-validate data-query-form>
+<h2>Datos de la consulta</h2>
+{% include "includes/form_fields.html" with grid=True %}
+<div class="actions"><button type="submit" class="apply-filters">Generar visualización →</button><a href="{% url 'public_site:synthetic_explorer' %}">Restablecer</a></div></form>
+
+{% if table %}<div class="synthetic-summary"><article><span>Tumores seleccionados</span><strong>{{ summary.tumors }}</strong></article><article><span>Personas distintas</span><strong>{{ summary.persons }}</strong></article></div>
+<section class="panel">
+  <div class="panel-heading">
+    <h2>Visualización</h2>
+    <span class="badge">Datos sintéticos</span>
+  </div>
+  <p>{{ chart_payload.metric }} · {{ chart_payload.unit }} · {{ chart_payload.dimension_label }}</p>
+  <div class="chart-frame">
+    <canvas id="result-chart"
+            role="img"
+            aria-label="Gráfico de la consulta; valores disponibles en la tabla inferior"></canvas>
+  </div>
+  {{ chart_payload|json_script:"chart-payload" }}
+  <p class="muted">{{ chart_payload.note }}<br><strong>Filtros aplicados:</strong> {{ chart_payload.filter_summary }}<br>{{ chart_payload.chart_label }}. Eje de valores: {{ chart_payload.axis_unit }}.{% if filters.chart == "percent" %} Cada barra suma 100 % y muestra la distribución por sexo dentro de esa categoría.{% endif %}</p>
+  <div class="actions export-actions">
+    <button form="query-form" name="format" value="png">Imagen PNG</button><button form="query-form" name="format" value="svg">Vector SVG</button><button form="query-form" name="format" value="pdf">Informe PDF</button><button form="query-form" name="format" value="csv">Tabla CSV</button><button form="query-form" name="format" value="xlsx">Excel</button>
+  </div>
+</section>
+<section class="panel"><h2>Resultados</h2><div class="table-scroll"><table class="result-table"><caption>{{ chart_payload.metric }} · {{ chart_payload.unit }}</caption><thead><tr><th>Categoría</th><th>Tumores</th><th>Personas</th><th>Valor del indicador</th>{% for s in table.0.series %}<th>{{ s.label }}{% if filters.chart == "percent" %} (%) {% endif %}</th>{% endfor %}</tr></thead><tbody>{% for r in table %}<tr><th scope="row">{{ r.label }}</th><td>{{ r.tumors }}</td><td>{{ r.persons }}</td><td>{{ r.value|floatformat:2 }}</td>{% for s in r.series %}<td>{{ s.value|floatformat:2 }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div><p class="muted">Una persona puede aparecer en distintas localizaciones; esos conteos no se suman para obtener personas únicas. Una persona se cuenta una sola vez en el conjunto seleccionado, incluso al combinar años; los conteos de categorías pueden solaparse. Los denominadores son sintéticos; las tasas no son resultados oficiales. Métodos candidatos pendientes de cotejo RNC.</p></section>
+{% elif not errors %}<section class="panel"><h2>No hay resultados</h2><p>No hay una publicación activa o la selección no contiene registros.</p></section>{% endif %}{% endif %}{% endblock %}

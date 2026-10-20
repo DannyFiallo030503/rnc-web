@@ -1,0 +1,508 @@
+id,rnc_unit_code,province_id,source_province_code,name,description,version,status,source_occurrences,high_volume_800_plus
+21-2101,2101,21,21,GEN. ABEL SANTAMARÍA CUADRADO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+21-2110,2110,21,21,C.Q. PROV. LEÓN CUERVO RUBIO,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+21-2140,2140,21,21,PED. PROV. PEPE PORTILLA,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+21-2162,2162,21,21,GEN. AUGUSTO CÉSAR SANDINO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+22-2114,2114,22,21,POLIC. TURCIOS LIMA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",province_code_conflict,1,false
+22-2221,2221,22,22,GEN. CIRO REDONDO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+22-2263,2263,22,22,GEN. COMANDANTE PINARES. SAN CRISTOBAL,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+22-2222,2222,22,22,GEN. IVÁN PORTUONDO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+22-2220,2220,22,22,GEN. JOSE RAMÓN MARTÍNEZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+22-2264,2264,22,22,GEN. 2do CONGRESO UJC. BAHÍA HONDA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+22-2299,2299,22,22,RURAL Tte. JUAN HERNÁNDEZ,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2300,2300,23,23,INSTITUTO DE ONCOLOGÍA Y RADIOBIOLOGÍA,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+23-2301,2301,23,23,C.Q. CARLOS JUAN FINLAY BARRÉS,MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2302,2302,23,23,GEN.LUIS DÍAZ SOTO,MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2303,2303,23,23,DR. EDUARDO BERNABÉ ORDAZ DUCUNGÉ,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2304,2304,23,23,HERMANOS AMEIJEIRAS (HOSPITAL DE SUBORDINACIÓN NACIONAL),CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+23-2306,2306,23,23,CENTRO DE INVESTIGACIONES MÉDICO QUIRÚRGICAS (CIMEQ),HOSPITAL MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2307,2307,23,23,NEUMOLÓGICO BENÉFICO JURÍDICO,NEUMOLÓGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2308,2308,23,23,FRANK PAÍS GARCÍA (HOSPITAL DE SUBORDINACIÓN NACIONAL),ORTOPÉDICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2310,2310,23,23,ENRIQUE CABRERA COSSIO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2309,2309,23,23,INSTITUTO DE NEFROLOGÍA,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2311,2311,23,23,C.Q. COMANDANTE MANUEL FAJARDO RIVERO,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2312,2312,23,23,C.Q. CALIXTO GARCÍA ÍÑIGUEZ,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+23-2313,2313,23,23,C.Q. FREYRE ANDRADE Y VELÁZQUEZ,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2314,2314,23,23,C.Q. JOAQUÍN ALBARRÁN DOMÍNGUEZ,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+23-2315,2315,23,23,C.Q. SALVADOR GUILLERMO ALLENDE GOSSENS,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2316,2316,23,23,C.Q. MIGUEL ENRÍQUEZ ESPINOSA,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+23-2317,2317,23,23,C.Q. 10 DE OCTUBRE,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2318,2318,23,23,CENTRO DE MÍNIMO ACCESO (CMA),CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2330,2330,23,23,G.O. AMÉRICA ARIAS LÓPEZ,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2332,2332,23,23,G.O. GUANABACOA,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2333,2333,23,23,G.O. EUSEBIO HERNÁNDEZ PÉREZ,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2334,2334,23,23,G.O. RAMÓN GONZÁLEZ CORO,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2335,2335,23,23,M.I. 10 DE OCTUBRE (HIJAS DE GALICIA),MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2340,2340,23,23,PED. WILLIAM SOLER LEDEA,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2343,2343,23,23,PED. CENTRO HABANA,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2344,2344,23,23,PED. BORRÁS-MARFÁN,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2345,2345,23,23,PED. LEONOR PÉREZ CABRERA,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2346,2346,23,23,G.O. SAN MIGUEL DEL PADRÓN (LA BALEAR),GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2347,2347,23,23,M.I. ÁNGEL ARTURO ABALLÍ,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2348,2348,23,23,PED.CERRO (CATÓLICAS CUBANAS),PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2350,2350,23,23,PED.JUÁN MANUEL MÁRQUEZ RODRÍGUEZ,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2363,2363,23,23,JULIO TRIGO LÓPEZ,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2365,2365,23,23,FRUCTUOSO RODRÍGUEZ PÉREZ,ORTOPÉDICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2366,2366,23,23,ANTILEPROSO,,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2367,2367,23,23,INSTITUTO CUBANO DE OFTALMOLOGÍA “PANDO FERRER”,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2368,2368,23,23,INSTITUTO DE HEMATOLOGÍA E INMUNOLOGÍA,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2369,2369,23,23,INSTITUTO DE GASTROENTEROLOGÍA,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2370,2370,23,23,INSTITUTO DE NEUROLOGÍA Y NEUROCIRUGÍA,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2371,2371,23,23,INSTITUTO DE ANGIOLOGÍA Y CIRUGÍA VASCULAR,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2372,2372,23,23,INSTITUTO DE ENDOCRINOLOGÍA,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2373,2373,23,23,PSIQUIÁTRICO 27 DE NOVIEMBRE,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2375,2375,23,23,PSIQUIÁTRICO DR. ROBERTO SORHEGUI,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2376,2376,23,23,CENTRO INTERNACIONAL DE LA TERCERA EDAD (CITED),CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-2379,2379,23,23,INSTITUTO DE MEDICINA TROPICAL “PEDRO KOURI”,INSTITUTO DE INVESTIGACIÓN,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230A,230A,23,23,POLIC. ISIDRO DE ARMAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230B,230B,23,23,POLIC. MANUEL FAJARDO-JAIMANITA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230C,230C,23,23,POLIC. 1RO DE ENERO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230D,230D,23,23,POLIC. 5 DE SEPTIEMBRE-SANTA FE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230E,230E,23,23,POLIC. COMUNITARIO DOCENTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230F,230F,23,23,POLIC. 28 DE ENERO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230G,230G,23,23,POLIC. ANA BETANCOURT,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230H,230H,23,23,POLIC. PLAZA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230I,230I,23,23,POLIC. 15 y 18,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230J,230J,23,23,POLIC. CORINTHIA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230K,230K,23,23,POLIC. RAMPA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230L,230L,23,23,POLIC. PUENTES GRANDES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230M,230M,23,23,POLIC. 19 DE ABRIL,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230N,230N,23,23,POLIC. VAN TROI,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230O,230O,23,23,POLIC. MARIO MANDULEY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230P,230P,23,23,POLIC. REINA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230Q,230Q,23,23,POLIC. JOAQUÍN ALBARRÁN-CAYO HUESO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230R,230R,23,23,POLIC. LUIS GALVÁN,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230S,230S,23,23,POLIC. TAMAYO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230T,230T,23,23,POLIC. ROBERTO ZULUETA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230U,230U,23,23,POLIC. TOMÁS ROMAY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230V,230V,23,23,POLIC. ANTONIO GUITERAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230W,230W,23,23,POLIC. ABALLÍ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230X,230X,23,23,POLIC. REGLA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230Y,230Y,23,23,POLIC. CASABLANCA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-230Z,230Z,23,23,POLIC. HABANA DEL ESTE-CMDTE. CAMILO CFGOS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231A,231A,23,23,POLIC. GUANABO (MARIO MUÑOZ),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231B,231B,23,23,POLIC. CAMPO FLORIDO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231C,231C,23,23,POLIC. ALAMAR-MARIO ESCALONA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231D,231D,23,23,POLIC. COJÍMAR (GREGORIO VALDEZ),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231E,231E,23,23,POLIC. ANTONIO GUITERAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231F,231F,23,23,POLIC. 13 DE MARZO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231G,231G,23,23,POLIC. ENRIQUE DE LOS A. BETANCOURT,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231H,231H,23,23,POLIC. ANDRÉS ORTÍZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231I,231I,23,23,POLIC. MACHACO AMEIJEIRA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231J,231J,23,23,POLIC. DOCENTE GUANABACOA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231K,231K,23,23,POLIC. LUIS CARBÓ-JACOMINO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231L,231L,23,23,POLIC. BERNARDO POSSE-ALT. LUYANÓ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231M,231M,23,23,POLIC. CALIFORNIA-DIEZMERO- JUANELO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231N,231N,23,23,POLIC. SAN FCO. DE PAULA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231O,231O,23,23,POLIC. WILFREDO PÉREZ (B. OBRERO),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231P,231P,23,23,POLIC. ARMANDO PI MIRABAL (DIEZMERO),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231Q,231Q,23,23,POLIC. PASTEUR,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231R,231R,23,23,POLIC. LUYANÓ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231S,231S,23,23,POLIC. LAWTON,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231T,231T,23,23,POLIC. TURCIOS LIMA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231U,231U,23,23,POLIC. LUIS DE LA PUENTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231V,231V,23,23,POLIC. SANTOS SUÁREZ- RAÚL GÓMEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231W,231W,23,23,POLIC. 30 DE NOVIEMBRE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231X,231X,23,23,POLIC. 14 DE JUNIO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231Y,231Y,23,23,POLIC. CERRO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-231Z,231Z,23,23,POLIC. HÉROES DE GIRÓN,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232A,232A,23,23,POLIC. ABEL SANTAMARÍA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232B,232B,23,23,POLIC. ANTONIO MACEO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232C,232C,23,23,POLIC. CARLOS J. FINLAY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232D,232D,23,23,POLIC. RAMÓN GLEZ. CORO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232E,232E,23,23,POLIC. 27 DE NOVIEMBRE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232F,232F,23,23,POLIC. CARLOS MANUEL PORTUONDO LOMBART.,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232G,232G,23,23,POLIC. ALEIDA FERNÁNDEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232H,232H,23,23,POLIC. PULIDO HUMARÁN,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232I,232I,23,23,POLIC. PEDRO FONSECA (PUNTA BRAVA),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232J,232J,23,23,POLIC. BENAVIDES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232K,232K,23,23,POLIC. CRISTÓBAL LABRA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232L,232L,23,23,POLIC. BOYEROS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232M,232M,23,23,POLIC. CALABAZAR,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232N,232N,23,23,POLIC. MARIO MUÑOZ-WAJAY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232O,232O,23,23,POLIC. STGO. DE LAS VEGAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232P,232P,23,23,POLIC. CAPDEVILA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232Q,232Q,23,23,POLIC. VICTORIA CUBA-ANGOLA (SANAT. SIDA),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232R,232R,23,23,POLIC. SALVADOR ALLENDE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232S,232S,23,23,POLIC. LOS PINOS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232T,232T,23,23,POLIC. MANTILLA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232U,232U,23,23,POLIC. CAPRI,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232V,232V,23,23,POLIC. JULIÁN GRIMAU,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232W,232W,23,23,POLIC. PÁRRAGA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232X,232X,23,23,POLIC. MANAGUA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232Y,232Y,23,23,POLIC. MAYOR JOSÉ E. CÉSPEDES (RPTO. EÉCT),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+23-232Z,232Z,23,23,POLIC. COTORRO (E. MAYOR),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2462,2462,24,24,GEN. ALEIDA FERNÁNDEZ. GÜINES,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2481,2481,24,24,M.I. LEOPOLDITO SAN JOSÉ,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2480,2480,24,24,G.O. PITI FAJARDO GUINES,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2401,2401,24,24,POLIC. BEJUCAL,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2404,2404,24,24,POLIC. FELO ECHEZARRETA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2407,2407,24,24,POLIC. NOELIO CAPOTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2408,2408,24,24,POLIC. ALBERTO FERNÁNDEZ (SANTA CRUZ),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2415,2415,24,24,POLIC. EMILIA DE CÓRDOVA SAN NICOLAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2417,2417,24,24,POLIC. LUÍS LEE TRIGENTE GÜINES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2419,2419,24,24,POLIC. DOCENTE RAUL CURRAS REGALADO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+24-2421,2421,24,24,POLIC. PABLO NORIEGA (QUIVICÁN),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2501,2501,25,25,C.Q. MARIO MUÑOZ MONROY (MILITAR),CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2503,2503,25,25,ANTONIO GUITERAS HOLMES,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2530,2530,25,25,G.O. JULIO RAFAEL ALFONSO MEDINA,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2540,2540,25,25,PED. ELISEO NOEL CAAMAÑO,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2550,2550,25,25,C.Q. COMANDANTE FAUSTINO PÉREZ,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+25-2560,2560,25,25,GEN. MARIO MUÑOZ MONROY,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2561,2561,25,25,GEN. JULIO AROSTEGUI VILLAMIL,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2562,2562,25,25,GEN. ILUMINADO RODRÍGUEZ RODRÍGUEZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+25-2563,2563,25,25,GEN. PEDRO ESTANISLAO BETANCOURT DÁVALOS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2610,2610,26,26,C.Q. ARNALDO MILIÁN CASTRO,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+26-2620,2620,26,26,C.Q. CELESTINO HERNÁNDEZ ROBAU,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+26-2663,2663,26,26,GEN. PROV. MÁRTIRES 9 DE ABRIL. SAGUA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2630,2630,26,26,G.O. PROV. MARIANA GRAJALES,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2601,2601,26,26,HOSP. MILITAR DE VILLA CLARA,MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2660,2660,26,26,GEN. PLACETAS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2640,2640,26,26,PED. PROV. JOSÉ L. MIRANDA,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2677,2677,26,26,POLIC. CAMAJUANÍ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2641,2641,26,26,POLIC. XX ANIVERSARIO. S. CLARA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2678,2678,26,26,POLIC. REMEDIO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2623,2623,26,26,POLIC. MARTHA ABREU. S. CLARA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2692,2692,26,26,POLIC MANICARAGUA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2629,2629,26,26,POLIC MANUEL PITI FAJARDO. STO. DOMINGO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2621,2621,26,26,POLIC. CAP. ROBERTO FLEITES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2643,2643,26,26,POLIC. NORTE PLACETAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2698,2698,26,26,POLIC. ABEL SANTAMARIA ENCRUCIJADA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2675,2675,26,26,POLIC. JUAN B. CONTRERAS RANCH,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2672,2672,26,26,POLIC. MARIO A. PÉREZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2662,2662,26,26,GEN. REMEDIOS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2661,2661,26,26,GEN. CAIBARIÉN,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2618,2618,26,26,POLIC. SUR PLACETAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2622,2622,26,26,POLIC. CHIQUI GÓMEZ. S. CLARA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2613,2613,26,26,POLIC. CAIBARIÉN I,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2674,2674,26,26,POLIC. CIFUENTES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2626,2626,26,26,CLINICA DENTAL DE ESPECIALIDADES,,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2671,2671,26,26,POLIC. QUEMADO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2670,2670,26,26,POLIC. CORRALILLO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2611,2611,26,26,POLIC. NUEVO CAIBARIÉN II,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2642,2642,26,26,POLIC. STA CLARA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2627,2627,26,26,CLINICA DENTAL UCM,,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2628,2628,26,26,CLINICA DENTAL DE MALEZA,,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2680,2680,26,26,G.O. PLACETAS,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2603,2603,26,26,PSIQUIÁTRICO PROVINCIAL DE VILLA CLARA,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2693,2693,26,26,POLIC VUELTAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2625,2625,26,26,POLIC. JOSE R. L. ACOSTA. SCLARA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+26-2676,2676,26,26,POLIC. MARIO MUÑOZ ESPERANZA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2710,2710,27,27,C.Q. GUSTAVO ALDEREGUÍA LIMA,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+27-2740,2740,27,27,PAQUITO GONZÁLEZ CUETO,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2711,2711,27,27,POLICLÍNICO RAUL SUÁREZ MARTÍNEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2760,2760,27,27,POLICLÍNICO CON SERVICIO DE HOSPITALIZACIÓN MIGUEL ALIPIO LEÓN,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2714,2714,27,27,POLICLÍNICO MANUEL PITI FAJARDO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2713,2713,27,27,POLICLÍNICO ARACELIO IGLESIAS CASTELLÓN,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2791,2791,27,27,RURAL CRUCESITA CUMANAYAGUA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2792,2792,27,27,RURAL EL NICHO CUMANAYAGUA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2793,2793,27,27,RURAL EL NARANJO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2799,2799,27,27,RURAL SAN BLAS,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2712,2712,27,27,POLIC. A II CECILIO RUIZ DE ZARATE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+27-2730,2730,27,27,G.O. MÁRTIREZ DE GIRON,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2803,2803,28,28,PSIQUIÁTRICO,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2810,2810,28,28,C.Q. CAMILO CIENFUEGOS GORRIARÁN,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+28-2830,2830,28,28,G.O. PROVINCIAL,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2840,2840,28,28,PED. JOSÉ MARTÍ PÉREZ,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2860,2860,28,28,GEN. RICARDO SANTANA MARTÍNEZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2861,2861,28,28,GEN. JATIBONICO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2862,2862,28,28,GEN.TOMÁS CARRERA GALIANO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2863,2863,28,28,GEN.JOAQUÍN PANECA CONSUEGRAS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2864,2864,28,28,GEN. ALEJANDRO NAPOLES. TOPES DE COLLANTES,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2865,2865,28,28,C.Q. CABAIGUÁN,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2866,2866,28,28,RURAL MENESES,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2867,2867,28,28,RURAL CONDADO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2868,2868,28,28,RURAL PITAJONES,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2869,2869,28,28,RURAL ALGARROBO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2880,2880,28,28,M.I. CABAIGUÁN,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2891,2891,28,28,RURAL ZABALO MEYES. TRINIDAD,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2892,2892,28,28,RURAL BANAO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+28-2893,2893,28,28,RURAL MANUEL BRITO JARAHUECA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+28-2894,2894,28,28,RURAL CAMILO CIENFUEGOS. GUASIMAL,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+28-2895,2895,28,28,RURAL GAVILANES. FOMENTO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+28-2896-1,2896,28,28,RURAL JULIO ORTÍZ PASCUAL. SOPIMPA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",unit_code_collision,1,false
+28-2897,2897,28,28,RURAL ROLANDO GLEZ. PEDRERO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+28-2898,2898,28,28,RURAL SIGUANEY. TACAJO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+28-280A,280A,28,28,POLIC. CARACUSEY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280B,280B,28,28,POLIC. NORTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280C,280C,28,28,POLIC. CENTRO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280D,280D,28,28,POLIC. SUR,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280E,280E,28,28,POLIC. LOS OLIVOS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280F,280F,28,28,POLIC. MAYAJIGUA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280G,280G,28,28,POLIC. I JATIBONICO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280H,280H,28,28,POLIC. ZAZA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280I,280I,28,28,POLIC. TAGUASCO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280J,280J,28,28,POLIC. I CABAIGUAN,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280K,280K,28,28,POLIC. II CABAIGUAN,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280L,280L,28,28,POLIC. GUAYOS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280M,280M,28,28,POLIC. FOMENTO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280N,280N,28,28,POLIC. I TRINIDAD,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280P,280P,28,28,POLIC. II TRINIDAD,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280Q,280Q,28,28,POLIC. II JATIBONICO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280R,280R,28,28,POLIC. YAGUAJAY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-280S,280S,28,28,POLIC. LA SIERPE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+28-2896-2,2896,28,28,RURAL JULIO ORTÍZ PASCUAL. SOPIMP,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",unit_code_collision,1,false
+29-2910,2910,29,29,GEN. PROV. LUACES,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2911,2911,29,29,GEN. PROV. CARLOS J. FINLAY,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2960,2960,29,29,GEN. CIRO REDONDO. PIRIA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2961,2961,29,29,GEN. BOLIVIA. CUNAGUA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2962,2962,29,29,GEN. MÁXIMO GÓMEZ. PTA. ALEGRE,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2963,2963,29,29,GEN. CAMILO CIENFUEGOS. CHAMBAS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2980,2980,29,29,M.I. FLORENCIA,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2981,2981,29,29,M.I. TAMARINDO,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2990,2990,29,29,PED. MUNICIPAL MORÓN,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2991,2991,29,29,GEN. MORÓN ROBERTO RODRÍGUEZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2992,2992,29,29,POLIC. JULIO CASTILLO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2993,2993,29,29,POLIC. DIEGO DEL ROSARIO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2994,2994,29,29,POLIC. RAFAEL PÉREZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2995,2995,29,29,POLIC. JOSÉ A. MÁS NARANJO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2996,2996,29,29,POLIC. RAÚL ORTÍZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2997,2997,29,29,POLIC. ERNESTO CHE GUEVARA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2998,2998,29,29,POLIC. SUR,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-2999,2999,29,29,POLIC. CEBALLO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+29-299A,299A,29,29,POLIC. MARIO PÁEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3000,3000,30,30,ONCOLÓGICO MARÍA CURIE,ONCOLÓGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3001,3001,30,30,MILITAR DE CAMAGUEY,MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3003,3003,30,30,PSIQUIÁTRICO RENÉ VALLEJO,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3010,3010,30,30,C.Q. MANUEL ASCUNCE,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3011,3011,30,30,C.Q. AMALIA SIMONI,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3030,3030,30,30,G.O. PROVINCIAL,GINECOBSTETRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3040,3040,30,30,PED. EDUARDO AGRAMONTE PIÑA,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3060,3060,30,30,GENERAL FLORIDA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3061,3061,30,30,GEN. MARTIN CHANG PUGA. NUEVITAS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3062,3062,30,30,GEN. ARMANDO CARDOSO. GUAIMARO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3063,3063,30,30,RURAL. BRASIL. JARONU ESMERALDA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3064,3064,30,30,RURAL LUGAREÑO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3065,3065,30,30,RURAL NOEL FERNÁNDEZ SENADO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3066,3066,30,30,RURAL PANAMÁ. VERTIENTES,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3067,3067,30,30,GEN. SANTA CRUZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3068,3068,30,30,RURAL HAITÍ. MACAREÑO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3069,3069,30,30,RURAL CÁNDIDO GLEZ. STA. MARTA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3080,3080,30,30,GEN. MINAS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3081,3081,30,30,M.I. ESMERALDA,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3082,3082,30,30,GENERAL SIBANICU,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3091,3091,30,30,RURAL J.A. ECHEVARRIA. FLORIDA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-3099,3099,30,30,RURAL X ANIVERSARIO CAMALOTE,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300A,300A,30,30,ANA BETANCOURT (MATERNO),MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300B,300B,30,30,HOSPITAL STA CRUZ DEL SUR,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300C,300C,30,30,POLIC.TTE TOMÁS ROJAS CÉSPEDES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300D,300D,30,30,POLIC. VIÑALES ESMERALDA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300E,300E,30,30,POLIC.N. PEREZ BRASIL-ESMERALDA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300F,300F,30,30,POLIC.13 DE MARZO CUBITAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300G,300G,30,30,POLIC.ARTURO PUIG MINAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300H,300H,30,30,POLIC.ANTONIO PACHECO LUGAREÑO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300I,300I,30,30,POLIC.NOEL FERNÁNDEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300J,300J,30,30,POLIC.FRANCISCO PEÑA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300K,300K,30,30,POLIC.DÉCIMO ANIVERSARIO CAMALOTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300L,300L,30,30,POLIC.DÉCIMO ANIVERSARIO GUAIMARO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300M,300M,30,30,POLIC.GULLEN VAN TROY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300N,300N,30,30,POLIC.MANUEL A VARONA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300O,300O,30,30,POLIC. JOAQUIN AGÜERO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300P,300P,30,30,POLIC. RODOLFO RAMÍREZ E PIRRE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300Q,300Q,30,30,POLIC. CARLOS J FINLAY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300R,300R,30,30,POLIC. JOSE MARTÍ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300S,300S,30,30,POLIC. JULIO A MELLA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300T,300T,30,30,POLIC. IGNACIO AGRAMONTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300U,300U,30,30,POLIC. ESTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300V,300V,30,30,POLIC. TULA AGUILERA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300W,300W,30,30,POLIC. PREVISORA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300X,300X,30,30,POLIC. FLORIDA SUR,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-300Y,300Y,30,30,POLIC. FLORIDA NORTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301A,301A,30,30,POLIC. MARIO MUÑOZ VERTIENTES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301B,301B,30,30,POLIC. BATALLA DE LAS GUÁSIMAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301C,301C,30,30,POLIC. HENRY REVE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301D,301D,30,30,POLIC. ROSA CASTELLANOS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301E,301E,30,30,POLIC. ERNESTO CHE G,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301F,301F,30,30,POLIC. LA JAGUA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301G,301G,30,30,POLIC. HAITÍ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+30-301H,301H,30,30,POLIC. CÁNDIDO GONZÁLEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3101,3101,31,31,MILITAR. LAS TUNAS,MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+31-3131,3131,31,31,GEN.ERNESTO CHE GUEVARA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3140,3140,31,31,PED. MÁRTIRES DE TUNAS,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3160,3160,31,31,GEN. MANATÍ. ARGELIA LIBRE,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3161,3161,31,31,GEN. JESÚS MENÉNDEZ. CHAPARRA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3162,3162,31,31,GEN. AMANCIO RODRÍGUEZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3163,3163,31,31,GEN.CÁNDIDO GLEZ. COLOMBIA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3164,3164,31,31,GEN. GUILLERMO DOMÍNGUEZ. PUERTO PADRE,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3165,3165,31,31,GEN. DE JOBABO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3190,3190,31,31,PED. RAIMUNDO CASTRO. PUERTO PADRE,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3191,3191,31,31,RURAL SALGASERO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3192,3192,31,31,RURAL DE OMAJA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+31-3193,3193,31,31,RURAL DE BARTLE,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3201,3201,32,32,MILITAR DE HOLGUÍN,MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3210,3210,32,32,GEN. V.L. LENIN,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3211,3211,32,32,C.Q. LUCÍA IÑÍGUEZ LANDIN,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3217,3217,32,32,POLICLÍNICO MARIO GUTIÉRREZ ARDAYA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3240,3240,32,32,PED. OCTAVIO DE LA CONCEPCIÓN,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3260,3260,32,32,GEN. FERNANDO DE DIOS. TACAJO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3261,3261,32,32,GEN. NICARO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3262,3262,32,32,GEN. JUAN PAZ CAMEJO. SAGUA DE TÁNAMO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3263,3263,32,32,GEN. JUAN M. MÁRQUEZ. MARCANE,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3264,3264,32,32,GEN. FRANK PAÍS. CAYO MAMBÍ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3265,3265,32,32,GEN. DE GIBARA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3266,3266,32,32,GEN. NICARAGUA. BANES,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3267,3267,32,32,GEN. RENE RAMOS LATOUR. ANTILLA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3268,3268,32,32,GEN. MÁRTIRES DE MAYARÍ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3269,3269,32,32,GEN. BUENAVENTURA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3270,3270,32,32,GEN. SAN GERMÁN. URBANO NORIS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3271,3271,32,32,GEN. PEDRO SOTO ALBA. MONTERREY. MOA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3272,3272,32,32,GEN. MARIO MUÑÓZ. STA. LUCIA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3273,3273,32,32,GEN. BÁGUANOS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3274,3274,32,32,GEN. GUATEMALA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3280,3280,32,32,G.O. CUETO,GINECO OBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3290,3290,32,32,PED. BANES,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3291,3291,32,32,RURAL CANANOVAS,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3292,3292,32,32,RURAL NARANJO AGRIO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3293,3293,32,32,RURAL HNAS. COLUMBIÉ. CALABAZAS,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3294,3294,32,32,GEN.GUILLERMO LUIS FERNÁNDEZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+32-3299,3299,32,32,RURAL ARROYO SECO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3303-1,3303,33,33,PSIQUIÁTRICO PROV. CMDTE. MANUEL PITI FAJARDO,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",unit_code_collision,1,false
+33-3310,3310,33,33,C.Q. CELIA SÁNCHEZ. MANDULEY. MANZANILLO,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+33-3311,3311,33,33,GEN. CARLOS M. DE CÉSPEDES. BAYAMO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+33-3330-1,3330,33,33,G.O. FÉ DEL VALLE. MANZANILLO,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",unit_code_collision,1,false
+33-3340,3340,33,33,PED. HNOS. CORDOVÉS. MANZANILLO,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+33-3341,3341,33,33,PED. GEN. LUIS MILANÉS. BAYAMO,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",repeated_in_manual,2,false
+33-3360,3360,33,33,GEN. RENÉ VALLEJO. CAMPECHUELA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3303-2,3303,33,33,PSIQUIÁTRICO PROV. CMDTE. FAJARDO,,"Manual RNC VII (2024), Anexo 1, pp. 50-72",unit_code_collision,1,false
+33-3330-2,3330,33,33,G.O. FÉ DEL VALLE RAMOS. MANZANILLO,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",unit_code_collision,1,false
+33-3361,3361,33,33,GEN. MÁRTIRES DE JIGUANÍ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3362,3362,33,33,GEN. VEGUITAS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3363,3363,33,33,GEN. MEDIA LUNA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3364,3364,33,33,GEN. GELASIO CALAÑA LAHERA. NIQUERO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3365,3365,33,33,GEN. MARIANO PÉREZ BALI,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3380,3380,33,33,M.I. ADRIANA DEL CASTILLO. GUISA,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3390,3390,33,33,PED. CAMILO CIENFUEGOS. P. FAJARDO,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3391,3391,33,33,RURAL FERNANDO ECHENIQUE. RIO CAUTO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3392,3392,33,33,RURAL JOEL BENÍTEZ. CAUTO CRISTO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3393,3393,33,33,RURAL ULISES GÓNGORA. CHARCO REDONDO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3394,3394,33,33,RURAL VÍCTOR CORTINA. CIENAGUILLA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3395,3395,33,33,RURAL ENRIQUE CABRERA PILÓN,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3396,3396,33,33,RURAL CIRO REDONDO. MINAS DE FRIO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3397,3397,33,33,RURAL ANTONIO PRIETO. BUEY ARRIBA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-3399,3399,33,33,RURAL JUAN M. MÁRQUEZ. VICTORINO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330A,330A,33,33,CLÍNICA DE ESPECIALIDADES MÉDICAS,,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330C,330C,33,33,GEN. FÉLIX LUGONES,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330D,330D,33,33,POLIC. ERNESTO GUEVARRA VADO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330E,330E,33,33,POLIC. MÁXIMO GÓMEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330F,330F,33,33,POLIC. CAMILO CIENFUEGOS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330G,330G,33,33,POLIC. JOEL BENÍTEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330H,330H,33,33,POLIC. ULISES GÓNGORA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330I,330I,33,33,POLIC. DAVID MORENO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330J,330J,33,33,POLIC. EDOR DE LOS REYES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330K,330K,33,33,POLIC. BAYAMO OESTE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330L,330L,33,33,POLIC. 13 DE MARZO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330M,330M,33,33,POLIC. RENÉ VALLEJO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330N,330N,33,33,POLIC. JIMMI HIRZEL,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330O,330O,33,33,POLIC. PEDRO SOTO ALBA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330P,330P,33,33,POLIC. VEGUITAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330Q,330Q,33,33,POLIC. LUIS E DE LA PAZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330R,330R,33,33,POLIC. I FCA RIVERO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330S,330S,33,33,POLIC. II ÁNGEL ORTIZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330T,330T,33,33,POLIC. III RENÉ VALLEJO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330U,330U,33,33,POLIC. IV LUIS E DE LA PAZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330V,330V,33,33,POLIC. V HNOS LABRADA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330W,330W,33,33,POLIC. VÍCTOR CORTINAS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330X,330X,33,33,POLIC. GUSTAVO ALDEREGUÍA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330Y,330Y,33,33,POLIC. GENARO BRITO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-330Z,330Z,33,33,POLIC. RAÚL PODIO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-331A,331A,33,33,POLIC. ERNESTO GUEVARRA NIQUERO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-331B,331B,33,33,POLIC. MANUEL SÁNCHEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-331C,331C,33,33,POLIC. CIRO REDONDO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-331D,331D,33,33,POLIC. BARTOLOMÉ MASÓ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-331E,331E,33,33,POLIC. FAUSTINO PÉREZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+33-331F,331F,33,33,POLIC. GUILLERMO GONZÁLEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3400,3400,34,34,CONRADO BENÍTEZ GARCÍA,ONCOLÓGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+34-3401,3401,34,34,JOAQUÍN CASTILLO DUANY,MILITAR,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3402,3402,34,34,GEN. JUAN BRUNO ZAYAS,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3403,3403,34,34,COMANDANTE GUSTAVO MACHÍN,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340A,340A,34,34,GEN.ALBERTO FERNÁNDEZ MONTES DE OCA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340B,340B,34,34,GEN.EZEQUIEL MIRANDA DÍAZ,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3410,3410,34,34,C.Q. SATURNINO LORA TORRES,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+34-3411,3411,34,34,C.Q. AMBROSIO GRILLO PORTUONDO,CLÍNICO QUIRÚRGICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3412,3412,34,34,GEN.ORLANDO PANTOJA TAMAYO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3430,3430,34,34,G.O. HAYDÉE TAMARA BUNKE BIDER,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3431,3431,34,34,G.O. MARIANA GRAJALES COELLO,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3432,3432,34,34,G.O. ESTE,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+34-3440,3440,34,34,PED.JUAN DE LA CRUZ MARTÍNEZ,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3441,3441,34,34,PED.ANTONIO MARÍA BEGUEZ CÉSAR (PEDIÁTRICO SUR),PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3460,3460,34,34,RURAL DE RECLUSOS PRISIÓN BONIATO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3481,3481,34,34,GEN.ROBERTO INFANTE PASCUAL,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3482,3482,34,34,M.I. REYNALDO CHANG. SONGO LA MAYA,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3483,3483,34,34,M.I. WILFREDO PAGES. MAFFO. CONTRAMAESTRE,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3484,3484,34,34,M.I. JULIO ANTONIO MELLA,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3485,3485,34,34,M.I. JOSE MERCERÓN. LA CAOBA,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3486,3486,34,34,GEN.EMILIO BÁRCENAS PIER,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3487,3487,34,34,M.I. LOS REYNALDOS,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3488,3488,34,34,G.O. NELIA DELFÍN RIPOLL,GINECOBSTÉTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3490,3490,34,34,PED. MUNICIPAL PALMA,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3491,3491,34,34,RURAL GREGORIO S. EMETERIO PARAÍSO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3492,3492,34,34,RURAL REYNALDO BROOK. JARAHUECA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3493,3493,34,34,RURAL JOAQUÍN BARRIENTOS. LA PIMIENTA,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3494,3494,34,34,RURAL ESTEBAN CABALLERO MATÍAS,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3495,3495,34,34,RURAL MARIO MUNNOS. TERCER FRENTE,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3496,3496,34,34,RURAL GIRALDO APONTE. CHIVIRCO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-3499,3499,34,34,RURAL OCUJAL. TURQUINO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340C,340C,34,34,POLIC. BAIRE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340D,340D,34,34,POLIC. AMÉRICA I,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340E,340E,34,34,POLIC. AMÉRICA II,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340F,340F,34,34,POLIC. PPU MELLA. (E. LÓPEZ CUBA.),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340G,340G,34,34,POLIC. BARAGUÁ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340H,340H,34,34,POLIC. EDUARDO MESA LLULL,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340I,340I,34,34,POLIC. ALBERTO FDEZ MONTES DE OCA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340J,340J,34,34,POLIC. CARLOS MANUEL RAMÍREZ (POLC. INTEGEN.),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340K,340K,34,34,POLIC. LUIS CARRIÓN (DOS CAMINOS),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340L,340L,34,34,POLIC. ELISEO REYES (CHILE),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340M,340M,34,34,POLIC. CARLOS J FINLAY (LA MAYA),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340N,340N,34,34,POLIC. PORFIRIO VALIENTE (SONGO),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340O,340O,34,34,POLIC. RAMIRO BETANCOURT (DOS RIOS),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340P,340P,34,34,POLIC. VICTORIA DE GIRÓN (PALMA),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340Q,340Q,34,34,POLIC. OSCAR ALBERTO ORTEGA (POLIC. NORTE),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340R,340R,34,34,POLIC. CARLOS MONTALVÁN (POLIC. SUR),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340S,340S,34,34,POLIC. RAFAEL PANTOJA (DOS PALMAS),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340T,340T,34,34,POLIC. ASERRADERO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340U,340U,34,34,POLIC. UVERO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340V,340V,34,34,POLIC. CRUCE DE LOS BAÑOS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340W,340W,34,34,POLIC. FRANK PAÍS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340X,340X,34,34,POLIC. JOSÉ MARTÍ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340Y,340Y,34,34,POLIC. JULIÁN GRIMAU,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-340Z,340Z,34,34,POLIC. CAMILO TORRES,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341A,341A,34,34,POLIC. CARLOS J FINLAY,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341B,341B,34,34,POLIC. 28 DE SEPTIEMBRE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341C,341C,34,34,POLIC. RAMÓN LÓPEZ PEÑA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341D,341D,34,34,POLIC. DOCENTE MUNICIPAL,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341E,341E,34,34,POLIC. ARMANDO GARCÍA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341F,341F,34,34,POLIC. 30 DE NOVIEMBRE,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341G,341G,34,34,POLIC. JOSUÉ PAÍS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341H,341H,34,34,POLIC. XX ANIVERSARIO (SIBONEY),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341I,341I,34,34,POLIC. MARIO MUÑOZ (EL CANEY),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341J,341J,34,34,POLIC. ERNESTO GUEVARA (BONIATO),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341K,341K,34,34,POLIC. EL CRISTO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+34-341L,341L,34,34,POLIC. LUIS RAMÍREZ (EL COBRE),POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3503,3503,35,35,PSIQUIÁTRICO PROV. LUIS RAMÍREZ,PSIQUIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3510,3510,35,35,GEN. Dr. AGOSTHINO NETO GUANTANAMO,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,true
+35-3520,3520,35,35,POLIC. EMILIO DAUDINOT,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3521,3521,35,35,POLIC. ASDRUBAL LÓPEZ,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3522,3522,35,35,POLIC. OMAR RANEDO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3523,3523,35,35,POLIC. HERMANOS MARTÍNEZ TAMAYO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3524,3524,35,35,POLIC. RAMÓN LÓPEZ PEÑA,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3525,3525,35,35,POLIC. MÁRTIRES 4 DE ABRIL,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3526,3526,35,35,POLIC. MÁRTIRES 4 DE AGOSTO,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3527,3527,35,35,POLIC. MODESTO GRIMAU,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3528,3528,35,35,POLIC. NIBUJON,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3529,3529,35,35,POLIC. FERMÍN VALDÉS,POLICLÍNICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3540,3540,35,35,PED. PROV. PEDRO AGUSTÍN PÉREZ,PEDIÁTRICO,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3560,3560,35,35,GEN.OCTAVIO DE LA C. DE LA PEDRAJA BARACOA,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3580,3580,35,35,M.I. HÉROES DE JAMAICA. GUANTÁNAMO,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3581,3581,35,35,M.I. GUSTAVO A. MOLL. CAIMANERA,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3582,3582,35,35,M.I. NOEL PÉREZ. IMIAS,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3583,3583,35,35,M.I. FAUSTO FAVIER. PALENQUE. YATERAS,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3584,3584,35,35,M.I. CAMILO CIENFUEGOS. BERNARDO. YATERAS,MATERNO INFANTIL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3591,3591,35,35,RURAL RICARDO GLEZ. STA. CATALINA. GUANTÁNAMO,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3592,3592,35,35,RURAL PATRICIO SIERRA ALTA. LOS LLANOS. MAISÍ,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3593,3593,35,35,RURAL CARIDAD PÉREZ. LA ESCONDIDA. SALVADOR,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3594,3594,35,35,RURAL RAFAEL TIOPE. SALVADOR,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3595,3595,35,35,RURAL MANUEL TAMES,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3596,3596,35,35,RURAL LINO ÁLVAREZ. SALVADOR,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+35-3597,3597,35,35,RURAL FELIX PEÑA. SAN ANTONIO DEL SUR,RURAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+40-4060,4060,40,40,HÉROES DE BAIRE,GENERAL,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
+40-4061,4061,40,40,LA FÉ,,"Manual RNC VII (2024), Anexo 1, pp. 50-72",documented_in_manual,1,false
