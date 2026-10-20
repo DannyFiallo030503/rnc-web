@@ -90,6 +90,9 @@ LOGOUT_REDIRECT_URL = "public_site:home"
 
 # Private files are never mounted under STATIC_URL or a public MEDIA_URL.
 PRIVATE_STORAGE_ROOT = Path(os.environ.get("RNC_PRIVATE_STORAGE", BASE_DIR / "private"))
+PUBLIC_RELEASE_ROOT = Path(
+    os.environ.get("RNC_PUBLIC_RELEASE_ROOT", BASE_DIR / "public_releases")
+)
 EMAIL_BACKEND = os.environ.get(
     "EMAIL_BACKEND", "django.core.mail.backends.filebased.EmailBackend"
 )
@@ -105,6 +108,7 @@ DEFAULT_FROM_EMAIL = os.environ.get(
 )
 PASSWORD_RESET_TIMEOUT = 3600
 PUBLIC_ORIGIN = os.environ.get("RNC_PUBLIC_ORIGIN", "http://127.0.0.1:8010")
+PUBLIC_SITE_URL = os.environ.get("RNC_PUBLIC_SITE_URL", "http://127.0.0.1:8010")
 DATA_UPLOAD_MAX_MEMORY_SIZE = 13 * 1024 * 1024
 MIDDLEWARE.append("public_site.middleware.AccountSecurityMiddleware")
 if not DEBUG and SECRET_KEY == "development-only-change-before-any-shared-deployment":

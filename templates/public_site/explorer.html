@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base_public.html" %}
 {% block content %}<div class="page-heading"><p class="eyebrow">Consulta estadística</p><h1>Explorador de incidencia</h1><p>Elija los datos y construya la visualización que necesita. <span class="badge">Datos sintéticos</span></p></div>
 {% if not delivery %}<section class="panel empty-state" role="status"><h2>No hay resultados</h2><p>Actualmente no hay un corte publicado. Las consultas y descargas estarán disponibles cuando se publique una nueva versión.</p></section>{% else %}
 <form method="get" class="panel" id="query-form" data-validate data-query-form>
@@ -12,14 +12,14 @@
     <h2>Visualización</h2>
     <span class="badge">Datos sintéticos</span>
   </div>
-  <p>{{ chart_payload.metric }} · {{ chart_payload.unit }}</p>
+  <p>{{ chart_payload.metric }} · {{ chart_payload.unit }} · {{ chart_payload.dimension_label }}</p>
   <div class="chart-frame">
     <canvas id="result-chart"
             role="img"
             aria-label="Gráfico de la consulta; valores disponibles en la tabla inferior"></canvas>
   </div>
   {{ chart_payload|json_script:"chart-payload" }}
-  <p class="muted">{{ chart_payload.note }}</p>
+  <p class="muted">{{ chart_payload.note }}<br><strong>Filtros aplicados:</strong> {{ chart_payload.filter_summary }}<br>{{ chart_payload.chart_label }}. Eje de valores: {{ chart_payload.axis_unit }}.{% if filters.chart == "percent" %} Cada barra suma 100 % y muestra la distribución por sexo dentro de esa categoría.{% endif %}</p>
   <div class="actions export-actions">
     <button form="query-form" name="format" value="png">Imagen PNG</button><button form="query-form" name="format" value="svg">Vector SVG</button><button form="query-form" name="format" value="pdf">Informe PDF</button><button form="query-form" name="format" value="csv">Tabla CSV</button><button form="query-form" name="format" value="xlsx">Excel</button>
   </div>

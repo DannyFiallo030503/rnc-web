@@ -36,6 +36,7 @@ class PortalTests(TestCase):
             PRIVATE_STORAGE_ROOT=Path(self.temporary.name),
             EMAIL_FILE_PATH=Path(self.temporary.name) / "mail",
             PUBLIC_ORIGIN="https://rnc.example.invalid",
+            PUBLIC_RELEASE_ROOT=Path(self.temporary.name) / "public-releases",
         )
         self.override.enable()
         self.addCleanup(self.override.disable)
@@ -76,13 +77,17 @@ class PortalTests(TestCase):
     def delivery(self, extra=1, publish=False):
         d = ingest(uploaded(extra), "Corte sintético 2023–2024", self.root)
         if publish:
-            transition(
+            self.apply_transition(
                 d.pk,
                 "publish",
                 self.root,
                 "Publicación sintética autorizada para la prueba.",
             )
         return d
+
+    def apply_transition(self, *args, **kwargs):
+        with self.captureOnCommitCallbacks(execute=True):
+            return transition(*args, **kwargs)
 
     def post_account(self, **updates):
         self.client.force_login(self.root)
@@ -97,6 +102,8 @@ class PortalTests(TestCase):
                 self.assertEqual(r.status_code, 200)
                 self.assertNotContains(r, "sidebar-home")
                 self.assertNotContains(r, 'href="/administracion/cortes/"')
+                if path in {"/", "/consulta/"}:
+                    self.assertContains(r, 'aria-label="Páginas"')
 
     def test_anonymous_requires_login_on_every_private_route(self):
         for path in [
@@ -176,7 +183,9 @@ class PortalTests(TestCase):
         self.assertEqual(c.post("/salir/").status_code, 403)
         c.get("/administracion/cortes/")
         token = c.cookies["csrftoken"].value
-        self.assertRedirects(c.post("/salir/", {"csrfmiddlewaretoken": token}), "/")
+        self.assertRedirects(
+            c.post("/salir/", {"csrfmiddlewaretoken": token}), "/acceso/"
+        )
 
     def test_create_invited_account_persists_role_hash_policy_audit_and_mail(self):
         r = self.post_account()
@@ -519,9 +528,9 @@ class PortalTests(TestCase):
             ("period", "2024<script>"),
             ("population", "0"),
             ("standard_weight", "99"),
-            ("sex", "otro"),
-            ("site", "desconocida"),
-            ("name", "Ana\x00"),
+            ("sex_id", "99"),
+            ("site_id", "999"),
+            ("territory_id", "999"),
         ]:
             rows = synthetic_rows()
             rows[0][field] = value
@@ -565,14 +574,14 @@ class PortalTests(TestCase):
     def test_publish_replace_revoke_and_audit_are_persistent(self):
         first = self.delivery(publish=True)
         second = self.delivery(extra=2)
-        transition(
+        self.apply_transition(
             second.pk, "publish", self.publisher, "Nueva versión sintética revisada."
         )
         first.refresh_from_db()
         self.assertEqual(first.status, "revoked")
         self.assertEqual(Publication.objects.get(pk=1).delivery_id, second.pk)
         self.assertEqual(self.client.get("/").context["summary"]["tumors"], 38)
-        transition(
+        self.apply_transition(
             second.pk, "revoke", self.publisher, "Revocación sintética para revisión."
         )
         self.assertIsNone(Publication.objects.get(pk=1).delivery_id)
@@ -582,6 +591,94 @@ class PortalTests(TestCase):
                 action="Revocación", actor=self.publisher, target=str(second.pk)
             ).exists()
         )
+
+    def test_admin_upload_publish_public_profile_and_revoke_flow(self):
+        self.client.force_login(self.root)
+        upload = self.client.post(
+            "/administracion/cortes/",
+            {
+                "title": "Corte sintético para flujo público",
+                "synthetic": "on",
+                "file": uploaded(extra=1),
+            },
+        )
+        self.assertEqual(upload.status_code, 302)
+        delivery = Delivery.objects.get(title="Corte sintético para flujo público")
+        self.assertEqual(delivery.status, "validated")
+
+        publish_path = f"/administracion/cortes/{delivery.pk}/estado/"
+        with self.captureOnCommitCallbacks(execute=True):
+            publish = self.client.post(
+                publish_path,
+                {
+                    "action": "publish",
+                    "reason": "Publicación sintética para probar el flujo.",
+                },
+            )
+        self.assertEqual(publish.status_code, 302)
+        delivery.refresh_from_db()
+        self.assertEqual(delivery.status, "published")
+
+        release_root = Path(self.temporary.name) / "public-releases"
+        artifact = release_root / f"{delivery.pk}.json"
+        artifact_text = artifact.read_text(encoding="utf-8")
+        self.assertNotIn("SYN-P-", artifact_text)
+        self.assertNotIn("SYN-T-", artifact_text)
+        self.assertNotIn('"person_id"', artifact_text)
+        self.assertNotIn('"tumor_id"', artifact_text)
+
+        public_settings = {
+            "ROOT_URLCONF": "config.urls_public",
+            "MIDDLEWARE": [
+                "django.middleware.security.SecurityMiddleware",
+                "django.middleware.common.CommonMiddleware",
+                "django.middleware.clickjacking.XFrameOptionsMiddleware",
+            ],
+            "TEMPLATES": [
+                {
+                    "BACKEND": "django.template.backends.django.DjangoTemplates",
+                    "DIRS": [Path(__file__).resolve().parent.parent / "templates"],
+                    "APP_DIRS": True,
+                    "OPTIONS": {
+                        "context_processors": [
+                            "django.template.context_processors.request"
+                        ]
+                    },
+                }
+            ],
+            "DATABASES": {"default": {"ENGINE": "django.db.backends.dummy"}},
+            "PRIVATE_STORAGE_ROOT": None,
+            "PUBLIC_RELEASE_ROOT": release_root,
+        }
+        with override_settings(**public_settings):
+            public_client = Client()
+            home = public_client.get("/")
+            self.assertEqual(home.status_code, 200)
+            self.assertEqual(home.context["summary"]["tumors"], 37)
+            self.assertNotContains(home, "SYN-P-")
+            self.assertNotContains(home, "SYN-T-")
+
+            explorer = public_client.get("/consulta/", {"unit": "persons"})
+            self.assertEqual(explorer.status_code, 200)
+            self.assertEqual(explorer.context["summary"]["persons"], 36)
+            self.assertEqual(public_client.get("/administracion/cortes/").status_code, 404)
+            self.assertEqual(public_client.get("/acceso/").status_code, 404)
+
+        with self.captureOnCommitCallbacks(execute=True):
+            revoke = self.client.post(
+                publish_path,
+                {
+                    "action": "revoke",
+                    "reason": "Revocación sintética para probar el flujo.",
+                },
+            )
+        self.assertEqual(revoke.status_code, 302)
+        delivery.refresh_from_db()
+        self.assertEqual(delivery.status, "revoked")
+        empty_home = self.client.get("/")
+        self.assertEqual(empty_home.status_code, 200)
+        self.assertIsNone(empty_home.context["delivery"])
+        self.assertEqual(empty_home.context["summary"], {})
 
     def test_operator_cannot_publish_even_with_forged_post(self):
         d = self.delivery()
@@ -610,7 +707,7 @@ class PortalTests(TestCase):
             self.assertTrue(r.context["decision_form"].errors)
             d.refresh_from_db()
             self.assertEqual(d.status, "validated")
-        transition(d.pk, "publish", self.root, "Publicación inicial de prueba.")
+        self.apply_transition(d.pk, "publish", self.root, "Publicación inicial de prueba.")
         r = self.client.post(
             path, {"action": "publish", "reason": "Acción antigua repetida."}
         )
@@ -705,13 +802,118 @@ class PortalTests(TestCase):
         self.assertIn("2024", r.content.decode("utf-8-sig"))
         self.assertIn("Datos sintéticos", r.content.decode("utf-8-sig"))
 
+    def test_every_graph_and_export_format_preserves_selection_and_values(self):
+        import csv
+        import xml.etree.ElementTree as ET
+        from openpyxl import load_workbook
+        from PIL import Image
+
+        self.delivery(publish=True)
+        charts = [
+            ("bar", "site"),
+            ("column", "site"),
+            ("line", "period"),
+            ("grouped", "site"),
+            ("stacked", "site"),
+            ("percent", "site"),
+            ("pie", "sex"),
+            ("doughnut", "sex"),
+        ]
+        signatures = {
+            "csv": b"\xef\xbb\xbf",
+            "xlsx": b"PK",
+            "png": b"\x89PNG",
+            "svg": b"<?xml",
+            "pdf": b"%PDF",
+        }
+        for chart, dimension in charts:
+            query = {"chart": chart, "dimension": dimension}
+            if chart != "line":
+                query["year"] = "2024"
+            page = self.client.get("/consulta/", query)
+            payload = page.context["chart_payload"]
+            self.assertIn("Período:", payload["filter_summary"])
+            self.assertIn("Territorio: Todos", payload["filter_summary"])
+            self.assertTrue(payload["axis_unit"])
+            if len(payload["datasets"]) == 1:
+                self.assertEqual(
+                    payload["datasets"][0]["data"],
+                    [row["value"] for row in page.context["table"]],
+                )
+            else:
+                for index, row in enumerate(page.context["table"]):
+                    self.assertEqual(
+                        [dataset["data"][index] for dataset in payload["datasets"]],
+                        [series["value"] for series in row["series"]],
+                    )
+
+            def assert_exported_rows(actual_rows):
+                expected_rows = []
+                for row in page.context["table"]:
+                    expected = [row[key] for key in ("label", "tumors", "persons", "population", "value")]
+                    if len(payload["datasets"]) > 1:
+                        expected.extend(series["value"] for series in row["series"])
+                    expected_rows.append(expected)
+                self.assertEqual(len(actual_rows), len(expected_rows))
+                for actual, expected in zip(actual_rows, expected_rows):
+                    self.assertEqual(actual[0], expected[0])
+                    for actual_value, expected_value in zip(actual[1:], expected[1:]):
+                        self.assertAlmostEqual(float(actual_value), float(expected_value))
+
+            for fmt, signature in signatures.items():
+                with self.subTest(chart=chart, fmt=fmt):
+                    cache.clear()
+                    response = self.client.get("/consulta/", {**query, "format": fmt})
+                    self.assertEqual(response.status_code, 200)
+                    self.assertTrue(response.content.startswith(signature))
+                    if fmt == "csv":
+                        text = response.content.decode("utf-8-sig")
+                        self.assertIn("Contexto de la consulta", text)
+                        self.assertIn("Período", text)
+                        self.assertIn("2024", text)
+                        self.assertIn("Categoría", text)
+                        rows = list(csv.reader(io.StringIO(text)))
+                        header_index = next(i for i, row in enumerate(rows) if row and row[0] == "Categoría")
+                        assert_exported_rows(rows[header_index + 1 :])
+                    elif fmt == "xlsx":
+                        sheet = load_workbook(io.BytesIO(response.content), data_only=True).active
+                        self.assertEqual(sheet.cell(1, 1).value, "Contexto de la consulta")
+                        self.assertIn("Período", [sheet.cell(row, 1).value for row in range(2, 13)])
+                        self.assertEqual(sheet.cell(14, 1).value, "Categoría")
+                        assert_exported_rows(
+                            [list(row) for row in sheet.iter_rows(min_row=15, values_only=True)]
+                        )
+                    elif fmt == "png":
+                        image = Image.open(io.BytesIO(response.content))
+                        self.assertGreater(image.width, 1000)
+                        self.assertGreater(image.height, 600)
+                    elif fmt == "svg":
+                        root = ET.fromstring(response.content)
+                        self.assertTrue(root.tag.endswith("svg"))
+                        expected_period = "Todos (2023–2024)" if chart == "line" else "2024"
+                        self.assertIn(expected_period, " ".join(root.itertext()))
+
+        for chart in ("pie", "doughnut"):
+            with self.subTest(chart=chart, metric="share"):
+                cache.clear()
+                response = self.client.get(
+                    "/consulta/", {"chart": chart, "dimension": "site", "metric": "share", "format": "svg"}
+                )
+                self.assertEqual(response.status_code, 200)
+                text = " ".join(ET.fromstring(response.content).itertext())
+                self.assertIn("Frecuencia relativa (%)", text)
+                page = self.client.get("/consulta/", {"chart": chart, "dimension": "site", "metric": "share"})
+                for row in page.context["table"]:
+                    expected = f"{row['value']:.2f}".replace(".", ",") + "%"
+                    self.assertIn(expected, text)
+
     def test_revocation_does_not_serve_cached_export(self):
         d = self.delivery(publish=True)
         self.assertEqual(
             self.client.get("/consulta/?format=csv")["Content-Type"],
             "text/csv; charset=utf-8",
         )
-        transition(d.pk, "revoke", self.root, "Retirar corte sintético de prueba.")
+        self.apply_transition(d.pk, "revoke", self.root, "Retirar corte sintético de prueba.")
         r = self.client.get("/consulta/?format=csv")
         self.assertNotIn("attachment", r.get("Content-Disposition", ""))
 
@@ -758,7 +960,7 @@ class PortalTests(TestCase):
         for field, value in [
             ("person_id", "SYN-P-<script>"),
             ("tumor_id", "SYN-T-../evil"),
-            ("name", "=HYPERLINK(1)"),
+            ("site_id", "<script>"),
         ]:
             rows = synthetic_rows()
             rows[0][field] = value
@@ -811,7 +1013,7 @@ class PortalTests(TestCase):
         self.client.get(
             "/consulta/?year=2024&dimension=age_group&metric=rate&format=csv"
         )
-        transition(d.pk, "revoke", self.root, "Retiro de revisión sintética.")
+        self.apply_transition(d.pk, "revoke", self.root, "Retiro de revisión sintética.")
         r = self.client.get(
             "/consulta/?year=2024&dimension=age_group&metric=rate&format=csv"
         )

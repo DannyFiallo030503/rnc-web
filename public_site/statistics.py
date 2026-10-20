@@ -5,7 +5,7 @@ from .services import published_records, WEIGHTS
 from analytics.metrics import direct_standardized_rate
 
 DIMENSIONS = {
-    "site": "Localización",
+    "site": "Grupo de localización ilustrativo",
     "territory": "Territorio",
     "sex": "Sexo",
     "age_group": "Edad",

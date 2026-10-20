@@ -14,17 +14,17 @@ from django.conf import settings
 from django.db import transaction
 from django.utils import timezone
 from .models import Delivery, Publication, AuditEvent
+from analytics.catalogs import CATALOGS, id_for, resolve
 
 HEADER = [
     "synthetic",
     "person_id",
     "tumor_id",
-    "name",
     "period",
-    "territory",
-    "sex",
-    "age_group",
-    "site",
+    "territory_id",
+    "sex_id",
+    "age_group_id",
+    "site_id",
     "population",
     "standard_weight",
 ]
@@ -85,8 +85,8 @@ def _ingest(upload, title, user):
         identities = {}
         from analytics.demo import load_rows as reference_rows
 
-        territories = {r["territory"] for r in reference_rows()}
-        sites = {r["site"] for r in reference_rows()}
+        territories = {r["territory_id"] for r in reference_rows()}
+        sites = {r["site_id"] for r in reference_rows()}
         for number, r in enumerate(reader, 2):
             if number > 60001:
                 raise ValueError("El límite local es de 60 000 filas.")
@@ -100,27 +100,20 @@ def _ingest(upload, title, user):
                 raise ValueError(
                     f"Fila {number}: solo se admite el contrato sintético de demostración."
                 )
-            from .validation import validate_text
-            from django.core.exceptions import ValidationError
-
-            try:
-                validate_text(r["name"], "person-name")
-            except ValidationError as exc:
-                raise ValueError(
-                    f"Fila {number}: nombre sintético con formato no admitido."
-                ) from exc
             if not re.fullmatch(
                 r"SYN-P-[A-Za-z0-9-]+", r["person_id"]
             ) or not re.fullmatch(r"SYN-T-[A-Za-z0-9-]+", r["tumor_id"]):
                 raise ValueError(
                     f"Fila {number}: formato de identificador sintético no admitido."
                 )
-            if (
-                r["territory"] not in territories
-                or r["site"] not in sites
-                or r["sex"] not in {"Mujeres", "Hombres"}
-                or r["age_group"] not in WEIGHTS
-            ):
+            try:
+                territory = resolve("territory_id", r["territory_id"])["name"]
+                sex = resolve("sex_id", r["sex_id"])["name"]
+                age_group = resolve("age_group_id", r["age_group_id"])["name"]
+                site = resolve("site_id", r["site_id"])["name"]
+            except KeyError as exc:
+                raise ValueError(f"Fila {number}: identificador de catálogo desconocido.") from exc
+            if r["territory_id"] not in territories or r["site_id"] not in sites:
                 raise ValueError(f"Fila {number}: categoría no admitida.")
             try:
                 year, population, weight = (
@@ -135,25 +128,25 @@ def _ingest(upload, title, user):
             if (
                 not 2000 <= year <= 2100
                 or population <= 0
-                or weight != WEIGHTS[r["age_group"]]
+                or weight != WEIGHTS[age_group]
             ):
                 raise ValueError(
                     f"Fila {number}: período, población o peso incompatible."
                 )
-            stratum = (year, r["territory"], r["sex"], r["age_group"])
+            stratum = (year, territory, sex, age_group)
             if stratum in strata and strata[stratum] != population:
                 raise ValueError(f"Fila {number}: denominador inconsistente.")
             strata[stratum] = population
             identity_key = (r["person_id"], year)
             if (
                 identity_key in people
-                and people[identity_key] != (r["name"],) + stratum
+                and people[identity_key] != stratum
             ):
                 raise ValueError(
                     f"Fila {number}: persona incompatible con el estrato declarado."
                 )
-            people[identity_key] = (r["name"],) + stratum
-            identity = (r["name"], r["sex"])
+            people[identity_key] = stratum
+            identity = r["sex_id"]
             if r["person_id"] in identities and identities[r["person_id"]] != identity:
                 raise ValueError(f"Fila {number}: identidad sintética inconsistente.")
             identities[r["person_id"]] = identity
@@ -161,7 +154,15 @@ def _ingest(upload, title, user):
                 if r["tumor_id"] in tumors:
                     raise ValueError(f"Fila {number}: identificador de tumor repetido.")
                 tumors.add(r["tumor_id"])
-            r.update(period=year, population=population, standard_weight=weight)
+            r.update(
+                period=year,
+                population=population,
+                standard_weight=weight,
+                territory=territory,
+                sex=sex,
+                age_group=age_group,
+                site=site,
+            )
             records.append(r)
         if not records:
             raise ValueError("El archivo no contiene registros.")
@@ -213,7 +214,18 @@ def _ingest(upload, title, user):
 
 @lru_cache(maxsize=4)
 def delivery_records(key):
-    return json.loads((private_root() / key).read_text(encoding="utf-8"))
+    records = json.loads((private_root() / key).read_text(encoding="utf-8"))
+    # Normalize earlier local demo releases on read; do not surface old invented names.
+    for record in records:
+        for field in ("territory", "sex", "age_group", "site"):
+            code_field = f"{field}_id"
+            if (
+                code_field not in record
+                or record[code_field] not in CATALOGS[code_field]
+            ):
+                record[code_field] = id_for(code_field, record[field])
+        record.pop("name", None)
+    return records
 
 
 def current_delivery():
@@ -222,6 +234,7 @@ def current_delivery():
 
 
 def published_records():
+    """Private-only compatibility helper for the local ingestion prototype."""
     delivery = current_delivery()
     return delivery_records(delivery.storage_key) if delivery else []
 
@@ -232,17 +245,27 @@ def transition(pk, action, user, reason):
         pointer = Publication.objects.select_for_update().get(pk=1)
         delivery = Delivery.objects.select_for_update().get(pk=pk)
         if action == "publish" and delivery.status == "validated":
+            from .aggregate_release import activate_release, prepare_release
+
+            delivery.published_at = timezone.now()
+            release_records = delivery_records(delivery.storage_key)
+            # The public package is built before changing the active pointer. It
+            # contains grouped counts only, never person/tumor identifiers.
+            manifest = prepare_release(delivery, release_records)
             if pointer.delivery_id:
                 Delivery.objects.filter(pk=pointer.delivery_id).update(status="revoked")
                 audit(user, "Corte sustituido", pointer.delivery_id, reason)
             delivery.status = "published"
-            delivery.published_at = timezone.now()
             pointer.delivery = delivery
+            transaction.on_commit(lambda: activate_release(manifest))
         elif (
             action == "revoke"
             and delivery.status == "published"
             and pointer.delivery_id == delivery.pk
         ):
+            from .aggregate_release import revoke_public_release
+
+            transaction.on_commit(revoke_public_release)
             delivery.status = "revoked"
             pointer.delivery = None
         else:

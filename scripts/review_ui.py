@@ -24,7 +24,7 @@ from wsgiref.simple_server import WSGIRequestHandler, make_server
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
-OUTPUT = ROOT / "docs" / "revision-completa-2026-10-16"
+OUTPUT = ROOT / "docs" / "revision-completa-2026-10-20"
 
 
 def run():
@@ -45,6 +45,7 @@ def run():
         settings.DEBUG = True
         settings.ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
         settings.PRIVATE_STORAGE_ROOT = workspace / "private"
+        settings.PUBLIC_RELEASE_ROOT = workspace / "public-releases"
         settings.EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
         settings.EMAIL_FILE_PATH = settings.PRIVATE_STORAGE_ROOT / "mail"
         settings.PASSWORD_HASHERS = ["django.contrib.auth.hashers.MD5PasswordHasher"]
@@ -109,6 +110,8 @@ def run():
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
         OUTPUT.mkdir(parents=True, exist_ok=True)
+        for stale_failure in OUTPUT.glob("fallo-*.png"):
+            stale_failure.unlink()
         checks = []
         shots = []
         js_errors = []
@@ -132,6 +135,17 @@ def run():
                     pass
                 raise AssertionError(label)
             checks.append({"viewport": current_label, "check": label})
+
+        def table_columns_aligned():
+            return page.locator(".result-table").evaluate_all(
+                "tables => tables.every(table => {"
+                "const heads=[...table.querySelectorAll('thead th')];"
+                "const row=[...table.querySelectorAll('tbody tr')].find(item => !item.querySelector('.table-empty'));"
+                "if (!row || (row.children.length===1 && row.children[0].colSpan>1)) return true;"
+                "return heads.length===row.children.length && heads.every((head,index) => "
+                "getComputedStyle(head).textAlign===getComputedStyle(row.children[index]).textAlign);"
+                "})"
+            )
 
         def attach(p):
             p.on("pageerror", lambda error: js_errors.append(str(error)))
@@ -318,6 +332,10 @@ def run():
                         page.locator(".sidebar-home").count() == 0,
                         "Eliminado acceso redundante Volver al inicio",
                     )
+                    check(
+                        table_columns_aligned(),
+                        "Columnas de la tabla de Inicio alineadas con sus valores",
+                    )
                     capture(
                         "inicio",
                         "Inicio con indicadores del corte publicado; la base de revisión está aislada.",
@@ -348,10 +366,66 @@ def run():
                         "login-incorrecto",
                         "Error de credenciales genérico; no revela si la cuenta existe.",
                     )
+                    peer_page = context.new_page()
+                    attach(peer_page)
+                    peer_page.goto(base + "/")
+                    peer_page.wait_for_load_state("networkidle")
+                    check(
+                        peer_page.locator(".login-link").count() == 1,
+                        "El acceso del personal aparece en Inicio público",
+                    )
+                    login("qa_root", password)
+                    if width <= 760:
+                        peer_page.locator(".mobile-menu summary").click()
+                        peer_page.locator(".mobile-menu form button").wait_for(
+                            state="visible", timeout=5000
+                        )
+                    else:
+                        peer_page.locator(".account-menu summary").click()
+                        peer_page.locator(
+                            ".account-nav form button[type=submit]"
+                        ).wait_for(state="visible", timeout=5000)
+                    check(
+                        (
+                            peer_page.locator(".mobile-menu form button").count()
+                            if width <= 760
+                            else peer_page.locator(
+                                ".account-nav form button[type=submit]"
+                            ).count()
+                        )
+                        == 1,
+                        "El cambio de sesión se sincroniza en otras pestañas",
+                    )
+                    logout()
+                    if width <= 760:
+                        peer_page.locator(".mobile-menu summary").click()
+                        peer_page.locator(
+                            '.mobile-menu-panel a[href="/acceso/"]'
+                        ).wait_for(state="visible", timeout=5000)
+                    else:
+                        peer_page.locator(".login-link").wait_for(
+                            state="visible", timeout=5000
+                        )
+                    check(
+                        (
+                            peer_page.locator(
+                                '.mobile-menu-panel a[href="/acceso/"]'
+                            ).count()
+                            if width <= 760
+                            else peer_page.locator(".login-link").count()
+                        )
+                        == 1,
+                        "Cerrar sesión se sincroniza en otras pestañas",
+                    )
+                    peer_page.close()
                     login("qa_root", password)
                     check(
                         page.url.endswith("/administracion/cortes/"),
                         "Login de soporte abre Administración",
+                    )
+                    check(
+                        table_columns_aligned(),
+                        "Columnas de la tabla de cortes alineadas con sus valores",
                     )
                     page.locator(".brand").click()
                     check(
@@ -444,6 +518,18 @@ def run():
                         User.objects.count() == before,
                         "Usuario duplicado no inserta otra cuenta",
                     )
+                    page.locator("#id_username").focus()
+                    page.locator("#id_first_name").focus()
+                    check(
+                        page.locator("#id_username").get_attribute("aria-invalid")
+                        == "true"
+                        and page.locator("#id_username_error").is_visible()
+                        and page.locator(
+                            '.form-field[data-field="username"].has-error'
+                        ).count()
+                        == 1,
+                        "El error de backend permanece enmarcado al perder el foco",
+                    )
                     capture(
                         "usuario-duplicado",
                         "Un nombre de usuario ya registrado se señala en su campo.",
@@ -491,6 +577,12 @@ def run():
                         "Alta de cuenta y aviso de invitación, con lista paginada.",
                     )
                     goto("/administracion/usuarios/?q=qa_pagina")
+                    check(
+                        page.locator(".account-table th").evaluate_all(
+                            "items=>items.every(el=>getComputedStyle(el).textAlign==='left')"
+                        ),
+                        "Encabezados de usuarios alineados con sus datos",
+                    )
                     page.get_by_role("link", name="Siguiente", exact=True).click()
                     check("page=2" in page.url, "Paginación conserva búsqueda")
                     capture(
@@ -914,9 +1006,17 @@ def run():
                         )
                         check(
                             payload["type"] == kind
-                            and page.locator("canvas").count() == 1,
-                            f"Gráfico {kind}: un solo gráfico y datos correctos",
+                            and page.locator("canvas").count() == 1
+                            and payload.get("axis_unit")
+                            and "Período:" in payload.get("filter_summary", "")
+                            and page.get_by_text("Filtros aplicados:").is_visible(),
+                            f"Gráfico {kind}: datos, unidad y filtros visibles",
                         )
+                        if kind == "bar":
+                            check(
+                                table_columns_aligned(),
+                                "Columnas de resultados alineadas con sus valores",
+                            )
                         check(
                             page.evaluate(
                                 "Boolean(Chart.getChart(document.getElementById('result-chart')))"
@@ -974,8 +1074,10 @@ def run():
 
                             book = load_workbook(io.BytesIO(content))
                             check(
-                                book.active.max_row == 20,
-                                "Excel: 18 grupos etarios y cabeceras guardados",
+                                book.active.max_row == 32
+                                and book.active.cell(14, 1).value == "Categoría"
+                                and book.active.cell(3, 2).value == "2024",
+                                "Excel: selección, 18 grupos etarios y cabeceras guardados",
                             )
                         if fmt == "png":
                             from PIL import Image

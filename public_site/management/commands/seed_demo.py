@@ -10,6 +10,7 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from analytics.demo import load_rows
 from public_site.models import Delivery
 from public_site.services import HEADER, ingest, transition, private_root
+from analytics.catalogs import id_for
 
 
 class Command(BaseCommand):
@@ -40,36 +41,6 @@ class Command(BaseCommand):
         writer.writerow(HEADER)
         person = 0
         tumor = 0
-        female = [
-            "María",
-            "Ana",
-            "Laura",
-            "Claudia",
-            "Isabel",
-            "Teresa",
-            "Yanet",
-            "Diana",
-        ]
-        male = [
-            "Carlos",
-            "José",
-            "Luis",
-            "Manuel",
-            "Daniel",
-            "Ernesto",
-            "Rafael",
-            "Jorge",
-        ]
-        surnames = [
-            "García",
-            "Rodríguez",
-            "Pérez",
-            "González",
-            "Martínez",
-            "Hernández",
-            "Díaz",
-            "López",
-        ]
         for (year, territory, sex, age), row in strata.items():
             years = int(age.split("-")[0].replace("+", ""))
             count = 1 + int(
@@ -78,13 +49,6 @@ class Command(BaseCommand):
             )
             for _ in range(min(count, 18)):
                 person += 1
-                name = (
-                    randomizer.choice(female if sex == "Mujeres" else male)
-                    + " "
-                    + randomizer.choice(surnames)
-                    + " "
-                    + randomizer.choice(surnames)
-                )
                 for _ in range(2 if randomizer.random() < 0.09 else 1):
                     tumor += 1
                     sites = (
@@ -114,12 +78,11 @@ class Command(BaseCommand):
                             "TRUE",
                             f"SYN-P-{person:07}",
                             f"SYN-T-{tumor:07}",
-                            name,
                             year,
-                            territory,
-                            sex,
-                            age,
-                            randomizer.choice(sites),
+                            id_for("territory_id", territory),
+                            id_for("sex_id", sex),
+                            id_for("age_group_id", age),
+                            id_for("site_id", randomizer.choice(sites)),
                             row["population"],
                             row["standard_weight"],
                         ]

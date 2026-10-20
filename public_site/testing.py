@@ -4,6 +4,7 @@ import csv
 import io
 from django.core.files.uploadedfile import SimpleUploadedFile
 from .services import HEADER, WEIGHTS
+from analytics.catalogs import id_for
 
 
 def synthetic_rows(extra=1):
@@ -19,12 +20,11 @@ def synthetic_rows(extra=1):
                                 "TRUE",
                                 f"SYN-P-{sex_index}-{index}",
                                 f"SYN-T-{year}-{sex_index}-{index}",
-                                "Ana O’Neill" if sex_index == 0 else "Luis Pérez",
                                 str(year),
-                                "La Habana",
-                                sex,
-                                age,
-                                "Mama" if sex_index == 0 else "Colon y recto",
+                                id_for("territory_id", "La Habana"),
+                                id_for("sex_id", sex),
+                                id_for("age_group_id", age),
+                                id_for("site_id", "Mama" if sex_index == 0 else "Colon y recto"),
                                 "10000",
                                 str(weight),
                             ],
@@ -34,11 +34,17 @@ def synthetic_rows(extra=1):
     source = next(
         r
         for r in rows
-        if r["period"] == "2024" and r["age_group"] == "45-49" and r["sex"] == "Mujeres"
+        if r["period"] == "2024"
+        and r["age_group_id"] == id_for("age_group_id", "45-49")
+        and r["sex_id"] == id_for("sex_id", "Mujeres")
     )
     for number in range(extra):
         rows.append(
-            {**source, "tumor_id": f"SYN-T-EXTRA-{number}", "site": "Colon y recto"}
+            {
+                **source,
+                "tumor_id": f"SYN-T-EXTRA-{number}",
+                "site_id": id_for("site_id", "Colon y recto"),
+            }
         )
     return rows
 

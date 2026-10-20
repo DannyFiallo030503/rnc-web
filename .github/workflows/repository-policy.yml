@@ -34,9 +34,10 @@ jobs:
           import subprocess
           import sys
 
-          synthetic = {
+          approved_data = {
               'analytics/fixtures/consulta_demo_sintetica.csv',
               'analytics/fixtures/tasas_sinteticas.csv',
+              'analytics/fixtures/catalogo_unidades_informantes_manual_vii.csv',
           }
           forbidden_dirs = {
               'docs', 'doc', 'storage', 'private', 'uploads', 'backups',
@@ -54,7 +55,7 @@ jobs:
               path = pathlib.PurePosixPath(filename)
               name = path.name.lower()
               parts = {part.lower() for part in path.parts}
-              if filename in synthetic:
+              if filename in approved_data:
                   continue
               forbidden = (
                   bool(parts & forbidden_dirs)

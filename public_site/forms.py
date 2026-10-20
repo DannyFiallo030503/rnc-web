@@ -176,7 +176,7 @@ class ExplorerForm(AccessibleForm, forms.Form):
             "territory": "Territorio",
             "sex": "Sexo",
             "age": "Edad",
-            "site": "Localización",
+            "site": "Grupo de localización ilustrativo",
         }
         for key, values in options.items():
             self.fields[key] = forms.ChoiceField(

@@ -23,6 +23,7 @@ from .services import (
     private_root,
 )
 from .statistics import results, DIMENSIONS, summary
+from .chart_context import describe_query
 
 CHARTS = {
     "bar": "Barras horizontales",
@@ -40,6 +41,13 @@ METRICS = {
     "rate": "Tasa cruda / específica por 100 000",
     "asr": "Tasa ajustada Segi–Doll por 100 000",
 }
+
+
+def _query_response(response):
+    """Keep detailed query URLs out of browser caches and referrer headers."""
+    response["Cache-Control"] = "no-store"
+    response["Referrer-Policy"] = "no-referrer"
+    return response
 
 
 def home(request):
@@ -146,24 +154,20 @@ def explorer(request):
                 base = sum(d["data"][i] for d in datasets)
                 for d in datasets:
                     d["data"][i] = round(d["data"][i] / base * 100, 2) if base else 0
-    filter_labels = {
-        "year": "Período",
-        "territory": "Territorio",
-        "sex": "Sexo",
-        "age": "Edad",
-        "site": "Localización",
-    }
-    filter_note = " · ".join(
-        f"{filter_labels[k]}: {v}" for k, v in params.items() if v and k in options
+    context = describe_query(
+        params, options, DIMENSIONS, CHARTS, METRICS,
+        {"tumors": "Tumores", "persons": "Personas distintas"},
     )
+    filter_note = context["filter_summary"]
     payload = {
         "labels": [r["label"] for r in table],
         "datasets": datasets,
         "type": params["chart"],
         "title": DIMENSIONS[params["dimension"]],
-        "note": f"Datos sintéticos · {delivery.title if delivery else ''} · Versión {delivery.pk if delivery else ''} · {filter_note}",
+        "note": f"Datos sintéticos · {delivery.title if delivery else ''} · Versión {delivery.pk if delivery else ''}",
         "metric": METRICS[params["metric"]],
         "unit": ("Personas distintas" if params["unit"] == "persons" else "Tumores"),
+        **context,
     }
     if params["chart"] == "percent":
         payload["metric"] = "Distribución por sexo (%)"
@@ -188,8 +192,7 @@ def explorer(request):
         if cached:
             response = HttpResponse(cached[0], content_type=cached[1])
             response["Content-Disposition"] = cached[2]
-            response["Cache-Control"] = "no-store"
-            return response
+            return _query_response(response)
         if output_format in {"png", "svg", "pdf"}:
             key = (
                 "render-limit:"
@@ -208,7 +211,7 @@ def explorer(request):
                         status=429,
                     )
                     response["Retry-After"] = "60"
-                    return response
+                    return _query_response(response)
             with GRAPH_LOCK:
                 response = export_result(output_format, table, payload, params)
         else:
@@ -223,24 +226,26 @@ def explorer(request):
                 ),
                 900,
             )
-        return response
-    return render(
-        request,
-        "public_site/explorer.html",
-        {
-            "form": form,
-            "filters": params,
-            "options": options,
-            "dimensions": DIMENSIONS,
-            "charts": CHARTS,
-            "metrics": METRICS,
-            "errors": errors,
-            "table": table if not errors else [],
-            "summary": total,
-            "chart_payload": payload,
-            "delivery": delivery,
-            "filter_note": filter_note,
-        },
+        return _query_response(response)
+    return _query_response(
+        render(
+            request,
+            "public_site/explorer.html",
+            {
+                "form": form,
+                "filters": params,
+                "options": options,
+                "dimensions": DIMENSIONS,
+                "charts": CHARTS,
+                "metrics": METRICS,
+                "errors": errors,
+                "table": table if not errors else [],
+                "summary": total,
+                "chart_payload": payload,
+                "delivery": delivery,
+                "filter_note": filter_note,
+            },
+        )
     )
 
 
@@ -344,24 +349,30 @@ def sample(request):
     from .services import HEADER
 
     active = current_delivery()
-    path = (
-        (private_root() / active.storage_key).with_suffix(".csv")
-        if active
-        else private_root() / "ejemplo_sintetico.csv"
-    )
-    if not path.exists():
-        return HttpResponse(
-            "Ejecute seed_demo para generar el ejemplo local.", status=404
-        )
-    with path.open(encoding="utf-8", newline="") as source:
-        rows = list(csv.DictReader(source))
+    if active:
+        rows = delivery_records(active.storage_key)
+    else:
+        path = private_root() / "ejemplo_sintetico.csv"
+        if not path.exists():
+            return HttpResponse(
+                "Ejecute seed_demo para generar el ejemplo local.", status=404
+            )
+        with path.open(encoding="utf-8", newline="") as source:
+            rows = list(csv.DictReader(source))
+    rows = [{key: row[key] for key in HEADER} for row in rows]
     if len(rows) >= 60000:
         return HttpResponse(
             "El ejemplo ya alcanzó el límite de filas del entorno local.", status=400
         )
     latest = max(r["period"] for r in rows)
+    from analytics.catalogs import id_for
+
     source = next(
-        (r for r in rows if r["period"] == latest and r["age_group"] == "45-49"),
+        (
+            r for r in rows
+            if r["period"] == latest
+            and r["age_group_id"] == id_for("age_group_id", "45-49")
+        ),
         rows[-1],
     )
     additional = {**source, "tumor_id": "SYN-T-" + uuid.uuid4().hex}

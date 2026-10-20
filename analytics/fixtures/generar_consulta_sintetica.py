@@ -2,9 +2,12 @@
 
 import csv
 from pathlib import Path
-
+import sys
 
 HERE = Path(__file__).parent
+sys.path.insert(0, str(HERE.parents[1]))
+from analytics.catalogs import id_for
+
 AGES = [
     "0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39",
     "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74",
@@ -134,10 +137,10 @@ def main():
             persons = tumors - round(tumors * multiple_primary_share)
             records.append({
                 "period": year,
-                "territory": province,
-                "sex": sex,
-                "age_group": age,
-                "site": site,
+                "territory_id": id_for("territory_id", province),
+                "sex_id": id_for("sex_id", sex),
+                "age_group_id": id_for("age_group_id", age),
+                "site_id": id_for("site_id", site),
                 "tumor_count": tumors,
                 "person_count": persons,
                 "population": population,

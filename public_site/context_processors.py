@@ -37,9 +37,21 @@ def navigation(request):
         role_label = "Operador de cargas"
     else:
         role_label = "Consulta pública"
+    session_identity = "anonymous"
+    if request.user.is_authenticated:
+        session_identity = ":".join(
+            [
+                str(request.user.pk),
+                str(int(request.user.is_active)),
+                str(int(has_admin_access(request.user))),
+                str(int(can(request.user, "operate_deliveries"))),
+                str(int(can(request.user, "publish_deliveries"))),
+            ]
+        )
     return {
         "account_display_name": display_name,
         "account_role_label": role_label,
+        "session_identity": session_identity,
         "page_navigation": pages,
         "section_navigation": [],
         "current_page_label": next(
@@ -49,4 +61,5 @@ def navigation(request):
         "has_admin_access": can(request.user, "operate_deliveries"),
         "can_manage_users": has_admin_access(request.user),
         "local_navigation": True,
+        "portal_login_available": True,
     }

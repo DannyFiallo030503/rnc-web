@@ -41,6 +41,22 @@
       if (input.dataset.matches && value !== form.elements.namedItem(input.dataset.matches)?.value) return "Las contraseñas no coinciden. Vuelva a escribir la misma contraseña.";
       return "";
     }
+    const serverErrors = new Map();
+    const currentValue = (input) => input.type === "checkbox"
+      ? String(input.checked)
+      : input.type === "file"
+        ? (input.files[0]?.name || "")
+        : input.value;
+    inputs.forEach((input) => {
+      const error = document.getElementById(input.id + "_error");
+      if (input.getAttribute("aria-invalid") === "true" && error && !error.hidden)
+        serverErrors.set(input, { value: currentValue(input), text: error.textContent.trim(), changed: false });
+    });
+    function validate(input) {
+      const serverError = serverErrors.get(input);
+      if (serverError && currentValue(input) !== serverError.value) serverError.changed = true;
+      show(input, serverError && !serverError.changed ? serverError.text : message(input));
+    }
     function reject(input, event, value) {
       const selected = typeof input.selectionStart === "number" ? input.selectionEnd-input.selectionStart : 0;
       const projected = input.value.length-selected+value.length;
@@ -62,11 +78,11 @@
       });
       input.addEventListener("blur", () => {
         if (input.type !== "password" && input.type !== "file" && input.tagName !== "SELECT") input.value = input.value.normalize("NFC").replace(/\u00a0/g," ").trim();
-        show(input, message(input));
+        validate(input);
       });
-      input.addEventListener("input", () => { if (input.getAttribute("aria-invalid") === "true") show(input, message(input)); });
-      input.addEventListener("change", () => { if(input.type==="file") { const label=input.closest("[data-field]")?.querySelector("[data-file-name]");if(label)label.textContent=input.files[0]?.name || "No se ha seleccionado un archivo";} if (input.type === "file" || input.type === "checkbox" || input.tagName === "SELECT") show(input, message(input)); });
-      input.addEventListener("compositionend", () => show(input, message(input)));
+      input.addEventListener("input", () => validate(input));
+      input.addEventListener("change", () => { if(input.type==="file") { const label=input.closest("[data-field]")?.querySelector("[data-file-name]");if(label)label.textContent=input.files[0]?.name || "No se ha seleccionado un archivo";} validate(input); });
+      input.addEventListener("compositionend", () => validate(input));
     });
     if (form.matches("[data-query-form]")) {
       const get=(name)=>form.elements.namedItem(name);

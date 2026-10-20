@@ -1,15 +1,19 @@
 from django.urls import path, reverse_lazy
 from django.contrib.auth import views as auth_views
 from django.views.generic import TemplateView
-from . import views, portal, accounts
+from . import views, portal, accounts, public_portal
 
 app_name = "public_site"
 urlpatterns = [
-    path("", portal.home, name="home"),
+    path("", public_portal.home, name="home"),
     path("acceso/", views.RoleLoginView.as_view(), name="login"),
-    path("salir/", auth_views.LogoutView.as_view(), name="logout"),
-    path("consulta/", portal.explorer, name="synthetic_explorer"),
-    path("consulta-sintetica/", portal.explorer, name="legacy_explorer"),
+    path(
+        "salir/",
+        auth_views.LogoutView.as_view(next_page=reverse_lazy("public_site:login")),
+        name="logout",
+    ),
+    path("consulta/", public_portal.explorer, name="synthetic_explorer"),
+    path("consulta-sintetica/", public_portal.explorer, name="legacy_explorer"),
     path("administracion/cortes/", portal.administration, name="intake_prototype"),
     path("administracion/cortes/ejemplo/", portal.sample, name="sample"),
     path("administracion/cortes/<uuid:pk>/", portal.delivery, name="delivery"),

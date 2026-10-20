@@ -5,6 +5,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from .metrics import direct_standardized_rate, incidence_rate, relative_frequency
+from .catalogs import resolve
 
 
 FIXTURE = Path(__file__).parent / "fixtures" / "consulta_demo_sintetica.csv"
@@ -15,6 +16,10 @@ def load_rows():
         return [
             {
                 **row,
+                "territory": resolve("territory_id", row["territory_id"])["name"],
+                "sex": resolve("sex_id", row["sex_id"])["name"],
+                "age_group": resolve("age_group_id", row["age_group_id"])["name"],
+                "site": resolve("site_id", row["site_id"])["name"],
                 "period": int(row["period"]),
                 "tumor_count": int(row["tumor_count"]),
                 "person_count": int(row["person_count"]),
