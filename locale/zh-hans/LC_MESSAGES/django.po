@@ -1,0 +1,3294 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: zh-hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba."
+msgstr "古巴国家癌症登记处的发病率统计数据。"
+
+#, fuzzy
+msgid "RNC · Estadísticas de cáncer en Cuba"
+msgstr "RNC · 古巴的癌症统计"
+
+#, fuzzy
+msgid "RNC Cuba · Inicio"
+msgstr "RNC 古巴 · 首页"
+
+#, fuzzy
+msgid "Inicio"
+msgstr "首页"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer"
+msgstr "国家癌症登记处"
+
+#, fuzzy
+msgid "Sesión iniciada"
+msgstr "已登录"
+
+#, fuzzy
+msgid "Administración"
+msgstr "行政管理"
+
+#, fuzzy
+msgid "Usuarios y permisos"
+msgstr "用户和权限"
+
+#, fuzzy
+msgid "Cambiar contraseña"
+msgstr "更改密码"
+
+#, fuzzy
+msgid "Cerrar sesión y cambiar de cuenta"
+msgstr "退出并切换帐户"
+
+#, fuzzy
+msgid "Acceso del personal"
+msgstr "工作人员签到"
+
+#, fuzzy
+msgid "Estadísticas públicas"
+msgstr "公共统计数据"
+
+#, fuzzy
+msgid "Idioma"
+msgstr "语言"
+
+#, fuzzy
+msgid "Aplicar"
+msgstr "申请"
+
+#, fuzzy
+msgid "Menú"
+msgstr "菜单"
+
+#, fuzzy
+msgid "Páginas del sitio"
+msgstr "网站页面"
+
+#, fuzzy
+msgid "Secciones de esta página"
+msgstr "此页面上的部分"
+
+#, fuzzy
+msgid "Secciones sobre el RNC"
+msgstr "有关 RNC 的部分"
+
+#, fuzzy
+msgid "En esta página"
+msgstr "在此页面上"
+
+#, fuzzy
+msgid "Plegar barra lateral"
+msgstr "折叠侧边栏"
+
+#, fuzzy
+msgid "Plegar menú"
+msgstr "折叠菜单"
+
+#, fuzzy
+msgid "Navegación"
+msgstr "导航"
+
+#, fuzzy
+msgid "Páginas"
+msgstr "页数"
+
+#, fuzzy
+msgid "Gestión de usuarios"
+msgstr "用户管理"
+
+#, fuzzy
+msgid "Gestionar usuarios"
+msgstr "管理用户"
+
+#, fuzzy
+msgid "Usuarios y roles"
+msgstr "用户和角色"
+
+#, fuzzy
+msgid "Índice de la página"
+msgstr "页面内容"
+
+#, fuzzy
+msgid "Entorno con datos sintéticos"
+msgstr "合成数据环境"
+
+#, fuzzy
+msgid "Información que acerca"
+msgstr "让信息更贴近大众"
+
+#, fuzzy
+msgid "las estadísticas a las personas."
+msgstr "让统计数据走近人们。"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer de Cuba."
+msgstr "古巴国家癌症登记处。"
+
+#, fuzzy
+msgid "Consulta de incidencia y resultados agregados."
+msgstr "发病情况与汇总结果查询。"
+
+#, fuzzy
+msgid "Navegación del pie de página"
+msgstr "页脚导航"
+
+#, fuzzy
+msgid "Explorar"
+msgstr "探索"
+
+#, fuzzy
+msgid "Ayuda y acceso"
+msgstr "帮助和访问"
+
+#, fuzzy
+msgid "Información y acceso"
+msgstr "信息和访问"
+
+#, fuzzy
+msgid "Cómo leer los resultados"
+msgstr "如何读取结果"
+
+#, fuzzy
+msgid "Seguridad de mi cuenta"
+msgstr "账户安全"
+
+#, fuzzy
+msgid "Subir al comienzo"
+msgstr "返回顶部"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer · Cuba"
+msgstr "国家癌症登记处 · 古巴"
+
+#, fuzzy
+msgid ""
+"Los datos de esta instalación son inventados. No representan estadísticas "
+"oficiales."
+msgstr "本网站上的数据为综合数据，并不代表官方统计数据。"
+
+#, fuzzy
+msgid "El RNC"
+msgstr "关于 RNC"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "统计浏览器"
+
+#, fuzzy
+msgid "Nomencladores"
+msgstr "代码目录"
+
+#, fuzzy
+msgid "Consulta sin conexión"
+msgstr "线下咨询"
+
+#, fuzzy
+msgid "Crear usuario"
+msgstr "创建用户"
+
+#, fuzzy
+msgid "Editar usuario"
+msgstr "编辑用户"
+
+#, fuzzy
+msgid "Detalle del corte"
+msgstr "发布详情"
+
+#, fuzzy
+msgid "Iniciar sesión"
+msgstr "登录"
+
+#, fuzzy
+msgid "Recuperar acceso"
+msgstr "恢复帐户"
+
+#, fuzzy
+msgid "Administrador de soporte"
+msgstr "支持管理员"
+
+#, fuzzy
+msgid "Responsable de publicación"
+msgstr "出版经理"
+
+#, fuzzy
+msgid "Operador de cargas"
+msgstr "数据获取操作员"
+
+#, fuzzy
+msgid "Consulta pública"
+msgstr "公众咨询"
+
+#, fuzzy
+msgid "Información para comprender la incidencia del cáncer"
+msgstr "了解癌症发病率的信息"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer reúne y analiza información sobre los casos "
+"de cáncer en Cuba. Este portal permite consultar estadísticas por año, "
+"territorio, sexo, edad y localización, y preparar tablas, gráficos y "
+"descargas."
+msgstr "国家癌症登记处收集并分析有关古巴癌症病例的信息。该门户可让您按年份、地区、性别、年龄和癌症部位探索统计数据，并准备表格、图表和下载。"
+
+#, fuzzy
+msgid "Consultar estadísticas"
+msgstr "探索统计数据"
+
+#, fuzzy
+msgid "Conocer el RNC"
+msgstr "关于 RNC"
+
+#, fuzzy
+msgid "Qué ofrece este portal"
+msgstr "该门户提供什么"
+
+#, fuzzy
+msgid "Explora los datos disponibles"
+msgstr "探索可用数据"
+
+#, fuzzy
+msgid "Filtra por año y territorio"
+msgstr "按年份和地区过滤"
+
+#, fuzzy
+msgid "Compara sexo, edad y localización"
+msgstr "比较性别、年龄和癌症部位"
+
+#, fuzzy
+msgid "Consulta tablas y visualizaciones"
+msgstr "探索表格和可视化"
+
+#, fuzzy
+msgid "Descarga resultados con su contexto"
+msgstr "下载带有上下文的结果"
+
+#, fuzzy
+msgid "Información sobre el Registro"
+msgstr "关于注册表"
+
+#, fuzzy
+msgid "El Registro"
+msgstr "登记处"
+
+#, fuzzy
+msgid "¿Qué es el RNC?"
+msgstr "什么是RNC？"
+
+#, fuzzy
+msgid ""
+"Es el sistema nacional que recopila, revisa y analiza información de cáncer "
+"con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del"
+" cáncer y sirven de apoyo a la investigación y la planificación sanitaria."
+msgstr "它是收集、审查和分析癌症信息的基于人口的国家系统。其统计数据有助于描述癌症的负担并支持研究和健康规划。"
+
+#, fuzzy
+msgid "Qué hacemos"
+msgstr "我们做什么"
+
+#, fuzzy
+msgid "La plataforma"
+msgstr "平台"
+
+#, fuzzy
+msgid "¿Qué puedes hacer aquí?"
+msgstr "你在这里能做什么？"
+
+#, fuzzy
+msgid ""
+"Construir una consulta, elegir el indicador y la dimensión de análisis, "
+"revisar la tabla que acompaña cada gráfico y exportar los resultados "
+"seleccionados."
+msgstr "构建查询，选择指标和分析维度，查看每个图表附带的表格，然后导出选定的结果。"
+
+#, fuzzy
+msgid "Abrir la consulta estadística"
+msgstr "打开统计浏览器"
+
+#, fuzzy
+msgid "Cómo usar el portal"
+msgstr "如何使用门户网站"
+
+#, fuzzy
+msgid "De la pregunta al resultado"
+msgstr "从问题到结果"
+
+#, fuzzy
+msgid "Define la consulta."
+msgstr "定义您的查询。"
+
+#, fuzzy
+msgid ""
+"Selecciona el período y las dimensiones disponibles, como territorio, sexo, "
+"edad y localización."
+msgstr "选择可用的时期和维度，例如地域、性别、年龄和癌症部位。"
+
+#, fuzzy
+msgid "Elige qué medir."
+msgstr "选择要测量的内容。"
+
+#, fuzzy
+msgid ""
+"Distingue el número de casos, una proporción o una tasa; cada medida "
+"responde a una pregunta diferente."
+msgstr "在案例数、比例或比率之间进行选择；每项措施都回答不同的问题。"
+
+#, fuzzy
+msgid "Interpreta y conserva el contexto."
+msgstr "在上下文中解释结果。"
+
+#, fuzzy
+msgid ""
+"Revisa tabla, unidad, población de referencia, fuente y notas del método "
+"antes de comparar o descargar."
+msgstr "在比较或下载结果之前，请查看表格、单位、参考人群、来源和方法注释。"
+
+#, fuzzy
+msgid ""
+"La disponibilidad de cada indicador depende del corte publicado. Las "
+"estimaciones, los datos observados y los períodos preliminares deben "
+"identificarse por separado."
+msgstr "指标的可用性取决于已发布的版本。估计值、观测数据和初步时期必须单独确定。"
+
+#, fuzzy
+msgid "Ver cómo se calculan los indicadores"
+msgstr "查看指标是如何计算的"
+
+#, fuzzy
+msgid "Conceptos estadísticos básicos"
+msgstr "基本统计概念"
+
+#, fuzzy
+msgid "Casos y frecuencias"
+msgstr "案例和频率"
+
+#, fuzzy
+msgid ""
+"Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa"
+" compara una parte con un total y se expresa como porcentaje. El denominador"
+" y la unidad deben acompañar siempre al resultado."
+msgstr "计数显示有多少案例符合所选过滤器。相对频率将部分与总数进行比较，并以百分比表示。分母和单位应始终伴随结果。"
+
+#, fuzzy
+msgid "Tasas de incidencia"
+msgstr "发病率"
+
+#, fuzzy
+msgid ""
+"Una tasa relaciona los casos nuevos con la población correspondiente al "
+"mismo período y estrato. Las tasas por edad ayudan a describir grupos; el "
+"ajuste por edad facilita comparaciones entre poblaciones con estructuras "
+"etarias diferentes."
+msgstr "比率将新病例与同一时期和阶层的人口联系起来。特定年龄的比率有助于描述群体；年龄调整支持不同年龄结构人群之间的比较。"
+
+#, fuzzy
+msgid ""
+"Las consultas estarán disponibles cuando exista una publicación activa."
+msgstr "发布版本后即可进行查询。"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "环形图"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "诊断年份"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "按性别分组的柱状图"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "按性别堆叠的柱状图"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "横向条形图"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "按性别显示的百分比条形图"
+
+#, fuzzy
+msgid "Circular"
+msgstr "饼图"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "专栏"
+
+#, fuzzy
+msgid "Comparar por"
+msgstr "比较依据"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "散点图：按省份/年龄划分的肿瘤和人群"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "地域分布（群）"
+
+#, fuzzy
+msgid "Edad"
+msgstr "年龄"
+
+#, fuzzy
+msgid "El ajuste por edad necesita todos los grupos de edad."
+msgstr "年龄调整需要所有年龄段。"
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "年龄调整需要所有年龄段和另一个维度。"
+
+#, fuzzy
+msgid ""
+"El corte activo no incluye desglose por municipio; solo contiene provincia "
+"de residencia."
+msgstr "主动发布没有城市细分；它仅包含居住省份。"
+
+#, fuzzy
+msgid ""
+"El corte agregado no permite deduplicar personas distintas al combinar "
+"varios valores. Use Tumores o seleccione un solo valor por filtro."
+msgstr "聚合发布无法跨多个选定值对人员进行重复数据删除。使用肿瘤或每个过滤器仅选择一个值。"
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "此维度不适用于所选图表。"
+
+#, fuzzy
+msgid "Este gráfico requiere la unidad Tumores."
+msgstr "该图表需要肿瘤单位。"
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "该指标不适用于所选图表。"
+
+#, fuzzy
+msgid "Filtra los casos por municipio de residencia. Puede elegir varios."
+msgstr "按居住城市过滤案例。您可以选择多个。"
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "绝对频率"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "相对频率(%)"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "癌症部位组"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "指标"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "按性别进行比较需要性别和另一个维度。"
+
+#, fuzzy
+msgid ""
+"La dispersión necesita una selección que permita contar personas distintas "
+"sin solapamientos."
+msgstr "散点图需要进行选择，可以在不重叠的情况下对不同的人员进行计数。"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "线路"
+
+#, fuzzy
+msgid "Municipio de residencia"
+msgstr "居住地市政府"
+
+#, fuzzy
+msgid ""
+"Para personas distintas, la composición solo se puede comparar por sexo."
+msgstr "对于不同的人来说，成分只能通过性别来比较。"
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "去重人数"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "居住省份"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "按省份或年龄组划分的分数"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "按指标排名"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "性别"
+
+#, fuzzy
+msgid "Sin seleccionar opciones se incluyen todos; puede elegir varias."
+msgstr "如果您不选择任何选项，则包含所有值。您可以选择多个。"
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen solo las provincias presentes en este corte, que "
+"puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia "
+"de la unidad informante; puede elegir varias."
+msgstr "如果没有选择，则仅包含此版本中的省份；它们可能无法覆盖整个古巴。这些是居住省份，而不是报告单位省份。您可以选择多个。"
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen todas las provincias disponibles. Es la provincia "
+"de residencia, no la provincia de la unidad informante; puede elegir varias."
+msgstr "如果不进行选择，则包括所有可用的省份。这是居住的省份，而不是报告单位的省份。您可以选择多个。"
+
+#, fuzzy
+msgid ""
+"Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta"
+" 8 categorías excluyentes."
+msgstr "仅提供与您的选择兼容的图表类型。饼图和圆环图支持最多 8 个互斥类别。"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Segi–Doll 年龄标化率（每10万人）"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "粗率/年龄别率（每10万人）"
+
+#, fuzzy
+msgid "Tipo de gráfico"
+msgstr "图表类型"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "肿瘤"
+
+#, fuzzy
+msgid "Unidad de conteo"
+msgstr "计数单位"
+
+#, fuzzy
+msgid "Cuenta"
+msgstr "账户"
+
+#, fuzzy
+msgid "Consulta sin conexión · RNC Cuba"
+msgstr "线下咨询·RNC古巴"
+
+#, fuzzy
+msgid "Consulta pública local"
+msgstr "当地公众咨询"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación agregada sintética mientras tienes conexión. Después "
+"puedes filtrar, calcular, graficar, paginar e imprimir desde este "
+"dispositivo. La aplicación pública continúa disponible sin el servidor; la "
+"administración requiere conexión."
+msgstr "当您在线时保存合成聚合版本。然后，您可以从此设备进行过滤、计算、图表、分页和打印。公共应用程序在没有服务器的情况下仍然可用；管理需要连接。"
+
+#, fuzzy
+msgid "Publicación local"
+msgstr "本地发布"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "没有保存的包。"
+
+#, fuzzy
+msgid "Instalar consulta pública"
+msgstr "安装公众咨询"
+
+#, fuzzy
+msgid "Guardar / actualizar publicación"
+msgstr "保存/更新版本"
+
+#, fuzzy
+msgid "Eliminar copia local"
+msgstr "删除本地副本"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo acepta publicaciones sintéticas. La copia queda en el "
+"almacenamiento del navegador hasta que la elimines o el navegador la retire."
+" Una copia sin conexión no puede actualizarse ni revocarse mientras el "
+"dispositivo está desconectado."
+msgstr "该原型仅接受合成版本。该副本将保留在浏览器存储中，直到您删除它或浏览器将其删除。设备断开连接时无法更新或撤销离线副本。"
+
+#, fuzzy
+msgid "Filtros y visualización"
+msgstr "过滤器和可视化"
+
+#, fuzzy
+msgid "Guarda una publicación para cargar los filtros disponibles."
+msgstr "保存版本以加载可用的过滤器。"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "在此版本中不可用"
+
+#, fuzzy
+msgid "Localización"
+msgstr "网站"
+
+#, fuzzy
+msgid "Calcular en este dispositivo"
+msgstr "在此设备上计算"
+
+#, fuzzy
+msgid "Comparar con el servidor"
+msgstr "与服务器比较"
+
+#, fuzzy
+msgid "Descargar CSV"
+msgstr "下载 CSV 文件"
+
+#, fuzzy
+msgid "Descargar gráfico PNG"
+msgstr "下载图表 PNG"
+
+#, fuzzy
+msgid "Imprimir / guardar PDF"
+msgstr "打印/保存 PDF"
+
+#, fuzzy
+msgid "Gráfico del resultado calculado localmente"
+msgstr "本地计算结果图表"
+
+#, fuzzy
+msgid "Paginación de resultados"
+msgstr "结果分页"
+
+#, fuzzy
+msgid "Anterior"
+msgstr "上一页"
+
+#, fuzzy
+msgid "Siguiente"
+msgstr "下一步"
+
+#, fuzzy
+msgid "Barras"
+msgstr "条形图"
+
+#, fuzzy
+msgid "Actualizar resultados"
+msgstr "更新结果"
+
+#, fuzzy
+msgid ""
+"Actualmente no hay un corte publicado. Las consultas y descargas estarán "
+"disponibles cuando se publique una nueva versión."
+msgstr "目前尚未发布任何版本。新版本发布后即可提供查询和下载。"
+
+#, fuzzy
+msgid ""
+"Cada barra suma 100 % y muestra la distribución por sexo dentro de esa "
+"categoría."
+msgstr "每根柱形的总和均为100%，并显示该类别中按性别划分的构成。"
+
+#, fuzzy
+msgid "Cambiar filtros"
+msgstr "更换过滤器"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "类别"
+
+#, fuzzy
+msgid ""
+"Categorías ordenadas de mayor a menor según el indicador seleccionado. Las "
+"posiciones también aparecen en las exportaciones."
+msgstr "类别按所选度量从最高到最低排序。排名也包含在出口中。"
+
+#, fuzzy
+msgid "Eje de valores:"
+msgstr "值轴："
+
+#, fuzzy
+msgid ""
+"El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los "
+"conteos exactos de tumores y personas distintas."
+msgstr "气泡大小对具有相同频率的类别进行分组；轴保留准确的肿瘤和不同人计数。"
+
+#, fuzzy
+msgid "Filtros aplicados:"
+msgstr "应用过滤器："
+
+#, fuzzy
+msgid "Filtros de consulta"
+msgstr "查询过滤器"
+
+#, fuzzy
+msgid "Frecuencias y tasas calculadas para cada categoría de la comparación."
+msgstr "为每个比较类别计算的频率和比率。"
+
+#, fuzzy
+msgid "Frecuencias, población denominadora y tasas por categoría"
+msgstr "频率、分母人口和按类别划分的比率"
+
+#, fuzzy
+msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
+msgstr "查询图表；值可在下表中找到"
+
+#, fuzzy
+msgid "Hay campos por corregir en el panel de filtros."
+msgstr "过滤器面板中的某些字段需要更正。"
+
+#, fuzzy
+msgid "Imagen PNG"
+msgstr "PNG图像"
+
+#, fuzzy
+msgid "Informe PDF"
+msgstr "PDF报告"
+
+#, fuzzy
+msgid ""
+"La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La "
+"tasa cruda es frecuencia / población denominadora × 100 000; al comparar por"
+" edad corresponde a una tasa específica por edad. Al seleccionar varios años"
+" se acumulan las poblaciones anuales seleccionadas, por lo que la tasa "
+"resume el período y no corresponde a un solo año."
+msgstr ""
+"相对频率和比率使用上面选择的单位。粗率是频率/分母人口×100,000；对于年龄比较，它是特定年龄的比率。选择多个年份时，会将其年度人口相加，因此该比率总结的是该时期而不是单个年份。"
+
+#, fuzzy
+msgid ""
+"La separación vertical de los puntos solo facilita distinguirlos; no "
+"representa otro indicador."
+msgstr "点之间的垂直间距仅用于可读性；它并不代表另一种措施。"
+
+#, fuzzy
+msgid ""
+"La tasa ajustada aplica la población estándar Segi–Doll al conjunto de "
+"edades disponible. Si falta cobertura en alguno de los grupos requeridos, se"
+" muestra “—”. La fórmula, los denominadores y la presentación de los métodos"
+" siguen pendientes de cotejo con el RNC."
+msgstr ""
+"年龄调整率将 Segi-Doll 标准人口应用于可用年龄组。如果任何所需组的覆盖范围缺失，则会显示“—”。公式、分母和方法的表述仍然需要 RNC "
+"的审查。"
+
+#, fuzzy
+msgid ""
+"Las personas distintas no se calculan cuando se combinan varios valores; una"
+" persona puede aparecer en más de un período, territorio, grupo de edad o "
+"localización."
+msgstr "多个值组合时不计算不同的人；一个人可能出现在多个时期、地区、年龄组或地点。"
+
+#, fuzzy
+msgid "No hay resultados"
+msgstr "没有结果"
+
+#, fuzzy
+msgid "No hay una publicación activa o la selección no contiene registros."
+msgstr "没有活动版本，或者选择不包含任何记录。"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "分母人口"
+
+#, fuzzy
+msgid "Posición"
+msgstr "排名"
+
+#, fuzzy
+msgid ""
+"Puede combinar valores de provincia y municipio de residencia cuando el "
+"corte los incluya. Si un filtro está vacío, se incluyen todos sus valores "
+"disponibles. Los grupos tumorales corresponden a esta publicación; no forman"
+" un catálogo completo ni representan códigos TOPO o ICD‑O."
+msgstr ""
+"当发布中包含居住值的省和市时，您可以将它们合并起来。将过滤器留空包括其所有可用值。肿瘤组是该版本特有的；它们不是完整的目录，也不代表 TOPO 或 "
+"ICD-O 代码。"
+
+#, fuzzy
+msgid "Restablecer"
+msgstr "重置"
+
+#, fuzzy
+msgid "Resultados"
+msgstr "结果"
+
+#, fuzzy
+msgid "Revise los filtros"
+msgstr "检查过滤器"
+
+#, fuzzy
+msgid "Tabla CSV"
+msgstr "CSV表"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll"
+msgstr "Segi–Doll 年龄标化率"
+
+#, fuzzy
+msgid "Tasa cruda/específica"
+msgstr "粗率/年龄别率"
+
+#, fuzzy
+msgid "Vector SVG"
+msgstr "SVG 矢量图像"
+
+#, fuzzy
+msgid "Visualización"
+msgstr "可视化"
+
+#, fuzzy
+msgid "por 100 000"
+msgstr "每 100,000 人"
+
+#, fuzzy
+msgid "Excel"
+msgstr "Excel"
+
+#, fuzzy
+msgid ""
+"Una persona puede aparecer en distintas localizaciones; esos conteos pueden "
+"solaparse y no se suman para obtener personas únicas."
+msgstr "一个人可能出现在多个站点；这些计数可能会重叠，不应相加来获取唯一人数。"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "单位"
+
+#, fuzzy
+msgid "Acceso restringido"
+msgstr "访问受限"
+
+#, fuzzy
+msgid "Bienvenido de nuevo"
+msgstr "欢迎回来"
+
+#, fuzzy
+msgid "Entre con su cuenta para acceder a sus herramientas de trabajo."
+msgstr "登录以访问您的工作工具。"
+
+#, fuzzy
+msgid "Incluir todos"
+msgstr "选择全部"
+
+#, fuzzy
+msgid "Incluir todos los valores de"
+msgstr "包括所有值"
+
+#, fuzzy
+msgid "La dirección no existe o el recurso ya no está disponible."
+msgstr "该地址不存在或资源不再可用。"
+
+#, fuzzy
+msgid ""
+"Las cuentas son creadas por el equipo administrador. No hay registro "
+"público."
+msgstr "帐户由管理团队创建。不提供公共注册。"
+
+#, fuzzy
+msgid "No encontramos esa página"
+msgstr "我们找不到该页面"
+
+#, fuzzy
+msgid "No hay acciones registradas."
+msgstr "没有记录任何操作。"
+
+#, fuzzy
+msgid "No se ha seleccionado un archivo"
+msgstr "未选择文件"
+
+#, fuzzy
+msgid "Paginación"
+msgstr "分页"
+
+#, fuzzy
+msgid "Primera"
+msgstr "第一"
+
+#, fuzzy
+msgid "Página"
+msgstr "页面"
+
+#, fuzzy
+msgid "Revise los campos indicados"
+msgstr "查看指定字段"
+
+#, fuzzy
+msgid "Seleccionar CSV"
+msgstr "选择 CSV"
+
+#, fuzzy
+msgid ""
+"Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar "
+"consultando las estadísticas públicas."
+msgstr "您的帐户无权访问此部分。您可以继续浏览公共统计数据。"
+
+#, fuzzy
+msgid "Volver al inicio"
+msgstr "回到家"
+
+#, fuzzy
+msgid "Vuelva a seleccionar el CSV para reenviar el formulario."
+msgstr "再次选择 CSV 文件以重新提交表单。"
+
+#, fuzzy
+msgid "de"
+msgstr "的"
+
+#, fuzzy
+msgid "seleccionados"
+msgstr "已选择"
+
+#, fuzzy
+msgid "¿Olvidó su contraseña?"
+msgstr "忘记密码？"
+
+#, fuzzy
+msgid "Última"
+msgstr "最后"
+
+#, fuzzy
+msgid "Nomencladores · RNC Cuba"
+msgstr "癌症代码目录·RNC 古巴"
+
+#, fuzzy
+msgid "Consulta de clasificadores"
+msgstr "分类查找"
+
+#, fuzzy
+msgid "Nomencladores de cáncer"
+msgstr "癌症代码目录"
+
+#, fuzzy
+msgid ""
+"Busque un código o término y vea a qué sistema, edición y eje pertenece."
+msgstr "搜索代码或术语以查看其系统、版本和轴。"
+
+#, fuzzy
+msgid "Referencia inicial de este proyecto, pendiente de validación del RNC:"
+msgstr "本项目的初步参考资料，尚待古巴国家癌症登记处确认："
+
+#, fuzzy
+msgid ""
+"ICD-O-3 para topografía y morfología; ICCC-3 para grupos diagnósticos "
+"infantiles. Se conserva el sistema y la edición con que llega cada código; "
+"no se traducen ni mezclan códigos entre ediciones sin una equivalencia "
+"validada."
+msgstr ""
+"ICD-O-3 用于部位和形态学分类；ICCC-3 用于儿童肿瘤诊断组。每个代码均保留其来源系统和版本；未经验证，不会翻译代码或跨版本混用代码。"
+
+#, fuzzy
+msgid "No se pudo cargar el catálogo"
+msgstr "无法加载目录"
+
+#, fuzzy
+msgid "Catálogo oficial aún no disponible"
+msgstr "尚无授权目录"
+
+#, fuzzy
+msgid ""
+"Esta instalación no tiene cargado un diccionario autorizado. Los grupos de "
+"localización de la demostración son sintéticos y no equivalen a códigos "
+"TOPO."
+msgstr "本部署尚未载入经授权的字典。演示用的部位组为合成数据，不等同于 TOPO 编码。"
+
+#, fuzzy
+msgid "Fuentes para la referencia inicial:"
+msgstr "初始参考来源："
+
+#, fuzzy
+msgid "OMS · ICD‑O‑3"
+msgstr "世界卫生组织·ICD-O-3"
+
+#, fuzzy
+msgid "IARC · ICCC‑3"
+msgstr "国际癌症研究机构·ICCC-3"
+
+#, fuzzy
+msgid ""
+"es una edición internacional posterior, no la referencia inicial elegida "
+"para este prototipo."
+msgstr "属于较晚发布的国际版本，并非本原型选用的初始参考版本。"
+
+#, fuzzy
+msgid "Versión del catálogo:"
+msgstr "目录版本："
+
+#, fuzzy
+msgid "Fuente:"
+msgstr "来源："
+
+#, fuzzy
+msgid "Código o texto"
+msgstr "代码或文字"
+
+#, fuzzy
+msgid "Buscar códigos, nombres y descripciones"
+msgstr "搜索代码、名称和描述"
+
+#, fuzzy
+msgid "Sistema"
+msgstr "系统"
+
+#, fuzzy
+msgid "Edición"
+msgstr "版本"
+
+#, fuzzy
+msgid "Todas"
+msgstr "全部"
+
+#, fuzzy
+msgid "Eje"
+msgstr "轴"
+
+#, fuzzy
+msgid "Todos"
+msgstr "全部"
+
+#, fuzzy
+msgid "Buscar"
+msgstr "搜索"
+
+#, fuzzy
+msgid ""
+"conceptos encontrados. La aplicación no deduce equivalencias entre sistemas "
+"o ediciones. Solo se muestran conceptos marcados como autorizados y "
+"relaciones declaradas por una fuente o marcadas en el catálogo como "
+"validadas por el RNC; los borradores y vínculos pendientes no aparecen."
+msgstr ""
+"匹配到的概念。系统不会推断不同编码系统或版本之间的等价关系。只显示已标记为授权的概念，以及由来源声明或在目录中标记为经RNC验证的关系；不会显示草稿和待确认的关联。"
+
+#, fuzzy
+msgid "identificadores asociados"
+msgstr "相关标识符"
+
+#, fuzzy
+msgid "Código"
+msgstr "代码"
+
+#, fuzzy
+msgid "Sistema · edición · eje"
+msgstr "系统 · 版本 · 轴"
+
+#, fuzzy
+msgid "Nombre y descripción"
+msgstr "名称和描述"
+
+#, fuzzy
+msgid "Estado"
+msgstr "状态"
+
+#, fuzzy
+msgid "Relación"
+msgstr "关系"
+
+#, fuzzy
+msgid "Fuente y licencia"
+msgstr "来源和许可"
+
+#, fuzzy
+msgid "Ver descripción"
+msgstr "查看说明"
+
+#, fuzzy
+msgid "Vigente"
+msgstr "当前"
+
+#, fuzzy
+msgid "Histórico/deprecado"
+msgstr "历史/已弃用"
+
+#, fuzzy
+msgid "Opcional"
+msgstr "可选"
+
+#, fuzzy
+msgid "Fuente del código"
+msgstr "代码来源"
+
+#, fuzzy
+msgid "Fuente del concepto"
+msgstr "概念来源"
+
+#, fuzzy
+msgid "Licencia"
+msgstr "许可证"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "出版物"
+
+#, fuzzy
+msgid "Marcado como histórico"
+msgstr "标记为历史"
+
+#, fuzzy
+msgid "Marcado como autorizado"
+msgstr "标记为已授权"
+
+#, fuzzy
+msgid "No hay conceptos que coincidan con los filtros."
+msgstr "没有符合筛选条件的概念。"
+
+#, fuzzy
+msgid "Navegación lateral"
+msgstr "侧边导航"
+
+#, fuzzy
+msgid "Navegación principal"
+msgstr "主导航"
+
+#, fuzzy
+msgid "Ruta de navegación"
+msgstr "面包屑导航"
+
+#, fuzzy
+msgid "Saltar al contenido"
+msgstr "跳至内容"
+
+#, fuzzy
+msgid "0 cortes"
+msgstr "0 次发布"
+
+#, fuzzy
+msgid "Acceso individual"
+msgstr "个人访问"
+
+#, fuzzy
+msgid "Acciones"
+msgstr "行动"
+
+#, fuzzy
+msgid "Activa"
+msgstr "活跃"
+
+#, fuzzy
+msgid "Actualización"
+msgstr "已更新"
+
+#, fuzzy
+msgid "Administración de cortes · RNC Cuba"
+msgstr "发布管理·RNC 古巴"
+
+#, fuzzy
+msgid "Administración · Identidad"
+msgstr "行政·会计"
+
+#, fuzzy
+msgid "Apellidos"
+msgstr "姓氏"
+
+#, fuzzy
+msgid "Archivo CSV sintético"
+msgstr "合成 CSV 文件"
+
+#, fuzzy
+msgid ""
+"Asigne el rol y el correo. Sin contraseña temporal, una cuenta nueva recibe "
+"una invitación."
+msgstr "分配角色和电子邮件地址。除非您设置临时密码，否则新帐户会收到邀请。"
+
+#, fuzzy
+msgid "Buscar usuario"
+msgstr "搜索用户"
+
+#, fuzzy
+msgid "CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."
+msgstr "UTF-8 CSV，最多 12 MB 和 60,000 行。仅综合数据。"
+
+#, fuzzy
+msgid "Confirme su identidad para guardar los cambios."
+msgstr "确认您的身份以保存更改。"
+
+#, fuzzy
+msgid "Confirmo que el archivo contiene exclusivamente datos sintéticos"
+msgstr "我确认该文件仅包含合成数据"
+
+#, fuzzy
+msgid ""
+"Consulta el estado de incorporación y publicación de los cortes de "
+"incidencia."
+msgstr "审查事件发布的摄取和发布状态。"
+
+#, fuzzy
+msgid "Contraseña temporal"
+msgstr "临时密码"
+
+#, fuzzy
+msgid "Correo"
+msgstr "电子邮件"
+
+#, fuzzy
+msgid "Corte"
+msgstr "发布"
+
+#, fuzzy
+msgid "Cortes disponibles en el portal"
+msgstr "门户上提供的版本"
+
+#, fuzzy
+msgid "Cortes en proceso"
+msgstr "发布正在进行中"
+
+#, fuzzy
+msgid "Cortes estadísticos"
+msgstr "统计发布"
+
+#, fuzzy
+msgid "Cortes estadísticos disponibles para gestión."
+msgstr "可供管理的统计发布。"
+
+#, fuzzy
+msgid "Cortes no visibles al público"
+msgstr "公众不可见的发布"
+
+#, fuzzy
+msgid "Cortes recientes"
+msgstr "最新版本"
+
+#, fuzzy
+msgid "Crear cuenta"
+msgstr "创建帐户"
+
+#, fuzzy
+msgid "Crear usuario +"
+msgstr "创建用户+"
+
+#, fuzzy
+msgid "Cuenta activa"
+msgstr "账户活跃"
+
+#, fuzzy
+msgid "Cuenta guardada."
+msgstr "帐户已保存。"
+
+#, fuzzy
+msgid ""
+"Cuenta guardada; no se pudo encolar el correo. Puede reintentar la "
+"invitación."
+msgstr "帐户已保存；电子邮件无法排队。您可以重试邀请。"
+
+#, fuzzy
+msgid "Debe permanecer al menos una cuenta de soporte activa."
+msgstr "必须保留至少一个有效的支持帐户。"
+
+#, fuzzy
+msgid "Desactivada"
+msgstr "残疾人"
+
+#, fuzzy
+msgid "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+msgstr "禁用帐户以删除访问权限，而不删除其历史记录。"
+
+#, fuzzy
+msgid "Disponibilidad de estadísticas aprobadas"
+msgstr "经批准的统计数据的可用性"
+
+#, fuzzy
+msgid "Editar"
+msgstr "编辑"
+
+#, fuzzy
+msgid "Editar cuenta"
+msgstr "编辑帐户"
+
+#, fuzzy
+msgid "El archivo supera el límite de 12 MB."
+msgstr "文件超出 12 MB 限制。"
+
+#, fuzzy
+msgid ""
+"Elija su nueva contraseña. No necesita indicar la anterior para recuperar el"
+" acceso."
+msgstr "选择您的新密码。您无需提供旧密码即可恢复访问。"
+
+#, fuzzy
+msgid "En cola"
+msgstr "排队"
+
+#, fuzzy
+msgid "En revisión"
+msgstr "审核中"
+
+#, fuzzy
+msgid ""
+"Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."
+msgstr "输入 10 到 250 个字符。该决定将记录在审核历史中。"
+
+#, fuzzy
+msgid "Ese correo ya está asignado a otra cuenta."
+msgstr "该电子邮件地址已分配给另一个帐户。"
+
+#, fuzzy
+msgid "Ese nombre de usuario ya está en uso. Elija otro."
+msgstr "该用户名已被使用。选择另一个。"
+
+#, fuzzy
+msgid "Establecer contraseña"
+msgstr "设置密码"
+
+#, fuzzy
+msgid "Establecer contraseña · RNC"
+msgstr "设置密码·RNC"
+
+#, fuzzy
+msgid "Falló el envío"
+msgstr "发送失败"
+
+#, fuzzy
+msgid "Gestionar cuentas del portal"
+msgstr "管理门户帐户"
+
+#, fuzzy
+msgid "Gestionar entregas sintéticas"
+msgstr "管理合成版本"
+
+#, fuzzy
+msgid "Gestione las cuentas del personal autorizado y sus responsabilidades."
+msgstr "管理授权员工账户及其职责。"
+
+#, fuzzy
+msgid "Grupo de localización ilustrativo"
+msgstr "示例癌症部位组"
+
+#, fuzzy
+msgid "Guardar contraseña"
+msgstr "保存密码"
+
+#, fuzzy
+msgid "Guardar cuenta"
+msgstr "保存帐户"
+
+#, fuzzy
+msgid "Incorporación"
+msgstr "食入"
+
+#, fuzzy
+msgid "Incorporación y publicación"
+msgstr "摄取和发布"
+
+#, fuzzy
+msgid ""
+"Indique el correo registrado. Si la cuenta está habilitada, recibirá "
+"instrucciones."
+msgstr "输入注册的电子邮件地址。如果帐户处于活动状态，则会发送说明。"
+
+#, fuzzy
+msgid "Introduzca su contraseña actual y elija una nueva."
+msgstr "输入您当前的密码并选择一个新密码。"
+
+#, fuzzy
+msgid ""
+"Invitación en cola de envío. El servicio de correo procesará la solicitud."
+msgstr "邀请已排队。邮件服务将处理该请求。"
+
+#, fuzzy
+msgid ""
+"La composición requiere conteos o porcentajes de categorías excluyentes; "
+"para personas, compare por sexo."
+msgstr "成分图需要互斥类别的计数或百分比；统计人数时，按性别进行比较。"
+
+#, fuzzy
+msgid ""
+"Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni "
+"porcentajes."
+msgstr "堆叠条形需要绝对频率；不得添加比率和百分比。"
+
+#, fuzzy
+msgid ""
+"Las invitaciones permiten elegir una contraseña privada. Una contraseña "
+"temporal obliga a cambiarla antes de utilizar el panel. Desactive las "
+"cuentas que ya no deban acceder."
+msgstr "邀请让用户选择私人密码。使用仪表板之前必须更改临时密码。禁用不应再具有访问权限的帐户。"
+
+#, fuzzy
+msgid "Las líneas requieren comparar por período."
+msgstr "折线图需要按时期进行比较。"
+
+#, fuzzy
+msgid ""
+"Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 "
+"caracteres."
+msgstr "使用非重音字母、数字、句点、连字符或下划线。至少 3 个字符。"
+
+#, fuzzy
+msgid "Motivo de la decisión"
+msgstr "决定理由"
+
+#, fuzzy
+msgid "No hay cortes registrados."
+msgstr "没有发布记录。"
+
+#, fuzzy
+msgid "No puede desactivar ni retirar su propio rol de soporte."
+msgstr "您无法禁用自己的帐户或删除您的支持角色。"
+
+#, fuzzy
+msgid "No se encontraron cuentas."
+msgstr "未找到帐户。"
+
+#, fuzzy
+msgid "No se pudo confirmar la operación con esa contraseña."
+msgstr "无法使用该密码确认操作。"
+
+#, fuzzy
+msgid "Nombre"
+msgstr "名称"
+
+#, fuzzy
+msgid "Nombre del corte"
+msgstr "发布名称"
+
+#, fuzzy
+msgid "Nombre, usuario o correo"
+msgstr "姓名、用户名或电子邮件"
+
+#, fuzzy
+msgid ""
+"Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con "
+"ella, se exigirá cambiarla al entrar."
+msgstr "可选。如果没有它，将发送选择密码的邀请。使用它，用户必须在登录时更改密码。"
+
+#, fuzzy
+msgid "Operación"
+msgstr "行动"
+
+#, fuzzy
+msgid "Operador:"
+msgstr "运营商："
+
+#, fuzzy
+msgid "Período"
+msgstr "期间"
+
+#, fuzzy
+msgid "Procesado"
+msgstr "已加工"
+
+#, fuzzy
+msgid "Procesando"
+msgstr "加工"
+
+#, fuzzy
+msgid "Proceso de gestión"
+msgstr "管理流程"
+
+#, fuzzy
+msgid "Publicaciones"
+msgstr "刊物"
+
+#, fuzzy
+msgid "Publicado"
+msgstr "已发表"
+
+#, fuzzy
+msgid "Publicados"
+msgstr "已发表"
+
+#, fuzzy
+msgid "Publicar"
+msgstr "发布"
+
+#, fuzzy
+msgid "Publicar y revocar cortes sintéticos"
+msgstr "发布和撤回合成版本"
+
+#, fuzzy
+msgid "Rechazado"
+msgstr "被拒绝"
+
+#, fuzzy
+msgid "Registro del corte y procedencia"
+msgstr "发布记录和出处"
+
+#, fuzzy
+msgid "Responsabilidades"
+msgstr "职责"
+
+#, fuzzy
+msgid "Responsable"
+msgstr "业主"
+
+#, fuzzy
+msgid "Responsable de publicación:"
+msgstr "出版经理："
+
+#, fuzzy
+msgid "Resumen de cortes"
+msgstr "发布摘要"
+
+#, fuzzy
+msgid "Retirados"
+msgstr "撤回"
+
+#, fuzzy
+msgid "Revisión técnica"
+msgstr "技术审查"
+
+#, fuzzy
+msgid "Revocado"
+msgstr "撤回"
+
+#, fuzzy
+msgid "Revocar"
+msgstr "撤回"
+
+#, fuzzy
+msgid "Rol"
+msgstr "角色"
+
+#, fuzzy
+msgid "Se admiten tildes, espacios, apóstrofos y guiones."
+msgstr "允许使用重音符号、空格、撇号和连字符。"
+
+#, fuzzy
+msgid ""
+"Se ha solicitado establecer una contraseña para su cuenta RNC.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"El enlace vence en una hora y solo puede utilizarse una vez. Si no reconoce esta solicitud, contacte con soporte."
+msgstr ""
+"您的 RNC 帐户已请求输入密码。\n"
+"\n"
+"%(link)s\n"
+"\n"
+"此链接将在一小时内过期，且只能使用一次。如果您没有请求这样做，请联系支持人员。"
+
+#, fuzzy
+msgid "Se utilizará para invitaciones y recuperación de acceso."
+msgstr "用于邀请和帐户恢复。"
+
+#, fuzzy
+msgid "Seleccione un archivo con extensión .csv."
+msgstr "选择 .csv 文件。"
+
+#, fuzzy
+msgid "Solicitar enlace"
+msgstr "请求链接"
+
+#, fuzzy
+msgid "Solo soporte puede modificar cuentas de soporte."
+msgstr "只有支持管理员才能更改支持帐户。"
+
+#, fuzzy
+msgid "Su contraseña de soporte"
+msgstr "您的支持密码"
+
+#, fuzzy
+msgid "Tabla de resultados con desplazamiento horizontal"
+msgstr "水平滚动的结果表"
+
+#, fuzzy
+msgid "Territorio"
+msgstr "领土"
+
+#, fuzzy
+msgid "Un nombre que identifique el período y la entrega."
+msgstr "标识时期和版本的名称。"
+
+#, fuzzy
+msgid "Use como máximo 128 caracteres."
+msgstr "使用不超过 128 个字符。"
+
+#, fuzzy
+msgid "Usuario"
+msgstr "用户名"
+
+#, fuzzy
+msgid "Validado"
+msgstr "已验证"
+
+#, fuzzy
+msgid "Ver portal público"
+msgstr "查看公共门户"
+
+#, fuzzy
+msgid "Verificación de estructura e integridad"
+msgstr "结构和完整性检查"
+
+#, fuzzy
+msgid "además, publica y revoca cortes."
+msgstr "还发布和撤回版本。"
+
+#, fuzzy
+msgid "gestiona cuentas y todas las funciones."
+msgstr "管理帐户和所有功能。"
+
+#, fuzzy
+msgid "registra y revisa cargas."
+msgstr "记录和评论上传。"
+
+#, fuzzy
+msgid "Último correo"
+msgstr "最后一封电子邮件"
+
+#, fuzzy
+msgid "Administración · Corte"
+msgstr "管理·发布"
+
+#, fuzzy
+msgid "Cancelar"
+msgstr "取消"
+
+#, fuzzy
+msgid "Confirmar publicación"
+msgstr "确认发布"
+
+#, fuzzy
+msgid "Continuar"
+msgstr "继续"
+
+#, fuzzy
+msgid "Contraseña actualizada"
+msgstr "密码已更新"
+
+#, fuzzy
+msgid "Contraseña guardada"
+msgstr "密码已保存"
+
+#, fuzzy
+msgid "Cuenta y seguridad"
+msgstr "账户与安全"
+
+#, fuzzy
+msgid "Datos sintéticos validados"
+msgstr "综合数据经过验证"
+
+#, fuzzy
+msgid ""
+"El archivo no superó la validación como sintético y no se conservó en el "
+"almacenamiento de la aplicación."
+msgstr "该文件未通过合成数据验证，并且未保留在应用程序存储中。"
+
+#, fuzzy
+msgid ""
+"El archivo sintético validado permanece en almacenamiento privado. Este "
+"contrato no habilita cargas clínicas del RNC."
+msgstr "经过验证的合成文件保留在私有存储中。该合同不允许从 RNC 上传临床数据。"
+
+#, fuzzy
+msgid ""
+"El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo."
+msgstr "该链接无效、已被使用或已过期。请求一份新的。"
+
+#, fuzzy
+msgid ""
+"Esta entrega rechazada pertenece a una versión anterior del prototipo; el "
+"archivo asociado quedó en almacenamiento privado. Las nuevas cargas "
+"rechazadas ya no se conservan."
+msgstr "此被拒绝的提交来自早期的原型版本；它的文件仍保留在私人存储中。新拒绝的上传将不再保留。"
+
+#, fuzzy
+msgid ""
+"Esta publicación sustituirá el conjunto completo anterior. Revise los "
+"períodos y la cobertura; no se sumarán ambas entregas."
+msgstr "该出版物将取代之前的整个数据集。审查期限和覆盖范围；这两个版本不会添加在一起。"
+
+#, fuzzy
+msgid "Filas incorporadas"
+msgstr "接受的行数"
+
+#, fuzzy
+msgid "Filas no incorporadas"
+msgstr "拒绝的行数"
+
+#, fuzzy
+msgid "Filas recibidas"
+msgstr "收到的行数"
+
+#, fuzzy
+msgid "Historial del corte"
+msgstr "发布历史"
+
+#, fuzzy
+msgid "Informe técnico"
+msgstr "技术报告"
+
+#, fuzzy
+msgid "Integridad SHA-256"
+msgstr "SHA-256 完整性"
+
+#, fuzzy
+msgid ""
+"La revocación retirará inmediatamente el corte del inicio, las consultas y "
+"las nuevas exportaciones. Los archivos ya descargados no pueden retirarse."
+msgstr "撤回会立即从主页、查询和新导出中删除该版本。已下载的文件无法撤回。"
+
+#, fuzzy
+msgid "Los campos con"
+msgstr "标记为的字段"
+
+#, fuzzy
+msgid "No determinado"
+msgstr "未定"
+
+#, fuzzy
+msgid "No hay archivo fuente conservado para esta entrega."
+msgstr "此版本没有保留源文件。"
+
+#, fuzzy
+msgid "No validado como sintético"
+msgstr "未经验证为合成"
+
+#, fuzzy
+msgid "Períodos"
+msgstr "经期"
+
+#, fuzzy
+msgid "Publicar corte"
+msgstr "发布发布"
+
+#, fuzzy
+msgid "Recepción"
+msgstr "已收到"
+
+#, fuzzy
+msgid "Reenviar enlace para establecer contraseña"
+msgstr "重新发送密码设置链接"
+
+#, fuzzy
+msgid "Revocar corte"
+msgstr "撤回发布"
+
+#, fuzzy
+msgid "Revocar publicación"
+msgstr "撤回发表"
+
+#, fuzzy
+msgid ""
+"Se comprobaron estructura, categorías, claves de tumor únicas, consistencia "
+"de personas y denominadores, y cobertura de edad y sexo. La validación es "
+"atómica: si falla una fila, la entrega no se incorpora parcialmente."
+msgstr "检查了结构、类别、独特的肿瘤键、人和分母的一致性以及年龄和性别覆盖范围。验证是原子的：如果任何行失败，则不会摄取任何版本。"
+
+#, fuzzy
+msgid ""
+"Si existe una cuenta activa con ese correo, recibirá un enlace para "
+"establecer su contraseña. Revise también la carpeta de correo no deseado."
+msgstr "如果该电子邮件地址存在有效帐户，则会发送密码设置链接。还要检查您的垃圾邮件文件夹。"
+
+#, fuzzy
+msgid "Solicitud recibida"
+msgstr "收到请求"
+
+#, fuzzy
+msgid "Soporte:"
+msgstr "支持："
+
+#, fuzzy
+msgid "Su contraseña se guardó correctamente."
+msgstr "您的密码已成功保存。"
+
+#, fuzzy
+msgid "Territorios"
+msgstr "领土"
+
+#, fuzzy
+msgid "Tumores aceptados"
+msgstr "接受的肿瘤"
+
+#, fuzzy
+msgid "Ya puede iniciar sesión con su nueva contraseña."
+msgstr "您现在可以使用新密码登录。"
+
+#, fuzzy
+msgid "son obligatorios."
+msgstr "是必需的。"
+
+#, fuzzy
+msgid "← Volver a administración"
+msgstr "← 返回管理"
+
+#, fuzzy
+msgid "Acción"
+msgstr "行动"
+
+#, fuzzy
+msgid "Actividad reciente"
+msgstr "最近的活动"
+
+#, fuzzy
+msgid ""
+"Contrato sintético de demostración · hasta 12 MB y 60 000 filas. Cada "
+"entrega representa un conjunto completo, no un incremento. El ejemplo "
+"descargable añade un tumor sintético al corte activo para recorrer la "
+"actualización completa."
+msgstr ""
+"综合演示数据合约 · 高达 12 MB 和 60,000 "
+"行。每次交付代表一个完整的数据集，而不是增量。可下载的示例将一个合成肿瘤添加到活动版本中以演示完整的更新。"
+
+#, fuzzy
+msgid "Descargar CSV de actualización"
+msgstr "下载更新 CSV"
+
+#, fuzzy
+msgid "Entregas registradas"
+msgstr "记录的交货"
+
+#, fuzzy
+msgid "Entregas y cortes"
+msgstr "交付和发布"
+
+#, fuzzy
+msgid "Gestión de información"
+msgstr "信息管理"
+
+#, fuzzy
+msgid "Incorporar archivo"
+msgstr "添加文件"
+
+#, fuzzy
+msgid ""
+"Incorpore entregas, revise sus resultados técnicos y gestione la "
+"publicación."
+msgstr "添加交付、审查其技术结果并管理发布。"
+
+#, fuzzy
+msgid "No hay entregas registradas."
+msgstr "没有交付记录。"
+
+#, fuzzy
+msgid "Publicación activa"
+msgstr "活跃发表"
+
+#, fuzzy
+msgid "Recibido"
+msgstr "已收到"
+
+#, fuzzy
+msgid "Revisar corte →"
+msgstr "审查发布 →"
+
+#, fuzzy
+msgid "Sin corte publicado"
+msgstr "未发布任何版本"
+
+#, fuzzy
+msgid "Subir y validar CSV"
+msgstr "上传并验证 CSV"
+
+#, fuzzy
+msgid "El Registro Nacional de Cáncer"
+msgstr "国家癌症登记处"
+
+#, fuzzy
+msgid "Alcance nacional"
+msgstr "全国覆盖"
+
+#, fuzzy
+msgid "Atención"
+msgstr "联系方式"
+
+#, fuzzy
+msgid "Cómo trabajamos"
+msgstr "我们如何工作"
+
+#, fuzzy
+msgid "Dónde trabajamos"
+msgstr "我们工作的地方"
+
+#, fuzzy
+msgid "Contactos"
+msgstr "联系方式"
+
+#, fuzzy
+msgid "Guía de interpretación"
+msgstr "解读指南"
+
+#, fuzzy
+msgid "Frecuencia relativa"
+msgstr "相对频率"
+
+#, fuzzy
+msgid "Fuentes y límites"
+msgstr "来源和局限性"
+
+#, fuzzy
+msgid "Fuentes, versiones y límites de comparación"
+msgstr "来源、版本和可比性限制"
+
+#, fuzzy
+msgid "Métodos y cálculos"
+msgstr "方法和计算"
+
+#, fuzzy
+msgid "Métodos y cálculos estadísticos"
+msgstr "统计方法和计算"
+
+#, fuzzy
+msgid "Objetivos"
+msgstr "目标"
+
+#, fuzzy
+msgid "Oficina central"
+msgstr "中央办公室"
+
+#, fuzzy
+msgid "Organización"
+msgstr "组织机构"
+
+#, fuzzy
+msgid "Participación de sus profesionales"
+msgstr "专业人士的参与"
+
+#, fuzzy
+msgid "Provincia"
+msgstr "省份"
+
+#, fuzzy
+msgid "Referentes metodológicos consultados"
+msgstr "查阅方法论参考文献"
+
+#, fuzzy
+msgid "Registros provinciales"
+msgstr "省级登记处"
+
+#, fuzzy
+msgid "Responsable publicado"
+msgstr "列出的联系方式"
+
+#, fuzzy
+msgid "Trabajo territorial"
+msgstr "属地工作"
+
+#, fuzzy
+msgid "Transparencia estadística"
+msgstr "统计透明度"
+
+#, fuzzy
+msgid "Directorio provincial histórico del sitio institucional (2015)"
+msgstr "机构网站历史省级名录（2015）"
+
+#, fuzzy
+msgid "Composición publicada en la copia histórica"
+msgstr "历史副本中列出的成分"
+
+#, fuzzy
+msgid "Objetivo principal:"
+msgstr "主要目标："
+
+#, fuzzy
+msgid "Detección y notificación:"
+msgstr "案件发现和报告："
+
+#, fuzzy
+msgid "Registro en la unidad informante:"
+msgstr "报送单位登记："
+
+#, fuzzy
+msgid "Revisión provincial:"
+msgstr "省级评审："
+
+#, fuzzy
+msgid "Cierre y remisión:"
+msgstr "统计结束并提交："
+
+#, fuzzy
+msgid "Validación central:"
+msgstr "中央验证："
+
+#, fuzzy
+msgid "Consolidación y estadísticas:"
+msgstr "合并与统计："
+
+#, fuzzy
+msgid "Correo publicado"
+msgstr "列出的电子邮件"
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias y tasas de incidencia específicas por edad y sexo para "
+"cada localización topográfica y morfológica, además de tasas ajustadas para "
+"Cuba y cada provincia."
+msgstr "报告每个地形和形态地点的特定年龄和性别的发病频率和发生率，以及古巴和每个省的调整后发生率。"
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias absolutas y relativas por localización según la etapa "
+"clínica al diagnóstico, la provincia y la unidad informante, la base más "
+"válida para el diagnóstico y otras variables de interés."
+msgstr "按地点、诊断时的临床分期、省份、报告单位、最有效的诊断依据以及其他相关变量报告绝对和相对频率。"
+
+#, fuzzy
+msgid ""
+"Calcular indicadores de calidad de los datos por provincia y localización."
+msgstr "按省份和站点计算数据质量指标。"
+
+#, fuzzy
+msgid "Estimar las cifras de supervivencia poblacional por cáncer."
+msgstr "估计基于人群的癌症生存率。"
+
+#, fuzzy
+msgid ""
+"Para ello, la información institucional de referencia atribuye al RNC estos "
+"objetivos específicos:"
+msgstr "机构参考信息将这些具体目标分配给 RNC："
+
+#, fuzzy
+msgid "Aplica la misma razón dentro de cada grupo etario:"
+msgstr "在每个年龄组中应用相同的比例："
+
+#, fuzzy
+msgid ""
+"Relaciona los casos nuevos observados con la población correspondiente al "
+"mismo período y territorio:"
+msgstr "将观察到的新病例与同一时期和地区的人口联系起来："
+
+#, fuzzy
+msgid ""
+"Resume tasas específicas aplicando los pesos de una población estándar:"
+msgstr "使用标准人口的权重总结特定年龄的比率："
+
+#, fuzzy
+msgid "Expresa qué parte de un total corresponde a una categoría:"
+msgstr "显示总数中属于某个类别的比例："
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer de Cuba (RNC) es de base poblacional y "
+"alcance nacional, y forma parte del sistema de información estadística del "
+"Ministerio de Salud Pública. La copia archivada del sitio institucional "
+"indica que fue creado en 1964, que perteneció al Instituto Nacional de "
+"Oncología y Radiobiología (INOR) hasta diciembre de 2007 y que, desde enero "
+"de 2008, se subordinaba metodológica y funcionalmente a la Sección "
+"Independiente de Control de Cáncer junto con el Programa Integral de Control"
+" de Cáncer en Cuba."
+msgstr ""
+"古巴国家癌症登记处（RNC）以人口为基础，覆盖全国，是公共卫生部统计信息系统的一部分。该机构网站的存档副本表明，它于 1964 年创建，2007 年 "
+"12 月之前隶属于国家肿瘤学和放射生物学研究所 (INOR)，从 2008 年 1 月起，在方法和功能上隶属于独立癌症控制科以及古巴综合癌症控制计划。"
+
+#, fuzzy
+msgid ""
+"El RNC es un registro de base poblacional con cobertura de residentes "
+"permanentes de Cuba. Su red se organiza en tres niveles: la Oficina Central,"
+" los equipos o registros provinciales y las unidades informantes que "
+"detectan y notifican los casos."
+msgstr "RNC 是一个以人口为基础的登记册，涵盖古巴永久居民。其网络分为三个层次：中央办公室、省级小组或登记处以及发现和报告案件的报告单位。"
+
+#, fuzzy
+msgid ""
+"La cobertura documentada comprende las 15 provincias y el municipio especial"
+" Isla de la Juventud. En los territorios, los departamentos de salud "
+"coordinan las unidades informantes; estas incluyen centros hospitalarios y "
+"otras fuentes asistenciales previstas por los procedimientos del Registro."
+msgstr "记录的覆盖范围包括所有 15 个省和青年岛特别市。在每个地区，卫生部门协调报告单位，包括医院和登记程序指定的其他护理来源。"
+
+#, fuzzy
+msgid ""
+"La red territorial permite reunir información de distintos puntos de "
+"atención y consolidarla con alcance nacional. La copia del sitio "
+"institucional organiza esa red con una comisión o registro de cáncer en cada"
+" provincia y un directorio territorial de responsables."
+msgstr "该地区网络收集来自不同护理机构的信息并在全国范围内进行整合。机构网站档案描述了每个省的癌症委员会或登记处以及地区联系方式的目录。"
+
+#, fuzzy
+msgid ""
+"El directorio que se reproduce en esta página procede de una copia histórica"
+" del sitio: la información de Oficina Central fue publicada en 2013 y el "
+"directorio provincial en 2015. Se muestra como referencia histórica; sus "
+"nombres y canales no están confirmados como vigentes."
+msgstr "这里转载的目录来自历史网站复制：2013年发布的中央办公厅信息和2015年发布的省级目录。仅供历史参考；目前尚未确认其名称和联系渠道。"
+
+#, fuzzy
+msgid ""
+"La copia histórica describe una Oficina Central y comisiones provinciales "
+"que asesoran a las autoridades de salud y apoyan la aplicación de los "
+"procedimientos. El Manual de Procedimientos del RNC, versión VII (2024), "
+"detalla el recorrido operativo de la información:"
+msgstr "历史副本描述了向卫生当局提供建议并支持程序的中央办公室和省级委员会。 RNC 程序手册第七版（2024 年）详细介绍了信息工作流程："
+
+#, fuzzy
+msgid ""
+"Este flujo corresponde al trabajo del Registro. El portal público es una "
+"herramienta de consulta de resultados agregados y no recibe reportes de "
+"casos ni sustituye los sistemas internos del RNC."
+msgstr "此工作流程描述了注册表操作。公共门户提供对汇总结果的访问；它不接收病例报告或更换 RNC 内部系统。"
+
+#, fuzzy
+msgid ""
+"La Oficina Central dirige técnicamente el sistema nacional, controla los "
+"procedimientos y la calidad de la información, ofrece asesoría metodológica "
+"y produce estadísticas. Recibe los cierres territoriales y coordina su "
+"validación y consolidación."
+msgstr "中央办公室为国家系统提供技术指导，监督程序和信息质量，提供方法建议并生成统计数据。它接收领土提交的材料并协调其验证和整合。"
+
+#, fuzzy
+msgid ""
+"El Manual RNC VII describe tareas centrales como comprobar la consistencia y"
+" completitud de los datos, revisar codificaciones, investigar duplicados y "
+"múltiples primarios, cotejar casos con información de mortalidad, pedir "
+"aclaraciones a los territorios e incorporar a la base consolidada solo los "
+"casos validados."
+msgstr ""
+"RNC VII "
+"手册描述了核心任务，例如检查数据一致性和完整性、审查代码、调查重复数据和多次初选、将病例与死亡率信息进行匹配、要求地区澄清以及仅将经过验证的病例添加到统一数据库中。"
+
+#, fuzzy
+msgid ""
+"El Manual también describe funciones de control de calidad, análisis de "
+"datos, informatización, procesamiento y edición, además de una Comisión "
+"Técnica Asesora para cambios a los procedimientos administrativos y "
+"técnicos."
+msgstr "该手册还描述了质量控制、数据分析、计算机化、处理和编辑，以及负责更改行政和技术程序的技术咨询委员会。"
+
+#, fuzzy
+msgid ""
+"La composición y los datos de contacto actuales deben confirmarse con el "
+"RNC."
+msgstr "目前的组成和联系信息必须与 RNC 确认。"
+
+#, fuzzy
+msgid ""
+"Los equipos provinciales conectan las unidades informantes con la Oficina "
+"Central. Revisan reportes y bases, verifican datos y códigos, gestionan "
+"reparos con las unidades y preparan los cierres que se remiten al nivel "
+"nacional. La versión histórica del sitio describe también comisiones "
+"provinciales que asesoran a las autoridades de salud, controlan la "
+"aplicación de los procedimientos y emiten estadísticas preliminares."
+msgstr ""
+"省级工作组将报告单位与中央办公厅联系起来。他们审查报告和数据库，检查数据和代码，解决单位的疑问，并准备国家层面的提交材料。该历史网站还介绍了向卫生当局提供建议、监督程序并发布初步统计数据的省级委员会。"
+
+#, fuzzy
+msgid ""
+"A continuación se transcribe el directorio de responsables y correos de la "
+"copia histórica del sitio, publicada en 2015. Se conserva como referencia "
+"documental, no como lista confirmada de contactos activos:"
+msgstr "以下联系人和电子邮件地址抄录自 2015 年发布的历史网站副本。它们保留作为文件参考，而不是作为已确认的活跃联系人列表："
+
+#, fuzzy
+msgid ""
+"No se garantiza la entrega de mensajes a estos correos. El directorio, los "
+"cargos y las direcciones necesitan confirmación antes de usarse para "
+"gestiones actuales."
+msgstr "不保证递送到这些电子邮件地址。目录、角色和地址在用于当前事务之前需要确认。"
+
+#, fuzzy
+msgid ""
+"La página de contacto de la copia histórica publicaba los siguientes datos "
+"de la Oficina Central:"
+msgstr "联系页面的历史副本列出了以下中央办公室信息："
+
+#, fuzzy
+msgid ""
+"Esta versión del portal no recibe reportes clínicos ni solicitudes de "
+"modificación de registros. Para proteger la confidencialidad, no envíes "
+"datos de pacientes mediante canales de consulta pública."
+msgstr "此版本的门户不接受临床报告或修改注册记录的请求。为了保护机密，请勿通过公共查询渠道发送患者数据。"
+
+#, fuzzy
+msgid ""
+"Los datos de ubicación, teléfono, correo y responsables se transcribieron de"
+" las páginas institucionales archivadas de Contacto y Dónde estamos, "
+"publicadas en 2013. Confirma su vigencia con el RNC antes de utilizarlos."
+msgstr "位置、电话、电子邮件和联系方式详细信息转录自 2013 年发布的存档机构联系方式和位置页面。使用前请确认它们是 RNC 的最新信息。"
+
+#, fuzzy
+msgid ""
+"Las fórmulas siguientes explican conceptos usados en epidemiología "
+"descriptiva y en referentes internacionales. Para que un resultado del "
+"portal sea oficial, el RNC debe confirmar el método, las agrupaciones, los "
+"denominadores y las reglas de presentación aplicables al corte."
+msgstr ""
+"下面的公式解释了描述性流行病学和国际参考文献中使用的概念。为了使门户网站结果成为正式结果，RNC 必须确认适用于发布的方法、分组、分母和表示规则。"
+
+#, fuzzy
+msgid ""
+"La versión local actual del portal está conectada a un agregado de "
+"demostración sintético. Esta interfaz no acredita cifras oficiales ni "
+"sustituye la aprobación de un corte público."
+msgstr "当前本地版本的门户使用综合演示聚合。此界面不验证官方数据或取代公开发布的批准。"
+
+#, fuzzy
+msgid ""
+"Las descripciones de organización se basan en páginas de la copia "
+"institucional consultadas entre 2013 y 2015 y requieren validación de "
+"vigencia. Los métodos se presentan con fines explicativos y las decisiones "
+"pendientes se identifican expresamente."
+msgstr "组织描述基于 2013 年至 2015 年期间查阅的机构网站副本，并需要确认它们仍然是最新的。提出方法以供解释，并明确确定待决决定。"
+
+#, fuzzy
+msgid "Coordinación nacional"
+msgstr "国家协调"
+
+#, fuzzy
+msgid ""
+"Este portal ofrece actualmente consultas estadísticas de incidencia. No "
+"presenta aquí resultados de supervivencia, etapas clínicas, bases "
+"diagnósticas ni indicadores de calidad del RNC."
+msgstr "该门户目前提供发病率统计查询。它不提供有关生存、临床分期、诊断基础或质量指标的 RNC 结果。"
+
+#, fuzzy
+msgid ""
+"La información del RNC también contribuye a la investigación clínica y "
+"epidemiológica sobre el cáncer, a planificar y evaluar las acciones de "
+"control, y a planificar los recursos materiales y humanos para la atención "
+"oncológica."
+msgstr "RNC 信息还有助于临床和流行病学癌症研究、规划和评估控制措施以及规划癌症护理所需的物质和人力资源。"
+
+#, fuzzy
+msgid ""
+"La información institucional de referencia señala que profesionales del "
+"departamento forman parte de:"
+msgstr "机构参考信息表明，部门专业人员参与："
+
+#, fuzzy
+msgid ""
+"La pertenencia y denominación actual de estos grupos y comisiones debe "
+"confirmarse con el RNC antes de presentarse como vigente."
+msgstr "这些团体和委员会的当前成员资格和名称必须先得到共和党全国委员会的确认，然后才能显示为当前成员资格。"
+
+#, fuzzy
+msgid "Tasa ajustada directamente por edad"
+msgstr "直接年龄调整率"
+
+#, fuzzy
+msgid "Tasa cruda de incidencia"
+msgstr "粗发病率"
+
+#, fuzzy
+msgid "Tasa específica por edad"
+msgstr "特定年龄比率"
+
+#, fuzzy
+msgid "Tasa indirecta e intervalos de confianza"
+msgstr "间接率和置信区间"
+
+#, fuzzy
+msgid ""
+"El estándar es una población de ponderación, no el denominador de los casos."
+" Como referencia metodológica de trabajo se estudia la estándar mundial "
+"Segi–Doll de 18 grupos quinquenales; el RNC debe validar su correspondencia,"
+" fórmula operativa, grupos abiertos, datos faltantes y redondeo antes de "
+"atribuirle cifras oficiales. Las comparaciones solo son interpretables si "
+"usan el mismo estándar y definiciones compatibles."
+msgstr ""
+"标准人口供给权重；它不是案例分母。 18 个五年年龄组的 Segi-Doll 世界标准被视为方法参考。 RNC "
+"必须验证其对应关系、运算公式、开放式分组、缺失数据和四舍五入，然后才能将任何数据视为官方数据。仅当使用相同的标准和兼容的定义时，比较才可解释。"
+
+#, fuzzy
+msgid ""
+"El total puede depender de la pregunta y de la unidad de análisis. El "
+"tratamiento de valores desconocidos, categorías excluidas y redondeo "
+"requiere una regla explícita; no se debe asumir que tumor y persona son "
+"unidades intercambiables."
+msgstr "总数可能取决于问题和分析单位。未知值、排除类别和舍入需要明确的规则；肿瘤和人不能被视为可互换的单位。"
+
+#, fuzzy
+msgid ""
+"En la organización descrita por la copia histórica, cada comisión provincial"
+" asesora al Director Provincial de Salud sobre el control del cáncer y el "
+"funcionamiento del sistema de información. La integran perfiles de "
+"coordinación de cáncer, oncología, estadística, epidemiología, hospitales y "
+"especialistas o técnicos de los hospitales que diagnostican casos. Su "
+"función es exigir y controlar el cumplimiento de los procedimientos, cuidar "
+"la calidad y continuidad del dato primario, emitir estadísticas provinciales"
+" preliminares y promover investigaciones epidemiológicas y clínicas."
+msgstr ""
+"在历史副本描述的组织中，每个省委员会就癌症控制和信息系统的运行向省卫生厅长提供建议。其成员代表癌症协调、肿瘤学、统计学、流行病学、医院以及医院诊断病例的专家或技术人员。其职能包括监督程序的遵守情况、维护原始数据的质量和连续性、发布省级初步统计数据以及促进流行病学和临床研究。"
+
+#, fuzzy
+msgid ""
+"La escala por 100 000 es una forma habitual de presentación. Numerador, "
+"período, territorio, sexo, grupo de edad y población deben coincidir. El "
+"proyecto identifica la población residente de ONEI como denominador de "
+"trabajo; la serie, edición y convención temporal exactas deben quedar "
+"identificadas con el RNC."
+msgstr ""
+"每 100,000 "
+"人的费率是常见的表示比例。分子、时期、领土、性别、年龄组和人口必须匹配。该项目将ONEI常住人口确定为工作分母；确切的系列、版本和时间约定必须与 RNC"
+" 确认。"
+
+#, fuzzy
+msgid ""
+"La estandarización indirecta suele comparar los casos observados con los "
+"esperados según tasas de referencia por estrato. La elección de esas tasas "
+"de referencia y la forma de presentar el resultado requieren una definición "
+"institucional."
+msgstr "间接标准化通常根据每个层的参考率将观察到的病例与预期病例进行比较。选择这些参考利率并决定如何呈现结果需要机构定义。"
+
+#, fuzzy
+msgid ""
+"La página archivada “Oficina Central” identificaba un Jefe del Registro y "
+"tres grupos: Calidad de los Datos, Informatización y Procesamiento y "
+"Edición. La relación siguiente reproduce los nombres y correos que aparecían"
+" allí; no confirma que las personas ocupen hoy esos cargos ni que las "
+"direcciones sigan activas."
+msgstr ""
+"存档的“中央办公室”页面确定了登记处负责人和三个小组：数据质量、计算机化以及处理和编辑。下面的列表复制了其中显示的姓名和电子邮件地址；它不能确认这些人目前持有这些职位或这些地址仍然有效。"
+
+#, fuzzy
+msgid ""
+"La página “Dónde estamos” de esa misma copia identifica al Instituto "
+"Nacional de Oncología y Radiobiología, en 29 y F, Vedado, CP 10400, y "
+"publica el teléfono +53 7 838 3970. Estos datos se incluyen como información"
+" histórica, no como canales confirmados en la actualidad."
+msgstr ""
+"同一份副本中的“我们在哪里”页面列出国家肿瘤学和放射生物学研究所，地址为29 y F、Vedado、邮政编码10400，并列出电话+53 7 838 "
+"3970。这些是历史资料，并非当前已确认的联系方式。"
+
+#, fuzzy
+msgid ""
+"Los intervalos de confianza describen incertidumbre estadística y dependen "
+"del indicador, el volumen de casos y el método elegido. Su incorporación al "
+"portal es una propuesta de trabajo, no una regla aprobada por el RNC. El "
+"método de tasa indirecta y el de intervalos permanecen pendientes de "
+"validación."
+msgstr ""
+"置信区间描述统计不确定性，取决于指标、案例数量和所选方法。将它们添加到门户是一项提议，而不是 RNC 批准的规则。间接比率法和置信区间仍有待验证。"
+
+#, fuzzy
+msgid ""
+"Los procedimientos describen frecuencias distintas para las tareas locales, "
+"la revisión territorial y los cierres al nivel central. El calendario "
+"concreto puede variar y debe consultarse en la edición vigente del Manual."
+msgstr "这些程序规定了地方任务、领土审查和向中央提交报告的不同频率。时间表可能会有所不同，应在当前版本的手册中进行检查。"
+
+#, fuzzy
+msgid ""
+"Los referentes consultados muestran por qué cada resultado debe documentar "
+"su procedencia y su versión. Cancer Today organiza visualizaciones junto a "
+"sus fuentes y métodos; ECIS diferencia datos observados de estimaciones; "
+"SEER acompaña sus tablas y gráficos con definiciones, notas y metodología. "
+"Estas prácticas inspiran la presentación, pero sus reglas no se trasladan "
+"automáticamente al RNC."
+msgstr ""
+"查阅的参考资料显示了为什么每个结果都应该记录其来源和版本。 《今日癌症》展示了可视化及其来源和方法； ECIS 将观测数据与估计数据区分开来； SEER"
+" 通过其表格和图表提供了定义、注释和方法。这些做法为演示提供了信息，但它们的规则不会自动适用于 RNC。"
+
+#, fuzzy
+msgid "La adscripción organizativa debe actualizarse con el RNC: el"
+msgstr "组织隶属关系必须与 RNC 确认："
+
+#, fuzzy
+msgid "Comparabilidad:"
+msgstr "可比性："
+
+#, fuzzy
+msgid "Denominador:"
+msgstr "分母："
+
+#, fuzzy
+msgid "Divulgación:"
+msgstr "披露："
+
+#, fuzzy
+msgid "Método:"
+msgstr "方法："
+
+#, fuzzy
+msgid "Numerador:"
+msgstr "分子："
+
+#, fuzzy
+msgid ""
+"corte de casos identificado, con período, estado y fecha de publicación."
+msgstr "已确定的案例发布，包括期间、状态和发布日期。"
+
+#, fuzzy
+msgid ""
+"fuente y versión de la población, con cobertura territorial, edad y sexo."
+msgstr "人口来源和版本，包括地域、年龄和性别覆盖范围。"
+
+#, fuzzy
+msgid "unidad de análisis, escala, estándar de edad y forma de cálculo."
+msgstr "分析单位、量表、年龄标准、计算方法。"
+
+#, fuzzy
+msgid ""
+"tasas calculadas con estándares, períodos, coberturas y definiciones "
+"compatibles."
+msgstr "使用兼容的标准、期间、覆盖范围和定义计算的费率。"
+
+#, fuzzy
+msgid ""
+"agregados autorizados y reglas para evitar identificación indirecta; el "
+"umbral o método de supresión para el portal requiere acuerdo institucional."
+msgstr "授权的聚合和规则，以防止间接识别；门户抑制阈值或方法需要机构同意。"
+
+#, fuzzy
+msgid "Correo publicado:"
+msgstr "列出的电子邮件："
+
+#, fuzzy
+msgid "Teléfono publicado:"
+msgstr "列出电话："
+
+#, fuzzy
+msgid "Grupo Nacional de Oncología."
+msgstr "国家肿瘤学组。"
+
+#, fuzzy
+msgid "Grupo de Calidad de los Datos:"
+msgstr "数据质量组："
+
+#, fuzzy
+msgid ""
+"Grupo de Epidemiología y Registros de Cáncer de Países de Lengua Latina."
+msgstr "拉丁语国家流行病学和癌症登记小组。"
+
+#, fuzzy
+msgid "Grupo de Informatización:"
+msgstr "计算机化组："
+
+#, fuzzy
+msgid "Grupo de Oncopediatría."
+msgstr "儿科肿瘤学组。"
+
+#, fuzzy
+msgid "Grupo de Procesamiento y Edición:"
+msgstr "加工编辑组："
+
+#, fuzzy
+msgid "Jefatura del RNC:"
+msgstr "共和党全国委员会主席："
+
+#, fuzzy
+msgid "Comité de Ensayos Clínicos del INOR."
+msgstr "INOR 临床试验委员会。"
+
+#, fuzzy
+msgid "Consejo Científico del INOR."
+msgstr "INOR 科学委员会。"
+
+#, fuzzy
+msgid "Comisión Nacional del Programa de Cáncer Bucal."
+msgstr "国家口腔癌计划委员会。"
+
+#, fuzzy
+msgid "Comisión de Expertos del Programa Ramal Cáncer."
+msgstr "癌症分会计划专家委员会。"
+
+#, fuzzy
+msgid ""
+"Red Iberoamericana de Epidemiología y Sistemas de Información en Cáncer."
+msgstr "伊比利亚-美洲癌症流行病学和信息系统网络。"
+
+#, fuzzy
+msgid "Comisión Europea · European Cancer Information System (ECIS)"
+msgstr "欧盟委员会·欧洲癌症信息系统 (ECIS)"
+
+#, fuzzy
+msgid "IARC/WHO · Global Cancer Observatory, Cancer Today"
+msgstr "IARC/WHO · 全球癌症观察站，《今日癌症》"
+
+#, fuzzy
+msgid "NCI/SEER · SEER*Explorer"
+msgstr "NCI/SEER·SEER*探索者"
+
+#, fuzzy
+msgid "NCI/SEER · definición y cálculo de tasas ajustadas por edad"
+msgstr "NCI/SEER · 年龄调整率的定义和计算"
+
+#, fuzzy
+msgid "Sistema de Información Estadística Complementaria de Salud (2017)"
+msgstr "补充卫生统计信息系统（2017）"
+
+#, fuzzy
+msgid "El RNC · Registro Nacional de Cáncer de Cuba"
+msgstr "RNC·古巴国家癌症登记处"
+
+#, fuzzy
+msgid "El subíndice"
+msgstr "下标"
+
+#, fuzzy
+msgid ""
+"la Oficina Central revisa integridad y consistencia, investiga posibles "
+"duplicados o tumores múltiples, contrasta la información con mortalidad y "
+"solicita aclaraciones cuando son necesarias."
+msgstr "中央办公室检查完整性和一致性，调查潜在的重复或多个肿瘤，将信息与死亡率数据进行比较，并在需要时要求澄清。"
+
+#, fuzzy
+msgid ""
+"las provincias preparan los cierres estadísticos y remiten al nivel central "
+"los casos nuevos validados junto con la documentación requerida, según el "
+"calendario estadístico."
+msgstr "各省根据统计日历准备统计数据，并将经过验证的新病例连同所需文件发送至中央一级。"
+
+#, fuzzy
+msgid ""
+"los equipos territoriales cotejan reportes y bases de datos, verifican "
+"variables y códigos, solicitan correcciones y coordinan las unidades "
+"informantes."
+msgstr "区域团队比较报告和数据库、检查变量和代码、请求更正并协调报告单位。"
+
+#, fuzzy
+msgid ""
+"los médicos notifican los casos y los registradores buscan casos adicionales"
+" en fuentes como anatomía patológica, laboratorios, egresos hospitalarios, "
+"certificados de defunción e historias clínicas."
+msgstr "医生报告病例，登记员通过病理学、实验室、出院情况、死亡证明和医疗记录等来源确定其他病例。"
+
+#, fuzzy
+msgid ""
+"se confeccionan y codifican los reportes, se revisan las fuentes y se "
+"introducen los casos en el sistema automatizado del Registro."
+msgstr "准备报告并编码，审查来源，并将案件输入登记自动化系统。"
+
+#, fuzzy
+msgid ""
+"solo los casos validados se incorporan a la base consolidada; con ellos el "
+"RNC prepara y emite resultados estadísticos."
+msgstr "仅将经过验证的案例添加到统一数据库中；共和党全国委员会准备并发布他们的统计结果。"
+
+#, fuzzy
+msgid "porcentaje = (casos de la categoría / total de referencia) × 100"
+msgstr "百分比=（类别案例/参考总数）×100"
+
+#, fuzzy
+msgid ""
+"tasa ajustada = Σ (peso estándarᵢ × tasa específicaᵢ) / Σ (peso estándarᵢ)"
+msgstr "调整后的比率 = Σ (标准体重ᵢ × 特定年龄比率ᵢ) / Σ (标准体重ᵢ)"
+
+#, fuzzy
+msgid "tasa cruda = (casos nuevos / población correspondiente) × 100 000"
+msgstr "粗率=（新增病例/相应人口）×100,000"
+
+#, fuzzy
+msgid "tasa específicaᵢ = (casos nuevosᵢ / poblaciónᵢ) × 100 000"
+msgstr "特定年龄比率ᵢ = (新增病例ᵢ / 人口ᵢ) × 100,000"
+
+#, fuzzy
+msgid "describir la magnitud del cáncer como problema de salud en Cuba."
+msgstr "描述癌症作为古巴健康问题的严重程度。"
+
+#, fuzzy
+msgid ""
+"transcribe la Resolución 31/2008 como traslado de la Oficina Central a la "
+"Unidad Nacional para el Control del Cáncer, bajo su dirección y en "
+"coordinación con Estadísticas del MINSAP. Las denominaciones de las fuentes "
+"no coinciden literalmente."
+msgstr ""
+"第 31/2008 号决议将中央办公室移交给国家癌症控制单位，接受国家癌症控制单位的指导并与 MINSAP 统计部门协调。来源不使用相同的名称。"
+
+#, fuzzy
+msgid ""
+" representa un estrato de edad (y cualquier otra dimensión que se mantenga "
+"fija). Comparar estratos exige que la definición de grupo y el período sean "
+"consistentes."
+msgstr "  表示年龄层（并且任何其他维度保持不变）。比较分层需要一致的组定义和期间。"
+
+#, fuzzy
+msgid " y "
+msgstr " 和 "
+
+#, fuzzy
+msgid "Agrupación"
+msgstr "分组"
+
+#, fuzzy
+msgid ""
+"Al combinar años, la población denominadora acumula las poblaciones anuales "
+"seleccionadas."
+msgstr "当年份合并时，分母人口是所选年度人口的总和。"
+
+#, fuzzy
+msgid "Consulta"
+msgstr "查询"
+
+#, fuzzy
+msgid "Contexto de la consulta"
+msgstr "查询上下文"
+
+#, fuzzy
+msgid "Frecuencia relativa (%%) · %(unit)s"
+msgstr "相对频率（%%）·%(unit)s"
+
+#, fuzzy
+msgid "Fuente y corte"
+msgstr "来源与数据版本"
+
+#, fuzzy
+msgid "Gráfico"
+msgstr "图表"
+
+#, fuzzy
+msgid "Indicador del gráfico"
+msgstr "图表指标"
+
+#, fuzzy
+msgid ""
+"Las tasas se calculan con la unidad elegida; los grupos de localización "
+"pueden solaparse en personas distintas. "
+msgstr "费率使用所选单位；对于不同的人来说，站点组可能会重叠。 "
+
+#, fuzzy
+msgid ""
+"Métodos candidatos; denominadores sintéticos, no son resultados oficiales. "
+msgstr "候选方法；分母为合成数据，并非官方结果。 "
+
+#, fuzzy
+msgid "No disponible en este corte"
+msgstr "在此版本中不可用"
+
+#, fuzzy
+msgid "Nota"
+msgstr "注意事项"
+
+#, fuzzy
+msgid "Personas distintas (frecuencia absoluta)"
+msgstr "不同的人（绝对频率）"
+
+#, fuzzy
+msgid "Porcentaje (%)"
+msgstr "百分比（%）"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "各类别占比(%)"
+
+#, fuzzy
+msgid "Selección"
+msgstr "选择"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000 · %(unit)s"
+msgstr "Segi–Doll 年龄标化率（每10万人）· %(unit)s"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000 · %(unit)s"
+msgstr "粗率/年龄别率（每10万人）· %(unit)s"
+
+#, fuzzy
+msgid "Todas las provincias"
+msgstr "所有省份"
+
+#, fuzzy
+msgid "Todos (%(first)s–%(last)s)"
+msgstr "全部（%(first)s–%(last)s）"
+
+#, fuzzy
+msgid "Todos los municipios"
+msgstr "所有市镇"
+
+#, fuzzy
+msgid "Tumores (frecuencia absoluta)"
+msgstr "肿瘤（绝对频率）"
+
+#, fuzzy
+msgid "rnc-synthetic-query"
+msgstr "rnc-synthetic-query"
+
+#, fuzzy
+msgid "Datos sintéticos · %(period)s"
+msgstr "综合数据·%(period)s"
+
+#, fuzzy
+msgid "Datos sintéticos · %(title)s · Versión %(release)s"
+msgstr "合成数据·%(title)s·发布%(release)s"
+
+#, fuzzy
+msgid "Distribución por sexo (%)"
+msgstr "按性别分布（%）"
+
+#, fuzzy
+msgid ""
+"El tamaño o rótulo del punto indica cuántas categorías coinciden en las "
+"mismas coordenadas."
+msgstr "点大小或标签指示有多少类别在同一坐标处重叠。"
+
+#, fuzzy
+msgid "Frecuencias absolutas"
+msgstr "绝对频率"
+
+#, fuzzy
+msgid "Localizaciones más frecuentes"
+msgstr "最常访问的网站"
+
+#, fuzzy
+msgid "No hay cobertura de población completa para el ajuste seleccionado."
+msgstr "所选调整并未完全覆盖人口。"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "没有可显示为组合的正值。"
+
+#, fuzzy
+msgid "RNC / Cuba · Detalle de consulta"
+msgstr "RNC / 古巴 · 查询详情"
+
+#, fuzzy
+msgid ""
+"Seleccione una dimensión con hasta ocho categorías para circular o anillo."
+msgstr "为饼图或圆环图选择类别不超过八个的维度。"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "肿瘤数和去重人数"
+
+#, fuzzy
+msgid "Detalle %(page)s"
+msgstr "详情 %(page)s"
+
+#, fuzzy
+msgid "Cuba (nacional)"
+msgstr "古巴（国家）"
+
+#, fuzzy
+msgid ""
+"Este gráfico necesita al menos dos categorías con datos en la dimensión "
+"elegida."
+msgstr "此图表需要至少两个类别且具有所选维度的数据。"
+
+#, fuzzy
+msgid ""
+"La comparación por sexo requiere datos disponibles de mujeres y hombres."
+msgstr "性别比较需要女性和男性的数据。"
+
+#, fuzzy
+msgid "Provincias disponibles; cobertura nacional incompleta"
+msgstr "可用省份；全国覆盖不完整"
+
+#, fuzzy
+msgid "Administración RNC"
+msgstr "RNC管理"
+
+#, fuzzy
+msgid "Filtros de la consulta"
+msgstr "查询过滤器"
+
+#, fuzzy
+msgid "Navegación RNC"
+msgstr "RNC导航"
+
+#, fuzzy
+msgid "Portal público"
+msgstr "公共门户"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "女性"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "男士"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "气管、支气管和肺"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "前列腺"
+
+#, fuzzy
+msgid "Mama"
+msgstr "乳房"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "结肠和直肠"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "胃"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "子宫颈"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "子宫体"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "甲状腺"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "胰腺"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "膀胱"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "肾"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "肝脏和胆管"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "卵巢"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "喉和咽"
+
+#, fuzzy
+msgid ""
+"Grupo ilustrativo sintético; no representa un código TOPO ni una "
+"equivalencia ICD-O: %(category)s."
+msgstr "示例性合成基团；它不是 TOPO 代码或 ICD-O 等效项：%(category)s。"
+
+#, fuzzy
+msgid "Código de provincia documentado en el Manual RNC VII, Anexo 1."
+msgstr "RNC 手册 VII 附件 1 中记录了省份代码。"
+
+#, fuzzy
+msgid "Ampliar barra lateral"
+msgstr "展开侧边栏"
+
+#, fuzzy
+msgid "La consulta local aún no está disponible en este dispositivo."
+msgstr "该设备尚不支持离线查询。"
+
+#, fuzzy
+msgid "Use letras de la A a la Z, números, punto, guion o guion bajo."
+msgstr "使用字母 A 到 Z、数字、句点、连字符或下划线。"
+
+#, fuzzy
+msgid "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."
+msgstr "使用字母、空格、撇号或连字符；例如，玛丽亚·何塞。"
+
+#, fuzzy
+msgid "Use texto, números y puntuación habitual; sin etiquetas HTML."
+msgstr "使用文本、数字和常用标点符号；没有 HTML 标签。"
+
+#, fuzzy
+msgid ""
+"Busque por nombre, usuario o correo; no se admiten símbolos de programación."
+msgstr "按姓名、用户名或电子邮件搜索；不允许使用编程符号。"
+
+#, fuzzy
+msgid "Incluya una descripción con letras o números."
+msgstr "包括带有字母或数字的描述。"
+
+#, fuzzy
+msgid "Complete este campo."
+msgstr "填写此字段。"
+
+#, fuzzy
+msgid "Marque esta casilla para continuar."
+msgstr "勾选此框以继续。"
+
+#, fuzzy
+msgid "No se pudo enviar el formulario"
+msgstr "无法提交表格。"
+
+#, fuzzy
+msgid ""
+"La sesión del formulario ha caducado o no se pudo verificar. Vuelva a abrir "
+"la página e inténtelo otra vez. No se guardó este envío."
+msgstr "您的表单会话已过期或无法验证。重新打开页面并重试。此提交未保存。"
+
+#, fuzzy
+msgid ""
+"La dirección no existe o el recurso ya no está disponible. Puede continuar "
+"desde la navegación del portal."
+msgstr "该地址不存在或资源不再可用。您可以继续使用门户导航。"
+
+#, fuzzy
+msgid "%(label)s, código %(number)s"
+msgstr "%(label)s，代码 %(number)s"
+
+#, fuzzy
+msgid "%(label)s: código repetido para el mismo sistema y edición."
+msgstr "%(label)s：同一系统和版本的重复代码。"
+
+#, fuzzy
+msgid "%(label)s: debe contener uno o más códigos."
+msgstr "%(label)s：必须包含一个或多个代码。"
+
+#, fuzzy
+msgid "%(label)s: eje no admitido."
+msgstr "%(label)s：不受支持的轴。"
+
+#, fuzzy
+msgid "%(label)s: estado de código no admitido."
+msgstr "%(label)s：不支持的代码状态。"
+
+#, fuzzy
+msgid "%(label)s: estado de publicación no admitido."
+msgstr "%(label)s：不支持的发布状态。"
+
+#, fuzzy
+msgid "%(label)s: estado de relación no admitido."
+msgstr "%(label)s：不支持的关系状态。"
+
+#, fuzzy
+msgid "%(label)s: faltan campos requeridos."
+msgstr "%(label)s：缺少必填字段。"
+
+#, fuzzy
+msgid "%(label)s: hay campos vacíos o con tipo inválido."
+msgstr "%(label)s：字段为空或类型无效。"
+
+#, fuzzy
+msgid "%(label)s: identificador de concepto duplicado."
+msgstr "%(label)s：重复的概念标识符。"
+
+#, fuzzy
+msgid "%(label)s: la fuente debe ser una URL HTTP o HTTPS."
+msgstr "%(label)s：源必须是 HTTP 或 HTTPS URL。"
+
+#, fuzzy
+msgid "%(label)s: relación de concepto no admitida."
+msgstr "%(label)s：不支持的概念关系。"
+
+#, fuzzy
+msgid "Archivo validado y registrado. Revise el corte antes de publicarlo."
+msgstr "文件经过验证并记录。在发布之前查看该版本。"
+
+#, fuzzy
+msgid "CSV no válido; revise codificación y estructura."
+msgstr "无效的 CSV；检查其编码和结构。"
+
+#, fuzzy
+msgid "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+msgstr "每个地区和年份必须涵盖男女和所有 18 个年龄组。"
+
+#, fuzzy
+msgid "Comportamiento"
+msgstr "行为"
+
+#, fuzzy
+msgid "Concepto %(number)s"
+msgstr "概念 %(number)s"
+
+#, fuzzy
+msgid "Correspondencia exacta"
+msgstr "精确匹配"
+
+#, fuzzy
+msgid "Código del concepto"
+msgstr "概念代码"
+
+#, fuzzy
+msgid "Declarado por la fuente"
+msgstr "消息来源声明"
+
+#, fuzzy
+msgid "Ejecute seed_demo para generar el ejemplo local."
+msgstr "运行seed_demo生成本地样本。"
+
+#, fuzzy
+msgid "El archivo debe contener un arreglo 'concepts'."
+msgstr "该文件必须包含“concepts”数组。"
+
+#, fuzzy
+msgid "El archivo no contiene registros."
+msgstr "该文件不包含任何记录。"
+
+#, fuzzy
+msgid "El catálogo configurado no se puede leer como JSON UTF-8."
+msgstr "配置的目录无法读取为 UTF-8 JSON。"
+
+#, fuzzy
+msgid "El catálogo declara validación RNC"
+msgstr "目录声明 RNC 验证"
+
+#, fuzzy
+msgid "El ejemplo ya alcanzó el límite de filas del entorno local."
+msgstr "本地样本已达到此环境的行限制。"
+
+#, fuzzy
+msgid "El límite local es de 60 000 filas."
+msgstr "本地限制为 60,000 行。"
+
+#, fuzzy
+msgid "El service worker solo está habilitado en el perfil público."
+msgstr "Service Worker 仅在公共配置文件中可用。"
+
+#, fuzzy
+msgid "Esta entrega ya está registrada."
+msgstr "该交货已被登记。"
+
+#, fuzzy
+msgid "Esta entrega ya está registrada; no se incorporó otra copia."
+msgstr "该交货已被登记；没有添加重复项。"
+
+#, fuzzy
+msgid "Estadio"
+msgstr "舞台"
+
+#, fuzzy
+msgid "Estado actualizado. El portal público ya refleja este cambio."
+msgstr "状态已更新。公共网站现在反映了这一变化。"
+
+#, fuzzy
+msgid "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+msgstr "结构不兼容。下载合成示例 CSV。"
+
+#, fuzzy
+msgid "Fila %(number)s: categoría no admitida."
+msgstr "行 %(number)s：不受支持的类别。"
+
+#, fuzzy
+msgid "Fila %(number)s: denominador inconsistente."
+msgstr "行 %(number)s：分母不一致。"
+
+#, fuzzy
+msgid "Fila %(number)s: estructura o longitud incorrecta."
+msgstr "行 %(number)s：结构或长度无效。"
+
+#, fuzzy
+msgid "Fila %(number)s: formato de identificador sintético no admitido."
+msgstr "行 %(number)s：不支持的合成标识符格式。"
+
+#, fuzzy
+msgid "Fila %(number)s: identidad sintética inconsistente."
+msgstr "行 %(number)s：合成身份不一致。"
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de catálogo desconocido."
+msgstr "行 %(number)s：未知的目录标识符。"
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de tumor repetido."
+msgstr "行 %(number)s：重复的肿瘤标识符。"
+
+#, fuzzy
+msgid "Fila %(number)s: persona incompatible con el estrato declarado."
+msgstr "行 %(number)s：人员与声明的阶层不匹配。"
+
+#, fuzzy
+msgid "Fila %(number)s: período, población o peso incompatible."
+msgstr "行 %(number)s：不兼容的时期、人口或体重。"
+
+#, fuzzy
+msgid "Fila %(number)s: se requieren números enteros."
+msgstr "行 %(number)s：值必须是整数。"
+
+#, fuzzy
+msgid "Fila %(number)s: solo se admite el contrato sintético de demostración."
+msgstr "%(number)s行：仅接受合成演示合约。"
+
+#, fuzzy
+msgid "Formato no disponible"
+msgstr "格式不可用"
+
+#, fuzzy
+msgid "Grado"
+msgstr "等级"
+
+#, fuzzy
+msgid "Grupo de clasificación"
+msgstr "分类组"
+
+#, fuzzy
+msgid "Identificador de publicación inválido."
+msgstr "版本标识符无效。"
+
+#, fuzzy
+msgid "La acción ya no es válida para el estado actual."
+msgstr "此操作对于当前状态不再有效。"
+
+#, fuzzy
+msgid "Mismo concepto"
+msgstr "相同的概念"
+
+#, fuzzy
+msgid "Morfología"
+msgstr "形态学"
+
+#, fuzzy
+msgid "Más amplio"
+msgstr "更广泛的"
+
+#, fuzzy
+msgid "Más específico"
+msgstr "更窄"
+
+#, fuzzy
+msgid "No hay paquete offline disponible."
+msgstr "没有可用的离线包。"
+
+#, fuzzy
+msgid "No se encontró el service worker."
+msgstr "找不到服务人员。"
+
+#, fuzzy
+msgid "No se pudo iniciar sesión. Espere unos minutos."
+msgstr "登录失败。请稍等几分钟。"
+
+#, fuzzy
+msgid "Otro"
+msgstr "其他"
+
+#, fuzzy
+msgid "Relacionado"
+msgstr "相关"
+
+#, fuzzy
+msgid "Se alcanzó el límite temporal de exportaciones. Espere un minuto."
+msgstr "已达到临时出口限额。请稍等一分钟。"
+
+#, fuzzy
+msgid "Solo se puede liberar el conjunto sintético de demostración."
+msgstr "仅可以发布合成演示数据集。"
+
+#, fuzzy
+msgid "Topografía"
+msgstr "地形"
+
+#, fuzzy
+msgid "Utilice un CSV de hasta 12 MB."
+msgstr "使用不大于 12 MB 的 CSV 文件。"
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito mayor que cero."
+msgstr "%(label)s 必须是大于零的有限数。"
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito no negativo."
+msgstr "%(label)s 必须是有限非负数。"
+
+#, fuzzy
+msgid "Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos."
+msgstr "案例、总体和权重必须覆盖相同的非空层。"
+
+#, fuzzy
+msgid "El conteo debe ser un entero no negativo."
+msgstr "计数必须是非负整数。"
+
+#, fuzzy
+msgid "El nivel de confianza debe estar entre cero y uno."
+msgstr "置信水平必须介于 0 和 1 之间。"
+
+#, fuzzy
+msgid "El numerador no puede exceder el universo declarado."
+msgstr "分子不能超过规定的宇宙。"
+
+#, fuzzy
+msgid "El universo debe ser mayor que cero."
+msgstr "宇宙必须大于零。"
+
+#, fuzzy
+msgid "La suma de los pesos estándar debe ser mayor que cero."
+msgstr "标准权重之和必须大于零。"
+
+#, fuzzy
+msgid "Valor numérico fuera de rango."
+msgstr "数值超出范围。"
+
+#: public_site/portal.py:387
+#, fuzzy
+msgid "actualizacion_sintetica"
+msgstr "合成数据更新"
+
+#: public_site/validation.py:29 public_site/validation.py:58
+#, fuzzy
+msgid "Use al menos %(limit_value)s caracteres."
+msgstr "至少输入 %(limit_value)s 个字符。"
+
+#: public_site/validation.py:30 public_site/validation.py:62
+#, fuzzy
+msgid "Use como máximo %(limit_value)s caracteres."
+msgstr "最多输入 %(limit_value)s 个字符。"
+
+#: public_site/validation.py:88
+#, fuzzy
+msgid "Ingrese un correo electrónico válido."
+msgstr "请输入有效的电子邮件地址。"
+
+#: public_site/validation.py:101
+#, fuzzy
+msgid "Seleccione una opción válida."
+msgstr "请选择有效选项。"
+
+#, fuzzy
+msgid "Contraseña"
+msgstr "密码"
+
+#, fuzzy
+msgid "Contraseña actual"
+msgstr "旧密码"
+
+#, fuzzy
+msgid "Nueva contraseña"
+msgstr "新密码"
+
+#, fuzzy
+msgid "Confirmar nueva contraseña"
+msgstr "确认新密码"
+
+#, fuzzy
+msgid "Repita la misma contraseña para confirmar."
+msgstr "输入与之前相同的密码以进行验证。"
+
+#, fuzzy
+msgid "La contraseña no debe parecerse a sus datos personales."
+msgstr "选择与您的个人信息不太相似的密码。"
+
+#, fuzzy
+msgid "La contraseña no debe ser muy similar a sus otros datos personales."
+msgstr "您的密码不能与您的其他个人信息太相似。"
+
+#, fuzzy
+msgid ""
+"La contraseña es demasiado corta; debe contener al menos %(min_length)s "
+"caracteres."
+msgstr "该密码太短。它必须至少包含 %(min_length)s 个字符。"
+
+#, fuzzy
+msgid "La contraseña debe tener al menos %(min_length)s caracteres."
+msgstr "您的密码必须至少包含 %(min_length)s 个字符。"
+
+#, fuzzy
+msgid "Elija una contraseña que no sea de uso común."
+msgstr "选择一个不常用的密码。"
+
+#, fuzzy
+msgid "No utilice una contraseña de uso común."
+msgstr "您的密码不能是常用密码。"
+
+#, fuzzy
+msgid "La contraseña no puede contener solo números."
+msgstr "该密码完全是数字。"
+
+#, fuzzy
+msgid "No utilice solo números como contraseña."
+msgstr "您的密码不能完全是数字。"
+
+#, fuzzy
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "两个密码字段不匹配。"
+
+#, fuzzy
+msgid "La contraseña actual no es correcta."
+msgstr "您的旧密码输入不正确。"
+
+#, fuzzy
+msgid "El usuario o la contraseña no son válidos."
+msgstr "请输入正确的用户名和密码。"
+
+#, fuzzy
+msgid "La cuenta no está activa."
+msgstr "该帐户处于非活动状态。"
+
+#, fuzzy
+msgid "Correo electrónico"
+msgstr "电子邮件地址"
+
+#, fuzzy
+msgid "Vista previa de traducción automática"
+msgstr "自动翻译预览（草稿）"
+
+#, fuzzy
+msgid ""
+"Este idioma usa un borrador no revisado ni aprobado. No lo use para "
+"interpretar estadísticas de cáncer."
+msgstr "此语言使用未经人工审校或机构批准的草稿。请勿据此解读癌症统计数据。"
+
+#, fuzzy
+msgid "borrador de vista previa"
+msgstr "— 预览草稿"

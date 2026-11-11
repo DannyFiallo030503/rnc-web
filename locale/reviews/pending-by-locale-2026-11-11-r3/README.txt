@@ -1,0 +1,1 @@
+Paquetes separados generados tras localizar el nombre del CSV de muestra y mensajes de validación de formulario. Cada paquete contiene 869 filas (707 Django + 162 JavaScript). Los borradores siguen fuzzy; revise cada fila antes de devolver el bundle.

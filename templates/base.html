@@ -1,15 +1,17 @@
-{% load static %}
+{% load static i18n %}
 <!doctype html>
-<html lang="es">
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}" data-offline-unavailable="{% translate 'La consulta local aún no está disponible en este dispositivo.' %}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f5f4ef">
-    <meta name="description" content="Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba.">
-    <title>{% block title %}RNC · Estadísticas de cáncer en Cuba{% endblock %}</title>
+    <meta name="description" content="{% translate 'Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba.' %}">
+    <title>{% block title %}{% translate "RNC · Estadísticas de cáncer en Cuba" %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/site.css' %}">
     <link rel="stylesheet" href="{% static 'css/components.css' %}">
     <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+    {% if public_pwa_enabled %}<link rel="manifest" href="{% static 'pwa/manifest.webmanifest' %}"><script src="{% static 'js/register-service-worker.js' %}" defer></script>{% endif %}
+    <script src="{% url 'javascript-catalog' %}?lang={{ LANGUAGE_CODE }}" defer></script>
     <script src="{% static 'js/navigation.js' %}" defer></script>
     <script src="{% static 'js/session-sync.js' %}" defer></script>
     <script src="{% static 'js/forms.js' %}" defer></script>
@@ -17,18 +19,19 @@
     <script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>
     <script src="{% static 'js/charts.js' %}" defer></script>
     {% endif %}
+    {% if offline_mode %}<link rel="stylesheet" href="{% static 'css/offline.css' %}"><script src="{% static 'js/offline-consult.js' %}" defer></script>{% endif %}
   </head>
   <body id="arriba" data-session-identity="{{ session_identity }}">
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido">{% translate "Saltar al contenido" %}</a>
     <header class="site-header">
-      <a class="brand" href="{% if portal_login_available and user.is_authenticated and has_admin_access %}{% url 'public_site:intake_prototype' %}{% else %}{% url 'public_site:home' %}{% endif %}" aria-label="RNC Cuba · Inicio" title="Inicio">
+      <a class="brand" href="{% if portal_login_available and user.is_authenticated and has_admin_access %}{% url 'public_site:intake_prototype' %}{% else %}{% url 'public_site:home' %}{% endif %}" aria-label="{% translate 'RNC Cuba · Inicio' %}" title="{% translate 'Inicio' %}">
         <span class="brand-mark" aria-hidden="true">R</span>
         <span class="brand-copy">
           <span class="brand-name">RNC <span class="brand-divider">/</span> Cuba</span>
-          <span class="brand-caption">Registro Nacional de Cáncer</span>
+          <span class="brand-caption">{% translate "Registro Nacional de Cáncer" %}</span>
         </span>
       </a>
-      <nav class="header-nav" aria-label="Navegación principal">
+      <nav class="header-nav" aria-label="{% translate 'Navegación principal' %}">
         {% include "includes/page_links.html" %}
       </nav>
       {% if portal_login_available %}<div class="account-nav">
@@ -36,48 +39,53 @@
         <details class="account-menu" data-header-menu>
           <summary><span class="account-avatar" aria-hidden="true">{{ account_display_name|first|upper }}</span><span class="account-copy"><strong>{{ account_display_name }}</strong><small>{{ account_role_label }}</small></span><span class="menu-chevron" aria-hidden="true">⌄</span></summary>
           <div class="account-dropdown">
-            <div class="account-dropdown-heading"><span>Sesión iniciada</span><strong>{{ user.get_username }}</strong></div>
-            {% if has_admin_access %}<a href="{% url 'public_site:intake_prototype' %}">{% include "includes/nav_icon.html" with icon="folder" %}Administración</a>{% endif %}
-            {% if can_manage_users %}<a href="{% url 'public_site:users' %}">{% include "includes/nav_icon.html" with icon="users" %}Usuarios y permisos</a>{% endif %}
-            <a href="{% url 'public_site:password_change' %}"><svg class="menu-symbol" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4" y="8" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 8V5a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.5"/></svg>Cambiar contraseña</a>
-            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit"><svg class="menu-symbol" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M8 4H4v12h4M8 10h9m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Cerrar sesión y cambiar de cuenta</button></form>
+            <div class="account-dropdown-heading"><span>{% translate "Sesión iniciada" %}</span><strong>{{ user.get_username }}</strong></div>
+            {% if has_admin_access %}<a href="{% url 'public_site:intake_prototype' %}">{% include "includes/nav_icon.html" with icon="folder" %}{% translate "Administración" %}</a>{% endif %}
+            {% if can_manage_users %}<a href="{% url 'public_site:users' %}">{% include "includes/nav_icon.html" with icon="users" %}{% translate "Usuarios y permisos" %}</a>{% endif %}
+            <a href="{% url 'public_site:password_change' %}"><svg class="menu-symbol" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4" y="8" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 8V5a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.5"/></svg>{% translate "Cambiar contraseña" %}</a>
+            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit"><svg class="menu-symbol" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M8 4H4v12h4M8 10h9m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>{% translate "Cerrar sesión y cambiar de cuenta" %}</button></form>
           </div>
         </details>
-        {% else %}<a class="login-link" href="{% url 'public_site:login' %}"><svg width="16" height="18" viewBox="0 0 20 22" fill="none" aria-hidden="true"><rect x="3" y="9" width="14" height="11" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M6 9V6a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="14" r="1.5" fill="currentColor"/></svg>Acceso del personal</a>{% endif %}
-      </div>{% else %}<div class="account-nav"><span>Estadísticas públicas</span></div>{% endif %}
+        {% else %}<a class="login-link" href="{% url 'public_site:login' %}"><svg width="16" height="18" viewBox="0 0 20 22" fill="none" aria-hidden="true"><rect x="3" y="9" width="14" height="11" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M6 9V6a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="14" r="1.5" fill="currentColor"/></svg>{% translate "Acceso del personal" %}</a>{% endif %}
+      </div>{% else %}<div class="account-nav"><span>{% translate "Estadísticas públicas" %}</span></div>{% endif %}
+      <form class="language-picker" method="post" action="{% url 'set_language' %}">{% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}"><label for="site-language">{% translate "Idioma" %}</label><select id="site-language" name="language" aria-label="{% translate 'Idioma' %}">{% get_current_language as CURRENT_LANGUAGE %}{% get_available_languages as AVAILABLE_LANGUAGES %}{% for language_code, language_name in AVAILABLE_LANGUAGES %}<option value="{{ language_code }}"{% if language_code == CURRENT_LANGUAGE %} selected{% endif %}>{{ language_name }}{% if language_code in draft_translation_locales %} — {% translate "borrador de vista previa" %}{% endif %}</option>{% endfor %}</select><button type="submit">{% translate "Aplicar" %}</button></form>
       <details class="mobile-menu" data-header-menu>
-        <summary>Menú <span aria-hidden="true">☰</span></summary>
+        <summary>{% translate "Menú" %} <span aria-hidden="true">☰</span></summary>
         <div class="mobile-menu-panel">
-          <nav aria-label="Páginas del sitio">{% include "includes/page_links.html" %}</nav>
-          {% if section_navigation %}<nav aria-label="Secciones de esta página"><p class="menu-label">En esta página</p>{% include "includes/section_links.html" %}</nav>{% endif %}
+          <nav aria-label="{% translate 'Páginas del sitio' %}">{% include "includes/page_links.html" %}</nav>
+          {% if section_navigation %}<nav aria-label="{% translate 'Secciones de esta página' %}"><p class="menu-label">{% translate "En esta página" %}</p>{% include "includes/section_links.html" %}</nav>{% endif %}
           {% if portal_login_available and user.is_authenticated %}
             <div class="mobile-account"><span class="account-avatar" aria-hidden="true">{{ account_display_name|first|upper }}</span><div><strong>{{ account_display_name }}</strong><small>{{ account_role_label }}</small></div></div>
-            <a href="{% url 'public_site:password_change' %}">Cambiar contraseña</a>
-            {% if can_manage_users %}<a href="{% url 'public_site:users' %}">Gestionar usuarios</a>{% endif %}
-            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">Cerrar sesión y cambiar de cuenta</button></form>
-          {% elif portal_login_available %}<a href="{% url 'public_site:login' %}">Acceso del personal</a>{% endif %}
+            <a href="{% url 'public_site:password_change' %}">{% translate "Cambiar contraseña" %}</a>
+            {% if can_manage_users %}<a href="{% url 'public_site:users' %}">{% translate "Gestionar usuarios" %}</a>{% endif %}
+            <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">{% translate "Cerrar sesión y cambiar de cuenta" %}</button></form>
+          {% elif portal_login_available %}<a href="{% url 'public_site:login' %}">{% translate "Acceso del personal" %}</a>{% endif %}
         </div>
       </details>
     </header>
+    {% if translation_preview %}<aside class="translation-preview-banner" role="alert">
+      <strong>{% translate "Vista previa de traducción automática" %}</strong>
+      <span>{% translate "Este idioma usa un borrador no revisado ni aprobado. No lo use para interpretar estadísticas de cáncer." %}</span>
+    </aside>{% endif %}
 
     <div class="workspace-shell">
-      <aside class="site-sidebar" id="site-sidebar" aria-label="Navegación lateral">
+      <aside class="site-sidebar" id="site-sidebar" aria-label="{% translate 'Navegación lateral' %}">
         <div class="sidebar-inner">
-          <button class="sidebar-toggle" type="button" aria-controls="sidebar-navigation" aria-expanded="true" aria-label="Plegar barra lateral" title="Plegar barra lateral" hidden>{% include "includes/nav_icon.html" with icon="chevron" %}<span class="toggle-label">Plegar menú</span></button>
+          <button class="sidebar-toggle" type="button" aria-controls="sidebar-navigation" aria-expanded="true" aria-label="{% translate 'Plegar barra lateral' %}" title="{% translate 'Plegar barra lateral' %}" data-label-expanded="{% translate 'Ampliar barra lateral' %}" data-label-collapsed="{% translate 'Plegar barra lateral' %}" hidden>{% include "includes/nav_icon.html" with icon="chevron" %}<span class="toggle-label">{% translate "Plegar menú" %}</span></button>
           <div id="sidebar-navigation">
-          <p class="menu-label">Navegación</p>
-          <nav class="sidebar-pages" aria-label="Páginas">{% include "includes/page_links.html" %}</nav>
-          {% if can_manage_users %}<nav class="sidebar-pages" aria-label="Gestión de usuarios"><a href="{% url 'public_site:users' %}" title="Gestionar usuarios" {% if request.resolver_match.url_name == 'users' or request.resolver_match.url_name == 'user_edit' or request.resolver_match.url_name == 'user_create' %}aria-current="page"{% endif %}>{% include "includes/nav_icon.html" with icon="users" %}<span class="nav-label">Usuarios y roles</span></a></nav>{% endif %}
+          <p class="menu-label">{% translate "Navegación" %}</p>
+          <nav class="sidebar-pages" aria-label="{% translate 'Páginas' %}">{% include "includes/page_links.html" %}</nav>
+          {% if can_manage_users %}<nav class="sidebar-pages" aria-label="{% translate 'Gestión de usuarios' %}"><a href="{% url 'public_site:users' %}" title="{% translate 'Gestionar usuarios' %}" {% if request.resolver_match.url_name == 'users' or request.resolver_match.url_name == 'user_edit' or request.resolver_match.url_name == 'user_create' %}aria-current="page"{% endif %}>{% include "includes/nav_icon.html" with icon="users" %}<span class="nav-label">{% translate "Usuarios y roles" %}</span></a></nav>{% endif %}
           {% if section_navigation %}<div class="sidebar-divider"></div>
-          <p class="menu-label">En esta página</p>
-          <nav class="sidebar-sections" aria-label="Índice de la página">{% include "includes/section_links.html" %}</nav>{% endif %}
+          <p class="menu-label">{% translate "En esta página" %}</p>
+          <nav class="sidebar-sections" aria-label="{% translate 'Índice de la página' %}">{% include "includes/section_links.html" %}</nav>{% endif %}
 
           </div>
         </div>
       </aside>
       <div class="page-body">
-        <nav class="breadcrumbs" aria-label="Ruta de navegación">
-          {% if request.resolver_match.url_name != "home" %}<a href="{% url 'public_site:home' %}">Inicio</a><span aria-hidden="true">/</span>{% endif %}
+        <nav class="breadcrumbs" aria-label="{% translate 'Ruta de navegación' %}">
+          {% if request.resolver_match.url_name != "home" %}<a href="{% url 'public_site:home' %}">{% translate "Inicio" %}</a><span aria-hidden="true">/</span>{% endif %}
           <span aria-current="page">{{ current_page_label }}</span>
         </nav>
         <main id="contenido" tabindex="-1">
@@ -88,13 +96,13 @@
     </div>
 
     <footer class="site-footer">
-      <div class="footer-topline"><span class="footer-kicker">RNC / CUBA</span><span class="footer-data-tag"><span aria-hidden="true"></span>Entorno con datos sintéticos</span></div>
+      <div class="footer-topline"><span class="footer-kicker">RNC / CUBA</span><span class="footer-data-tag"><span aria-hidden="true"></span>{% translate "Entorno con datos sintéticos" %}</span></div>
       <div class="footer-grid">
-        <div class="footer-about"><a class="footer-brand" href="{% url 'public_site:home' %}">Información que acerca<br>las estadísticas a las personas.</a><p>Registro Nacional de Cáncer de Cuba.<br>Consulta de incidencia y resultados agregados.</p></div>
-        <nav aria-label="Navegación del pie de página"><h2>Explorar</h2>{% include "includes/page_links.html" %}</nav>
-        <nav aria-label="Ayuda y acceso"><h2>Información y acceso</h2><a href="{% url 'public_site:home' %}#criterios">Cómo leer los resultados</a>{% if portal_login_available %}{% if user.is_authenticated %}<a href="{% url 'public_site:password_change' %}">Seguridad de mi cuenta</a>{% else %}<a href="{% url 'public_site:login' %}">Acceso del personal</a>{% endif %}{% endif %}<a href="#arriba" class="footer-up">Subir al comienzo <span aria-hidden="true">↑</span></a></nav>
+        <div class="footer-about"><a class="footer-brand" href="{% url 'public_site:home' %}">{% translate "Información que acerca" %}<br>{% translate "las estadísticas a las personas." %}</a><p>{% translate "Registro Nacional de Cáncer de Cuba." %}<br>{% translate "Consulta de incidencia y resultados agregados." %}</p></div>
+        <nav aria-label="{% translate 'Navegación del pie de página' %}"><h2>{% translate "Explorar" %}</h2>{% include "includes/page_links.html" %}</nav>
+        <nav aria-label="{% translate 'Ayuda y acceso' %}"><h2>{% translate "Información y acceso" %}</h2><a href="{% url 'public_site:home' %}#criterios">{% translate "Cómo leer los resultados" %}</a>{% if portal_login_available %}{% if user.is_authenticated %}<a href="{% url 'public_site:password_change' %}">{% translate "Seguridad de mi cuenta" %}</a>{% else %}<a href="{% url 'public_site:login' %}">{% translate "Acceso del personal" %}</a>{% endif %}{% endif %}<a href="#arriba" class="footer-up">{% translate "Subir al comienzo" %} <span aria-hidden="true">↑</span></a></nav>
       </div>
-      <div class="footer-bottom"><span>Registro Nacional de Cáncer · Cuba</span><span>Los datos de esta instalación son inventados. No representan estadísticas oficiales.</span></div>
+      <div class="footer-bottom"><span>{% translate "Registro Nacional de Cáncer · Cuba" %}</span><span>{% translate "Los datos de esta instalación son inventados. No representan estadísticas oficiales." %}</span></div>
     </footer>
   </body>
 </html>

@@ -1,8 +1,11 @@
 from django.urls import include, path, re_path
+from django.views.i18n import JavaScriptCatalog
 from django.views.generic import RedirectView
 from public_site import errors
 
 urlpatterns = [
+    path("i18n/", include("django.conf.urls.i18n")),
+    path("jsi18n/", JavaScriptCatalog.as_view(domain="djangojs"), name="javascript-catalog"),
     # All account operations use the portal's role and account-safety policies.
     path(
         "admin/",

@@ -1,28 +1,74 @@
 {% extends "base_public.html" %}
-{% block content %}<div class="page-heading"><p class="eyebrow">Consulta estadística</p><h1>Explorador de incidencia</h1><p>Elija los datos y construya la visualización que necesita. <span class="badge">Datos sintéticos</span></p></div>
-{% if not delivery %}<section class="panel empty-state" role="status"><h2>No hay resultados</h2><p>Actualmente no hay un corte publicado. Las consultas y descargas estarán disponibles cuando se publique una nueva versión.</p></section>{% else %}
-<form method="get" class="panel" id="query-form" data-validate data-query-form>
-<h2>Datos de la consulta</h2>
-{% include "includes/form_fields.html" with grid=True %}
-<div class="actions"><button type="submit" class="apply-filters">Generar visualización →</button><a href="{% url 'public_site:synthetic_explorer' %}">Restablecer</a></div></form>
+{% load i18n locale_format %}
+{% block content %}
+{% if not delivery %}<section class="panel empty-state" role="status"><h2>{% translate "No hay resultados" %}</h2><p>{% translate "Actualmente no hay un corte publicado. Las consultas y descargas estarán disponibles cuando se publique una nueva versión." %}</p></section>{% else %}
+<div class="query-workspace">
+  <aside class="query-filter-sidebar" id="filtros" aria-label="{% translate 'Filtros de la consulta' %}">
+    <details class="query-filter-panel" open>
+    <summary><span class="filter-help" tabindex="0" aria-describedby="query-filters-tip" data-help-trigger><span>{% translate "Filtros de consulta" %}</span><span class="filter-help-popover" role="tooltip" id="query-filters-tip">{% translate "Puede combinar valores de provincia y municipio de residencia cuando el corte los incluya. Si un filtro está vacío, se incluyen todos sus valores disponibles. Los grupos tumorales corresponden a esta publicación; no forman un catálogo completo ni representan códigos TOPO o ICD‑O." %}</span></span><span class="query-filter-chevron" aria-hidden="true"></span></summary>
+      <form method="get" action="#visualizacion" id="query-form" data-validate data-query-form>
+        {% include "includes/form_fields.html" with grid=True help_tips=True %}
+        {{ chart_requirements|json_script:"chart-requirements-data" }}
+        {{ chart_compatibility|json_script:"chart-compatibility-data" }}
+        <div class="actions query-filter-actions"><button type="submit" class="apply-filters"{% if form.errors %} disabled{% endif %}>{% translate "Actualizar resultados" %} →</button><a href="{% url 'public_site:synthetic_explorer' %}#visualizacion">{% translate "Restablecer" %}</a></div>
+      </form>
+    </details>
+  </aside>
 
-{% if table %}<div class="synthetic-summary"><article><span>Tumores seleccionados</span><strong>{{ summary.tumors }}</strong></article><article><span>Personas distintas</span><strong>{{ summary.persons }}</strong></article></div>
-<section class="panel">
-  <div class="panel-heading">
-    <h2>Visualización</h2>
-    <span class="badge">Datos sintéticos</span>
+  <div class="query-results" id="visualizacion">
+  {% if table %}
+  <section class="panel">
+    <div class="panel-heading">
+      <h2>{% translate "Visualización" %}</h2>
+      <div class="query-result-actions"><a class="query-edit-filters" href="#filtros">{% translate "Cambiar filtros" %}</a></div>
+    </div>
+    <p>{{ chart_payload.metric }} · {{ chart_payload.unit }} · {{ chart_payload.dimension_label }}</p>
+    <div class="chart-frame">
+      <canvas id="result-chart"
+              role="img"
+              aria-label="{% translate 'Gráfico de la consulta; valores disponibles en la tabla inferior' %}"></canvas>
+    </div>
+    {{ chart_payload|json_script:"chart-payload" }}
+    <p class="muted"><strong>{% translate "Filtros aplicados:" %}</strong> {{ chart_payload.filter_summary }}<br>{{ chart_payload.chart_label }}. {% translate "Eje de valores:" %} {{ chart_payload.axis_unit }}.{% if filters.chart == "scatter" %} {% translate "El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los conteos exactos de tumores y personas distintas." %}{% endif %}{% if filters.chart == "percent" %} {% translate "Cada barra suma 100 % y muestra la distribución por sexo dentro de esa categoría." %}{% endif %}{% if filters.chart == "swarm" %} {% translate "La separación vertical de los puntos solo facilita distinguirlos; no representa otro indicador." %}{% endif %}</p>
+    <div class="actions export-actions">
+      <button type="submit" form="query-form" name="format" value="png">{% translate "Imagen PNG" %}</button><button type="submit" form="query-form" name="format" value="svg">{% translate "Vector SVG" %}</button><button type="submit" form="query-form" name="format" value="pdf">{% translate "Informe PDF" %}</button><button type="submit" form="query-form" name="format" value="csv">{% translate "Tabla CSV" %}</button><button type="submit" form="query-form" name="format" value="xlsx">{% translate "Excel" %}</button>
+    </div>
+  </section>
+  <section class="panel">
+    <h2>{% translate "Resultados" %}</h2>
+    <p class="muted">{% if filters.chart == "ranking" %}{% translate "Categorías ordenadas de mayor a menor según el indicador seleccionado. Las posiciones también aparecen en las exportaciones." %}{% else %}{% translate "Frecuencias y tasas calculadas para cada categoría de la comparación." %}{% endif %}</p>
+    <div class="table-scroll">
+      <table class="result-table">
+        <caption>{% translate "Frecuencias, población denominadora y tasas por categoría" %}</caption>
+        <thead><tr>
+          {% if filters.chart == "ranking" %}<th scope="col">{% translate "Posición" %}</th>{% endif %}
+          <th scope="col">{% translate "Categoría" %}</th>
+          <th scope="col">{% translate "Tumores" %}<br><small>{% translate "Frecuencia absoluta" %}</small></th>
+          <th scope="col">{% translate "Personas distintas" %}<br><small>{% translate "Frecuencia absoluta" %}</small></th>
+          <th scope="col">{% translate "Población denominadora" %}</th>
+          <th scope="col">{% translate "Frecuencia relativa (%)" %}<br><small>{{ chart_payload.unit_label }}</small></th>
+          <th scope="col">{% translate "Tasa cruda/específica" %}<br><small>{% translate "por 100 000" %} · {{ chart_payload.unit_label }}</small></th>
+          <th scope="col">{% translate "Tasa ajustada Segi–Doll" %}<br><small>{% translate "por 100 000" %} · {{ chart_payload.unit_label }}</small></th>
+          {% for s in table.0.series %}<th scope="col">{{ s.label }}{% if filters.chart == "percent" %} (%) {% endif %}</th>{% endfor %}
+        </tr></thead>
+        <tbody>{% for r in table %}<tr>
+          {% if filters.chart == "ranking" %}<td>{{ r.rank|localized_number }}</td>{% endif %}
+          <th scope="row">{{ r.display_label }}</th>
+          <td>{{ r.tumors|localized_number }}</td>
+          <td>{% if multi_value_filters %}—{% else %}{{ r.persons|localized_number }}{% endif %}</td>
+          <td>{{ r.population|localized_number }}</td>
+          <td>{% if r.relative_frequency is not None %}{{ r.relative_frequency|localized_number:2 }}{% else %}—{% endif %}</td>
+          <td>{% if r.crude_rate is not None %}{{ r.crude_rate|localized_number:2 }}{% else %}—{% endif %}</td>
+          <td>{% if r.adjusted_rate is not None %}{{ r.adjusted_rate|localized_number:2 }}{% else %}—{% endif %}</td>
+          {% for s in r.series %}<td>{% if filters.metric == "count" %}{{ s.value|localized_number }}{% else %}{{ s.value|localized_number:2 }}{% endif %}</td>{% endfor %}
+        </tr>{% endfor %}</tbody>
+      </table>
+    </div>
+    <p class="muted">{% translate "La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La tasa cruda es frecuencia / población denominadora × 100 000; al comparar por edad corresponde a una tasa específica por edad. Al seleccionar varios años se acumulan las poblaciones anuales seleccionadas, por lo que la tasa resume el período y no corresponde a un solo año." %}</p>
+    {% if multi_value_filters %}<p class="muted">{% translate "Las personas distintas no se calculan cuando se combinan varios valores; una persona puede aparecer en más de un período, territorio, grupo de edad o localización." %}</p>{% else %}<p class="muted">{% translate "Una persona puede aparecer en distintas localizaciones; esos conteos pueden solaparse y no se suman para obtener personas únicas." %}</p>{% endif %}
+    <p class="muted">{% translate "La tasa ajustada aplica la población estándar Segi–Doll al conjunto de edades disponible. Si falta cobertura en alguno de los grupos requeridos, se muestra “—”. La fórmula, los denominadores y la presentación de los métodos siguen pendientes de cotejo con el RNC." %}</p>
+  </section>
+  {% elif errors %}<section class="panel" role="status"><h2>{% translate "Revise los filtros" %}</h2><p>{% translate "Hay campos por corregir en el panel de filtros." %}</p></section>
+  {% else %}<section class="panel"><h2>{% translate "No hay resultados" %}</h2><p>{% translate "No hay una publicación activa o la selección no contiene registros." %}</p></section>{% endif %}
   </div>
-  <p>{{ chart_payload.metric }} · {{ chart_payload.unit }} · {{ chart_payload.dimension_label }}</p>
-  <div class="chart-frame">
-    <canvas id="result-chart"
-            role="img"
-            aria-label="Gráfico de la consulta; valores disponibles en la tabla inferior"></canvas>
-  </div>
-  {{ chart_payload|json_script:"chart-payload" }}
-  <p class="muted">{{ chart_payload.note }}<br><strong>Filtros aplicados:</strong> {{ chart_payload.filter_summary }}<br>{{ chart_payload.chart_label }}. Eje de valores: {{ chart_payload.axis_unit }}.{% if filters.chart == "percent" %} Cada barra suma 100 % y muestra la distribución por sexo dentro de esa categoría.{% endif %}</p>
-  <div class="actions export-actions">
-    <button form="query-form" name="format" value="png">Imagen PNG</button><button form="query-form" name="format" value="svg">Vector SVG</button><button form="query-form" name="format" value="pdf">Informe PDF</button><button form="query-form" name="format" value="csv">Tabla CSV</button><button form="query-form" name="format" value="xlsx">Excel</button>
-  </div>
-</section>
-<section class="panel"><h2>Resultados</h2><div class="table-scroll"><table class="result-table"><caption>{{ chart_payload.metric }} · {{ chart_payload.unit }}</caption><thead><tr><th>Categoría</th><th>Tumores</th><th>Personas</th><th>Valor del indicador</th>{% for s in table.0.series %}<th>{{ s.label }}{% if filters.chart == "percent" %} (%) {% endif %}</th>{% endfor %}</tr></thead><tbody>{% for r in table %}<tr><th scope="row">{{ r.label }}</th><td>{{ r.tumors }}</td><td>{{ r.persons }}</td><td>{{ r.value|floatformat:2 }}</td>{% for s in r.series %}<td>{{ s.value|floatformat:2 }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div><p class="muted">Una persona puede aparecer en distintas localizaciones; esos conteos no se suman para obtener personas únicas. Una persona se cuenta una sola vez en el conjunto seleccionado, incluso al combinar años; los conteos de categorías pueden solaparse. Los denominadores son sintéticos; las tasas no son resultados oficiales. Métodos candidatos pendientes de cotejo RNC.</p></section>
-{% elif not errors %}<section class="panel"><h2>No hay resultados</h2><p>No hay una publicación activa o la selección no contiene registros.</p></section>{% endif %}{% endif %}{% endblock %}
+</div>{% endif %}{% endblock %}

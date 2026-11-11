@@ -1,0 +1,2865 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba."
+msgstr "Incidence statistics from the National Cancer Registry of Cuba."
+
+msgid "RNC · Estadísticas de cáncer en Cuba"
+msgstr "NCR · Cancer statistics in Cuba"
+
+msgid "RNC Cuba · Inicio"
+msgstr "NCR Cuba · Home"
+
+msgid "Inicio"
+msgstr "Home"
+
+msgid "Registro Nacional de Cáncer"
+msgstr "National Cancer Registry"
+
+msgid "Sesión iniciada"
+msgstr "Signed in"
+
+msgid "Administración"
+msgstr "Administration"
+
+msgid "Usuarios y permisos"
+msgstr "Users and permissions"
+
+msgid "Cambiar contraseña"
+msgstr "Change password"
+
+msgid "Cerrar sesión y cambiar de cuenta"
+msgstr "Sign out and switch account"
+
+msgid "Acceso del personal"
+msgstr "Staff sign in"
+
+msgid "Estadísticas públicas"
+msgstr "Public statistics"
+
+msgid "Idioma"
+msgstr "Language"
+
+msgid "Aplicar"
+msgstr "Apply"
+
+msgid "Menú"
+msgstr "Menu"
+
+msgid "Páginas del sitio"
+msgstr "Site pages"
+
+msgid "Secciones de esta página"
+msgstr "Sections on this page"
+
+msgid "Secciones sobre el RNC"
+msgstr "Sections about the NCR"
+
+msgid "En esta página"
+msgstr "On this page"
+
+msgid "Plegar barra lateral"
+msgstr "Collapse sidebar"
+
+msgid "Plegar menú"
+msgstr "Collapse menu"
+
+msgid "Navegación"
+msgstr "Navigation"
+
+msgid "Páginas"
+msgstr "Pages"
+
+msgid "Gestión de usuarios"
+msgstr "User management"
+
+msgid "Gestionar usuarios"
+msgstr "Manage users"
+
+msgid "Usuarios y roles"
+msgstr "Users and roles"
+
+msgid "Índice de la página"
+msgstr "Page contents"
+
+msgid "Entorno con datos sintéticos"
+msgstr "Synthetic data environment"
+
+msgid "Información que acerca"
+msgstr "Bringing information closer"
+
+msgid "las estadísticas a las personas."
+msgstr "Bringing statistics to people."
+
+msgid "Registro Nacional de Cáncer de Cuba."
+msgstr "National Cancer Registry of Cuba."
+
+msgid "Consulta de incidencia y resultados agregados."
+msgstr "Incidence statistics and aggregate results."
+
+msgid "Navegación del pie de página"
+msgstr "Footer navigation"
+
+msgid "Explorar"
+msgstr "Explore"
+
+msgid "Ayuda y acceso"
+msgstr "Help and access"
+
+msgid "Información y acceso"
+msgstr "Information and access"
+
+msgid "Cómo leer los resultados"
+msgstr "How to read the results"
+
+msgid "Seguridad de mi cuenta"
+msgstr "Account security"
+
+msgid "Subir al comienzo"
+msgstr "Back to top"
+
+msgid "Registro Nacional de Cáncer · Cuba"
+msgstr "National Cancer Registry · Cuba"
+
+msgid ""
+"Los datos de esta instalación son inventados. No representan estadísticas "
+"oficiales."
+msgstr ""
+"The data on this site are synthetic and do not represent official "
+"statistics."
+
+msgid "El RNC"
+msgstr "About the NCR"
+
+msgid "Consulta estadística"
+msgstr "Statistical explorer"
+
+msgid "Nomencladores"
+msgstr "Code catalogs"
+
+msgid "Consulta sin conexión"
+msgstr "Offline consultation"
+
+msgid "Crear usuario"
+msgstr "Create user"
+
+msgid "Editar usuario"
+msgstr "Edit user"
+
+msgid "Detalle del corte"
+msgstr "Release details"
+
+msgid "Iniciar sesión"
+msgstr "Sign in"
+
+msgid "Recuperar acceso"
+msgstr "Recover account"
+
+msgid "Administrador de soporte"
+msgstr "Support administrator"
+
+msgid "Responsable de publicación"
+msgstr "Publication manager"
+
+msgid "Operador de cargas"
+msgstr "Data intake operator"
+
+msgid "Consulta pública"
+msgstr "Public consultation"
+
+msgid "Información para comprender la incidencia del cáncer"
+msgstr "Information to understand cancer incidence"
+
+msgid ""
+"El Registro Nacional de Cáncer reúne y analiza información sobre los casos "
+"de cáncer en Cuba. Este portal permite consultar estadísticas por año, "
+"territorio, sexo, edad y localización, y preparar tablas, gráficos y "
+"descargas."
+msgstr ""
+"The National Cancer Registry collects and analyzes information about cancer "
+"cases in Cuba. This portal lets you explore statistics by year, territory, "
+"sex, age, and cancer site, and prepare tables, charts, and downloads."
+
+msgid "Consultar estadísticas"
+msgstr "Explore statistics"
+
+msgid "Conocer el RNC"
+msgstr "About the NCR"
+
+msgid "Qué ofrece este portal"
+msgstr "What this portal offers"
+
+msgid "Explora los datos disponibles"
+msgstr "Explore the available data"
+
+msgid "Filtra por año y territorio"
+msgstr "Filter by year and territory"
+
+msgid "Compara sexo, edad y localización"
+msgstr "Compare sex, age, and cancer site"
+
+msgid "Consulta tablas y visualizaciones"
+msgstr "Explore tables and visualizations"
+
+msgid "Descarga resultados con su contexto"
+msgstr "Download results with their context"
+
+msgid "Información sobre el Registro"
+msgstr "About the Registry"
+
+msgid "El Registro"
+msgstr "The Registry"
+
+msgid "¿Qué es el RNC?"
+msgstr "What is the NCR?"
+
+msgid ""
+"Es el sistema nacional que recopila, revisa y analiza información de cáncer "
+"con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del"
+" cáncer y sirven de apoyo a la investigación y la planificación sanitaria."
+msgstr ""
+"It is the national population-based system that collects, reviews, and "
+"analyzes cancer information. Its statistics help describe the burden of "
+"cancer and support research and health planning."
+
+msgid "Qué hacemos"
+msgstr "What we do"
+
+msgid "La plataforma"
+msgstr "The platform"
+
+msgid "¿Qué puedes hacer aquí?"
+msgstr "What can you do here?"
+
+msgid ""
+"Construir una consulta, elegir el indicador y la dimensión de análisis, "
+"revisar la tabla que acompaña cada gráfico y exportar los resultados "
+"seleccionados."
+msgstr ""
+"Build a query, choose an indicator and analysis dimension, review the table "
+"accompanying each chart, and export the selected results."
+
+msgid "Abrir la consulta estadística"
+msgstr "Open the statistical explorer"
+
+msgid "Cómo usar el portal"
+msgstr "How to use the portal"
+
+msgid "De la pregunta al resultado"
+msgstr "From question to result"
+
+msgid "Define la consulta."
+msgstr "Define your query."
+
+msgid ""
+"Selecciona el período y las dimensiones disponibles, como territorio, sexo, "
+"edad y localización."
+msgstr ""
+"Select the available period and dimensions, such as territory, sex, age, and"
+" cancer site."
+
+msgid "Elige qué medir."
+msgstr "Choose what to measure."
+
+msgid ""
+"Distingue el número de casos, una proporción o una tasa; cada medida "
+"responde a una pregunta diferente."
+msgstr ""
+"Choose between a case count, a proportion, or a rate; each measure answers a"
+" different question."
+
+msgid "Interpreta y conserva el contexto."
+msgstr "Interpret the results in context."
+
+msgid ""
+"Revisa tabla, unidad, población de referencia, fuente y notas del método "
+"antes de comparar o descargar."
+msgstr ""
+"Review the table, unit, reference population, source, and method notes "
+"before comparing or downloading results."
+
+msgid ""
+"La disponibilidad de cada indicador depende del corte publicado. Las "
+"estimaciones, los datos observados y los períodos preliminares deben "
+"identificarse por separado."
+msgstr ""
+"Indicator availability depends on the published release. Estimates, observed"
+" data, and preliminary periods must be identified separately."
+
+msgid "Ver cómo se calculan los indicadores"
+msgstr "See how indicators are calculated"
+
+msgid "Conceptos estadísticos básicos"
+msgstr "Basic statistical concepts"
+
+msgid "Casos y frecuencias"
+msgstr "Cases and frequencies"
+
+msgid ""
+"Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa"
+" compara una parte con un total y se expresa como porcentaje. El denominador"
+" y la unidad deben acompañar siempre al resultado."
+msgstr ""
+"A count shows how many cases meet the selected filters. A relative frequency"
+" compares a part with a total and is expressed as a percentage. The "
+"denominator and unit should always accompany the result."
+
+msgid "Tasas de incidencia"
+msgstr "Incidence rates"
+
+msgid ""
+"Una tasa relaciona los casos nuevos con la población correspondiente al "
+"mismo período y estrato. Las tasas por edad ayudan a describir grupos; el "
+"ajuste por edad facilita comparaciones entre poblaciones con estructuras "
+"etarias diferentes."
+msgstr ""
+"A rate relates new cases to the population for the same period and stratum. "
+"Age-specific rates help describe groups; age adjustment supports comparisons"
+" between populations with different age structures."
+
+msgid ""
+"Las consultas estarán disponibles cuando exista una publicación activa."
+msgstr "Queries will be available when a release is published."
+
+msgid "Anillo"
+msgstr "Doughnut"
+
+msgid "Año de incidencia"
+msgstr "Year of diagnosis"
+
+msgid "Barras agrupadas por sexo"
+msgstr "Grouped bars by sex"
+
+msgid "Barras apiladas por sexo"
+msgstr "Stacked bars by sex"
+
+msgid "Barras horizontales"
+msgstr "Horizontal bars"
+
+msgid "Barras porcentuales por sexo"
+msgstr "Percentage bars by sex"
+
+msgid "Circular"
+msgstr "Pie"
+
+msgid "Columnas"
+msgstr "Columns"
+
+msgid "Comparar por"
+msgstr "Compare by"
+
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "Scatter plot: tumors and people by province/age"
+
+msgid "Distribución territorial (swarm)"
+msgstr "Territorial distribution (swarm)"
+
+msgid "Edad"
+msgstr "Age"
+
+msgid "El ajuste por edad necesita todos los grupos de edad."
+msgstr "Age adjustment requires all age groups."
+
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "Age adjustment requires all age groups and another dimension."
+
+msgid ""
+"El corte activo no incluye desglose por municipio; solo contiene provincia "
+"de residencia."
+msgstr ""
+"The active release has no municipality breakdown; it only contains province "
+"of residence."
+
+msgid ""
+"El corte agregado no permite deduplicar personas distintas al combinar "
+"varios valores. Use Tumores o seleccione un solo valor por filtro."
+msgstr ""
+"The aggregate release cannot deduplicate people across multiple selected "
+"values. Use tumors or select only one value per filter."
+
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "This dimension is not available for the selected chart."
+
+msgid "Este gráfico requiere la unidad Tumores."
+msgstr "This chart requires the Tumors unit."
+
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "This indicator is not available for the selected chart."
+
+msgid "Filtra los casos por municipio de residencia. Puede elegir varios."
+msgstr ""
+"Filter cases by municipality of residence. You can select more than one."
+
+msgid "Frecuencia absoluta"
+msgstr "Absolute frequency"
+
+msgid "Frecuencia relativa (%)"
+msgstr "Relative frequency (%)"
+
+msgid "Grupo de localización"
+msgstr "Cancer site group"
+
+msgid "Indicador"
+msgstr "Indicator"
+
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "A comparison by sex requires both sexes and another dimension."
+
+msgid ""
+"La dispersión necesita una selección que permita contar personas distintas "
+"sin solapamientos."
+msgstr ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+
+msgid "Líneas"
+msgstr "Lines"
+
+msgid "Municipio de residencia"
+msgstr "Municipality of residence"
+
+msgid ""
+"Para personas distintas, la composición solo se puede comparar por sexo."
+msgstr "For distinct people, composition can only be compared by sex."
+
+msgid "Personas distintas"
+msgstr "Distinct people"
+
+msgid "Provincia de residencia"
+msgstr "Province of residence"
+
+msgid "Puntos por provincia o grupo de edad"
+msgstr "Points by province or age group"
+
+msgid "Ranking por indicador"
+msgstr "Ranking by indicator"
+
+msgid "Sexo"
+msgstr "Sex"
+
+msgid "Sin seleccionar opciones se incluyen todos; puede elegir varias."
+msgstr ""
+"If you select no options, all values are included. You can select more than "
+"one."
+
+msgid ""
+"Sin selección se incluyen solo las provincias presentes en este corte, que "
+"puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia "
+"de la unidad informante; puede elegir varias."
+msgstr ""
+"With no selection, only provinces in this release are included; they may not"
+" cover all of Cuba. These are provinces of residence, not provinces of "
+"reporting units. You can select more than one."
+
+msgid ""
+"Sin selección se incluyen todas las provincias disponibles. Es la provincia "
+"de residencia, no la provincia de la unidad informante; puede elegir varias."
+msgstr ""
+"With no selection, all available provinces are included. This is the "
+"province of residence, not the province of the reporting unit. You can "
+"select more than one."
+
+msgid ""
+"Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta"
+" 8 categorías excluyentes."
+msgstr ""
+"Only chart types compatible with your selection are offered. Pie and "
+"doughnut charts support up to 8 mutually exclusive categories."
+
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Age-adjusted Segi–Doll rate per 100,000"
+
+msgid "Tasa cruda / específica por 100 000"
+msgstr "Crude / age-specific rate per 100,000"
+
+msgid "Tipo de gráfico"
+msgstr "Chart type"
+
+msgid "Tumores"
+msgstr "Tumors"
+
+msgid "Unidad de conteo"
+msgstr "Counting unit"
+
+msgid "Cuenta"
+msgstr "Account"
+
+msgid "Consulta sin conexión · RNC Cuba"
+msgstr "Offline consultation · NCR Cuba"
+
+msgid "Consulta pública local"
+msgstr "Local public consultation"
+
+msgid ""
+"Guarda una publicación agregada sintética mientras tienes conexión. Después "
+"puedes filtrar, calcular, graficar, paginar e imprimir desde este "
+"dispositivo. La aplicación pública continúa disponible sin el servidor; la "
+"administración requiere conexión."
+msgstr ""
+"Save a synthetic aggregate release while you are online. You can then "
+"filter, calculate, chart, paginate, and print from this device. The public "
+"app remains available without the server; administration requires a "
+"connection."
+
+msgid "Publicación local"
+msgstr "Local release"
+
+msgid "No hay paquete guardado."
+msgstr "No saved package."
+
+msgid "Instalar consulta pública"
+msgstr "Install public consultation"
+
+msgid "Guardar / actualizar publicación"
+msgstr "Save / update release"
+
+msgid "Eliminar copia local"
+msgstr "Delete local copy"
+
+msgid ""
+"Este prototipo solo acepta publicaciones sintéticas. La copia queda en el "
+"almacenamiento del navegador hasta que la elimines o el navegador la retire."
+" Una copia sin conexión no puede actualizarse ni revocarse mientras el "
+"dispositivo está desconectado."
+msgstr ""
+"This prototype accepts synthetic releases only. The copy remains in browser "
+"storage until you delete it or the browser removes it. An offline copy "
+"cannot be updated or revoked while the device is disconnected."
+
+msgid "Filtros y visualización"
+msgstr "Filters and visualization"
+
+msgid "Guarda una publicación para cargar los filtros disponibles."
+msgstr "Save a release to load the available filters."
+
+msgid "No disponible en esta publicación"
+msgstr "Not available in this release"
+
+msgid "Localización"
+msgstr "Site"
+
+msgid "Calcular en este dispositivo"
+msgstr "Calculate on this device"
+
+msgid "Comparar con el servidor"
+msgstr "Compare with server"
+
+msgid "Descargar CSV"
+msgstr "Download CSV"
+
+msgid "Descargar gráfico PNG"
+msgstr "Download chart PNG"
+
+msgid "Imprimir / guardar PDF"
+msgstr "Print / save PDF"
+
+msgid "Gráfico del resultado calculado localmente"
+msgstr "Chart of the result calculated locally"
+
+msgid "Paginación de resultados"
+msgstr "Results pagination"
+
+msgid "Anterior"
+msgstr "Previous"
+
+msgid "Siguiente"
+msgstr "Next"
+
+msgid "Barras"
+msgstr "Bars"
+
+msgid "Actualizar resultados"
+msgstr "Update results"
+
+msgid ""
+"Actualmente no hay un corte publicado. Las consultas y descargas estarán "
+"disponibles cuando se publique una nueva versión."
+msgstr ""
+"No release is currently published. Queries and downloads will be available "
+"when a new version is published."
+
+msgid ""
+"Cada barra suma 100 % y muestra la distribución por sexo dentro de esa "
+"categoría."
+msgstr ""
+"Each bar totals 100% and shows the sex distribution within that category."
+
+msgid "Cambiar filtros"
+msgstr "Change filters"
+
+msgid "Categoría"
+msgstr "Category"
+
+msgid ""
+"Categorías ordenadas de mayor a menor según el indicador seleccionado. Las "
+"posiciones también aparecen en las exportaciones."
+msgstr ""
+"Categories are sorted from highest to lowest by the selected measure. Ranks "
+"are also included in exports."
+
+msgid "Eje de valores:"
+msgstr "Value axis:"
+
+msgid ""
+"El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los "
+"conteos exactos de tumores y personas distintas."
+msgstr ""
+"Bubble size groups categories with the same frequency; the axes retain exact"
+" tumor and distinct-person counts."
+
+msgid "Filtros aplicados:"
+msgstr "Applied filters:"
+
+msgid "Filtros de consulta"
+msgstr "Query filters"
+
+msgid "Frecuencias y tasas calculadas para cada categoría de la comparación."
+msgstr "Frequencies and rates calculated for each comparison category."
+
+msgid "Frecuencias, población denominadora y tasas por categoría"
+msgstr "Frequencies, denominator population, and rates by category"
+
+msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
+msgstr "Query chart; values are available in the table below"
+
+msgid "Hay campos por corregir en el panel de filtros."
+msgstr "Some fields in the filter panel need correction."
+
+msgid "Imagen PNG"
+msgstr "PNG image"
+
+msgid "Informe PDF"
+msgstr "PDF report"
+
+msgid ""
+"La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La "
+"tasa cruda es frecuencia / población denominadora × 100 000; al comparar por"
+" edad corresponde a una tasa específica por edad. Al seleccionar varios años"
+" se acumulan las poblaciones anuales seleccionadas, por lo que la tasa "
+"resume el período y no corresponde a un solo año."
+msgstr ""
+"Relative frequency and rates use the unit selected above. The crude rate is "
+"frequency / denominator population × 100,000; for age comparisons it is an "
+"age-specific rate. When multiple years are selected, their annual "
+"populations are added, so the rate summarizes the period rather than a "
+"single year."
+
+msgid ""
+"La separación vertical de los puntos solo facilita distinguirlos; no "
+"representa otro indicador."
+msgstr ""
+"Vertical spacing between points is only for readability; it does not "
+"represent another measure."
+
+msgid ""
+"La tasa ajustada aplica la población estándar Segi–Doll al conjunto de "
+"edades disponible. Si falta cobertura en alguno de los grupos requeridos, se"
+" muestra “—”. La fórmula, los denominadores y la presentación de los métodos"
+" siguen pendientes de cotejo con el RNC."
+msgstr ""
+"The age-adjusted rate applies the Segi–Doll standard population to the "
+"available age groups. If coverage is missing for any required group, “—” is "
+"shown. The formula, denominators, and presentation of methods still require "
+"review with the NCR."
+
+msgid ""
+"Las personas distintas no se calculan cuando se combinan varios valores; una"
+" persona puede aparecer en más de un período, territorio, grupo de edad o "
+"localización."
+msgstr ""
+"Distinct people are not calculated when multiple values are combined; one "
+"person may appear in more than one period, territory, age group, or site."
+
+msgid "No hay resultados"
+msgstr "No results"
+
+msgid "No hay una publicación activa o la selección no contiene registros."
+msgstr "There is no active release, or the selection contains no records."
+
+msgid "Población denominadora"
+msgstr "Denominator population"
+
+msgid "Posición"
+msgstr "Rank"
+
+msgid ""
+"Puede combinar valores de provincia y municipio de residencia cuando el "
+"corte los incluya. Si un filtro está vacío, se incluyen todos sus valores "
+"disponibles. Los grupos tumorales corresponden a esta publicación; no forman"
+" un catálogo completo ni representan códigos TOPO o ICD‑O."
+msgstr ""
+"You can combine province and municipality of residence values when they are "
+"included in the release. Leaving a filter empty includes all its available "
+"values. Tumor groups are specific to this release; they are not a complete "
+"catalogue and do not represent TOPO or ICD-O codes."
+
+msgid "Restablecer"
+msgstr "Reset"
+
+msgid "Resultados"
+msgstr "Results"
+
+msgid "Revise los filtros"
+msgstr "Review the filters"
+
+msgid "Tabla CSV"
+msgstr "CSV table"
+
+msgid "Tasa ajustada Segi–Doll"
+msgstr "Segi–Doll age-adjusted rate"
+
+msgid "Tasa cruda/específica"
+msgstr "Crude / age-specific rate"
+
+msgid "Vector SVG"
+msgstr "SVG vector image"
+
+msgid "Visualización"
+msgstr "Visualization"
+
+msgid "por 100 000"
+msgstr "per 100,000"
+
+msgid "Excel"
+msgstr "Excel"
+
+msgid ""
+"Una persona puede aparecer en distintas localizaciones; esos conteos pueden "
+"solaparse y no se suman para obtener personas únicas."
+msgstr ""
+"One person may appear at multiple sites; those counts may overlap and should"
+" not be added to obtain the number of unique people."
+
+msgid "Unidad"
+msgstr "Unit"
+
+msgid "Acceso restringido"
+msgstr "Access restricted"
+
+msgid "Bienvenido de nuevo"
+msgstr "Welcome back"
+
+msgid "Entre con su cuenta para acceder a sus herramientas de trabajo."
+msgstr "Sign in to access your work tools."
+
+msgid "Incluir todos"
+msgstr "Select all"
+
+msgid "Incluir todos los valores de"
+msgstr "Include all values for"
+
+msgid "La dirección no existe o el recurso ya no está disponible."
+msgstr "This address does not exist or the resource is no longer available."
+
+msgid ""
+"Las cuentas son creadas por el equipo administrador. No hay registro "
+"público."
+msgstr ""
+"Accounts are created by the administration team. Public registration is not "
+"available."
+
+msgid "No encontramos esa página"
+msgstr "We couldn't find that page"
+
+msgid "No hay acciones registradas."
+msgstr "No actions have been recorded."
+
+msgid "No se ha seleccionado un archivo"
+msgstr "No file selected"
+
+msgid "Paginación"
+msgstr "Pagination"
+
+msgid "Primera"
+msgstr "First"
+
+msgid "Página"
+msgstr "Page"
+
+msgid "Revise los campos indicados"
+msgstr "Review the indicated fields"
+
+msgid "Seleccionar CSV"
+msgstr "Choose CSV"
+
+msgid ""
+"Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar "
+"consultando las estadísticas públicas."
+msgstr ""
+"Your account does not have permission to access this section. You can "
+"continue browsing the public statistics."
+
+msgid "Volver al inicio"
+msgstr "Back to home"
+
+msgid "Vuelva a seleccionar el CSV para reenviar el formulario."
+msgstr "Select the CSV file again to resubmit the form."
+
+msgid "de"
+msgstr "of"
+
+msgid "seleccionados"
+msgstr "selected"
+
+msgid "¿Olvidó su contraseña?"
+msgstr "Forgot your password?"
+
+msgid "Última"
+msgstr "Last"
+
+msgid "Nomencladores · RNC Cuba"
+msgstr "Cancer code catalogues · NCR Cuba"
+
+msgid "Consulta de clasificadores"
+msgstr "Classification lookup"
+
+msgid "Nomencladores de cáncer"
+msgstr "Cancer code catalogues"
+
+msgid ""
+"Busque un código o término y vea a qué sistema, edición y eje pertenece."
+msgstr "Search for a code or term to see its system, edition, and axis."
+
+msgid "Referencia inicial de este proyecto, pendiente de validación del RNC:"
+msgstr "Initial reference for this project, pending NCR validation:"
+
+msgid ""
+"ICD-O-3 para topografía y morfología; ICCC-3 para grupos diagnósticos "
+"infantiles. Se conserva el sistema y la edición con que llega cada código; "
+"no se traducen ni mezclan códigos entre ediciones sin una equivalencia "
+"validada."
+msgstr ""
+"ICD-O-3 for topography and morphology; ICCC-3 for childhood diagnostic "
+"groups. Each code retains its source system and edition; codes are not "
+"translated or mixed across editions without a validated equivalence."
+
+msgid "No se pudo cargar el catálogo"
+msgstr "The catalogue could not be loaded"
+
+msgid "Catálogo oficial aún no disponible"
+msgstr "No authorized catalogue is available yet"
+
+msgid ""
+"Esta instalación no tiene cargado un diccionario autorizado. Los grupos de "
+"localización de la demostración son sintéticos y no equivalen a códigos "
+"TOPO."
+msgstr ""
+"This installation has no authorized dictionary loaded. The demonstration "
+"site groups are synthetic and are not equivalent to TOPO codes."
+
+msgid "Fuentes para la referencia inicial:"
+msgstr "Sources for the initial reference:"
+
+msgid "OMS · ICD‑O‑3"
+msgstr "WHO · ICD‑O‑3"
+
+msgid "IARC · ICCC‑3"
+msgstr "IARC · ICCC‑3"
+
+msgid ""
+"es una edición internacional posterior, no la referencia inicial elegida "
+"para este prototipo."
+msgstr ""
+"is a later international edition, not the initial reference selected for "
+"this prototype."
+
+msgid "Versión del catálogo:"
+msgstr "Catalogue version:"
+
+msgid "Fuente:"
+msgstr "Source:"
+
+msgid "Código o texto"
+msgstr "Code or text"
+
+msgid "Buscar códigos, nombres y descripciones"
+msgstr "Search codes, names, and descriptions"
+
+msgid "Sistema"
+msgstr "System"
+
+msgid "Edición"
+msgstr "Edition"
+
+msgid "Todas"
+msgstr "All"
+
+msgid "Eje"
+msgstr "Axis"
+
+msgid "Todos"
+msgstr "All"
+
+msgid "Buscar"
+msgstr "Search"
+
+msgid ""
+"conceptos encontrados. La aplicación no deduce equivalencias entre sistemas "
+"o ediciones. Solo se muestran conceptos marcados como autorizados y "
+"relaciones declaradas por una fuente o marcadas en el catálogo como "
+"validadas por el RNC; los borradores y vínculos pendientes no aparecen."
+msgstr ""
+"concepts found. The application does not infer equivalences across systems "
+"or editions. Only concepts marked as authorized and relationships declared "
+"by a source or marked as validated by the NCR are shown; drafts and pending "
+"links are omitted."
+
+msgid "identificadores asociados"
+msgstr "associated identifiers"
+
+msgid "Código"
+msgstr "Code"
+
+msgid "Sistema · edición · eje"
+msgstr "System · edition · axis"
+
+msgid "Nombre y descripción"
+msgstr "Name and description"
+
+msgid "Estado"
+msgstr "Status"
+
+msgid "Relación"
+msgstr "Relationship"
+
+msgid "Fuente y licencia"
+msgstr "Source and licence"
+
+msgid "Ver descripción"
+msgstr "View description"
+
+msgid "Vigente"
+msgstr "Current"
+
+msgid "Histórico/deprecado"
+msgstr "Historical/deprecated"
+
+msgid "Opcional"
+msgstr "Optional"
+
+msgid "Fuente del código"
+msgstr "Code source"
+
+msgid "Fuente del concepto"
+msgstr "Concept source"
+
+msgid "Licencia"
+msgstr "Licence"
+
+msgid "Publicación"
+msgstr "Publication"
+
+msgid "Marcado como histórico"
+msgstr "Marked as historical"
+
+msgid "Marcado como autorizado"
+msgstr "Marked as authorized"
+
+msgid "No hay conceptos que coincidan con los filtros."
+msgstr "No concepts match these filters."
+
+msgid "Navegación lateral"
+msgstr "Side navigation"
+
+msgid "Navegación principal"
+msgstr "Main navigation"
+
+msgid "Ruta de navegación"
+msgstr "Breadcrumb navigation"
+
+msgid "Saltar al contenido"
+msgstr "Skip to content"
+
+msgid "0 cortes"
+msgstr "0 releases"
+
+msgid "Acceso individual"
+msgstr "Individual access"
+
+msgid "Acciones"
+msgstr "Actions"
+
+msgid "Activa"
+msgstr "Active"
+
+msgid "Actualización"
+msgstr "Updated"
+
+msgid "Administración de cortes · RNC Cuba"
+msgstr "Release administration · NCR Cuba"
+
+msgid "Administración · Identidad"
+msgstr "Administration · Accounts"
+
+msgid "Apellidos"
+msgstr "Last name"
+
+msgid "Archivo CSV sintético"
+msgstr "Synthetic CSV file"
+
+msgid ""
+"Asigne el rol y el correo. Sin contraseña temporal, una cuenta nueva recibe "
+"una invitación."
+msgstr ""
+"Assign a role and email address. New accounts receive an invitation unless "
+"you set a temporary password."
+
+msgid "Buscar usuario"
+msgstr "Search users"
+
+msgid "CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."
+msgstr "UTF-8 CSV, up to 12 MB and 60,000 rows. Synthetic data only."
+
+msgid "Confirme su identidad para guardar los cambios."
+msgstr "Confirm your identity to save changes."
+
+msgid "Confirmo que el archivo contiene exclusivamente datos sintéticos"
+msgstr "I confirm that the file contains synthetic data only"
+
+msgid ""
+"Consulta el estado de incorporación y publicación de los cortes de "
+"incidencia."
+msgstr "Review ingestion and publication status for incidence releases."
+
+msgid "Contraseña temporal"
+msgstr "Temporary password"
+
+msgid "Correo"
+msgstr "Email"
+
+msgid "Corte"
+msgstr "Release"
+
+msgid "Cortes disponibles en el portal"
+msgstr "Releases available on the portal"
+
+msgid "Cortes en proceso"
+msgstr "Releases in progress"
+
+msgid "Cortes estadísticos"
+msgstr "Statistical releases"
+
+msgid "Cortes estadísticos disponibles para gestión."
+msgstr "Statistical releases available for management."
+
+msgid "Cortes no visibles al público"
+msgstr "Releases not visible to the public"
+
+msgid "Cortes recientes"
+msgstr "Recent releases"
+
+msgid "Crear cuenta"
+msgstr "Create account"
+
+msgid "Crear usuario +"
+msgstr "Create user +"
+
+msgid "Cuenta activa"
+msgstr "Account active"
+
+msgid "Cuenta guardada."
+msgstr "Account saved."
+
+msgid ""
+"Cuenta guardada; no se pudo encolar el correo. Puede reintentar la "
+"invitación."
+msgstr ""
+"Account saved; the email could not be queued. You can retry the invitation."
+
+msgid "Debe permanecer al menos una cuenta de soporte activa."
+msgstr "At least one active support account must remain."
+
+msgid "Desactivada"
+msgstr "Disabled"
+
+msgid "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+msgstr "Disable the account to remove access without deleting its history."
+
+msgid "Disponibilidad de estadísticas aprobadas"
+msgstr "Availability of approved statistics"
+
+msgid "Editar"
+msgstr "Edit"
+
+msgid "Editar cuenta"
+msgstr "Edit account"
+
+msgid "El archivo supera el límite de 12 MB."
+msgstr "The file exceeds the 12 MB limit."
+
+msgid ""
+"Elija su nueva contraseña. No necesita indicar la anterior para recuperar el"
+" acceso."
+msgstr ""
+"Choose your new password. You do not need to provide the old password to "
+"recover access."
+
+msgid "En cola"
+msgstr "Queued"
+
+msgid "En revisión"
+msgstr "Under review"
+
+msgid ""
+"Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."
+msgstr ""
+"Enter 10 to 250 characters. This decision will be recorded in the audit "
+"history."
+
+msgid "Ese correo ya está asignado a otra cuenta."
+msgstr "That email address is already assigned to another account."
+
+msgid "Ese nombre de usuario ya está en uso. Elija otro."
+msgstr "That username is already in use. Choose another."
+
+msgid "Establecer contraseña"
+msgstr "Set password"
+
+msgid "Establecer contraseña · RNC"
+msgstr "Set password · NCR"
+
+msgid "Falló el envío"
+msgstr "Delivery failed"
+
+msgid "Gestionar cuentas del portal"
+msgstr "Manage portal accounts"
+
+msgid "Gestionar entregas sintéticas"
+msgstr "Manage synthetic releases"
+
+msgid "Gestione las cuentas del personal autorizado y sus responsabilidades."
+msgstr "Manage authorized staff accounts and their responsibilities."
+
+msgid "Grupo de localización ilustrativo"
+msgstr "Illustrative site group"
+
+msgid "Guardar contraseña"
+msgstr "Save password"
+
+msgid "Guardar cuenta"
+msgstr "Save account"
+
+msgid "Incorporación"
+msgstr "Ingestion"
+
+msgid "Incorporación y publicación"
+msgstr "Ingestion and publication"
+
+msgid ""
+"Indique el correo registrado. Si la cuenta está habilitada, recibirá "
+"instrucciones."
+msgstr ""
+"Enter the registered email address. If the account is active, instructions "
+"will be sent."
+
+msgid "Introduzca su contraseña actual y elija una nueva."
+msgstr "Enter your current password and choose a new one."
+
+msgid ""
+"Invitación en cola de envío. El servicio de correo procesará la solicitud."
+msgstr "Invitation queued. The mail service will process the request."
+
+msgid ""
+"La composición requiere conteos o porcentajes de categorías excluyentes; "
+"para personas, compare por sexo."
+msgstr ""
+"Composition charts require counts or percentages for mutually exclusive "
+"categories; when counting people, compare by sex."
+
+msgid ""
+"Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni "
+"porcentajes."
+msgstr ""
+"Stacked bars require absolute frequencies; rates and percentages must not be"
+" added."
+
+msgid ""
+"Las invitaciones permiten elegir una contraseña privada. Una contraseña "
+"temporal obliga a cambiarla antes de utilizar el panel. Desactive las "
+"cuentas que ya no deban acceder."
+msgstr ""
+"Invitations let users choose a private password. A temporary password must "
+"be changed before using the dashboard. Disable accounts that should no "
+"longer have access."
+
+msgid "Las líneas requieren comparar por período."
+msgstr "Line charts require comparison by period."
+
+msgid ""
+"Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 "
+"caracteres."
+msgstr ""
+"Use unaccented letters, numbers, periods, hyphens, or underscores. At least "
+"3 characters."
+
+msgid "Motivo de la decisión"
+msgstr "Reason for decision"
+
+msgid "No hay cortes registrados."
+msgstr "No releases have been recorded."
+
+msgid "No puede desactivar ni retirar su propio rol de soporte."
+msgstr "You cannot disable your own account or remove your support role."
+
+msgid "No se encontraron cuentas."
+msgstr "No accounts found."
+
+msgid "No se pudo confirmar la operación con esa contraseña."
+msgstr "The operation could not be confirmed with that password."
+
+msgid "Nombre"
+msgstr "Name"
+
+msgid "Nombre del corte"
+msgstr "Release name"
+
+msgid "Nombre, usuario o correo"
+msgstr "Name, username, or email"
+
+msgid ""
+"Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con "
+"ella, se exigirá cambiarla al entrar."
+msgstr ""
+"Optional. Without it, an invitation to choose a password will be sent. With "
+"it, the user must change the password at sign-in."
+
+msgid "Operación"
+msgstr "Action"
+
+msgid "Operador:"
+msgstr "Operator:"
+
+msgid "Período"
+msgstr "Period"
+
+msgid "Procesado"
+msgstr "Processed"
+
+msgid "Procesando"
+msgstr "Processing"
+
+msgid "Proceso de gestión"
+msgstr "Management process"
+
+msgid "Publicaciones"
+msgstr "Publications"
+
+msgid "Publicado"
+msgstr "Published"
+
+msgid "Publicados"
+msgstr "Published"
+
+msgid "Publicar"
+msgstr "Publish"
+
+msgid "Publicar y revocar cortes sintéticos"
+msgstr "Publish and withdraw synthetic releases"
+
+msgid "Rechazado"
+msgstr "Rejected"
+
+msgid "Registro del corte y procedencia"
+msgstr "Release record and provenance"
+
+msgid "Responsabilidades"
+msgstr "Responsibilities"
+
+msgid "Responsable"
+msgstr "Owner"
+
+msgid "Responsable de publicación:"
+msgstr "Publication manager:"
+
+msgid "Resumen de cortes"
+msgstr "Release summary"
+
+msgid "Retirados"
+msgstr "Withdrawn"
+
+msgid "Revisión técnica"
+msgstr "Technical review"
+
+msgid "Revocado"
+msgstr "Withdrawn"
+
+msgid "Revocar"
+msgstr "Withdraw"
+
+msgid "Rol"
+msgstr "Role"
+
+msgid "Se admiten tildes, espacios, apóstrofos y guiones."
+msgstr "Accents, spaces, apostrophes, and hyphens are allowed."
+
+msgid ""
+"Se ha solicitado establecer una contraseña para su cuenta RNC.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"El enlace vence en una hora y solo puede utilizarse una vez. Si no reconoce esta solicitud, contacte con soporte."
+msgstr ""
+"A password has been requested for your NCR account.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"This link expires in one hour and can only be used once. If you did not request this, contact support."
+
+msgid "Se utilizará para invitaciones y recuperación de acceso."
+msgstr "Used for invitations and account recovery."
+
+msgid "Seleccione un archivo con extensión .csv."
+msgstr "Choose a .csv file."
+
+msgid "Solicitar enlace"
+msgstr "Request link"
+
+msgid "Solo soporte puede modificar cuentas de soporte."
+msgstr "Only support administrators can change support accounts."
+
+msgid "Su contraseña de soporte"
+msgstr "Your support password"
+
+msgid "Tabla de resultados con desplazamiento horizontal"
+msgstr "Results table with horizontal scrolling"
+
+msgid "Territorio"
+msgstr "Territory"
+
+msgid "Un nombre que identifique el período y la entrega."
+msgstr "A name that identifies the period and release."
+
+msgid "Use como máximo 128 caracteres."
+msgstr "Use no more than 128 characters."
+
+msgid "Usuario"
+msgstr "Username"
+
+msgid "Validado"
+msgstr "Validated"
+
+msgid "Ver portal público"
+msgstr "View public portal"
+
+msgid "Verificación de estructura e integridad"
+msgstr "Structure and integrity checks"
+
+msgid "además, publica y revoca cortes."
+msgstr "also publishes and withdraws releases."
+
+msgid "gestiona cuentas y todas las funciones."
+msgstr "manages accounts and all features."
+
+msgid "registra y revisa cargas."
+msgstr "records and reviews uploads."
+
+msgid "Último correo"
+msgstr "Last email"
+
+msgid "Administración · Corte"
+msgstr "Administration · Release"
+
+msgid "Cancelar"
+msgstr "Cancel"
+
+msgid "Confirmar publicación"
+msgstr "Confirm publication"
+
+msgid "Continuar"
+msgstr "Continue"
+
+msgid "Contraseña actualizada"
+msgstr "Password updated"
+
+msgid "Contraseña guardada"
+msgstr "Password saved"
+
+msgid "Cuenta y seguridad"
+msgstr "Account and security"
+
+msgid "Datos sintéticos validados"
+msgstr "Synthetic data validated"
+
+msgid ""
+"El archivo no superó la validación como sintético y no se conservó en el "
+"almacenamiento de la aplicación."
+msgstr ""
+"The file did not pass synthetic-data validation and was not retained in "
+"application storage."
+
+msgid ""
+"El archivo sintético validado permanece en almacenamiento privado. Este "
+"contrato no habilita cargas clínicas del RNC."
+msgstr ""
+"The validated synthetic file remains in private storage. This contract does "
+"not allow clinical data uploads from the NCR."
+
+msgid ""
+"El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo."
+msgstr ""
+"This link is invalid, has already been used, or has expired. Request a new "
+"one."
+
+msgid ""
+"Esta entrega rechazada pertenece a una versión anterior del prototipo; el "
+"archivo asociado quedó en almacenamiento privado. Las nuevas cargas "
+"rechazadas ya no se conservan."
+msgstr ""
+"This rejected submission is from an earlier prototype version; its file "
+"remained in private storage. Newly rejected uploads are no longer retained."
+
+msgid ""
+"Esta publicación sustituirá el conjunto completo anterior. Revise los "
+"períodos y la cobertura; no se sumarán ambas entregas."
+msgstr ""
+"This publication will replace the entire previous dataset. Review periods "
+"and coverage; the two releases will not be added together."
+
+msgid "Filas incorporadas"
+msgstr "Rows accepted"
+
+msgid "Filas no incorporadas"
+msgstr "Rows rejected"
+
+msgid "Filas recibidas"
+msgstr "Rows received"
+
+msgid "Historial del corte"
+msgstr "Release history"
+
+msgid "Informe técnico"
+msgstr "Technical report"
+
+msgid "Integridad SHA-256"
+msgstr "SHA-256 integrity"
+
+msgid ""
+"La revocación retirará inmediatamente el corte del inicio, las consultas y "
+"las nuevas exportaciones. Los archivos ya descargados no pueden retirarse."
+msgstr ""
+"Withdrawal immediately removes the release from the home page, queries, and "
+"new exports. Files already downloaded cannot be withdrawn."
+
+msgid "Los campos con"
+msgstr "Fields marked with"
+
+msgid "No determinado"
+msgstr "Undetermined"
+
+msgid "No hay archivo fuente conservado para esta entrega."
+msgstr "No source file was retained for this release."
+
+msgid "No validado como sintético"
+msgstr "Not validated as synthetic"
+
+msgid "Períodos"
+msgstr "Periods"
+
+msgid "Publicar corte"
+msgstr "Publish release"
+
+msgid "Recepción"
+msgstr "Received"
+
+msgid "Reenviar enlace para establecer contraseña"
+msgstr "Resend password setup link"
+
+msgid "Revocar corte"
+msgstr "Withdraw release"
+
+msgid "Revocar publicación"
+msgstr "Withdraw publication"
+
+msgid ""
+"Se comprobaron estructura, categorías, claves de tumor únicas, consistencia "
+"de personas y denominadores, y cobertura de edad y sexo. La validación es "
+"atómica: si falla una fila, la entrega no se incorpora parcialmente."
+msgstr ""
+"Structure, categories, unique tumour keys, consistency of people and "
+"denominators, and age and sex coverage were checked. Validation is atomic: "
+"if any row fails, none of the release is ingested."
+
+msgid ""
+"Si existe una cuenta activa con ese correo, recibirá un enlace para "
+"establecer su contraseña. Revise también la carpeta de correo no deseado."
+msgstr ""
+"If an active account exists for this email address, a password setup link "
+"will be sent. Check your spam folder too."
+
+msgid "Solicitud recibida"
+msgstr "Request received"
+
+msgid "Soporte:"
+msgstr "Support:"
+
+msgid "Su contraseña se guardó correctamente."
+msgstr "Your password was saved successfully."
+
+msgid "Territorios"
+msgstr "Territories"
+
+msgid "Tumores aceptados"
+msgstr "Accepted tumours"
+
+msgid "Ya puede iniciar sesión con su nueva contraseña."
+msgstr "You can now sign in with your new password."
+
+msgid "son obligatorios."
+msgstr "are required."
+
+msgid "← Volver a administración"
+msgstr "← Back to administration"
+
+msgid "Acción"
+msgstr "Action"
+
+msgid "Actividad reciente"
+msgstr "Recent activity"
+
+msgid ""
+"Contrato sintético de demostración · hasta 12 MB y 60 000 filas. Cada "
+"entrega representa un conjunto completo, no un incremento. El ejemplo "
+"descargable añade un tumor sintético al corte activo para recorrer la "
+"actualización completa."
+msgstr ""
+"Synthetic demonstration data contract · up to 12 MB and 60,000 rows. Each "
+"delivery represents a complete dataset, not an increment. The downloadable "
+"example adds one synthetic tumor to the active release to demonstrate a "
+"complete update."
+
+msgid "Descargar CSV de actualización"
+msgstr "Download update CSV"
+
+msgid "Entregas registradas"
+msgstr "Recorded deliveries"
+
+msgid "Entregas y cortes"
+msgstr "Deliveries and releases"
+
+msgid "Gestión de información"
+msgstr "Information management"
+
+msgid "Incorporar archivo"
+msgstr "Add file"
+
+msgid ""
+"Incorpore entregas, revise sus resultados técnicos y gestione la "
+"publicación."
+msgstr ""
+"Add deliveries, review their technical results, and manage publication."
+
+msgid "No hay entregas registradas."
+msgstr "No deliveries have been recorded."
+
+msgid "Publicación activa"
+msgstr "Active publication"
+
+msgid "Recibido"
+msgstr "Received"
+
+msgid "Revisar corte →"
+msgstr "Review release →"
+
+msgid "Sin corte publicado"
+msgstr "No release published"
+
+msgid "Subir y validar CSV"
+msgstr "Upload and validate CSV"
+
+msgid "El Registro Nacional de Cáncer"
+msgstr "The National Cancer Registry"
+
+msgid "Alcance nacional"
+msgstr "National coverage"
+
+msgid "Atención"
+msgstr "Contact information"
+
+msgid "Cómo trabajamos"
+msgstr "How we work"
+
+msgid "Dónde trabajamos"
+msgstr "Where we work"
+
+msgid "Contactos"
+msgstr "Contacts"
+
+msgid "Guía de interpretación"
+msgstr "Interpretation guide"
+
+msgid "Frecuencia relativa"
+msgstr "Relative frequency"
+
+msgid "Fuentes y límites"
+msgstr "Sources and limitations"
+
+msgid "Fuentes, versiones y límites de comparación"
+msgstr "Sources, versions, and comparability limits"
+
+msgid "Métodos y cálculos"
+msgstr "Methods and calculations"
+
+msgid "Métodos y cálculos estadísticos"
+msgstr "Statistical methods and calculations"
+
+msgid "Objetivos"
+msgstr "Objectives"
+
+msgid "Oficina central"
+msgstr "Central office"
+
+msgid "Organización"
+msgstr "Organization"
+
+msgid "Participación de sus profesionales"
+msgstr "Participation of its professionals"
+
+msgid "Provincia"
+msgstr "Province"
+
+msgid "Referentes metodológicos consultados"
+msgstr "Methodological references consulted"
+
+msgid "Registros provinciales"
+msgstr "Provincial registries"
+
+msgid "Responsable publicado"
+msgstr "Listed contact"
+
+msgid "Trabajo territorial"
+msgstr "Territorial work"
+
+msgid "Transparencia estadística"
+msgstr "Statistical transparency"
+
+msgid "Directorio provincial histórico del sitio institucional (2015)"
+msgstr "Historical provincial directory from the institutional website (2015)"
+
+msgid "Composición publicada en la copia histórica"
+msgstr "Composition listed in the historical copy"
+
+msgid "Objetivo principal:"
+msgstr "Main objective:"
+
+msgid "Detección y notificación:"
+msgstr "Case detection and reporting:"
+
+msgid "Registro en la unidad informante:"
+msgstr "Registration at the reporting unit:"
+
+msgid "Revisión provincial:"
+msgstr "Provincial review:"
+
+msgid "Cierre y remisión:"
+msgstr "Statistical close and submission:"
+
+msgid "Validación central:"
+msgstr "Central validation:"
+
+msgid "Consolidación y estadísticas:"
+msgstr "Consolidation and statistics:"
+
+msgid "Correo publicado"
+msgstr "Listed email"
+
+msgid ""
+"Emitir frecuencias y tasas de incidencia específicas por edad y sexo para "
+"cada localización topográfica y morfológica, además de tasas ajustadas para "
+"Cuba y cada provincia."
+msgstr ""
+"Report age- and sex-specific incidence frequencies and rates for each "
+"topographic and morphological site, as well as adjusted rates for Cuba and "
+"each province."
+
+msgid ""
+"Emitir frecuencias absolutas y relativas por localización según la etapa "
+"clínica al diagnóstico, la provincia y la unidad informante, la base más "
+"válida para el diagnóstico y otras variables de interés."
+msgstr ""
+"Report absolute and relative frequencies by site, clinical stage at "
+"diagnosis, province, reporting unit, most valid basis for diagnosis, and "
+"other relevant variables."
+
+msgid ""
+"Calcular indicadores de calidad de los datos por provincia y localización."
+msgstr "Calculate data quality indicators by province and site."
+
+msgid "Estimar las cifras de supervivencia poblacional por cáncer."
+msgstr "Estimate population-based cancer survival."
+
+msgid ""
+"Para ello, la información institucional de referencia atribuye al RNC estos "
+"objetivos específicos:"
+msgstr ""
+"Institutional reference information assigns these specific objectives to the"
+" RNC:"
+
+msgid "Aplica la misma razón dentro de cada grupo etario:"
+msgstr "Applies the same ratio within each age group:"
+
+msgid ""
+"Relaciona los casos nuevos observados con la población correspondiente al "
+"mismo período y territorio:"
+msgstr ""
+"Relates observed new cases to the population for the same period and "
+"territory:"
+
+msgid ""
+"Resume tasas específicas aplicando los pesos de una población estándar:"
+msgstr ""
+"Summarizes age-specific rates using the weights of a standard population:"
+
+msgid "Expresa qué parte de un total corresponde a una categoría:"
+msgstr "Shows what fraction of a total belongs to a category:"
+
+msgid ""
+"El Registro Nacional de Cáncer de Cuba (RNC) es de base poblacional y "
+"alcance nacional, y forma parte del sistema de información estadística del "
+"Ministerio de Salud Pública. La copia archivada del sitio institucional "
+"indica que fue creado en 1964, que perteneció al Instituto Nacional de "
+"Oncología y Radiobiología (INOR) hasta diciembre de 2007 y que, desde enero "
+"de 2008, se subordinaba metodológica y funcionalmente a la Sección "
+"Independiente de Control de Cáncer junto con el Programa Integral de Control"
+" de Cáncer en Cuba."
+msgstr ""
+"The National Cancer Registry of Cuba (RNC) is population based, covers the "
+"whole country, and is part of the statistical information system of the "
+"Ministry of Public Health. An archived copy of the institutional website "
+"states that it was created in 1964, belonged to the National Institute of "
+"Oncology and Radiobiology (INOR) until December 2007, and from January 2008 "
+"was methodologically and functionally subordinate to the Independent Cancer "
+"Control Section together with the Comprehensive Cancer Control Program in "
+"Cuba."
+
+msgid ""
+"El RNC es un registro de base poblacional con cobertura de residentes "
+"permanentes de Cuba. Su red se organiza en tres niveles: la Oficina Central,"
+" los equipos o registros provinciales y las unidades informantes que "
+"detectan y notifican los casos."
+msgstr ""
+"The RNC is a population-based registry covering permanent residents of Cuba."
+" Its network has three levels: the Central Office, provincial teams or "
+"registries, and reporting units that identify and report cases."
+
+msgid ""
+"La cobertura documentada comprende las 15 provincias y el municipio especial"
+" Isla de la Juventud. En los territorios, los departamentos de salud "
+"coordinan las unidades informantes; estas incluyen centros hospitalarios y "
+"otras fuentes asistenciales previstas por los procedimientos del Registro."
+msgstr ""
+"The documented coverage includes all 15 provinces and the special "
+"municipality of Isla de la Juventud. In each territory, health departments "
+"coordinate reporting units, including hospitals and other care sources "
+"specified by Registry procedures."
+
+msgid ""
+"La red territorial permite reunir información de distintos puntos de "
+"atención y consolidarla con alcance nacional. La copia del sitio "
+"institucional organiza esa red con una comisión o registro de cáncer en cada"
+" provincia y un directorio territorial de responsables."
+msgstr ""
+"The territorial network gathers information from different care settings and"
+" consolidates it nationally. The institutional website archive describes a "
+"cancer commission or registry in each province and a directory of "
+"territorial contacts."
+
+msgid ""
+"El directorio que se reproduce en esta página procede de una copia histórica"
+" del sitio: la información de Oficina Central fue publicada en 2013 y el "
+"directorio provincial en 2015. Se muestra como referencia histórica; sus "
+"nombres y canales no están confirmados como vigentes."
+msgstr ""
+"The directory reproduced here comes from a historical website copy: Central "
+"Office information was published in 2013 and the provincial directory in "
+"2015. It is shown for historical reference; its names and contact channels "
+"have not been confirmed as current."
+
+msgid ""
+"La copia histórica describe una Oficina Central y comisiones provinciales "
+"que asesoran a las autoridades de salud y apoyan la aplicación de los "
+"procedimientos. El Manual de Procedimientos del RNC, versión VII (2024), "
+"detalla el recorrido operativo de la información:"
+msgstr ""
+"The historical copy describes a Central Office and provincial committees "
+"that advise health authorities and support the procedures. The RNC "
+"Procedures Manual, version VII (2024), details the information workflow:"
+
+msgid ""
+"Este flujo corresponde al trabajo del Registro. El portal público es una "
+"herramienta de consulta de resultados agregados y no recibe reportes de "
+"casos ni sustituye los sistemas internos del RNC."
+msgstr ""
+"This workflow describes Registry operations. The public portal provides "
+"access to aggregate results; it does not receive case reports or replace the"
+" RNC internal systems."
+
+msgid ""
+"La Oficina Central dirige técnicamente el sistema nacional, controla los "
+"procedimientos y la calidad de la información, ofrece asesoría metodológica "
+"y produce estadísticas. Recibe los cierres territoriales y coordina su "
+"validación y consolidación."
+msgstr ""
+"The Central Office provides technical direction for the national system, "
+"oversees procedures and information quality, provides methodological advice,"
+" and produces statistics. It receives territorial submissions and "
+"coordinates their validation and consolidation."
+
+msgid ""
+"El Manual RNC VII describe tareas centrales como comprobar la consistencia y"
+" completitud de los datos, revisar codificaciones, investigar duplicados y "
+"múltiples primarios, cotejar casos con información de mortalidad, pedir "
+"aclaraciones a los territorios e incorporar a la base consolidada solo los "
+"casos validados."
+msgstr ""
+"The RNC VII Manual describes central tasks such as checking data consistency"
+" and completeness, reviewing codes, investigating duplicates and multiple "
+"primaries, matching cases against mortality information, requesting "
+"clarification from territories, and adding only validated cases to the "
+"consolidated database."
+
+msgid ""
+"El Manual también describe funciones de control de calidad, análisis de "
+"datos, informatización, procesamiento y edición, además de una Comisión "
+"Técnica Asesora para cambios a los procedimientos administrativos y "
+"técnicos."
+msgstr ""
+"The Manual also describes quality control, data analysis, computerization, "
+"processing and editing, as well as a Technical Advisory Commission for "
+"changes to administrative and technical procedures."
+
+msgid ""
+"La composición y los datos de contacto actuales deben confirmarse con el "
+"RNC."
+msgstr ""
+"Current composition and contact information must be confirmed with the RNC."
+
+msgid ""
+"Los equipos provinciales conectan las unidades informantes con la Oficina "
+"Central. Revisan reportes y bases, verifican datos y códigos, gestionan "
+"reparos con las unidades y preparan los cierres que se remiten al nivel "
+"nacional. La versión histórica del sitio describe también comisiones "
+"provinciales que asesoran a las autoridades de salud, controlan la "
+"aplicación de los procedimientos y emiten estadísticas preliminares."
+msgstr ""
+"Provincial teams connect reporting units with the Central Office. They "
+"review reports and databases, check data and codes, resolve queries with "
+"units, and prepare submissions for the national level. The historical "
+"website also describes provincial committees that advise health authorities,"
+" oversee procedures, and issue preliminary statistics."
+
+msgid ""
+"A continuación se transcribe el directorio de responsables y correos de la "
+"copia histórica del sitio, publicada en 2015. Se conserva como referencia "
+"documental, no como lista confirmada de contactos activos:"
+msgstr ""
+"The following contacts and email addresses are transcribed from the "
+"historical website copy published in 2015. They are retained as documentary "
+"reference, not as a confirmed list of active contacts:"
+
+msgid ""
+"No se garantiza la entrega de mensajes a estos correos. El directorio, los "
+"cargos y las direcciones necesitan confirmación antes de usarse para "
+"gestiones actuales."
+msgstr ""
+"Delivery to these email addresses is not guaranteed. The directory, roles, "
+"and addresses need confirmation before they are used for current matters."
+
+msgid ""
+"La página de contacto de la copia histórica publicaba los siguientes datos "
+"de la Oficina Central:"
+msgstr ""
+"The historical copy of the contact page listed the following Central Office "
+"information:"
+
+msgid ""
+"Esta versión del portal no recibe reportes clínicos ni solicitudes de "
+"modificación de registros. Para proteger la confidencialidad, no envíes "
+"datos de pacientes mediante canales de consulta pública."
+msgstr ""
+"This version of the portal does not accept clinical reports or requests to "
+"modify registry records. To protect confidentiality, do not send patient "
+"data through public inquiry channels."
+
+msgid ""
+"Los datos de ubicación, teléfono, correo y responsables se transcribieron de"
+" las páginas institucionales archivadas de Contacto y Dónde estamos, "
+"publicadas en 2013. Confirma su vigencia con el RNC antes de utilizarlos."
+msgstr ""
+"Location, telephone, email, and contact details were transcribed from "
+"archived institutional Contact and Location pages published in 2013. Confirm"
+" that they are current with the RNC before use."
+
+msgid ""
+"Las fórmulas siguientes explican conceptos usados en epidemiología "
+"descriptiva y en referentes internacionales. Para que un resultado del "
+"portal sea oficial, el RNC debe confirmar el método, las agrupaciones, los "
+"denominadores y las reglas de presentación aplicables al corte."
+msgstr ""
+"The formulas below explain concepts used in descriptive epidemiology and "
+"international references. For a portal result to be official, the RNC must "
+"confirm the method, groupings, denominators, and presentation rules that "
+"apply to the release."
+
+msgid ""
+"La versión local actual del portal está conectada a un agregado de "
+"demostración sintético. Esta interfaz no acredita cifras oficiales ni "
+"sustituye la aprobación de un corte público."
+msgstr ""
+"The current local version of the portal uses a synthetic demonstration "
+"aggregate. This interface does not certify official figures or replace "
+"approval of a public release."
+
+msgid ""
+"Las descripciones de organización se basan en páginas de la copia "
+"institucional consultadas entre 2013 y 2015 y requieren validación de "
+"vigencia. Los métodos se presentan con fines explicativos y las decisiones "
+"pendientes se identifican expresamente."
+msgstr ""
+"Organizational descriptions are based on institutional website copies "
+"consulted between 2013 and 2015 and require confirmation that they remain "
+"current. Methods are presented for explanation, and pending decisions are "
+"explicitly identified."
+
+msgid "Coordinación nacional"
+msgstr "National coordination"
+
+msgid ""
+"Este portal ofrece actualmente consultas estadísticas de incidencia. No "
+"presenta aquí resultados de supervivencia, etapas clínicas, bases "
+"diagnósticas ni indicadores de calidad del RNC."
+msgstr ""
+"This portal currently provides statistical queries on incidence. It does not"
+" present RNC results on survival, clinical stages, diagnostic bases, or "
+"quality indicators."
+
+msgid ""
+"La información del RNC también contribuye a la investigación clínica y "
+"epidemiológica sobre el cáncer, a planificar y evaluar las acciones de "
+"control, y a planificar los recursos materiales y humanos para la atención "
+"oncológica."
+msgstr ""
+"RNC information also contributes to clinical and epidemiological cancer "
+"research, planning and evaluating control measures, and planning the "
+"material and human resources needed for cancer care."
+
+msgid ""
+"La información institucional de referencia señala que profesionales del "
+"departamento forman parte de:"
+msgstr ""
+"Institutional reference information states that department professionals "
+"participate in:"
+
+msgid ""
+"La pertenencia y denominación actual de estos grupos y comisiones debe "
+"confirmarse con el RNC antes de presentarse como vigente."
+msgstr ""
+"Current membership and names of these groups and committees must be "
+"confirmed with the RNC before being presented as current."
+
+msgid "Tasa ajustada directamente por edad"
+msgstr "Direct age-adjusted rate"
+
+msgid "Tasa cruda de incidencia"
+msgstr "Crude incidence rate"
+
+msgid "Tasa específica por edad"
+msgstr "Age-specific rate"
+
+msgid "Tasa indirecta e intervalos de confianza"
+msgstr "Indirect rate and confidence intervals"
+
+msgid ""
+"El estándar es una población de ponderación, no el denominador de los casos."
+" Como referencia metodológica de trabajo se estudia la estándar mundial "
+"Segi–Doll de 18 grupos quinquenales; el RNC debe validar su correspondencia,"
+" fórmula operativa, grupos abiertos, datos faltantes y redondeo antes de "
+"atribuirle cifras oficiales. Las comparaciones solo son interpretables si "
+"usan el mismo estándar y definiciones compatibles."
+msgstr ""
+"The standard population supplies weights; it is not the case denominator. "
+"The Segi–Doll world standard of 18 five-year age groups is being considered "
+"as a methodological reference. The RNC must validate its correspondence, "
+"operational formula, open-ended groups, missing data, and rounding before "
+"any figures are attributed to it as official. Comparisons are interpretable "
+"only when the same standard and compatible definitions are used."
+
+msgid ""
+"El total puede depender de la pregunta y de la unidad de análisis. El "
+"tratamiento de valores desconocidos, categorías excluidas y redondeo "
+"requiere una regla explícita; no se debe asumir que tumor y persona son "
+"unidades intercambiables."
+msgstr ""
+"The total may depend on the question and unit of analysis. Unknown values, "
+"excluded categories, and rounding require explicit rules; tumors and people "
+"must not be treated as interchangeable units."
+
+msgid ""
+"En la organización descrita por la copia histórica, cada comisión provincial"
+" asesora al Director Provincial de Salud sobre el control del cáncer y el "
+"funcionamiento del sistema de información. La integran perfiles de "
+"coordinación de cáncer, oncología, estadística, epidemiología, hospitales y "
+"especialistas o técnicos de los hospitales que diagnostican casos. Su "
+"función es exigir y controlar el cumplimiento de los procedimientos, cuidar "
+"la calidad y continuidad del dato primario, emitir estadísticas provinciales"
+" preliminares y promover investigaciones epidemiológicas y clínicas."
+msgstr ""
+"In the organization described by the historical copy, each provincial "
+"committee advises the Provincial Director of Health on cancer control and "
+"operation of the information system. Its members represent cancer "
+"coordination, oncology, statistics, epidemiology, hospitals, and specialists"
+" or technicians at hospitals that diagnose cases. Its functions include "
+"overseeing compliance with procedures, maintaining the quality and "
+"continuity of primary data, issuing preliminary provincial statistics, and "
+"promoting epidemiological and clinical research."
+
+msgid ""
+"La escala por 100 000 es una forma habitual de presentación. Numerador, "
+"período, territorio, sexo, grupo de edad y población deben coincidir. El "
+"proyecto identifica la población residente de ONEI como denominador de "
+"trabajo; la serie, edición y convención temporal exactas deben quedar "
+"identificadas con el RNC."
+msgstr ""
+"Rates per 100,000 are a common presentation scale. The numerator, period, "
+"territory, sex, age group, and population must match. The project identifies"
+" ONEI resident population as a working denominator; the exact series, "
+"edition, and time convention must be confirmed with the RNC."
+
+msgid ""
+"La estandarización indirecta suele comparar los casos observados con los "
+"esperados según tasas de referencia por estrato. La elección de esas tasas "
+"de referencia y la forma de presentar el resultado requieren una definición "
+"institucional."
+msgstr ""
+"Indirect standardization usually compares observed cases with expected cases"
+" based on reference rates for each stratum. Choosing those reference rates "
+"and deciding how to present the result require an institutional definition."
+
+msgid ""
+"La página archivada “Oficina Central” identificaba un Jefe del Registro y "
+"tres grupos: Calidad de los Datos, Informatización y Procesamiento y "
+"Edición. La relación siguiente reproduce los nombres y correos que aparecían"
+" allí; no confirma que las personas ocupen hoy esos cargos ni que las "
+"direcciones sigan activas."
+msgstr ""
+"The archived “Central Office” page identified a Registry Head and three "
+"groups: Data Quality, Computerization, and Processing and Editing. The list "
+"below reproduces the names and email addresses shown there; it does not "
+"confirm that these people currently hold those positions or that the "
+"addresses are still active."
+
+msgid ""
+"La página “Dónde estamos” de esa misma copia identifica al Instituto "
+"Nacional de Oncología y Radiobiología, en 29 y F, Vedado, CP 10400, y "
+"publica el teléfono +53 7 838 3970. Estos datos se incluyen como información"
+" histórica, no como canales confirmados en la actualidad."
+msgstr ""
+"The “Where we are” page in the same copy identifies the National Institute "
+"of Oncology and Radiobiology at 29 and F, Vedado, CP 10400, and lists "
+"telephone +53 7 838 3970. These details are historical information, not "
+"currently confirmed contact channels."
+
+msgid ""
+"Los intervalos de confianza describen incertidumbre estadística y dependen "
+"del indicador, el volumen de casos y el método elegido. Su incorporación al "
+"portal es una propuesta de trabajo, no una regla aprobada por el RNC. El "
+"método de tasa indirecta y el de intervalos permanecen pendientes de "
+"validación."
+msgstr ""
+"Confidence intervals describe statistical uncertainty and depend on the "
+"indicator, number of cases, and selected method. Adding them to the portal "
+"is a proposal, not a rule approved by the RNC. The indirect rate method and "
+"confidence intervals remain pending validation."
+
+msgid ""
+"Los procedimientos describen frecuencias distintas para las tareas locales, "
+"la revisión territorial y los cierres al nivel central. El calendario "
+"concreto puede variar y debe consultarse en la edición vigente del Manual."
+msgstr ""
+"The procedures specify different frequencies for local tasks, territorial "
+"review, and submissions to the central level. The schedule may vary and "
+"should be checked in the current edition of the Manual."
+
+msgid ""
+"Los referentes consultados muestran por qué cada resultado debe documentar "
+"su procedencia y su versión. Cancer Today organiza visualizaciones junto a "
+"sus fuentes y métodos; ECIS diferencia datos observados de estimaciones; "
+"SEER acompaña sus tablas y gráficos con definiciones, notas y metodología. "
+"Estas prácticas inspiran la presentación, pero sus reglas no se trasladan "
+"automáticamente al RNC."
+msgstr ""
+"The references consulted show why each result should document its source and"
+" version. Cancer Today presents visualizations with their sources and "
+"methods; ECIS distinguishes observed data from estimates; SEER provides "
+"definitions, notes, and methods with its tables and charts. These practices "
+"inform the presentation, but their rules do not automatically apply to the "
+"RNC."
+
+msgid "La adscripción organizativa debe actualizarse con el RNC: el"
+msgstr "The organizational affiliation must be confirmed with the RNC: the"
+
+msgid "Comparabilidad:"
+msgstr "Comparability:"
+
+msgid "Denominador:"
+msgstr "Denominator:"
+
+msgid "Divulgación:"
+msgstr "Disclosure:"
+
+msgid "Método:"
+msgstr "Method:"
+
+msgid "Numerador:"
+msgstr "Numerator:"
+
+msgid ""
+"corte de casos identificado, con período, estado y fecha de publicación."
+msgstr ""
+"an identified case release, including period, status, and publication date."
+
+msgid ""
+"fuente y versión de la población, con cobertura territorial, edad y sexo."
+msgstr ""
+"the population source and version, including territorial, age, and sex "
+"coverage."
+
+msgid "unidad de análisis, escala, estándar de edad y forma de cálculo."
+msgstr "the unit of analysis, scale, age standard, and calculation method."
+
+msgid ""
+"tasas calculadas con estándares, períodos, coberturas y definiciones "
+"compatibles."
+msgstr ""
+"rates calculated using compatible standards, periods, coverage, and "
+"definitions."
+
+msgid ""
+"agregados autorizados y reglas para evitar identificación indirecta; el "
+"umbral o método de supresión para el portal requiere acuerdo institucional."
+msgstr ""
+"authorized aggregates and rules to prevent indirect identification; the "
+"portal suppression threshold or method requires institutional agreement."
+
+msgid "Correo publicado:"
+msgstr "Listed email:"
+
+msgid "Teléfono publicado:"
+msgstr "Listed telephone:"
+
+msgid "Grupo Nacional de Oncología."
+msgstr "National Oncology Group."
+
+msgid "Grupo de Calidad de los Datos:"
+msgstr "Data Quality Group:"
+
+msgid ""
+"Grupo de Epidemiología y Registros de Cáncer de Países de Lengua Latina."
+msgstr ""
+"Latin Language Countries Group for Epidemiology and Cancer Registries."
+
+msgid "Grupo de Informatización:"
+msgstr "Computerization Group:"
+
+msgid "Grupo de Oncopediatría."
+msgstr "Pediatric Oncology Group."
+
+msgid "Grupo de Procesamiento y Edición:"
+msgstr "Processing and Editing Group:"
+
+msgid "Jefatura del RNC:"
+msgstr "RNC Head:"
+
+msgid "Comité de Ensayos Clínicos del INOR."
+msgstr "INOR Clinical Trials Committee."
+
+msgid "Consejo Científico del INOR."
+msgstr "INOR Scientific Council."
+
+msgid "Comisión Nacional del Programa de Cáncer Bucal."
+msgstr "National Oral Cancer Program Commission."
+
+msgid "Comisión de Expertos del Programa Ramal Cáncer."
+msgstr "Cancer Branch Program Expert Commission."
+
+msgid ""
+"Red Iberoamericana de Epidemiología y Sistemas de Información en Cáncer."
+msgstr ""
+"Ibero-American Network for Cancer Epidemiology and Information Systems."
+
+msgid "Comisión Europea · European Cancer Information System (ECIS)"
+msgstr "European Commission · European Cancer Information System (ECIS)"
+
+msgid "IARC/WHO · Global Cancer Observatory, Cancer Today"
+msgstr "IARC/WHO · Global Cancer Observatory, Cancer Today"
+
+msgid "NCI/SEER · SEER*Explorer"
+msgstr "NCI/SEER · SEER*Explorer"
+
+msgid "NCI/SEER · definición y cálculo de tasas ajustadas por edad"
+msgstr "NCI/SEER · definition and calculation of age-adjusted rates"
+
+msgid "Sistema de Información Estadística Complementaria de Salud (2017)"
+msgstr "Complementary Health Statistical Information System (2017)"
+
+msgid "El RNC · Registro Nacional de Cáncer de Cuba"
+msgstr "The RNC · National Cancer Registry of Cuba"
+
+msgid "El subíndice"
+msgstr "The subscript"
+
+msgid ""
+"la Oficina Central revisa integridad y consistencia, investiga posibles "
+"duplicados o tumores múltiples, contrasta la información con mortalidad y "
+"solicita aclaraciones cuando son necesarias."
+msgstr ""
+"the Central Office checks completeness and consistency, investigates "
+"potential duplicates or multiple tumors, compares information with mortality"
+" data, and requests clarification when needed."
+
+msgid ""
+"las provincias preparan los cierres estadísticos y remiten al nivel central "
+"los casos nuevos validados junto con la documentación requerida, según el "
+"calendario estadístico."
+msgstr ""
+"the provinces prepare statistical submissions and send validated new cases "
+"with the required documentation to the central level, according to the "
+"statistical calendar."
+
+msgid ""
+"los equipos territoriales cotejan reportes y bases de datos, verifican "
+"variables y códigos, solicitan correcciones y coordinan las unidades "
+"informantes."
+msgstr ""
+"territorial teams compare reports and databases, check variables and codes, "
+"request corrections, and coordinate reporting units."
+
+msgid ""
+"los médicos notifican los casos y los registradores buscan casos adicionales"
+" en fuentes como anatomía patológica, laboratorios, egresos hospitalarios, "
+"certificados de defunción e historias clínicas."
+msgstr ""
+"physicians report cases, and registrars identify additional cases in sources"
+" such as pathology, laboratories, hospital discharges, death certificates, "
+"and medical records."
+
+msgid ""
+"se confeccionan y codifican los reportes, se revisan las fuentes y se "
+"introducen los casos en el sistema automatizado del Registro."
+msgstr ""
+"reports are prepared and coded, sources are reviewed, and cases are entered "
+"into the Registry automated system."
+
+msgid ""
+"solo los casos validados se incorporan a la base consolidada; con ellos el "
+"RNC prepara y emite resultados estadísticos."
+msgstr ""
+"only validated cases are added to the consolidated database; the RNC "
+"prepares and issues statistical results from them."
+
+msgid "porcentaje = (casos de la categoría / total de referencia) × 100"
+msgstr "percentage = (category cases / reference total) × 100"
+
+msgid ""
+"tasa ajustada = Σ (peso estándarᵢ × tasa específicaᵢ) / Σ (peso estándarᵢ)"
+msgstr ""
+"adjusted rate = Σ (standard weightᵢ × age-specific rateᵢ) / Σ (standard "
+"weightᵢ)"
+
+msgid "tasa cruda = (casos nuevos / población correspondiente) × 100 000"
+msgstr "crude rate = (new cases / corresponding population) × 100,000"
+
+msgid "tasa específicaᵢ = (casos nuevosᵢ / poblaciónᵢ) × 100 000"
+msgstr "age-specific rateᵢ = (new casesᵢ / populationᵢ) × 100,000"
+
+msgid "describir la magnitud del cáncer como problema de salud en Cuba."
+msgstr "describe the magnitude of cancer as a health problem in Cuba."
+
+msgid ""
+"transcribe la Resolución 31/2008 como traslado de la Oficina Central a la "
+"Unidad Nacional para el Control del Cáncer, bajo su dirección y en "
+"coordinación con Estadísticas del MINSAP. Las denominaciones de las fuentes "
+"no coinciden literalmente."
+msgstr ""
+"describes Resolution 31/2008 as transferring the Central Office to the "
+"National Cancer Control Unit, under its direction and in coordination with "
+"MINSAP Statistics. The sources do not use identical names."
+
+msgid ""
+" representa un estrato de edad (y cualquier otra dimensión que se mantenga "
+"fija). Comparar estratos exige que la definición de grupo y el período sean "
+"consistentes."
+msgstr ""
+" represents an age stratum (and any other dimension held constant). "
+"Comparing strata requires consistent group definitions and periods."
+
+msgid " y "
+msgstr " and "
+
+msgid "Agrupación"
+msgstr "Grouping"
+
+msgid ""
+"Al combinar años, la población denominadora acumula las poblaciones anuales "
+"seleccionadas."
+msgstr ""
+"When years are combined, denominator population is the sum of the selected "
+"annual populations."
+
+msgid "Consulta"
+msgstr "Query"
+
+msgid "Contexto de la consulta"
+msgstr "Query context"
+
+msgid "Frecuencia relativa (%%) · %(unit)s"
+msgstr "Relative frequency (%%) · %(unit)s"
+
+msgid "Fuente y corte"
+msgstr "Source and release"
+
+msgid "Gráfico"
+msgstr "Chart"
+
+msgid "Indicador del gráfico"
+msgstr "Chart metric"
+
+msgid ""
+"Las tasas se calculan con la unidad elegida; los grupos de localización "
+"pueden solaparse en personas distintas. "
+msgstr ""
+"Rates use the selected unit; site groups may overlap for distinct people. "
+
+msgid ""
+"Métodos candidatos; denominadores sintéticos, no son resultados oficiales. "
+msgstr ""
+"Candidate methods; denominators are synthetic and are not official results. "
+
+msgid "No disponible en este corte"
+msgstr "Not available in this release"
+
+msgid "Nota"
+msgstr "Note"
+
+msgid "Personas distintas (frecuencia absoluta)"
+msgstr "Distinct people (absolute frequency)"
+
+msgid "Porcentaje (%)"
+msgstr "Percentage (%)"
+
+msgid "Porcentaje de cada categoría (%)"
+msgstr "Percentage of each category (%)"
+
+msgid "Selección"
+msgstr "Selection"
+
+msgid "Tasa ajustada Segi–Doll por 100 000 · %(unit)s"
+msgstr "Segi–Doll age-adjusted rate per 100,000 · %(unit)s"
+
+msgid "Tasa cruda/específica por 100 000 · %(unit)s"
+msgstr "Crude/age-specific rate per 100,000 · %(unit)s"
+
+msgid "Todas las provincias"
+msgstr "All provinces"
+
+msgid "Todos (%(first)s–%(last)s)"
+msgstr "All (%(first)s–%(last)s)"
+
+msgid "Todos los municipios"
+msgstr "All municipalities"
+
+msgid "Tumores (frecuencia absoluta)"
+msgstr "Tumors (absolute frequency)"
+
+msgid "rnc-synthetic-query"
+msgstr "rnc-synthetic-query"
+
+msgid "Datos sintéticos · %(period)s"
+msgstr "Synthetic data · %(period)s"
+
+msgid "Datos sintéticos · %(title)s · Versión %(release)s"
+msgstr "Synthetic data · %(title)s · Release %(release)s"
+
+msgid "Distribución por sexo (%)"
+msgstr "Distribution by sex (%)"
+
+msgid ""
+"El tamaño o rótulo del punto indica cuántas categorías coinciden en las "
+"mismas coordenadas."
+msgstr ""
+"Point size or label indicates how many categories overlap at the same "
+"coordinates."
+
+msgid "Frecuencias absolutas"
+msgstr "Absolute frequencies"
+
+msgid "Localizaciones más frecuentes"
+msgstr "Most frequent sites"
+
+msgid "No hay cobertura de población completa para el ajuste seleccionado."
+msgstr ""
+"There is not complete population coverage for the selected adjustment."
+
+msgid "No hay valores positivos para representar una composición."
+msgstr "There are no positive values to display as a composition."
+
+msgid "RNC / Cuba · Detalle de consulta"
+msgstr "NCR / Cuba · Query details"
+
+msgid ""
+"Seleccione una dimensión con hasta ocho categorías para circular o anillo."
+msgstr ""
+"Select a dimension with no more than eight categories for a pie or doughnut "
+"chart."
+
+msgid "Tumores y personas distintas"
+msgstr "Tumors and distinct people"
+
+msgid "Detalle %(page)s"
+msgstr "Details %(page)s"
+
+msgid "Cuba (nacional)"
+msgstr "Cuba (national)"
+
+msgid ""
+"Este gráfico necesita al menos dos categorías con datos en la dimensión "
+"elegida."
+msgstr ""
+"This chart requires at least two categories with data in the selected "
+"dimension."
+
+msgid ""
+"La comparación por sexo requiere datos disponibles de mujeres y hombres."
+msgstr "Sex comparison requires data for both women and men."
+
+msgid "Provincias disponibles; cobertura nacional incompleta"
+msgstr "Available provinces; national coverage is incomplete"
+
+msgid "Administración RNC"
+msgstr "NCR administration"
+
+msgid "Filtros de la consulta"
+msgstr "Query filters"
+
+msgid "Navegación RNC"
+msgstr "NCR navigation"
+
+msgid "Portal público"
+msgstr "Public portal"
+
+msgid "Mujeres"
+msgstr "Women"
+
+msgid "Hombres"
+msgstr "Men"
+
+msgid "Tráquea, bronquios y pulmón"
+msgstr "Trachea, bronchus and lung"
+
+msgid "Próstata"
+msgstr "Prostate"
+
+msgid "Mama"
+msgstr "Breast"
+
+msgid "Colon y recto"
+msgstr "Colon and rectum"
+
+msgid "Estómago"
+msgstr "Stomach"
+
+msgid "Cuello del útero"
+msgstr "Cervix uteri"
+
+msgid "Cuerpo del útero"
+msgstr "Corpus uteri"
+
+msgid "Tiroides"
+msgstr "Thyroid"
+
+msgid "Páncreas"
+msgstr "Pancreas"
+
+msgid "Vejiga urinaria"
+msgstr "Urinary bladder"
+
+msgid "Riñón"
+msgstr "Kidney"
+
+msgid "Hígado y vías biliares"
+msgstr "Liver and bile ducts"
+
+msgid "Ovario"
+msgstr "Ovary"
+
+msgid "Laringe y faringe"
+msgstr "Larynx and pharynx"
+
+msgid ""
+"Grupo ilustrativo sintético; no representa un código TOPO ni una "
+"equivalencia ICD-O: %(category)s."
+msgstr ""
+"Illustrative synthetic group; it is not a TOPO code or an ICD-O equivalence:"
+" %(category)s."
+
+msgid "Código de provincia documentado en el Manual RNC VII, Anexo 1."
+msgstr "Province code documented in the RNC Manual VII, Annex 1."
+
+msgid "Ampliar barra lateral"
+msgstr "Expand sidebar"
+
+msgid "La consulta local aún no está disponible en este dispositivo."
+msgstr "The offline query is not available on this device yet."
+
+msgid "Use letras de la A a la Z, números, punto, guion o guion bajo."
+msgstr "Use letters A to Z, numbers, periods, hyphens, or underscores."
+
+msgid "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."
+msgstr ""
+"Use letters, spaces, apostrophes, or hyphens; for example, María José."
+
+msgid "Use texto, números y puntuación habitual; sin etiquetas HTML."
+msgstr "Use text, numbers, and common punctuation; no HTML tags."
+
+msgid ""
+"Busque por nombre, usuario o correo; no se admiten símbolos de programación."
+msgstr ""
+"Search by name, username, or email; programming symbols are not allowed."
+
+msgid "Incluya una descripción con letras o números."
+msgstr "Include a description with letters or numbers."
+
+msgid "Complete este campo."
+msgstr "Complete this field."
+
+msgid "Marque esta casilla para continuar."
+msgstr "Check this box to continue."
+
+msgid "No se pudo enviar el formulario"
+msgstr "The form could not be submitted."
+
+msgid ""
+"La sesión del formulario ha caducado o no se pudo verificar. Vuelva a abrir "
+"la página e inténtelo otra vez. No se guardó este envío."
+msgstr ""
+"Your form session expired or could not be verified. Reopen the page and try "
+"again. This submission was not saved."
+
+msgid ""
+"La dirección no existe o el recurso ya no está disponible. Puede continuar "
+"desde la navegación del portal."
+msgstr ""
+"This address does not exist or the resource is no longer available. You can "
+"continue using the portal navigation."
+
+msgid "%(label)s, código %(number)s"
+msgstr "%(label)s, code %(number)s"
+
+msgid "%(label)s: código repetido para el mismo sistema y edición."
+msgstr "%(label)s: duplicate code for the same system and edition."
+
+msgid "%(label)s: debe contener uno o más códigos."
+msgstr "%(label)s: must contain one or more codes."
+
+msgid "%(label)s: eje no admitido."
+msgstr "%(label)s: unsupported axis."
+
+msgid "%(label)s: estado de código no admitido."
+msgstr "%(label)s: unsupported code status."
+
+msgid "%(label)s: estado de publicación no admitido."
+msgstr "%(label)s: unsupported publication status."
+
+msgid "%(label)s: estado de relación no admitido."
+msgstr "%(label)s: unsupported relationship status."
+
+msgid "%(label)s: faltan campos requeridos."
+msgstr "%(label)s: required fields are missing."
+
+msgid "%(label)s: hay campos vacíos o con tipo inválido."
+msgstr "%(label)s: fields are empty or have an invalid type."
+
+msgid "%(label)s: identificador de concepto duplicado."
+msgstr "%(label)s: duplicate concept identifier."
+
+msgid "%(label)s: la fuente debe ser una URL HTTP o HTTPS."
+msgstr "%(label)s: the source must be an HTTP or HTTPS URL."
+
+msgid "%(label)s: relación de concepto no admitida."
+msgstr "%(label)s: unsupported concept relationship."
+
+msgid "Archivo validado y registrado. Revise el corte antes de publicarlo."
+msgstr "File validated and recorded. Review the release before publishing it."
+
+msgid "CSV no válido; revise codificación y estructura."
+msgstr "Invalid CSV; check its encoding and structure."
+
+msgid "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+msgstr "Each territory and year must cover both sexes and all 18 age groups."
+
+msgid "Comportamiento"
+msgstr "Behavior"
+
+msgid "Concepto %(number)s"
+msgstr "Concept %(number)s"
+
+msgid "Correspondencia exacta"
+msgstr "Exact match"
+
+msgid "Código del concepto"
+msgstr "Concept code"
+
+msgid "Declarado por la fuente"
+msgstr "Declared by the source"
+
+msgid "Ejecute seed_demo para generar el ejemplo local."
+msgstr "Run seed_demo to generate the local sample."
+
+msgid "El archivo debe contener un arreglo 'concepts'."
+msgstr "The file must contain a 'concepts' array."
+
+msgid "El archivo no contiene registros."
+msgstr "The file contains no records."
+
+msgid "El catálogo configurado no se puede leer como JSON UTF-8."
+msgstr "The configured catalog cannot be read as UTF-8 JSON."
+
+msgid "El catálogo declara validación RNC"
+msgstr "The catalog declares RNC validation"
+
+msgid "El ejemplo ya alcanzó el límite de filas del entorno local."
+msgstr "The local sample has reached the row limit for this environment."
+
+msgid "El límite local es de 60 000 filas."
+msgstr "The local limit is 60,000 rows."
+
+msgid "El service worker solo está habilitado en el perfil público."
+msgstr "The service worker is available only in the public profile."
+
+msgid "Esta entrega ya está registrada."
+msgstr "This delivery has already been registered."
+
+msgid "Esta entrega ya está registrada; no se incorporó otra copia."
+msgstr "This delivery has already been registered; no duplicate was added."
+
+msgid "Estadio"
+msgstr "Stage"
+
+msgid "Estado actualizado. El portal público ya refleja este cambio."
+msgstr "Status updated. The public site now reflects this change."
+
+msgid "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+msgstr "Incompatible structure. Download the synthetic sample CSV."
+
+msgid "Fila %(number)s: categoría no admitida."
+msgstr "Row %(number)s: unsupported category."
+
+msgid "Fila %(number)s: denominador inconsistente."
+msgstr "Row %(number)s: inconsistent denominator."
+
+msgid "Fila %(number)s: estructura o longitud incorrecta."
+msgstr "Row %(number)s: invalid structure or length."
+
+msgid "Fila %(number)s: formato de identificador sintético no admitido."
+msgstr "Row %(number)s: unsupported synthetic identifier format."
+
+msgid "Fila %(number)s: identidad sintética inconsistente."
+msgstr "Row %(number)s: inconsistent synthetic identity."
+
+msgid "Fila %(number)s: identificador de catálogo desconocido."
+msgstr "Row %(number)s: unknown catalog identifier."
+
+msgid "Fila %(number)s: identificador de tumor repetido."
+msgstr "Row %(number)s: duplicate tumor identifier."
+
+msgid "Fila %(number)s: persona incompatible con el estrato declarado."
+msgstr "Row %(number)s: person does not match the declared stratum."
+
+msgid "Fila %(number)s: período, población o peso incompatible."
+msgstr "Row %(number)s: incompatible period, population, or weight."
+
+msgid "Fila %(number)s: se requieren números enteros."
+msgstr "Row %(number)s: values must be whole numbers."
+
+msgid "Fila %(number)s: solo se admite el contrato sintético de demostración."
+msgstr "Row %(number)s: only the synthetic demo contract is accepted."
+
+msgid "Formato no disponible"
+msgstr "Format not available"
+
+msgid "Grado"
+msgstr "Grade"
+
+msgid "Grupo de clasificación"
+msgstr "Classification group"
+
+msgid "Identificador de publicación inválido."
+msgstr "Invalid release identifier."
+
+msgid "La acción ya no es válida para el estado actual."
+msgstr "This action is no longer valid for the current status."
+
+msgid "Mismo concepto"
+msgstr "Same concept"
+
+msgid "Morfología"
+msgstr "Morphology"
+
+msgid "Más amplio"
+msgstr "Broader"
+
+msgid "Más específico"
+msgstr "Narrower"
+
+msgid "No hay paquete offline disponible."
+msgstr "No offline package is available."
+
+msgid "No se encontró el service worker."
+msgstr "The service worker could not be found."
+
+msgid "No se pudo iniciar sesión. Espere unos minutos."
+msgstr "Sign-in failed. Please wait a few minutes."
+
+msgid "Otro"
+msgstr "Other"
+
+msgid "Relacionado"
+msgstr "Related"
+
+msgid "Se alcanzó el límite temporal de exportaciones. Espere un minuto."
+msgstr "The temporary export limit has been reached. Please wait one minute."
+
+msgid "Solo se puede liberar el conjunto sintético de demostración."
+msgstr "Only the synthetic demo dataset can be published."
+
+msgid "Topografía"
+msgstr "Topography"
+
+msgid "Utilice un CSV de hasta 12 MB."
+msgstr "Use a CSV file no larger than 12 MB."
+
+msgid "%(label)s debe ser un número finito mayor que cero."
+msgstr "%(label)s must be a finite number greater than zero."
+
+msgid "%(label)s debe ser un número finito no negativo."
+msgstr "%(label)s must be a finite nonnegative number."
+
+msgid "Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos."
+msgstr "Cases, populations, and weights must cover the same non-empty strata."
+
+msgid "El conteo debe ser un entero no negativo."
+msgstr "The count must be a nonnegative integer."
+
+msgid "El nivel de confianza debe estar entre cero y uno."
+msgstr "The confidence level must be between zero and one."
+
+msgid "El numerador no puede exceder el universo declarado."
+msgstr "The numerator cannot exceed the stated universe."
+
+msgid "El universo debe ser mayor que cero."
+msgstr "The universe must be greater than zero."
+
+msgid "La suma de los pesos estándar debe ser mayor que cero."
+msgstr "The standard weights must sum to more than zero."
+
+msgid "Valor numérico fuera de rango."
+msgstr "Numeric value is out of range."
+
+#: public_site/portal.py:387
+msgid "actualizacion_sintetica"
+msgstr "synthetic_update"
+
+#: public_site/validation.py:29 public_site/validation.py:58
+msgid "Use al menos %(limit_value)s caracteres."
+msgstr "Use at least %(limit_value)s characters."
+
+#: public_site/validation.py:30 public_site/validation.py:62
+msgid "Use como máximo %(limit_value)s caracteres."
+msgstr "Use no more than %(limit_value)s characters."
+
+#: public_site/validation.py:88
+msgid "Ingrese un correo electrónico válido."
+msgstr "Enter a valid email address."
+
+#: public_site/validation.py:101
+msgid "Seleccione una opción válida."
+msgstr "Select a valid choice."
+
+msgid "Contraseña"
+msgstr "Password"
+
+msgid "Contraseña actual"
+msgstr "Old password"
+
+msgid "Nueva contraseña"
+msgstr "New password"
+
+msgid "Confirmar nueva contraseña"
+msgstr "Confirm new password"
+
+msgid "Repita la misma contraseña para confirmar."
+msgstr "Enter the same password as before, for verification."
+
+msgid "La contraseña no debe parecerse a sus datos personales."
+msgstr ""
+"Choose a password that is not too similar to your personal information."
+
+msgid "La contraseña no debe ser muy similar a sus otros datos personales."
+msgstr ""
+"Your password cannot be too similar to your other personal information."
+
+msgid ""
+"La contraseña es demasiado corta; debe contener al menos %(min_length)s "
+"caracteres."
+msgstr ""
+"This password is too short. It must contain at least %(min_length)s "
+"characters."
+
+msgid "La contraseña debe tener al menos %(min_length)s caracteres."
+msgstr "Your password must contain at least %(min_length)s characters."
+
+msgid "Elija una contraseña que no sea de uso común."
+msgstr "Choose a password that is not commonly used."
+
+msgid "No utilice una contraseña de uso común."
+msgstr "Your password cannot be a commonly used password."
+
+msgid "La contraseña no puede contener solo números."
+msgstr "This password is entirely numeric."
+
+msgid "No utilice solo números como contraseña."
+msgstr "Your password cannot be entirely numeric."
+
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "The two password fields did not match."
+
+msgid "La contraseña actual no es correcta."
+msgstr "Your old password was entered incorrectly."
+
+msgid "El usuario o la contraseña no son válidos."
+msgstr "Please enter a correct username and password."
+
+msgid "La cuenta no está activa."
+msgstr "This account is inactive."
+
+msgid "Correo electrónico"
+msgstr "Email address"
+
+msgid "Vista previa de traducción automática"
+msgstr "Machine translation preview (draft)"
+
+msgid ""
+"Este idioma usa un borrador no revisado ni aprobado. No lo use para "
+"interpretar estadísticas de cáncer."
+msgstr ""
+"This language uses an unreviewed, unapproved draft. Do not use it to "
+"interpret cancer statistics."
+
+msgid "borrador de vista previa"
+msgstr "— preview draft"

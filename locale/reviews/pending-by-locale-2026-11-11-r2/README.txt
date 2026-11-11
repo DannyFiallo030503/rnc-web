@@ -1,0 +1,1 @@
+Paquetes separados generados tras añadir y localizar el nombre del CSV sintético. Cada paquete contiene 865 filas (703 Django + 162 JavaScript). Todos los borradores siguen fuzzy; la exportación no implica aprobación. Consulte ../README.md y revise cada fila antes de devolver el bundle.

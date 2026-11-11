@@ -1,0 +1,3617 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba."
+msgstr "Statistik insiden dari National Cancer Registry of Cuba."
+
+#, fuzzy
+msgid "RNC · Estadísticas de cáncer en Cuba"
+msgstr "RNC · Statistik kanker di Kuba"
+
+#, fuzzy
+msgid "RNC Cuba · Inicio"
+msgstr "RNC Kuba · Beranda"
+
+#, fuzzy
+msgid "Inicio"
+msgstr "Rumah"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer"
+msgstr "Pendaftaran Kanker Nasional"
+
+#, fuzzy
+msgid "Sesión iniciada"
+msgstr "Masuk"
+
+#, fuzzy
+msgid "Administración"
+msgstr "Administrasi"
+
+#, fuzzy
+msgid "Usuarios y permisos"
+msgstr "Pengguna dan izin"
+
+#, fuzzy
+msgid "Cambiar contraseña"
+msgstr "Ubah kata sandi"
+
+#, fuzzy
+msgid "Cerrar sesión y cambiar de cuenta"
+msgstr "Keluar dan ganti akun"
+
+#, fuzzy
+msgid "Acceso del personal"
+msgstr "Staf masuk"
+
+#, fuzzy
+msgid "Estadísticas públicas"
+msgstr "Statistik publik"
+
+#, fuzzy
+msgid "Idioma"
+msgstr "Bahasa"
+
+#, fuzzy
+msgid "Aplicar"
+msgstr "Terapkan"
+
+#, fuzzy
+msgid "Menú"
+msgstr "Tidak bisa"
+
+#, fuzzy
+msgid "Páginas del sitio"
+msgstr "Halaman situs"
+
+#, fuzzy
+msgid "Secciones de esta página"
+msgstr "Bagian di halaman ini"
+
+#, fuzzy
+msgid "Secciones sobre el RNC"
+msgstr "Bagian tentang RNC"
+
+#, fuzzy
+msgid "En esta página"
+msgstr "Di halaman ini"
+
+#, fuzzy
+msgid "Plegar barra lateral"
+msgstr "Ciutkan bilah sisi"
+
+#, fuzzy
+msgid "Plegar menú"
+msgstr "Ciutkan menu"
+
+#, fuzzy
+msgid "Navegación"
+msgstr "Navigasi"
+
+#, fuzzy
+msgid "Páginas"
+msgstr "Halaman"
+
+#, fuzzy
+msgid "Gestión de usuarios"
+msgstr "Manajemen pengguna"
+
+#, fuzzy
+msgid "Gestionar usuarios"
+msgstr "Kelola pengguna"
+
+#, fuzzy
+msgid "Usuarios y roles"
+msgstr "Pengguna dan peran"
+
+#, fuzzy
+msgid "Índice de la página"
+msgstr "Isi halaman"
+
+#, fuzzy
+msgid "Entorno con datos sintéticos"
+msgstr "Lingkungan data sintetis"
+
+#, fuzzy
+msgid "Información que acerca"
+msgstr "Mendekatkan informasi"
+
+#, fuzzy
+msgid "las estadísticas a las personas."
+msgstr "Membawa statistik kepada orang-orang."
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer de Cuba."
+msgstr "Pendaftaran Kanker Nasional Kuba."
+
+#, fuzzy
+msgid "Consulta de incidencia y resultados agregados."
+msgstr "Statistik insiden dan hasil agregat."
+
+#, fuzzy
+msgid "Navegación del pie de página"
+msgstr "Navigasi catatan kaki"
+
+#, fuzzy
+msgid "Explorar"
+msgstr "Jelajahi"
+
+#, fuzzy
+msgid "Ayuda y acceso"
+msgstr "Bantuan dan akses"
+
+#, fuzzy
+msgid "Información y acceso"
+msgstr "Informasi dan akses"
+
+#, fuzzy
+msgid "Cómo leer los resultados"
+msgstr "Cara membaca hasilnya"
+
+#, fuzzy
+msgid "Seguridad de mi cuenta"
+msgstr "Keamanan akun"
+
+#, fuzzy
+msgid "Subir al comienzo"
+msgstr "Kembali ke atas"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer · Cuba"
+msgstr "Pendaftaran Kanker Nasional · Kuba"
+
+#, fuzzy
+msgid ""
+"Los datos de esta instalación son inventados. No representan estadísticas "
+"oficiales."
+msgstr ""
+"Data di situs ini bersifat sintetis dan tidak mewakili statistik resmi."
+
+#, fuzzy
+msgid "El RNC"
+msgstr "Tentang RNC"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "Penjelajah statistik"
+
+#, fuzzy
+msgid "Nomencladores"
+msgstr "Katalog kode"
+
+#, fuzzy
+msgid "Consulta sin conexión"
+msgstr "Konsultasi offline"
+
+#, fuzzy
+msgid "Crear usuario"
+msgstr "Buat pengguna"
+
+#, fuzzy
+msgid "Editar usuario"
+msgstr "Sunting pengguna"
+
+#, fuzzy
+msgid "Detalle del corte"
+msgstr "Detail rilis"
+
+#, fuzzy
+msgid "Iniciar sesión"
+msgstr "Masuk"
+
+#, fuzzy
+msgid "Recuperar acceso"
+msgstr "Pulihkan akun"
+
+#, fuzzy
+msgid "Administrador de soporte"
+msgstr "Administrator dukungan"
+
+#, fuzzy
+msgid "Responsable de publicación"
+msgstr "Manajer publikasi"
+
+#, fuzzy
+msgid "Operador de cargas"
+msgstr "Operator pengambilan data"
+
+#, fuzzy
+msgid "Consulta pública"
+msgstr "Konsultasi publik"
+
+#, fuzzy
+msgid "Información para comprender la incidencia del cáncer"
+msgstr "Informasi untuk memahami kejadian kanker"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer reúne y analiza información sobre los casos "
+"de cáncer en Cuba. Este portal permite consultar estadísticas por año, "
+"territorio, sexo, edad y localización, y preparar tablas, gráficos y "
+"descargas."
+msgstr ""
+"National Cancer Registry mengumpulkan dan menganalisis informasi tentang "
+"kasus kanker di Kuba. Portal ini memungkinkan Anda menjelajahi statistik "
+"berdasarkan tahun, wilayah, jenis kelamin, usia, dan situs kanker, serta "
+"menyiapkan tabel, bagan, dan unduhan."
+
+#, fuzzy
+msgid "Consultar estadísticas"
+msgstr "Jelajahi statistik"
+
+#, fuzzy
+msgid "Conocer el RNC"
+msgstr "Tentang RNC"
+
+#, fuzzy
+msgid "Qué ofrece este portal"
+msgstr "Apa yang ditawarkan portal ini"
+
+#, fuzzy
+msgid "Explora los datos disponibles"
+msgstr "Jelajahi data yang tersedia"
+
+#, fuzzy
+msgid "Filtra por año y territorio"
+msgstr "Filter berdasarkan tahun dan wilayah"
+
+#, fuzzy
+msgid "Compara sexo, edad y localización"
+msgstr "Bandingkan jenis kelamin, usia, dan lokasi kanker"
+
+#, fuzzy
+msgid "Consulta tablas y visualizaciones"
+msgstr "Jelajahi tabel dan visualisasi"
+
+#, fuzzy
+msgid "Descarga resultados con su contexto"
+msgstr "Unduh hasil beserta konteksnya"
+
+#, fuzzy
+msgid "Información sobre el Registro"
+msgstr "Tentang Registri"
+
+#, fuzzy
+msgid "El Registro"
+msgstr "Registri"
+
+#, fuzzy
+msgid "¿Qué es el RNC?"
+msgstr "Apa itu RNC?"
+
+#, fuzzy
+msgid ""
+"Es el sistema nacional que recopila, revisa y analiza información de cáncer "
+"con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del"
+" cáncer y sirven de apoyo a la investigación y la planificación sanitaria."
+msgstr ""
+"Ini adalah sistem berbasis populasi nasional yang mengumpulkan, meninjau, "
+"dan menganalisis informasi kanker. Statistiknya membantu menggambarkan beban"
+" kanker dan mendukung penelitian dan perencanaan kesehatan."
+
+#, fuzzy
+msgid "Qué hacemos"
+msgstr "Apa yang kami lakukan"
+
+#, fuzzy
+msgid "La plataforma"
+msgstr "Platformnya"
+
+#, fuzzy
+msgid "¿Qué puedes hacer aquí?"
+msgstr "Apa yang bisa kamu lakukan di sini?"
+
+#, fuzzy
+msgid ""
+"Construir una consulta, elegir el indicador y la dimensión de análisis, "
+"revisar la tabla que acompaña cada gráfico y exportar los resultados "
+"seleccionados."
+msgstr ""
+"Buat kueri, pilih indikator dan dimensi analisis, tinjau tabel yang "
+"menyertai setiap bagan, dan ekspor hasil yang dipilih."
+
+#, fuzzy
+msgid "Abrir la consulta estadística"
+msgstr "Buka penjelajah statistik"
+
+#, fuzzy
+msgid "Cómo usar el portal"
+msgstr "Cara menggunakan portal"
+
+#, fuzzy
+msgid "De la pregunta al resultado"
+msgstr "Dari pertanyaan hingga hasil"
+
+#, fuzzy
+msgid "Define la consulta."
+msgstr "Tentukan kueri Anda."
+
+#, fuzzy
+msgid ""
+"Selecciona el período y las dimensiones disponibles, como territorio, sexo, "
+"edad y localización."
+msgstr ""
+"Pilih periode dan dimensi yang tersedia, seperti wilayah, jenis kelamin, "
+"usia, dan lokasi kanker."
+
+#, fuzzy
+msgid "Elige qué medir."
+msgstr "Pilih apa yang akan diukur."
+
+#, fuzzy
+msgid ""
+"Distingue el número de casos, una proporción o una tasa; cada medida "
+"responde a una pregunta diferente."
+msgstr ""
+"Pilih antara jumlah kasus, proporsi, atau angka; setiap ukuran menjawab "
+"pertanyaan yang berbeda."
+
+#, fuzzy
+msgid "Interpreta y conserva el contexto."
+msgstr "Tafsirkan hasilnya dalam konteks."
+
+#, fuzzy
+msgid ""
+"Revisa tabla, unidad, población de referencia, fuente y notas del método "
+"antes de comparar o descargar."
+msgstr ""
+"Tinjau tabel, unit, populasi referensi, sumber, dan catatan metode sebelum "
+"membandingkan atau mengunduh hasilnya."
+
+#, fuzzy
+msgid ""
+"La disponibilidad de cada indicador depende del corte publicado. Las "
+"estimaciones, los datos observados y los períodos preliminares deben "
+"identificarse por separado."
+msgstr ""
+"Ketersediaan indikator bergantung pada rilis yang dipublikasikan. Perkiraan,"
+" data observasi, dan periode awal harus diidentifikasi secara terpisah."
+
+#, fuzzy
+msgid "Ver cómo se calculan los indicadores"
+msgstr "Lihat bagaimana indikator dihitung"
+
+#, fuzzy
+msgid "Conceptos estadísticos básicos"
+msgstr "Konsep dasar statistik"
+
+#, fuzzy
+msgid "Casos y frecuencias"
+msgstr "Kasus dan frekuensi"
+
+#, fuzzy
+msgid ""
+"Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa"
+" compara una parte con un total y se expresa como porcentaje. El denominador"
+" y la unidad deben acompañar siempre al resultado."
+msgstr ""
+"Hitungan menunjukkan berapa banyak kasus yang memenuhi filter yang dipilih. "
+"Frekuensi relatif membandingkan suatu bagian dengan jumlah total dan "
+"dinyatakan dalam persentase. Penyebut dan satuannya harus selalu menyertai "
+"hasilnya."
+
+#, fuzzy
+msgid "Tasas de incidencia"
+msgstr "Tingkat kejadian"
+
+#, fuzzy
+msgid ""
+"Una tasa relaciona los casos nuevos con la población correspondiente al "
+"mismo período y estrato. Las tasas por edad ayudan a describir grupos; el "
+"ajuste por edad facilita comparaciones entre poblaciones con estructuras "
+"etarias diferentes."
+msgstr ""
+"Angka ini menghubungkan kasus-kasus baru dengan populasi pada periode dan "
+"strata yang sama. Angka berdasarkan usia membantu mendeskripsikan kelompok; "
+"penyesuaian usia mendukung perbandingan antara populasi dengan struktur umur"
+" yang berbeda."
+
+#, fuzzy
+msgid ""
+"Las consultas estarán disponibles cuando exista una publicación activa."
+msgstr "Kueri akan tersedia saat rilis diterbitkan."
+
+#, fuzzy
+msgid "Anillo"
+msgstr "Diagram donat"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "Tahun diagnosis"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "Diagram batang berkelompok menurut jenis kelamin"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "Batangan bertumpuk berdasarkan jenis kelamin"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "Batang horizontal"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "Batang persentase berdasarkan jenis kelamin"
+
+#, fuzzy
+msgid "Circular"
+msgstr "Diagram lingkaran"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "Kolom"
+
+#, fuzzy
+msgid "Comparar por"
+msgstr "Bandingkan dengan"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "Plot sebar: tumor dan orang menurut provinsi/umur"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "Distribusi teritorial (kawanan)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "Usia"
+
+#, fuzzy
+msgid "El ajuste por edad necesita todos los grupos de edad."
+msgstr "Penyesuaian usia memerlukan semua kelompok umur."
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "Penyesuaian usia memerlukan semua kelompok umur dan dimensi lain."
+
+#, fuzzy
+msgid ""
+"El corte activo no incluye desglose por municipio; solo contiene provincia "
+"de residencia."
+msgstr ""
+"Rilis aktif tidak memiliki rincian kotamadya; itu hanya berisi provinsi "
+"tempat tinggal."
+
+#, fuzzy
+msgid ""
+"El corte agregado no permite deduplicar personas distintas al combinar "
+"varios valores. Use Tumores o seleccione un solo valor por filtro."
+msgstr ""
+"Rilis agregat tidak dapat menghapus duplikat orang di beberapa nilai yang "
+"dipilih. Gunakan tumor atau pilih hanya satu nilai per filter."
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "Dimensi ini tidak tersedia untuk diagram yang dipilih."
+
+#, fuzzy
+msgid "Este gráfico requiere la unidad Tumores."
+msgstr "Bagan ini memerlukan unit Tumor."
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "Indikator ini tidak tersedia untuk grafik yang dipilih."
+
+#, fuzzy
+msgid "Filtra los casos por municipio de residencia. Puede elegir varios."
+msgstr ""
+"Filter kasus berdasarkan kota tempat tinggal. Anda dapat memilih lebih dari "
+"satu."
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "Frekuensi absolut"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "Frekuensi relatif (%)"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "Kelompok lokasi kanker"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "Indikator"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr ""
+"Perbandingan berdasarkan jenis kelamin memerlukan kedua jenis kelamin dan "
+"dimensi lain."
+
+#, fuzzy
+msgid ""
+"La dispersión necesita una selección que permita contar personas distintas "
+"sin solapamientos."
+msgstr ""
+"Plot sebar memerlukan pilihan di mana orang-orang yang berbeda dapat "
+"dihitung tanpa tumpang tindih."
+
+#, fuzzy
+msgid "Líneas"
+msgstr "Garis"
+
+#, fuzzy
+msgid "Municipio de residencia"
+msgstr "Kotamadya tempat tinggal"
+
+#, fuzzy
+msgid ""
+"Para personas distintas, la composición solo se puede comparar por sexo."
+msgstr ""
+"Bagi orang yang berbeda, komposisi hanya dapat dibandingkan berdasarkan "
+"jenis kelamin."
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "Orang unik"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "Provinsi tempat tinggal"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "Poin berdasarkan provinsi atau kelompok umur"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "Pemeringkatan berdasarkan indikator"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "Jenis kelamin"
+
+#, fuzzy
+msgid "Sin seleccionar opciones se incluyen todos; puede elegir varias."
+msgstr ""
+"Jika Anda tidak memilih opsi apa pun, semua nilai akan disertakan. Anda "
+"dapat memilih lebih dari satu."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen solo las provincias presentes en este corte, que "
+"puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia "
+"de la unidad informante; puede elegir varias."
+msgstr ""
+"Tanpa adanya seleksi, hanya provinsi dalam rilis ini yang diikutsertakan; "
+"mereka mungkin tidak mencakup seluruh Kuba. Ini adalah provinsi tempat "
+"tinggal, bukan provinsi unit pelaporan. Anda dapat memilih lebih dari satu."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen todas las provincias disponibles. Es la provincia "
+"de residencia, no la provincia de la unidad informante; puede elegir varias."
+msgstr ""
+"Tanpa seleksi, semua provinsi yang tersedia akan disertakan. Ini adalah "
+"provinsi tempat tinggal, bukan provinsi unit pelapor. Anda dapat memilih "
+"lebih dari satu."
+
+#, fuzzy
+msgid ""
+"Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta"
+" 8 categorías excluyentes."
+msgstr ""
+"Hanya tipe bagan yang kompatibel dengan pilihan Anda yang ditawarkan. Bagan "
+"pai dan donat mendukung hingga 8 kategori yang saling eksklusif."
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Angka terstandarisasi menurut usia (Segi–Doll) per 100.000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "Angka kasar / spesifik usia per 100.000"
+
+#, fuzzy
+msgid "Tipo de gráfico"
+msgstr "Jenis bagan"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "Tumor"
+
+#, fuzzy
+msgid "Unidad de conteo"
+msgstr "Satuan penghitungan"
+
+#, fuzzy
+msgid "Cuenta"
+msgstr "Akun"
+
+#, fuzzy
+msgid "Consulta sin conexión · RNC Cuba"
+msgstr "Konsultasi offline · RNC Kuba"
+
+#, fuzzy
+msgid "Consulta pública local"
+msgstr "Konsultasi publik lokal"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación agregada sintética mientras tienes conexión. Después "
+"puedes filtrar, calcular, graficar, paginar e imprimir desde este "
+"dispositivo. La aplicación pública continúa disponible sin el servidor; la "
+"administración requiere conexión."
+msgstr ""
+"Simpan rilis agregat sintetis saat Anda online. Anda kemudian dapat "
+"memfilter, menghitung, membuat bagan, memberi nomor halaman, dan mencetak "
+"dari perangkat ini. Aplikasi publik tetap tersedia tanpa server; "
+"administrasi memerlukan koneksi."
+
+#, fuzzy
+msgid "Publicación local"
+msgstr "Rilis lokal"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "Tidak ada paket yang disimpan."
+
+#, fuzzy
+msgid "Instalar consulta pública"
+msgstr "Instal konsultasi publik"
+
+#, fuzzy
+msgid "Guardar / actualizar publicación"
+msgstr "Simpan / perbarui rilis"
+
+#, fuzzy
+msgid "Eliminar copia local"
+msgstr "Hapus salinan lokal"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo acepta publicaciones sintéticas. La copia queda en el "
+"almacenamiento del navegador hasta que la elimines o el navegador la retire."
+" Una copia sin conexión no puede actualizarse ni revocarse mientras el "
+"dispositivo está desconectado."
+msgstr ""
+"Prototipe ini hanya menerima rilis sintetis. Salinannya tetap berada di "
+"penyimpanan browser sampai Anda menghapusnya atau browser menghapusnya. "
+"Salinan offline tidak dapat diperbarui atau dicabut saat perangkat terputus."
+
+#, fuzzy
+msgid "Filtros y visualización"
+msgstr "Filter dan visualisasi"
+
+#, fuzzy
+msgid "Guarda una publicación para cargar los filtros disponibles."
+msgstr "Simpan rilis untuk memuat filter yang tersedia."
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "Tidak tersedia dalam rilis ini"
+
+#, fuzzy
+msgid "Localización"
+msgstr "Situs"
+
+#, fuzzy
+msgid "Calcular en este dispositivo"
+msgstr "Hitung di perangkat ini"
+
+#, fuzzy
+msgid "Comparar con el servidor"
+msgstr "Bandingkan dengan server"
+
+#, fuzzy
+msgid "Descargar CSV"
+msgstr "Unduh CSV"
+
+#, fuzzy
+msgid "Descargar gráfico PNG"
+msgstr "Unduh grafik PNG"
+
+#, fuzzy
+msgid "Imprimir / guardar PDF"
+msgstr "Cetak / simpan PDF"
+
+#, fuzzy
+msgid "Gráfico del resultado calculado localmente"
+msgstr "Bagan hasil dihitung secara lokal"
+
+#, fuzzy
+msgid "Paginación de resultados"
+msgstr "Penomoran halaman hasil"
+
+#, fuzzy
+msgid "Anterior"
+msgstr "Sebelumnya"
+
+#, fuzzy
+msgid "Siguiente"
+msgstr "Selanjutnya"
+
+#, fuzzy
+msgid "Barras"
+msgstr "Bar"
+
+#, fuzzy
+msgid "Actualizar resultados"
+msgstr "Perbarui hasil"
+
+#, fuzzy
+msgid ""
+"Actualmente no hay un corte publicado. Las consultas y descargas estarán "
+"disponibles cuando se publique una nueva versión."
+msgstr ""
+"Tidak ada rilis yang diterbitkan saat ini. Kueri dan unduhan akan tersedia "
+"saat versi baru diterbitkan."
+
+#, fuzzy
+msgid ""
+"Cada barra suma 100 % y muestra la distribución por sexo dentro de esa "
+"categoría."
+msgstr ""
+"Setiap batang berjumlah 100% dan menunjukkan distribusi menurut jenis "
+"kelamin dalam kategori tersebut."
+
+#, fuzzy
+msgid "Cambiar filtros"
+msgstr "Ubah filter"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "Kategori"
+
+#, fuzzy
+msgid ""
+"Categorías ordenadas de mayor a menor según el indicador seleccionado. Las "
+"posiciones también aparecen en las exportaciones."
+msgstr ""
+"Kategori diurutkan dari tertinggi hingga terendah berdasarkan ukuran yang "
+"dipilih. Peringkat juga termasuk dalam ekspor."
+
+#, fuzzy
+msgid "Eje de valores:"
+msgstr "Sumbu nilai:"
+
+#, fuzzy
+msgid ""
+"El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los "
+"conteos exactos de tumores y personas distintas."
+msgstr ""
+"Kategori pengelompokan ukuran gelembung dengan frekuensi yang sama; sumbu "
+"mempertahankan jumlah tumor dan jumlah orang yang berbeda."
+
+#, fuzzy
+msgid "Filtros aplicados:"
+msgstr "Filter yang diterapkan:"
+
+#, fuzzy
+msgid "Filtros de consulta"
+msgstr "Filter kueri"
+
+#, fuzzy
+msgid "Frecuencias y tasas calculadas para cada categoría de la comparación."
+msgstr "Frekuensi dan angka dihitung untuk setiap kategori perbandingan."
+
+#, fuzzy
+msgid "Frecuencias, población denominadora y tasas por categoría"
+msgstr "Frekuensi, populasi penyebut, dan angka berdasarkan kategori"
+
+#, fuzzy
+msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
+msgstr "Bagan kueri; nilai tersedia pada tabel di bawah ini"
+
+#, fuzzy
+msgid "Hay campos por corregir en el panel de filtros."
+msgstr "Beberapa bidang di panel filter perlu diperbaiki."
+
+#, fuzzy
+msgid "Imagen PNG"
+msgstr "gambar PNG"
+
+#, fuzzy
+msgid "Informe PDF"
+msgstr "laporan PDF"
+
+#, fuzzy
+msgid ""
+"La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La "
+"tasa cruda es frecuencia / población denominadora × 100 000; al comparar por"
+" edad corresponde a una tasa específica por edad. Al seleccionar varios años"
+" se acumulan las poblaciones anuales seleccionadas, por lo que la tasa "
+"resume el período y no corresponde a un solo año."
+msgstr ""
+"Frekuensi dan angka relatif menggunakan satuan yang dipilih di atas. Angka "
+"kasarnya adalah frekuensi/penyebut populasi × ​​100.000; untuk perbandingan "
+"usia, ini adalah angka khusus usia. Ketika beberapa tahun dipilih, populasi "
+"tahunannya akan ditambahkan, sehingga angka tersebut merangkum periode "
+"tersebut, bukan satu tahun."
+
+#, fuzzy
+msgid ""
+"La separación vertical de los puntos solo facilita distinguirlos; no "
+"representa otro indicador."
+msgstr ""
+"Jarak vertikal antar titik hanya untuk keterbacaan; itu tidak mewakili "
+"ukuran lain."
+
+#, fuzzy
+msgid ""
+"La tasa ajustada aplica la población estándar Segi–Doll al conjunto de "
+"edades disponible. Si falta cobertura en alguno de los grupos requeridos, se"
+" muestra “—”. La fórmula, los denominadores y la presentación de los métodos"
+" siguen pendientes de cotejo con el RNC."
+msgstr ""
+"Angka yang disesuaikan usia menerapkan populasi standar Segi–Doll pada "
+"kelompok umur yang tersedia. Jika cakupan tidak ada untuk grup yang "
+"diperlukan, “—” akan ditampilkan. Rumus, penyebut, dan penyajian metode "
+"masih memerlukan review dengan RNC."
+
+#, fuzzy
+msgid ""
+"Las personas distintas no se calculan cuando se combinan varios valores; una"
+" persona puede aparecer en más de un período, territorio, grupo de edad o "
+"localización."
+msgstr ""
+"Jumlah orang unik tidak dihitung saat beberapa nilai digabungkan; satu orang"
+" dapat muncul di lebih dari satu periode, wilayah, kelompok umur, atau "
+"lokasi kanker."
+
+#, fuzzy
+msgid "No hay resultados"
+msgstr "Tidak ada hasil"
+
+#, fuzzy
+msgid "No hay una publicación activa o la selección no contiene registros."
+msgstr "Tidak ada rilis aktif, atau pilihan tidak berisi catatan."
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "Populasi penyebut"
+
+#, fuzzy
+msgid "Posición"
+msgstr "Pangkat"
+
+#, fuzzy
+msgid ""
+"Puede combinar valores de provincia y municipio de residencia cuando el "
+"corte los incluya. Si un filtro está vacío, se incluyen todos sus valores "
+"disponibles. Los grupos tumorales corresponden a esta publicación; no forman"
+" un catálogo completo ni representan códigos TOPO o ICD‑O."
+msgstr ""
+"Anda dapat menggabungkan nilai tempat tinggal provinsi dan kotamadya saat "
+"keduanya disertakan dalam rilis. Membiarkan filter kosong akan mencakup "
+"semua nilai yang tersedia. Kelompok tumor khusus untuk rilis ini; katalog "
+"tersebut bukan katalog lengkap dan tidak mewakili kode TOPO atau ICD-O."
+
+#, fuzzy
+msgid "Restablecer"
+msgstr "Setel ulang"
+
+#, fuzzy
+msgid "Resultados"
+msgstr "Hasil"
+
+#, fuzzy
+msgid "Revise los filtros"
+msgstr "Tinjau filternya"
+
+#, fuzzy
+msgid "Tabla CSV"
+msgstr "tabel CSV"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll"
+msgstr "Angka Segi–Doll disesuaikan usia"
+
+#, fuzzy
+msgid "Tasa cruda/específica"
+msgstr "Angka kasar/usia tertentu"
+
+#, fuzzy
+msgid "Vector SVG"
+msgstr "Gambar vektor SVG"
+
+#, fuzzy
+msgid "Visualización"
+msgstr "Visualisasi"
+
+#, fuzzy
+msgid "por 100 000"
+msgstr "per 100.000"
+
+#, fuzzy
+msgid "Excel"
+msgstr "Unggul"
+
+#, fuzzy
+msgid ""
+"Una persona puede aparecer en distintas localizaciones; esos conteos pueden "
+"solaparse y no se suman para obtener personas únicas."
+msgstr ""
+"Satu orang mungkin muncul di beberapa situs; penghitungan tersebut mungkin "
+"tumpang tindih dan tidak boleh ditambahkan untuk mendapatkan jumlah orang "
+"unik."
+
+#, fuzzy
+msgid "Unidad"
+msgstr "Satuan"
+
+#, fuzzy
+msgid "Acceso restringido"
+msgstr "Akses dibatasi"
+
+#, fuzzy
+msgid "Bienvenido de nuevo"
+msgstr "Selamat datang kembali"
+
+#, fuzzy
+msgid "Entre con su cuenta para acceder a sus herramientas de trabajo."
+msgstr "Masuk untuk mengakses alat kerja Anda."
+
+#, fuzzy
+msgid "Incluir todos"
+msgstr "Pilih semua"
+
+#, fuzzy
+msgid "Incluir todos los valores de"
+msgstr "Sertakan semua nilai untuk"
+
+#, fuzzy
+msgid "La dirección no existe o el recurso ya no está disponible."
+msgstr "Alamat ini tidak ada atau sumber daya tidak lagi tersedia."
+
+#, fuzzy
+msgid ""
+"Las cuentas son creadas por el equipo administrador. No hay registro "
+"público."
+msgstr "Akun dibuat oleh tim administrasi. Pendaftaran publik tidak tersedia."
+
+#, fuzzy
+msgid "No encontramos esa página"
+msgstr "Kami tidak dapat menemukan halaman itu"
+
+#, fuzzy
+msgid "No hay acciones registradas."
+msgstr "Tidak ada tindakan yang dicatat."
+
+#, fuzzy
+msgid "No se ha seleccionado un archivo"
+msgstr "Tidak ada berkas yang dipilih"
+
+#, fuzzy
+msgid "Paginación"
+msgstr "Paginasi"
+
+#, fuzzy
+msgid "Primera"
+msgstr "Pertama"
+
+#, fuzzy
+msgid "Página"
+msgstr "Halaman"
+
+#, fuzzy
+msgid "Revise los campos indicados"
+msgstr "Tinjau bidang yang ditunjukkan"
+
+#, fuzzy
+msgid "Seleccionar CSV"
+msgstr "Pilih CSV"
+
+#, fuzzy
+msgid ""
+"Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar "
+"consultando las estadísticas públicas."
+msgstr ""
+"Akun Anda tidak memiliki izin untuk mengakses bagian ini. Anda dapat terus "
+"menelusuri statistik publik."
+
+#, fuzzy
+msgid "Volver al inicio"
+msgstr "Kembali ke rumah"
+
+#, fuzzy
+msgid "Vuelva a seleccionar el CSV para reenviar el formulario."
+msgstr "Pilih lagi file CSV untuk mengirim ulang formulir."
+
+#, fuzzy
+msgid "de"
+msgstr "dari"
+
+#, fuzzy
+msgid "seleccionados"
+msgstr "dipilih"
+
+#, fuzzy
+msgid "¿Olvidó su contraseña?"
+msgstr "Lupa kata sandi Anda?"
+
+#, fuzzy
+msgid "Última"
+msgstr "Terakhir"
+
+#, fuzzy
+msgid "Nomencladores · RNC Cuba"
+msgstr "Katalog kode kanker · RNC Kuba"
+
+#, fuzzy
+msgid "Consulta de clasificadores"
+msgstr "Pencarian klasifikasi"
+
+#, fuzzy
+msgid "Nomencladores de cáncer"
+msgstr "Katalog kode kanker"
+
+#, fuzzy
+msgid ""
+"Busque un código o término y vea a qué sistema, edición y eje pertenece."
+msgstr "Telusuri kode atau istilah untuk melihat sistem, edisi, dan sumbunya."
+
+#, fuzzy
+msgid "Referencia inicial de este proyecto, pendiente de validación del RNC:"
+msgstr "Referensi awal untuk proyek ini, menunggu validasi RNC:"
+
+#, fuzzy
+msgid ""
+"ICD-O-3 para topografía y morfología; ICCC-3 para grupos diagnósticos "
+"infantiles. Se conserva el sistema y la edición con que llega cada código; "
+"no se traducen ni mezclan códigos entre ediciones sin una equivalencia "
+"validada."
+msgstr ""
+"ICD-O-3 untuk topografi dan morfologi; ICCC-3 untuk kelompok diagnostik "
+"anak-anak. Setiap kode mempertahankan sistem sumber dan edisinya; kode tidak"
+" diterjemahkan atau dicampur di seluruh edisi tanpa kesetaraan yang "
+"divalidasi."
+
+#, fuzzy
+msgid "No se pudo cargar el catálogo"
+msgstr "Katalog tidak dapat dimuat"
+
+#, fuzzy
+msgid "Catálogo oficial aún no disponible"
+msgstr "Belum ada katalog resmi yang tersedia"
+
+#, fuzzy
+msgid ""
+"Esta instalación no tiene cargado un diccionario autorizado. Los grupos de "
+"localización de la demostración son sintéticos y no equivalen a códigos "
+"TOPO."
+msgstr ""
+"Instalasi ini tidak memuat kamus resmi. Grup situs demonstrasi bersifat "
+"sintetis dan tidak setara dengan kode TOPO."
+
+#, fuzzy
+msgid "Fuentes para la referencia inicial:"
+msgstr "Sumber referensi awal:"
+
+#, fuzzy
+msgid "OMS · ICD‑O‑3"
+msgstr "SIAPA · ICD‑O‑3"
+
+#, fuzzy
+msgid "IARC · ICCC‑3"
+msgstr "IARC · ICCC‑3"
+
+#, fuzzy
+msgid ""
+"es una edición internacional posterior, no la referencia inicial elegida "
+"para este prototipo."
+msgstr ""
+"adalah edisi internasional selanjutnya, bukan referensi awal yang dipilih "
+"untuk prototipe ini."
+
+#, fuzzy
+msgid "Versión del catálogo:"
+msgstr "Versi katalog:"
+
+#, fuzzy
+msgid "Fuente:"
+msgstr "Sumber:"
+
+#, fuzzy
+msgid "Código o texto"
+msgstr "Kode atau teks"
+
+#, fuzzy
+msgid "Buscar códigos, nombres y descripciones"
+msgstr "Cari kode, nama, dan deskripsi"
+
+#, fuzzy
+msgid "Sistema"
+msgstr "Sistem"
+
+#, fuzzy
+msgid "Edición"
+msgstr "Edisi"
+
+#, fuzzy
+msgid "Todas"
+msgstr "Semua"
+
+#, fuzzy
+msgid "Eje"
+msgstr "sumbu"
+
+#, fuzzy
+msgid "Todos"
+msgstr "Semua"
+
+#, fuzzy
+msgid "Buscar"
+msgstr "Cari"
+
+#, fuzzy
+msgid ""
+"conceptos encontrados. La aplicación no deduce equivalencias entre sistemas "
+"o ediciones. Solo se muestran conceptos marcados como autorizados y "
+"relaciones declaradas por una fuente o marcadas en el catálogo como "
+"validadas por el RNC; los borradores y vínculos pendientes no aparecen."
+msgstr ""
+"konsep yang ditemukan. Aplikasi ini tidak menyimpulkan kesetaraan antar "
+"sistem atau edisi. Hanya konsep yang ditandai sebagai diotorisasi dan "
+"hubungan yang dinyatakan oleh sumber atau ditandai sebagai divalidasi oleh "
+"RNC yang ditampilkan; draf dan tautan yang tertunda dihilangkan."
+
+#, fuzzy
+msgid "identificadores asociados"
+msgstr "pengidentifikasi terkait"
+
+#, fuzzy
+msgid "Código"
+msgstr "Kode"
+
+#, fuzzy
+msgid "Sistema · edición · eje"
+msgstr "Sistem · edisi · sumbu"
+
+#, fuzzy
+msgid "Nombre y descripción"
+msgstr "Nama dan deskripsi"
+
+#, fuzzy
+msgid "Estado"
+msgstr "Status"
+
+#, fuzzy
+msgid "Relación"
+msgstr "Hubungan"
+
+#, fuzzy
+msgid "Fuente y licencia"
+msgstr "Sumber dan lisensi"
+
+#, fuzzy
+msgid "Ver descripción"
+msgstr "Lihat deskripsi"
+
+#, fuzzy
+msgid "Vigente"
+msgstr "Saat ini"
+
+#, fuzzy
+msgid "Histórico/deprecado"
+msgstr "Bersejarah/tidak digunakan lagi"
+
+#, fuzzy
+msgid "Opcional"
+msgstr "Opsional"
+
+#, fuzzy
+msgid "Fuente del código"
+msgstr "Sumber kode"
+
+#, fuzzy
+msgid "Fuente del concepto"
+msgstr "Sumber konsep"
+
+#, fuzzy
+msgid "Licencia"
+msgstr "Lisensi"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "Publikasi"
+
+#, fuzzy
+msgid "Marcado como histórico"
+msgstr "Ditandai sebagai bersejarah"
+
+#, fuzzy
+msgid "Marcado como autorizado"
+msgstr "Ditandai sebagai resmi"
+
+#, fuzzy
+msgid "No hay conceptos que coincidan con los filtros."
+msgstr "Tidak ada konsep yang cocok dengan filter ini."
+
+#, fuzzy
+msgid "Navegación lateral"
+msgstr "Navigasi samping"
+
+#, fuzzy
+msgid "Navegación principal"
+msgstr "Navigasi utama"
+
+#, fuzzy
+msgid "Ruta de navegación"
+msgstr "Navigasi remah roti"
+
+#, fuzzy
+msgid "Saltar al contenido"
+msgstr "Lewati ke konten"
+
+#, fuzzy
+msgid "0 cortes"
+msgstr "0 rilis"
+
+#, fuzzy
+msgid "Acceso individual"
+msgstr "Akses individu"
+
+#, fuzzy
+msgid "Acciones"
+msgstr "Tindakan"
+
+#, fuzzy
+msgid "Activa"
+msgstr "Aktif"
+
+#, fuzzy
+msgid "Actualización"
+msgstr "Diperbarui"
+
+#, fuzzy
+msgid "Administración de cortes · RNC Cuba"
+msgstr "Administrasi rilis · RNC Kuba"
+
+#, fuzzy
+msgid "Administración · Identidad"
+msgstr "Administrasi · Akun"
+
+#, fuzzy
+msgid "Apellidos"
+msgstr "Nama belakang"
+
+#, fuzzy
+msgid "Archivo CSV sintético"
+msgstr "File CSV sintetis"
+
+#, fuzzy
+msgid ""
+"Asigne el rol y el correo. Sin contraseña temporal, una cuenta nueva recibe "
+"una invitación."
+msgstr ""
+"Tetapkan peran dan alamat email. Akun baru menerima undangan kecuali Anda "
+"menetapkan kata sandi sementara."
+
+#, fuzzy
+msgid "Buscar usuario"
+msgstr "Cari pengguna"
+
+#, fuzzy
+msgid "CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."
+msgstr "CSV UTF-8, hingga 12 MB dan 60.000 baris. Hanya data sintetis."
+
+#, fuzzy
+msgid "Confirme su identidad para guardar los cambios."
+msgstr "Konfirmasikan identitas Anda untuk menyimpan perubahan."
+
+#, fuzzy
+msgid "Confirmo que el archivo contiene exclusivamente datos sintéticos"
+msgstr "Saya mengonfirmasi bahwa file tersebut hanya berisi data sintetis"
+
+#, fuzzy
+msgid ""
+"Consulta el estado de incorporación y publicación de los cortes de "
+"incidencia."
+msgstr "Tinjau status konsumsi dan publikasi untuk rilis insiden."
+
+#, fuzzy
+msgid "Contraseña temporal"
+msgstr "Kata sandi sementara"
+
+#, fuzzy
+msgid "Correo"
+msgstr "Surel"
+
+#, fuzzy
+msgid "Corte"
+msgstr "Lepaskan"
+
+#, fuzzy
+msgid "Cortes disponibles en el portal"
+msgstr "Rilis tersedia di portal"
+
+#, fuzzy
+msgid "Cortes en proceso"
+msgstr "Rilis sedang berlangsung"
+
+#, fuzzy
+msgid "Cortes estadísticos"
+msgstr "Rilis statistik"
+
+#, fuzzy
+msgid "Cortes estadísticos disponibles para gestión."
+msgstr "Rilis statistik tersedia untuk manajemen."
+
+#, fuzzy
+msgid "Cortes no visibles al público"
+msgstr "Rilisan tidak terlihat oleh publik"
+
+#, fuzzy
+msgid "Cortes recientes"
+msgstr "Rilis terbaru"
+
+#, fuzzy
+msgid "Crear cuenta"
+msgstr "Buat akun"
+
+#, fuzzy
+msgid "Crear usuario +"
+msgstr "Buat pengguna +"
+
+#, fuzzy
+msgid "Cuenta activa"
+msgstr "Akun aktif"
+
+#, fuzzy
+msgid "Cuenta guardada."
+msgstr "Akun disimpan."
+
+#, fuzzy
+msgid ""
+"Cuenta guardada; no se pudo encolar el correo. Puede reintentar la "
+"invitación."
+msgstr ""
+"Akun disimpan; email tidak dapat diantrekan. Anda dapat mencoba kembali "
+"undangan tersebut."
+
+#, fuzzy
+msgid "Debe permanecer al menos una cuenta de soporte activa."
+msgstr "Setidaknya satu akun dukungan aktif harus tetap ada."
+
+#, fuzzy
+msgid "Desactivada"
+msgstr "Dengan disabilitas"
+
+#, fuzzy
+msgid "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+msgstr "Nonaktifkan akun untuk menghapus akses tanpa menghapus riwayatnya."
+
+#, fuzzy
+msgid "Disponibilidad de estadísticas aprobadas"
+msgstr "Ketersediaan statistik yang disetujui"
+
+#, fuzzy
+msgid "Editar"
+msgstr "Sunting"
+
+#, fuzzy
+msgid "Editar cuenta"
+msgstr "Sunting akun"
+
+#, fuzzy
+msgid "El archivo supera el límite de 12 MB."
+msgstr "File melebihi batas 12 MB."
+
+#, fuzzy
+msgid ""
+"Elija su nueva contraseña. No necesita indicar la anterior para recuperar el"
+" acceso."
+msgstr ""
+"Pilih kata sandi baru Anda. Anda tidak perlu memberikan kata sandi lama "
+"untuk memulihkan akses."
+
+#, fuzzy
+msgid "En cola"
+msgstr "Mengantri"
+
+#, fuzzy
+msgid "En revisión"
+msgstr "Sedang ditinjau"
+
+#, fuzzy
+msgid ""
+"Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."
+msgstr ""
+"Masukkan 10 hingga 250 karakter. Keputusan ini akan dicatat dalam riwayat "
+"audit."
+
+#, fuzzy
+msgid "Ese correo ya está asignado a otra cuenta."
+msgstr "Alamat email tersebut sudah ditetapkan ke akun lain."
+
+#, fuzzy
+msgid "Ese nombre de usuario ya está en uso. Elija otro."
+msgstr "Nama pengguna itu sudah digunakan. Pilih yang lain."
+
+#, fuzzy
+msgid "Establecer contraseña"
+msgstr "Tetapkan kata sandi"
+
+#, fuzzy
+msgid "Establecer contraseña · RNC"
+msgstr "Tetapkan kata sandi · RNC"
+
+#, fuzzy
+msgid "Falló el envío"
+msgstr "Pengiriman gagal"
+
+#, fuzzy
+msgid "Gestionar cuentas del portal"
+msgstr "Kelola akun portal"
+
+#, fuzzy
+msgid "Gestionar entregas sintéticas"
+msgstr "Kelola rilis sintetis"
+
+#, fuzzy
+msgid "Gestione las cuentas del personal autorizado y sus responsabilidades."
+msgstr "Kelola akun staf resmi dan tanggung jawab mereka."
+
+#, fuzzy
+msgid "Grupo de localización ilustrativo"
+msgstr "Grup situs ilustrasi"
+
+#, fuzzy
+msgid "Guardar contraseña"
+msgstr "Simpan kata sandi"
+
+#, fuzzy
+msgid "Guardar cuenta"
+msgstr "Simpan akun"
+
+#, fuzzy
+msgid "Incorporación"
+msgstr "Tertelan"
+
+#, fuzzy
+msgid "Incorporación y publicación"
+msgstr "Penyerapan dan publikasi"
+
+#, fuzzy
+msgid ""
+"Indique el correo registrado. Si la cuenta está habilitada, recibirá "
+"instrucciones."
+msgstr ""
+"Masukkan alamat email yang terdaftar. Jika akun aktif, instruksi akan "
+"dikirimkan."
+
+#, fuzzy
+msgid "Introduzca su contraseña actual y elija una nueva."
+msgstr "Masukkan kata sandi Anda saat ini dan pilih kata sandi baru."
+
+#, fuzzy
+msgid ""
+"Invitación en cola de envío. El servicio de correo procesará la solicitud."
+msgstr "Undangan mengantri. Layanan surat akan memproses permintaan tersebut."
+
+#, fuzzy
+msgid ""
+"La composición requiere conteos o porcentajes de categorías excluyentes; "
+"para personas, compare por sexo."
+msgstr ""
+"Bagan komposisi memerlukan penghitungan atau persentase untuk kategori yang "
+"saling eksklusif; saat menghitung orang, bandingkan berdasarkan jenis "
+"kelamin."
+
+#, fuzzy
+msgid ""
+"Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni "
+"porcentajes."
+msgstr ""
+"Batangan bertumpuk memerlukan frekuensi absolut; angka dan persentase tidak "
+"boleh ditambahkan."
+
+#, fuzzy
+msgid ""
+"Las invitaciones permiten elegir una contraseña privada. Una contraseña "
+"temporal obliga a cambiarla antes de utilizar el panel. Desactive las "
+"cuentas que ya no deban acceder."
+msgstr ""
+"Undangan memungkinkan pengguna memilih kata sandi pribadi. Kata sandi "
+"sementara harus diubah sebelum menggunakan dasbor. Nonaktifkan akun yang "
+"seharusnya tidak lagi memiliki akses."
+
+#, fuzzy
+msgid "Las líneas requieren comparar por período."
+msgstr "Bagan garis memerlukan perbandingan berdasarkan periode."
+
+#, fuzzy
+msgid ""
+"Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 "
+"caracteres."
+msgstr ""
+"Gunakan huruf, angka, titik, tanda hubung, atau garis bawah tanpa aksen. "
+"Setidaknya 3 karakter."
+
+#, fuzzy
+msgid "Motivo de la decisión"
+msgstr "Alasan pengambilan keputusan"
+
+#, fuzzy
+msgid "No hay cortes registrados."
+msgstr "Tidak ada rilis yang direkam."
+
+#, fuzzy
+msgid "No puede desactivar ni retirar su propio rol de soporte."
+msgstr ""
+"Anda tidak dapat menonaktifkan akun Anda sendiri atau menghapus peran "
+"dukungan Anda."
+
+#, fuzzy
+msgid "No se encontraron cuentas."
+msgstr "Tidak ada akun yang ditemukan."
+
+#, fuzzy
+msgid "No se pudo confirmar la operación con esa contraseña."
+msgstr "Operasi tidak dapat dikonfirmasi dengan kata sandi itu."
+
+#, fuzzy
+msgid "Nombre"
+msgstr "Nama"
+
+#, fuzzy
+msgid "Nombre del corte"
+msgstr "Nama rilis"
+
+#, fuzzy
+msgid "Nombre, usuario o correo"
+msgstr "Nama, nama pengguna, atau email"
+
+#, fuzzy
+msgid ""
+"Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con "
+"ella, se exigirá cambiarla al entrar."
+msgstr ""
+"Opsional. Tanpa itu, undangan untuk memilih kata sandi akan dikirim. Dengan "
+"itu, pengguna harus mengubah kata sandi saat masuk."
+
+#, fuzzy
+msgid "Operación"
+msgstr "Tindakan"
+
+#, fuzzy
+msgid "Operador:"
+msgstr "Operator:"
+
+#, fuzzy
+msgid "Período"
+msgstr "Titik"
+
+#, fuzzy
+msgid "Procesado"
+msgstr "Diproses"
+
+#, fuzzy
+msgid "Procesando"
+msgstr "Pemrosesan"
+
+#, fuzzy
+msgid "Proceso de gestión"
+msgstr "Proses manajemen"
+
+#, fuzzy
+msgid "Publicaciones"
+msgstr "Publikasi"
+
+#, fuzzy
+msgid "Publicado"
+msgstr "Diterbitkan"
+
+#, fuzzy
+msgid "Publicados"
+msgstr "Diterbitkan"
+
+#, fuzzy
+msgid "Publicar"
+msgstr "Publikasikan"
+
+#, fuzzy
+msgid "Publicar y revocar cortes sintéticos"
+msgstr "Publikasikan dan tarik rilis sintetis"
+
+#, fuzzy
+msgid "Rechazado"
+msgstr "Ditolak"
+
+#, fuzzy
+msgid "Registro del corte y procedencia"
+msgstr "Catatan rilis dan asal"
+
+#, fuzzy
+msgid "Responsabilidades"
+msgstr "Tanggung jawab"
+
+#, fuzzy
+msgid "Responsable"
+msgstr "Pemilik"
+
+#, fuzzy
+msgid "Responsable de publicación:"
+msgstr "Manajer publikasi:"
+
+#, fuzzy
+msgid "Resumen de cortes"
+msgstr "Ringkasan rilis"
+
+#, fuzzy
+msgid "Retirados"
+msgstr "Ditarik"
+
+#, fuzzy
+msgid "Revisión técnica"
+msgstr "Tinjauan teknis"
+
+#, fuzzy
+msgid "Revocado"
+msgstr "Ditarik"
+
+#, fuzzy
+msgid "Revocar"
+msgstr "Menarik diri"
+
+#, fuzzy
+msgid "Rol"
+msgstr "Peran"
+
+#, fuzzy
+msgid "Se admiten tildes, espacios, apóstrofos y guiones."
+msgstr "Aksen, spasi, apostrof, dan tanda hubung diperbolehkan."
+
+#, fuzzy
+msgid ""
+"Se ha solicitado establecer una contraseña para su cuenta RNC.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"El enlace vence en una hora y solo puede utilizarse una vez. Si no reconoce esta solicitud, contacte con soporte."
+msgstr ""
+"Kata sandi telah diminta untuk akun RNC Anda.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"Tautan ini kedaluwarsa dalam satu jam dan hanya dapat digunakan satu kali. Jika Anda tidak memintanya, hubungi dukungan."
+
+#, fuzzy
+msgid "Se utilizará para invitaciones y recuperación de acceso."
+msgstr "Digunakan untuk undangan dan pemulihan akun."
+
+#, fuzzy
+msgid "Seleccione un archivo con extensión .csv."
+msgstr "Pilih file .csv."
+
+#, fuzzy
+msgid "Solicitar enlace"
+msgstr "Minta tautan"
+
+#, fuzzy
+msgid "Solo soporte puede modificar cuentas de soporte."
+msgstr "Hanya administrator dukungan yang dapat mengubah akun dukungan."
+
+#, fuzzy
+msgid "Su contraseña de soporte"
+msgstr "Kata sandi dukungan Anda"
+
+#, fuzzy
+msgid "Tabla de resultados con desplazamiento horizontal"
+msgstr "Tabel hasil dengan pengguliran horizontal"
+
+#, fuzzy
+msgid "Territorio"
+msgstr "Wilayah"
+
+#, fuzzy
+msgid "Un nombre que identifique el período y la entrega."
+msgstr "Nama yang mengidentifikasi periode dan rilis."
+
+#, fuzzy
+msgid "Use como máximo 128 caracteres."
+msgstr "Gunakan tidak lebih dari 128 karakter."
+
+#, fuzzy
+msgid "Usuario"
+msgstr "Nama pengguna"
+
+#, fuzzy
+msgid "Validado"
+msgstr "Divalidasi"
+
+#, fuzzy
+msgid "Ver portal público"
+msgstr "Lihat portal publik"
+
+#, fuzzy
+msgid "Verificación de estructura e integridad"
+msgstr "Pemeriksaan struktur dan integritas"
+
+#, fuzzy
+msgid "además, publica y revoca cortes."
+msgstr "juga menerbitkan dan menarik rilis."
+
+#, fuzzy
+msgid "gestiona cuentas y todas las funciones."
+msgstr "mengelola akun dan semua fitur."
+
+#, fuzzy
+msgid "registra y revisa cargas."
+msgstr "rekaman dan ulasan yang diunggah."
+
+#, fuzzy
+msgid "Último correo"
+msgstr "Email terakhir"
+
+#, fuzzy
+msgid "Administración · Corte"
+msgstr "Administrasi · Rilis"
+
+#, fuzzy
+msgid "Cancelar"
+msgstr "Batalkan"
+
+#, fuzzy
+msgid "Confirmar publicación"
+msgstr "Konfirmasikan publikasi"
+
+#, fuzzy
+msgid "Continuar"
+msgstr "Lanjutkan"
+
+#, fuzzy
+msgid "Contraseña actualizada"
+msgstr "Kata sandi diperbarui"
+
+#, fuzzy
+msgid "Contraseña guardada"
+msgstr "Kata sandi disimpan"
+
+#, fuzzy
+msgid "Cuenta y seguridad"
+msgstr "Akun dan keamanan"
+
+#, fuzzy
+msgid "Datos sintéticos validados"
+msgstr "Data sintetis divalidasi"
+
+#, fuzzy
+msgid ""
+"El archivo no superó la validación como sintético y no se conservó en el "
+"almacenamiento de la aplicación."
+msgstr ""
+"File tidak lolos validasi data sintetis dan tidak disimpan dalam penyimpanan"
+" aplikasi."
+
+#, fuzzy
+msgid ""
+"El archivo sintético validado permanece en almacenamiento privado. Este "
+"contrato no habilita cargas clínicas del RNC."
+msgstr ""
+"File sintetis yang divalidasi tetap berada di penyimpanan pribadi. Kontrak "
+"ini tidak mengizinkan pengunggahan data klinis dari RNC."
+
+#, fuzzy
+msgid ""
+"El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo."
+msgstr ""
+"Tautan ini tidak valid, sudah digunakan, atau sudah habis masa berlakunya. "
+"Minta yang baru."
+
+#, fuzzy
+msgid ""
+"Esta entrega rechazada pertenece a una versión anterior del prototipo; el "
+"archivo asociado quedó en almacenamiento privado. Las nuevas cargas "
+"rechazadas ya no se conservan."
+msgstr ""
+"Pengajuan yang ditolak ini berasal dari versi prototipe sebelumnya; filenya "
+"tetap berada di penyimpanan pribadi. Upload yang baru ditolak tidak lagi "
+"dipertahankan."
+
+#, fuzzy
+msgid ""
+"Esta publicación sustituirá el conjunto completo anterior. Revise los "
+"períodos y la cobertura; no se sumarán ambas entregas."
+msgstr ""
+"Publikasi ini akan menggantikan seluruh dataset sebelumnya. Tinjau periode "
+"dan cakupan; kedua rilis tersebut tidak akan dijumlahkan."
+
+#, fuzzy
+msgid "Filas incorporadas"
+msgstr "Baris diterima"
+
+#, fuzzy
+msgid "Filas no incorporadas"
+msgstr "Baris ditolak"
+
+#, fuzzy
+msgid "Filas recibidas"
+msgstr "Baris diterima"
+
+#, fuzzy
+msgid "Historial del corte"
+msgstr "Riwayat rilis"
+
+#, fuzzy
+msgid "Informe técnico"
+msgstr "Laporan teknis"
+
+#, fuzzy
+msgid "Integridad SHA-256"
+msgstr "Integritas SHA-256"
+
+#, fuzzy
+msgid ""
+"La revocación retirará inmediatamente el corte del inicio, las consultas y "
+"las nuevas exportaciones. Los archivos ya descargados no pueden retirarse."
+msgstr ""
+"Penarikan segera menghapus rilis dari halaman beranda, kueri, dan ekspor "
+"baru. File yang sudah diunduh tidak dapat ditarik kembali."
+
+#, fuzzy
+msgid "Los campos con"
+msgstr "Bidang yang ditandai dengan"
+
+#, fuzzy
+msgid "No determinado"
+msgstr "Belum ditentukan"
+
+#, fuzzy
+msgid "No hay archivo fuente conservado para esta entrega."
+msgstr "Tidak ada file sumber yang disimpan untuk rilis ini."
+
+#, fuzzy
+msgid "No validado como sintético"
+msgstr "Tidak divalidasi sebagai sintetis"
+
+#, fuzzy
+msgid "Períodos"
+msgstr "Periode"
+
+#, fuzzy
+msgid "Publicar corte"
+msgstr "Publikasikan rilis"
+
+#, fuzzy
+msgid "Recepción"
+msgstr "Diterima"
+
+#, fuzzy
+msgid "Reenviar enlace para establecer contraseña"
+msgstr "Kirim ulang tautan pengaturan kata sandi"
+
+#, fuzzy
+msgid "Revocar corte"
+msgstr "Tarik rilis"
+
+#, fuzzy
+msgid "Revocar publicación"
+msgstr "Tarik publikasi"
+
+#, fuzzy
+msgid ""
+"Se comprobaron estructura, categorías, claves de tumor únicas, consistencia "
+"de personas y denominadores, y cobertura de edad y sexo. La validación es "
+"atómica: si falla una fila, la entrega no se incorpora parcialmente."
+msgstr ""
+"Struktur, kategori, kunci tumor unik, konsistensi orang dan penyebut, serta "
+"cakupan usia dan jenis kelamin diperiksa. Validasi bersifat atomik: jika ada"
+" baris yang gagal, tidak ada rilis yang diserap."
+
+#, fuzzy
+msgid ""
+"Si existe una cuenta activa con ese correo, recibirá un enlace para "
+"establecer su contraseña. Revise también la carpeta de correo no deseado."
+msgstr ""
+"Jika ada akun aktif untuk alamat email ini, tautan pengaturan kata sandi "
+"akan dikirimkan. Periksa juga folder spam Anda."
+
+#, fuzzy
+msgid "Solicitud recibida"
+msgstr "Permintaan diterima"
+
+#, fuzzy
+msgid "Soporte:"
+msgstr "Dukungan:"
+
+#, fuzzy
+msgid "Su contraseña se guardó correctamente."
+msgstr "Kata sandi Anda berhasil disimpan."
+
+#, fuzzy
+msgid "Territorios"
+msgstr "Wilayah"
+
+#, fuzzy
+msgid "Tumores aceptados"
+msgstr "Tumor yang diterima"
+
+#, fuzzy
+msgid "Ya puede iniciar sesión con su nueva contraseña."
+msgstr "Anda sekarang dapat masuk dengan kata sandi baru Anda."
+
+#, fuzzy
+msgid "son obligatorios."
+msgstr "diperlukan."
+
+#, fuzzy
+msgid "← Volver a administración"
+msgstr "← Kembali ke administrasi"
+
+#, fuzzy
+msgid "Acción"
+msgstr "Tindakan"
+
+#, fuzzy
+msgid "Actividad reciente"
+msgstr "Aktivitas terkini"
+
+#, fuzzy
+msgid ""
+"Contrato sintético de demostración · hasta 12 MB y 60 000 filas. Cada "
+"entrega representa un conjunto completo, no un incremento. El ejemplo "
+"descargable añade un tumor sintético al corte activo para recorrer la "
+"actualización completa."
+msgstr ""
+"Kontrak data demonstrasi sintetis · hingga 12 MB dan 60.000 baris. Setiap "
+"pengiriman mewakili kumpulan data yang lengkap, bukan peningkatan. Contoh "
+"yang dapat diunduh menambahkan satu tumor sintetis ke rilis aktif untuk "
+"menunjukkan pembaruan lengkap."
+
+#, fuzzy
+msgid "Descargar CSV de actualización"
+msgstr "Unduh pembaruan CSV"
+
+#, fuzzy
+msgid "Entregas registradas"
+msgstr "Pengiriman yang tercatat"
+
+#, fuzzy
+msgid "Entregas y cortes"
+msgstr "Pengiriman dan pelepasan"
+
+#, fuzzy
+msgid "Gestión de información"
+msgstr "Manajemen informasi"
+
+#, fuzzy
+msgid "Incorporar archivo"
+msgstr "Tambahkan berkas"
+
+#, fuzzy
+msgid ""
+"Incorpore entregas, revise sus resultados técnicos y gestione la "
+"publicación."
+msgstr "Tambahkan pengiriman, tinjau hasil teknisnya, dan kelola publikasi."
+
+#, fuzzy
+msgid "No hay entregas registradas."
+msgstr "Tidak ada pengiriman yang dicatat."
+
+#, fuzzy
+msgid "Publicación activa"
+msgstr "Publikasi aktif"
+
+#, fuzzy
+msgid "Recibido"
+msgstr "Diterima"
+
+#, fuzzy
+msgid "Revisar corte →"
+msgstr "Tinjau rilis →"
+
+#, fuzzy
+msgid "Sin corte publicado"
+msgstr "Tidak ada rilis yang dipublikasikan"
+
+#, fuzzy
+msgid "Subir y validar CSV"
+msgstr "Unggah dan validasi CSV"
+
+#, fuzzy
+msgid "El Registro Nacional de Cáncer"
+msgstr "Pendaftaran Kanker Nasional"
+
+#, fuzzy
+msgid "Alcance nacional"
+msgstr "Cakupan nasional"
+
+#, fuzzy
+msgid "Atención"
+msgstr "Informasi kontak"
+
+#, fuzzy
+msgid "Cómo trabajamos"
+msgstr "Bagaimana kami bekerja"
+
+#, fuzzy
+msgid "Dónde trabajamos"
+msgstr "Tempat kami bekerja"
+
+#, fuzzy
+msgid "Contactos"
+msgstr "Kontak"
+
+#, fuzzy
+msgid "Guía de interpretación"
+msgstr "Panduan interpretasi"
+
+#, fuzzy
+msgid "Frecuencia relativa"
+msgstr "Frekuensi relatif"
+
+#, fuzzy
+msgid "Fuentes y límites"
+msgstr "Sumber dan batasan"
+
+#, fuzzy
+msgid "Fuentes, versiones y límites de comparación"
+msgstr "Sumber, versi, dan batas perbandingan"
+
+#, fuzzy
+msgid "Métodos y cálculos"
+msgstr "Metode dan perhitungan"
+
+#, fuzzy
+msgid "Métodos y cálculos estadísticos"
+msgstr "Metode dan perhitungan statistik"
+
+#, fuzzy
+msgid "Objetivos"
+msgstr "Tujuan"
+
+#, fuzzy
+msgid "Oficina central"
+msgstr "Kantor pusat"
+
+#, fuzzy
+msgid "Organización"
+msgstr "Organisasi"
+
+#, fuzzy
+msgid "Participación de sus profesionales"
+msgstr "Partisipasi para profesionalnya"
+
+#, fuzzy
+msgid "Provincia"
+msgstr "Provinsi"
+
+#, fuzzy
+msgid "Referentes metodológicos consultados"
+msgstr "Referensi metodologis dikonsultasikan"
+
+#, fuzzy
+msgid "Registros provinciales"
+msgstr "Pendaftar provinsi"
+
+#, fuzzy
+msgid "Responsable publicado"
+msgstr "Kontak yang terdaftar"
+
+#, fuzzy
+msgid "Trabajo territorial"
+msgstr "Pekerjaan teritorial"
+
+#, fuzzy
+msgid "Transparencia estadística"
+msgstr "Transparansi statistik"
+
+#, fuzzy
+msgid "Directorio provincial histórico del sitio institucional (2015)"
+msgstr "Direktori sejarah provinsi dari situs institusi (2015)"
+
+#, fuzzy
+msgid "Composición publicada en la copia histórica"
+msgstr "Komposisi tercantum dalam salinan sejarah"
+
+#, fuzzy
+msgid "Objetivo principal:"
+msgstr "Tujuan utama:"
+
+#, fuzzy
+msgid "Detección y notificación:"
+msgstr "Deteksi dan pelaporan kasus:"
+
+#, fuzzy
+msgid "Registro en la unidad informante:"
+msgstr "Pendaftaran di unit pelaporan:"
+
+#, fuzzy
+msgid "Revisión provincial:"
+msgstr "Tinjauan provinsi:"
+
+#, fuzzy
+msgid "Cierre y remisión:"
+msgstr "Penutupan dan penyerahan statistik:"
+
+#, fuzzy
+msgid "Validación central:"
+msgstr "Validasi pusat:"
+
+#, fuzzy
+msgid "Consolidación y estadísticas:"
+msgstr "Konsolidasi dan statistik:"
+
+#, fuzzy
+msgid "Correo publicado"
+msgstr "Email yang terdaftar"
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias y tasas de incidencia específicas por edad y sexo para "
+"cada localización topográfica y morfológica, además de tasas ajustadas para "
+"Cuba y cada provincia."
+msgstr ""
+"Laporkan frekuensi dan angka kejadian berdasarkan usia dan jenis kelamin "
+"untuk setiap lokasi topografi dan morfologi, serta angka yang disesuaikan "
+"untuk Kuba dan setiap provinsi."
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias absolutas y relativas por localización según la etapa "
+"clínica al diagnóstico, la provincia y la unidad informante, la base más "
+"válida para el diagnóstico y otras variables de interés."
+msgstr ""
+"Laporkan frekuensi absolut dan relatif berdasarkan lokasi, stadium klinis "
+"saat diagnosis, provinsi, unit pelaporan, dasar diagnosis yang paling valid,"
+" dan variabel relevan lainnya."
+
+#, fuzzy
+msgid ""
+"Calcular indicadores de calidad de los datos por provincia y localización."
+msgstr "Hitung indikator kualitas data berdasarkan provinsi dan lokasi."
+
+#, fuzzy
+msgid "Estimar las cifras de supervivencia poblacional por cáncer."
+msgstr "Perkirakan kelangsungan hidup kanker berdasarkan populasi."
+
+#, fuzzy
+msgid ""
+"Para ello, la información institucional de referencia atribuye al RNC estos "
+"objetivos específicos:"
+msgstr ""
+"Informasi referensi kelembagaan menetapkan tujuan khusus berikut ini kepada "
+"RNC:"
+
+#, fuzzy
+msgid "Aplica la misma razón dentro de cada grupo etario:"
+msgstr "Menerapkan rasio yang sama pada setiap kelompok umur:"
+
+#, fuzzy
+msgid ""
+"Relaciona los casos nuevos observados con la población correspondiente al "
+"mismo período y territorio:"
+msgstr ""
+"Berhubungan dengan kasus-kasus baru yang diamati pada populasi untuk periode"
+" dan wilayah yang sama:"
+
+#, fuzzy
+msgid ""
+"Resume tasas específicas aplicando los pesos de una población estándar:"
+msgstr "Meringkas angka spesifik usia menggunakan bobot populasi standar:"
+
+#, fuzzy
+msgid "Expresa qué parte de un total corresponde a una categoría:"
+msgstr "Menunjukkan pecahan total yang termasuk dalam suatu kategori:"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer de Cuba (RNC) es de base poblacional y "
+"alcance nacional, y forma parte del sistema de información estadística del "
+"Ministerio de Salud Pública. La copia archivada del sitio institucional "
+"indica que fue creado en 1964, que perteneció al Instituto Nacional de "
+"Oncología y Radiobiología (INOR) hasta diciembre de 2007 y que, desde enero "
+"de 2008, se subordinaba metodológica y funcionalmente a la Sección "
+"Independiente de Control de Cáncer junto con el Programa Integral de Control"
+" de Cáncer en Cuba."
+msgstr ""
+"National Cancer Registry of Cuba (RNC) berbasis populasi, mencakup seluruh "
+"negara, dan merupakan bagian dari sistem informasi statistik Kementerian "
+"Kesehatan Masyarakat. Salinan arsip situs web institusi menyatakan bahwa "
+"lembaga tersebut dibuat pada tahun 1964, menjadi milik Institut Nasional "
+"Onkologi dan Radiobiologi (INOR) hingga Desember 2007, dan mulai Januari "
+"2008 secara metodologis dan fungsional berada di bawah Bagian Pengendalian "
+"Kanker Independen bersama dengan Program Pengendalian Kanker Komprehensif di"
+" Kuba."
+
+#, fuzzy
+msgid ""
+"El RNC es un registro de base poblacional con cobertura de residentes "
+"permanentes de Cuba. Su red se organiza en tres niveles: la Oficina Central,"
+" los equipos o registros provinciales y las unidades informantes que "
+"detectan y notifican los casos."
+msgstr ""
+"RNC adalah pencatatan berbasis populasi yang mencakup penduduk tetap Kuba. "
+"Jaringannya mempunyai tiga tingkatan: Kantor Pusat, tim atau registrasi "
+"provinsi, dan unit pelaporan yang mengidentifikasi dan melaporkan kasus."
+
+#, fuzzy
+msgid ""
+"La cobertura documentada comprende las 15 provincias y el municipio especial"
+" Isla de la Juventud. En los territorios, los departamentos de salud "
+"coordinan las unidades informantes; estas incluyen centros hospitalarios y "
+"otras fuentes asistenciales previstas por los procedimientos del Registro."
+msgstr ""
+"Cakupan yang terdokumentasi mencakup seluruh 15 provinsi dan kotamadya "
+"khusus Isla de la Juventud. Di setiap wilayah, departemen kesehatan "
+"mengoordinasikan unit pelaporan, termasuk rumah sakit dan sumber layanan "
+"lain yang ditentukan oleh prosedur Pendaftaran."
+
+#, fuzzy
+msgid ""
+"La red territorial permite reunir información de distintos puntos de "
+"atención y consolidarla con alcance nacional. La copia del sitio "
+"institucional organiza esa red con una comisión o registro de cáncer en cada"
+" provincia y un directorio territorial de responsables."
+msgstr ""
+"Jaringan teritorial mengumpulkan informasi dari berbagai tempat perawatan "
+"dan mengkonsolidasikannya secara nasional. Arsip situs institusi "
+"menggambarkan komisi kanker atau registrasi di setiap provinsi dan direktori"
+" kontak teritorial."
+
+#, fuzzy
+msgid ""
+"El directorio que se reproduce en esta página procede de una copia histórica"
+" del sitio: la información de Oficina Central fue publicada en 2013 y el "
+"directorio provincial en 2015. Se muestra como referencia histórica; sus "
+"nombres y canales no están confirmados como vigentes."
+msgstr ""
+"Direktori yang direproduksi di sini berasal dari salinan situs sejarah: "
+"Informasi Kantor Pusat diterbitkan pada tahun 2013 dan direktori provinsi "
+"pada tahun 2015. Ditampilkan untuk referensi sejarah; nama dan saluran "
+"kontaknya belum dikonfirmasi sebagai yang terbaru."
+
+#, fuzzy
+msgid ""
+"La copia histórica describe una Oficina Central y comisiones provinciales "
+"que asesoran a las autoridades de salud y apoyan la aplicación de los "
+"procedimientos. El Manual de Procedimientos del RNC, versión VII (2024), "
+"detalla el recorrido operativo de la información:"
+msgstr ""
+"Salinan sejarah menggambarkan Kantor Pusat dan komite provinsi yang "
+"memberikan nasihat kepada otoritas kesehatan dan mendukung prosedurnya. "
+"Manual Prosedur RNC, versi VII (2024), merinci alur kerja informasi:"
+
+#, fuzzy
+msgid ""
+"Este flujo corresponde al trabajo del Registro. El portal público es una "
+"herramienta de consulta de resultados agregados y no recibe reportes de "
+"casos ni sustituye los sistemas internos del RNC."
+msgstr ""
+"Alur kerja ini menjelaskan operasi Registri. Portal publik menyediakan akses"
+" ke hasil agregat; ia tidak menerima laporan kasus atau menggantikan sistem "
+"internal RNC."
+
+#, fuzzy
+msgid ""
+"La Oficina Central dirige técnicamente el sistema nacional, controla los "
+"procedimientos y la calidad de la información, ofrece asesoría metodológica "
+"y produce estadísticas. Recibe los cierres territoriales y coordina su "
+"validación y consolidación."
+msgstr ""
+"Kantor Pusat memberikan arahan teknis untuk sistem nasional, mengawasi "
+"prosedur dan kualitas informasi, memberikan saran metodologis, dan "
+"menghasilkan statistik. Ia menerima pengajuan teritorial dan "
+"mengoordinasikan validasi dan konsolidasinya."
+
+#, fuzzy
+msgid ""
+"El Manual RNC VII describe tareas centrales como comprobar la consistencia y"
+" completitud de los datos, revisar codificaciones, investigar duplicados y "
+"múltiples primarios, cotejar casos con información de mortalidad, pedir "
+"aclaraciones a los territorios e incorporar a la base consolidada solo los "
+"casos validados."
+msgstr ""
+"Manual RNC VII menjelaskan tugas-tugas utama seperti memeriksa konsistensi "
+"dan kelengkapan data, meninjau kode, menyelidiki duplikat dan beberapa "
+"pemilihan pendahuluan, mencocokkan kasus dengan informasi kematian, meminta "
+"klarifikasi dari wilayah, dan hanya menambahkan kasus yang tervalidasi ke "
+"dalam database konsolidasi."
+
+#, fuzzy
+msgid ""
+"El Manual también describe funciones de control de calidad, análisis de "
+"datos, informatización, procesamiento y edición, además de una Comisión "
+"Técnica Asesora para cambios a los procedimientos administrativos y "
+"técnicos."
+msgstr ""
+"Manual ini juga menjelaskan pengendalian kualitas, analisis data, "
+"komputerisasi, pemrosesan dan pengeditan, serta Komisi Penasihat Teknis "
+"untuk perubahan prosedur administratif dan teknis."
+
+#, fuzzy
+msgid ""
+"La composición y los datos de contacto actuales deben confirmarse con el "
+"RNC."
+msgstr ""
+"Komposisi saat ini dan informasi kontak harus dikonfirmasi dengan RNC."
+
+#, fuzzy
+msgid ""
+"Los equipos provinciales conectan las unidades informantes con la Oficina "
+"Central. Revisan reportes y bases, verifican datos y códigos, gestionan "
+"reparos con las unidades y preparan los cierres que se remiten al nivel "
+"nacional. La versión histórica del sitio describe también comisiones "
+"provinciales que asesoran a las autoridades de salud, controlan la "
+"aplicación de los procedimientos y emiten estadísticas preliminares."
+msgstr ""
+"Tim provinsi menghubungkan unit pelaporan dengan Kantor Pusat. Mereka "
+"meninjau laporan dan database, memeriksa data dan kode, menyelesaikan "
+"pertanyaan dengan unit, dan menyiapkan pengajuan untuk tingkat nasional. "
+"Situs web bersejarah ini juga menggambarkan komite provinsi yang memberikan "
+"nasihat kepada otoritas kesehatan, mengawasi prosedur, dan menerbitkan "
+"statistik awal."
+
+#, fuzzy
+msgid ""
+"A continuación se transcribe el directorio de responsables y correos de la "
+"copia histórica del sitio, publicada en 2015. Se conserva como referencia "
+"documental, no como lista confirmada de contactos activos:"
+msgstr ""
+"Kontak dan alamat email berikut ditranskripsikan dari salinan situs web "
+"historis yang diterbitkan pada tahun 2015. Kontak dan alamat email tersebut "
+"disimpan sebagai referensi dokumenter, bukan sebagai daftar kontak aktif "
+"yang dikonfirmasi:"
+
+#, fuzzy
+msgid ""
+"No se garantiza la entrega de mensajes a estos correos. El directorio, los "
+"cargos y las direcciones necesitan confirmación antes de usarse para "
+"gestiones actuales."
+msgstr ""
+"Pengiriman ke alamat email ini tidak dijamin. Direktori, peran, dan alamat "
+"memerlukan konfirmasi sebelum digunakan untuk masalah saat ini."
+
+#, fuzzy
+msgid ""
+"La página de contacto de la copia histórica publicaba los siguientes datos "
+"de la Oficina Central:"
+msgstr ""
+"Salinan historis halaman kontak mencantumkan informasi Kantor Pusat berikut:"
+
+#, fuzzy
+msgid ""
+"Esta versión del portal no recibe reportes clínicos ni solicitudes de "
+"modificación de registros. Para proteger la confidencialidad, no envíes "
+"datos de pacientes mediante canales de consulta pública."
+msgstr ""
+"Versi portal ini tidak menerima laporan klinis atau permintaan untuk "
+"mengubah catatan registri. Untuk melindungi kerahasiaan, jangan mengirimkan "
+"data pasien melalui saluran penyelidikan publik."
+
+#, fuzzy
+msgid ""
+"Los datos de ubicación, teléfono, correo y responsables se transcribieron de"
+" las páginas institucionales archivadas de Contacto y Dónde estamos, "
+"publicadas en 2013. Confirma su vigencia con el RNC antes de utilizarlos."
+msgstr ""
+"Lokasi, telepon, email, dan rincian kontak ditranskripsi dari arsip halaman "
+"Kontak dan Lokasi institusi yang diterbitkan pada tahun 2013. Konfirmasikan "
+"bahwa halaman tersebut terkini di RNC sebelum digunakan."
+
+#, fuzzy
+msgid ""
+"Las fórmulas siguientes explican conceptos usados en epidemiología "
+"descriptiva y en referentes internacionales. Para que un resultado del "
+"portal sea oficial, el RNC debe confirmar el método, las agrupaciones, los "
+"denominadores y las reglas de presentación aplicables al corte."
+msgstr ""
+"Rumus di bawah ini menjelaskan konsep yang digunakan dalam epidemiologi "
+"deskriptif dan referensi internasional. Agar hasil portal menjadi resmi, RNC"
+" harus mengkonfirmasi metode, pengelompokan, penyebut, dan aturan presentasi"
+" yang berlaku untuk rilis tersebut."
+
+#, fuzzy
+msgid ""
+"La versión local actual del portal está conectada a un agregado de "
+"demostración sintético. Esta interfaz no acredita cifras oficiales ni "
+"sustituye la aprobación de un corte público."
+msgstr ""
+"Versi lokal portal saat ini menggunakan agregat demonstrasi sintetik. "
+"Antarmuka ini tidak mengesahkan angka resmi atau menggantikan persetujuan "
+"rilis publik."
+
+#, fuzzy
+msgid ""
+"Las descripciones de organización se basan en páginas de la copia "
+"institucional consultadas entre 2013 y 2015 y requieren validación de "
+"vigencia. Los métodos se presentan con fines explicativos y las decisiones "
+"pendientes se identifican expresamente."
+msgstr ""
+"Deskripsi organisasi didasarkan pada salinan situs web institusi yang "
+"diperiksa antara tahun 2013 dan 2015 dan memerlukan konfirmasi bahwa salinan"
+" tersebut masih terkini. Metode disajikan untuk penjelasan, dan keputusan "
+"yang tertunda diidentifikasi secara eksplisit."
+
+#, fuzzy
+msgid "Coordinación nacional"
+msgstr "Koordinasi nasional"
+
+#, fuzzy
+msgid ""
+"Este portal ofrece actualmente consultas estadísticas de incidencia. No "
+"presenta aquí resultados de supervivencia, etapas clínicas, bases "
+"diagnósticas ni indicadores de calidad del RNC."
+msgstr ""
+"Portal ini saat ini menyediakan pertanyaan statistik tentang kejadian. "
+"Laporan ini tidak menyajikan hasil RNC mengenai kelangsungan hidup, stadium "
+"klinis, dasar diagnostik, atau indikator kualitas."
+
+#, fuzzy
+msgid ""
+"La información del RNC también contribuye a la investigación clínica y "
+"epidemiológica sobre el cáncer, a planificar y evaluar las acciones de "
+"control, y a planificar los recursos materiales y humanos para la atención "
+"oncológica."
+msgstr ""
+"Informasi RNC juga berkontribusi terhadap penelitian klinis dan epidemiologi"
+" kanker, perencanaan dan evaluasi tindakan pengendalian, serta perencanaan "
+"materi dan sumber daya manusia yang diperlukan untuk perawatan kanker."
+
+#, fuzzy
+msgid ""
+"La información institucional de referencia señala que profesionales del "
+"departamento forman parte de:"
+msgstr ""
+"Informasi referensi institusi menyatakan bahwa profesional departemen "
+"berpartisipasi dalam:"
+
+#, fuzzy
+msgid ""
+"La pertenencia y denominación actual de estos grupos y comisiones debe "
+"confirmarse con el RNC antes de presentarse como vigente."
+msgstr ""
+"Keanggotaan saat ini dan nama kelompok serta komite ini harus "
+"dikonfirmasikan kepada RNC sebelum disajikan sebagai yang terkini."
+
+#, fuzzy
+msgid "Tasa ajustada directamente por edad"
+msgstr "Angka langsung yang disesuaikan dengan usia"
+
+#, fuzzy
+msgid "Tasa cruda de incidencia"
+msgstr "Tingkat kejadian kasar"
+
+#, fuzzy
+msgid "Tasa específica por edad"
+msgstr "Angka khusus usia"
+
+#, fuzzy
+msgid "Tasa indirecta e intervalos de confianza"
+msgstr "Tingkat tidak langsung dan interval kepercayaan"
+
+#, fuzzy
+msgid ""
+"El estándar es una población de ponderación, no el denominador de los casos."
+" Como referencia metodológica de trabajo se estudia la estándar mundial "
+"Segi–Doll de 18 grupos quinquenales; el RNC debe validar su correspondencia,"
+" fórmula operativa, grupos abiertos, datos faltantes y redondeo antes de "
+"atribuirle cifras oficiales. Las comparaciones solo son interpretables si "
+"usan el mismo estándar y definiciones compatibles."
+msgstr ""
+"Populasi standar memasok bobot; itu bukan penyebut kasus. Standar dunia "
+"Segi–Doll yang terdiri dari 18 kelompok usia lima tahun sedang "
+"dipertimbangkan sebagai referensi metodologis. RNC harus memvalidasi "
+"korespondensi, formula operasional, kelompok terbuka, data yang hilang, dan "
+"pembulatan sebelum angka apa pun dianggap resmi. Perbandingan hanya dapat "
+"ditafsirkan jika standar yang sama dan definisi yang kompatibel digunakan."
+
+#, fuzzy
+msgid ""
+"El total puede depender de la pregunta y de la unidad de análisis. El "
+"tratamiento de valores desconocidos, categorías excluidas y redondeo "
+"requiere una regla explícita; no se debe asumir que tumor y persona son "
+"unidades intercambiables."
+msgstr ""
+"Jumlahnya mungkin tergantung pada pertanyaan dan unit analisis. Nilai yang "
+"tidak diketahui, kategori yang dikecualikan, dan pembulatan memerlukan "
+"aturan yang jelas; tumor dan manusia tidak boleh diperlakukan sebagai unit "
+"yang dapat dipertukarkan."
+
+#, fuzzy
+msgid ""
+"En la organización descrita por la copia histórica, cada comisión provincial"
+" asesora al Director Provincial de Salud sobre el control del cáncer y el "
+"funcionamiento del sistema de información. La integran perfiles de "
+"coordinación de cáncer, oncología, estadística, epidemiología, hospitales y "
+"especialistas o técnicos de los hospitales que diagnostican casos. Su "
+"función es exigir y controlar el cumplimiento de los procedimientos, cuidar "
+"la calidad y continuidad del dato primario, emitir estadísticas provinciales"
+" preliminares y promover investigaciones epidemiológicas y clínicas."
+msgstr ""
+"Dalam organisasi yang dijelaskan dalam salinan sejarah, setiap komite "
+"provinsi memberikan nasihat kepada Direktur Kesehatan Provinsi mengenai "
+"pengendalian kanker dan pengoperasian sistem informasi. Anggotanya mewakili "
+"koordinasi kanker, onkologi, statistik, epidemiologi, rumah sakit, dan "
+"spesialis atau teknisi di rumah sakit yang mendiagnosis kasus. Fungsinya "
+"antara lain mengawasi kepatuhan terhadap prosedur, menjaga kualitas dan "
+"kontinuitas data primer, menerbitkan statistik awal provinsi, dan mendorong "
+"penelitian epidemiologi dan klinis."
+
+#, fuzzy
+msgid ""
+"La escala por 100 000 es una forma habitual de presentación. Numerador, "
+"período, territorio, sexo, grupo de edad y población deben coincidir. El "
+"proyecto identifica la población residente de ONEI como denominador de "
+"trabajo; la serie, edición y convención temporal exactas deben quedar "
+"identificadas con el RNC."
+msgstr ""
+"Angka per 100.000 adalah skala presentasi yang umum. Pembilang, periode, "
+"wilayah, jenis kelamin, kelompok umur, dan jumlah penduduk harus sesuai. "
+"Proyek ini mengidentifikasi populasi penduduk ONEI sebagai penyebut yang "
+"berfungsi; seri, edisi, dan konvensi waktu yang tepat harus dikonfirmasi "
+"dengan RNC."
+
+#, fuzzy
+msgid ""
+"La estandarización indirecta suele comparar los casos observados con los "
+"esperados según tasas de referencia por estrato. La elección de esas tasas "
+"de referencia y la forma de presentar el resultado requieren una definición "
+"institucional."
+msgstr ""
+"Standardisasi tidak langsung biasanya membandingkan kasus yang diamati "
+"dengan kasus yang diharapkan berdasarkan angka referensi untuk setiap "
+"strata. Memilih tingkat referensi tersebut dan memutuskan bagaimana "
+"menyajikan hasilnya memerlukan definisi kelembagaan."
+
+#, fuzzy
+msgid ""
+"La página archivada “Oficina Central” identificaba un Jefe del Registro y "
+"tres grupos: Calidad de los Datos, Informatización y Procesamiento y "
+"Edición. La relación siguiente reproduce los nombres y correos que aparecían"
+" allí; no confirma que las personas ocupen hoy esos cargos ni que las "
+"direcciones sigan activas."
+msgstr ""
+"Halaman “Kantor Pusat” yang diarsipkan mengidentifikasi Kepala Registri dan "
+"tiga kelompok: Kualitas Data, Komputerisasi, serta Pemrosesan dan "
+"Pengeditan. Daftar di bawah ini mereproduksi nama dan alamat email yang "
+"ditampilkan di sana; ini tidak memastikan bahwa orang-orang tersebut saat "
+"ini memegang posisi tersebut atau bahwa alamatnya masih aktif."
+
+#, fuzzy
+msgid ""
+"La página “Dónde estamos” de esa misma copia identifica al Instituto "
+"Nacional de Oncología y Radiobiología, en 29 y F, Vedado, CP 10400, y "
+"publica el teléfono +53 7 838 3970. Estos datos se incluyen como información"
+" histórica, no como canales confirmados en la actualidad."
+msgstr ""
+"Halaman “Di mana kita berada” dalam salinan yang sama mengidentifikasi "
+"Institut Nasional Onkologi dan Radiobiologi di 29 dan F, Vedado, CP 10400, "
+"dan mencantumkan nomor telepon +53 7 838 3970. Rincian ini adalah informasi "
+"historis, bukan saluran kontak yang saat ini dikonfirmasi."
+
+#, fuzzy
+msgid ""
+"Los intervalos de confianza describen incertidumbre estadística y dependen "
+"del indicador, el volumen de casos y el método elegido. Su incorporación al "
+"portal es una propuesta de trabajo, no una regla aprobada por el RNC. El "
+"método de tasa indirecta y el de intervalos permanecen pendientes de "
+"validación."
+msgstr ""
+"Interval kepercayaan menggambarkan ketidakpastian statistik dan bergantung "
+"pada indikator, jumlah kasus, dan metode yang dipilih. Menambahkan mereka ke"
+" portal adalah sebuah proposal, bukan aturan yang disetujui oleh RNC. Metode"
+" angka tidak langsung dan interval kepercayaan masih menunggu validasi."
+
+#, fuzzy
+msgid ""
+"Los procedimientos describen frecuencias distintas para las tareas locales, "
+"la revisión territorial y los cierres al nivel central. El calendario "
+"concreto puede variar y debe consultarse en la edición vigente del Manual."
+msgstr ""
+"Prosedur tersebut menentukan frekuensi yang berbeda untuk tugas-tugas lokal,"
+" peninjauan wilayah, dan penyerahan ke tingkat pusat. Jadwalnya mungkin "
+"berbeda-beda dan harus diperiksa di edisi Manual saat ini."
+
+#, fuzzy
+msgid ""
+"Los referentes consultados muestran por qué cada resultado debe documentar "
+"su procedencia y su versión. Cancer Today organiza visualizaciones junto a "
+"sus fuentes y métodos; ECIS diferencia datos observados de estimaciones; "
+"SEER acompaña sus tablas y gráficos con definiciones, notas y metodología. "
+"Estas prácticas inspiran la presentación, pero sus reglas no se trasladan "
+"automáticamente al RNC."
+msgstr ""
+"Referensi yang dirujuk menunjukkan mengapa setiap hasil harus "
+"mendokumentasikan sumber dan versinya. Cancer Today menyajikan visualisasi "
+"beserta sumber dan metodenya; ECIS membedakan data observasi dari perkiraan;"
+" SIER memberikan definisi, catatan, dan metode dengan tabel dan bagan. "
+"Praktik-praktik ini memberikan informasi dalam presentasi, namun "
+"peraturannya tidak secara otomatis berlaku untuk RNC."
+
+#, fuzzy
+msgid "La adscripción organizativa debe actualizarse con el RNC: el"
+msgstr "Afiliasi organisasi harus dikonfirmasi dengan RNC: the"
+
+#, fuzzy
+msgid "Comparabilidad:"
+msgstr "Keterbandingan:"
+
+#, fuzzy
+msgid "Denominador:"
+msgstr "Penyebut:"
+
+#, fuzzy
+msgid "Divulgación:"
+msgstr "Pengungkapan:"
+
+#, fuzzy
+msgid "Método:"
+msgstr "Metode:"
+
+#, fuzzy
+msgid "Numerador:"
+msgstr "Pembilang:"
+
+#, fuzzy
+msgid ""
+"corte de casos identificado, con período, estado y fecha de publicación."
+msgstr ""
+"rilis kasus yang teridentifikasi, termasuk periode, status, dan tanggal "
+"publikasi."
+
+#, fuzzy
+msgid ""
+"fuente y versión de la población, con cobertura territorial, edad y sexo."
+msgstr ""
+"sumber dan versi populasi, termasuk cakupan wilayah, usia, dan jenis "
+"kelamin."
+
+#, fuzzy
+msgid "unidad de análisis, escala, estándar de edad y forma de cálculo."
+msgstr "unit analisis, skala, standar umur, dan metode perhitungan."
+
+#, fuzzy
+msgid ""
+"tasas calculadas con estándares, períodos, coberturas y definiciones "
+"compatibles."
+msgstr ""
+"angka dihitung menggunakan standar, periode, cakupan, dan definisi yang "
+"kompatibel."
+
+#, fuzzy
+msgid ""
+"agregados autorizados y reglas para evitar identificación indirecta; el "
+"umbral o método de supresión para el portal requiere acuerdo institucional."
+msgstr ""
+"agregat resmi dan aturan untuk mencegah identifikasi tidak langsung; ambang "
+"batas atau metode penindasan portal memerlukan persetujuan institusional."
+
+#, fuzzy
+msgid "Correo publicado:"
+msgstr "Email yang terdaftar:"
+
+#, fuzzy
+msgid "Teléfono publicado:"
+msgstr "Telepon yang terdaftar:"
+
+#, fuzzy
+msgid "Grupo Nacional de Oncología."
+msgstr "Kelompok Onkologi Nasional."
+
+#, fuzzy
+msgid "Grupo de Calidad de los Datos:"
+msgstr "Grup Kualitas Data:"
+
+#, fuzzy
+msgid ""
+"Grupo de Epidemiología y Registros de Cáncer de Países de Lengua Latina."
+msgstr ""
+"Kelompok Negara-negara Bahasa Latin untuk Epidemiologi dan Pendaftaran "
+"Kanker."
+
+#, fuzzy
+msgid "Grupo de Informatización:"
+msgstr "Kelompok Komputerisasi:"
+
+#, fuzzy
+msgid "Grupo de Oncopediatría."
+msgstr "Kelompok Onkologi Anak."
+
+#, fuzzy
+msgid "Grupo de Procesamiento y Edición:"
+msgstr "Grup Pemrosesan dan Pengeditan:"
+
+#, fuzzy
+msgid "Jefatura del RNC:"
+msgstr "Kepala RNC:"
+
+#, fuzzy
+msgid "Comité de Ensayos Clínicos del INOR."
+msgstr "Komite Uji Klinis INOR."
+
+#, fuzzy
+msgid "Consejo Científico del INOR."
+msgstr "Dewan Ilmiah INOR."
+
+#, fuzzy
+msgid "Comisión Nacional del Programa de Cáncer Bucal."
+msgstr "Komisi Program Kanker Mulut Nasional."
+
+#, fuzzy
+msgid "Comisión de Expertos del Programa Ramal Cáncer."
+msgstr "Komisi Ahli Program Cabang Kanker."
+
+#, fuzzy
+msgid ""
+"Red Iberoamericana de Epidemiología y Sistemas de Información en Cáncer."
+msgstr ""
+"Jaringan Ibero-Amerika untuk Epidemiologi Kanker dan Sistem Informasi."
+
+#, fuzzy
+msgid "Comisión Europea · European Cancer Information System (ECIS)"
+msgstr "Komisi Eropa · Sistem Informasi Kanker Eropa (ECIS)"
+
+#, fuzzy
+msgid "IARC/WHO · Global Cancer Observatory, Cancer Today"
+msgstr "IARC/WHO · Observatorium Kanker Global, Cancer Today"
+
+#, fuzzy
+msgid "NCI/SEER · SEER*Explorer"
+msgstr "NCI/PELIHAT · PELIHAT*Penjelajah"
+
+#, fuzzy
+msgid "NCI/SEER · definición y cálculo de tasas ajustadas por edad"
+msgstr ""
+"NCI/SEER · definisi dan penghitungan angka yang disesuaikan dengan usia"
+
+#, fuzzy
+msgid "Sistema de Información Estadística Complementaria de Salud (2017)"
+msgstr "Sistem Informasi Statistik Kesehatan Pelengkap (2017)"
+
+#, fuzzy
+msgid "El RNC · Registro Nacional de Cáncer de Cuba"
+msgstr "RNC · Pendaftaran Kanker Nasional Kuba"
+
+#, fuzzy
+msgid "El subíndice"
+msgstr "Subskrip"
+
+#, fuzzy
+msgid ""
+"la Oficina Central revisa integridad y consistencia, investiga posibles "
+"duplicados o tumores múltiples, contrasta la información con mortalidad y "
+"solicita aclaraciones cuando son necesarias."
+msgstr ""
+"Kantor Pusat memeriksa kelengkapan dan konsistensi, menyelidiki potensi "
+"duplikat atau beberapa tumor, membandingkan informasi dengan data kematian, "
+"dan meminta klarifikasi bila diperlukan."
+
+#, fuzzy
+msgid ""
+"las provincias preparan los cierres estadísticos y remiten al nivel central "
+"los casos nuevos validados junto con la documentación requerida, según el "
+"calendario estadístico."
+msgstr ""
+"provinsi menyiapkan laporan statistik dan mengirimkan kasus baru yang telah "
+"divalidasi beserta dokumentasi yang diperlukan ke tingkat pusat, sesuai "
+"dengan kalender statistik."
+
+#, fuzzy
+msgid ""
+"los equipos territoriales cotejan reportes y bases de datos, verifican "
+"variables y códigos, solicitan correcciones y coordinan las unidades "
+"informantes."
+msgstr ""
+"tim teritorial membandingkan laporan dan database, memeriksa variabel dan "
+"kode, meminta koreksi, dan mengoordinasikan unit pelaporan."
+
+#, fuzzy
+msgid ""
+"los médicos notifican los casos y los registradores buscan casos adicionales"
+" en fuentes como anatomía patológica, laboratorios, egresos hospitalarios, "
+"certificados de defunción e historias clínicas."
+msgstr ""
+"dokter melaporkan kasus, dan pencatat mengidentifikasi kasus tambahan di "
+"sumber seperti patologi, laboratorium, keluar dari rumah sakit, sertifikat "
+"kematian, dan catatan medis."
+
+#, fuzzy
+msgid ""
+"se confeccionan y codifican los reportes, se revisan las fuentes y se "
+"introducen los casos en el sistema automatizado del Registro."
+msgstr ""
+"laporan disiapkan dan diberi kode, sumber ditinjau, dan kasus dimasukkan ke "
+"dalam sistem otomatis Registri."
+
+#, fuzzy
+msgid ""
+"solo los casos validados se incorporan a la base consolidada; con ellos el "
+"RNC prepara y emite resultados estadísticos."
+msgstr ""
+"hanya kasus tervalidasi yang ditambahkan ke database konsolidasi; RNC "
+"menyiapkan dan mengeluarkan hasil statistik dari mereka."
+
+#, fuzzy
+msgid "porcentaje = (casos de la categoría / total de referencia) × 100"
+msgstr "persentase = (kategori kasus / total referensi) × 100"
+
+#, fuzzy
+msgid ""
+"tasa ajustada = Σ (peso estándarᵢ × tasa específicaᵢ) / Σ (peso estándarᵢ)"
+msgstr ""
+"angka yang disesuaikan = Σ (berat standarᵢ × angka spesifik usiaᵢ) / Σ "
+"(berat standarᵢ)"
+
+#, fuzzy
+msgid "tasa cruda = (casos nuevos / población correspondiente) × 100 000"
+msgstr "angka kasar = (kasus baru / populasi terkait) × 100.000"
+
+#, fuzzy
+msgid "tasa específicaᵢ = (casos nuevosᵢ / poblaciónᵢ) × 100 000"
+msgstr "angka spesifik usiaᵢ = (kasus baruᵢ / populasiᵢ) × 100.000"
+
+#, fuzzy
+msgid "describir la magnitud del cáncer como problema de salud en Cuba."
+msgstr "menggambarkan besarnya kanker sebagai masalah kesehatan di Kuba."
+
+#, fuzzy
+msgid ""
+"transcribe la Resolución 31/2008 como traslado de la Oficina Central a la "
+"Unidad Nacional para el Control del Cáncer, bajo su dirección y en "
+"coordinación con Estadísticas del MINSAP. Las denominaciones de las fuentes "
+"no coinciden literalmente."
+msgstr ""
+"menjelaskan Resolusi 31/2008 sebagai pengalihan Kantor Pusat ke Unit "
+"Pengendalian Kanker Nasional, di bawah arahan dan koordinasi dengan "
+"Statistik MINSAP. Sumbernya tidak menggunakan nama yang sama."
+
+#, fuzzy
+msgid ""
+" representa un estrato de edad (y cualquier otra dimensión que se mantenga "
+"fija). Comparar estratos exige que la definición de grupo y el período sean "
+"consistentes."
+msgstr ""
+"  mewakili strata usia (dan dimensi lainnya dianggap konstan). Membandingkan"
+" strata memerlukan definisi kelompok dan periode yang konsisten."
+
+#, fuzzy
+msgid " y "
+msgstr " dan "
+
+#, fuzzy
+msgid "Agrupación"
+msgstr "Pengelompokan"
+
+#, fuzzy
+msgid ""
+"Al combinar años, la población denominadora acumula las poblaciones anuales "
+"seleccionadas."
+msgstr ""
+"Jika tahun digabungkan, populasi penyebut adalah jumlah populasi tahunan "
+"yang dipilih."
+
+#, fuzzy
+msgid "Consulta"
+msgstr "Pertanyaan"
+
+#, fuzzy
+msgid "Contexto de la consulta"
+msgstr "Konteks kueri"
+
+#, fuzzy
+msgid "Frecuencia relativa (%%) · %(unit)s"
+msgstr "Frekuensi relatif (%%) · %(unit)s"
+
+#, fuzzy
+msgid "Fuente y corte"
+msgstr "Sumber dan rilis"
+
+#, fuzzy
+msgid "Gráfico"
+msgstr "Bagan"
+
+#, fuzzy
+msgid "Indicador del gráfico"
+msgstr "Metrik bagan"
+
+#, fuzzy
+msgid ""
+"Las tasas se calculan con la unidad elegida; los grupos de localización "
+"pueden solaparse en personas distintas. "
+msgstr ""
+"Angka menggunakan satuan yang dipilih; grup situs mungkin tumpang tindih "
+"untuk orang yang berbeda. "
+
+#, fuzzy
+msgid ""
+"Métodos candidatos; denominadores sintéticos, no son resultados oficiales. "
+msgstr "Metode kandidat; penyebutnya sintetis dan bukan hasil resmi. "
+
+#, fuzzy
+msgid "No disponible en este corte"
+msgstr "Tidak tersedia dalam rilis ini"
+
+#, fuzzy
+msgid "Nota"
+msgstr "Catatan"
+
+#, fuzzy
+msgid "Personas distintas (frecuencia absoluta)"
+msgstr "Orang unik (frekuensi absolut)"
+
+#, fuzzy
+msgid "Porcentaje (%)"
+msgstr "Persentase (%)"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "Persentase tiap kategori (%)"
+
+#, fuzzy
+msgid "Selección"
+msgstr "Seleksi"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000 · %(unit)s"
+msgstr "Angka Segi–Doll disesuaikan usia per 100.000 · %(unit)s"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000 · %(unit)s"
+msgstr "Angka kasar/khusus usia per 100.000 · %(unit)s"
+
+#, fuzzy
+msgid "Todas las provincias"
+msgstr "Semua provinsi"
+
+#, fuzzy
+msgid "Todos (%(first)s–%(last)s)"
+msgstr "Semua (%(first)s–%(last)s)"
+
+#, fuzzy
+msgid "Todos los municipios"
+msgstr "Semua kotamadya"
+
+#, fuzzy
+msgid "Tumores (frecuencia absoluta)"
+msgstr "Tumor (frekuensi absolut)"
+
+#, fuzzy
+msgid "rnc-synthetic-query"
+msgstr "rnc-sintetis-kueri"
+
+#, fuzzy
+msgid "Datos sintéticos · %(period)s"
+msgstr "Data sintetis · %(period)s"
+
+#, fuzzy
+msgid "Datos sintéticos · %(title)s · Versión %(release)s"
+msgstr "Data sintetis · %(title)s · Rilis %(release)s"
+
+#, fuzzy
+msgid "Distribución por sexo (%)"
+msgstr "Distribusi berdasarkan jenis kelamin (%)"
+
+#, fuzzy
+msgid ""
+"El tamaño o rótulo del punto indica cuántas categorías coinciden en las "
+"mismas coordenadas."
+msgstr ""
+"Ukuran titik atau label menunjukkan berapa banyak kategori yang tumpang "
+"tindih pada koordinat yang sama."
+
+#, fuzzy
+msgid "Frecuencias absolutas"
+msgstr "Frekuensi absolut"
+
+#, fuzzy
+msgid "Localizaciones más frecuentes"
+msgstr "Situs yang paling sering dikunjungi"
+
+#, fuzzy
+msgid "No hay cobertura de población completa para el ajuste seleccionado."
+msgstr ""
+"Tidak ada cakupan populasi yang lengkap untuk penyesuaian yang dipilih."
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "Tidak ada nilai positif untuk ditampilkan sebagai sebuah komposisi."
+
+#, fuzzy
+msgid "RNC / Cuba · Detalle de consulta"
+msgstr "RNC / Kuba · Detail permintaan"
+
+#, fuzzy
+msgid ""
+"Seleccione una dimensión con hasta ocho categorías para circular o anillo."
+msgstr ""
+"Pilih dimensi dengan tidak lebih dari delapan kategori untuk diagram "
+"lingkaran atau donat."
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "Tumor dan orang yang berbeda"
+
+#, fuzzy
+msgid "Detalle %(page)s"
+msgstr "Detail %(page)s"
+
+#, fuzzy
+msgid "Cuba (nacional)"
+msgstr "Kuba (nasional)"
+
+#, fuzzy
+msgid ""
+"Este gráfico necesita al menos dos categorías con datos en la dimensión "
+"elegida."
+msgstr ""
+"Diagram ini memerlukan setidaknya dua kategori dengan data dalam dimensi "
+"yang dipilih."
+
+#, fuzzy
+msgid ""
+"La comparación por sexo requiere datos disponibles de mujeres y hombres."
+msgstr ""
+"Perbandingan jenis kelamin memerlukan data untuk perempuan dan laki-laki."
+
+#, fuzzy
+msgid "Provincias disponibles; cobertura nacional incompleta"
+msgstr "Provinsi yang tersedia; cakupan nasional tidak lengkap"
+
+#, fuzzy
+msgid "Administración RNC"
+msgstr "administrasi RNC"
+
+#, fuzzy
+msgid "Filtros de la consulta"
+msgstr "Filter kueri"
+
+#, fuzzy
+msgid "Navegación RNC"
+msgstr "Navigasi RNC"
+
+#, fuzzy
+msgid "Portal público"
+msgstr "Portal publik"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "Wanita"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "Laki-laki"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "Trakea, bronkus, dan paru-paru"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "prostat"
+
+#, fuzzy
+msgid "Mama"
+msgstr "Payudara"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "Usus besar dan rektum"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "Perut"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "Serviks rahim"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "Korpus uteri"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "tiroid"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "pankreas"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "Kandung kemih"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "Ginjal"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "Saluran hati dan empedu"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "ovarium"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "Laring dan faring"
+
+#, fuzzy
+msgid ""
+"Grupo ilustrativo sintético; no representa un código TOPO ni una "
+"equivalencia ICD-O: %(category)s."
+msgstr ""
+"Kelompok sintetik ilustratif; ini bukan kode TOPO atau kesetaraan ICD-O: "
+"%(category)s."
+
+#, fuzzy
+msgid "Código de provincia documentado en el Manual RNC VII, Anexo 1."
+msgstr "Kode provinsi didokumentasikan dalam Manual RNC VII, Lampiran 1."
+
+#, fuzzy
+msgid "Ampliar barra lateral"
+msgstr "Luaskan bilah sisi"
+
+#, fuzzy
+msgid "La consulta local aún no está disponible en este dispositivo."
+msgstr "Kueri offline belum tersedia di perangkat ini."
+
+#, fuzzy
+msgid "Use letras de la A a la Z, números, punto, guion o guion bajo."
+msgstr ""
+"Gunakan huruf A sampai Z, angka, titik, tanda hubung, atau garis bawah."
+
+#, fuzzy
+msgid "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."
+msgstr ""
+"Gunakan huruf, spasi, apostrof, atau tanda hubung; misalnya, María José."
+
+#, fuzzy
+msgid "Use texto, números y puntuación habitual; sin etiquetas HTML."
+msgstr "Gunakan teks, angka, dan tanda baca umum; tidak ada tag HTML."
+
+#, fuzzy
+msgid ""
+"Busque por nombre, usuario o correo; no se admiten símbolos de programación."
+msgstr ""
+"Cari berdasarkan nama, nama pengguna, atau email; simbol pemrograman tidak "
+"diperbolehkan."
+
+#, fuzzy
+msgid "Incluya una descripción con letras o números."
+msgstr "Sertakan deskripsi dengan huruf atau angka."
+
+#, fuzzy
+msgid "Complete este campo."
+msgstr "Lengkapi bidang ini."
+
+#, fuzzy
+msgid "Marque esta casilla para continuar."
+msgstr "Centang kotak ini untuk melanjutkan."
+
+#, fuzzy
+msgid "No se pudo enviar el formulario"
+msgstr "Formulir tidak dapat diserahkan."
+
+#, fuzzy
+msgid ""
+"La sesión del formulario ha caducado o no se pudo verificar. Vuelva a abrir "
+"la página e inténtelo otra vez. No se guardó este envío."
+msgstr ""
+"Sesi formulir Anda telah kedaluwarsa atau tidak dapat diverifikasi. Buka "
+"kembali halaman dan coba lagi. Kiriman ini tidak disimpan."
+
+#, fuzzy
+msgid ""
+"La dirección no existe o el recurso ya no está disponible. Puede continuar "
+"desde la navegación del portal."
+msgstr ""
+"Alamat ini tidak ada atau sumber daya tidak lagi tersedia. Anda dapat terus "
+"menggunakan navigasi portal."
+
+#, fuzzy
+msgid "%(label)s, código %(number)s"
+msgstr "%(label)s, kode %(number)s"
+
+#, fuzzy
+msgid "%(label)s: código repetido para el mismo sistema y edición."
+msgstr "%(label)s: kode duplikat untuk sistem dan edisi yang sama."
+
+#, fuzzy
+msgid "%(label)s: debe contener uno o más códigos."
+msgstr "%(label)s: harus berisi satu atau lebih kode."
+
+#, fuzzy
+msgid "%(label)s: eje no admitido."
+msgstr "%(label)s: sumbu tidak didukung."
+
+#, fuzzy
+msgid "%(label)s: estado de código no admitido."
+msgstr "%(label)s: status kode tidak didukung."
+
+#, fuzzy
+msgid "%(label)s: estado de publicación no admitido."
+msgstr "%(label)s: status publikasi tidak didukung."
+
+#, fuzzy
+msgid "%(label)s: estado de relación no admitido."
+msgstr "%(label)s: status hubungan tidak didukung."
+
+#, fuzzy
+msgid "%(label)s: faltan campos requeridos."
+msgstr "%(label)s: kolom yang wajib diisi tidak ada."
+
+#, fuzzy
+msgid "%(label)s: hay campos vacíos o con tipo inválido."
+msgstr "%(label)s: kolom kosong atau tipenya tidak valid."
+
+#, fuzzy
+msgid "%(label)s: identificador de concepto duplicado."
+msgstr "%(label)s: pengidentifikasi konsep duplikat."
+
+#, fuzzy
+msgid "%(label)s: la fuente debe ser una URL HTTP o HTTPS."
+msgstr "%(label)s: sumber harus berupa URL HTTP atau HTTPS."
+
+#, fuzzy
+msgid "%(label)s: relación de concepto no admitida."
+msgstr "%(label)s: hubungan konsep tidak didukung."
+
+#, fuzzy
+msgid "Archivo validado y registrado. Revise el corte antes de publicarlo."
+msgstr "File divalidasi dan dicatat. Tinjau rilis sebelum menerbitkannya."
+
+#, fuzzy
+msgid "CSV no válido; revise codificación y estructura."
+msgstr "CSV tidak valid; periksa pengkodean dan strukturnya."
+
+#, fuzzy
+msgid "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+msgstr ""
+"Setiap wilayah dan tahun harus mencakup kedua jenis kelamin dan seluruh 18 "
+"kelompok umur."
+
+#, fuzzy
+msgid "Comportamiento"
+msgstr "Perilaku"
+
+#, fuzzy
+msgid "Concepto %(number)s"
+msgstr "Konsep %(number)s"
+
+#, fuzzy
+msgid "Correspondencia exacta"
+msgstr "Pertandingan yang tepat"
+
+#, fuzzy
+msgid "Código del concepto"
+msgstr "Kode konsep"
+
+#, fuzzy
+msgid "Declarado por la fuente"
+msgstr "Dinyatakan oleh sumbernya"
+
+#, fuzzy
+msgid "Ejecute seed_demo para generar el ejemplo local."
+msgstr "Jalankan seed_demo untuk menghasilkan sampel lokal."
+
+#, fuzzy
+msgid "El archivo debe contener un arreglo 'concepts'."
+msgstr "File tersebut harus berisi array 'konsep'."
+
+#, fuzzy
+msgid "El archivo no contiene registros."
+msgstr "File tidak berisi catatan."
+
+#, fuzzy
+msgid "El catálogo configurado no se puede leer como JSON UTF-8."
+msgstr "Katalog yang dikonfigurasi tidak dapat dibaca sebagai UTF-8 JSON."
+
+#, fuzzy
+msgid "El catálogo declara validación RNC"
+msgstr "Katalog menyatakan validasi RNC"
+
+#, fuzzy
+msgid "El ejemplo ya alcanzó el límite de filas del entorno local."
+msgstr "Sampel lokal telah mencapai batas baris untuk lingkungan ini."
+
+#, fuzzy
+msgid "El límite local es de 60 000 filas."
+msgstr "Batas lokalnya adalah 60.000 baris."
+
+#, fuzzy
+msgid "El service worker solo está habilitado en el perfil público."
+msgstr "Pekerja layanan hanya tersedia di profil publik."
+
+#, fuzzy
+msgid "Esta entrega ya está registrada."
+msgstr "Pengiriman ini telah didaftarkan."
+
+#, fuzzy
+msgid "Esta entrega ya está registrada; no se incorporó otra copia."
+msgstr ""
+"Pengiriman ini telah didaftarkan; tidak ada duplikat yang ditambahkan."
+
+#, fuzzy
+msgid "Estadio"
+msgstr "Panggung"
+
+#, fuzzy
+msgid "Estado actualizado. El portal público ya refleja este cambio."
+msgstr "Status diperbarui. Situs publik sekarang mencerminkan perubahan ini."
+
+#, fuzzy
+msgid "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+msgstr "Struktur yang tidak kompatibel. Unduh CSV sampel sintetis."
+
+#, fuzzy
+msgid "Fila %(number)s: categoría no admitida."
+msgstr "Baris %(number)s: kategori tidak didukung."
+
+#, fuzzy
+msgid "Fila %(number)s: denominador inconsistente."
+msgstr "Baris %(number)s: penyebut tidak konsisten."
+
+#, fuzzy
+msgid "Fila %(number)s: estructura o longitud incorrecta."
+msgstr "Baris %(number)s: struktur atau panjang tidak valid."
+
+#, fuzzy
+msgid "Fila %(number)s: formato de identificador sintético no admitido."
+msgstr "Baris %(number)s: format pengenal sintetis tidak didukung."
+
+#, fuzzy
+msgid "Fila %(number)s: identidad sintética inconsistente."
+msgstr "Baris %(number)s: identitas sintetis tidak konsisten."
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de catálogo desconocido."
+msgstr "Baris %(number)s: pengidentifikasi katalog tidak diketahui."
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de tumor repetido."
+msgstr "Baris %(number)s: duplikat pengidentifikasi tumor."
+
+#, fuzzy
+msgid "Fila %(number)s: persona incompatible con el estrato declarado."
+msgstr "Baris %(number)s: orang tidak cocok dengan strata yang dinyatakan."
+
+#, fuzzy
+msgid "Fila %(number)s: período, población o peso incompatible."
+msgstr "Baris %(number)s: periode, populasi, atau berat tidak sesuai."
+
+#, fuzzy
+msgid "Fila %(number)s: se requieren números enteros."
+msgstr "Baris %(number)s: nilai harus berupa bilangan bulat."
+
+#, fuzzy
+msgid "Fila %(number)s: solo se admite el contrato sintético de demostración."
+msgstr "Baris %(number)s: hanya kontrak demo sintetis yang diterima."
+
+#, fuzzy
+msgid "Formato no disponible"
+msgstr "Formatnya tidak tersedia"
+
+#, fuzzy
+msgid "Grado"
+msgstr "Kelas"
+
+#, fuzzy
+msgid "Grupo de clasificación"
+msgstr "Kelompok klasifikasi"
+
+#, fuzzy
+msgid "Identificador de publicación inválido."
+msgstr "Pengidentifikasi rilis tidak valid."
+
+#, fuzzy
+msgid "La acción ya no es válida para el estado actual."
+msgstr "Tindakan ini tidak berlaku lagi untuk status saat ini."
+
+#, fuzzy
+msgid "Mismo concepto"
+msgstr "Konsep yang sama"
+
+#, fuzzy
+msgid "Morfología"
+msgstr "Morfologi"
+
+#, fuzzy
+msgid "Más amplio"
+msgstr "Lebih luas"
+
+#, fuzzy
+msgid "Más específico"
+msgstr "Lebih sempit"
+
+#, fuzzy
+msgid "No hay paquete offline disponible."
+msgstr "Tidak ada paket offline yang tersedia."
+
+#, fuzzy
+msgid "No se encontró el service worker."
+msgstr "Pekerja layanan tidak dapat ditemukan."
+
+#, fuzzy
+msgid "No se pudo iniciar sesión. Espere unos minutos."
+msgstr "Gagal masuk. Harap tunggu beberapa menit."
+
+#, fuzzy
+msgid "Otro"
+msgstr "Lainnya"
+
+#, fuzzy
+msgid "Relacionado"
+msgstr "Terkait"
+
+#, fuzzy
+msgid "Se alcanzó el límite temporal de exportaciones. Espere un minuto."
+msgstr "Batas ekspor sementara telah tercapai. Harap tunggu satu menit."
+
+#, fuzzy
+msgid "Solo se puede liberar el conjunto sintético de demostración."
+msgstr "Hanya kumpulan data demo sintetis yang dapat dipublikasikan."
+
+#, fuzzy
+msgid "Topografía"
+msgstr "Topografi"
+
+#, fuzzy
+msgid "Utilice un CSV de hasta 12 MB."
+msgstr "Gunakan file CSV tidak lebih besar dari 12 MB."
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito mayor que cero."
+msgstr "%(label)s harus berupa bilangan berhingga yang lebih besar dari nol."
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito no negativo."
+msgstr "%(label)s harus berupa bilangan tak negatif berhingga."
+
+#, fuzzy
+msgid "Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos."
+msgstr ""
+"Kasus, populasi, dan bobot harus mencakup strata tidak kosong yang sama."
+
+#, fuzzy
+msgid "El conteo debe ser un entero no negativo."
+msgstr "Hitungannya harus berupa bilangan bulat non-negatif."
+
+#, fuzzy
+msgid "El nivel de confianza debe estar entre cero y uno."
+msgstr "Tingkat kepercayaannya harus antara nol dan satu."
+
+#, fuzzy
+msgid "El numerador no puede exceder el universo declarado."
+msgstr "Pembilangnya tidak boleh melebihi alam semesta yang disebutkan."
+
+#, fuzzy
+msgid "El universo debe ser mayor que cero."
+msgstr "Alam semesta harus lebih besar dari nol."
+
+#, fuzzy
+msgid "La suma de los pesos estándar debe ser mayor que cero."
+msgstr "Bobot standar harus berjumlah lebih dari nol."
+
+#, fuzzy
+msgid "Valor numérico fuera de rango."
+msgstr "Nilai numerik berada di luar jangkauan."
+
+#: public_site/portal.py:387
+#, fuzzy
+msgid "actualizacion_sintetica"
+msgstr "pembaruan_sintetis"
+
+#: public_site/validation.py:29 public_site/validation.py:58
+#, fuzzy
+msgid "Use al menos %(limit_value)s caracteres."
+msgstr "Masukkan setidaknya %(limit_value)s karakter."
+
+#: public_site/validation.py:30 public_site/validation.py:62
+#, fuzzy
+msgid "Use como máximo %(limit_value)s caracteres."
+msgstr "Masukkan paling banyak %(limit_value)s karakter."
+
+#: public_site/validation.py:88
+#, fuzzy
+msgid "Ingrese un correo electrónico válido."
+msgstr "Masukkan alamat email yang valid."
+
+#: public_site/validation.py:101
+#, fuzzy
+msgid "Seleccione una opción válida."
+msgstr "Pilih opsi yang valid."
+
+#, fuzzy
+msgid "Contraseña"
+msgstr "Kata sandi"
+
+#, fuzzy
+msgid "Contraseña actual"
+msgstr "Kata sandi lama"
+
+#, fuzzy
+msgid "Nueva contraseña"
+msgstr "Kata sandi baru"
+
+#, fuzzy
+msgid "Confirmar nueva contraseña"
+msgstr "Konfirmasikan kata sandi baru"
+
+#, fuzzy
+msgid "Repita la misma contraseña para confirmar."
+msgstr "Masukkan kata sandi yang sama seperti sebelumnya, untuk verifikasi."
+
+#, fuzzy
+msgid "La contraseña no debe parecerse a sus datos personales."
+msgstr ""
+"Pilih kata sandi yang tidak terlalu mirip dengan informasi pribadi Anda."
+
+#, fuzzy
+msgid "La contraseña no debe ser muy similar a sus otros datos personales."
+msgstr ""
+"Kata sandi Anda tidak boleh terlalu mirip dengan informasi pribadi Anda yang"
+" lain."
+
+#, fuzzy
+msgid ""
+"La contraseña es demasiado corta; debe contener al menos %(min_length)s "
+"caracteres."
+msgstr ""
+"Kata sandi ini terlalu pendek. Minimal harus berisi %(min_length)s karakter."
+
+#, fuzzy
+msgid "La contraseña debe tener al menos %(min_length)s caracteres."
+msgstr "Kata sandi Anda harus mengandung setidaknya %(min_length)s karakter."
+
+#, fuzzy
+msgid "Elija una contraseña que no sea de uso común."
+msgstr "Pilih kata sandi yang tidak umum digunakan."
+
+#, fuzzy
+msgid "No utilice una contraseña de uso común."
+msgstr "Kata sandi Anda tidak boleh berupa kata sandi yang umum digunakan."
+
+#, fuzzy
+msgid "La contraseña no puede contener solo números."
+msgstr "Kata sandi ini seluruhnya bersifat numerik."
+
+#, fuzzy
+msgid "No utilice solo números como contraseña."
+msgstr "Kata sandi Anda tidak boleh seluruhnya berupa angka."
+
+#, fuzzy
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "Kedua bidang kata sandi tidak cocok."
+
+#, fuzzy
+msgid "La contraseña actual no es correcta."
+msgstr "Kata sandi lama Anda salah dimasukkan."
+
+#, fuzzy
+msgid "El usuario o la contraseña no son válidos."
+msgstr "Silakan masukkan nama pengguna dan kata sandi yang benar."
+
+#, fuzzy
+msgid "La cuenta no está activa."
+msgstr "Akun ini tidak aktif."
+
+#, fuzzy
+msgid "Correo electrónico"
+msgstr "Alamat email"
+
+#, fuzzy
+msgid "Vista previa de traducción automática"
+msgstr "Pratinjau terjemahan otomatis (draf)"
+
+#, fuzzy
+msgid ""
+"Este idioma usa un borrador no revisado ni aprobado. No lo use para "
+"interpretar estadísticas de cáncer."
+msgstr ""
+"Bahasa ini menggunakan draf yang belum ditinjau oleh ahli bahasa atau "
+"disetujui oleh institusi. Jangan gunakan untuk menafsirkan statistik kanker."
+
+#, fuzzy
+msgid "borrador de vista previa"
+msgstr "— draf pratinjau"

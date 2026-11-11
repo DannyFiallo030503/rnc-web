@@ -1,0 +1,37 @@
+{
+  "templates/403.html": {
+    "sha256": "eff953d0d924da546c94492e0e970909435b570401bf2d1f84a84df4693d7dc2",
+    "count": 1,
+    "reason": "Marca institucional invariable; el resto de la página está marcado."
+  },
+  "templates/admin/base_site.html": {
+    "sha256": "33dd72e067eb17f56b37d0c69b75e88b8b1060ab5a6e24b5323112dd826d0106",
+    "count": 2,
+    "reason": "Marca, sigla y jurisdicción del producto; el resto de la base admin está marcado."
+  },
+  "templates/base.html": {
+    "sha256": "41aa5c2bd0287272490ceecb2ef5c2f72f7998dd9eced8551fbb17487f7e2fd5",
+    "count": 3,
+    "reason": "Identidad de marca invariable: RNC, RNC / CUBA y Cuba como jurisdicción del producto; el contenido funcional visible de la plantilla está marcado para traducción."
+  },
+  "templates/public_site/about.html": {
+    "sha256": "73d9e29b31bbded6028b434334b968c5a3e42a02fed4041f6caa0b030567e584",
+    "count": 73,
+    "reason": "Nombres personales, topónimos en su forma institucional local, correos, dirección postal y denominaciones de instituciones. El texto editorial sí está marcado; la fuente institucional requiere confirmación de vigencia."
+  },
+  "templates/public_site/coding_nomenclators.html": {
+    "sha256": "83b1ca2967a965bd2e0c8a3b96d0632c1edaab1c88d39311573888be6126b970",
+    "count": 1,
+    "reason": "ICD-O-4 es un identificador de edición/clasificación, no texto traducible."
+  },
+  "templates/public_site/login.html": {
+    "sha256": "333fee9ca4e7f2c89c1865f645d991a14e9794c1f9febe2a3828cb437bec2fc4",
+    "count": 1,
+    "reason": "Nombre de marca institucional invariable."
+  },
+  "templates/public_site/synthetic_explorer.html": {
+    "sha256": "2255ab7a6d4ec8eb6b40c85d23fe1c9cc85e10367eb3fd8625c3afb32e5f5748",
+    "count": 60,
+    "reason": "Plantilla legada sin referencias actuales en vistas o plantillas; no forma parte de una ruta accesible."
+  }
+}

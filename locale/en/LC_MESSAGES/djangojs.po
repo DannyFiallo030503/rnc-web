@@ -1,0 +1,555 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Check this box to continue."
+msgstr "Check this box to continue."
+
+msgid "Complete this field."
+msgstr "Complete this field."
+
+msgid "Check the characters entered in this field."
+msgstr "Check the characters entered in this field."
+
+msgid "Enter at least %(length)s characters."
+msgstr "Enter at least %(length)s characters."
+
+msgid "Enter no more than %(length)s characters."
+msgstr "Enter no more than %(length)s characters."
+
+msgid "Enter a valid email address, for example name@domain.com."
+msgstr "Enter a valid email address, for example name@domain.com."
+
+msgid "Choose a .csv file."
+msgstr "Choose a .csv file."
+
+msgid "The file exceeds the 12 MB limit."
+msgstr "The file exceeds the 12 MB limit."
+
+msgid ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+msgstr ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+
+msgid "The password cannot contain only numbers."
+msgstr "The password cannot contain only numbers."
+
+msgid "The passwords do not match. Enter the same password again."
+msgstr "The passwords do not match. Enter the same password again."
+
+msgid "Text was not added: enter no more than %(length)s characters."
+msgstr "Text was not added: enter no more than %(length)s characters."
+
+msgid "Disallowed text was not added. "
+msgstr "Disallowed text was not added. "
+
+msgid "Check the format of this field."
+msgstr "Check the format of this field."
+
+msgid "No file selected"
+msgstr "No file selected"
+
+msgid "All"
+msgstr "All"
+
+msgid "This chart does not support the selected dimension."
+msgstr "This chart does not support the selected dimension."
+
+msgid "This chart does not support the selected indicator."
+msgstr "This chart does not support the selected indicator."
+
+msgid "This chart does not support the selected unit."
+msgstr "This chart does not support the selected unit."
+
+msgid "For distinct people, compare composition by sex."
+msgstr "For distinct people, compare composition by sex."
+
+msgid "Line charts require comparison by period."
+msgstr "Line charts require comparison by period."
+
+msgid "The series needs at least two years; clear the single-year selection."
+msgstr "The series needs at least two years; clear the single-year selection."
+
+msgid "Point charts compare values by province of residence or age group."
+msgstr "Point charts compare values by province of residence or age group."
+
+msgid ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+msgstr ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+
+msgid "Scatter plots compare provinces or age groups."
+msgstr "Scatter plots compare provinces or age groups."
+
+msgid "Scatter plots compare absolute counts of tumors and distinct people."
+msgstr "Scatter plots compare absolute counts of tumors and distinct people."
+
+msgid ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+msgstr ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+
+msgid "Calculando en este dispositivo…"
+msgstr "Calculating on this device…"
+
+msgid "Categoría"
+msgstr "Category"
+
+msgid "Datos sintéticos"
+msgstr "Synthetic data"
+
+msgid ""
+"Deja un filtro sin selección para incluir todos sus valores; puedes elegir "
+"varios."
+msgstr ""
+"Leave a filter empty to include all its values; you can select several."
+
+msgid "Dimensión"
+msgstr "Dimension"
+
+msgid "El cálculo local encontró un error."
+msgstr "The local calculation encountered an error."
+
+msgid "El cálculo local se interrumpió."
+msgstr "The local calculation was interrupted."
+
+msgid "El navegador no ofrece una estimación de almacenamiento."
+msgstr "This browser does not provide a storage estimate."
+
+msgid "El paquete está incompleto y no se guardó."
+msgstr "The package is incomplete and was not saved."
+
+msgid ""
+"El servidor no respondió; la consulta local sigue disponible si ya guardaste"
+" el paquete."
+msgstr ""
+"The server did not respond. Local consultation remains available if you have"
+" already saved the package."
+
+msgid ""
+"Este navegador no permite el almacenamiento local requerido por la consulta "
+"offline."
+msgstr ""
+"This browser does not allow the local storage required for offline "
+"consultation."
+
+msgid ""
+"Este paquete no incluye el contrato estadístico requerido. Conéctate y "
+"actualízalo."
+msgstr ""
+"This package does not include the required statistical contract. Connect to "
+"the internet and update it."
+
+msgid ""
+"Este prototipo solo admite el paquete sintético autorizado para pruebas."
+msgstr ""
+"This prototype only accepts the synthetic package authorized for testing."
+
+msgid "Fecha de publicación"
+msgstr "Publication date"
+
+msgid "Filtros"
+msgstr "Filters"
+
+msgid "Frecuencia relativa (%)"
+msgstr "Relative frequency (%)"
+
+msgid "Guarda primero la publicación sintética en este dispositivo."
+msgstr "First save the synthetic release to this device."
+
+msgid ""
+"Guarda una publicación mientras tienes conexión para consultar desde este "
+"dispositivo."
+msgstr "Save a release while online to consult it on this device."
+
+msgid "Indicador"
+msgstr "Metric"
+
+msgid "Método"
+msgstr "Method"
+
+msgid "No disponible"
+msgstr "Not available"
+
+msgid "No disponible en esta publicación"
+msgstr "Not available in this release"
+
+msgid "No hay paquete guardado."
+msgstr "No package saved."
+
+msgid "No hay publicación disponible para guardar."
+msgstr "No release is available to save."
+
+msgid "No se pudo cargar la biblioteca local de gráficos."
+msgstr "The local chart library could not be loaded."
+
+msgid "No se pudo completar el cálculo local."
+msgstr "The local calculation could not be completed."
+
+msgid "No se pudo eliminar el paquete local."
+msgstr "The local package could not be deleted."
+
+msgid "No se pudo estimar el almacenamiento disponible."
+msgstr "Available storage could not be estimated."
+
+msgid "No se pudo guardar el paquete local."
+msgstr "The local package could not be saved."
+
+msgid "No se pudo guardar la publicación."
+msgstr "The release could not be saved."
+
+msgid "Personas distintas"
+msgstr "Distinct people"
+
+msgid "Población denominadora"
+msgstr "Denominator population"
+
+msgid "Posición"
+msgstr "Rank"
+
+msgid "Publicación"
+msgstr "Release"
+
+msgid ""
+"Publicación sintética guardada en este dispositivo. El navegador puede "
+"retirar datos locales por cuota o configuración."
+msgstr ""
+"Synthetic release saved on this device. The browser may remove local data "
+"because of storage limits or settings."
+
+msgid ""
+"Puedes combinar varios valores. Para personas distintas, selecciona como "
+"máximo un valor en cada filtro."
+msgstr ""
+"You can combine several values. For distinct people, select at most one "
+"value in each filter."
+
+msgid "Se eliminó el paquete local de este navegador."
+msgstr "The local package was removed from this browser."
+
+msgid "Seleccione un gráfico"
+msgstr "Select a chart"
+
+msgid "Seleccione un indicador"
+msgstr "Select a metric"
+
+msgid "Seleccione una dimensión"
+msgstr "Select a dimension"
+
+msgid "Sí"
+msgstr "Yes"
+
+msgid "Tasa ajustada por 100 000"
+msgstr "Age-adjusted rate per 100,000"
+
+msgid "Tasa cruda/específica por 100 000"
+msgstr "Crude/age-specific rate per 100,000"
+
+msgid "Todos"
+msgstr "All"
+
+msgid "Tumores"
+msgstr "Tumors"
+
+msgid "Título"
+msgstr "Title"
+
+msgid "Unidad"
+msgstr "Unit"
+
+msgid "no disponible para filtros múltiples"
+msgstr "not available with multiple filters"
+
+msgid "todos"
+msgstr "all"
+
+msgid ""
+"Almacenamiento del sitio usado: %(used)s MB%(quota)s. Estimación del "
+"navegador."
+msgstr "Site storage used: %(used)s MB%(quota)s. Browser estimate."
+
+msgid " de %(quota)s MB estimados"
+msgstr " of an estimated %(quota)s MB"
+
+msgid ""
+"Tumores: %(tumors)s · Personas distintas: %(persons)s · Población: "
+"%(population)s · cálculo local: %(elapsed)s ms"
+msgstr ""
+"Tumors: %(tumors)s · Distinct people: %(persons)s · Population: "
+"%(population)s · local calculation: %(elapsed)s ms"
+
+msgid ""
+"Consulta calculada localmente · publicación %(release)s · método %(method)s."
+msgstr ""
+"Query calculated on this device · release %(release)s · method %(method)s."
+
+msgid "El servidor respondió HTTP %(status)s."
+msgstr "The server responded with HTTP %(status)s."
+
+msgid ""
+"Servidor: %(elapsed)s ms de ida y vuelta · %(bytes)s bytes de HTML. No mide "
+"CPU del servidor."
+msgstr ""
+"Server: %(elapsed)s ms round trip · %(bytes)s bytes of HTML. This does not "
+"measure server CPU."
+
+msgid "Categorías"
+msgstr "Categories"
+
+msgid "categoría"
+msgid_plural "categorías"
+msgstr[0] "category"
+msgstr[1] "categories"
+
+msgid "categoría con el mismo valor"
+msgid_plural "categorías con los mismos valores"
+msgstr[0] "category with the same value"
+msgstr[1] "categories with the same values"
+
+msgid "Consulta estadística"
+msgstr "Statistical query"
+
+msgid "Porcentaje de cada categoría (%)"
+msgstr "Percentage of each category (%)"
+
+msgid "tumores"
+msgstr "tumors"
+
+msgid "personas distintas"
+msgstr "distinct people"
+
+msgid "El gráfico circular necesita hasta ocho categorías."
+msgstr "Pie charts support up to eight categories."
+
+msgid "Este gráfico necesita al menos dos categorías con datos."
+msgstr "This chart requires at least two categories with data."
+
+msgid "Falta población en algún grupo de edad para calcular la tasa ajustada."
+msgstr ""
+"Population is missing for an age group required to calculate the adjusted "
+"rate."
+
+msgid "Frecuencia absoluta"
+msgstr "Absolute frequency"
+
+msgid "Hombres"
+msgstr "Men"
+
+msgid "Mujeres"
+msgstr "Women"
+
+msgid "No hay valores positivos para representar una composición."
+msgstr "There are no positive values to display as a composition."
+
+msgid "No se cargó una publicación local."
+msgstr "No local release is loaded."
+
+msgid "Selección no compatible: %(errors)s."
+msgstr "Incompatible selection: %(errors)s."
+
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Segi–Doll age-adjusted rate per 100,000"
+
+msgid "Tasa cruda / específica por 100 000"
+msgstr "Crude/age-specific rate per 100,000"
+
+msgid "Tumores y personas distintas"
+msgstr "Tumors and distinct people"
+
+msgid "ajuste por edad incompatible con la selección"
+msgstr "age adjustment is incompatible with the selection"
+
+msgid "comparación por sexo necesita ambos sexos"
+msgstr "sex comparison requires both sexes"
+
+msgid "composición de personas solo por sexo"
+msgstr "people composition is only available by sex"
+
+msgid "dimensión"
+msgstr "dimension"
+
+msgid "dispersión requiere filtros simples"
+msgstr "scatter plots require simple filters"
+
+msgid "indicador"
+msgstr "metric"
+
+msgid "la publicación no contiene ambos sexos"
+msgstr "the release does not contain both sexes"
+
+msgid "personas distintas con selección múltiple"
+msgstr "distinct people cannot be combined with multiple selections"
+
+msgid "unidad"
+msgstr "unit"
+
+msgid "valor de %(key)s fuera del paquete"
+msgstr "%(key)s value is outside the package"
+
+msgid ""
+"Paquete local: %(title)s · versión %(release)s · publicado %(published)s · "
+"%(size)s KB"
+msgstr ""
+"Local package: %(title)s · version %(release)s · published %(published)s · "
+"%(size)s KB"
+
+msgid "Publicación %(release)s · %(date)s"
+msgstr "Release %(release)s · %(date)s"
+
+msgid "Página %(page)s de %(pages)s · %(count)s %(categories)s"
+msgstr "Page %(page)s of %(pages)s · %(count)s %(categories)s"
+
+msgid "fecha no disponible"
+msgstr "date unavailable"
+
+msgid "consulta-local"
+msgstr "local-query"
+
+msgid "grafico-local"
+msgstr "local-chart"
+
+msgid "Tráquea, bronquios y pulmón"
+msgstr "Trachea, bronchus and lung"
+
+msgid "Próstata"
+msgstr "Prostate"
+
+msgid "Mama"
+msgstr "Breast"
+
+msgid "Colon y recto"
+msgstr "Colon and rectum"
+
+msgid "Estómago"
+msgstr "Stomach"
+
+msgid "Cuello del útero"
+msgstr "Cervix uteri"
+
+msgid "Cuerpo del útero"
+msgstr "Corpus uteri"
+
+msgid "Tiroides"
+msgstr "Thyroid"
+
+msgid "Páncreas"
+msgstr "Pancreas"
+
+msgid "Vejiga urinaria"
+msgstr "Urinary bladder"
+
+msgid "Riñón"
+msgstr "Kidney"
+
+msgid "Hígado y vías biliares"
+msgstr "Liver and bile ducts"
+
+msgid "Ovario"
+msgstr "Ovary"
+
+msgid "Laringe y faringe"
+msgstr "Larynx and pharynx"
+
+msgid "Anillo"
+msgstr "Doughnut"
+
+msgid "Año de incidencia"
+msgstr "Year of diagnosis"
+
+msgid "Barras agrupadas por sexo"
+msgstr "Bars grouped by sex"
+
+msgid "Barras apiladas por sexo"
+msgstr "Bars stacked by sex"
+
+msgid "Barras horizontales"
+msgstr "Horizontal bars"
+
+msgid "Barras porcentuales por sexo"
+msgstr "Percentage bars by sex"
+
+msgid "Circular"
+msgstr "Pie chart"
+
+msgid "Columnas"
+msgstr "Columns"
+
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "Scatter: tumors and people by province/age"
+
+msgid "Distribución territorial (swarm)"
+msgstr "Territorial distribution (swarm)"
+
+msgid "Edad"
+msgstr "Age"
+
+msgid "Grupo de localización"
+msgstr "Site group"
+
+msgid "Líneas"
+msgstr "Lines"
+
+msgid "Provincia de residencia"
+msgstr "Province of residence"
+
+msgid "Puntos por provincia o grupo de edad"
+msgstr "Points by province or age group"
+
+msgid "Ranking por indicador"
+msgstr "Indicator ranking"
+
+msgid "Sexo"
+msgstr "Sex"
+
+msgid "Campo"
+msgstr "Field"
+
+msgid "%(count)s option selected"
+msgid_plural "%(count)s options selected"
+msgstr[0] "%(count)s option selected"
+msgstr[1] "%(count)s options selected"
+
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "Comparing by sex requires both sexes and another dimension."
+
+msgid "Las barras apiladas requieren frecuencias absolutas."
+msgstr "Stacked bars require absolute frequencies."
+
+msgid ""
+"La composición requiere categorías excluyentes; para personas, compare por "
+"sexo."
+msgstr ""
+"Composition requires mutually exclusive categories; for people, compare by "
+"sex."
+
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "This dimension is not available for the selected chart."
+
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "This metric is not available for the selected chart."
+
+msgid "Esta unidad no está disponible para el gráfico seleccionado."
+msgstr "This unit is not available for the selected chart."
+
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "Age adjustment requires all age groups and another dimension."
+
+msgid ""
+"Datos sintéticos · método %(method)s · guardado en este navegador. La fecha "
+"de publicación identifica el corte; no indica cuándo se conectó el "
+"dispositivo."
+msgstr ""
+"Synthetic data · method %(method)s · saved in this browser. The publication "
+"date identifies the release; it does not show when the device connected."

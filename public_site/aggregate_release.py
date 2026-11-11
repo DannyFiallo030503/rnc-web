@@ -10,6 +10,8 @@ from functools import lru_cache
 from pathlib import Path
 
 from django.conf import settings
+from django.utils.translation import gettext_lazy as _
+from analytics.standard import AGE_STANDARD_ID, AGE_STANDARD_WEIGHTS
 
 FIELDS = ("period", "territory", "sex", "age_group", "site")
 STRATUM = ("period", "territory", "sex", "age_group")
@@ -27,7 +29,7 @@ def build_release(delivery, records):
         or not str(row.get("tumor_id", "")).startswith("SYN-T-")
         for row in records
     ):
-        raise ValueError("Solo se puede liberar el conjunto sintético de demostración.")
+        raise ValueError(_("Solo se puede liberar el conjunto sintético de demostración."))
 
     cube = {}
     for mask in range(1 << len(FIELDS)):
@@ -68,6 +70,8 @@ def build_release(delivery, records):
         "report": delivery.report,
         "options": options,
         "fields": list(FIELDS),
+        "standard_id": AGE_STANDARD_ID,
+        "standard_weights": AGE_STANDARD_WEIGHTS,
         "cube": cube,
     }
 
@@ -97,7 +101,7 @@ def prepare_release(delivery, records):
     root = Path(settings.PUBLIC_RELEASE_ROOT)
     release_id = str(delivery.pk)
     if not re.fullmatch(r"[0-9a-fA-F-]{36}", release_id):
-        raise ValueError("Identificador de publicación inválido.")
+        raise ValueError(_("Identificador de publicación inválido."))
     artifact = root / f"{release_id}.json"
     digest = _atomic_json(artifact, payload)
     return {"release_id": release_id, "sha256": digest}

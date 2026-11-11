@@ -13,8 +13,10 @@ from pathlib import Path
 from django.conf import settings
 from django.db import transaction
 from django.utils import timezone
+from django.utils.translation import gettext_lazy as _
 from .models import Delivery, Publication, AuditEvent
 from analytics.catalogs import CATALOGS, id_for, resolve
+from analytics.standard import AGE_STANDARD_WEIGHTS
 
 HEADER = [
     "synthetic",
@@ -28,31 +30,7 @@ HEADER = [
     "population",
     "standard_weight",
 ]
-WEIGHTS = dict(
-    zip(
-        [f"{n}-{n+4}" for n in range(0, 85, 5)] + ["85+"],
-        [
-            12000,
-            10000,
-            9000,
-            9000,
-            8000,
-            8000,
-            6000,
-            6000,
-            6000,
-            6000,
-            5000,
-            4000,
-            4000,
-            3000,
-            2000,
-            1000,
-            500,
-            500,
-        ],
-    )
-)
+WEIGHTS = AGE_STANDARD_WEIGHTS
 
 
 def private_root():
@@ -70,16 +48,16 @@ def audit(user, action, target, reason=""):
 
 def _ingest(upload, title, user):
     if upload.size > 12 * 1024 * 1024 or not upload.name.lower().endswith(".csv"):
-        raise ValueError("Utilice un CSV de hasta 12 MB.")
+        raise ValueError(_("Utilice un CSV de hasta 12 MB."))
     raw = upload.read(12 * 1024 * 1024 + 1)
     checksum = hashlib.sha256(raw).hexdigest()
     if Delivery.objects.filter(checksum=checksum).exists():
-        raise ValueError("Esta entrega ya está registrada; no se incorporó otra copia.")
+        raise ValueError(_("Esta entrega ya está registrada; no se incorporó otra copia."))
     try:
         reader = csv.DictReader(io.StringIO(raw.decode("utf-8-sig")))
         if reader.fieldnames != HEADER:
             raise ValueError(
-                "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+                _("Estructura incompatible. Descargue el CSV sintético de ejemplo.")
             )
         records, people, tumors, strata = [], {}, set(), {}
         identities = {}
@@ -89,22 +67,27 @@ def _ingest(upload, title, user):
         sites = {r["site_id"] for r in reference_rows()}
         for number, r in enumerate(reader, 2):
             if number > 60001:
-                raise ValueError("El límite local es de 60 000 filas.")
+                raise ValueError(_("El límite local es de 60 000 filas."))
             if None in r or any(v is None or len(v) > 150 for v in r.values()):
-                raise ValueError(f"Fila {number}: estructura o longitud incorrecta.")
+                raise ValueError(
+                    _("Fila %(number)s: estructura o longitud incorrecta.")
+                    % {"number": number}
+                )
             if (
                 r["synthetic"] != "TRUE"
                 or not r["person_id"].startswith("SYN-P-")
                 or not r["tumor_id"].startswith("SYN-T-")
             ):
                 raise ValueError(
-                    f"Fila {number}: solo se admite el contrato sintético de demostración."
+                    _("Fila %(number)s: solo se admite el contrato sintético de demostración.")
+                    % {"number": number}
                 )
             if not re.fullmatch(
                 r"SYN-P-[A-Za-z0-9-]+", r["person_id"]
             ) or not re.fullmatch(r"SYN-T-[A-Za-z0-9-]+", r["tumor_id"]):
                 raise ValueError(
-                    f"Fila {number}: formato de identificador sintético no admitido."
+                    _("Fila %(number)s: formato de identificador sintético no admitido.")
+                    % {"number": number}
                 )
             try:
                 territory = resolve("territory_id", r["territory_id"])["name"]
@@ -112,9 +95,14 @@ def _ingest(upload, title, user):
                 age_group = resolve("age_group_id", r["age_group_id"])["name"]
                 site = resolve("site_id", r["site_id"])["name"]
             except KeyError as exc:
-                raise ValueError(f"Fila {number}: identificador de catálogo desconocido.") from exc
+                raise ValueError(
+                    _("Fila %(number)s: identificador de catálogo desconocido.")
+                    % {"number": number}
+                ) from exc
             if r["territory_id"] not in territories or r["site_id"] not in sites:
-                raise ValueError(f"Fila {number}: categoría no admitida.")
+                raise ValueError(
+                    _("Fila %(number)s: categoría no admitida.") % {"number": number}
+                )
             try:
                 year, population, weight = (
                     int(r["period"]),
@@ -123,7 +111,8 @@ def _ingest(upload, title, user):
                 )
             except ValueError as exc:
                 raise ValueError(
-                    f"Fila {number}: se requieren números enteros."
+                    _("Fila %(number)s: se requieren números enteros.")
+                    % {"number": number}
                 ) from exc
             if (
                 not 2000 <= year <= 2100
@@ -131,11 +120,14 @@ def _ingest(upload, title, user):
                 or weight != WEIGHTS[age_group]
             ):
                 raise ValueError(
-                    f"Fila {number}: período, población o peso incompatible."
+                    _("Fila %(number)s: período, población o peso incompatible.")
+                    % {"number": number}
                 )
             stratum = (year, territory, sex, age_group)
             if stratum in strata and strata[stratum] != population:
-                raise ValueError(f"Fila {number}: denominador inconsistente.")
+                raise ValueError(
+                    _("Fila %(number)s: denominador inconsistente.") % {"number": number}
+                )
             strata[stratum] = population
             identity_key = (r["person_id"], year)
             if (
@@ -143,16 +135,22 @@ def _ingest(upload, title, user):
                 and people[identity_key] != stratum
             ):
                 raise ValueError(
-                    f"Fila {number}: persona incompatible con el estrato declarado."
+                    _("Fila %(number)s: persona incompatible con el estrato declarado.")
+                    % {"number": number}
                 )
             people[identity_key] = stratum
             identity = r["sex_id"]
             if r["person_id"] in identities and identities[r["person_id"]] != identity:
-                raise ValueError(f"Fila {number}: identidad sintética inconsistente.")
+                raise ValueError(
+                    _("Fila %(number)s: identidad sintética inconsistente.") % {"number": number}
+                )
             identities[r["person_id"]] = identity
             if r["tumor_id"]:
                 if r["tumor_id"] in tumors:
-                    raise ValueError(f"Fila {number}: identificador de tumor repetido.")
+                    raise ValueError(
+                        _("Fila %(number)s: identificador de tumor repetido.")
+                        % {"number": number}
+                    )
                 tumors.add(r["tumor_id"])
             r.update(
                 period=year,
@@ -165,7 +163,7 @@ def _ingest(upload, title, user):
             )
             records.append(r)
         if not records:
-            raise ValueError("El archivo no contiene registros.")
+            raise ValueError(_("El archivo no contiene registros."))
         # All age/sex strata are required for meaningful unrestricted denominators.
         for year, territory in {(s[0], s[1]) for s in strata}:
             if any(
@@ -174,18 +172,18 @@ def _ingest(upload, title, user):
                 for age in WEIGHTS
             ):
                 raise ValueError(
-                    "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+                    _("Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad.")
                 )
     except (UnicodeError, csv.Error, TypeError, KeyError, OverflowError) as exc:
-        raise ValueError("CSV no válido; revise codificación y estructura.") from exc
+        raise ValueError(_("CSV no válido; revise codificación y estructura.")) from exc
     key = uuid.uuid4().hex + ".json"
     path = private_root() / key
-    path.write_text(json.dumps(records, ensure_ascii=False), encoding="utf-8")
-    os.chmod(path, 0o600)
     original = path.with_suffix(".csv")
-    original.write_bytes(raw)
-    os.chmod(original, 0o600)
     try:
+        path.write_text(json.dumps(records, ensure_ascii=False), encoding="utf-8")
+        os.chmod(path, 0o600)
+        original.write_bytes(raw)
+        os.chmod(original, 0o600)
         with transaction.atomic():
             delivery = Delivery.objects.create(
                 title=title,
@@ -241,7 +239,7 @@ def published_records():
 
 def transition(pk, action, user, reason):
     with transaction.atomic():
-        pointer, _ = Publication.objects.get_or_create(pk=1)
+        pointer, _created = Publication.objects.get_or_create(pk=1)
         pointer = Publication.objects.select_for_update().get(pk=1)
         delivery = Delivery.objects.select_for_update().get(pk=pk)
         if action == "publish" and delivery.status == "validated":
@@ -269,7 +267,7 @@ def transition(pk, action, user, reason):
             delivery.status = "revoked"
             pointer.delivery = None
         else:
-            raise ValueError("La acción ya no es válida para el estado actual.")
+            raise ValueError(_("La acción ya no es válida para el estado actual."))
         delivery.save()
         pointer.save()
         audit(
@@ -281,13 +279,13 @@ def transition(pk, action, user, reason):
 
 
 def ingest(upload, title, user):
-    """Keep failed technical attempts without exposing source values in reports."""
+    """Record sanitized rejection metadata; never retain an unvalidated upload."""
     from django.db import IntegrityError
 
     try:
         return _ingest(upload, title, user)
     except IntegrityError as exc:
-        raise ValueError("Esta entrega ya está registrada.") from exc
+        raise ValueError(_("Esta entrega ya está registrada.")) from exc
     except ValueError as exc:
         if upload.size <= 12 * 1024 * 1024 and upload.name.lower().endswith(".csv"):
             upload.seek(0)
@@ -302,28 +300,21 @@ def ingest(upload, title, user):
                     )
                 except (UnicodeError, csv.Error):
                     received = None
-                key = uuid.uuid4().hex + ".csv"
-                path = private_root() / key
-                path.write_bytes(raw)
-                os.chmod(path, 0o600)
-                try:
-                    with transaction.atomic():
-                        delivery = Delivery.objects.create(
-                            title=title,
-                            checksum=checksum,
-                            storage_key=key,
-                            created_by=user,
-                            status="rejected",
-                            report={
-                                "error": str(exc),
-                                "synthetic": True,
-                                "received_rows": received,
-                                "accepted_rows": 0,
-                                "rejected_rows": received,
-                            },
-                        )
-                        audit(user, "Carga rechazada técnicamente", delivery.pk)
-                except Exception:
-                    path.unlink(missing_ok=True)
-                    raise
+                with transaction.atomic():
+                    delivery = Delivery.objects.create(
+                        title=title,
+                        checksum=checksum,
+                        storage_key="",
+                        created_by=user,
+                        status="rejected",
+                        report={
+                            "error": str(exc),
+                            "synthetic": False,
+                            "received_rows": received,
+                            "accepted_rows": 0,
+                            "rejected_rows": received,
+                            "source_retained": False,
+                        },
+                    )
+                    audit(user, "Carga rechazada técnicamente", delivery.pk)
         raise

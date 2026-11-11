@@ -1,0 +1,683 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: zh-hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Check this box to continue."
+msgstr "选中此框以继续。"
+
+#, fuzzy
+msgid "Complete this field."
+msgstr "填写此字段。"
+
+#, fuzzy
+msgid "Check the characters entered in this field."
+msgstr "检查在此字段中输入的字符。"
+
+#, fuzzy
+msgid "Enter at least %(length)s characters."
+msgstr "至少输入 %(length)s 个字符。"
+
+#, fuzzy
+msgid "Enter no more than %(length)s characters."
+msgstr "输入不超过 %(length)s 个字符。"
+
+#, fuzzy
+msgid "Enter a valid email address, for example name@domain.com."
+msgstr "输入有效的电子邮件地址，例如 name@domain.com。"
+
+#, fuzzy
+msgid "Choose a .csv file."
+msgstr "选择 .csv 文件。"
+
+#, fuzzy
+msgid "The file exceeds the 12 MB limit."
+msgstr "文件超出 12 MB 限制。"
+
+#, fuzzy
+msgid ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+msgstr "用空格、撇号或连字符分隔名称部分；不要以标点符号开头或结尾。"
+
+#, fuzzy
+msgid "The password cannot contain only numbers."
+msgstr "密码不能仅包含数字。"
+
+#, fuzzy
+msgid "The passwords do not match. Enter the same password again."
+msgstr "密码不匹配。再次输入相同的密码。"
+
+#, fuzzy
+msgid "Text was not added: enter no more than %(length)s characters."
+msgstr "未添加文本：输入不超过 %(length)s 个字符。"
+
+#, fuzzy
+msgid "Disallowed text was not added. "
+msgstr "未添加不允许的文本。 "
+
+#, fuzzy
+msgid "Check the format of this field."
+msgstr "检查该字段的格式。"
+
+#, fuzzy
+msgid "No file selected"
+msgstr "未选择文件"
+
+#, fuzzy
+msgid "All"
+msgstr "全部"
+
+#, fuzzy
+msgid "This chart does not support the selected dimension."
+msgstr "该图表不支持所选维度。"
+
+#, fuzzy
+msgid "This chart does not support the selected indicator."
+msgstr "该图表不支持所选指标。"
+
+#, fuzzy
+msgid "This chart does not support the selected unit."
+msgstr "该图表不支持所选单位。"
+
+#, fuzzy
+msgid "For distinct people, compare composition by sex."
+msgstr "对于不同的人，按性别比较组成。"
+
+#, fuzzy
+msgid "Line charts require comparison by period."
+msgstr "折线图需要按时期进行比较。"
+
+#, fuzzy
+msgid "The series needs at least two years; clear the single-year selection."
+msgstr "该系列至少需要两年时间；清除单年选择。"
+
+#, fuzzy
+msgid "Point charts compare values by province of residence or age group."
+msgstr "点图按居住省份或年龄组比较值。"
+
+#, fuzzy
+msgid ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+msgstr "该图表至少需要两个类别；清除单省或单年龄过滤器。"
+
+#, fuzzy
+msgid "Scatter plots compare provinces or age groups."
+msgstr "散点图比较省份或年龄组。"
+
+#, fuzzy
+msgid "Scatter plots compare absolute counts of tumors and distinct people."
+msgstr "散点图比较肿瘤和不同人群的绝对计数。"
+
+#, fuzzy
+msgid ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+msgstr "散点图需要进行选择，可以在不重叠的情况下对不同的人员进行计数。"
+
+#, fuzzy
+msgid "Calculando en este dispositivo…"
+msgstr "在此设备上计算..."
+
+#, fuzzy
+msgid "Categoría"
+msgstr "类别"
+
+#, fuzzy
+msgid "Datos sintéticos"
+msgstr "综合数据"
+
+#, fuzzy
+msgid ""
+"Deja un filtro sin selección para incluir todos sus valores; puedes elegir "
+"varios."
+msgstr "将过滤器留空以包含其所有值；您可以选择多个。"
+
+#, fuzzy
+msgid "Dimensión"
+msgstr "尺寸"
+
+#, fuzzy
+msgid "El cálculo local encontró un error."
+msgstr "本地计算遇到错误。"
+
+#, fuzzy
+msgid "El cálculo local se interrumpió."
+msgstr "本地计算被中断。"
+
+#, fuzzy
+msgid "El navegador no ofrece una estimación de almacenamiento."
+msgstr "此浏览器不提供存储估计。"
+
+#, fuzzy
+msgid "El paquete está incompleto y no se guardó."
+msgstr "该包不完整且未保存。"
+
+#, fuzzy
+msgid ""
+"El servidor no respondió; la consulta local sigue disponible si ya guardaste"
+" el paquete."
+msgstr "服务器没有响应。如果您已经保存了套餐，仍然可以进行本地咨询。"
+
+#, fuzzy
+msgid ""
+"Este navegador no permite el almacenamiento local requerido por la consulta "
+"offline."
+msgstr "该浏览器不允许离线咨询所需的本地存储。"
+
+#, fuzzy
+msgid ""
+"Este paquete no incluye el contrato estadístico requerido. Conéctate y "
+"actualízalo."
+msgstr "该软件包不包括所需的统计合同。连接到互联网并更新它。"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo admite el paquete sintético autorizado para pruebas."
+msgstr "该原型仅接受授权测试的合成包。"
+
+#, fuzzy
+msgid "Fecha de publicación"
+msgstr "出版日期"
+
+#, fuzzy
+msgid "Filtros"
+msgstr "过滤器"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "相对频率(%)"
+
+#, fuzzy
+msgid "Guarda primero la publicación sintética en este dispositivo."
+msgstr "首先将合成版本保存到该设备。"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación mientras tienes conexión para consultar desde este "
+"dispositivo."
+msgstr "在线保存版本以便在此设备上查阅。"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "公制"
+
+#, fuzzy
+msgid "Método"
+msgstr "方法"
+
+#, fuzzy
+msgid "No disponible"
+msgstr "不可用"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "在此版本中不可用"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "没有保存包。"
+
+#, fuzzy
+msgid "No hay publicación disponible para guardar."
+msgstr "没有可供保存的版本。"
+
+#, fuzzy
+msgid "No se pudo cargar la biblioteca local de gráficos."
+msgstr "无法加载本地图表库。"
+
+#, fuzzy
+msgid "No se pudo completar el cálculo local."
+msgstr "本地计算无法完成。"
+
+#, fuzzy
+msgid "No se pudo eliminar el paquete local."
+msgstr "无法删除本地包。"
+
+#, fuzzy
+msgid "No se pudo estimar el almacenamiento disponible."
+msgstr "无法估计可用存储空间。"
+
+#, fuzzy
+msgid "No se pudo guardar el paquete local."
+msgstr "无法保存本地包。"
+
+#, fuzzy
+msgid "No se pudo guardar la publicación."
+msgstr "无法保存该版本。"
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "去重人数"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "分母人口"
+
+#, fuzzy
+msgid "Posición"
+msgstr "排名"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "发布"
+
+#, fuzzy
+msgid ""
+"Publicación sintética guardada en este dispositivo. El navegador puede "
+"retirar datos locales por cuota o configuración."
+msgstr "合成版本保存在此设备上。由于存储限制或设置，浏览器可能会删除本地数据。"
+
+#, fuzzy
+msgid ""
+"Puedes combinar varios valores. Para personas distintas, selecciona como "
+"máximo un valor en cada filtro."
+msgstr "您可以组合多个值。对于不同的人，在每个过滤器中最多选择一个值。"
+
+#, fuzzy
+msgid "Se eliminó el paquete local de este navegador."
+msgstr "本地包已从此浏览器中删除。"
+
+#, fuzzy
+msgid "Seleccione un gráfico"
+msgstr "选择图表"
+
+#, fuzzy
+msgid "Seleccione un indicador"
+msgstr "选择一个指标"
+
+#, fuzzy
+msgid "Seleccione una dimensión"
+msgstr "选择维度"
+
+#, fuzzy
+msgid "Sí"
+msgstr "是的"
+
+#, fuzzy
+msgid "Tasa ajustada por 100 000"
+msgstr "每 10 万人的年龄调整率"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000"
+msgstr "每 100,000 人的粗/特定年龄比率"
+
+#, fuzzy
+msgid "Todos"
+msgstr "全部"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "肿瘤"
+
+#, fuzzy
+msgid "Título"
+msgstr "标题"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "单位"
+
+#, fuzzy
+msgid "no disponible para filtros múltiples"
+msgstr "不适用于多个过滤器"
+
+#, fuzzy
+msgid "todos"
+msgstr "全部"
+
+#, fuzzy
+msgid ""
+"Almacenamiento del sitio usado: %(used)s MB%(quota)s. Estimación del "
+"navegador."
+msgstr "使用的站点存储：%(used)s MB%(quota)s。浏览器估计。"
+
+#, fuzzy
+msgid " de %(quota)s MB estimados"
+msgstr "  估计 %(quota)s MB"
+
+#, fuzzy
+msgid ""
+"Tumores: %(tumors)s · Personas distintas: %(persons)s · Población: "
+"%(population)s · cálculo local: %(elapsed)s ms"
+msgstr ""
+"肿瘤：%(tumors)s · 不同人群：%(persons)s · 群体：%(population)s · 本地计算：%(elapsed)s ms"
+
+#, fuzzy
+msgid ""
+"Consulta calculada localmente · publicación %(release)s · método %(method)s."
+msgstr "在此设备上计算的查询 · 发布 %(release)s · 方法 %(method)s。"
+
+#, fuzzy
+msgid "El servidor respondió HTTP %(status)s."
+msgstr "服务器响应 HTTP %(status)s。"
+
+#, fuzzy
+msgid ""
+"Servidor: %(elapsed)s ms de ida y vuelta · %(bytes)s bytes de HTML. No mide "
+"CPU del servidor."
+msgstr "服务器：%(elapsed)s 毫秒往返 · %(bytes)s 字节的 HTML。这不测量服务器 CPU。"
+
+#, fuzzy
+msgid "Categorías"
+msgstr "类别"
+
+#, fuzzy
+msgid "categoría"
+msgid_plural "categorías"
+msgstr[0] "类别"
+
+#, fuzzy
+msgid "categoría con el mismo valor"
+msgid_plural "categorías con los mismos valores"
+msgstr[0] "数值相同的类别"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "统计查询"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "各类别占比(%)"
+
+#, fuzzy
+msgid "tumores"
+msgstr "肿瘤"
+
+#, fuzzy
+msgid "personas distintas"
+msgstr "不同的人"
+
+#, fuzzy
+msgid "El gráfico circular necesita hasta ocho categorías."
+msgstr "饼图最多支持八个类别。"
+
+#, fuzzy
+msgid "Este gráfico necesita al menos dos categorías con datos."
+msgstr "该图表需要至少两个类别的数据。"
+
+#, fuzzy
+msgid "Falta población en algún grupo de edad para calcular la tasa ajustada."
+msgstr "缺少计算调整后比率所需的年龄组的人口。"
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "绝对频率"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "男士"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "女性"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "没有可显示为组合的正值。"
+
+#, fuzzy
+msgid "No se cargó una publicación local."
+msgstr "未加载本地版本。"
+
+#, fuzzy
+msgid "Selección no compatible: %(errors)s."
+msgstr "不兼容的选择：%(errors)s。"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Segi–Doll 年龄标化率（每10万人）"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "粗率/年龄别率（每10万人）"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "肿瘤数和去重人数"
+
+#, fuzzy
+msgid "ajuste por edad incompatible con la selección"
+msgstr "年龄调整与选择不相容"
+
+#, fuzzy
+msgid "comparación por sexo necesita ambos sexos"
+msgstr "性别比较需要两性"
+
+#, fuzzy
+msgid "composición de personas solo por sexo"
+msgstr "人员构成仅按性别提供"
+
+#, fuzzy
+msgid "dimensión"
+msgstr "维度"
+
+#, fuzzy
+msgid "dispersión requiere filtros simples"
+msgstr "散点图需要简单的过滤器"
+
+#, fuzzy
+msgid "indicador"
+msgstr "公制"
+
+#, fuzzy
+msgid "la publicación no contiene ambos sexos"
+msgstr "该版本不包含男女"
+
+#, fuzzy
+msgid "personas distintas con selección múltiple"
+msgstr "不同的人不能与多项选择相结合"
+
+#, fuzzy
+msgid "unidad"
+msgstr "单位"
+
+#, fuzzy
+msgid "valor de %(key)s fuera del paquete"
+msgstr "%(key)s 值为包装外值"
+
+#, fuzzy
+msgid ""
+"Paquete local: %(title)s · versión %(release)s · publicado %(published)s · "
+"%(size)s KB"
+msgstr "本地软件包：%(title)s·版本%(release)s·已发布%(published)s·%(size)s KB"
+
+#, fuzzy
+msgid "Publicación %(release)s · %(date)s"
+msgstr "发布%(release)s · %(date)s"
+
+#, fuzzy
+msgid "Página %(page)s de %(pages)s · %(count)s %(categories)s"
+msgstr "%(pages)s 页 %(page)s · %(count)s %(categories)s"
+
+#, fuzzy
+msgid "fecha no disponible"
+msgstr "日期不可用"
+
+#, fuzzy
+msgid "consulta-local"
+msgstr "本地查询"
+
+#, fuzzy
+msgid "grafico-local"
+msgstr "本地图表"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "气管、支气管和肺"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "前列腺"
+
+#, fuzzy
+msgid "Mama"
+msgstr "乳房"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "结肠和直肠"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "胃"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "子宫颈"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "子宫体"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "甲状腺"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "胰腺"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "膀胱"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "肾"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "肝脏和胆管"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "卵巢"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "喉和咽"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "环形图"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "诊断年份"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "按性别分组的柱状图"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "按性别堆叠的柱状图"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "横向条形图"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "按性别显示的百分比条形图"
+
+#, fuzzy
+msgid "Circular"
+msgstr "饼图"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "专栏"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "散点图：按省份/年龄划分的肿瘤和人群"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "地域分布（群）"
+
+#, fuzzy
+msgid "Edad"
+msgstr "年龄"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "癌症部位组"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "线路"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "居住省份"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "按省份或年龄组划分的分数"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "指标排名"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "性别"
+
+#, fuzzy
+msgid "Campo"
+msgstr "领域"
+
+#, fuzzy
+msgid "%(count)s option selected"
+msgid_plural "%(count)s options selected"
+msgstr[0] "已选择 %(count)s 个选项"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "按性别比较需要性别和另一个维度。"
+
+#, fuzzy
+msgid "Las barras apiladas requieren frecuencias absolutas."
+msgstr "堆叠条形需要绝对频率。"
+
+#, fuzzy
+msgid ""
+"La composición requiere categorías excluyentes; para personas, compare por "
+"sexo."
+msgstr "组合需要相互排斥的类别；对于人来说，按性别进行比较。"
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "此维度不适用于所选图表。"
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "此指标不适用于所选图表。"
+
+#, fuzzy
+msgid "Esta unidad no está disponible para el gráfico seleccionado."
+msgstr "该单位不适用于所选图表。"
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "年龄调整需要所有年龄段和另一个维度。"
+
+#, fuzzy
+msgid ""
+"Datos sintéticos · método %(method)s · guardado en este navegador. La fecha "
+"de publicación identifica el corte; no indica cuándo se conectó el "
+"dispositivo."
+msgstr "合成数据 · 方法 %(method)s · 保存在此浏览器中。发布日期标识发布；它不显示设备何时连接。"

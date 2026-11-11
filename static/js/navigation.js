@@ -8,7 +8,7 @@ if (sidebarToggle && workspace) {
   const applySidebarState = (collapsed) => {
     workspace.classList.toggle("sidebar-collapsed", collapsed);
     sidebarToggle.setAttribute("aria-expanded", String(!collapsed));
-    const label = collapsed ? "Ampliar barra lateral" : "Plegar barra lateral";
+    const label = collapsed ? sidebarToggle.dataset.labelExpanded : sidebarToggle.dataset.labelCollapsed;
     sidebarToggle.setAttribute("aria-label", label);
     sidebarToggle.title = label;
   };

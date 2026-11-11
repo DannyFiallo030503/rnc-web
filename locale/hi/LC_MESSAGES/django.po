@@ -1,0 +1,3582 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba."
+msgstr "क्यूबा की राष्ट्रीय कैंसर रजिस्ट्री से घटना के आँकड़े।"
+
+#, fuzzy
+msgid "RNC · Estadísticas de cáncer en Cuba"
+msgstr "RNC · क्यूबा में कैंसर के आँकड़े"
+
+#, fuzzy
+msgid "RNC Cuba · Inicio"
+msgstr "RNC क्यूबा · होम"
+
+#, fuzzy
+msgid "Inicio"
+msgstr "घर"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer"
+msgstr "राष्ट्रीय कैंसर रजिस्ट्री"
+
+#, fuzzy
+msgid "Sesión iniciada"
+msgstr "साइन इन किया गया"
+
+#, fuzzy
+msgid "Administración"
+msgstr "प्रशासन"
+
+#, fuzzy
+msgid "Usuarios y permisos"
+msgstr "उपयोगकर्ता और अनुमतियाँ"
+
+#, fuzzy
+msgid "Cambiar contraseña"
+msgstr "पासवर्ड बदलें"
+
+#, fuzzy
+msgid "Cerrar sesión y cambiar de cuenta"
+msgstr "साइन आउट करें और खाता स्विच करें"
+
+#, fuzzy
+msgid "Acceso del personal"
+msgstr "स्टाफ़ साइन इन करें"
+
+#, fuzzy
+msgid "Estadísticas públicas"
+msgstr "सार्वजनिक आँकड़े"
+
+#, fuzzy
+msgid "Idioma"
+msgstr "भाषा"
+
+#, fuzzy
+msgid "Aplicar"
+msgstr "आवेदन करें"
+
+#, fuzzy
+msgid "Menú"
+msgstr "मेनू"
+
+#, fuzzy
+msgid "Páginas del sitio"
+msgstr "साइट पृष्ठ"
+
+#, fuzzy
+msgid "Secciones de esta página"
+msgstr "इस पृष्ठ पर अनुभाग"
+
+#, fuzzy
+msgid "Secciones sobre el RNC"
+msgstr "RNC के बारे में अनुभाग"
+
+#, fuzzy
+msgid "En esta página"
+msgstr "इस पेज पर"
+
+#, fuzzy
+msgid "Plegar barra lateral"
+msgstr "साइडबार को संक्षिप्त करें"
+
+#, fuzzy
+msgid "Plegar menú"
+msgstr "मेनू संक्षिप्त करें"
+
+#, fuzzy
+msgid "Navegación"
+msgstr "नेविगेशन"
+
+#, fuzzy
+msgid "Páginas"
+msgstr "पन्ने"
+
+#, fuzzy
+msgid "Gestión de usuarios"
+msgstr "उपयोगकर्ता प्रबंधन"
+
+#, fuzzy
+msgid "Gestionar usuarios"
+msgstr "उपयोगकर्ताओं को प्रबंधित करें"
+
+#, fuzzy
+msgid "Usuarios y roles"
+msgstr "उपयोगकर्ता और भूमिकाएँ"
+
+#, fuzzy
+msgid "Índice de la página"
+msgstr "पृष्ठ सामग्री"
+
+#, fuzzy
+msgid "Entorno con datos sintéticos"
+msgstr "सिंथेटिक डेटा वातावरण"
+
+#, fuzzy
+msgid "Información que acerca"
+msgstr "जानकारी को करीब लाना"
+
+#, fuzzy
+msgid "las estadísticas a las personas."
+msgstr "लोगों तक आँकड़े पहुँचाना।"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer de Cuba."
+msgstr "क्यूबा की राष्ट्रीय कैंसर रजिस्ट्री।"
+
+#, fuzzy
+msgid "Consulta de incidencia y resultados agregados."
+msgstr "घटना के आँकड़े और समग्र परिणाम।"
+
+#, fuzzy
+msgid "Navegación del pie de página"
+msgstr "फ़ुटर नेविगेशन"
+
+#, fuzzy
+msgid "Explorar"
+msgstr "अन्वेषण करें"
+
+#, fuzzy
+msgid "Ayuda y acceso"
+msgstr "सहायता और पहुंच"
+
+#, fuzzy
+msgid "Información y acceso"
+msgstr "सूचना और पहुंच"
+
+#, fuzzy
+msgid "Cómo leer los resultados"
+msgstr "नतीजे कैसे पढ़ें"
+
+#, fuzzy
+msgid "Seguridad de mi cuenta"
+msgstr "खाता सुरक्षा"
+
+#, fuzzy
+msgid "Subir al comienzo"
+msgstr "शीर्ष पर वापस जाएँ"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer · Cuba"
+msgstr "राष्ट्रीय कैंसर रजिस्ट्री · क्यूबा"
+
+#, fuzzy
+msgid ""
+"Los datos de esta instalación son inventados. No representan estadísticas "
+"oficiales."
+msgstr ""
+"इस साइट पर मौजूद डेटा सिंथेटिक है और आधिकारिक आंकड़ों का प्रतिनिधित्व नहीं "
+"करता है।"
+
+#, fuzzy
+msgid "El RNC"
+msgstr "RNC के बारे में"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "सांख्यिकीय अन्वेषक"
+
+#, fuzzy
+msgid "Nomencladores"
+msgstr "कोड कैटलॉग"
+
+#, fuzzy
+msgid "Consulta sin conexión"
+msgstr "ऑफ़लाइन परामर्श"
+
+#, fuzzy
+msgid "Crear usuario"
+msgstr "उपयोगकर्ता बनाएं"
+
+#, fuzzy
+msgid "Editar usuario"
+msgstr "उपयोगकर्ता संपादित करें"
+
+#, fuzzy
+msgid "Detalle del corte"
+msgstr "विवरण जारी करें"
+
+#, fuzzy
+msgid "Iniciar sesión"
+msgstr "साइन इन करें"
+
+#, fuzzy
+msgid "Recuperar acceso"
+msgstr "खाता पुनर्प्राप्त करें"
+
+#, fuzzy
+msgid "Administrador de soporte"
+msgstr "समर्थन व्यवस्थापक"
+
+#, fuzzy
+msgid "Responsable de publicación"
+msgstr "प्रकाशन प्रबंधक"
+
+#, fuzzy
+msgid "Operador de cargas"
+msgstr "डेटा इनटेक ऑपरेटर"
+
+#, fuzzy
+msgid "Consulta pública"
+msgstr "सार्वजनिक परामर्श"
+
+#, fuzzy
+msgid "Información para comprender la incidencia del cáncer"
+msgstr "कैंसर की घटनाओं को समझने के लिए जानकारी"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer reúne y analiza información sobre los casos "
+"de cáncer en Cuba. Este portal permite consultar estadísticas por año, "
+"territorio, sexo, edad y localización, y preparar tablas, gráficos y "
+"descargas."
+msgstr ""
+"राष्ट्रीय कैंसर रजिस्ट्री क्यूबा में कैंसर के मामलों के बारे में जानकारी "
+"एकत्र करती है और उसका विश्लेषण करती है। यह पोर्टल आपको वर्ष, क्षेत्र, लिंग, "
+"आयु और कैंसर साइट के अनुसार आंकड़े तलाशने और तालिकाएं, चार्ट और डाउनलोड "
+"तैयार करने की सुविधा देता है।"
+
+#, fuzzy
+msgid "Consultar estadísticas"
+msgstr "आँकड़ों का अन्वेषण करें"
+
+#, fuzzy
+msgid "Conocer el RNC"
+msgstr "RNC के बारे में"
+
+#, fuzzy
+msgid "Qué ofrece este portal"
+msgstr "यह पोर्टल क्या ऑफर करता है"
+
+#, fuzzy
+msgid "Explora los datos disponibles"
+msgstr "उपलब्ध डेटा का अन्वेषण करें"
+
+#, fuzzy
+msgid "Filtra por año y territorio"
+msgstr "वर्ष और क्षेत्र के अनुसार फ़िल्टर करें"
+
+#, fuzzy
+msgid "Compara sexo, edad y localización"
+msgstr "लिंग, आयु और कैंसर स्थल की तुलना करें"
+
+#, fuzzy
+msgid "Consulta tablas y visualizaciones"
+msgstr "तालिकाओं और विज़ुअलाइज़ेशन का अन्वेषण करें"
+
+#, fuzzy
+msgid "Descarga resultados con su contexto"
+msgstr "परिणाम उनके संदर्भ के साथ डाउनलोड करें"
+
+#, fuzzy
+msgid "Información sobre el Registro"
+msgstr "रजिस्ट्री के बारे में"
+
+#, fuzzy
+msgid "El Registro"
+msgstr "रजिस्ट्री"
+
+#, fuzzy
+msgid "¿Qué es el RNC?"
+msgstr "RNC क्या है?"
+
+#, fuzzy
+msgid ""
+"Es el sistema nacional que recopila, revisa y analiza información de cáncer "
+"con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del"
+" cáncer y sirven de apoyo a la investigación y la planificación sanitaria."
+msgstr ""
+"यह राष्ट्रीय जनसंख्या-आधारित प्रणाली है जो कैंसर की जानकारी एकत्र करती है, "
+"समीक्षा करती है और उसका विश्लेषण करती है। इसके आँकड़े कैंसर के बोझ का वर्णन "
+"करने और अनुसंधान और स्वास्थ्य योजना का समर्थन करने में मदद करते हैं।"
+
+#, fuzzy
+msgid "Qué hacemos"
+msgstr "हम क्या करते हैं"
+
+#, fuzzy
+msgid "La plataforma"
+msgstr "मंच"
+
+#, fuzzy
+msgid "¿Qué puedes hacer aquí?"
+msgstr "आप यहाँ क्या कर सकते हैं?"
+
+#, fuzzy
+msgid ""
+"Construir una consulta, elegir el indicador y la dimensión de análisis, "
+"revisar la tabla que acompaña cada gráfico y exportar los resultados "
+"seleccionados."
+msgstr ""
+"एक क्वेरी बनाएं, एक संकेतक और विश्लेषण आयाम चुनें, प्रत्येक चार्ट के साथ दी "
+"गई तालिका की समीक्षा करें और चयनित परिणाम निर्यात करें।"
+
+#, fuzzy
+msgid "Abrir la consulta estadística"
+msgstr "सांख्यिकीय एक्सप्लोरर खोलें"
+
+#, fuzzy
+msgid "Cómo usar el portal"
+msgstr "पोर्टल का उपयोग कैसे करें"
+
+#, fuzzy
+msgid "De la pregunta al resultado"
+msgstr "प्रश्न से परिणाम तक"
+
+#, fuzzy
+msgid "Define la consulta."
+msgstr "अपनी क्वेरी परिभाषित करें."
+
+#, fuzzy
+msgid ""
+"Selecciona el período y las dimensiones disponibles, como territorio, sexo, "
+"edad y localización."
+msgstr ""
+"उपलब्ध अवधि और आयाम, जैसे क्षेत्र, लिंग, आयु और कैंसर स्थल का चयन करें।"
+
+#, fuzzy
+msgid "Elige qué medir."
+msgstr "चुनें कि क्या मापना है."
+
+#, fuzzy
+msgid ""
+"Distingue el número de casos, una proporción o una tasa; cada medida "
+"responde a una pregunta diferente."
+msgstr ""
+"मामले की संख्या, अनुपात या दर के बीच चयन करें; प्रत्येक माप एक अलग प्रश्न का"
+" उत्तर देता है।"
+
+#, fuzzy
+msgid "Interpreta y conserva el contexto."
+msgstr "संदर्भ में परिणामों की व्याख्या करें।"
+
+#, fuzzy
+msgid ""
+"Revisa tabla, unidad, población de referencia, fuente y notas del método "
+"antes de comparar o descargar."
+msgstr ""
+"परिणामों की तुलना करने या डाउनलोड करने से पहले तालिका, इकाई, संदर्भ "
+"जनसंख्या, स्रोत और विधि नोट्स की समीक्षा करें।"
+
+#, fuzzy
+msgid ""
+"La disponibilidad de cada indicador depende del corte publicado. Las "
+"estimaciones, los datos observados y los períodos preliminares deben "
+"identificarse por separado."
+msgstr ""
+"संकेतक उपलब्धता प्रकाशित विज्ञप्ति पर निर्भर करती है। अनुमान, देखे गए डेटा "
+"और प्रारंभिक अवधियों को अलग से पहचाना जाना चाहिए।"
+
+#, fuzzy
+msgid "Ver cómo se calculan los indicadores"
+msgstr "देखें कि संकेतकों की गणना कैसे की जाती है"
+
+#, fuzzy
+msgid "Conceptos estadísticos básicos"
+msgstr "बुनियादी सांख्यिकीय अवधारणाएँ"
+
+#, fuzzy
+msgid "Casos y frecuencias"
+msgstr "मामले और आवृत्तियाँ"
+
+#, fuzzy
+msgid ""
+"Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa"
+" compara una parte con un total y se expresa como porcentaje. El denominador"
+" y la unidad deben acompañar siempre al resultado."
+msgstr ""
+"एक गिनती से पता चलता है कि कितने मामले चयनित फ़िल्टर को पूरा करते हैं। एक "
+"सापेक्ष आवृत्ति एक भाग की तुलना कुल से करती है और इसे प्रतिशत के रूप में "
+"व्यक्त किया जाता है। हर और इकाई को हमेशा परिणाम के साथ आना चाहिए।"
+
+#, fuzzy
+msgid "Tasas de incidencia"
+msgstr "घटना दर"
+
+#, fuzzy
+msgid ""
+"Una tasa relaciona los casos nuevos con la población correspondiente al "
+"mismo período y estrato. Las tasas por edad ayudan a describir grupos; el "
+"ajuste por edad facilita comparaciones entre poblaciones con estructuras "
+"etarias diferentes."
+msgstr ""
+"एक दर समान अवधि और स्तर के लिए नए मामलों को जनसंख्या से संबंधित करती है। "
+"आयु-विशिष्ट दरें समूहों का वर्णन करने में मदद करती हैं; आयु समायोजन विभिन्न "
+"आयु संरचनाओं वाली आबादी के बीच तुलना का समर्थन करता है।"
+
+#, fuzzy
+msgid ""
+"Las consultas estarán disponibles cuando exista una publicación activa."
+msgstr "विज्ञप्ति प्रकाशित होने पर प्रश्न उपलब्ध होंगे।"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "डोनट चार्ट"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "निदान का वर्ष"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "लिंग के अनुसार समूहित बार चार्ट"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "लिंग के अनुसार स्टैक्ड बार चार्ट"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "क्षैतिज बार चार्ट"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "लिंग के अनुसार प्रतिशत बार चार्ट"
+
+#, fuzzy
+msgid "Circular"
+msgstr "पाई चार्ट"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "कॉलम"
+
+#, fuzzy
+msgid "Comparar por"
+msgstr "द्वारा तुलना करें"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "स्कैटर प्लॉट: प्रांत/उम्र के अनुसार ट्यूमर और लोग"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "प्रादेशिक वितरण (झुंड)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "उम्र"
+
+#, fuzzy
+msgid "El ajuste por edad necesita todos los grupos de edad."
+msgstr "आयु समायोजन के लिए सभी आयु समूहों की आवश्यकता होती है।"
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "आयु समायोजन के लिए सभी आयु समूहों और अन्य आयाम की आवश्यकता होती है।"
+
+#, fuzzy
+msgid ""
+"El corte activo no incluye desglose por municipio; solo contiene provincia "
+"de residencia."
+msgstr ""
+"सक्रिय प्रकाशन में नगरपालिका-स्तर का विवरण उपलब्ध नहीं है; इसमें केवल निवास "
+"का प्रांत शामिल है।"
+
+#, fuzzy
+msgid ""
+"El corte agregado no permite deduplicar personas distintas al combinar "
+"varios valores. Use Tumores o seleccione un solo valor por filtro."
+msgstr ""
+"समेकित प्रकाशन में कई चुने गए मानों के बीच अलग-अलग लोगों की सही गिनती संभव "
+"नहीं है। ट्यूमर गिनें या हर फ़िल्टर में केवल एक मान चुनें।"
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "यह आयाम चयनित चार्ट के लिए उपलब्ध नहीं है."
+
+#, fuzzy
+msgid "Este gráfico requiere la unidad Tumores."
+msgstr "इस चार्ट के लिए ट्यूमर इकाई की आवश्यकता है।"
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "यह सूचक चयनित चार्ट के लिए उपलब्ध नहीं है."
+
+#, fuzzy
+msgid "Filtra los casos por municipio de residencia. Puede elegir varios."
+msgstr ""
+"निवास की नगर पालिका द्वारा मामलों को फ़िल्टर करें। आप एक से अधिक का चयन कर "
+"सकते हैं."
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "निरपेक्ष आवृत्ति"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "सापेक्ष आवृत्ति (%)"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "कैंसर स्थल समूह"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "सूचक"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr ""
+"लिंग के आधार पर तुलना के लिए दोनों लिंगों और दूसरे आयाम की आवश्यकता होती है।"
+
+#, fuzzy
+msgid ""
+"La dispersión necesita una selección que permita contar personas distintas "
+"sin solapamientos."
+msgstr ""
+"एक स्कैटर प्लॉट को ऐसे चयन की आवश्यकता होती है जहां अलग-अलग लोगों को बिना "
+"ओवरलैप के गिना जा सके।"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "पंक्तियाँ"
+
+#, fuzzy
+msgid "Municipio de residencia"
+msgstr "निवास की नगर पालिका"
+
+#, fuzzy
+msgid ""
+"Para personas distintas, la composición solo se puede comparar por sexo."
+msgstr "विशिष्ट लोगों के लिए, रचना की तुलना केवल लिंग से की जा सकती है।"
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "अलग-अलग लोग"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "निवास का प्रांत"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "प्रांत या आयु समूह के अनुसार अंक"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "सूचक द्वारा रैंकिंग"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "लिंग"
+
+#, fuzzy
+msgid "Sin seleccionar opciones se incluyen todos; puede elegir varias."
+msgstr ""
+"यदि आप कोई विकल्प नहीं चुनते हैं, तो सभी मान शामिल हो जाते हैं। आप एक से "
+"अधिक का चयन कर सकते हैं."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen solo las provincias presentes en este corte, que "
+"puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia "
+"de la unidad informante; puede elegir varias."
+msgstr ""
+"बिना किसी चयन के, इस रिलीज़ में केवल प्रांत ही शामिल हैं; हो सकता है कि वे "
+"पूरे क्यूबा को कवर न करें। ये निवास के प्रांत हैं, रिपोर्टिंग इकाइयों के "
+"प्रांत नहीं। आप एक से अधिक का चयन कर सकते हैं."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen todas las provincias disponibles. Es la provincia "
+"de residencia, no la provincia de la unidad informante; puede elegir varias."
+msgstr ""
+"बिना किसी चयन के, सभी उपलब्ध प्रांत शामिल हैं। यह निवास का प्रांत है, "
+"रिपोर्टिंग इकाई का प्रांत नहीं। आप एक से अधिक का चयन कर सकते हैं."
+
+#, fuzzy
+msgid ""
+"Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta"
+" 8 categorías excluyentes."
+msgstr ""
+"केवल चयन से संगत चार्ट प्रकार दिखाए जाते हैं। पाई और डोनट चार्ट अधिकतम 8 "
+"परस्पर अपवर्जी श्रेणियाँ दिखाते हैं।"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "आयु-समायोजित सेगी–डॉल दर प्रति 100,000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "क्रूड/आयु-विशिष्ट दर प्रति 100,000"
+
+#, fuzzy
+msgid "Tipo de gráfico"
+msgstr "चार्ट प्रकार"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "ट्यूमर"
+
+#, fuzzy
+msgid "Unidad de conteo"
+msgstr "गिनती इकाई"
+
+#, fuzzy
+msgid "Cuenta"
+msgstr "खाता"
+
+#, fuzzy
+msgid "Consulta sin conexión · RNC Cuba"
+msgstr "ऑफ़लाइन परामर्श · RNC क्यूबा"
+
+#, fuzzy
+msgid "Consulta pública local"
+msgstr "स्थानीय सार्वजनिक परामर्श"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación agregada sintética mientras tienes conexión. Después "
+"puedes filtrar, calcular, graficar, paginar e imprimir desde este "
+"dispositivo. La aplicación pública continúa disponible sin el servidor; la "
+"administración requiere conexión."
+msgstr ""
+"जब आप ऑनलाइन हों तो एक सिंथेटिक एग्रीगेट रिलीज़ सहेजें। फिर आप इस डिवाइस से "
+"फ़िल्टर, गणना, चार्ट, पेजिनेट और प्रिंट कर सकते हैं। सार्वजनिक ऐप सर्वर के "
+"बिना भी उपलब्ध रहता है; प्रशासन को एक कनेक्शन की आवश्यकता है."
+
+#, fuzzy
+msgid "Publicación local"
+msgstr "स्थानीय रिलीज"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "कोई सहेजा गया पैकेज नहीं."
+
+#, fuzzy
+msgid "Instalar consulta pública"
+msgstr "सार्वजनिक परामर्श स्थापित करें"
+
+#, fuzzy
+msgid "Guardar / actualizar publicación"
+msgstr "रिलीज़ को सहेजें/अद्यतन करें"
+
+#, fuzzy
+msgid "Eliminar copia local"
+msgstr "स्थानीय प्रतिलिपि हटाएँ"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo acepta publicaciones sintéticas. La copia queda en el "
+"almacenamiento del navegador hasta que la elimines o el navegador la retire."
+" Una copia sin conexión no puede actualizarse ni revocarse mientras el "
+"dispositivo está desconectado."
+msgstr ""
+"यह प्रोटोटाइप केवल सिंथेटिक रिलीज़ स्वीकार करता है। कॉपी ब्राउज़र स्टोरेज "
+"में तब तक रहती है जब तक आप इसे हटा नहीं देते या ब्राउज़र इसे हटा नहीं देता। "
+"डिवाइस के डिस्कनेक्ट होने पर ऑफ़लाइन प्रतिलिपि को अद्यतन या निरस्त नहीं किया"
+" जा सकता है।"
+
+#, fuzzy
+msgid "Filtros y visualización"
+msgstr "फ़िल्टर और विज़ुअलाइज़ेशन"
+
+#, fuzzy
+msgid "Guarda una publicación para cargar los filtros disponibles."
+msgstr "उपलब्ध फ़िल्टर लोड करने के लिए रिलीज़ सहेजें।"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "इस रिलीज़ में उपलब्ध नहीं है"
+
+#, fuzzy
+msgid "Localización"
+msgstr "साइट"
+
+#, fuzzy
+msgid "Calcular en este dispositivo"
+msgstr "इस डिवाइस पर गणना करें"
+
+#, fuzzy
+msgid "Comparar con el servidor"
+msgstr "सर्वर से तुलना करें"
+
+#, fuzzy
+msgid "Descargar CSV"
+msgstr "सीएसवी डाउनलोड करें"
+
+#, fuzzy
+msgid "Descargar gráfico PNG"
+msgstr "चार्ट पीएनजी डाउनलोड करें"
+
+#, fuzzy
+msgid "Imprimir / guardar PDF"
+msgstr "पीडीएफ प्रिंट/सेव करें"
+
+#, fuzzy
+msgid "Gráfico del resultado calculado localmente"
+msgstr "स्थानीय स्तर पर गणना किए गए परिणाम का चार्ट"
+
+#, fuzzy
+msgid "Paginación de resultados"
+msgstr "परिणाम पृष्ठांकन"
+
+#, fuzzy
+msgid "Anterior"
+msgstr "पिछला"
+
+#, fuzzy
+msgid "Siguiente"
+msgstr "अगला"
+
+#, fuzzy
+msgid "Barras"
+msgstr "बार चार्ट"
+
+#, fuzzy
+msgid "Actualizar resultados"
+msgstr "परिणाम अद्यतन करें"
+
+#, fuzzy
+msgid ""
+"Actualmente no hay un corte publicado. Las consultas y descargas estarán "
+"disponibles cuando se publique una nueva versión."
+msgstr ""
+"फिलहाल कोई विज्ञप्ति प्रकाशित नहीं हुई है. नया संस्करण प्रकाशित होने पर "
+"क्वेरीज़ और डाउनलोड उपलब्ध होंगे।"
+
+#, fuzzy
+msgid ""
+"Cada barra suma 100 % y muestra la distribución por sexo dentro de esa "
+"categoría."
+msgstr ""
+"हर बार का कुल 100% होता है और वह उस श्रेणी में लिंग के अनुसार वितरण दिखाता "
+"है।"
+
+#, fuzzy
+msgid "Cambiar filtros"
+msgstr "फ़िल्टर बदलें"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "श्रेणी"
+
+#, fuzzy
+msgid ""
+"Categorías ordenadas de mayor a menor según el indicador seleccionado. Las "
+"posiciones también aparecen en las exportaciones."
+msgstr ""
+"श्रेणियों को चयनित माप के अनुसार उच्चतम से निम्नतम तक क्रमबद्ध किया जाता है।"
+" निर्यात में रैंक भी शामिल हैं।"
+
+#, fuzzy
+msgid "Eje de valores:"
+msgstr "मान अक्ष:"
+
+#, fuzzy
+msgid ""
+"El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los "
+"conteos exactos de tumores y personas distintas."
+msgstr ""
+"बुलबुला आकार समान आवृत्ति वाली श्रेणियों को समूहित करता है; कुल्हाड़ियाँ "
+"सटीक ट्यूमर और विशिष्ट-व्यक्ति गणना को बनाए रखती हैं।"
+
+#, fuzzy
+msgid "Filtros aplicados:"
+msgstr "लागू फ़िल्टर:"
+
+#, fuzzy
+msgid "Filtros de consulta"
+msgstr "क्वेरी फ़िल्टर"
+
+#, fuzzy
+msgid "Frecuencias y tasas calculadas para cada categoría de la comparación."
+msgstr "प्रत्येक तुलना श्रेणी के लिए आवृत्तियों और दरों की गणना की गई।"
+
+#, fuzzy
+msgid "Frecuencias, población denominadora y tasas por categoría"
+msgstr "आवृत्तियाँ, विभाजक जनसंख्या, और श्रेणी के अनुसार दरें"
+
+#, fuzzy
+msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
+msgstr "क्वेरी चार्ट; मान नीचे दी गई तालिका में उपलब्ध हैं"
+
+#, fuzzy
+msgid "Hay campos por corregir en el panel de filtros."
+msgstr "फ़िल्टर पैनल में कुछ फ़ील्ड में सुधार की आवश्यकता है।"
+
+#, fuzzy
+msgid "Imagen PNG"
+msgstr "पीएनजी छवि"
+
+#, fuzzy
+msgid "Informe PDF"
+msgstr "पीडीएफ रिपोर्ट"
+
+#, fuzzy
+msgid ""
+"La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La "
+"tasa cruda es frecuencia / población denominadora × 100 000; al comparar por"
+" edad corresponde a una tasa específica por edad. Al seleccionar varios años"
+" se acumulan las poblaciones anuales seleccionadas, por lo que la tasa "
+"resume el período y no corresponde a un solo año."
+msgstr ""
+"सापेक्ष आवृत्ति और दरें ऊपर चयनित इकाई का उपयोग करती हैं। क्रूड दर "
+"आवृत्ति/हर जनसंख्या × 100,000 है; उम्र की तुलना के लिए यह एक उम्र-विशिष्ट दर"
+" है। जब कई वर्षों का चयन किया जाता है, तो उनकी वार्षिक जनसंख्या जोड़ दी जाती"
+" है, इसलिए दर एक वर्ष के बजाय अवधि का सारांश प्रस्तुत करती है।"
+
+#, fuzzy
+msgid ""
+"La separación vertical de los puntos solo facilita distinguirlos; no "
+"representa otro indicador."
+msgstr ""
+"बिंदुओं के बीच लंबवत दूरी केवल पठनीयता के लिए है; यह किसी अन्य माप का "
+"प्रतिनिधित्व नहीं करता है."
+
+#, fuzzy
+msgid ""
+"La tasa ajustada aplica la población estándar Segi–Doll al conjunto de "
+"edades disponible. Si falta cobertura en alguno de los grupos requeridos, se"
+" muestra “—”. La fórmula, los denominadores y la presentación de los métodos"
+" siguen pendientes de cotejo con el RNC."
+msgstr ""
+"आयु-समायोजित दर उपलब्ध आयु समूहों पर सेगी–डॉल मानक जनसंख्या लागू करती है। "
+"यदि किसी आवश्यक समूह के लिए कवरेज गायब है, तो \"-\" दिखाया गया है। सूत्र, "
+"विभाजक और विधियों की प्रस्तुति को अभी भी RNC के साथ समीक्षा की आवश्यकता है।"
+
+#, fuzzy
+msgid ""
+"Las personas distintas no se calculan cuando se combinan varios valores; una"
+" persona puede aparecer en más de un período, territorio, grupo de edad o "
+"localización."
+msgstr ""
+"जब कई मान संयुक्त होते हैं तो विशिष्ट लोगों की गणना नहीं की जाती है; एक "
+"व्यक्ति एक से अधिक अवधि, क्षेत्र, आयु समूह या साइट में दिखाई दे सकता है।"
+
+#, fuzzy
+msgid "No hay resultados"
+msgstr "कोई परिणाम नहीं"
+
+#, fuzzy
+msgid "No hay una publicación activa o la selección no contiene registros."
+msgstr "कोई सक्रिय रिलीज़ नहीं है, या चयन में कोई रिकॉर्ड नहीं है।"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "हर में प्रयुक्त जनसंख्या"
+
+#, fuzzy
+msgid "Posición"
+msgstr "पद"
+
+#, fuzzy
+msgid ""
+"Puede combinar valores de provincia y municipio de residencia cuando el "
+"corte los incluya. Si un filtro está vacío, se incluyen todos sus valores "
+"disponibles. Los grupos tumorales corresponden a esta publicación; no forman"
+" un catálogo completo ni representan códigos TOPO o ICD‑O."
+msgstr ""
+"जब आप रिलीज़ में शामिल होते हैं तो आप प्रांत और नगर पालिका के निवास मूल्यों "
+"को जोड़ सकते हैं। किसी फ़िल्टर को खाली छोड़ने से उसके सभी उपलब्ध मान शामिल "
+"हो जाते हैं। ट्यूमर समूह इस रिलीज़ के लिए विशिष्ट हैं; वे संपूर्ण कैटलॉग "
+"नहीं हैं और TOPO या ICD-O कोड का प्रतिनिधित्व नहीं करते हैं।"
+
+#, fuzzy
+msgid "Restablecer"
+msgstr "रीसेट करें"
+
+#, fuzzy
+msgid "Resultados"
+msgstr "परिणाम"
+
+#, fuzzy
+msgid "Revise los filtros"
+msgstr "फ़िल्टर की समीक्षा करें"
+
+#, fuzzy
+msgid "Tabla CSV"
+msgstr "सीएसवी तालिका"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll"
+msgstr "सेगी–डॉल आयु-समायोजित दर"
+
+#, fuzzy
+msgid "Tasa cruda/específica"
+msgstr "क्रूड/आयु-विशिष्ट दर"
+
+#, fuzzy
+msgid "Vector SVG"
+msgstr "एसवीजी वेक्टर छवि"
+
+#, fuzzy
+msgid "Visualización"
+msgstr "विज़ुअलाइज़ेशन"
+
+#, fuzzy
+msgid "por 100 000"
+msgstr "प्रति 100,000"
+
+#, fuzzy
+msgid "Excel"
+msgstr "एक्सेल"
+
+#, fuzzy
+msgid ""
+"Una persona puede aparecer en distintas localizaciones; esos conteos pueden "
+"solaparse y no se suman para obtener personas únicas."
+msgstr ""
+"एक व्यक्ति अनेक साइटों पर उपस्थित हो सकता है; वे गणनाएँ ओवरलैप हो सकती हैं "
+"और अद्वितीय लोगों की संख्या प्राप्त करने के लिए उन्हें नहीं जोड़ा जाना "
+"चाहिए।"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "इकाई"
+
+#, fuzzy
+msgid "Acceso restringido"
+msgstr "प्रवेश प्रतिबंधित"
+
+#, fuzzy
+msgid "Bienvenido de nuevo"
+msgstr "पुनः स्वागत है"
+
+#, fuzzy
+msgid "Entre con su cuenta para acceder a sus herramientas de trabajo."
+msgstr "अपने कार्य टूल तक पहुँचने के लिए साइन इन करें।"
+
+#, fuzzy
+msgid "Incluir todos"
+msgstr "सभी का चयन करें"
+
+#, fuzzy
+msgid "Incluir todos los valores de"
+msgstr "के लिए सभी मान शामिल करें"
+
+#, fuzzy
+msgid "La dirección no existe o el recurso ya no está disponible."
+msgstr "यह पता मौजूद नहीं है या संसाधन अब उपलब्ध नहीं है."
+
+#, fuzzy
+msgid ""
+"Las cuentas son creadas por el equipo administrador. No hay registro "
+"público."
+msgstr ""
+"खाते प्रशासन टीम द्वारा बनाए जाते हैं। सार्वजनिक पंजीकरण उपलब्ध नहीं है."
+
+#, fuzzy
+msgid "No encontramos esa página"
+msgstr "हमें वह पृष्ठ नहीं मिला"
+
+#, fuzzy
+msgid "No hay acciones registradas."
+msgstr "कोई कार्रवाई दर्ज नहीं की गई है."
+
+#, fuzzy
+msgid "No se ha seleccionado un archivo"
+msgstr "कोई फ़ाइल चयनित नहीं"
+
+#, fuzzy
+msgid "Paginación"
+msgstr "पेजिनेशन"
+
+#, fuzzy
+msgid "Primera"
+msgstr "पहला"
+
+#, fuzzy
+msgid "Página"
+msgstr "पेज"
+
+#, fuzzy
+msgid "Revise los campos indicados"
+msgstr "संकेतित फ़ील्ड की समीक्षा करें"
+
+#, fuzzy
+msgid "Seleccionar CSV"
+msgstr "सीएसवी चुनें"
+
+#, fuzzy
+msgid ""
+"Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar "
+"consultando las estadísticas públicas."
+msgstr ""
+"आपके खाते को इस अनुभाग तक पहुंचने की अनुमति नहीं है. आप सार्वजनिक आँकड़े "
+"ब्राउज़ करना जारी रख सकते हैं।"
+
+#, fuzzy
+msgid "Volver al inicio"
+msgstr "घर वापस"
+
+#, fuzzy
+msgid "Vuelva a seleccionar el CSV para reenviar el formulario."
+msgstr "फॉर्म को दोबारा सबमिट करने के लिए CSV फ़ाइल को दोबारा चुनें।"
+
+#, fuzzy
+msgid "de"
+msgstr "का"
+
+#, fuzzy
+msgid "seleccionados"
+msgstr "चयनित"
+
+#, fuzzy
+msgid "¿Olvidó su contraseña?"
+msgstr "अपना पासवर्ड भूल गए?"
+
+#, fuzzy
+msgid "Última"
+msgstr "अंतिम"
+
+#, fuzzy
+msgid "Nomencladores · RNC Cuba"
+msgstr "कैंसर कोड कैटलॉग · RNC क्यूबा"
+
+#, fuzzy
+msgid "Consulta de clasificadores"
+msgstr "वर्गीकरण खोज"
+
+#, fuzzy
+msgid "Nomencladores de cáncer"
+msgstr "कैंसर कोड कैटलॉग"
+
+#, fuzzy
+msgid ""
+"Busque un código o término y vea a qué sistema, edición y eje pertenece."
+msgstr "किसी कोड या शब्द का सिस्टम, संस्करण और अक्ष देखने के लिए उसे खोजें।"
+
+#, fuzzy
+msgid "Referencia inicial de este proyecto, pendiente de validación del RNC:"
+msgstr "इस परियोजना के लिए प्रारंभिक संदर्भ, RNC सत्यापन लंबित:"
+
+#, fuzzy
+msgid ""
+"ICD-O-3 para topografía y morfología; ICCC-3 para grupos diagnósticos "
+"infantiles. Se conserva el sistema y la edición con que llega cada código; "
+"no se traducen ni mezclan códigos entre ediciones sin una equivalencia "
+"validada."
+msgstr ""
+"स्थलाकृति और आकारिकी के लिए ICD-O-3; बचपन निदान समूहों के लिए ICCC-3। "
+"प्रत्येक कोड अपनी स्रोत प्रणाली और संस्करण को बरकरार रखता है; मान्य तुल्यता "
+"के बिना कोडों का अनुवाद या संस्करणों में मिश्रण नहीं किया जाता है।"
+
+#, fuzzy
+msgid "No se pudo cargar el catálogo"
+msgstr "कैटलॉग लोड नहीं किया जा सका"
+
+#, fuzzy
+msgid "Catálogo oficial aún no disponible"
+msgstr "अभी तक कोई अधिकृत कैटलॉग उपलब्ध नहीं है"
+
+#, fuzzy
+msgid ""
+"Esta instalación no tiene cargado un diccionario autorizado. Los grupos de "
+"localización de la demostración son sintéticos y no equivalen a códigos "
+"TOPO."
+msgstr ""
+"इस संस्थापन में कोई अधिकृत शब्दकोश लोड नहीं है. प्रदर्शन स्थल समूह सिंथेटिक "
+"हैं और TOPO कोड के समकक्ष नहीं हैं।"
+
+#, fuzzy
+msgid "Fuentes para la referencia inicial:"
+msgstr "प्रारंभिक संदर्भ के लिए स्रोत:"
+
+#, fuzzy
+msgid "OMS · ICD‑O‑3"
+msgstr "डब्ल्यूएचओ · आईसीडी‑ओ‑3"
+
+#, fuzzy
+msgid "IARC · ICCC‑3"
+msgstr "आईएआरसी · आईसीसीसी‑3"
+
+#, fuzzy
+msgid ""
+"es una edición internacional posterior, no la referencia inicial elegida "
+"para este prototipo."
+msgstr ""
+"यह बाद का अंतर्राष्ट्रीय संस्करण है, इस प्रोटोटाइप के लिए चयनित प्रारंभिक "
+"संदर्भ नहीं।"
+
+#, fuzzy
+msgid "Versión del catálogo:"
+msgstr "कैटलॉग संस्करण:"
+
+#, fuzzy
+msgid "Fuente:"
+msgstr "स्रोत:"
+
+#, fuzzy
+msgid "Código o texto"
+msgstr "कोड या पाठ"
+
+#, fuzzy
+msgid "Buscar códigos, nombres y descripciones"
+msgstr "कोड, नाम और विवरण खोजें"
+
+#, fuzzy
+msgid "Sistema"
+msgstr "सिस्टम"
+
+#, fuzzy
+msgid "Edición"
+msgstr "संस्करण"
+
+#, fuzzy
+msgid "Todas"
+msgstr "सब"
+
+#, fuzzy
+msgid "Eje"
+msgstr "धुरी"
+
+#, fuzzy
+msgid "Todos"
+msgstr "सब"
+
+#, fuzzy
+msgid "Buscar"
+msgstr "खोजें"
+
+#, fuzzy
+msgid ""
+"conceptos encontrados. La aplicación no deduce equivalencias entre sistemas "
+"o ediciones. Solo se muestran conceptos marcados como autorizados y "
+"relaciones declaradas por una fuente o marcadas en el catálogo como "
+"validadas por el RNC; los borradores y vínculos pendientes no aparecen."
+msgstr ""
+"अवधारणाएँ मिलीं। एप्लिकेशन सिस्टम या संस्करणों में समतुल्यता का अनुमान नहीं "
+"लगाता है। केवल अधिकृत के रूप में चिह्नित अवधारणाएं और किसी स्रोत द्वारा "
+"घोषित संबंध या RNC द्वारा मान्य के रूप में चिह्नित किए गए संबंध दिखाए गए "
+"हैं; ड्राफ्ट और लंबित लिंक छोड़े गए हैं।"
+
+#, fuzzy
+msgid "identificadores asociados"
+msgstr "संबद्ध पहचानकर्ता"
+
+#, fuzzy
+msgid "Código"
+msgstr "कोड"
+
+#, fuzzy
+msgid "Sistema · edición · eje"
+msgstr "सिस्टम · संस्करण · अक्ष"
+
+#, fuzzy
+msgid "Nombre y descripción"
+msgstr "नाम और विवरण"
+
+#, fuzzy
+msgid "Estado"
+msgstr "स्थिति"
+
+#, fuzzy
+msgid "Relación"
+msgstr "रिश्ता"
+
+#, fuzzy
+msgid "Fuente y licencia"
+msgstr "स्रोत और लाइसेंस"
+
+#, fuzzy
+msgid "Ver descripción"
+msgstr "विवरण देखें"
+
+#, fuzzy
+msgid "Vigente"
+msgstr "वर्तमान"
+
+#, fuzzy
+msgid "Histórico/deprecado"
+msgstr "ऐतिहासिक/निंदनीय"
+
+#, fuzzy
+msgid "Opcional"
+msgstr "वैकल्पिक"
+
+#, fuzzy
+msgid "Fuente del código"
+msgstr "कोड स्रोत"
+
+#, fuzzy
+msgid "Fuente del concepto"
+msgstr "संकल्पना स्रोत"
+
+#, fuzzy
+msgid "Licencia"
+msgstr "लाइसेंस"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "प्रकाशन"
+
+#, fuzzy
+msgid "Marcado como histórico"
+msgstr "ऐतिहासिक के रूप में चिह्नित"
+
+#, fuzzy
+msgid "Marcado como autorizado"
+msgstr "अधिकृत के रूप में चिह्नित"
+
+#, fuzzy
+msgid "No hay conceptos que coincidan con los filtros."
+msgstr "कोई भी अवधारणा इन फ़िल्टर से मेल नहीं खाती।"
+
+#, fuzzy
+msgid "Navegación lateral"
+msgstr "साइड नेविगेशन"
+
+#, fuzzy
+msgid "Navegación principal"
+msgstr "मुख्य नेविगेशन"
+
+#, fuzzy
+msgid "Ruta de navegación"
+msgstr "ब्रेडक्रंब नेविगेशन"
+
+#, fuzzy
+msgid "Saltar al contenido"
+msgstr "सामग्री पर जाएं"
+
+#, fuzzy
+msgid "0 cortes"
+msgstr "0 रिलीज"
+
+#, fuzzy
+msgid "Acceso individual"
+msgstr "व्यक्तिगत पहुंच"
+
+#, fuzzy
+msgid "Acciones"
+msgstr "क्रियाएँ"
+
+#, fuzzy
+msgid "Activa"
+msgstr "सक्रिय"
+
+#, fuzzy
+msgid "Actualización"
+msgstr "अद्यतन किया गया"
+
+#, fuzzy
+msgid "Administración de cortes · RNC Cuba"
+msgstr "रिलीज़ प्रशासन · RNC क्यूबा"
+
+#, fuzzy
+msgid "Administración · Identidad"
+msgstr "प्रशासन · लेखा"
+
+#, fuzzy
+msgid "Apellidos"
+msgstr "अंतिम नाम"
+
+#, fuzzy
+msgid "Archivo CSV sintético"
+msgstr "सिंथेटिक CSV फ़ाइल"
+
+#, fuzzy
+msgid ""
+"Asigne el rol y el correo. Sin contraseña temporal, una cuenta nueva recibe "
+"una invitación."
+msgstr ""
+"एक भूमिका और ईमेल पता निर्दिष्ट करें. जब तक आप अस्थायी पासवर्ड सेट नहीं "
+"करते, नए खातों को आमंत्रण प्राप्त होता है।"
+
+#, fuzzy
+msgid "Buscar usuario"
+msgstr "उपयोगकर्ता खोजें"
+
+#, fuzzy
+msgid "CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."
+msgstr "UTF-8 CSV, 12 एमबी तक और 60,000 पंक्तियाँ। केवल सिंथेटिक डेटा."
+
+#, fuzzy
+msgid "Confirme su identidad para guardar los cambios."
+msgstr "परिवर्तनों को सहेजने के लिए अपनी पहचान की पुष्टि करें।"
+
+#, fuzzy
+msgid "Confirmo que el archivo contiene exclusivamente datos sintéticos"
+msgstr "मैं पुष्टि करता हूं कि फ़ाइल में केवल सिंथेटिक डेटा है"
+
+#, fuzzy
+msgid ""
+"Consulta el estado de incorporación y publicación de los cortes de "
+"incidencia."
+msgstr "घटना रिलीज़ के लिए अंतर्ग्रहण और प्रकाशन स्थिति की समीक्षा करें।"
+
+#, fuzzy
+msgid "Contraseña temporal"
+msgstr "अस्थायी पासवर्ड"
+
+#, fuzzy
+msgid "Correo"
+msgstr "ईमेल"
+
+#, fuzzy
+msgid "Corte"
+msgstr "रिहाई"
+
+#, fuzzy
+msgid "Cortes disponibles en el portal"
+msgstr "विज्ञप्तियां पोर्टल पर उपलब्ध हैं"
+
+#, fuzzy
+msgid "Cortes en proceso"
+msgstr "रिलीज़ प्रगति पर है"
+
+#, fuzzy
+msgid "Cortes estadísticos"
+msgstr "सांख्यिकीय विज्ञप्ति"
+
+#, fuzzy
+msgid "Cortes estadísticos disponibles para gestión."
+msgstr "प्रबंधन के लिए सांख्यिकीय विज्ञप्तियाँ उपलब्ध हैं।"
+
+#, fuzzy
+msgid "Cortes no visibles al público"
+msgstr "रिलीज़ जनता को दिखाई नहीं देतीं"
+
+#, fuzzy
+msgid "Cortes recientes"
+msgstr "हालिया रिलीज"
+
+#, fuzzy
+msgid "Crear cuenta"
+msgstr "खाता बनाएं"
+
+#, fuzzy
+msgid "Crear usuario +"
+msgstr "उपयोगकर्ता+ बनाएं"
+
+#, fuzzy
+msgid "Cuenta activa"
+msgstr "खाता सक्रिय"
+
+#, fuzzy
+msgid "Cuenta guardada."
+msgstr "खाता सहेजा गया."
+
+#, fuzzy
+msgid ""
+"Cuenta guardada; no se pudo encolar el correo. Puede reintentar la "
+"invitación."
+msgstr ""
+"खाता सहेजा गया; ईमेल को कतारबद्ध नहीं किया जा सका. आप आमंत्रण का पुनः प्रयास"
+" कर सकते हैं."
+
+#, fuzzy
+msgid "Debe permanecer al menos una cuenta de soporte activa."
+msgstr "कम से कम एक सक्रिय सहायता खाता अवश्य रहना चाहिए।"
+
+#, fuzzy
+msgid "Desactivada"
+msgstr "विकलांग"
+
+#, fuzzy
+msgid "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+msgstr "अपने इतिहास को हटाए बिना पहुंच हटाने के लिए खाते को अक्षम करें।"
+
+#, fuzzy
+msgid "Disponibilidad de estadísticas aprobadas"
+msgstr "अनुमोदित आँकड़ों की उपलब्धता"
+
+#, fuzzy
+msgid "Editar"
+msgstr "संपादित करें"
+
+#, fuzzy
+msgid "Editar cuenta"
+msgstr "खाता संपादित करें"
+
+#, fuzzy
+msgid "El archivo supera el límite de 12 MB."
+msgstr "फ़ाइल 12 एमबी की सीमा से अधिक है."
+
+#, fuzzy
+msgid ""
+"Elija su nueva contraseña. No necesita indicar la anterior para recuperar el"
+" acceso."
+msgstr ""
+"अपना नया पासवर्ड चुनें. पहुंच पुनर्प्राप्त करने के लिए आपको पुराना पासवर्ड "
+"प्रदान करने की आवश्यकता नहीं है।"
+
+#, fuzzy
+msgid "En cola"
+msgstr "कतारबद्ध"
+
+#, fuzzy
+msgid "En revisión"
+msgstr "समीक्षाधीन"
+
+#, fuzzy
+msgid ""
+"Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."
+msgstr "10 से 250 अक्षर दर्ज करें. यह निर्णय ऑडिट इतिहास में दर्ज किया जाएगा."
+
+#, fuzzy
+msgid "Ese correo ya está asignado a otra cuenta."
+msgstr "वह ईमेल पता पहले से ही किसी अन्य खाते को सौंपा गया है।"
+
+#, fuzzy
+msgid "Ese nombre de usuario ya está en uso. Elija otro."
+msgstr "वह उपयोगकर्ता नाम पहले से ही उपयोग में है. दुसरे का चयन करें।"
+
+#, fuzzy
+msgid "Establecer contraseña"
+msgstr "पासवर्ड सेट करें"
+
+#, fuzzy
+msgid "Establecer contraseña · RNC"
+msgstr "पासवर्ड सेट करें · RNC"
+
+#, fuzzy
+msgid "Falló el envío"
+msgstr "डिलीवरी विफल रही"
+
+#, fuzzy
+msgid "Gestionar cuentas del portal"
+msgstr "पोर्टल खाते प्रबंधित करें"
+
+#, fuzzy
+msgid "Gestionar entregas sintéticas"
+msgstr "सिंथेटिक रिलीज़ प्रबंधित करें"
+
+#, fuzzy
+msgid "Gestione las cuentas del personal autorizado y sus responsabilidades."
+msgstr "अधिकृत कर्मचारी खातों और उनकी जिम्मेदारियों को प्रबंधित करें।"
+
+#, fuzzy
+msgid "Grupo de localización ilustrativo"
+msgstr "निदर्शी साइट समूह"
+
+#, fuzzy
+msgid "Guardar contraseña"
+msgstr "पासवर्ड सहेजें"
+
+#, fuzzy
+msgid "Guardar cuenta"
+msgstr "खाता सहेजें"
+
+#, fuzzy
+msgid "Incorporación"
+msgstr "अंतर्ग्रहण"
+
+#, fuzzy
+msgid "Incorporación y publicación"
+msgstr "अंतर्ग्रहण और प्रकाशन"
+
+#, fuzzy
+msgid ""
+"Indique el correo registrado. Si la cuenta está habilitada, recibirá "
+"instrucciones."
+msgstr ""
+"पंजीकृत ईमेल पता दर्ज करें. यदि खाता सक्रिय है, तो निर्देश भेजे जाएंगे."
+
+#, fuzzy
+msgid "Introduzca su contraseña actual y elija una nueva."
+msgstr "अपना वर्तमान पासवर्ड दर्ज करें और नया चुनें।"
+
+#, fuzzy
+msgid ""
+"Invitación en cola de envío. El servicio de correo procesará la solicitud."
+msgstr "निमंत्रण कतारबद्ध. मेल सेवा अनुरोध पर कार्रवाई करेगी."
+
+#, fuzzy
+msgid ""
+"La composición requiere conteos o porcentajes de categorías excluyentes; "
+"para personas, compare por sexo."
+msgstr ""
+"संरचना चार्ट को परस्पर अनन्य श्रेणियों के लिए गणना या प्रतिशत की आवश्यकता "
+"होती है; लोगों की गिनती करते समय लिंग के आधार पर तुलना करें।"
+
+#, fuzzy
+msgid ""
+"Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni "
+"porcentajes."
+msgstr ""
+"स्टैक्ड बार चार्ट में पूर्ण आवृत्तियाँ आवश्यक हैं; दरों और प्रतिशतों को नहीं"
+" जोड़ा जाना चाहिए।"
+
+#, fuzzy
+msgid ""
+"Las invitaciones permiten elegir una contraseña privada. Una contraseña "
+"temporal obliga a cambiarla antes de utilizar el panel. Desactive las "
+"cuentas que ya no deban acceder."
+msgstr ""
+"आमंत्रण उपयोगकर्ताओं को एक निजी पासवर्ड चुनने देते हैं। डैशबोर्ड का उपयोग "
+"करने से पहले एक अस्थायी पासवर्ड बदलना होगा। उन खातों को अक्षम करें जिनकी अब "
+"पहुंच नहीं होनी चाहिए।"
+
+#, fuzzy
+msgid "Las líneas requieren comparar por período."
+msgstr "लाइन चार्ट के लिए अवधि के अनुसार तुलना की आवश्यकता होती है।"
+
+#, fuzzy
+msgid ""
+"Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 "
+"caracteres."
+msgstr ""
+"बिना उच्चारण वाले अक्षरों, संख्याओं, अवधियों, हाइफ़न या अंडरस्कोर का उपयोग "
+"करें। कम से कम 3 अक्षर."
+
+#, fuzzy
+msgid "Motivo de la decisión"
+msgstr "निर्णय का कारण"
+
+#, fuzzy
+msgid "No hay cortes registrados."
+msgstr "कोई रिलीज़ रिकॉर्ड नहीं की गई है."
+
+#, fuzzy
+msgid "No puede desactivar ni retirar su propio rol de soporte."
+msgstr "आप अपना खाता अक्षम नहीं कर सकते या अपनी सहायता भूमिका नहीं हटा सकते."
+
+#, fuzzy
+msgid "No se encontraron cuentas."
+msgstr "कोई खाता नहीं मिला."
+
+#, fuzzy
+msgid "No se pudo confirmar la operación con esa contraseña."
+msgstr "उस पासवर्ड से ऑपरेशन की पुष्टि नहीं की जा सकी."
+
+#, fuzzy
+msgid "Nombre"
+msgstr "नाम"
+
+#, fuzzy
+msgid "Nombre del corte"
+msgstr "रिलीज़ नाम"
+
+#, fuzzy
+msgid "Nombre, usuario o correo"
+msgstr "नाम, उपयोगकर्ता नाम, या ईमेल"
+
+#, fuzzy
+msgid ""
+"Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con "
+"ella, se exigirá cambiarla al entrar."
+msgstr ""
+"वैकल्पिक. इसके बिना, पासवर्ड चुनने का निमंत्रण भेजा जाएगा। इसके साथ ही यूजर "
+"को साइन-इन के समय पासवर्ड बदलना होगा।"
+
+#, fuzzy
+msgid "Operación"
+msgstr "कार्रवाई"
+
+#, fuzzy
+msgid "Operador:"
+msgstr "संचालक:"
+
+#, fuzzy
+msgid "Período"
+msgstr "अवधि"
+
+#, fuzzy
+msgid "Procesado"
+msgstr "संसाधित"
+
+#, fuzzy
+msgid "Procesando"
+msgstr "प्रसंस्करण"
+
+#, fuzzy
+msgid "Proceso de gestión"
+msgstr "प्रबंधन प्रक्रिया"
+
+#, fuzzy
+msgid "Publicaciones"
+msgstr "प्रकाशन"
+
+#, fuzzy
+msgid "Publicado"
+msgstr "प्रकाशित"
+
+#, fuzzy
+msgid "Publicados"
+msgstr "प्रकाशित"
+
+#, fuzzy
+msgid "Publicar"
+msgstr "प्रकाशित करें"
+
+#, fuzzy
+msgid "Publicar y revocar cortes sintéticos"
+msgstr "सिंथेटिक रिलीज़ प्रकाशित करें और वापस लें"
+
+#, fuzzy
+msgid "Rechazado"
+msgstr "अस्वीकृत"
+
+#, fuzzy
+msgid "Registro del corte y procedencia"
+msgstr "रिलीज़ रिकॉर्ड और उद्गम"
+
+#, fuzzy
+msgid "Responsabilidades"
+msgstr "जिम्मेदारियाँ"
+
+#, fuzzy
+msgid "Responsable"
+msgstr "मालिक"
+
+#, fuzzy
+msgid "Responsable de publicación:"
+msgstr "प्रकाशन प्रबंधक:"
+
+#, fuzzy
+msgid "Resumen de cortes"
+msgstr "सारांश जारी करें"
+
+#, fuzzy
+msgid "Retirados"
+msgstr "वापस ले लिया गया"
+
+#, fuzzy
+msgid "Revisión técnica"
+msgstr "तकनीकी समीक्षा"
+
+#, fuzzy
+msgid "Revocado"
+msgstr "वापस ले लिया गया"
+
+#, fuzzy
+msgid "Revocar"
+msgstr "वापस लेना"
+
+#, fuzzy
+msgid "Rol"
+msgstr "भूमिका"
+
+#, fuzzy
+msgid "Se admiten tildes, espacios, apóstrofos y guiones."
+msgstr "उच्चारण, रिक्त स्थान, एपोस्ट्रोफ़ और हाइफ़न की अनुमति है।"
+
+#, fuzzy
+msgid ""
+"Se ha solicitado establecer una contraseña para su cuenta RNC.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"El enlace vence en una hora y solo puede utilizarse una vez. Si no reconoce esta solicitud, contacte con soporte."
+msgstr ""
+"आपके RNC खाते के लिए पासवर्ड का अनुरोध किया गया है।\n"
+"\n"
+"%(link)s\n"
+"\n"
+"यह लिंक एक घंटे में समाप्त हो जाता है और इसका उपयोग केवल एक बार किया जा सकता है। यदि आपने इसका अनुरोध नहीं किया है, तो सहायता से संपर्क करें।"
+
+#, fuzzy
+msgid "Se utilizará para invitaciones y recuperación de acceso."
+msgstr "निमंत्रण और खाता पुनर्प्राप्ति के लिए उपयोग किया जाता है।"
+
+#, fuzzy
+msgid "Seleccione un archivo con extensión .csv."
+msgstr "एक .csv फ़ाइल चुनें."
+
+#, fuzzy
+msgid "Solicitar enlace"
+msgstr "लिंक का अनुरोध करें"
+
+#, fuzzy
+msgid "Solo soporte puede modificar cuentas de soporte."
+msgstr "केवल समर्थन व्यवस्थापक ही समर्थन खाते बदल सकते हैं."
+
+#, fuzzy
+msgid "Su contraseña de soporte"
+msgstr "आपका समर्थन पासवर्ड"
+
+#, fuzzy
+msgid "Tabla de resultados con desplazamiento horizontal"
+msgstr "क्षैतिज स्क्रॉलिंग के साथ परिणाम तालिका"
+
+#, fuzzy
+msgid "Territorio"
+msgstr "क्षेत्र"
+
+#, fuzzy
+msgid "Un nombre que identifique el período y la entrega."
+msgstr "एक नाम जो अवधि और रिलीज़ की पहचान कराता है।"
+
+#, fuzzy
+msgid "Use como máximo 128 caracteres."
+msgstr "128 से अधिक वर्णों का प्रयोग न करें."
+
+#, fuzzy
+msgid "Usuario"
+msgstr "उपयोगकर्ता नाम"
+
+#, fuzzy
+msgid "Validado"
+msgstr "मान्य"
+
+#, fuzzy
+msgid "Ver portal público"
+msgstr "सार्वजनिक पोर्टल देखें"
+
+#, fuzzy
+msgid "Verificación de estructura e integridad"
+msgstr "संरचना और अखंडता की जाँच"
+
+#, fuzzy
+msgid "además, publica y revoca cortes."
+msgstr "विज्ञप्तियों को प्रकाशित और वापस भी लेता है।"
+
+#, fuzzy
+msgid "gestiona cuentas y todas las funciones."
+msgstr "खातों और सभी सुविधाओं का प्रबंधन करता है।"
+
+#, fuzzy
+msgid "registra y revisa cargas."
+msgstr "रिकॉर्ड और समीक्षाएँ अपलोड।"
+
+#, fuzzy
+msgid "Último correo"
+msgstr "अंतिम ईमेल"
+
+#, fuzzy
+msgid "Administración · Corte"
+msgstr "प्रशासन · रिहाई"
+
+#, fuzzy
+msgid "Cancelar"
+msgstr "रद्द करें"
+
+#, fuzzy
+msgid "Confirmar publicación"
+msgstr "प्रकाशन की पुष्टि करें"
+
+#, fuzzy
+msgid "Continuar"
+msgstr "जारी रखें"
+
+#, fuzzy
+msgid "Contraseña actualizada"
+msgstr "पासवर्ड अपडेट किया गया"
+
+#, fuzzy
+msgid "Contraseña guardada"
+msgstr "पासवर्ड सहेजा गया"
+
+#, fuzzy
+msgid "Cuenta y seguridad"
+msgstr "खाता और सुरक्षा"
+
+#, fuzzy
+msgid "Datos sintéticos validados"
+msgstr "सिंथेटिक डेटा मान्य किया गया"
+
+#, fuzzy
+msgid ""
+"El archivo no superó la validación como sintético y no se conservó en el "
+"almacenamiento de la aplicación."
+msgstr ""
+"फ़ाइल ने सिंथेटिक-डेटा सत्यापन पास नहीं किया और एप्लिकेशन स्टोरेज में बरकरार"
+" नहीं रखा गया।"
+
+#, fuzzy
+msgid ""
+"El archivo sintético validado permanece en almacenamiento privado. Este "
+"contrato no habilita cargas clínicas del RNC."
+msgstr ""
+"मान्य सिंथेटिक फ़ाइल निजी भंडारण में रहती है। यह अनुबंध RNC से क्लिनिकल डेटा"
+" अपलोड की अनुमति नहीं देता है।"
+
+#, fuzzy
+msgid ""
+"El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo."
+msgstr ""
+"यह लिंक अमान्य है, पहले ही उपयोग किया जा चुका है, या समाप्त हो चुका है। नये "
+"का अनुरोध करें."
+
+#, fuzzy
+msgid ""
+"Esta entrega rechazada pertenece a una versión anterior del prototipo; el "
+"archivo asociado quedó en almacenamiento privado. Las nuevas cargas "
+"rechazadas ya no se conservan."
+msgstr ""
+"यह अस्वीकृत सबमिशन पुराने प्रोटोटाइप संस्करण से है; इसकी फ़ाइल निजी भंडारण "
+"में रही। नए अस्वीकृत अपलोड अब बरकरार नहीं रखे जाएंगे।"
+
+#, fuzzy
+msgid ""
+"Esta publicación sustituirá el conjunto completo anterior. Revise los "
+"períodos y la cobertura; no se sumarán ambas entregas."
+msgstr ""
+"यह प्रकाशन संपूर्ण पिछले डेटासेट का स्थान ले लेगा. समीक्षा अवधि और कवरेज; "
+"दोनों रिलीज़ों को एक साथ नहीं जोड़ा जाएगा."
+
+#, fuzzy
+msgid "Filas incorporadas"
+msgstr "पंक्तियाँ स्वीकार की गईं"
+
+#, fuzzy
+msgid "Filas no incorporadas"
+msgstr "पंक्तियाँ अस्वीकृत"
+
+#, fuzzy
+msgid "Filas recibidas"
+msgstr "पंक्तियाँ प्राप्त हुईं"
+
+#, fuzzy
+msgid "Historial del corte"
+msgstr "रिलीज़ इतिहास"
+
+#, fuzzy
+msgid "Informe técnico"
+msgstr "तकनीकी रिपोर्ट"
+
+#, fuzzy
+msgid "Integridad SHA-256"
+msgstr "SHA-256 अखंडता"
+
+#, fuzzy
+msgid ""
+"La revocación retirará inmediatamente el corte del inicio, las consultas y "
+"las nuevas exportaciones. Los archivos ya descargados no pueden retirarse."
+msgstr ""
+"निकासी तुरंत होम पेज से रिलीज़, क्वेरीज़ और नए निर्यात को हटा देती है। पहले "
+"से डाउनलोड की गई फ़ाइलें वापस नहीं ली जा सकतीं."
+
+#, fuzzy
+msgid "Los campos con"
+msgstr "फ़ील्ड्स के साथ चिह्नित"
+
+#, fuzzy
+msgid "No determinado"
+msgstr "अनिर्धारित"
+
+#, fuzzy
+msgid "No hay archivo fuente conservado para esta entrega."
+msgstr "इस रिलीज़ के लिए कोई स्रोत फ़ाइल बरकरार नहीं रखी गई थी।"
+
+#, fuzzy
+msgid "No validado como sintético"
+msgstr "सिंथेटिक के रूप में मान्य नहीं"
+
+#, fuzzy
+msgid "Períodos"
+msgstr "काल"
+
+#, fuzzy
+msgid "Publicar corte"
+msgstr "विज्ञप्ति प्रकाशित करें"
+
+#, fuzzy
+msgid "Recepción"
+msgstr "प्राप्त हुआ"
+
+#, fuzzy
+msgid "Reenviar enlace para establecer contraseña"
+msgstr "पासवर्ड सेटअप लिंक पुनः भेजें"
+
+#, fuzzy
+msgid "Revocar corte"
+msgstr "रिहाई वापस लें"
+
+#, fuzzy
+msgid "Revocar publicación"
+msgstr "प्रकाशन वापस लें"
+
+#, fuzzy
+msgid ""
+"Se comprobaron estructura, categorías, claves de tumor únicas, consistencia "
+"de personas y denominadores, y cobertura de edad y sexo. La validación es "
+"atómica: si falla una fila, la entrega no se incorpora parcialmente."
+msgstr ""
+"संरचना, श्रेणियां, अद्वितीय ट्यूमर कुंजी, लोगों और विभाजक की स्थिरता, और "
+"उम्र और लिंग कवरेज की जांच की गई। सत्यापन परमाणु है: यदि कोई पंक्ति विफल हो "
+"जाती है, तो कोई भी रिलीज़ अंतर्ग्रहण नहीं होती है।"
+
+#, fuzzy
+msgid ""
+"Si existe una cuenta activa con ese correo, recibirá un enlace para "
+"establecer su contraseña. Revise también la carpeta de correo no deseado."
+msgstr ""
+"यदि इस ईमेल पते के लिए कोई सक्रिय खाता मौजूद है, तो एक पासवर्ड सेटअप लिंक "
+"भेजा जाएगा। अपना स्पैम फ़ोल्डर भी जांचें."
+
+#, fuzzy
+msgid "Solicitud recibida"
+msgstr "अनुरोध प्राप्त हुआ"
+
+#, fuzzy
+msgid "Soporte:"
+msgstr "समर्थन:"
+
+#, fuzzy
+msgid "Su contraseña se guardó correctamente."
+msgstr "आपका पासवर्ड सफलतापूर्वक सहेजा गया."
+
+#, fuzzy
+msgid "Territorios"
+msgstr "प्रदेश"
+
+#, fuzzy
+msgid "Tumores aceptados"
+msgstr "स्वीकृत ट्यूमर"
+
+#, fuzzy
+msgid "Ya puede iniciar sesión con su nueva contraseña."
+msgstr "अब आप अपने नए पासवर्ड से साइन इन कर सकते हैं।"
+
+#, fuzzy
+msgid "son obligatorios."
+msgstr "आवश्यक हैं."
+
+#, fuzzy
+msgid "← Volver a administración"
+msgstr "← प्रशासन पर वापस"
+
+#, fuzzy
+msgid "Acción"
+msgstr "कार्रवाई"
+
+#, fuzzy
+msgid "Actividad reciente"
+msgstr "हाल की गतिविधि"
+
+#, fuzzy
+msgid ""
+"Contrato sintético de demostración · hasta 12 MB y 60 000 filas. Cada "
+"entrega representa un conjunto completo, no un incremento. El ejemplo "
+"descargable añade un tumor sintético al corte activo para recorrer la "
+"actualización completa."
+msgstr ""
+"सिंथेटिक प्रदर्शन डेटा अनुबंध · 12 एमबी और 60,000 पंक्तियों तक। प्रत्येक "
+"डिलीवरी एक संपूर्ण डेटासेट का प्रतिनिधित्व करती है, वेतन वृद्धि का नहीं। "
+"डाउनलोड करने योग्य उदाहरण पूर्ण अद्यतन प्रदर्शित करने के लिए सक्रिय रिलीज़ "
+"में एक सिंथेटिक ट्यूमर जोड़ता है।"
+
+#, fuzzy
+msgid "Descargar CSV de actualización"
+msgstr "अद्यतन सीएसवी डाउनलोड करें"
+
+#, fuzzy
+msgid "Entregas registradas"
+msgstr "रिकॉर्डेड डिलीवरी"
+
+#, fuzzy
+msgid "Entregas y cortes"
+msgstr "डिलिवरी और रिलीज"
+
+#, fuzzy
+msgid "Gestión de información"
+msgstr "सूचना प्रबंधन"
+
+#, fuzzy
+msgid "Incorporar archivo"
+msgstr "फ़ाइल जोड़ें"
+
+#, fuzzy
+msgid ""
+"Incorpore entregas, revise sus resultados técnicos y gestione la "
+"publicación."
+msgstr ""
+"डिलीवरी जोड़ें, उनके तकनीकी परिणामों की समीक्षा करें और प्रकाशन प्रबंधित "
+"करें।"
+
+#, fuzzy
+msgid "No hay entregas registradas."
+msgstr "कोई डिलीवरी रिकॉर्ड नहीं की गई है."
+
+#, fuzzy
+msgid "Publicación activa"
+msgstr "सक्रिय प्रकाशन"
+
+#, fuzzy
+msgid "Recibido"
+msgstr "प्राप्त हुआ"
+
+#, fuzzy
+msgid "Revisar corte →"
+msgstr "समीक्षा रिलीज़ →"
+
+#, fuzzy
+msgid "Sin corte publicado"
+msgstr "कोई विज्ञप्ति प्रकाशित नहीं"
+
+#, fuzzy
+msgid "Subir y validar CSV"
+msgstr "सीएसवी अपलोड करें और सत्यापित करें"
+
+#, fuzzy
+msgid "El Registro Nacional de Cáncer"
+msgstr "राष्ट्रीय कैंसर रजिस्ट्री"
+
+#, fuzzy
+msgid "Alcance nacional"
+msgstr "राष्ट्रीय कवरेज"
+
+#, fuzzy
+msgid "Atención"
+msgstr "संपर्क जानकारी"
+
+#, fuzzy
+msgid "Cómo trabajamos"
+msgstr "हम कैसे काम करते हैं"
+
+#, fuzzy
+msgid "Dónde trabajamos"
+msgstr "हम कहाँ काम करते हैं"
+
+#, fuzzy
+msgid "Contactos"
+msgstr "संपर्क"
+
+#, fuzzy
+msgid "Guía de interpretación"
+msgstr "व्याख्या मार्गदर्शिका"
+
+#, fuzzy
+msgid "Frecuencia relativa"
+msgstr "सापेक्ष आवृत्ति"
+
+#, fuzzy
+msgid "Fuentes y límites"
+msgstr "स्रोत और सीमाएँ"
+
+#, fuzzy
+msgid "Fuentes, versiones y límites de comparación"
+msgstr "स्रोत, संस्करण और तुलनीयता सीमाएँ"
+
+#, fuzzy
+msgid "Métodos y cálculos"
+msgstr "तरीके और गणना"
+
+#, fuzzy
+msgid "Métodos y cálculos estadísticos"
+msgstr "सांख्यिकीय तरीके और गणना"
+
+#, fuzzy
+msgid "Objetivos"
+msgstr "उद्देश्य"
+
+#, fuzzy
+msgid "Oficina central"
+msgstr "केंद्रीय कार्यालय"
+
+#, fuzzy
+msgid "Organización"
+msgstr "संगठन"
+
+#, fuzzy
+msgid "Participación de sus profesionales"
+msgstr "इसके पेशेवरों की भागीदारी"
+
+#, fuzzy
+msgid "Provincia"
+msgstr "प्रांत"
+
+#, fuzzy
+msgid "Referentes metodológicos consultados"
+msgstr "पद्धति संबंधी संदर्भों से परामर्श लिया गया"
+
+#, fuzzy
+msgid "Registros provinciales"
+msgstr "प्रांतीय रजिस्ट्रियां"
+
+#, fuzzy
+msgid "Responsable publicado"
+msgstr "सूचीबद्ध संपर्क"
+
+#, fuzzy
+msgid "Trabajo territorial"
+msgstr "प्रादेशिक कार्य"
+
+#, fuzzy
+msgid "Transparencia estadística"
+msgstr "सांख्यिकीय पारदर्शिता"
+
+#, fuzzy
+msgid "Directorio provincial histórico del sitio institucional (2015)"
+msgstr "संस्थागत वेबसाइट से ऐतिहासिक प्रांतीय निर्देशिका (2015)"
+
+#, fuzzy
+msgid "Composición publicada en la copia histórica"
+msgstr "ऐतिहासिक प्रति में सूचीबद्ध रचना"
+
+#, fuzzy
+msgid "Objetivo principal:"
+msgstr "मुख्य उद्देश्य:"
+
+#, fuzzy
+msgid "Detección y notificación:"
+msgstr "मामले का पता लगाना और रिपोर्टिंग:"
+
+#, fuzzy
+msgid "Registro en la unidad informante:"
+msgstr "रिपोर्टिंग इकाई में पंजीकरण:"
+
+#, fuzzy
+msgid "Revisión provincial:"
+msgstr "प्रांतीय समीक्षा:"
+
+#, fuzzy
+msgid "Cierre y remisión:"
+msgstr "सांख्यिकीय समापन और सबमिशन:"
+
+#, fuzzy
+msgid "Validación central:"
+msgstr "केंद्रीय सत्यापन:"
+
+#, fuzzy
+msgid "Consolidación y estadísticas:"
+msgstr "समेकन और आँकड़े:"
+
+#, fuzzy
+msgid "Correo publicado"
+msgstr "सूचीबद्ध ईमेल"
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias y tasas de incidencia específicas por edad y sexo para "
+"cada localización topográfica y morfológica, además de tasas ajustadas para "
+"Cuba y cada provincia."
+msgstr ""
+"प्रत्येक स्थलाकृतिक और रूपात्मक साइट के लिए आयु और लिंग-विशिष्ट घटना "
+"आवृत्तियों और दरों की रिपोर्ट करें, साथ ही क्यूबा और प्रत्येक प्रांत के लिए "
+"समायोजित दरें भी।"
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias absolutas y relativas por localización según la etapa "
+"clínica al diagnóstico, la provincia y la unidad informante, la base más "
+"válida para el diagnóstico y otras variables de interés."
+msgstr ""
+"साइट, निदान के नैदानिक चरण, प्रांत, रिपोर्टिंग इकाई, निदान के लिए सबसे वैध "
+"आधार और अन्य प्रासंगिक चर के आधार पर पूर्ण और सापेक्ष आवृत्तियों की रिपोर्ट "
+"करें।"
+
+#, fuzzy
+msgid ""
+"Calcular indicadores de calidad de los datos por provincia y localización."
+msgstr "प्रांत और साइट के अनुसार डेटा गुणवत्ता संकेतकों की गणना करें।"
+
+#, fuzzy
+msgid "Estimar las cifras de supervivencia poblacional por cáncer."
+msgstr "जनसंख्या-आधारित कैंसर उत्तरजीविता का अनुमान लगाएं।"
+
+#, fuzzy
+msgid ""
+"Para ello, la información institucional de referencia atribuye al RNC estos "
+"objetivos específicos:"
+msgstr "संस्थागत संदर्भ जानकारी RNC को ये विशिष्ट उद्देश्य प्रदान करती है:"
+
+#, fuzzy
+msgid "Aplica la misma razón dentro de cada grupo etario:"
+msgstr "प्रत्येक आयु वर्ग में समान अनुपात लागू होता है:"
+
+#, fuzzy
+msgid ""
+"Relaciona los casos nuevos observados con la población correspondiente al "
+"mismo período y territorio:"
+msgstr ""
+"देखे गए नए मामलों को उसी अवधि और क्षेत्र की जनसंख्या से संबंधित करता है:"
+
+#, fuzzy
+msgid ""
+"Resume tasas específicas aplicando los pesos de una población estándar:"
+msgstr ""
+"मानक जनसंख्या के भार का उपयोग करके आयु-विशिष्ट दरों का सारांश प्रस्तुत करता "
+"है:"
+
+#, fuzzy
+msgid "Expresa qué parte de un total corresponde a una categoría:"
+msgstr "दिखाता है कि कुल का कौन सा अंश किसी श्रेणी से संबंधित है:"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer de Cuba (RNC) es de base poblacional y "
+"alcance nacional, y forma parte del sistema de información estadística del "
+"Ministerio de Salud Pública. La copia archivada del sitio institucional "
+"indica que fue creado en 1964, que perteneció al Instituto Nacional de "
+"Oncología y Radiobiología (INOR) hasta diciembre de 2007 y que, desde enero "
+"de 2008, se subordinaba metodológica y funcionalmente a la Sección "
+"Independiente de Control de Cáncer junto con el Programa Integral de Control"
+" de Cáncer en Cuba."
+msgstr ""
+"क्यूबा की राष्ट्रीय कैंसर रजिस्ट्री (RNC) जनसंख्या आधारित है, पूरे देश को "
+"कवर करती है, और सार्वजनिक स्वास्थ्य मंत्रालय की सांख्यिकीय सूचना प्रणाली का "
+"हिस्सा है। संस्थागत वेबसाइट की एक संग्रहीत प्रति बताती है कि यह 1964 में "
+"बनाई गई थी, दिसंबर 2007 तक नेशनल इंस्टीट्यूट ऑफ ऑन्कोलॉजी एंड रेडियोबायोलॉजी"
+" (आईएनओआर) से संबंधित थी, और जनवरी 2008 से क्यूबा में व्यापक कैंसर नियंत्रण "
+"कार्यक्रम के साथ-साथ स्वतंत्र कैंसर नियंत्रण अनुभाग के लिए पद्धतिगत और "
+"कार्यात्मक रूप से अधीनस्थ थी।"
+
+#, fuzzy
+msgid ""
+"El RNC es un registro de base poblacional con cobertura de residentes "
+"permanentes de Cuba. Su red se organiza en tres niveles: la Oficina Central,"
+" los equipos o registros provinciales y las unidades informantes que "
+"detectan y notifican los casos."
+msgstr ""
+"RNC क्यूबा के स्थायी निवासियों को कवर करने वाली एक जनसंख्या-आधारित रजिस्ट्री"
+" है। इसके नेटवर्क में तीन स्तर हैं: केंद्रीय कार्यालय, प्रांतीय टीमें या "
+"रजिस्ट्रियां, और रिपोर्टिंग इकाइयां जो मामलों की पहचान करती हैं और रिपोर्ट "
+"करती हैं।"
+
+#, fuzzy
+msgid ""
+"La cobertura documentada comprende las 15 provincias y el municipio especial"
+" Isla de la Juventud. En los territorios, los departamentos de salud "
+"coordinan las unidades informantes; estas incluyen centros hospitalarios y "
+"otras fuentes asistenciales previstas por los procedimientos del Registro."
+msgstr ""
+"प्रलेखित कवरेज में सभी 15 प्रांत और इस्ला डे ला जुवेंटुड की विशेष नगर पालिका"
+" शामिल है। प्रत्येक क्षेत्र में, स्वास्थ्य विभाग रिपोर्टिंग इकाइयों का "
+"समन्वय करते हैं, जिनमें अस्पताल और रजिस्ट्री प्रक्रियाओं द्वारा निर्दिष्ट "
+"अन्य देखभाल स्रोत शामिल हैं।"
+
+#, fuzzy
+msgid ""
+"La red territorial permite reunir información de distintos puntos de "
+"atención y consolidarla con alcance nacional. La copia del sitio "
+"institucional organiza esa red con una comisión o registro de cáncer en cada"
+" provincia y un directorio territorial de responsables."
+msgstr ""
+"प्रादेशिक नेटवर्क विभिन्न देखभाल सेटिंग्स से जानकारी एकत्र करता है और इसे "
+"राष्ट्रीय स्तर पर समेकित करता है। संस्थागत वेबसाइट संग्रह प्रत्येक प्रांत "
+"में एक कैंसर आयोग या रजिस्ट्री और क्षेत्रीय संपर्कों की एक निर्देशिका का "
+"वर्णन करता है।"
+
+#, fuzzy
+msgid ""
+"El directorio que se reproduce en esta página procede de una copia histórica"
+" del sitio: la información de Oficina Central fue publicada en 2013 y el "
+"directorio provincial en 2015. Se muestra como referencia histórica; sus "
+"nombres y canales no están confirmados como vigentes."
+msgstr ""
+"यहां पुनरुत्पादित निर्देशिका एक ऐतिहासिक वेबसाइट प्रति से आती है: केंद्रीय "
+"कार्यालय की जानकारी 2013 में प्रकाशित हुई थी और प्रांतीय निर्देशिका 2015 में"
+" प्रकाशित हुई थी। इसे ऐतिहासिक संदर्भ के लिए दिखाया गया है; इसके नाम और "
+"संपर्क चैनलों की वर्तमान पुष्टि नहीं की गई है।"
+
+#, fuzzy
+msgid ""
+"La copia histórica describe una Oficina Central y comisiones provinciales "
+"que asesoran a las autoridades de salud y apoyan la aplicación de los "
+"procedimientos. El Manual de Procedimientos del RNC, versión VII (2024), "
+"detalla el recorrido operativo de la información:"
+msgstr ""
+"ऐतिहासिक प्रति एक केंद्रीय कार्यालय और प्रांतीय समितियों का वर्णन करती है जो"
+" स्वास्थ्य अधिकारियों को सलाह देते हैं और प्रक्रियाओं का समर्थन करते हैं। "
+"RNC प्रक्रिया मैनुअल, संस्करण VII (2024), सूचना वर्कफ़्लो का विवरण देता है:"
+
+#, fuzzy
+msgid ""
+"Este flujo corresponde al trabajo del Registro. El portal público es una "
+"herramienta de consulta de resultados agregados y no recibe reportes de "
+"casos ni sustituye los sistemas internos del RNC."
+msgstr ""
+"यह वर्कफ़्लो रजिस्ट्री संचालन का वर्णन करता है। सार्वजनिक पोर्टल समग्र "
+"परिणामों तक पहुंच प्रदान करता है; यह केस रिपोर्ट प्राप्त नहीं करता है या RNC"
+" आंतरिक सिस्टम को प्रतिस्थापित नहीं करता है।"
+
+#, fuzzy
+msgid ""
+"La Oficina Central dirige técnicamente el sistema nacional, controla los "
+"procedimientos y la calidad de la información, ofrece asesoría metodológica "
+"y produce estadísticas. Recibe los cierres territoriales y coordina su "
+"validación y consolidación."
+msgstr ""
+"केंद्रीय कार्यालय राष्ट्रीय प्रणाली के लिए तकनीकी दिशा प्रदान करता है, "
+"प्रक्रियाओं और सूचना की गुणवत्ता की देखरेख करता है, पद्धति संबंधी सलाह "
+"प्रदान करता है और आंकड़े तैयार करता है। यह क्षेत्रीय प्रस्तुतियाँ प्राप्त "
+"करता है और उनके सत्यापन और समेकन का समन्वय करता है।"
+
+#, fuzzy
+msgid ""
+"El Manual RNC VII describe tareas centrales como comprobar la consistencia y"
+" completitud de los datos, revisar codificaciones, investigar duplicados y "
+"múltiples primarios, cotejar casos con información de mortalidad, pedir "
+"aclaraciones a los territorios e incorporar a la base consolidada solo los "
+"casos validados."
+msgstr ""
+"RNC VII मैनुअल केंद्रीय कार्यों का वर्णन करता है जैसे डेटा स्थिरता और "
+"पूर्णता की जांच करना, कोड की समीक्षा करना, डुप्लिकेट और एकाधिक प्राइमरी की "
+"जांच करना, मृत्यु दर जानकारी के खिलाफ मामलों का मिलान करना, क्षेत्रों से "
+"स्पष्टीकरण का अनुरोध करना और समेकित डेटाबेस में केवल मान्य मामलों को जोड़ना।"
+
+#, fuzzy
+msgid ""
+"El Manual también describe funciones de control de calidad, análisis de "
+"datos, informatización, procesamiento y edición, además de una Comisión "
+"Técnica Asesora para cambios a los procedimientos administrativos y "
+"técnicos."
+msgstr ""
+"मैनुअल गुणवत्ता नियंत्रण, डेटा विश्लेषण, कम्प्यूटरीकरण, प्रसंस्करण और संपादन"
+" के साथ-साथ प्रशासनिक और तकनीकी प्रक्रियाओं में बदलाव के लिए एक तकनीकी "
+"सलाहकार आयोग का भी वर्णन करता है।"
+
+#, fuzzy
+msgid ""
+"La composición y los datos de contacto actuales deben confirmarse con el "
+"RNC."
+msgstr "वर्तमान संरचना और संपर्क जानकारी की पुष्टि RNC से की जानी चाहिए।"
+
+#, fuzzy
+msgid ""
+"Los equipos provinciales conectan las unidades informantes con la Oficina "
+"Central. Revisan reportes y bases, verifican datos y códigos, gestionan "
+"reparos con las unidades y preparan los cierres que se remiten al nivel "
+"nacional. La versión histórica del sitio describe también comisiones "
+"provinciales que asesoran a las autoridades de salud, controlan la "
+"aplicación de los procedimientos y emiten estadísticas preliminares."
+msgstr ""
+"प्रांतीय टीमें रिपोर्टिंग इकाइयों को केंद्रीय कार्यालय से जोड़ती हैं। वे "
+"रिपोर्ट और डेटाबेस की समीक्षा करते हैं, डेटा और कोड की जांच करते हैं, "
+"इकाइयों के साथ प्रश्नों का समाधान करते हैं और राष्ट्रीय स्तर के लिए सबमिशन "
+"तैयार करते हैं। ऐतिहासिक वेबसाइट उन प्रांतीय समितियों का भी वर्णन करती है जो"
+" स्वास्थ्य अधिकारियों को सलाह देती हैं, प्रक्रियाओं की निगरानी करती हैं और "
+"प्रारंभिक आंकड़े जारी करती हैं।"
+
+#, fuzzy
+msgid ""
+"A continuación se transcribe el directorio de responsables y correos de la "
+"copia histórica del sitio, publicada en 2015. Se conserva como referencia "
+"documental, no como lista confirmada de contactos activos:"
+msgstr ""
+"निम्नलिखित संपर्क और ईमेल पते 2015 में प्रकाशित ऐतिहासिक वेबसाइट कॉपी से "
+"प्रतिलेखित हैं। उन्हें सक्रिय संपर्कों की पुष्टि की गई सूची के रूप में नहीं,"
+" बल्कि दस्तावेजी संदर्भ के रूप में रखा गया है:"
+
+#, fuzzy
+msgid ""
+"No se garantiza la entrega de mensajes a estos correos. El directorio, los "
+"cargos y las direcciones necesitan confirmación antes de usarse para "
+"gestiones actuales."
+msgstr ""
+"इन ईमेल पतों पर डिलीवरी की गारंटी नहीं है। वर्तमान मामलों के लिए उपयोग किए "
+"जाने से पहले निर्देशिका, भूमिकाओं और पतों की पुष्टि की आवश्यकता होती है।"
+
+#, fuzzy
+msgid ""
+"La página de contacto de la copia histórica publicaba los siguientes datos "
+"de la Oficina Central:"
+msgstr ""
+"संपर्क पृष्ठ की ऐतिहासिक प्रति में निम्नलिखित केंद्रीय कार्यालय की जानकारी "
+"सूचीबद्ध है:"
+
+#, fuzzy
+msgid ""
+"Esta versión del portal no recibe reportes clínicos ni solicitudes de "
+"modificación de registros. Para proteger la confidencialidad, no envíes "
+"datos de pacientes mediante canales de consulta pública."
+msgstr ""
+"पोर्टल का यह संस्करण क्लिनिकल रिपोर्ट या रजिस्ट्री रिकॉर्ड को संशोधित करने "
+"के अनुरोध को स्वीकार नहीं करता है। गोपनीयता की रक्षा के लिए, सार्वजनिक "
+"पूछताछ चैनलों के माध्यम से रोगी डेटा न भेजें।"
+
+#, fuzzy
+msgid ""
+"Los datos de ubicación, teléfono, correo y responsables se transcribieron de"
+" las páginas institucionales archivadas de Contacto y Dónde estamos, "
+"publicadas en 2013. Confirma su vigencia con el RNC antes de utilizarlos."
+msgstr ""
+"स्थान, टेलीफोन, ईमेल और संपर्क विवरण 2013 में प्रकाशित संग्रहीत संस्थागत "
+"संपर्क और स्थान पृष्ठों से प्रतिलेखित किए गए थे। उपयोग से पहले पुष्टि करें "
+"कि वे RNC के पास मौजूद हैं।"
+
+#, fuzzy
+msgid ""
+"Las fórmulas siguientes explican conceptos usados en epidemiología "
+"descriptiva y en referentes internacionales. Para que un resultado del "
+"portal sea oficial, el RNC debe confirmar el método, las agrupaciones, los "
+"denominadores y las reglas de presentación aplicables al corte."
+msgstr ""
+"नीचे दिए गए सूत्र वर्णनात्मक महामारी विज्ञान और अंतर्राष्ट्रीय संदर्भों में "
+"उपयोग की जाने वाली अवधारणाओं की व्याख्या करते हैं। किसी पोर्टल परिणाम के "
+"आधिकारिक होने के लिए, RNC को रिलीज़ पर लागू होने वाली विधि, समूह, भाजक और "
+"प्रस्तुति नियमों की पुष्टि करनी होगी।"
+
+#, fuzzy
+msgid ""
+"La versión local actual del portal está conectada a un agregado de "
+"demostración sintético. Esta interfaz no acredita cifras oficiales ni "
+"sustituye la aprobación de un corte público."
+msgstr ""
+"पोर्टल का वर्तमान स्थानीय संस्करण एक सिंथेटिक प्रदर्शन समुच्चय का उपयोग करता"
+" है। यह इंटरफ़ेस आधिकारिक आंकड़ों को प्रमाणित नहीं करता है या किसी सार्वजनिक"
+" रिलीज़ के अनुमोदन को प्रतिस्थापित नहीं करता है।"
+
+#, fuzzy
+msgid ""
+"Las descripciones de organización se basan en páginas de la copia "
+"institucional consultadas entre 2013 y 2015 y requieren validación de "
+"vigencia. Los métodos se presentan con fines explicativos y las decisiones "
+"pendientes se identifican expresamente."
+msgstr ""
+"संगठनात्मक विवरण 2013 और 2015 के बीच परामर्श की गई संस्थागत वेबसाइट प्रतियों"
+" पर आधारित हैं और पुष्टि की आवश्यकता है कि वे वर्तमान बने रहें। स्पष्टीकरण "
+"के लिए तरीके प्रस्तुत किए जाते हैं, और लंबित निर्णयों की स्पष्ट रूप से पहचान"
+" की जाती है।"
+
+#, fuzzy
+msgid "Coordinación nacional"
+msgstr "राष्ट्रीय समन्वय"
+
+#, fuzzy
+msgid ""
+"Este portal ofrece actualmente consultas estadísticas de incidencia. No "
+"presenta aquí resultados de supervivencia, etapas clínicas, bases "
+"diagnósticas ni indicadores de calidad del RNC."
+msgstr ""
+"यह पोर्टल वर्तमान में घटनाओं पर सांख्यिकीय प्रश्न प्रदान करता है। यह जीवित "
+"रहने, नैदानिक ​​चरणों, नैदानिक ​​आधारों या गुणवत्ता संकेतकों पर RNC परिणाम "
+"प्रस्तुत नहीं करता है।"
+
+#, fuzzy
+msgid ""
+"La información del RNC también contribuye a la investigación clínica y "
+"epidemiológica sobre el cáncer, a planificar y evaluar las acciones de "
+"control, y a planificar los recursos materiales y humanos para la atención "
+"oncológica."
+msgstr ""
+"RNC जानकारी नैदानिक और महामारी विज्ञान कैंसर अनुसंधान, नियंत्रण उपायों की "
+"योजना और मूल्यांकन, और कैंसर देखभाल के लिए आवश्यक सामग्री और मानव संसाधनों "
+"की योजना बनाने में भी योगदान देती है।"
+
+#, fuzzy
+msgid ""
+"La información institucional de referencia señala que profesionales del "
+"departamento forman parte de:"
+msgstr ""
+"संस्थागत संदर्भ जानकारी बताती है कि विभाग के पेशेवर इसमें भाग लेते हैं:"
+
+#, fuzzy
+msgid ""
+"La pertenencia y denominación actual de estos grupos y comisiones debe "
+"confirmarse con el RNC antes de presentarse como vigente."
+msgstr ""
+"इन समूहों और समितियों की वर्तमान सदस्यता और नामों को वर्तमान के रूप में "
+"प्रस्तुत करने से पहले RNC से पुष्टि की जानी चाहिए।"
+
+#, fuzzy
+msgid "Tasa ajustada directamente por edad"
+msgstr "प्रत्यक्ष आयु-समायोजित दर"
+
+#, fuzzy
+msgid "Tasa cruda de incidencia"
+msgstr "अपरिष्कृत घटना दर"
+
+#, fuzzy
+msgid "Tasa específica por edad"
+msgstr "आयु-विशिष्ट दर"
+
+#, fuzzy
+msgid "Tasa indirecta e intervalos de confianza"
+msgstr "अप्रत्यक्ष दर और आत्मविश्वास अंतराल"
+
+#, fuzzy
+msgid ""
+"El estándar es una población de ponderación, no el denominador de los casos."
+" Como referencia metodológica de trabajo se estudia la estándar mundial "
+"Segi–Doll de 18 grupos quinquenales; el RNC debe validar su correspondencia,"
+" fórmula operativa, grupos abiertos, datos faltantes y redondeo antes de "
+"atribuirle cifras oficiales. Las comparaciones solo son interpretables si "
+"usan el mismo estándar y definiciones compatibles."
+msgstr ""
+"मानक जनसंख्या भार प्रदान करती है; यह केस विभाजक नहीं है. 18 पांच-वर्षीय आयु "
+"समूहों के सेगी–डॉल विश्व मानक को एक पद्धतिगत संदर्भ के रूप में माना जा रहा "
+"है। किसी भी आंकड़े को आधिकारिक मानने से पहले RNC को अपने पत्राचार, परिचालन "
+"सूत्र, ओपन-एंडेड समूह, लापता डेटा और राउंडिंग को मान्य करना होगा। तुलना तभी "
+"व्याख्या योग्य होती है जब समान मानक और संगत परिभाषाओं का उपयोग किया जाता है।"
+
+#, fuzzy
+msgid ""
+"El total puede depender de la pregunta y de la unidad de análisis. El "
+"tratamiento de valores desconocidos, categorías excluidas y redondeo "
+"requiere una regla explícita; no se debe asumir que tumor y persona son "
+"unidades intercambiables."
+msgstr ""
+"कुल प्रश्न और विश्लेषण की इकाई पर निर्भर हो सकता है। अज्ञात मान, बहिष्कृत "
+"श्रेणियां और पूर्णांकन के लिए स्पष्ट नियमों की आवश्यकता होती है; ट्यूमर और "
+"लोगों को विनिमेय इकाइयों के रूप में नहीं माना जाना चाहिए।"
+
+#, fuzzy
+msgid ""
+"En la organización descrita por la copia histórica, cada comisión provincial"
+" asesora al Director Provincial de Salud sobre el control del cáncer y el "
+"funcionamiento del sistema de información. La integran perfiles de "
+"coordinación de cáncer, oncología, estadística, epidemiología, hospitales y "
+"especialistas o técnicos de los hospitales que diagnostican casos. Su "
+"función es exigir y controlar el cumplimiento de los procedimientos, cuidar "
+"la calidad y continuidad del dato primario, emitir estadísticas provinciales"
+" preliminares y promover investigaciones epidemiológicas y clínicas."
+msgstr ""
+"ऐतिहासिक प्रति द्वारा वर्णित संगठन में, प्रत्येक प्रांतीय समिति कैंसर "
+"नियंत्रण और सूचना प्रणाली के संचालन पर प्रांतीय स्वास्थ्य निदेशक को सलाह "
+"देती है। इसके सदस्य कैंसर समन्वय, ऑन्कोलॉजी, सांख्यिकी, महामारी विज्ञान, "
+"अस्पतालों और मामलों का निदान करने वाले अस्पतालों के विशेषज्ञों या तकनीशियनों"
+" का प्रतिनिधित्व करते हैं। इसके कार्यों में प्रक्रियाओं के अनुपालन की देखरेख"
+" करना, प्राथमिक डेटा की गुणवत्ता और निरंतरता बनाए रखना, प्रारंभिक प्रांतीय "
+"आंकड़े जारी करना और महामारी विज्ञान और नैदानिक ​​​​अनुसंधान को बढ़ावा देना "
+"शामिल है।"
+
+#, fuzzy
+msgid ""
+"La escala por 100 000 es una forma habitual de presentación. Numerador, "
+"período, territorio, sexo, grupo de edad y población deben coincidir. El "
+"proyecto identifica la población residente de ONEI como denominador de "
+"trabajo; la serie, edición y convención temporal exactas deben quedar "
+"identificadas con el RNC."
+msgstr ""
+"प्रति 100,000 दरें एक सामान्य प्रस्तुति पैमाना हैं। अंश, अवधि, क्षेत्र, "
+"लिंग, आयु समूह और जनसंख्या का मिलान होना चाहिए। परियोजना ONEI निवासी "
+"जनसंख्या को एक कार्यशील विभाजक के रूप में पहचानती है; सटीक श्रृंखला, संस्करण"
+" और समय परंपरा की पुष्टि RNC से की जानी चाहिए।"
+
+#, fuzzy
+msgid ""
+"La estandarización indirecta suele comparar los casos observados con los "
+"esperados según tasas de referencia por estrato. La elección de esas tasas "
+"de referencia y la forma de presentar el resultado requieren una definición "
+"institucional."
+msgstr ""
+"अप्रत्यक्ष मानकीकरण आमतौर पर प्रत्येक स्तर के लिए संदर्भ दरों के आधार पर "
+"देखे गए मामलों की अपेक्षित मामलों से तुलना करता है। उन संदर्भ दरों को चुनने "
+"और परिणाम प्रस्तुत करने का निर्णय लेने के लिए एक संस्थागत परिभाषा की "
+"आवश्यकता होती है।"
+
+#, fuzzy
+msgid ""
+"La página archivada “Oficina Central” identificaba un Jefe del Registro y "
+"tres grupos: Calidad de los Datos, Informatización y Procesamiento y "
+"Edición. La relación siguiente reproduce los nombres y correos que aparecían"
+" allí; no confirma que las personas ocupen hoy esos cargos ni que las "
+"direcciones sigan activas."
+msgstr ""
+"संग्रहीत \"केंद्रीय कार्यालय\" पृष्ठ ने एक रजिस्ट्री प्रमुख और तीन समूहों की"
+" पहचान की: डेटा गुणवत्ता, कम्प्यूटरीकरण, और प्रसंस्करण और संपादन। नीचे दी गई"
+" सूची वहां दिखाए गए नाम और ईमेल पते को पुन: प्रस्तुत करती है; यह पुष्टि नहीं"
+" करता है कि ये लोग वर्तमान में उन पदों पर हैं या पते अभी भी सक्रिय हैं।"
+
+#, fuzzy
+msgid ""
+"La página “Dónde estamos” de esa misma copia identifica al Instituto "
+"Nacional de Oncología y Radiobiología, en 29 y F, Vedado, CP 10400, y "
+"publica el teléfono +53 7 838 3970. Estos datos se incluyen como información"
+" histórica, no como canales confirmados en la actualidad."
+msgstr ""
+"उसी प्रति में \"हम कहाँ हैं\" पृष्ठ 29 और एफ, वेदाडो, सीपी 10400 पर नेशनल "
+"इंस्टीट्यूट ऑफ ऑन्कोलॉजी एंड रेडियोबायोलॉजी की पहचान करता है, और टेलीफोन +53"
+" 7 838 3970 सूचीबद्ध करता है। ये विवरण ऐतिहासिक जानकारी हैं, वर्तमान में "
+"पुष्टि किए गए संपर्क चैनल नहीं हैं।"
+
+#, fuzzy
+msgid ""
+"Los intervalos de confianza describen incertidumbre estadística y dependen "
+"del indicador, el volumen de casos y el método elegido. Su incorporación al "
+"portal es una propuesta de trabajo, no una regla aprobada por el RNC. El "
+"método de tasa indirecta y el de intervalos permanecen pendientes de "
+"validación."
+msgstr ""
+"कॉन्फिडेंस अंतराल सांख्यिकीय अनिश्चितता का वर्णन करता है और संकेतक, मामलों "
+"की संख्या और चयनित विधि पर निर्भर करता है। उन्हें पोर्टल में जोड़ना एक "
+"प्रस्ताव है, RNC द्वारा अनुमोदित नियम नहीं। अप्रत्यक्ष दर पद्धति और विश्वास "
+"अंतराल सत्यापन के लिए लंबित हैं।"
+
+#, fuzzy
+msgid ""
+"Los procedimientos describen frecuencias distintas para las tareas locales, "
+"la revisión territorial y los cierres al nivel central. El calendario "
+"concreto puede variar y debe consultarse en la edición vigente del Manual."
+msgstr ""
+"प्रक्रियाएं स्थानीय कार्यों, क्षेत्रीय समीक्षा और केंद्रीय स्तर पर "
+"प्रस्तुतियों के लिए अलग-अलग आवृत्तियों को निर्दिष्ट करती हैं। शेड्यूल भिन्न "
+"हो सकता है और इसे मैनुअल के वर्तमान संस्करण में जांचा जाना चाहिए।"
+
+#, fuzzy
+msgid ""
+"Los referentes consultados muestran por qué cada resultado debe documentar "
+"su procedencia y su versión. Cancer Today organiza visualizaciones junto a "
+"sus fuentes y métodos; ECIS diferencia datos observados de estimaciones; "
+"SEER acompaña sus tablas y gráficos con definiciones, notas y metodología. "
+"Estas prácticas inspiran la presentación, pero sus reglas no se trasladan "
+"automáticamente al RNC."
+msgstr ""
+"परामर्श किए गए संदर्भों से पता चलता है कि प्रत्येक परिणाम को अपने स्रोत और "
+"संस्करण का दस्तावेजीकरण क्यों करना चाहिए। कैंसर टुडे उनके स्रोतों और विधियों"
+" के साथ दृश्य प्रस्तुत करता है; ईसीआईएस प्रेक्षित डेटा को अनुमान से अलग करता"
+" है; SEER अपनी तालिकाओं और चार्टों के साथ परिभाषाएँ, नोट्स और विधियाँ प्रदान"
+" करता है। ये प्रथाएं प्रेजेंटेशन को सूचित करती हैं, लेकिन उनके नियम स्वचालित"
+" रूप से RNC पर लागू नहीं होते हैं।"
+
+#, fuzzy
+msgid "La adscripción organizativa debe actualizarse con el RNC: el"
+msgstr "संगठनात्मक संबद्धता की पुष्टि RNC से की जानी चाहिए:"
+
+#, fuzzy
+msgid "Comparabilidad:"
+msgstr "तुलनीयता:"
+
+#, fuzzy
+msgid "Denominador:"
+msgstr "भाजक:"
+
+#, fuzzy
+msgid "Divulgación:"
+msgstr "प्रकटीकरण:"
+
+#, fuzzy
+msgid "Método:"
+msgstr "विधि:"
+
+#, fuzzy
+msgid "Numerador:"
+msgstr "अंश:"
+
+#, fuzzy
+msgid ""
+"corte de casos identificado, con período, estado y fecha de publicación."
+msgstr ""
+"एक पहचाने गए मामले की रिहाई, जिसमें अवधि, स्थिति और प्रकाशन तिथि शामिल है।"
+
+#, fuzzy
+msgid ""
+"fuente y versión de la población, con cobertura territorial, edad y sexo."
+msgstr "क्षेत्रीय, आयु और लिंग कवरेज सहित जनसंख्या स्रोत और संस्करण।"
+
+#, fuzzy
+msgid "unidad de análisis, escala, estándar de edad y forma de cálculo."
+msgstr "विश्लेषण की इकाई, पैमाना, आयु मानक और गणना पद्धति।"
+
+#, fuzzy
+msgid ""
+"tasas calculadas con estándares, períodos, coberturas y definiciones "
+"compatibles."
+msgstr ""
+"संगत मानकों, अवधियों, कवरेज और परिभाषाओं का उपयोग करके दरों की गणना की जाती "
+"है।"
+
+#, fuzzy
+msgid ""
+"agregados autorizados y reglas para evitar identificación indirecta; el "
+"umbral o método de supresión para el portal requiere acuerdo institucional."
+msgstr ""
+"अप्रत्यक्ष पहचान को रोकने के लिए अधिकृत समुच्चय और नियम; पोर्टल दमन सीमा या "
+"विधि के लिए संस्थागत समझौते की आवश्यकता होती है।"
+
+#, fuzzy
+msgid "Correo publicado:"
+msgstr "सूचीबद्ध ईमेल:"
+
+#, fuzzy
+msgid "Teléfono publicado:"
+msgstr "सूचीबद्ध टेलीफोन:"
+
+#, fuzzy
+msgid "Grupo Nacional de Oncología."
+msgstr "राष्ट्रीय ऑन्कोलॉजी समूह।"
+
+#, fuzzy
+msgid "Grupo de Calidad de los Datos:"
+msgstr "डेटा गुणवत्ता समूह:"
+
+#, fuzzy
+msgid ""
+"Grupo de Epidemiología y Registros de Cáncer de Países de Lengua Latina."
+msgstr ""
+"महामारी विज्ञान और कैंसर रजिस्ट्रियों के लिए लैटिन भाषा देशों का समूह।"
+
+#, fuzzy
+msgid "Grupo de Informatización:"
+msgstr "कम्प्यूटरीकरण समूह:"
+
+#, fuzzy
+msgid "Grupo de Oncopediatría."
+msgstr "बाल चिकित्सा ऑन्कोलॉजी समूह।"
+
+#, fuzzy
+msgid "Grupo de Procesamiento y Edición:"
+msgstr "प्रसंस्करण और संपादन समूह:"
+
+#, fuzzy
+msgid "Jefatura del RNC:"
+msgstr "RNC प्रमुख:"
+
+#, fuzzy
+msgid "Comité de Ensayos Clínicos del INOR."
+msgstr "आईएनओआर क्लिनिकल परीक्षण समिति।"
+
+#, fuzzy
+msgid "Consejo Científico del INOR."
+msgstr "आईएनओआर वैज्ञानिक परिषद।"
+
+#, fuzzy
+msgid "Comisión Nacional del Programa de Cáncer Bucal."
+msgstr "राष्ट्रीय मुख कैंसर कार्यक्रम आयोग।"
+
+#, fuzzy
+msgid "Comisión de Expertos del Programa Ramal Cáncer."
+msgstr "कैंसर शाखा कार्यक्रम विशेषज्ञ आयोग।"
+
+#, fuzzy
+msgid ""
+"Red Iberoamericana de Epidemiología y Sistemas de Información en Cáncer."
+msgstr "कैंसर महामारी विज्ञान और सूचना प्रणाली के लिए इबेरो-अमेरिकन नेटवर्क।"
+
+#, fuzzy
+msgid "Comisión Europea · European Cancer Information System (ECIS)"
+msgstr "यूरोपीय आयोग · यूरोपीय कैंसर सूचना प्रणाली (ईसीआईएस)"
+
+#, fuzzy
+msgid "IARC/WHO · Global Cancer Observatory, Cancer Today"
+msgstr "आईएआरसी/डब्ल्यूएचओ · वैश्विक कैंसर वेधशाला, कैंसर टुडे"
+
+#, fuzzy
+msgid "NCI/SEER · SEER*Explorer"
+msgstr "एनसीआई/द्रष्टा · द्रष्टा*अन्वेषक"
+
+#, fuzzy
+msgid "NCI/SEER · definición y cálculo de tasas ajustadas por edad"
+msgstr "एनसीआई/एसईईआर · आयु-समायोजित दरों की परिभाषा और गणना"
+
+#, fuzzy
+msgid "Sistema de Información Estadística Complementaria de Salud (2017)"
+msgstr "पूरक स्वास्थ्य सांख्यिकीय सूचना प्रणाली (2017)"
+
+#, fuzzy
+msgid "El RNC · Registro Nacional de Cáncer de Cuba"
+msgstr "RNC · क्यूबा की राष्ट्रीय कैंसर रजिस्ट्री"
+
+#, fuzzy
+msgid "El subíndice"
+msgstr "सबस्क्रिप्ट"
+
+#, fuzzy
+msgid ""
+"la Oficina Central revisa integridad y consistencia, investiga posibles "
+"duplicados o tumores múltiples, contrasta la información con mortalidad y "
+"solicita aclaraciones cuando son necesarias."
+msgstr ""
+"केंद्रीय कार्यालय पूर्णता और स्थिरता की जांच करता है, संभावित डुप्लिकेट या "
+"एकाधिक ट्यूमर की जांच करता है, मृत्यु दर डेटा के साथ जानकारी की तुलना करता "
+"है, और जरूरत पड़ने पर स्पष्टीकरण का अनुरोध करता है।"
+
+#, fuzzy
+msgid ""
+"las provincias preparan los cierres estadísticos y remiten al nivel central "
+"los casos nuevos validados junto con la documentación requerida, según el "
+"calendario estadístico."
+msgstr ""
+"सांख्यिकीय कैलेंडर के अनुसार, प्रांत सांख्यिकीय प्रस्तुतियाँ तैयार करते हैं "
+"और आवश्यक दस्तावेज़ों के साथ मान्य नए मामले केंद्रीय स्तर पर भेजते हैं।"
+
+#, fuzzy
+msgid ""
+"los equipos territoriales cotejan reportes y bases de datos, verifican "
+"variables y códigos, solicitan correcciones y coordinan las unidades "
+"informantes."
+msgstr ""
+"क्षेत्रीय टीमें रिपोर्ट और डेटाबेस की तुलना करती हैं, चर और कोड की जांच करती"
+" हैं, सुधार का अनुरोध करती हैं और रिपोर्टिंग इकाइयों का समन्वय करती हैं।"
+
+#, fuzzy
+msgid ""
+"los médicos notifican los casos y los registradores buscan casos adicionales"
+" en fuentes como anatomía patológica, laboratorios, egresos hospitalarios, "
+"certificados de defunción e historias clínicas."
+msgstr ""
+"चिकित्सक मामलों की रिपोर्ट करते हैं, और रजिस्ट्रार पैथोलॉजी, प्रयोगशालाओं, "
+"अस्पताल से छुट्टी, मृत्यु प्रमाण पत्र और मेडिकल रिकॉर्ड जैसे स्रोतों में "
+"अतिरिक्त मामलों की पहचान करते हैं।"
+
+#, fuzzy
+msgid ""
+"se confeccionan y codifican los reportes, se revisan las fuentes y se "
+"introducen los casos en el sistema automatizado del Registro."
+msgstr ""
+"रिपोर्ट तैयार और कोडित की जाती हैं, स्रोतों की समीक्षा की जाती है, और मामलों"
+" को रजिस्ट्री स्वचालित प्रणाली में दर्ज किया जाता है।"
+
+#, fuzzy
+msgid ""
+"solo los casos validados se incorporan a la base consolidada; con ellos el "
+"RNC prepara y emite resultados estadísticos."
+msgstr ""
+"समेकित डेटाबेस में केवल मान्य मामले ही जोड़े जाते हैं; RNC उनसे सांख्यिकीय "
+"परिणाम तैयार करती है और जारी करती है।"
+
+#, fuzzy
+msgid "porcentaje = (casos de la categoría / total de referencia) × 100"
+msgstr "प्रतिशत = (श्रेणी मामले/संदर्भ कुल) × 100"
+
+#, fuzzy
+msgid ""
+"tasa ajustada = Σ (peso estándarᵢ × tasa específicaᵢ) / Σ (peso estándarᵢ)"
+msgstr "समायोजित दर = Σ (मानक वजनᵢ × आयु-विशिष्ट दरᵢ) / Σ (मानक वजनᵢ)"
+
+#, fuzzy
+msgid "tasa cruda = (casos nuevos / población correspondiente) × 100 000"
+msgstr "क्रूड दर = (नए मामले/संबंधित जनसंख्या) × 100,000"
+
+#, fuzzy
+msgid "tasa específicaᵢ = (casos nuevosᵢ / poblaciónᵢ) × 100 000"
+msgstr "आयु-विशिष्ट दरᵢ = (नए मामलेᵢ / जनसंख्याᵢ) × 100,000"
+
+#, fuzzy
+msgid "describir la magnitud del cáncer como problema de salud en Cuba."
+msgstr ""
+"क्यूबा में एक स्वास्थ्य समस्या के रूप में कैंसर की भयावहता का वर्णन करें।"
+
+#, fuzzy
+msgid ""
+"transcribe la Resolución 31/2008 como traslado de la Oficina Central a la "
+"Unidad Nacional para el Control del Cáncer, bajo su dirección y en "
+"coordinación con Estadísticas del MINSAP. Las denominaciones de las fuentes "
+"no coinciden literalmente."
+msgstr ""
+"संकल्प 31/2008 का वर्णन केंद्रीय कार्यालय को राष्ट्रीय कैंसर नियंत्रण इकाई "
+"में, उसके निर्देशन में और एमआईएनएसएपी सांख्यिकी के समन्वय में स्थानांतरित "
+"करने के रूप में किया गया है। स्रोत समान नामों का उपयोग नहीं करते हैं।"
+
+#, fuzzy
+msgid ""
+" representa un estrato de edad (y cualquier otra dimensión que se mantenga "
+"fija). Comparar estratos exige que la definición de grupo y el período sean "
+"consistentes."
+msgstr ""
+"  एक आयु स्तर (और स्थिर रखे गए किसी भी अन्य आयाम) का प्रतिनिधित्व करता है। "
+"स्तरों की तुलना के लिए सुसंगत समूह परिभाषाओं और अवधियों की आवश्यकता होती है।"
+
+#, fuzzy
+msgid " y "
+msgstr " और "
+
+#, fuzzy
+msgid "Agrupación"
+msgstr "समूहीकरण"
+
+#, fuzzy
+msgid ""
+"Al combinar años, la población denominadora acumula las poblaciones anuales "
+"seleccionadas."
+msgstr ""
+"जब वर्षों को संयोजित किया जाता है, तो हर जनसंख्या चयनित वार्षिक जनसंख्या का "
+"योग होती है।"
+
+#, fuzzy
+msgid "Consulta"
+msgstr "प्रश्न"
+
+#, fuzzy
+msgid "Contexto de la consulta"
+msgstr "प्रश्न संदर्भ"
+
+#, fuzzy
+msgid "Frecuencia relativa (%%) · %(unit)s"
+msgstr "सापेक्ष आवृत्ति (%%) · %(unit)s"
+
+#, fuzzy
+msgid "Fuente y corte"
+msgstr "स्रोत और विमोचन"
+
+#, fuzzy
+msgid "Gráfico"
+msgstr "चार्ट"
+
+#, fuzzy
+msgid "Indicador del gráfico"
+msgstr "चार्ट मीट्रिक"
+
+#, fuzzy
+msgid ""
+"Las tasas se calculan con la unidad elegida; los grupos de localización "
+"pueden solaparse en personas distintas. "
+msgstr ""
+"दरें चयनित इकाई का उपयोग करती हैं; साइट समूह अलग-अलग लोगों के लिए ओवरलैप हो "
+"सकते हैं. "
+
+#, fuzzy
+msgid ""
+"Métodos candidatos; denominadores sintéticos, no son resultados oficiales. "
+msgstr "उम्मीदवार के तरीके; हर सिंथेटिक हैं और आधिकारिक परिणाम नहीं हैं। "
+
+#, fuzzy
+msgid "No disponible en este corte"
+msgstr "इस रिलीज़ में उपलब्ध नहीं है"
+
+#, fuzzy
+msgid "Nota"
+msgstr "नोट"
+
+#, fuzzy
+msgid "Personas distintas (frecuencia absoluta)"
+msgstr "विशिष्ट लोग (पूर्ण आवृत्ति)"
+
+#, fuzzy
+msgid "Porcentaje (%)"
+msgstr "प्रतिशत (%)"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "प्रत्येक श्रेणी का प्रतिशत (%)"
+
+#, fuzzy
+msgid "Selección"
+msgstr "चयन"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000 · %(unit)s"
+msgstr "सेगी–डॉल आयु-समायोजित दर प्रति 100,000 · %(unit)s"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000 · %(unit)s"
+msgstr "क्रूड/आयु-विशिष्ट दर प्रति 100,000 · %(unit)s"
+
+#, fuzzy
+msgid "Todas las provincias"
+msgstr "सभी प्रांत"
+
+#, fuzzy
+msgid "Todos (%(first)s–%(last)s)"
+msgstr "सभी (%(first)s–%(last)s)"
+
+#, fuzzy
+msgid "Todos los municipios"
+msgstr "सभी नगर पालिकाएँ"
+
+#, fuzzy
+msgid "Tumores (frecuencia absoluta)"
+msgstr "ट्यूमर (पूर्ण आवृत्ति)"
+
+#, fuzzy
+msgid "rnc-synthetic-query"
+msgstr "RNC-सिंथेटिक-क्वेरी"
+
+#, fuzzy
+msgid "Datos sintéticos · %(period)s"
+msgstr "सिंथेटिक डेटा · %(period)s"
+
+#, fuzzy
+msgid "Datos sintéticos · %(title)s · Versión %(release)s"
+msgstr "सिंथेटिक डेटा · %(title)s · रिलीज़ %(release)s"
+
+#, fuzzy
+msgid "Distribución por sexo (%)"
+msgstr "लिंग द्वारा वितरण (%)"
+
+#, fuzzy
+msgid ""
+"El tamaño o rótulo del punto indica cuántas categorías coinciden en las "
+"mismas coordenadas."
+msgstr ""
+"बिंदु आकार या लेबल इंगित करता है कि समान निर्देशांक पर कितनी श्रेणियां "
+"ओवरलैप होती हैं।"
+
+#, fuzzy
+msgid "Frecuencias absolutas"
+msgstr "निरपेक्ष आवृत्तियाँ"
+
+#, fuzzy
+msgid "Localizaciones más frecuentes"
+msgstr "सर्वाधिक बारंबार आने वाली साइटें"
+
+#, fuzzy
+msgid "No hay cobertura de población completa para el ajuste seleccionado."
+msgstr "चयनित समायोजन के लिए पूर्ण जनसंख्या कवरेज नहीं है।"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "रचना के रूप में प्रदर्शित करने के लिए कोई सकारात्मक मूल्य नहीं हैं।"
+
+#, fuzzy
+msgid "RNC / Cuba · Detalle de consulta"
+msgstr "RNC/क्यूबा · क्वेरी विवरण"
+
+#, fuzzy
+msgid ""
+"Seleccione una dimensión con hasta ocho categorías para circular o anillo."
+msgstr "पाई या डोनट चार्ट के लिए आठ से अधिक श्रेणियों वाले आयाम का चयन करें।"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "ट्यूमर और विशिष्ट लोग"
+
+#, fuzzy
+msgid "Detalle %(page)s"
+msgstr "विवरण %(page)s"
+
+#, fuzzy
+msgid "Cuba (nacional)"
+msgstr "क्यूबा (राष्ट्रीय)"
+
+#, fuzzy
+msgid ""
+"Este gráfico necesita al menos dos categorías con datos en la dimensión "
+"elegida."
+msgstr ""
+"इस चार्ट को चयनित आयाम में डेटा के साथ कम से कम दो श्रेणियों की आवश्यकता है।"
+
+#, fuzzy
+msgid ""
+"La comparación por sexo requiere datos disponibles de mujeres y hombres."
+msgstr ""
+"लिंग तुलना के लिए महिलाओं और पुरुषों दोनों के डेटा की आवश्यकता होती है।"
+
+#, fuzzy
+msgid "Provincias disponibles; cobertura nacional incompleta"
+msgstr "उपलब्ध प्रांत; राष्ट्रीय कवरेज अधूरा है"
+
+#, fuzzy
+msgid "Administración RNC"
+msgstr "RNC प्रशासन"
+
+#, fuzzy
+msgid "Filtros de la consulta"
+msgstr "क्वेरी फ़िल्टर"
+
+#, fuzzy
+msgid "Navegación RNC"
+msgstr "RNC नेविगेशन"
+
+#, fuzzy
+msgid "Portal público"
+msgstr "सार्वजनिक पोर्टल"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "महिला"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "पुरुष"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "श्वासनली, ब्रोन्कस और फेफड़े"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "प्रोस्टेट"
+
+#, fuzzy
+msgid "Mama"
+msgstr "स्तन"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "बृहदान्त्र और मलाशय"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "पेट"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "गर्भाशय ग्रीवा"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "कॉर्पस गर्भाशय"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "थायराइड"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "अग्न्याशय"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "मूत्र मूत्राशय"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "गुर्दा"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "जिगर और पित्त नलिकाएं"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "अंडाशय"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "स्वरयंत्र और ग्रसनी"
+
+#, fuzzy
+msgid ""
+"Grupo ilustrativo sintético; no representa un código TOPO ni una "
+"equivalencia ICD-O: %(category)s."
+msgstr ""
+"निदर्शी सिंथेटिक समूह; यह कोई TOPO कोड या ICD-O समतुल्य नहीं है: "
+"%(category)s।"
+
+#, fuzzy
+msgid "Código de provincia documentado en el Manual RNC VII, Anexo 1."
+msgstr "प्रांत कोड RNC मैनुअल VII, अनुबंध 1 में प्रलेखित है।"
+
+#, fuzzy
+msgid "Ampliar barra lateral"
+msgstr "साइडबार का विस्तार करें"
+
+#, fuzzy
+msgid "La consulta local aún no está disponible en este dispositivo."
+msgstr "ऑफ़लाइन क्वेरी अभी तक इस डिवाइस पर उपलब्ध नहीं है."
+
+#, fuzzy
+msgid "Use letras de la A a la Z, números, punto, guion o guion bajo."
+msgstr "A से Z अक्षर, संख्याएँ, आवर्त, हाइफ़न या अंडरस्कोर का उपयोग करें।"
+
+#, fuzzy
+msgid "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."
+msgstr ""
+"अक्षर, रिक्त स्थान, एपोस्ट्रोफ़ी या हाइफ़न का उपयोग करें; उदाहरण के लिए, "
+"मारिया जोस।"
+
+#, fuzzy
+msgid "Use texto, números y puntuación habitual; sin etiquetas HTML."
+msgstr ""
+"पाठ, संख्याओं और सामान्य विराम चिह्नों का उपयोग करें; कोई HTML टैग नहीं."
+
+#, fuzzy
+msgid ""
+"Busque por nombre, usuario o correo; no se admiten símbolos de programación."
+msgstr ""
+"नाम, उपयोक्तानाम, या ईमेल द्वारा खोजें; प्रोग्रामिंग प्रतीकों की अनुमति नहीं"
+" है."
+
+#, fuzzy
+msgid "Incluya una descripción con letras o números."
+msgstr "अक्षरों या संख्याओं के साथ विवरण शामिल करें."
+
+#, fuzzy
+msgid "Complete este campo."
+msgstr "इस फ़ील्ड को पूरा करें."
+
+#, fuzzy
+msgid "Marque esta casilla para continuar."
+msgstr "जारी रखने के लिए इस बॉक्स को चुनें।"
+
+#, fuzzy
+msgid "No se pudo enviar el formulario"
+msgstr "फॉर्म जमा नहीं हो सका."
+
+#, fuzzy
+msgid ""
+"La sesión del formulario ha caducado o no se pudo verificar. Vuelva a abrir "
+"la página e inténtelo otra vez. No se guardó este envío."
+msgstr ""
+"आपका फ़ॉर्म सत्र समाप्त हो गया है या सत्यापित नहीं किया जा सका है. पृष्ठ "
+"पुनः खोलें और पुनः प्रयास करें. यह सबमिशन सहेजा नहीं गया था."
+
+#, fuzzy
+msgid ""
+"La dirección no existe o el recurso ya no está disponible. Puede continuar "
+"desde la navegación del portal."
+msgstr ""
+"यह पता मौजूद नहीं है या संसाधन अब उपलब्ध नहीं है. आप पोर्टल नेविगेशन का "
+"उपयोग जारी रख सकते हैं."
+
+#, fuzzy
+msgid "%(label)s, código %(number)s"
+msgstr "%(label)s, कोड %(number)s"
+
+#, fuzzy
+msgid "%(label)s: código repetido para el mismo sistema y edición."
+msgstr "%(label)s: समान सिस्टम और संस्करण के लिए डुप्लिकेट कोड।"
+
+#, fuzzy
+msgid "%(label)s: debe contener uno o más códigos."
+msgstr "%(label)s: एक या अधिक कोड होने चाहिए।"
+
+#, fuzzy
+msgid "%(label)s: eje no admitido."
+msgstr "%(label)s: असमर्थित अक्ष।"
+
+#, fuzzy
+msgid "%(label)s: estado de código no admitido."
+msgstr "%(label)s: असमर्थित कोड स्थिति।"
+
+#, fuzzy
+msgid "%(label)s: estado de publicación no admitido."
+msgstr "%(label)s: असमर्थित प्रकाशन स्थिति।"
+
+#, fuzzy
+msgid "%(label)s: estado de relación no admitido."
+msgstr "%(label)s: असमर्थित संबंध स्थिति।"
+
+#, fuzzy
+msgid "%(label)s: faltan campos requeridos."
+msgstr "%(label)s: आवश्यक फ़ील्ड अनुपलब्ध हैं।"
+
+#, fuzzy
+msgid "%(label)s: hay campos vacíos o con tipo inválido."
+msgstr "%(label)s: फ़ील्ड खाली हैं या उनका प्रकार अमान्य है।"
+
+#, fuzzy
+msgid "%(label)s: identificador de concepto duplicado."
+msgstr "%(label)s: डुप्लिकेट अवधारणा पहचानकर्ता।"
+
+#, fuzzy
+msgid "%(label)s: la fuente debe ser una URL HTTP o HTTPS."
+msgstr "%(label)s: स्रोत एक HTTP या HTTPS URL होना चाहिए।"
+
+#, fuzzy
+msgid "%(label)s: relación de concepto no admitida."
+msgstr "%(label)s: असमर्थित अवधारणा संबंध।"
+
+#, fuzzy
+msgid "Archivo validado y registrado. Revise el corte antes de publicarlo."
+msgstr ""
+"फ़ाइल सत्यापित और रिकॉर्ड की गई. रिलीज़ को प्रकाशित करने से पहले उसकी "
+"समीक्षा करें."
+
+#, fuzzy
+msgid "CSV no válido; revise codificación y estructura."
+msgstr "अमान्य सीएसवी; इसकी एन्कोडिंग और संरचना की जाँच करें।"
+
+#, fuzzy
+msgid "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+msgstr ""
+"प्रत्येक क्षेत्र और वर्ष में दोनों लिंगों और सभी 18 आयु समूहों को शामिल किया"
+" जाना चाहिए।"
+
+#, fuzzy
+msgid "Comportamiento"
+msgstr "व्यवहार"
+
+#, fuzzy
+msgid "Concepto %(number)s"
+msgstr "संकल्पना %(number)s"
+
+#, fuzzy
+msgid "Correspondencia exacta"
+msgstr "बिल्कुल मेल"
+
+#, fuzzy
+msgid "Código del concepto"
+msgstr "संकल्पना कोड"
+
+#, fuzzy
+msgid "Declarado por la fuente"
+msgstr "सूत्र द्वारा घोषित"
+
+#, fuzzy
+msgid "Ejecute seed_demo para generar el ejemplo local."
+msgstr "स्थानीय नमूना उत्पन्न करने के लिए बीज_डेमो चलाएँ।"
+
+#, fuzzy
+msgid "El archivo debe contener un arreglo 'concepts'."
+msgstr "फ़ाइल में एक 'अवधारणाएँ' सरणी होनी चाहिए।"
+
+#, fuzzy
+msgid "El archivo no contiene registros."
+msgstr "फ़ाइल में कोई रिकॉर्ड नहीं है."
+
+#, fuzzy
+msgid "El catálogo configurado no se puede leer como JSON UTF-8."
+msgstr ""
+"कॉन्फ़िगर किए गए कैटलॉग को UTF-8 JSON के रूप में नहीं पढ़ा जा सकता है।"
+
+#, fuzzy
+msgid "El catálogo declara validación RNC"
+msgstr "कैटलॉग RNC सत्यापन की घोषणा करता है"
+
+#, fuzzy
+msgid "El ejemplo ya alcanzó el límite de filas del entorno local."
+msgstr "स्थानीय नमूना इस परिवेश के लिए पंक्ति सीमा तक पहुंच गया है।"
+
+#, fuzzy
+msgid "El límite local es de 60 000 filas."
+msgstr "स्थानीय सीमा 60,000 पंक्तियाँ है।"
+
+#, fuzzy
+msgid "El service worker solo está habilitado en el perfil público."
+msgstr "सेवा कर्मी केवल सार्वजनिक प्रोफ़ाइल में उपलब्ध है।"
+
+#, fuzzy
+msgid "Esta entrega ya está registrada."
+msgstr "यह डिलीवरी पहले ही पंजीकृत हो चुकी है."
+
+#, fuzzy
+msgid "Esta entrega ya está registrada; no se incorporó otra copia."
+msgstr "यह डिलीवरी पहले ही पंजीकृत हो चुकी है; कोई डुप्लिकेट नहीं जोड़ा गया."
+
+#, fuzzy
+msgid "Estadio"
+msgstr "मंच"
+
+#, fuzzy
+msgid "Estado actualizado. El portal público ya refleja este cambio."
+msgstr "स्थिति अद्यतन की गई. सार्वजनिक साइट अब इस परिवर्तन को दर्शाती है।"
+
+#, fuzzy
+msgid "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+msgstr "असंगत संरचना. सिंथेटिक नमूना सीएसवी डाउनलोड करें।"
+
+#, fuzzy
+msgid "Fila %(number)s: categoría no admitida."
+msgstr "पंक्ति %(number)s: असमर्थित श्रेणी।"
+
+#, fuzzy
+msgid "Fila %(number)s: denominador inconsistente."
+msgstr "पंक्ति %(number)s: असंगत हर।"
+
+#, fuzzy
+msgid "Fila %(number)s: estructura o longitud incorrecta."
+msgstr "पंक्ति %(number)s: अमान्य संरचना या लंबाई।"
+
+#, fuzzy
+msgid "Fila %(number)s: formato de identificador sintético no admitido."
+msgstr "पंक्ति %(number)s: असमर्थित सिंथेटिक पहचानकर्ता प्रारूप।"
+
+#, fuzzy
+msgid "Fila %(number)s: identidad sintética inconsistente."
+msgstr "पंक्ति %(number)s: असंगत सिंथेटिक पहचान।"
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de catálogo desconocido."
+msgstr "पंक्ति %(number)s: अज्ञात कैटलॉग पहचानकर्ता।"
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de tumor repetido."
+msgstr "पंक्ति %(number)s: डुप्लिकेट ट्यूमर पहचानकर्ता।"
+
+#, fuzzy
+msgid "Fila %(number)s: persona incompatible con el estrato declarado."
+msgstr "पंक्ति %(number)s: व्यक्ति घोषित स्तर से मेल नहीं खाता।"
+
+#, fuzzy
+msgid "Fila %(number)s: período, población o peso incompatible."
+msgstr "पंक्ति %(number)s: असंगत अवधि, जनसंख्या, या वजन।"
+
+#, fuzzy
+msgid "Fila %(number)s: se requieren números enteros."
+msgstr "पंक्ति %(number)s: मान पूर्णांक होने चाहिए।"
+
+#, fuzzy
+msgid "Fila %(number)s: solo se admite el contrato sintético de demostración."
+msgstr "पंक्ति %(number)s: केवल सिंथेटिक डेमो अनुबंध स्वीकार किया जाता है।"
+
+#, fuzzy
+msgid "Formato no disponible"
+msgstr "प्रारूप उपलब्ध नहीं है"
+
+#, fuzzy
+msgid "Grado"
+msgstr "ग्रेड"
+
+#, fuzzy
+msgid "Grupo de clasificación"
+msgstr "वर्गीकरण समूह"
+
+#, fuzzy
+msgid "Identificador de publicación inválido."
+msgstr "अमान्य रिलीज़ पहचानकर्ता."
+
+#, fuzzy
+msgid "La acción ya no es válida para el estado actual."
+msgstr "यह क्रिया अब वर्तमान स्थिति के लिए मान्य नहीं है."
+
+#, fuzzy
+msgid "Mismo concepto"
+msgstr "वही अवधारणा"
+
+#, fuzzy
+msgid "Morfología"
+msgstr "आकृति विज्ञान"
+
+#, fuzzy
+msgid "Más amplio"
+msgstr "व्यापक"
+
+#, fuzzy
+msgid "Más específico"
+msgstr "संकरा"
+
+#, fuzzy
+msgid "No hay paquete offline disponible."
+msgstr "कोई ऑफ़लाइन पैकेज उपलब्ध नहीं है."
+
+#, fuzzy
+msgid "No se encontró el service worker."
+msgstr "सेवा कर्मी नहीं मिल सका."
+
+#, fuzzy
+msgid "No se pudo iniciar sesión. Espere unos minutos."
+msgstr "साइन-इन विफल. कृपया कुछ मिनट प्रतीक्षा करें."
+
+#, fuzzy
+msgid "Otro"
+msgstr "अन्य"
+
+#, fuzzy
+msgid "Relacionado"
+msgstr "संबंधित"
+
+#, fuzzy
+msgid "Se alcanzó el límite temporal de exportaciones. Espere un minuto."
+msgstr "अस्थायी निर्यात सीमा पूरी हो चुकी है. कृपया एक मिनट प्रतीक्षा करें."
+
+#, fuzzy
+msgid "Solo se puede liberar el conjunto sintético de demostración."
+msgstr "केवल सिंथेटिक डेमो डेटासेट ही प्रकाशित किया जा सकता है।"
+
+#, fuzzy
+msgid "Topografía"
+msgstr "स्थलाकृति"
+
+#, fuzzy
+msgid "Utilice un CSV de hasta 12 MB."
+msgstr "12 एमबी से बड़ी सीएसवी फ़ाइल का उपयोग न करें।"
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito mayor que cero."
+msgstr "%(label)s शून्य से बड़ी एक सीमित संख्या होनी चाहिए।"
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito no negativo."
+msgstr "%(label)s एक परिमित अऋणात्मक संख्या होनी चाहिए।"
+
+#, fuzzy
+msgid "Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos."
+msgstr "मामलों, आबादी और वज़न को समान गैर-रिक्त स्तर को कवर करना चाहिए।"
+
+#, fuzzy
+msgid "El conteo debe ser un entero no negativo."
+msgstr "गिनती एक गैरऋणात्मक पूर्णांक होनी चाहिए."
+
+#, fuzzy
+msgid "El nivel de confianza debe estar entre cero y uno."
+msgstr "आत्मविश्वास का स्तर शून्य से एक के बीच होना चाहिए।"
+
+#, fuzzy
+msgid "El numerador no puede exceder el universo declarado."
+msgstr "अंश-गणक बताए गए ब्रह्माण्ड से अधिक नहीं हो सकता।"
+
+#, fuzzy
+msgid "El universo debe ser mayor que cero."
+msgstr "ब्रह्माण्ड शून्य से भी बड़ा होना चाहिए।"
+
+#, fuzzy
+msgid "La suma de los pesos estándar debe ser mayor que cero."
+msgstr "मानक भार का योग शून्य से अधिक होना चाहिए।"
+
+#, fuzzy
+msgid "Valor numérico fuera de rango."
+msgstr "संख्यात्मक मान सीमा से बाहर है."
+
+#: public_site/portal.py:387
+#, fuzzy
+msgid "actualizacion_sintetica"
+msgstr "कृत्रिम_डेटा_अपडेट"
+
+#: public_site/validation.py:29 public_site/validation.py:58
+#, fuzzy
+msgid "Use al menos %(limit_value)s caracteres."
+msgstr "कम से कम %(limit_value)s अक्षर दर्ज करें।"
+
+#: public_site/validation.py:30 public_site/validation.py:62
+#, fuzzy
+msgid "Use como máximo %(limit_value)s caracteres."
+msgstr "%(limit_value)s से अधिक अक्षर न लिखें।"
+
+#: public_site/validation.py:88
+#, fuzzy
+msgid "Ingrese un correo electrónico válido."
+msgstr "मान्य ईमेल पता दर्ज करें।"
+
+#: public_site/validation.py:101
+#, fuzzy
+msgid "Seleccione una opción válida."
+msgstr "मान्य विकल्प चुनें।"
+
+#, fuzzy
+msgid "Contraseña"
+msgstr "पासवर्ड"
+
+#, fuzzy
+msgid "Contraseña actual"
+msgstr "पुराना पासवर्ड"
+
+#, fuzzy
+msgid "Nueva contraseña"
+msgstr "नया पासवर्ड"
+
+#, fuzzy
+msgid "Confirmar nueva contraseña"
+msgstr "नये पासवर्ड की पुष्टि करें"
+
+#, fuzzy
+msgid "Repita la misma contraseña para confirmar."
+msgstr "सत्यापन के लिए पहले जैसा ही पासवर्ड दर्ज करें।"
+
+#, fuzzy
+msgid "La contraseña no debe parecerse a sus datos personales."
+msgstr "ऐसा पासवर्ड चुनें जो आपकी व्यक्तिगत जानकारी से बहुत मिलता-जुलता न हो।"
+
+#, fuzzy
+msgid "La contraseña no debe ser muy similar a sus otros datos personales."
+msgstr "आपका पासवर्ड आपकी अन्य व्यक्तिगत जानकारी के समान नहीं हो सकता।"
+
+#, fuzzy
+msgid ""
+"La contraseña es demasiado corta; debe contener al menos %(min_length)s "
+"caracteres."
+msgstr ""
+"यह पासवर्ड बहुत छोटा है. इसमें कम से कम %(min_length)s अक्षर होने चाहिए."
+
+#, fuzzy
+msgid "La contraseña debe tener al menos %(min_length)s caracteres."
+msgstr "आपके पासवर्ड में कम से कम %(min_length)s अक्षर होने चाहिए."
+
+#, fuzzy
+msgid "Elija una contraseña que no sea de uso común."
+msgstr "ऐसा पासवर्ड चुनें जो आमतौर पर इस्तेमाल न किया जाता हो."
+
+#, fuzzy
+msgid "No utilice una contraseña de uso común."
+msgstr "आपका पासवर्ड आमतौर पर इस्तेमाल किया जाने वाला पासवर्ड नहीं हो सकता."
+
+#, fuzzy
+msgid "La contraseña no puede contener solo números."
+msgstr "यह पासवर्ड पूर्णतः संख्यात्मक है."
+
+#, fuzzy
+msgid "No utilice solo números como contraseña."
+msgstr "आपका पासवर्ड पूर्णतः संख्यात्मक नहीं हो सकता."
+
+#, fuzzy
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "दो पासवर्ड फ़ील्ड मेल नहीं खाते."
+
+#, fuzzy
+msgid "La contraseña actual no es correcta."
+msgstr "आपका पुराना पासवर्ड ग़लत दर्ज किया गया था."
+
+#, fuzzy
+msgid "El usuario o la contraseña no son válidos."
+msgstr "कृपया सही उपयोगकर्ता नाम और पासवर्ड दर्ज करें."
+
+#, fuzzy
+msgid "La cuenta no está activa."
+msgstr "यह खाता निष्क्रिय है."
+
+#, fuzzy
+msgid "Correo electrónico"
+msgstr "ईमेल पता"
+
+#, fuzzy
+msgid "Vista previa de traducción automática"
+msgstr "स्वचालित अनुवाद पूर्वावलोकन (मसौदा)"
+
+#, fuzzy
+msgid ""
+"Este idioma usa un borrador no revisado ni aprobado. No lo use para "
+"interpretar estadísticas de cáncer."
+msgstr ""
+"इस भाषा में ऐसा मसौदा है जिसकी मानव भाषाई समीक्षा या संस्थागत स्वीकृति नहीं "
+"हुई है। इसका उपयोग कैंसर आँकड़ों की व्याख्या के लिए न करें।"
+
+#, fuzzy
+msgid "borrador de vista previa"
+msgstr "— पूर्वावलोकन मसौदा"
