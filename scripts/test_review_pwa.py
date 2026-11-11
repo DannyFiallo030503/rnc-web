@@ -1,8 +1,11 @@
 """Unit tests for localized PDF text extraction in the PWA review."""
 
 import unittest
+from io import BytesIO
 
-from scripts.review_pwa import pdf_contains_glyphs
+from PIL import Image
+
+from scripts.review_pwa import pdf_contains_glyphs, png_has_rendered_pixels
 
 
 class PdfGlyphCoverageTests(unittest.TestCase):
@@ -24,6 +27,21 @@ class PdfGlyphCoverageTests(unittest.TestCase):
 
     def test_missing_combining_mark_is_detected(self):
         self.assertFalse(pdf_contains_glyphs("कैंसर", "कसर"))
+
+    def test_nonuniform_png_decodes_as_rendered_content(self):
+        image = Image.new("RGB", (8, 8), "white")
+        image.putpixel((4, 4), (20, 80, 120))
+        output = BytesIO()
+        image.save(output, format="PNG")
+        self.assertTrue(png_has_rendered_pixels(output.getvalue()))
+
+    def test_uniform_png_is_rejected_as_empty_render(self):
+        output = BytesIO()
+        Image.new("RGB", (8, 8), "white").save(output, format="PNG")
+        self.assertFalse(png_has_rendered_pixels(output.getvalue()))
+
+    def test_corrupt_png_is_rejected(self):
+        self.assertFalse(png_has_rendered_pixels(b"\x89PNG\r\n\x1a\ncorrupt"))
 
 
 if __name__ == "__main__":

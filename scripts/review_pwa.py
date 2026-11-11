@@ -65,6 +65,21 @@ def pdf_contains_glyphs(expected, extracted):
     return expected_glyphs.issubset(set(extracted))
 
 
+def png_has_rendered_pixels(data):
+    """Require a fully decodable PNG with non-uniform rendered image content."""
+    from PIL import Image
+
+    try:
+        with Image.open(io.BytesIO(data)) as image:
+            if image.format != "PNG" or image.width <= 0 or image.height <= 0:
+                return False
+            image.load()
+            extrema = image.convert("RGB").getextrema()
+    except (OSError, ValueError):
+        return False
+    return any(low < high for low, high in extrema)
+
+
 def compile_isolated_draft_catalogs(locale_root):
     """Compile the same validated, hash-pinned bundle used by opt-in preview."""
     from scripts.compile_translation_preview import compile_translation_preview
@@ -617,9 +632,11 @@ def run():
                     record(
                         raster_exports["png"]["status"] == 200
                         and raster_exports["png"]["type"].startswith("image/png")
-                        and png_bytes.startswith(b"\x89PNG\r\n\x1a\n"),
-                        f"Borrador {locale}: PNG del servidor válido",
-                        {"status": raster_exports["png"]["status"], "bytes": len(png_bytes)},
+                        and png_bytes.startswith(b"\x89PNG\r\n\x1a\n")
+                        and png_has_rendered_pixels(png_bytes),
+                        f"Borrador {locale}: PNG del servidor decodifica contenido renderizado",
+                        {"status": raster_exports["png"]["status"], "bytes": len(png_bytes),
+                         "rendered_pixels": png_has_rendered_pixels(png_bytes)},
                     )
                     record(
                         raster_exports["pdf"]["status"] == 200
