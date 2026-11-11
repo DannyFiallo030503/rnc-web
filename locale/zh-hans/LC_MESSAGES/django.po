@@ -3292,3 +3292,19 @@ msgstr "此语言使用未经人工审校或机构批准的草稿。请勿据此
 #, fuzzy
 msgid "borrador de vista previa"
 msgstr "— 预览草稿"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · 管理"
+
+#, fuzzy
+msgid "Roles"
+msgstr "角色"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "选择一个操作"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr "如果存在使用此电子邮件地址的有效账户，您将收到相关说明。"

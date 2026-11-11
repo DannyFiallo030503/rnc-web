@@ -3570,3 +3570,21 @@ msgstr ""
 #, fuzzy
 msgid "borrador de vista previa"
 msgstr "— پیش نظارہ مسودہ"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · انتظامیہ"
+
+#, fuzzy
+msgid "Roles"
+msgstr "کردار"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "ایک کارروائی منتخب کریں"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr ""
+"اگر اس ای میل پتے کے ساتھ کوئی فعال اکاؤنٹ موجود ہے، تو آپ کو ہدایات موصول "
+"ہوں گی۔"

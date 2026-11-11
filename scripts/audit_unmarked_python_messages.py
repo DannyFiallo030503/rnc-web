@@ -23,6 +23,8 @@ MESSAGE_SINK_ARGUMENTS = {
     "PermissionDenied": 0,
     "CatalogError": 0,
 }
+ADMIN_SITE_LABELS = {"site_header", "site_title", "index_title"}
+TEMPLATE_CONTEXT_LABELS = {"heading", "intro", "submit_label", "title"}
 
 
 def _callee_name(function):
@@ -67,6 +69,95 @@ def _contains_user_text(expression):
     return False
 
 
+def _literal_string(expression):
+    return isinstance(expression, ast.Constant) and isinstance(expression.value, str)
+
+
+def _has_admin_display_decorator(node):
+    return any(
+        isinstance(decorator, ast.Call)
+        and _callee_name(decorator.func) == "admin.display"
+        for decorator in node.decorator_list
+    )
+
+
+def _admin_translation_findings(tree, source, path):
+    """Check Django admin labels and static template contexts, which are UI sinks."""
+    findings = []
+
+    def add(node, expression, localized_nodes=()):
+        if id(expression) in localized_nodes:
+            return
+        if _is_localized(expression) or not _literal_string(expression):
+            return
+        text = expression.value.strip()
+        if (
+            sum(character.isalpha() for character in text) < 2
+            or (text.isidentifier() and text.islower())
+        ):
+            return
+        snippet = ast.get_source_segment(source, expression) or repr(text)
+        findings.append(
+            f"{path}:{node.lineno}: rótulo admin/contexto visible sin gettext: {snippet}"
+        )
+
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ClassDef):
+            is_admin_site = any(
+                _callee_name(base).split(".")[-1] == "AdminSite" for base in node.bases
+            )
+            if is_admin_site:
+                for statement in node.body:
+                    if not isinstance(statement, (ast.Assign, ast.AnnAssign)):
+                        continue
+                    targets = (
+                        statement.targets
+                        if isinstance(statement, ast.Assign)
+                        else [statement.target]
+                    )
+                    value = statement.value
+                    if any(
+                        isinstance(target, ast.Name) and target.id in ADMIN_SITE_LABELS
+                        for target in targets
+                    ):
+                        add(statement, value)
+
+        if isinstance(node, ast.FunctionDef) and _has_admin_display_decorator(node):
+            localized_nodes = {
+                id(part)
+                for call in ast.walk(node)
+                if isinstance(call, ast.Call)
+                and _callee_name(call.func).split(".")[-1] in TRANSLATION_CALLS
+                for part in ast.walk(call)
+            }
+            for statement in node.body:
+                for result in ast.walk(statement):
+                    if isinstance(result, ast.Constant) and isinstance(result.value, str):
+                        add(node, result, localized_nodes)
+
+        if isinstance(node, ast.Call):
+            name = _callee_name(node.func)
+            if name == "admin.display":
+                for keyword in node.keywords:
+                    if keyword.arg == "description":
+                        add(node, keyword.value)
+            if name.endswith(".as_view"):
+                for keyword in node.keywords:
+                    if keyword.arg != "extra_context" or not isinstance(keyword.value, ast.Dict):
+                        continue
+                    for key, value in zip(keyword.value.keys, keyword.value.values):
+                        if _literal_string(key) and key.value in TEMPLATE_CONTEXT_LABELS:
+                            add(node, value)
+
+        if isinstance(node, ast.FunctionDef) and node.name == "get_action_choices":
+            for expression in ast.walk(node):
+                if isinstance(expression, ast.IfExp):
+                    add(expression, expression.body)
+                    add(expression, expression.orelse)
+
+    return findings
+
+
 def scan_paths(paths):
     findings = []
     for path in paths:
@@ -76,6 +167,11 @@ def scan_paths(paths):
         except (OSError, SyntaxError, UnicodeError) as error:
             findings.append(f"{path}: no se pudo auditar Python: {error}")
             continue
+        try:
+            display_path = path.relative_to(ROOT)
+        except ValueError:
+            display_path = path
+        findings.extend(_admin_translation_findings(tree, source, display_path))
         raised_calls = {
             id(node.exc)
             for node in ast.walk(tree)
@@ -96,10 +192,6 @@ def scan_paths(paths):
             if expression is None or _is_localized(expression) or not _contains_user_text(expression):
                 continue
             snippet = ast.get_source_segment(source, expression) or ""
-            try:
-                display_path = path.relative_to(ROOT)
-            except ValueError:
-                display_path = path
             findings.append(
                 f"{display_path}:{node.lineno}: mensaje visible sin gettext: {snippet}"
             )

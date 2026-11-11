@@ -3584,3 +3584,20 @@ msgstr ""
 #, fuzzy
 msgid "borrador de vista previa"
 msgstr "— পূর্বরূপ খসড়া"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · প্রশাসন"
+
+#, fuzzy
+msgid "Roles"
+msgstr "ভূমিকা"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "একটি কাজ নির্বাচন করুন"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr ""
+"এই ইমেল ঠিকানায় কোনো সক্রিয় অ্যাকাউন্ট থাকলে, আপনি নির্দেশাবলি পাবেন।"

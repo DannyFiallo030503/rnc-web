@@ -150,3 +150,8 @@ Refinamiento de propuestas de interfaz y presentación estadística (11-11-2026)
 ### Revalidación de cobertura y pruebas (11-11-2026)
 
 El inventario vigente suma 707 mensajes Django y 144 mensajes JavaScript referenciados; no se detectaron literales pendientes en las auditorías automáticas actuales de Python (67 archivos), JavaScript (9 archivos) y plantillas (141 excepciones clasificadas). La suite focalizada de traducción pasó 60/60, el preview administrativo 781/781 y PWA en Chrome 156 228/228. Estos resultados verifican infraestructura, rutas y consistencia mecánica, no la calidad lingüística. Cada uno de los nueve catálogos adicionales conserva 723 propuestas Django y 158 JavaScript como fuzzy, sin compilación de producción; español e inglés siguen parciales. La auditoría semántica es heurística y limitada a patrones conocidos.
+
+
+### Textos administrativos localizables detectados por auditoría (11-11-2026)
+
+Se amplió la inspección estática Python para cubrir encabezados del `AdminSite`, columnas con `admin.display`, etiquetas de acción y contextos estáticos de vistas de aviso. La auditoría encontró literales no marcados en esas superficies. Ahora usan gettext; los roles internos conocidos se representan con etiquetas visibles localizadas, conservando sin cambios nombres desconocidos que sean datos de grupos. EN recibió las cadenas correspondientes; los nueve candidatos recibieron propuestas asociadas en `scripts/draft_translation_overrides.json` y siguen fuzzy. Se actualizaron los paquetes `locale/reviews/pending-human-review-2026-11-11-r10.zip` y `locale/reviews/pending-by-locale-2026-11-11-r10/`. La revisión experta de esos textos y la validación institucional continúan pendientes.

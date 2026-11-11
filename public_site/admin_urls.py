@@ -2,6 +2,7 @@ from django.conf import settings
 from django.contrib.auth import views as auth_views
 from django.urls import path, re_path
 from django.views.generic import RedirectView, TemplateView
+from django.utils.translation import gettext_lazy as _
 from . import accounts, errors, views, portal
 
 app_name = "public_site"
@@ -32,7 +33,7 @@ urlpatterns = [
         "cuenta/contrasena/actualizada/",
         TemplateView.as_view(
             template_name="public_site/account_notice.html",
-            extra_context={"heading": "Contraseña actualizada", "intro": "Su contraseña se guardó correctamente."},
+            extra_context={"heading": _("Contraseña actualizada"), "intro": _("Su contraseña se guardó correctamente.")},
         ),
         name="password_change_done",
     ),
@@ -41,7 +42,7 @@ urlpatterns = [
         "cuenta/recuperar/solicitado/",
         TemplateView.as_view(
             template_name="public_site/account_notice.html",
-            extra_context={"heading": "Solicitud recibida", "intro": "Si existe una cuenta activa con ese correo, recibirá instrucciones."},
+            extra_context={"heading": _("Solicitud recibida"), "intro": _("Si existe una cuenta activa con ese correo, recibirá instrucciones.")},
         ),
         name="password_reset_done",
     ),
@@ -50,7 +51,7 @@ urlpatterns = [
         "cuenta/restablecida/",
         TemplateView.as_view(
             template_name="public_site/account_notice.html",
-            extra_context={"heading": "Contraseña guardada", "intro": "Ya puede iniciar sesión con su nueva contraseña."},
+            extra_context={"heading": _("Contraseña guardada"), "intro": _("Ya puede iniciar sesión con su nueva contraseña.")},
         ),
         name="password_reset_complete",
     ),

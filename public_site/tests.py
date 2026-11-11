@@ -7,6 +7,8 @@ import tempfile
 from pathlib import Path
 from unittest.mock import patch
 from datetime import timedelta
+from types import SimpleNamespace
+from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group, Permission
 from django.contrib.auth.tokens import default_token_generator
@@ -14,7 +16,7 @@ from django.core import mail
 from django.core.cache import cache
 from django.core.management import call_command
 from django.core.files.uploadedfile import SimpleUploadedFile
-from django.test import Client, TestCase, override_settings, tag
+from django.test import Client, SimpleTestCase, TestCase, override_settings, tag
 from django.utils.translation import override as override_language
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
@@ -23,6 +25,42 @@ from .services import ingest, transition, delivery_records
 from .testing import uploaded, synthetic_rows, csv_bytes
 
 PASSWORD = "Review-test<> 'Secure-2026!"
+
+
+class DjangoAdminTranslationTests(SimpleTestCase):
+    def test_admin_site_labels_follow_the_active_language(self):
+        with override_language("en"):
+            self.assertEqual(str(admin.site.site_header), "RNC Cuba · Administration")
+            self.assertEqual(str(admin.site.site_title), "RNC administration")
+            self.assertEqual(str(admin.site.index_title), "Users and permissions")
+        with override_language("es"):
+            self.assertEqual(str(admin.site.site_header), "RNC Cuba · Administración")
+            self.assertEqual(str(admin.site.site_title), "Administración RNC")
+            self.assertEqual(str(admin.site.index_title), "Usuarios y permisos")
+
+    def test_admin_role_labels_translate_known_role_codes(self):
+        from .admin import SupportUserAdmin
+
+        account = SimpleNamespace(
+            is_superuser=False,
+            groups=SimpleNamespace(
+                all=lambda: [
+                    SimpleNamespace(name="operator"),
+                    SimpleNamespace(name="publisher"),
+                ]
+            ),
+        )
+        with override_language("en"):
+            self.assertEqual(
+                SupportUserAdmin.account_roles(None, account),
+                "Data intake operator, Publication manager",
+            )
+            account.is_superuser = True
+            self.assertEqual(
+                SupportUserAdmin.account_roles(None, account), "Support administrator"
+            )
+        with override_language("es"):
+            self.assertEqual(SupportUserAdmin.account_roles(None, account), "Administrador de soporte")
 
 
 @override_settings(

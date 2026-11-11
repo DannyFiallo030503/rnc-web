@@ -35,6 +35,37 @@ class UnmarkedPythonMessageAuditTests(unittest.TestCase):
         self.assertEqual(len(findings), 1)
         self.assertIn("invalid data", findings[0])
 
+    def test_admin_labels_and_static_notice_context_are_detected(self):
+        findings = self.scan(
+            'from django.contrib import admin\n'
+            'from django.contrib.admin import AdminSite\n'
+            'class Site(AdminSite):\n'
+            ' site_header = "Support administration"\n'
+            ' @admin.display(description="Roles")\n'
+            ' def role_label(self, obj):\n'
+            '  return "Public reader"\n'
+            'class Actions:\n'
+            ' def get_action_choices(self):\n'
+            '  return [(value, label if value else "Choose an action") for value, label in choices]\n'
+            'TemplateView.as_view(extra_context={"heading": "Password saved", "intro": "Your password changed."})\n'
+        )
+        self.assertEqual(len(findings), 6)
+        self.assertTrue(any("Support administration" in finding for finding in findings))
+        self.assertTrue(any("Roles" in finding for finding in findings))
+        self.assertTrue(any("Public reader" in finding for finding in findings))
+        self.assertTrue(any("Choose an action" in finding for finding in findings))
+        self.assertTrue(any("Password saved" in finding for finding in findings))
+
+    def test_localized_admin_labels_and_notices_are_accepted(self):
+        findings = self.scan(
+            'from django.utils.translation import gettext_lazy as _\n'
+            'from django.contrib.admin import AdminSite\n'
+            'class Site(AdminSite):\n'
+            ' site_header = _("Support administration")\n'
+            'TemplateView.as_view(extra_context={"heading": _("Password saved")})\n'
+        )
+        self.assertEqual(findings, [])
+
 
 if __name__ == "__main__":
     unittest.main()

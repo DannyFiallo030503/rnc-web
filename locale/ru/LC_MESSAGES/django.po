@@ -3632,3 +3632,21 @@ msgstr ""
 #, fuzzy
 msgid "borrador de vista previa"
 msgstr "— черновик предварительного просмотра"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · Администрирование"
+
+#, fuzzy
+msgid "Roles"
+msgstr "Роли"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "Выберите действие"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr ""
+"Если существует активная учетная запись с этим адресом электронной почты, вы"
+" получите инструкции."

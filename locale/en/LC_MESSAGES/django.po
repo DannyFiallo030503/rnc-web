@@ -2863,3 +2863,17 @@ msgstr ""
 
 msgid "borrador de vista previa"
 msgstr "— preview draft"
+
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · Administration"
+
+msgid "Roles"
+msgstr "Roles"
+
+msgid "Selecciona una acción"
+msgstr "Choose an action"
+
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr ""
+"If an active account exists with this email address, you will receive "
+"instructions."

@@ -3529,3 +3529,19 @@ msgstr ""
 #, fuzzy
 msgid "borrador de vista previa"
 msgstr "— مسودة معاينة"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · الإدارة"
+
+#, fuzzy
+msgid "Roles"
+msgstr "الأدوار"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "اختر إجراءً"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr "إذا وُجد حساب نشط بهذا البريد الإلكتروني، فستتلقى التعليمات."

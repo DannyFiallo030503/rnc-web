@@ -1,6 +1,10 @@
 {
   "zh-hans": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · 管理",
+      "Roles": "角色",
+      "Selecciona una acción": "选择一个操作",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "如果存在使用此电子邮件地址的有效账户，您将收到相关说明。",
       "Aplicar": "应用",
       "Índice de la página": "本页目录",
       "Menú": "菜单",
@@ -15,6 +19,10 @@
   },
   "hi": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · प्रशासन",
+      "Roles": "भूमिकाएँ",
+      "Selecciona una acción": "एक कार्रवाई चुनें",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "यदि इस ईमेल पते वाला सक्रिय खाता मौजूद है, तो आपको निर्देश प्राप्त होंगे।",
       "Aplicar": "लागू करें",
       "Índice de la página": "पृष्ठ की विषय-सूची",
       "Menú": "मेन्यू",
@@ -27,6 +35,10 @@
   },
   "ar": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · الإدارة",
+      "Roles": "الأدوار",
+      "Selecciona una acción": "اختر إجراءً",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "إذا وُجد حساب نشط بهذا البريد الإلكتروني، فستتلقى التعليمات.",
       "Índice de la página": "فهرس الصفحة",
       "Menú": "القائمة",
       "Frecuencias, población denominadora y tasas por categoría": "التكرارات، والمقام السكاني، والمعدلات حسب الفئة",
@@ -35,6 +47,10 @@
   },
   "fr": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Administration",
+      "Roles": "Rôles",
+      "Selecciona una acción": "Choisissez une action",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Si un compte actif est associé à cette adresse e-mail, vous recevrez des instructions.",
       "Aplicar": "Appliquer",
       "Índice de la página": "Sommaire de la page",
       "Menú": "Menu",
@@ -43,6 +59,10 @@
   },
   "bn": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · প্রশাসন",
+      "Roles": "ভূমিকা",
+      "Selecciona una acción": "একটি কাজ নির্বাচন করুন",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "এই ইমেল ঠিকানায় কোনো সক্রিয় অ্যাকাউন্ট থাকলে, আপনি নির্দেশাবলি পাবেন।",
       "Aplicar": "প্রয়োগ করুন",
       "Índice de la página": "এই পৃষ্ঠার সূচিপত্র",
       "Menú": "মেনু",
@@ -53,6 +73,10 @@
   },
   "pt-br": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Administração",
+      "Roles": "Papéis",
+      "Selecciona una acción": "Escolha uma ação",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Se houver uma conta ativa com este endereço de e-mail, você receberá instruções.",
       "Índice de la página": "Índice da página",
       "Menú": "Menu",
       "Frecuencias, población denominadora y tasas por categoría": "Frequências, população denominadora e taxas por categoria",
@@ -61,6 +85,10 @@
   },
   "id": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Administrasi",
+      "Roles": "Peran",
+      "Selecciona una acción": "Pilih tindakan",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Jika ada akun aktif dengan alamat email ini, Anda akan menerima petunjuk.",
       "Índice de la página": "Daftar isi halaman",
       "Menú": "Menu",
       "Período": "Periode",
@@ -69,6 +97,10 @@
   },
   "ur": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · انتظامیہ",
+      "Roles": "کردار",
+      "Selecciona una acción": "ایک کارروائی منتخب کریں",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "اگر اس ای میل پتے کے ساتھ کوئی فعال اکاؤنٹ موجود ہے، تو آپ کو ہدایات موصول ہوں گی۔",
       "Aplicar": "لاگو کریں",
       "Índice de la página": "اس صفحے کا اشاریہ",
       "Menú": "مینو",
@@ -81,6 +113,10 @@
   },
   "ru": {
     "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Администрирование",
+      "Roles": "Роли",
+      "Selecciona una acción": "Выберите действие",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Если существует активная учетная запись с этим адресом электронной почты, вы получите инструкции.",
       "Índice de la página": "Оглавление страницы",
       "Menú": "Меню",
       "Frecuencias, población denominadora y tasas por categoría": "Частоты, население в знаменателе и показатели по категориям",

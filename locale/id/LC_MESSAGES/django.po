@@ -3615,3 +3615,20 @@ msgstr ""
 #, fuzzy
 msgid "borrador de vista previa"
 msgstr "— draf pratinjau"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · Administrasi"
+
+#, fuzzy
+msgid "Roles"
+msgstr "Peran"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "Pilih tindakan"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr ""
+"Jika ada akun aktif dengan alamat email ini, Anda akan menerima petunjuk."

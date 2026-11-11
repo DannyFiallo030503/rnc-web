@@ -3580,3 +3580,20 @@ msgstr ""
 #, fuzzy
 msgid "borrador de vista previa"
 msgstr "— पूर्वावलोकन मसौदा"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · प्रशासन"
+
+#, fuzzy
+msgid "Roles"
+msgstr "भूमिकाएँ"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "एक कार्रवाई चुनें"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr ""
+"यदि इस ईमेल पते वाला सक्रिय खाता मौजूद है, तो आपको निर्देश प्राप्त होंगे।"
