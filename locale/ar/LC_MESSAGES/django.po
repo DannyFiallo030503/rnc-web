@@ -784,7 +784,7 @@ msgstr "التكرارات والمعدلات المحسوبة لكل فئة م�
 
 #, fuzzy
 msgid "Frecuencias, población denominadora y tasas por categoría"
-msgstr "الترددات، والقاسم السكاني، والمعدلات حسب الفئة"
+msgstr "التكرارات، والمقام السكاني، والمعدلات حسب الفئة"
 
 #, fuzzy
 msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"

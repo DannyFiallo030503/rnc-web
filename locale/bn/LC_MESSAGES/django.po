@@ -797,7 +797,7 @@ msgstr "প্রতিটি তুলনা বিভাগের জন্য
 
 #, fuzzy
 msgid "Frecuencias, población denominadora y tasas por categoría"
-msgstr "ফ্রিকোয়েন্সি, হর জনসংখ্যা এবং বিভাগ অনুসারে হার"
+msgstr "গণসংখ্যা, হরের জনসংখ্যা এবং বিভাগ অনুসারে হার"
 
 #, fuzzy
 msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"

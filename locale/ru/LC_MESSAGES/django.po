@@ -802,7 +802,7 @@ msgstr "Частоты и показатели рассчитаны для ка�
 
 #, fuzzy
 msgid "Frecuencias, población denominadora y tasas por categoría"
-msgstr "Частоты, совокупность знаменателей и показатели по категориям"
+msgstr "Частоты, население в знаменателе и показатели по категориям"
 
 #, fuzzy
 msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"

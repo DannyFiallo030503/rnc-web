@@ -21,6 +21,7 @@
       "Territorio": "क्षेत्र",
       "Territorios": "क्षेत्र",
       "Puntos por provincia o grupo de edad": "प्रांत या आयु समूह के अनुसार डेटा बिंदु",
+      "Frecuencias, población denominadora y tasas por categoría": "आवृत्तियाँ, हर में जनसंख्या और श्रेणी के अनुसार दरें",
       "Acceso del personal": "कर्मचारी लॉगिन"
     }
   },
@@ -28,6 +29,7 @@
     "django": {
       "Índice de la página": "فهرس الصفحة",
       "Menú": "القائمة",
+      "Frecuencias, población denominadora y tasas por categoría": "التكرارات، والمقام السكاني، والمعدلات حسب الفئة",
       "Acceso del personal": "دخول الموظفين"
     }
   },
@@ -45,6 +47,7 @@
       "Índice de la página": "এই পৃষ্ঠার সূচিপত্র",
       "Menú": "মেনু",
       "Territorio": "অঞ্চল",
+      "Frecuencias, población denominadora y tasas por categoría": "গণসংখ্যা, হরের জনসংখ্যা এবং বিভাগ অনুসারে হার",
       "Acceso del personal": "কর্মীদের লগইন"
     }
   },
@@ -52,6 +55,7 @@
     "django": {
       "Índice de la página": "Índice da página",
       "Menú": "Menu",
+      "Frecuencias, población denominadora y tasas por categoría": "Frequências, população denominadora e taxas por categoria",
       "Acceso del personal": "Acesso da equipe"
     }
   },
@@ -59,6 +63,7 @@
     "django": {
       "Índice de la página": "Daftar isi halaman",
       "Menú": "Menu",
+      "Período": "Periode",
       "Acceso del personal": "Login staf"
     }
   },
@@ -70,6 +75,7 @@
       "Acceso del personal": "عملے کے لیے سائن اِن",
       "Buscar": "تلاش کریں",
       "Casos y frecuencias": "کیسز اور تعدد",
+      "Frecuencias, población denominadora y tasas por categoría": "تواتر، مخرج میں آبادی، اور زمرے کے لحاظ سے شرحیں",
       "Tasa ajustada Segi–Doll por 100 000": "عمر کے مطابق ایڈجسٹ شدہ شرح Segi–Doll فی 100,000"
     }
   },
@@ -77,6 +83,7 @@
     "django": {
       "Índice de la página": "Оглавление страницы",
       "Menú": "Меню",
+      "Frecuencias, población denominadora y tasas por categoría": "Частоты, население в знаменателе и показатели по категориям",
       "Acceso del personal": "Вход для сотрудников"
     }
   }

@@ -797,7 +797,7 @@ msgstr "प्रत्येक तुलना श्रेणी के ल�
 
 #, fuzzy
 msgid "Frecuencias, población denominadora y tasas por categoría"
-msgstr "आवृत्तियाँ, विभाजक जनसंख्या, और श्रेणी के अनुसार दरें"
+msgstr "आवृत्तियाँ, हर में जनसंख्या और श्रेणी के अनुसार दरें"
 
 #, fuzzy
 msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"

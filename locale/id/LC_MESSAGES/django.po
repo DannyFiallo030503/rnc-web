@@ -1587,7 +1587,7 @@ msgstr "Operator:"
 
 #, fuzzy
 msgid "Período"
-msgstr "Titik"
+msgstr "Periode"
 
 #, fuzzy
 msgid "Procesado"

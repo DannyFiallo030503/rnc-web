@@ -799,7 +799,7 @@ msgstr "Frequências e taxas calculadas para cada categoria de comparação."
 
 #, fuzzy
 msgid "Frecuencias, población denominadora y tasas por categoría"
-msgstr "Frequências, população de denominadores e taxas por categoria"
+msgstr "Frequências, população denominadora e taxas por categoria"
 
 #, fuzzy
 msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
