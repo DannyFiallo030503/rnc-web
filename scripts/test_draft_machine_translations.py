@@ -4,7 +4,7 @@ import unittest
 
 import polib
 
-from scripts.draft_machine_translations import apply_draft_overrides, plural_targets, protect, restore, translation_units
+from scripts.draft_machine_translations import ROOT, apply_draft_overrides, plural_targets, protect, restore, translation_units
 
 
 class MachineTranslationDraftTests(unittest.TestCase):
@@ -52,6 +52,19 @@ class MachineTranslationDraftTests(unittest.TestCase):
             apply_draft_overrides(
                 catalog, "id", "django", {"id": {"django": {"Missing": "Menu"}}}
             )
+
+    def test_all_configured_overrides_match_catalogs_and_remain_fuzzy(self):
+        import json
+
+        overrides = json.loads((ROOT / "scripts/draft_translation_overrides.json").read_text(encoding="utf-8"))
+        for locale, domains in overrides.items():
+            for domain, translations in domains.items():
+                catalog = polib.pofile(str(ROOT / "locale" / locale / "LC_MESSAGES" / f"{domain}.po"))
+                entries = {entry.msgid: entry for entry in catalog if entry.msgid and not entry.obsolete}
+                self.assertEqual(apply_draft_overrides(catalog, locale, domain, overrides), len(translations))
+                for msgid, expected in translations.items():
+                    self.assertEqual(entries[msgid].msgstr, expected, f"{locale}/{domain}: {msgid}")
+                    self.assertIn("fuzzy", entries[msgid].flags, f"{locale}/{domain}: {msgid}")
 
 
 if __name__ == "__main__":
