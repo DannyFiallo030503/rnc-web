@@ -6,6 +6,10 @@ La infraestructura de traducción funciona con selección persistente de idioma,
 
 Por tanto, la web **todavía no está completamente traducida** y el inglés no debe presentarse como cobertura completa. El verificador comprueba las cadenas marcadas en código, no descubre texto visible que aún no se haya marcado. Un resultado verde no elimina esta brecha.
 
+### Decisión operativa sobre la revisión humana (11-11-2026)
+
+El usuario confirma que actualmente no hay lingüistas competentes disponibles y que la revisión experta de las traducciones se realizará en una etapa posterior. Hasta entonces, se conservan los locales adicionales como propuestas `fuzzy`, se permite su evaluación únicamente en el preview opt-in y no se declaran completos ni se activan en producción. Esta instrucción registra la planificación del trabajo; no equivale a aprobación lingüística ni institucional. La aprobación institucional del RNC sigue pendiente por separado y la puerta de salida no debe satisfacerse con evidencia inventada.
+
 ### Progreso por superficie
 
 | Superficie | Estado del inglés |
