@@ -459,11 +459,13 @@ def run():
                     )
                     language_sync = page.evaluate("""async () => {
                       const cacheLanguages={};
+                      const cacheRevisions={};
                       for(const name of await caches.keys()) {
                         const cache=await caches.open(name);
                         cacheLanguages[name]=await (await cache.match('/__rnc-language__'))?.text() || null;
+                        cacheRevisions[name]=await (await cache.match('/__rnc-language-revision__'))?.text() || null;
                       }
-                      return {page:document.documentElement.lang,caches:cacheLanguages};
+                      return {page:document.documentElement.lang,caches:cacheLanguages,revisions:cacheRevisions,preference:localStorage.getItem('rnc-language-preference')};
                     }""")
                     language_cookies = [
                         cookie["value"] for cookie in context.cookies(base)

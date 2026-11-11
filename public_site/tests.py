@@ -145,7 +145,7 @@ class PortalTests(TestCase):
             html=False,
         )
         self.assertContains(about, "What we do")
-        self.assertContains(about, 'aria-label="Sections about the NCR"', html=False)
+        self.assertContains(about, 'aria-label="Sections about the RNC"', html=False)
         self.assertContains(about, "The documented coverage includes all 15 provinces")
         self.client.cookies["rnc_language"] = "es"
         spanish_about = self.client.get("/el-rnc/")
@@ -963,8 +963,8 @@ class PortalTests(TestCase):
         queued_mail.refresh_from_db()
         self.assertEqual(queued_mail.status, "sent")
         self.assertEqual(len(mail.outbox), 1)
-        self.assertEqual(mail.outbox[0].subject, "Set password · NCR")
-        self.assertIn("A password has been requested for your NCR account.", mail.outbox[0].body)
+        self.assertEqual(mail.outbox[0].subject, "Set password · RNC")
+        self.assertIn("A password has been requested for your RNC account.", mail.outbox[0].body)
         link = next(
             line
             for line in mail.outbox[0].body.splitlines()
@@ -998,8 +998,8 @@ class PortalTests(TestCase):
         queued_mail.refresh_from_db()
         self.assertEqual(queued_mail.status, "sent")
         self.assertEqual(len(mail.outbox), 1)
-        self.assertEqual(mail.outbox[0].subject, "Set password · NCR")
-        self.assertIn("A password has been requested for your NCR account.", mail.outbox[0].body)
+        self.assertEqual(mail.outbox[0].subject, "Set password · RNC")
+        self.assertIn("A password has been requested for your RNC account.", mail.outbox[0].body)
 
     def test_recovery_unknown_inactive_and_known_account_have_same_public_result(self):
         for address in ["reader@example.invalid", "missing@example.invalid"]:

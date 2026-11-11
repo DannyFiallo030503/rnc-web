@@ -11,6 +11,7 @@ from scripts.check_translations import (
     catalog_inventory_extras,
     catalog_plural_mismatches,
     complete_translation,
+    brand_acronym_issues,
     literals,
     placeholder_names,
     plural_literals,
@@ -18,6 +19,12 @@ from scripts.check_translations import (
 
 
 class TranslationCheckerTests(unittest.TestCase):
+    def test_institutional_acronym_is_preserved_in_translations(self):
+        self.assertEqual(brand_acronym_issues("Administración RNC", "RNC administration"), [])
+        self.assertTrue(brand_acronym_issues("Administración RNC", "NCR administration"))
+        self.assertTrue(brand_acronym_issues("Administración RNC", "Registry administration"))
+        self.assertEqual(brand_acronym_issues("Administración", "Administration"), [])
+
     def test_plural_entry_requires_every_form(self):
         entry = polib.POEntry(
             msgid="%(count)s item",

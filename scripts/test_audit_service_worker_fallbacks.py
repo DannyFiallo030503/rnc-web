@@ -6,6 +6,7 @@ from scripts.audit_service_worker_fallbacks import (
     validate_fallback_messages,
     validate_language_change_sync_guard,
     validate_language_message_queue,
+    validate_language_revision_guard,
     validate_offline_language_precedence,
 )
 
@@ -55,6 +56,19 @@ class ServiceWorkerFallbackAuditTests(unittest.TestCase):
     def test_unqueued_worker_language_write_is_reported(self):
         self.assertTrue(validate_language_message_queue(
             "event.waitUntil(caches.open(CACHE).then(async cache => {}));"
+        ))
+
+    def test_worker_rejects_stale_language_revision(self):
+        source = (
+            "const revision = Number.isSafeInteger(data.revision) && data.revision >= 0 ? data.revision : 0; "
+            "if (revision < savedRevision) return; "
+            "cache.put(languageRevisionKey(), new Response(String(revision)));"
+        )
+        self.assertEqual(validate_language_revision_guard(source), [])
+
+    def test_missing_worker_revision_guard_is_reported(self):
+        self.assertTrue(validate_language_revision_guard(
+            "cache.put(languageKey(), new Response(language));"
         ))
 
 

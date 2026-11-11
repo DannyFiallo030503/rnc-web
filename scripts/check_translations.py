@@ -163,6 +163,18 @@ def placeholder_names(message):
     return sorted(PLACEHOLDER.findall(message))
 
 
+def brand_acronym_issues(source, target):
+    """Keep the institution's official RNC acronym in localized copy."""
+    if not re.search(r"\bRNC\b", source or ""):
+        return []
+    issues = []
+    if not re.search(r"\bRNC\b", target or ""):
+        issues.append("la sigla institucional RNC debe conservarse")
+    if re.search(r"\b(?:NCR|RCN)\b", target or "", re.I):
+        issues.append("la sigla institucional RNC no debe convertirse a NCR/RCN")
+    return issues
+
+
 def main():
     required = set()
     required_js = set()
@@ -221,6 +233,8 @@ def main():
                 for target in targets:
                     if not target.strip() or "fuzzy" in entry.flags:
                         continue
+                    for issue in brand_acronym_issues(message, target):
+                        failures.append(f"{language}/{domain}: {issue} para {message!r}")
                     target_names = placeholder_names(target)
                     if source_names != target_names:
                         failures.append(

@@ -95,9 +95,16 @@ def validate_language_change_sync_guard(source):
     guarded_sync = re.search(
         r"const\s+syncLanguage\s*=\s*\(\)\s*=>\s*languageChangePending\s*\?",
         source,
+    ) or re.search(
+        r"const\s+syncLanguage\s*=\s*\(\)\s*=>\s*\{.*?if\s*\(languageChangePending\)",
+        source,
+        re.S,
     )
     submission_guard = re.search(
         r"languageChangePending\s*=\s*true\s*;\s*await\s+postLanguage\(selected\)",
+        source,
+    ) or re.search(
+        r"languageChangePending\s*=\s*true\s*;\s*const\s+preference\s*=\s*selectPreference\(selected\)\s*;\s*await\s+postLanguage\(preference\.language,\s*preference\.revision\)",
         source,
     )
     if not (pending_flag and guarded_sync and submission_guard):
@@ -126,6 +133,26 @@ def validate_language_message_queue(source):
     return []
 
 
+def validate_language_revision_guard(source):
+    """Reject a message whose selection revision predates the saved locale."""
+    revision = re.search(
+        r"Number\.isSafeInteger\(data\.revision\).*?data\.revision\s*:\s*0",
+        source,
+        re.S,
+    )
+    stale_check = re.search(r"if\s*\(revision\s*<\s*savedRevision\)", source)
+    revision_storage = re.search(
+        r"cache\.put\(languageRevisionKey\(\).*?String\(revision\)",
+        source,
+        re.S,
+    )
+    if not (revision and stale_check and revision_storage):
+        return [
+            "El service worker debe descartar mensajes de idioma con revisiones anteriores a la selección guardada"
+        ]
+    return []
+
+
 def main():
     sys.path.insert(0, str(ROOT))
     from config.languages import ACTIVE_LANGUAGES
@@ -137,6 +164,7 @@ def main():
     failures = validate_fallback_messages(messages, expected)
     failures.extend(validate_offline_language_precedence(source))
     failures.extend(validate_language_message_queue(source))
+    failures.extend(validate_language_revision_guard(source))
     failures.extend(validate_language_change_sync_guard(register_source))
     if failures:
         print("\n".join(failures), file=sys.stderr)

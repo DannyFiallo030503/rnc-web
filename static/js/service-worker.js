@@ -1,6 +1,7 @@
 const CACHE = "rnc-public-shell-v8";
 const SHELL = "/consulta-offline/";
 const LANGUAGE_KEY = "/__rnc-language__";
+const LANGUAGE_REVISION_KEY = "/__rnc-language-revision__";
 const FALLBACK_KEY = "/__rnc-offline-message__/";
 const FALLBACK_MESSAGES = {
   en: "The offline query is not available on this device yet.",
@@ -28,6 +29,7 @@ let languageMessageQueue = Promise.resolve();
 const languagePattern = /^[a-z]{2,3}(?:-[a-z0-9]{2,8})?$/iu;
 const absolutePath = path => new URL(path, self.location.origin);
 const languageKey = () => absolutePath(LANGUAGE_KEY);
+const languageRevisionKey = () => absolutePath(LANGUAGE_REVISION_KEY);
 const fallbackMessageKey = language => {
   const key = absolutePath(FALLBACK_KEY);
   key.searchParams.set("lang", language);
@@ -81,8 +83,22 @@ self.addEventListener("message", event => {
   const data = event.data;
   const language = typeof data?.language === "string" ? data.language.toLowerCase() : "";
   if (data?.type !== "rnc-language" || !validLanguage(language)) return;
+  const revision = Number.isSafeInteger(data.revision) && data.revision >= 0 ? data.revision : 0;
   const saveLanguage = languageMessageQueue.then(() => caches.open(CACHE).then(async cache => {
+    const savedRevisionResponse = await cache.match(languageRevisionKey());
+    const savedRevision = Number.parseInt(await savedRevisionResponse?.text(), 10) || 0;
+    if (revision < savedRevision) {
+      event.ports?.[0]?.postMessage({
+        saved: await storedLanguage(cache),
+        revision: savedRevision,
+        ignored: true,
+      });
+      return;
+    }
     await cache.put(languageKey(), new Response(language, {
+      headers: { "Content-Type": "text/plain; charset=utf-8" },
+    }));
+    await cache.put(languageRevisionKey(), new Response(String(revision), {
       headers: { "Content-Type": "text/plain; charset=utf-8" },
     }));
     if (typeof data.offlineUnavailable === "string" && data.offlineUnavailable.length <= 300) {
@@ -90,7 +106,7 @@ self.addEventListener("message", event => {
         headers: { "Content-Type": "text/plain; charset=utf-8" },
       }));
     }
-    event.ports?.[0]?.postMessage({ saved: language });
+    event.ports?.[0]?.postMessage({ saved: language, revision });
   }));
   languageMessageQueue = saveLanguage.catch(() => {});
   event.waitUntil(saveLanguage);
