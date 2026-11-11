@@ -809,6 +809,8 @@ def run():
         output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
         print(json.dumps({"success": report["success"], "checks": len(results),
                           "failures": len(errors), "output": str(output)}, ensure_ascii=False))
+        if errors:
+            print(json.dumps({"failed_checks": errors}, ensure_ascii=False, indent=2))
         return 1 if errors else 0
 
 
