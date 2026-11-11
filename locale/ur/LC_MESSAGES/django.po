@@ -389,7 +389,7 @@ msgstr "بنیادی شماریاتی تصورات"
 
 #, fuzzy
 msgid "Casos y frecuencias"
-msgstr "مقدمات اور تعدد"
+msgstr "کیسز اور تعدد"
 
 #, fuzzy
 msgid ""
@@ -608,7 +608,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Tasa ajustada Segi–Doll por 100 000"
-msgstr "عمر کے مطابق سیگی – ڈول ریٹ فی 100,000"
+msgstr "عمر کے مطابق ایڈجسٹ شدہ شرح Segi–Doll فی 100,000"
 
 #, fuzzy
 msgid "Tasa cruda / específica por 100 000"

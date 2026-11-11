@@ -370,7 +370,7 @@ msgstr "基本统计概念"
 
 #, fuzzy
 msgid "Casos y frecuencias"
-msgstr "案例和频率"
+msgstr "病例和频数"
 
 #, fuzzy
 msgid ""
@@ -512,7 +512,7 @@ msgstr "线路"
 
 #, fuzzy
 msgid "Municipio de residencia"
-msgstr "居住地市政府"
+msgstr "居住地市镇"
 
 #, fuzzy
 msgid ""
@@ -529,7 +529,7 @@ msgstr "居住省份"
 
 #, fuzzy
 msgid "Puntos por provincia o grupo de edad"
-msgstr "按省份或年龄组划分的分数"
+msgstr "按省份或年龄组划分的数据点"
 
 #, fuzzy
 msgid "Ranking por indicador"

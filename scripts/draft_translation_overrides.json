@@ -7,6 +7,9 @@
       "Siguiente": "下一页",
       "Territorio": "地区",
       "Territorios": "地区",
+      "Puntos por provincia o grupo de edad": "按省份或年龄组划分的数据点",
+      "Casos y frecuencias": "病例和频数",
+      "Municipio de residencia": "居住地市镇",
       "Acceso del personal": "员工登录"
     }
   },
@@ -17,6 +20,7 @@
       "Menú": "मेन्यू",
       "Territorio": "क्षेत्र",
       "Territorios": "क्षेत्र",
+      "Puntos por provincia o grupo de edad": "प्रांत या आयु समूह के अनुसार डेटा बिंदु",
       "Acceso del personal": "कर्मचारी लॉगिन"
     }
   },
@@ -64,7 +68,9 @@
       "Índice de la página": "اس صفحے کا اشاریہ",
       "Menú": "مینو",
       "Acceso del personal": "عملے کے لیے سائن اِن",
-      "Buscar": "تلاش کریں"
+      "Buscar": "تلاش کریں",
+      "Casos y frecuencias": "کیسز اور تعدد",
+      "Tasa ajustada Segi–Doll por 100 000": "عمر کے مطابق ایڈجسٹ شدہ شرح Segi–Doll فی 100,000"
     }
   },
   "ru": {

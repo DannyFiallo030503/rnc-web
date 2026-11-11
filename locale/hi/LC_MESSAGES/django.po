@@ -562,7 +562,7 @@ msgstr "निवास का प्रांत"
 
 #, fuzzy
 msgid "Puntos por provincia o grupo de edad"
-msgstr "प्रांत या आयु समूह के अनुसार अंक"
+msgstr "प्रांत या आयु समूह के अनुसार डेटा बिंदु"
 
 #, fuzzy
 msgid "Ranking por indicador"
