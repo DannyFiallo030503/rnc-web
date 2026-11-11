@@ -14,6 +14,7 @@ import re
 import sys
 import tempfile
 import threading
+import unicodedata
 from datetime import datetime, timezone
 from types import SimpleNamespace
 from uuid import uuid4
@@ -48,6 +49,22 @@ def numeric(value):
     return float(value)
 
 
+def pdf_contains_glyphs(expected, extracted):
+    """Check PDF text coverage without assuming extraction preserves shaping/order.
+
+    Matplotlib's PDF text layer can expose shaped script glyphs in visual order
+    or repeat Unicode sequences for a ligature. SVG is checked separately for
+    the exact localized label; here require every letter and combining mark
+    from that label to exist in the extractable PDF text layer.
+    """
+    expected_glyphs = {
+        character
+        for character in expected
+        if unicodedata.category(character)[0] in {"L", "M"}
+    }
+    return expected_glyphs.issubset(set(extracted))
+
+
 def compile_isolated_draft_catalogs(locale_root):
     """Compile the same validated, hash-pinned bundle used by opt-in preview."""
     from scripts.compile_translation_preview import compile_translation_preview
@@ -72,6 +89,7 @@ def run():
     from analytics.catalogs import resolve
     from django.utils.translation.trans_real import to_locale
     from gettext import translation as gettext_translation
+    from pypdf import PdfReader
 
     results = []
     screenshots = []
@@ -592,6 +610,10 @@ def run():
                     }""")
                     png_bytes = base64.b64decode(raster_exports["png"]["content"])
                     pdf_bytes = base64.b64decode(raster_exports["pdf"]["content"])
+                    pdf_text = "\n".join(
+                        page.extract_text() or ""
+                        for page in PdfReader(io.BytesIO(pdf_bytes)).pages
+                    )
                     record(
                         raster_exports["png"]["status"] == 200
                         and raster_exports["png"]["type"].startswith("image/png")
@@ -602,9 +624,11 @@ def run():
                     record(
                         raster_exports["pdf"]["status"] == 200
                         and raster_exports["pdf"]["type"] == "application/pdf"
-                        and pdf_bytes.startswith(b"%PDF-"),
-                        f"Borrador {locale}: PDF del servidor válido",
-                        {"status": raster_exports["pdf"]["status"], "bytes": len(pdf_bytes)},
+                        and pdf_bytes.startswith(b"%PDF-")
+                        and pdf_contains_glyphs(expected_dimension, pdf_text),
+                        f"Borrador {locale}: PDF válido con glifos de etiquetas localizadas",
+                        {"status": raster_exports["pdf"]["status"], "bytes": len(pdf_bytes),
+                         "glyphs_present": pdf_contains_glyphs(expected_dimension, pdf_text)},
                     )
                     expected_dir = "rtl" if locale in {"ar", "ur"} else "ltr"
                     direction = page.locator("html").get_attribute("dir")
