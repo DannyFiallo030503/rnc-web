@@ -38,6 +38,27 @@ PROTECTED = re.compile(
     r"%(?:\([^)]+\))?[#0 +\-]?(?:\d+)?(?:\.\d+)?[diouxXeEfFgGcrsa%]"
     r"|https?://[^\s<>\"']+|</?[A-Za-z][^>]*>"
 )
+OVERRIDES_PATH = ROOT / "scripts" / "draft_translation_overrides.json"
+
+
+def apply_draft_overrides(catalog, locale, domain, overrides=None):
+    """Apply curated suggestions while keeping every candidate entry fuzzy."""
+    if overrides is None:
+        overrides = json.loads(OVERRIDES_PATH.read_text(encoding="utf-8"))
+    selected = overrides.get(locale, {}).get(domain, {})
+    entries = {entry.msgid: entry for entry in catalog if entry.msgid and not entry.obsolete}
+    unknown = set(selected) - entries.keys()
+    if unknown:
+        raise ValueError(f"Overrides sin msgid en {locale}/{domain}: {sorted(unknown)}")
+    for msgid, translation in selected.items():
+        entry = entries[msgid]
+        if entry.msgid_plural:
+            raise ValueError(f"Override plural requiere formas explícitas: {locale}/{msgid}")
+        entry.msgstr = translation
+        entry.msgstr_plural = {}
+        if "fuzzy" not in entry.flags:
+            entry.flags.append("fuzzy")
+    return len(selected)
 
 
 def protect(text, prefix):
@@ -193,6 +214,8 @@ def generate_locale(locale, only_missing=False, refresh_plurals=False):
             entry.msgstr_plural = {index: entry.msgstr_plural.get(index, "") for index in range(plural_count)} if entry.msgid_plural else {}
             if "fuzzy" not in entry.flags:
                 entry.flags.append("fuzzy")
+
+        apply_draft_overrides(catalog, locale, domain)
 
         catalog.metadata["Language"] = locale
         catalog.metadata["Plural-Forms"] = plural_formula

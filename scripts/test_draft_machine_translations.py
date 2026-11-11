@@ -4,7 +4,7 @@ import unittest
 
 import polib
 
-from scripts.draft_machine_translations import plural_targets, protect, restore, translation_units
+from scripts.draft_machine_translations import apply_draft_overrides, plural_targets, protect, restore, translation_units
 
 
 class MachineTranslationDraftTests(unittest.TestCase):
@@ -34,6 +34,24 @@ class MachineTranslationDraftTests(unittest.TestCase):
         self.assertEqual((singular, one_form), ("catégorie", {0: "catégorie"}))
         _, six_forms = plural_targets(entry, ["فئة", "فئات"], 6)
         self.assertEqual(set(six_forms), set(range(6)))
+
+    def test_curated_override_updates_translation_but_keeps_it_fuzzy(self):
+        catalog = polib.POFile()
+        entry = polib.POEntry(msgid="Menú", msgstr="Tidak bisa", flags=["fuzzy"])
+        catalog.append(entry)
+        count = apply_draft_overrides(
+            catalog, "id", "django", {"id": {"django": {"Menú": "Menu"}}}
+        )
+        self.assertEqual(count, 1)
+        self.assertEqual(entry.msgstr, "Menu")
+        self.assertIn("fuzzy", entry.flags)
+
+    def test_curated_override_rejects_unknown_source_message(self):
+        catalog = polib.POFile()
+        with self.assertRaises(ValueError):
+            apply_draft_overrides(
+                catalog, "id", "django", {"id": {"django": {"Missing": "Menu"}}}
+            )
 
 
 if __name__ == "__main__":

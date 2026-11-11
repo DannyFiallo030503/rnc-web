@@ -53,7 +53,7 @@ msgstr "সাইন আউট করুন এবং অ্যাকাউন�
 
 #, fuzzy
 msgid "Acceso del personal"
-msgstr "স্টাফ সাইন ইন"
+msgstr "কর্মীদের লগইন"
 
 #, fuzzy
 msgid "Estadísticas públicas"
@@ -65,7 +65,7 @@ msgstr "ভাষা"
 
 #, fuzzy
 msgid "Aplicar"
-msgstr "আবেদন করুন"
+msgstr "প্রয়োগ করুন"
 
 #, fuzzy
 msgid "Menú"
@@ -117,7 +117,7 @@ msgstr "ব্যবহারকারী এবং ভূমিকা"
 
 #, fuzzy
 msgid "Índice de la página"
-msgstr "পৃষ্ঠা বিষয়বস্তু"
+msgstr "এই পৃষ্ঠার সূচিপত্র"
 
 #, fuzzy
 msgid "Entorno con datos sintéticos"

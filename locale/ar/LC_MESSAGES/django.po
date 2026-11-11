@@ -53,7 +53,7 @@ msgstr "تسجيل الخروج وتبديل الحساب"
 
 #, fuzzy
 msgid "Acceso del personal"
-msgstr "تسجيل دخول الموظفين"
+msgstr "دخول الموظفين"
 
 #, fuzzy
 msgid "Estadísticas públicas"
@@ -117,7 +117,7 @@ msgstr "المستخدمون والأدوار"
 
 #, fuzzy
 msgid "Índice de la página"
-msgstr "محتويات الصفحة"
+msgstr "فهرس الصفحة"
 
 #, fuzzy
 msgid "Entorno con datos sintéticos"

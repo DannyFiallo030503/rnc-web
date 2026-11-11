@@ -53,7 +53,7 @@ msgstr "Keluar dan ganti akun"
 
 #, fuzzy
 msgid "Acceso del personal"
-msgstr "Staf masuk"
+msgstr "Login staf"
 
 #, fuzzy
 msgid "Estadísticas públicas"
@@ -69,7 +69,7 @@ msgstr "Terapkan"
 
 #, fuzzy
 msgid "Menú"
-msgstr "Tidak bisa"
+msgstr "Menu"
 
 #, fuzzy
 msgid "Páginas del sitio"
@@ -117,7 +117,7 @@ msgstr "Pengguna dan peran"
 
 #, fuzzy
 msgid "Índice de la página"
-msgstr "Isi halaman"
+msgstr "Daftar isi halaman"
 
 #, fuzzy
 msgid "Entorno con datos sintéticos"

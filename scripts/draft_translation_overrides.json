@@ -1,0 +1,72 @@
+{
+  "zh-hans": {
+    "django": {
+      "Aplicar": "应用",
+      "Índice de la página": "本页目录",
+      "Menú": "菜单",
+      "Siguiente": "下一页",
+      "Acceso del personal": "员工登录"
+    }
+  },
+  "hi": {
+    "django": {
+      "Aplicar": "लागू करें",
+      "Índice de la página": "पृष्ठ की विषय-सूची",
+      "Menú": "मेन्यू",
+      "Acceso del personal": "कर्मचारी लॉगिन"
+    }
+  },
+  "ar": {
+    "django": {
+      "Índice de la página": "فهرس الصفحة",
+      "Menú": "القائمة",
+      "Acceso del personal": "دخول الموظفين"
+    }
+  },
+  "fr": {
+    "django": {
+      "Aplicar": "Appliquer",
+      "Índice de la página": "Sommaire de la page",
+      "Menú": "Menu",
+      "Acceso del personal": "Connexion du personnel"
+    }
+  },
+  "bn": {
+    "django": {
+      "Aplicar": "প্রয়োগ করুন",
+      "Índice de la página": "এই পৃষ্ঠার সূচিপত্র",
+      "Menú": "মেনু",
+      "Acceso del personal": "কর্মীদের লগইন"
+    }
+  },
+  "pt-br": {
+    "django": {
+      "Índice de la página": "Índice da página",
+      "Menú": "Menu",
+      "Acceso del personal": "Acesso da equipe"
+    }
+  },
+  "id": {
+    "django": {
+      "Índice de la página": "Daftar isi halaman",
+      "Menú": "Menu",
+      "Acceso del personal": "Login staf"
+    }
+  },
+  "ur": {
+    "django": {
+      "Aplicar": "لاگو کریں",
+      "Índice de la página": "اس صفحے کا اشاریہ",
+      "Menú": "مینو",
+      "Acceso del personal": "عملے کے لیے سائن اِن",
+      "Buscar": "تلاش کریں"
+    }
+  },
+  "ru": {
+    "django": {
+      "Índice de la página": "Оглавление страницы",
+      "Menú": "Меню",
+      "Acceso del personal": "Вход для сотрудников"
+    }
+  }
+}

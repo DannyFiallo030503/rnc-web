@@ -53,7 +53,7 @@ msgstr "Sair e trocar de conta"
 
 #, fuzzy
 msgid "Acceso del personal"
-msgstr "Equipe faz login"
+msgstr "Acesso da equipe"
 
 #, fuzzy
 msgid "Estadísticas públicas"
@@ -69,7 +69,7 @@ msgstr "Aplicar"
 
 #, fuzzy
 msgid "Menú"
-msgstr "Cardápio"
+msgstr "Menu"
 
 #, fuzzy
 msgid "Páginas del sitio"
@@ -117,7 +117,7 @@ msgstr "Usuários e funções"
 
 #, fuzzy
 msgid "Índice de la página"
-msgstr "Conteúdo da página"
+msgstr "Índice da página"
 
 #, fuzzy
 msgid "Entorno con datos sintéticos"

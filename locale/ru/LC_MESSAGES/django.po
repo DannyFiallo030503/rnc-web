@@ -118,7 +118,7 @@ msgstr "Пользователи и роли"
 
 #, fuzzy
 msgid "Índice de la página"
-msgstr "Содержание страницы"
+msgstr "Оглавление страницы"
 
 #, fuzzy
 msgid "Entorno con datos sintéticos"

@@ -53,7 +53,7 @@ msgstr "سائن آؤٹ کریں اور اکاؤنٹ سوئچ کریں۔"
 
 #, fuzzy
 msgid "Acceso del personal"
-msgstr "عملہ سائن ان ہے۔"
+msgstr "عملے کے لیے سائن اِن"
 
 #, fuzzy
 msgid "Estadísticas públicas"
@@ -65,7 +65,7 @@ msgstr "زبان"
 
 #, fuzzy
 msgid "Aplicar"
-msgstr "لگائیں"
+msgstr "لاگو کریں"
 
 #, fuzzy
 msgid "Menú"
@@ -117,7 +117,7 @@ msgstr "صارفین اور کردار"
 
 #, fuzzy
 msgid "Índice de la página"
-msgstr "صفحہ کے مشمولات"
+msgstr "اس صفحے کا اشاریہ"
 
 #, fuzzy
 msgid "Entorno con datos sintéticos"
@@ -1141,7 +1141,7 @@ msgstr "تمام"
 
 #, fuzzy
 msgid "Buscar"
-msgstr "تلاش کریں۔"
+msgstr "تلاش کریں"
 
 #, fuzzy
 msgid ""

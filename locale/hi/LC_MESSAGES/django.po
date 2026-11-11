@@ -53,7 +53,7 @@ msgstr "साइन आउट करें और खाता स्विच 
 
 #, fuzzy
 msgid "Acceso del personal"
-msgstr "स्टाफ़ साइन इन करें"
+msgstr "कर्मचारी लॉगिन"
 
 #, fuzzy
 msgid "Estadísticas públicas"
@@ -65,11 +65,11 @@ msgstr "भाषा"
 
 #, fuzzy
 msgid "Aplicar"
-msgstr "आवेदन करें"
+msgstr "लागू करें"
 
 #, fuzzy
 msgid "Menú"
-msgstr "मेनू"
+msgstr "मेन्यू"
 
 #, fuzzy
 msgid "Páginas del sitio"
@@ -117,7 +117,7 @@ msgstr "उपयोगकर्ता और भूमिकाएँ"
 
 #, fuzzy
 msgid "Índice de la página"
-msgstr "पृष्ठ सामग्री"
+msgstr "पृष्ठ की विषय-सूची"
 
 #, fuzzy
 msgid "Entorno con datos sintéticos"
