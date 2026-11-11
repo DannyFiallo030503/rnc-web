@@ -1594,7 +1594,7 @@ msgstr "水平滚动的结果表"
 
 #, fuzzy
 msgid "Territorio"
-msgstr "领土"
+msgstr "地区"
 
 #, fuzzy
 msgid "Un nombre que identifique el período y la entrega."
@@ -1795,7 +1795,7 @@ msgstr "您的密码已成功保存。"
 
 #, fuzzy
 msgid "Territorios"
-msgstr "领土"
+msgstr "地区"
 
 #, fuzzy
 msgid "Tumores aceptados"

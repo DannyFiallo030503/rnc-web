@@ -1698,7 +1698,7 @@ msgstr "অনুভূমিক স্ক্রোলিং সহ ফলাফ
 
 #, fuzzy
 msgid "Territorio"
-msgstr "টেরিটরি"
+msgstr "অঞ্চল"
 
 #, fuzzy
 msgid "Un nombre que identifique el período y la entrega."

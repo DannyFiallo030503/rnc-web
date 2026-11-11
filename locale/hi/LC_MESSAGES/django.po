@@ -1912,7 +1912,7 @@ msgstr "आपका पासवर्ड सफलतापूर्वक स
 
 #, fuzzy
 msgid "Territorios"
-msgstr "प्रदेश"
+msgstr "क्षेत्र"
 
 #, fuzzy
 msgid "Tumores aceptados"

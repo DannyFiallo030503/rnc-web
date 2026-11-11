@@ -108,8 +108,8 @@ Para asignar o revisar los idiomas de forma independiente, la versión más reci
 está en `pending-by-locale-2026-11-11-r9/`: un ZIP por locale, cada uno con 881 filas
 (723 Django y 158 JavaScript), incluido el idioma fuente español. El paquete combinado es
 `pending-human-review-2026-11-11-r9.zip`. Esta revisión actualiza la referencia inglesa
-para conservar la sigla institucional `RNC` y corrige borradores de términos comunes de
-navegación y acceso al personal; las correcciones siguen fuzzy, no compiladas y sin
+para conservar la sigla institucional `RNC` y corrige borradores de etiquetas comunes de
+navegación, dimensión territorial y acceso al personal; las correcciones siguen fuzzy, no compiladas y sin
 aprobación humana. Los paquetes r8 y anteriores permanecen como historial. Se puede
 regenerar un paquete individual con `--locale <locale>` y su propio `--output`:
 

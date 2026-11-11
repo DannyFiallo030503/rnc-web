@@ -5,6 +5,8 @@
       "Índice de la página": "本页目录",
       "Menú": "菜单",
       "Siguiente": "下一页",
+      "Territorio": "地区",
+      "Territorios": "地区",
       "Acceso del personal": "员工登录"
     }
   },
@@ -13,6 +15,8 @@
       "Aplicar": "लागू करें",
       "Índice de la página": "पृष्ठ की विषय-सूची",
       "Menú": "मेन्यू",
+      "Territorio": "क्षेत्र",
+      "Territorios": "क्षेत्र",
       "Acceso del personal": "कर्मचारी लॉगिन"
     }
   },
@@ -36,6 +40,7 @@
       "Aplicar": "প্রয়োগ করুন",
       "Índice de la página": "এই পৃষ্ঠার সূচিপত্র",
       "Menú": "মেনু",
+      "Territorio": "অঞ্চল",
       "Acceso del personal": "কর্মীদের লগইন"
     }
   },
