@@ -9,6 +9,7 @@ from collections.abc import Hashable, Mapping
 from dataclasses import dataclass
 from math import isfinite, log, sqrt
 from statistics import NormalDist
+from django.utils.translation import gettext_lazy as _
 
 from . import METHODS_VERSION
 
@@ -76,14 +77,14 @@ def direct_standardized_rate_interval(
 
 def _confidence_z(confidence_level: float) -> float:
     if isinstance(confidence_level, bool) or not isinstance(confidence_level, (int, float)) or not isfinite(confidence_level) or not 0 < confidence_level < 1:
-        raise ValueError("El nivel de confianza debe estar entre cero y uno.")
+        raise ValueError(_("El nivel de confianza debe estar entre cero y uno."))
     return NormalDist().inv_cdf((1 + float(confidence_level)) / 2)
 
 
 def absolute_frequency(count: int) -> int:
     """Devuelve un conteo ya agregado, sin cambiar su unidad epidemiológica."""
     if isinstance(count, bool) or not isinstance(count, int) or count < 0:
-        raise ValueError("El conteo debe ser un entero no negativo.")
+        raise ValueError(_("El conteo debe ser un entero no negativo."))
     return count
 
 
@@ -92,9 +93,9 @@ def relative_frequency(part: int, universe: int) -> float:
     absolute_frequency(part)
     absolute_frequency(universe)
     if universe == 0:
-        raise ValueError("El universo debe ser mayor que cero.")
+        raise ValueError(_("El universo debe ser mayor que cero."))
     if part > universe:
-        raise ValueError("El numerador no puede exceder el universo declarado.")
+        raise ValueError(_("El numerador no puede exceder el universo declarado."))
     return part / universe * 100
 
 
@@ -119,7 +120,9 @@ def direct_standardized_rate(
     """
     case_groups = set(cases_by_stratum)
     if not case_groups or case_groups != set(population_by_stratum) or case_groups != set(standard_weights):
-        raise ValueError("Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos.")
+        raise ValueError(
+            _("Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos.")
+        )
 
     _positive_finite(scale, "La escala")
     total_weight = 0.0
@@ -134,15 +137,19 @@ def direct_standardized_rate(
         weighted_rate += cases / float(population) * float(weight)
 
     if total_weight <= 0:
-        raise ValueError("La suma de los pesos estándar debe ser mayor que cero.")
+        raise ValueError(_("La suma de los pesos estándar debe ser mayor que cero."))
     return weighted_rate / total_weight * float(scale)
 
 
 def _positive_finite(value: int | float, label: str) -> None:
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not isfinite(value) or value <= 0:
-        raise ValueError(f"{label} debe ser un número finito mayor que cero.")
+        raise ValueError(
+            _("%(label)s debe ser un número finito mayor que cero.") % {"label": label}
+        )
 
 
 def _nonnegative_finite(value: int | float, label: str) -> None:
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not isfinite(value) or value < 0:
-        raise ValueError(f"{label} debe ser un número finito no negativo.")
+        raise ValueError(
+            _("%(label)s debe ser un número finito no negativo.") % {"label": label}
+        )

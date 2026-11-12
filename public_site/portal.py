@@ -9,6 +9,8 @@ import threading
 GRAPH_LOCK = threading.Lock()
 from django.http import FileResponse, HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
+from django.utils.http import content_disposition_header
+from django.utils.translation import gettext_lazy as _
 from django.views.decorators.http import require_POST
 from .access import require, can
 from .forms import UploadForm, DecisionForm, ExplorerForm
@@ -26,20 +28,20 @@ from .statistics import results, DIMENSIONS, summary
 from .chart_context import describe_query
 
 CHARTS = {
-    "bar": "Barras horizontales",
-    "column": "Columnas",
-    "line": "Líneas",
-    "grouped": "Barras agrupadas por sexo",
-    "stacked": "Barras apiladas por sexo",
-    "percent": "Barras porcentuales por sexo",
-    "pie": "Circular",
-    "doughnut": "Anillo",
+    "bar": _("Barras horizontales"),
+    "column": _("Columnas"),
+    "line": _("Líneas"),
+    "grouped": _("Barras agrupadas por sexo"),
+    "stacked": _("Barras apiladas por sexo"),
+    "percent": _("Barras porcentuales por sexo"),
+    "pie": _("Circular"),
+    "doughnut": _("Anillo"),
 }
 METRICS = {
-    "count": "Frecuencia absoluta",
-    "share": "Frecuencia relativa (%)",
-    "rate": "Tasa cruda / específica por 100 000",
-    "asr": "Tasa ajustada Segi–Doll por 100 000",
+    "count": _("Frecuencia absoluta"),
+    "share": _("Frecuencia relativa (%)"),
+    "rate": _("Tasa cruda / específica por 100 000"),
+    "asr": _("Tasa ajustada Segi–Doll por 100 000"),
 }
 
 
@@ -76,8 +78,8 @@ def home(request):
                     {"label": "Tumores", "data": [r["value"] for r in table[:6]]}
                 ],
                 "type": "bar",
-                "title": "Localizaciones más frecuentes",
-                "note": f"Datos sintéticos · {latest}",
+                "title": _("Localizaciones más frecuentes"),
+                "note": _("Datos sintéticos · %(period)s") % {"period": latest},
             },
         },
     )
@@ -114,7 +116,7 @@ def explorer(request):
     form = ExplorerForm(
         query, options=options, dimensions=DIMENSIONS, charts=CHARTS, metrics=METRICS
     )
-    valid = form.is_valid()
+    form.is_valid()
     params = {key: form.cleaned_data.get(key, "") for key in options}
     params.update(
         {key: form.cleaned_data.get(key, value) for key, value in defaults.items()}
@@ -122,19 +124,15 @@ def explorer(request):
     errors = [str(e) for values in form.errors.values() for e in values]
     table, total = results(params, rows) if rows and not errors else ([], summary([]))
     if params["chart"] in {"pie", "doughnut"} and len(table) > 8:
-        errors.append(
-            "Seleccione una dimensión con hasta ocho categorías para circular o anillo."
-        )
+        errors.append(_("Seleccione una dimensión con hasta ocho categorías para circular o anillo."))
     if (
         params["chart"] in {"pie", "doughnut"}
         and table
         and not any(r["value"] for r in table)
     ):
-        errors.append("No hay valores positivos para representar una composición.")
+        errors.append(_("No hay valores positivos para representar una composición."))
     if any(r["value"] is None for r in table):
-        errors.append(
-            "No hay cobertura de población completa para el ajuste seleccionado."
-        )
+        errors.append(_("No hay cobertura de población completa para el ajuste seleccionado."))
     for error in errors:
         if not any(error in list(values) for values in form.errors.values()):
             form.add_error("metric" if "población" in error else "chart", error)
@@ -144,10 +142,10 @@ def explorer(request):
     if params["chart"] in {"grouped", "stacked", "percent"} and not errors:
         datasets = []
         for sex in ["Mujeres", "Hombres"]:
-            items, _ = results({**params, "sex": sex}, rows)
+            items, _ignored_summary = results({**params, "sex": sex}, rows)
             by_label = {r["label"]: r["value"] for r in items}
             datasets.append(
-                {"label": sex, "data": [by_label.get(r["label"], 0) for r in table]}
+                {"label": str(_(sex)), "data": [by_label.get(r["label"], 0) for r in table]}
             )
         if params["chart"] == "percent":
             for i in range(len(table)):
@@ -156,7 +154,7 @@ def explorer(request):
                     d["data"][i] = round(d["data"][i] / base * 100, 2) if base else 0
     context = describe_query(
         params, options, DIMENSIONS, CHARTS, METRICS,
-        {"tumors": "Tumores", "persons": "Personas distintas"},
+        {"tumors": _("Tumores"), "persons": _("Personas distintas")},
     )
     filter_note = context["filter_summary"]
     payload = {
@@ -164,13 +162,13 @@ def explorer(request):
         "datasets": datasets,
         "type": params["chart"],
         "title": DIMENSIONS[params["dimension"]],
-        "note": f"Datos sintéticos · {delivery.title if delivery else ''} · Versión {delivery.pk if delivery else ''}",
+        "note": _("Datos sintéticos · %(title)s · Versión %(release)s") % {"title": delivery.title if delivery else "", "release": delivery.pk if delivery else ""},
         "metric": METRICS[params["metric"]],
-        "unit": ("Personas distintas" if params["unit"] == "persons" else "Tumores"),
+        "unit": (_("Personas distintas") if params["unit"] == "persons" else _("Tumores")),
         **context,
     }
     if params["chart"] == "percent":
-        payload["metric"] = "Distribución por sexo (%)"
+        payload["metric"] = _("Distribución por sexo (%)")
     if len(datasets) > 1:
         for index, row in enumerate(table):
             row["series"] = [
@@ -207,7 +205,7 @@ def explorer(request):
                     count = 1
                 if count > 20:
                     response = HttpResponse(
-                        "Se alcanzó el límite temporal de exportaciones. Espere un minuto.",
+                        _("Se alcanzó el límite temporal de exportaciones. Espere un minuto."),
                         status=429,
                     )
                     response["Retry-After"] = "60"
@@ -262,7 +260,7 @@ def administration(request):
             )
             messages.success(
                 request,
-                "Archivo validado y registrado. Revise el corte antes de publicarlo.",
+                _("Archivo validado y registrado. Revise el corte antes de publicarlo."),
             )
             return redirect("public_site:delivery", pk=delivery.pk)
         except (ValueError, OverflowError) as exc:
@@ -271,7 +269,7 @@ def administration(request):
                 (
                     str(exc)
                     if isinstance(exc, ValueError)
-                    else "Valor numérico fuera de rango."
+                    else _("Valor numérico fuera de rango.")
                 ),
             )
     deliveries = Delivery.objects.all()
@@ -283,6 +281,7 @@ def administration(request):
             "page": Paginator(deliveries, 10).get_page(request.GET.get("page")),
             "delivery_count": deliveries.count(),
             "published": current_delivery(),
+            "no_published_label": _("Sin corte publicado"),
             "events": AuditEvent.objects.all()[:12],
         },
     )
@@ -299,6 +298,7 @@ def delivery(request, pk):
         "public_site/delivery.html",
         {
             "delivery": obj,
+            "no_value_label": _("No determinado"),
             "may_publish": can(request.user, "publish_deliveries"),
             "events": AuditEvent.objects.filter(target=str(pk)),
             "decision_form": DecisionForm(
@@ -322,7 +322,7 @@ def delivery_action(request, pk):
                 form.cleaned_data["reason"],
             )
             messages.success(
-                request, "Estado actualizado. El portal público ya refleja este cambio."
+                request, _("Estado actualizado. El portal público ya refleja este cambio.")
             )
             return redirect("public_site:delivery", pk=pk)
         except ValueError as exc:
@@ -332,6 +332,7 @@ def delivery_action(request, pk):
         "public_site/delivery.html",
         {
             "delivery": obj,
+            "no_value_label": _("No determinado"),
             "may_publish": True,
             "events": AuditEvent.objects.filter(target=str(pk)),
             "decision_form": form,
@@ -355,14 +356,14 @@ def sample(request):
         path = private_root() / "ejemplo_sintetico.csv"
         if not path.exists():
             return HttpResponse(
-                "Ejecute seed_demo para generar el ejemplo local.", status=404
+                _("Ejecute seed_demo para generar el ejemplo local."), status=404
             )
         with path.open(encoding="utf-8", newline="") as source:
             rows = list(csv.DictReader(source))
     rows = [{key: row[key] for key in HEADER} for row in rows]
     if len(rows) >= 60000:
         return HttpResponse(
-            "El ejemplo ya alcanzó el límite de filas del entorno local.", status=400
+            _("El ejemplo ya alcanzó el límite de filas del entorno local."), status=400
         )
     latest = max(r["period"] for r in rows)
     from analytics.catalogs import id_for
@@ -382,8 +383,8 @@ def sample(request):
     writer.writeheader()
     writer.writerows(rows)
     response = HttpResponse(output.getvalue(), content_type="text/csv; charset=utf-8")
-    response["Content-Disposition"] = (
-        'attachment; filename="actualizacion_sintetica.csv"'
+    response["Content-Disposition"] = content_disposition_header(
+        True, f"{_('actualizacion_sintetica')}.csv"
     )
     response["Cache-Control"] = "no-store"
     return response

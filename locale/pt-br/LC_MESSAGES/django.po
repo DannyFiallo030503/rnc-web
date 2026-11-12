@@ -1,0 +1,3642 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: pt-br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba."
+msgstr "Estatísticas de incidência do Registro Nacional de Câncer de Cuba."
+
+#, fuzzy
+msgid "RNC · Estadísticas de cáncer en Cuba"
+msgstr "RNC · Estatísticas de câncer em Cuba"
+
+#, fuzzy
+msgid "RNC Cuba · Inicio"
+msgstr "RNC Cuba · Início"
+
+#, fuzzy
+msgid "Inicio"
+msgstr "Página inicial"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer"
+msgstr "Registro Nacional de Câncer"
+
+#, fuzzy
+msgid "Sesión iniciada"
+msgstr "Conectado"
+
+#, fuzzy
+msgid "Administración"
+msgstr "Administração"
+
+#, fuzzy
+msgid "Usuarios y permisos"
+msgstr "Usuários e permissões"
+
+#, fuzzy
+msgid "Cambiar contraseña"
+msgstr "Alterar senha"
+
+#, fuzzy
+msgid "Cerrar sesión y cambiar de cuenta"
+msgstr "Sair e trocar de conta"
+
+#, fuzzy
+msgid "Acceso del personal"
+msgstr "Acesso da equipe"
+
+#, fuzzy
+msgid "Estadísticas públicas"
+msgstr "Estatísticas públicas"
+
+#, fuzzy
+msgid "Idioma"
+msgstr "Idioma"
+
+#, fuzzy
+msgid "Aplicar"
+msgstr "Aplicar"
+
+#, fuzzy
+msgid "Menú"
+msgstr "Menu"
+
+#, fuzzy
+msgid "Páginas del sitio"
+msgstr "Páginas do site"
+
+#, fuzzy
+msgid "Secciones de esta página"
+msgstr "Seções nesta página"
+
+#, fuzzy
+msgid "Secciones sobre el RNC"
+msgstr "Seções sobre o RNC"
+
+#, fuzzy
+msgid "En esta página"
+msgstr "Nesta página"
+
+#, fuzzy
+msgid "Plegar barra lateral"
+msgstr "Recolher barra lateral"
+
+#, fuzzy
+msgid "Plegar menú"
+msgstr "Recolher menu"
+
+#, fuzzy
+msgid "Navegación"
+msgstr "Navegação"
+
+#, fuzzy
+msgid "Páginas"
+msgstr "Páginas"
+
+#, fuzzy
+msgid "Gestión de usuarios"
+msgstr "Gerenciamento de usuários"
+
+#, fuzzy
+msgid "Gestionar usuarios"
+msgstr "Gerenciar usuários"
+
+#, fuzzy
+msgid "Usuarios y roles"
+msgstr "Usuários e funções"
+
+#, fuzzy
+msgid "Índice de la página"
+msgstr "Índice da página"
+
+#, fuzzy
+msgid "Entorno con datos sintéticos"
+msgstr "Ambiente de dados sintéticos"
+
+#, fuzzy
+msgid "Información que acerca"
+msgstr "Aproximando informações"
+
+#, fuzzy
+msgid "las estadísticas a las personas."
+msgstr "Levando estatísticas para as pessoas."
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer de Cuba."
+msgstr "Registro Nacional de Câncer de Cuba."
+
+#, fuzzy
+msgid "Consulta de incidencia y resultados agregados."
+msgstr "Estatísticas de incidência e resultados agregados."
+
+#, fuzzy
+msgid "Navegación del pie de página"
+msgstr "Navegação no rodapé"
+
+#, fuzzy
+msgid "Explorar"
+msgstr "Explorar"
+
+#, fuzzy
+msgid "Ayuda y acceso"
+msgstr "Ajuda e acesso"
+
+#, fuzzy
+msgid "Información y acceso"
+msgstr "Informação e acesso"
+
+#, fuzzy
+msgid "Cómo leer los resultados"
+msgstr "Como ler os resultados"
+
+#, fuzzy
+msgid "Seguridad de mi cuenta"
+msgstr "Segurança da conta"
+
+#, fuzzy
+msgid "Subir al comienzo"
+msgstr "Voltar ao topo"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer · Cuba"
+msgstr "Registro Nacional de Câncer · Cuba"
+
+#, fuzzy
+msgid ""
+"Los datos de esta instalación son inventados. No representan estadísticas "
+"oficiales."
+msgstr ""
+"Os dados deste site são sintéticos e não representam estatísticas oficiais."
+
+#, fuzzy
+msgid "El RNC"
+msgstr "Sobre o RNC"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "Explorador estatístico"
+
+#, fuzzy
+msgid "Nomencladores"
+msgstr "Catálogos de códigos"
+
+#, fuzzy
+msgid "Consulta sin conexión"
+msgstr "Consulta off-line"
+
+#, fuzzy
+msgid "Crear usuario"
+msgstr "Criar usuário"
+
+#, fuzzy
+msgid "Editar usuario"
+msgstr "Editar usuário"
+
+#, fuzzy
+msgid "Detalle del corte"
+msgstr "Detalhes do lançamento"
+
+#, fuzzy
+msgid "Iniciar sesión"
+msgstr "Faça login"
+
+#, fuzzy
+msgid "Recuperar acceso"
+msgstr "Recuperar conta"
+
+#, fuzzy
+msgid "Administrador de soporte"
+msgstr "Administrador de suporte"
+
+#, fuzzy
+msgid "Responsable de publicación"
+msgstr "Gerente de publicação"
+
+#, fuzzy
+msgid "Operador de cargas"
+msgstr "Operador de entrada de dados"
+
+#, fuzzy
+msgid "Consulta pública"
+msgstr "Consulta pública"
+
+#, fuzzy
+msgid "Información para comprender la incidencia del cáncer"
+msgstr "Informações para entender a incidência do câncer"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer reúne y analiza información sobre los casos "
+"de cáncer en Cuba. Este portal permite consultar estadísticas por año, "
+"territorio, sexo, edad y localización, y preparar tablas, gráficos y "
+"descargas."
+msgstr ""
+"O Registro Nacional de Câncer coleta e analisa informações sobre casos de "
+"câncer em Cuba. Este portal permite explorar estatísticas por ano, "
+"território, sexo, idade e local de câncer, além de preparar tabelas, "
+"gráficos e downloads."
+
+#, fuzzy
+msgid "Consultar estadísticas"
+msgstr "Explorar estatísticas"
+
+#, fuzzy
+msgid "Conocer el RNC"
+msgstr "Sobre o RNC"
+
+#, fuzzy
+msgid "Qué ofrece este portal"
+msgstr "O que este portal oferece"
+
+#, fuzzy
+msgid "Explora los datos disponibles"
+msgstr "Explore os dados disponíveis"
+
+#, fuzzy
+msgid "Filtra por año y territorio"
+msgstr "Filtrar por ano e território"
+
+#, fuzzy
+msgid "Compara sexo, edad y localización"
+msgstr "Compare sexo, idade e local do câncer"
+
+#, fuzzy
+msgid "Consulta tablas y visualizaciones"
+msgstr "Explore tabelas e visualizações"
+
+#, fuzzy
+msgid "Descarga resultados con su contexto"
+msgstr "Baixe os resultados com seu contexto"
+
+#, fuzzy
+msgid "Información sobre el Registro"
+msgstr "Sobre o Registro"
+
+#, fuzzy
+msgid "El Registro"
+msgstr "O Registro"
+
+#, fuzzy
+msgid "¿Qué es el RNC?"
+msgstr "O que é o RNC?"
+
+#, fuzzy
+msgid ""
+"Es el sistema nacional que recopila, revisa y analiza información de cáncer "
+"con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del"
+" cáncer y sirven de apoyo a la investigación y la planificación sanitaria."
+msgstr ""
+"É o sistema nacional de base populacional que recolhe, analisa e analisa "
+"informações sobre o cancro. As suas estatísticas ajudam a descrever o fardo "
+"do cancro e apoiam a investigação e o planeamento da saúde."
+
+#, fuzzy
+msgid "Qué hacemos"
+msgstr "O que fazemos"
+
+#, fuzzy
+msgid "La plataforma"
+msgstr "A plataforma"
+
+#, fuzzy
+msgid "¿Qué puedes hacer aquí?"
+msgstr "O que você pode fazer aqui?"
+
+#, fuzzy
+msgid ""
+"Construir una consulta, elegir el indicador y la dimensión de análisis, "
+"revisar la tabla que acompaña cada gráfico y exportar los resultados "
+"seleccionados."
+msgstr ""
+"Crie uma consulta, escolha um indicador e uma dimensão de análise, revise a "
+"tabela que acompanha cada gráfico e exporte os resultados selecionados."
+
+#, fuzzy
+msgid "Abrir la consulta estadística"
+msgstr "Abra o explorador estatístico"
+
+#, fuzzy
+msgid "Cómo usar el portal"
+msgstr "Como usar o portal"
+
+#, fuzzy
+msgid "De la pregunta al resultado"
+msgstr "Da pergunta ao resultado"
+
+#, fuzzy
+msgid "Define la consulta."
+msgstr "Defina sua consulta."
+
+#, fuzzy
+msgid ""
+"Selecciona el período y las dimensiones disponibles, como territorio, sexo, "
+"edad y localización."
+msgstr ""
+"Selecione o período e as dimensões disponíveis, como território, sexo, idade"
+" e local do câncer."
+
+#, fuzzy
+msgid "Elige qué medir."
+msgstr "Escolha o que medir."
+
+#, fuzzy
+msgid ""
+"Distingue el número de casos, una proporción o una tasa; cada medida "
+"responde a una pregunta diferente."
+msgstr ""
+"Escolha entre uma contagem de casos, uma proporção ou uma taxa; cada medida "
+"responde a uma pergunta diferente."
+
+#, fuzzy
+msgid "Interpreta y conserva el contexto."
+msgstr "Interprete os resultados no contexto."
+
+#, fuzzy
+msgid ""
+"Revisa tabla, unidad, población de referencia, fuente y notas del método "
+"antes de comparar o descargar."
+msgstr ""
+"Revise a tabela, a unidade, a população de referência, a fonte e as notas do"
+" método antes de comparar ou baixar os resultados."
+
+#, fuzzy
+msgid ""
+"La disponibilidad de cada indicador depende del corte publicado. Las "
+"estimaciones, los datos observados y los períodos preliminares deben "
+"identificarse por separado."
+msgstr ""
+"A disponibilidade do indicador depende da versão publicada. Estimativas, "
+"dados observados e períodos preliminares devem ser identificados "
+"separadamente."
+
+#, fuzzy
+msgid "Ver cómo se calculan los indicadores"
+msgstr "Veja como os indicadores são calculados"
+
+#, fuzzy
+msgid "Conceptos estadísticos básicos"
+msgstr "Conceitos estatísticos básicos"
+
+#, fuzzy
+msgid "Casos y frecuencias"
+msgstr "Casos e frequências"
+
+#, fuzzy
+msgid ""
+"Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa"
+" compara una parte con un total y se expresa como porcentaje. El denominador"
+" y la unidad deben acompañar siempre al resultado."
+msgstr ""
+"Uma contagem mostra quantos casos atendem aos filtros selecionados. Uma "
+"frequência relativa compara uma parte com um total e é expressa como uma "
+"porcentagem. O denominador e a unidade devem sempre acompanhar o resultado."
+
+#, fuzzy
+msgid "Tasas de incidencia"
+msgstr "Taxas de incidência"
+
+#, fuzzy
+msgid ""
+"Una tasa relaciona los casos nuevos con la población correspondiente al "
+"mismo período y estrato. Las tasas por edad ayudan a describir grupos; el "
+"ajuste por edad facilita comparaciones entre poblaciones con estructuras "
+"etarias diferentes."
+msgstr ""
+"Uma taxa relaciona novos casos à população do mesmo período e estrato. As "
+"taxas específicas por idade ajudam a descrever grupos; o ajustamento por "
+"idade apoia comparações entre populações com diferentes estruturas etárias."
+
+#, fuzzy
+msgid ""
+"Las consultas estarán disponibles cuando exista una publicación activa."
+msgstr "As consultas estarão disponíveis quando um lançamento for publicado."
+
+#, fuzzy
+msgid "Anillo"
+msgstr "Gráfico de rosca"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "Ano do diagnóstico"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "Barras agrupadas por sexo"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "Barras empilhadas por sexo"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "Barras horizontais"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "Barras percentuais por sexo"
+
+#, fuzzy
+msgid "Circular"
+msgstr "Gráfico de pizza"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "Colunas"
+
+#, fuzzy
+msgid "Comparar por"
+msgstr "Comparar por"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "Gráfico de dispersão: tumores e pessoas por província/idade"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "Distribuição territorial (enxame)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "Idade"
+
+#, fuzzy
+msgid "El ajuste por edad necesita todos los grupos de edad."
+msgstr "O ajuste de idade requer todas as faixas etárias."
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "O ajuste de idade requer todas as faixas etárias e outra dimensão."
+
+#, fuzzy
+msgid ""
+"El corte activo no incluye desglose por municipio; solo contiene provincia "
+"de residencia."
+msgstr ""
+"A publicação ativa não apresenta detalhamento por município; contém apenas a"
+" província de residência."
+
+#, fuzzy
+msgid ""
+"El corte agregado no permite deduplicar personas distintas al combinar "
+"varios valores. Use Tumores o seleccione un solo valor por filtro."
+msgstr ""
+"A versão agregada não pode desduplicar pessoas em vários valores "
+"selecionados. Use tumores ou selecione apenas um valor por filtro."
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "Esta dimensão não está disponível para o gráfico selecionado."
+
+#, fuzzy
+msgid "Este gráfico requiere la unidad Tumores."
+msgstr "Este gráfico requer a unidade Tumores."
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "Este indicador não está disponível para o gráfico selecionado."
+
+#, fuzzy
+msgid "Filtra los casos por municipio de residencia. Puede elegir varios."
+msgstr ""
+"Filtrar casos por município de residência. Você pode selecionar mais de um."
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "Frequência absoluta"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "Frequência relativa (%)"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "Grupo de localização do câncer"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "Indicador"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "Uma comparação por sexo requer ambos os sexos e outra dimensão."
+
+#, fuzzy
+msgid ""
+"La dispersión necesita una selección que permita contar personas distintas "
+"sin solapamientos."
+msgstr ""
+"Um gráfico de dispersão precisa de uma seleção onde pessoas distintas possam"
+" ser contadas sem sobreposição."
+
+#, fuzzy
+msgid "Líneas"
+msgstr "Linhas"
+
+#, fuzzy
+msgid "Municipio de residencia"
+msgstr "Município de residência"
+
+#, fuzzy
+msgid ""
+"Para personas distintas, la composición solo se puede comparar por sexo."
+msgstr "Para pessoas distintas, a composição só pode ser comparada por sexo."
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "Pessoas distintas"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "Província de residência"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "Pontos por província ou faixa etária"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "Classificação por indicador"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "Sexo"
+
+#, fuzzy
+msgid "Sin seleccionar opciones se incluyen todos; puede elegir varias."
+msgstr ""
+"Se você não selecionar nenhuma opção, todos os valores serão incluídos. Você"
+" pode selecionar mais de um."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen solo las provincias presentes en este corte, que "
+"puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia "
+"de la unidad informante; puede elegir varias."
+msgstr ""
+"Sem seleção, apenas as províncias nesta versão são incluídas; eles podem não"
+" cobrir toda Cuba. Estas são províncias de residência e não províncias de "
+"unidades declarantes. Você pode selecionar mais de um."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen todas las provincias disponibles. Es la provincia "
+"de residencia, no la provincia de la unidad informante; puede elegir varias."
+msgstr ""
+"Sem seleção, todas as províncias disponíveis são incluídas. Esta é a "
+"província de residência e não a província da unidade declarante. Você pode "
+"selecionar mais de um."
+
+#, fuzzy
+msgid ""
+"Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta"
+" 8 categorías excluyentes."
+msgstr ""
+"Somente tipos de gráficos compatíveis com sua seleção são oferecidos. Os "
+"gráficos de pizza e de rosca suportam até 8 categorias mutuamente "
+"exclusivas."
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Taxa Segi-Doll ajustada por idade por 100.000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "Taxa bruta/específica por idade por 100.000"
+
+#, fuzzy
+msgid "Tipo de gráfico"
+msgstr "Tipo de gráfico"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "Tumores"
+
+#, fuzzy
+msgid "Unidad de conteo"
+msgstr "Unidade de contagem"
+
+#, fuzzy
+msgid "Cuenta"
+msgstr "Conta"
+
+#, fuzzy
+msgid "Consulta sin conexión · RNC Cuba"
+msgstr "Consulta off-line · RNC Cuba"
+
+#, fuzzy
+msgid "Consulta pública local"
+msgstr "Consulta pública local"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación agregada sintética mientras tienes conexión. Después "
+"puedes filtrar, calcular, graficar, paginar e imprimir desde este "
+"dispositivo. La aplicación pública continúa disponible sin el servidor; la "
+"administración requiere conexión."
+msgstr ""
+"Salve uma versão agregada sintética enquanto estiver online. Você pode então"
+" filtrar, calcular, traçar um gráfico, paginar e imprimir a partir deste "
+"dispositivo. O aplicativo público permanece disponível sem o servidor; a "
+"administração requer uma conexão."
+
+#, fuzzy
+msgid "Publicación local"
+msgstr "Lançamento local"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "Nenhum pacote salvo."
+
+#, fuzzy
+msgid "Instalar consulta pública"
+msgstr "Instalar consulta pública"
+
+#, fuzzy
+msgid "Guardar / actualizar publicación"
+msgstr "Salvar/atualizar versão"
+
+#, fuzzy
+msgid "Eliminar copia local"
+msgstr "Excluir cópia local"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo acepta publicaciones sintéticas. La copia queda en el "
+"almacenamiento del navegador hasta que la elimines o el navegador la retire."
+" Una copia sin conexión no puede actualizarse ni revocarse mientras el "
+"dispositivo está desconectado."
+msgstr ""
+"Este protótipo aceita apenas versões sintéticas. A cópia permanece no "
+"armazenamento do navegador até que você a exclua ou o navegador a remova. "
+"Uma cópia offline não pode ser atualizada ou revogada enquanto o dispositivo"
+" estiver desconectado."
+
+#, fuzzy
+msgid "Filtros y visualización"
+msgstr "Filtros e visualização"
+
+#, fuzzy
+msgid "Guarda una publicación para cargar los filtros disponibles."
+msgstr "Salve uma versão para carregar os filtros disponíveis."
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "Não disponível nesta versão"
+
+#, fuzzy
+msgid "Localización"
+msgstr "Local"
+
+#, fuzzy
+msgid "Calcular en este dispositivo"
+msgstr "Calcule neste dispositivo"
+
+#, fuzzy
+msgid "Comparar con el servidor"
+msgstr "Compare com o servidor"
+
+#, fuzzy
+msgid "Descargar CSV"
+msgstr "Baixar CSV"
+
+#, fuzzy
+msgid "Descargar gráfico PNG"
+msgstr "Baixar gráfico PNG"
+
+#, fuzzy
+msgid "Imprimir / guardar PDF"
+msgstr "Imprimir/salvar PDF"
+
+#, fuzzy
+msgid "Gráfico del resultado calculado localmente"
+msgstr "Gráfico do resultado calculado localmente"
+
+#, fuzzy
+msgid "Paginación de resultados"
+msgstr "Paginação de resultados"
+
+#, fuzzy
+msgid "Anterior"
+msgstr "Anterior"
+
+#, fuzzy
+msgid "Siguiente"
+msgstr "Próximo"
+
+#, fuzzy
+msgid "Barras"
+msgstr "Barras"
+
+#, fuzzy
+msgid "Actualizar resultados"
+msgstr "Atualizar resultados"
+
+#, fuzzy
+msgid ""
+"Actualmente no hay un corte publicado. Las consultas y descargas estarán "
+"disponibles cuando se publique una nueva versión."
+msgstr ""
+"Nenhum lançamento foi publicado atualmente. Consultas e downloads estarão "
+"disponíveis quando uma nova versão for publicada."
+
+#, fuzzy
+msgid ""
+"Cada barra suma 100 % y muestra la distribución por sexo dentro de esa "
+"categoría."
+msgstr ""
+"Cada barra totaliza 100% e mostra a distribuição por sexo dentro dessa "
+"categoria."
+
+#, fuzzy
+msgid "Cambiar filtros"
+msgstr "Alterar filtros"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "Categoria"
+
+#, fuzzy
+msgid ""
+"Categorías ordenadas de mayor a menor según el indicador seleccionado. Las "
+"posiciones también aparecen en las exportaciones."
+msgstr ""
+"As categorias são ordenadas da maior para a menor pela medida selecionada. "
+"As classificações também estão incluídas nas exportações."
+
+#, fuzzy
+msgid "Eje de valores:"
+msgstr "Eixo de valor:"
+
+#, fuzzy
+msgid ""
+"El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los "
+"conteos exactos de tumores y personas distintas."
+msgstr ""
+"O tamanho da bolha agrupa categorias com a mesma frequência; os eixos retêm "
+"contagens exatas de tumores e pessoas distintas."
+
+#, fuzzy
+msgid "Filtros aplicados:"
+msgstr "Filtros aplicados:"
+
+#, fuzzy
+msgid "Filtros de consulta"
+msgstr "Filtros de consulta"
+
+#, fuzzy
+msgid "Frecuencias y tasas calculadas para cada categoría de la comparación."
+msgstr "Frequências e taxas calculadas para cada categoria de comparação."
+
+#, fuzzy
+msgid "Frecuencias, población denominadora y tasas por categoría"
+msgstr "Frequências, população denominadora e taxas por categoria"
+
+#, fuzzy
+msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
+msgstr "Gráfico de consulta; valores estão disponíveis na tabela abaixo"
+
+#, fuzzy
+msgid "Hay campos por corregir en el panel de filtros."
+msgstr "Alguns campos do painel de filtros precisam de correção."
+
+#, fuzzy
+msgid "Imagen PNG"
+msgstr "Imagem PNG"
+
+#, fuzzy
+msgid "Informe PDF"
+msgstr "Relatório em PDF"
+
+#, fuzzy
+msgid ""
+"La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La "
+"tasa cruda es frecuencia / población denominadora × 100 000; al comparar por"
+" edad corresponde a una tasa específica por edad. Al seleccionar varios años"
+" se acumulan las poblaciones anuales seleccionadas, por lo que la tasa "
+"resume el período y no corresponde a un solo año."
+msgstr ""
+"A frequência relativa e as taxas utilizam a unidade selecionada acima. A "
+"taxa bruta é frequência/denominador população × 100.000; para comparações de"
+" idade, é uma taxa específica por idade. Quando vários anos são "
+"selecionados, suas populações anuais são adicionadas, de modo que a taxa "
+"resume o período em vez de um único ano."
+
+#, fuzzy
+msgid ""
+"La separación vertical de los puntos solo facilita distinguirlos; no "
+"representa otro indicador."
+msgstr ""
+"O espaçamento vertical entre pontos é apenas para facilitar a leitura; não "
+"representa outra medida."
+
+#, fuzzy
+msgid ""
+"La tasa ajustada aplica la población estándar Segi–Doll al conjunto de "
+"edades disponible. Si falta cobertura en alguno de los grupos requeridos, se"
+" muestra “—”. La fórmula, los denominadores y la presentación de los métodos"
+" siguen pendientes de cotejo con el RNC."
+msgstr ""
+"A taxa ajustada por idade aplica a população padrão Segi-Doll às faixas "
+"etárias disponíveis. Se a cobertura estiver faltando para qualquer grupo "
+"necessário, “—” será mostrado. A fórmula, os denominadores e a apresentação "
+"dos métodos ainda requerem revisão junto ao RNC."
+
+#, fuzzy
+msgid ""
+"Las personas distintas no se calculan cuando se combinan varios valores; una"
+" persona puede aparecer en más de un período, territorio, grupo de edad o "
+"localización."
+msgstr ""
+"Pessoas distintas não são calculadas quando vários valores são combinados; "
+"uma pessoa pode aparecer em mais de um período, território, faixa etária ou "
+"local."
+
+#, fuzzy
+msgid "No hay resultados"
+msgstr "Nenhum resultado"
+
+#, fuzzy
+msgid "No hay una publicación activa o la selección no contiene registros."
+msgstr "Não há liberação ativa ou a seleção não contém registros."
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "População do denominador"
+
+#, fuzzy
+msgid "Posición"
+msgstr "Classificação"
+
+#, fuzzy
+msgid ""
+"Puede combinar valores de provincia y municipio de residencia cuando el "
+"corte los incluya. Si un filtro está vacío, se incluyen todos sus valores "
+"disponibles. Los grupos tumorales corresponden a esta publicación; no forman"
+" un catálogo completo ni representan códigos TOPO o ICD‑O."
+msgstr ""
+"Você pode combinar os valores de província e município de residência quando "
+"eles forem incluídos na liberação. Deixar um filtro vazio inclui todos os "
+"seus valores disponíveis. Os grupos de tumores são específicos para esta "
+"versão; eles não são um catálogo completo e não representam códigos TOPO ou "
+"CID-O."
+
+#, fuzzy
+msgid "Restablecer"
+msgstr "Redefinir"
+
+#, fuzzy
+msgid "Resultados"
+msgstr "Resultados"
+
+#, fuzzy
+msgid "Revise los filtros"
+msgstr "Revise os filtros"
+
+#, fuzzy
+msgid "Tabla CSV"
+msgstr "Tabela CSV"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll"
+msgstr "Taxa ajustada por idade Segi – Doll"
+
+#, fuzzy
+msgid "Tasa cruda/específica"
+msgstr "Taxa bruta/específica por idade"
+
+#, fuzzy
+msgid "Vector SVG"
+msgstr "Imagem vetorial SVG"
+
+#, fuzzy
+msgid "Visualización"
+msgstr "Visualização"
+
+#, fuzzy
+msgid "por 100 000"
+msgstr "por 100.000"
+
+#, fuzzy
+msgid "Excel"
+msgstr "Excel"
+
+#, fuzzy
+msgid ""
+"Una persona puede aparecer en distintas localizaciones; esos conteos pueden "
+"solaparse y no se suman para obtener personas únicas."
+msgstr ""
+"Uma pessoa pode aparecer em vários sites; essas contagens podem se sobrepor "
+"e não devem ser somadas para obter o número de pessoas únicas."
+
+#, fuzzy
+msgid "Unidad"
+msgstr "Unidade"
+
+#, fuzzy
+msgid "Acceso restringido"
+msgstr "Acesso restrito"
+
+#, fuzzy
+msgid "Bienvenido de nuevo"
+msgstr "Bem vindo de volta"
+
+#, fuzzy
+msgid "Entre con su cuenta para acceder a sus herramientas de trabajo."
+msgstr "Faça login para acessar suas ferramentas de trabalho."
+
+#, fuzzy
+msgid "Incluir todos"
+msgstr "Selecionar tudo"
+
+#, fuzzy
+msgid "Incluir todos los valores de"
+msgstr "Incluir todos os valores para"
+
+#, fuzzy
+msgid "La dirección no existe o el recurso ya no está disponible."
+msgstr "Este endereço não existe ou o recurso não está mais disponível."
+
+#, fuzzy
+msgid ""
+"Las cuentas son creadas por el equipo administrador. No hay registro "
+"público."
+msgstr ""
+"As contas são criadas pela equipe de administração. O registro público não "
+"está disponível."
+
+#, fuzzy
+msgid "No encontramos esa página"
+msgstr "Não conseguimos encontrar essa página"
+
+#, fuzzy
+msgid "No hay acciones registradas."
+msgstr "Nenhuma ação foi registrada."
+
+#, fuzzy
+msgid "No se ha seleccionado un archivo"
+msgstr "Nenhum arquivo selecionado"
+
+#, fuzzy
+msgid "Paginación"
+msgstr "Paginação"
+
+#, fuzzy
+msgid "Primera"
+msgstr "Primeiro"
+
+#, fuzzy
+msgid "Página"
+msgstr "Página"
+
+#, fuzzy
+msgid "Revise los campos indicados"
+msgstr "Revise os campos indicados"
+
+#, fuzzy
+msgid "Seleccionar CSV"
+msgstr "Escolha CSV"
+
+#, fuzzy
+msgid ""
+"Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar "
+"consultando las estadísticas públicas."
+msgstr ""
+"Sua conta não tem permissão para acessar esta seção. Você pode continuar "
+"navegando nas estatísticas públicas."
+
+#, fuzzy
+msgid "Volver al inicio"
+msgstr "De volta para casa"
+
+#, fuzzy
+msgid "Vuelva a seleccionar el CSV para reenviar el formulario."
+msgstr "Selecione o arquivo CSV novamente para reenviar o formulário."
+
+#, fuzzy
+msgid "de"
+msgstr "de"
+
+#, fuzzy
+msgid "seleccionados"
+msgstr "selecionado"
+
+#, fuzzy
+msgid "¿Olvidó su contraseña?"
+msgstr "Esqueceu sua senha?"
+
+#, fuzzy
+msgid "Última"
+msgstr "Último"
+
+#, fuzzy
+msgid "Nomencladores · RNC Cuba"
+msgstr "Catálogos de códigos de câncer · RNC Cuba"
+
+#, fuzzy
+msgid "Consulta de clasificadores"
+msgstr "Pesquisa de classificação"
+
+#, fuzzy
+msgid "Nomencladores de cáncer"
+msgstr "Catálogos de códigos de câncer"
+
+#, fuzzy
+msgid ""
+"Busque un código o término y vea a qué sistema, edición y eje pertenece."
+msgstr "Pesquise um código ou termo para ver seu sistema, edição e eixo."
+
+#, fuzzy
+msgid "Referencia inicial de este proyecto, pendiente de validación del RNC:"
+msgstr "Referência inicial para este projeto, pendente de validação RNC:"
+
+#, fuzzy
+msgid ""
+"ICD-O-3 para topografía y morfología; ICCC-3 para grupos diagnósticos "
+"infantiles. Se conserva el sistema y la edición con que llega cada código; "
+"no se traducen ni mezclan códigos entre ediciones sin una equivalencia "
+"validada."
+msgstr ""
+"CID-O-3 para topografia e morfologia; ICCC-3 para grupos de diagnóstico "
+"infantil. Cada código mantém seu sistema fonte e edição; os códigos não são "
+"traduzidos ou misturados nas edições sem uma equivalência validada."
+
+#, fuzzy
+msgid "No se pudo cargar el catálogo"
+msgstr "Não foi possível carregar o catálogo"
+
+#, fuzzy
+msgid "Catálogo oficial aún no disponible"
+msgstr "Nenhum catálogo autorizado está disponível ainda"
+
+#, fuzzy
+msgid ""
+"Esta instalación no tiene cargado un diccionario autorizado. Los grupos de "
+"localización de la demostración son sintéticos y no equivalen a códigos "
+"TOPO."
+msgstr ""
+"Esta instalação não possui nenhum dicionário autorizado carregado. Os grupos"
+" de locais de demonstração são sintéticos e não são equivalentes aos códigos"
+" TOPO."
+
+#, fuzzy
+msgid "Fuentes para la referencia inicial:"
+msgstr "Fontes para a referência inicial:"
+
+#, fuzzy
+msgid "OMS · ICD‑O‑3"
+msgstr "OMS · CID‑O‑3"
+
+#, fuzzy
+msgid "IARC · ICCC‑3"
+msgstr "IARC · ICCC-3"
+
+#, fuzzy
+msgid ""
+"es una edición internacional posterior, no la referencia inicial elegida "
+"para este prototipo."
+msgstr ""
+"é uma edição internacional posterior, não a referência inicial selecionada "
+"para este protótipo."
+
+#, fuzzy
+msgid "Versión del catálogo:"
+msgstr "Versão do catálogo:"
+
+#, fuzzy
+msgid "Fuente:"
+msgstr "Fonte:"
+
+#, fuzzy
+msgid "Código o texto"
+msgstr "Código ou texto"
+
+#, fuzzy
+msgid "Buscar códigos, nombres y descripciones"
+msgstr "Pesquise códigos, nomes e descrições"
+
+#, fuzzy
+msgid "Sistema"
+msgstr "Sistema"
+
+#, fuzzy
+msgid "Edición"
+msgstr "Edição"
+
+#, fuzzy
+msgid "Todas"
+msgstr "Todos"
+
+#, fuzzy
+msgid "Eje"
+msgstr "Eixo"
+
+#, fuzzy
+msgid "Todos"
+msgstr "Todos"
+
+#, fuzzy
+msgid "Buscar"
+msgstr "Pesquisar"
+
+#, fuzzy
+msgid ""
+"conceptos encontrados. La aplicación no deduce equivalencias entre sistemas "
+"o ediciones. Solo se muestran conceptos marcados como autorizados y "
+"relaciones declaradas por una fuente o marcadas en el catálogo como "
+"validadas por el RNC; los borradores y vínculos pendientes no aparecen."
+msgstr ""
+"conceitos encontrados. O aplicativo não infere equivalências entre sistemas "
+"ou edições. São mostrados apenas conceitos marcados como autorizados e "
+"relacionamentos declarados por uma fonte ou marcados como validados pelo "
+"RNC; rascunhos e links pendentes são omitidos."
+
+#, fuzzy
+msgid "identificadores asociados"
+msgstr "identificadores associados"
+
+#, fuzzy
+msgid "Código"
+msgstr "Código"
+
+#, fuzzy
+msgid "Sistema · edición · eje"
+msgstr "Sistema · edição · eixo"
+
+#, fuzzy
+msgid "Nombre y descripción"
+msgstr "Nome e descrição"
+
+#, fuzzy
+msgid "Estado"
+msgstr "Estado"
+
+#, fuzzy
+msgid "Relación"
+msgstr "Relacionamento"
+
+#, fuzzy
+msgid "Fuente y licencia"
+msgstr "Fonte e licença"
+
+#, fuzzy
+msgid "Ver descripción"
+msgstr "Ver descrição"
+
+#, fuzzy
+msgid "Vigente"
+msgstr "Atual"
+
+#, fuzzy
+msgid "Histórico/deprecado"
+msgstr "Histórico/obsoleto"
+
+#, fuzzy
+msgid "Opcional"
+msgstr "Opcional"
+
+#, fuzzy
+msgid "Fuente del código"
+msgstr "Fonte do código"
+
+#, fuzzy
+msgid "Fuente del concepto"
+msgstr "Fonte do conceito"
+
+#, fuzzy
+msgid "Licencia"
+msgstr "Licença"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "Publicação"
+
+#, fuzzy
+msgid "Marcado como histórico"
+msgstr "Marcado como histórico"
+
+#, fuzzy
+msgid "Marcado como autorizado"
+msgstr "Marcado como autorizado"
+
+#, fuzzy
+msgid "No hay conceptos que coincidan con los filtros."
+msgstr "Nenhum conceito corresponde a esses filtros."
+
+#, fuzzy
+msgid "Navegación lateral"
+msgstr "Navegação lateral"
+
+#, fuzzy
+msgid "Navegación principal"
+msgstr "Navegação principal"
+
+#, fuzzy
+msgid "Ruta de navegación"
+msgstr "Navegação estrutural"
+
+#, fuzzy
+msgid "Saltar al contenido"
+msgstr "Pular para o conteúdo"
+
+#, fuzzy
+msgid "0 cortes"
+msgstr "0 lançamentos"
+
+#, fuzzy
+msgid "Acceso individual"
+msgstr "Acesso individual"
+
+#, fuzzy
+msgid "Acciones"
+msgstr "Ações"
+
+#, fuzzy
+msgid "Activa"
+msgstr "Ativo"
+
+#, fuzzy
+msgid "Actualización"
+msgstr "Atualizado"
+
+#, fuzzy
+msgid "Administración de cortes · RNC Cuba"
+msgstr "Administração de liberação · RNC Cuba"
+
+#, fuzzy
+msgid "Administración · Identidad"
+msgstr "Administração · Contas"
+
+#, fuzzy
+msgid "Apellidos"
+msgstr "Sobrenome"
+
+#, fuzzy
+msgid "Archivo CSV sintético"
+msgstr "Arquivo CSV sintético"
+
+#, fuzzy
+msgid ""
+"Asigne el rol y el correo. Sin contraseña temporal, una cuenta nueva recibe "
+"una invitación."
+msgstr ""
+"Atribua uma função e um endereço de e-mail. Novas contas recebem um convite,"
+" a menos que você defina uma senha temporária."
+
+#, fuzzy
+msgid "Buscar usuario"
+msgstr "Pesquisar usuários"
+
+#, fuzzy
+msgid "CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."
+msgstr "CSV UTF-8, até 12 MB e 60.000 linhas. Apenas dados sintéticos."
+
+#, fuzzy
+msgid "Confirme su identidad para guardar los cambios."
+msgstr "Confirme sua identidade para salvar as alterações."
+
+#, fuzzy
+msgid "Confirmo que el archivo contiene exclusivamente datos sintéticos"
+msgstr "Confirmo que o arquivo contém apenas dados sintéticos"
+
+#, fuzzy
+msgid ""
+"Consulta el estado de incorporación y publicación de los cortes de "
+"incidencia."
+msgstr ""
+"Revise o status de ingestão e publicação para liberações de incidência."
+
+#, fuzzy
+msgid "Contraseña temporal"
+msgstr "Senha temporária"
+
+#, fuzzy
+msgid "Correo"
+msgstr "E-mail"
+
+#, fuzzy
+msgid "Corte"
+msgstr "Liberar"
+
+#, fuzzy
+msgid "Cortes disponibles en el portal"
+msgstr "Lançamentos disponíveis no portal"
+
+#, fuzzy
+msgid "Cortes en proceso"
+msgstr "Lançamentos em andamento"
+
+#, fuzzy
+msgid "Cortes estadísticos"
+msgstr "Divulgações estatísticas"
+
+#, fuzzy
+msgid "Cortes estadísticos disponibles para gestión."
+msgstr "Divulgações estatísticas disponíveis para gestão."
+
+#, fuzzy
+msgid "Cortes no visibles al público"
+msgstr "Lançamentos não visíveis ao público"
+
+#, fuzzy
+msgid "Cortes recientes"
+msgstr "Lançamentos recentes"
+
+#, fuzzy
+msgid "Crear cuenta"
+msgstr "Criar conta"
+
+#, fuzzy
+msgid "Crear usuario +"
+msgstr "Criar usuário +"
+
+#, fuzzy
+msgid "Cuenta activa"
+msgstr "Conta ativa"
+
+#, fuzzy
+msgid "Cuenta guardada."
+msgstr "Conta salva."
+
+#, fuzzy
+msgid ""
+"Cuenta guardada; no se pudo encolar el correo. Puede reintentar la "
+"invitación."
+msgstr ""
+"Conta salva; o e-mail não pôde ser colocado na fila. Você pode tentar "
+"novamente o convite."
+
+#, fuzzy
+msgid "Debe permanecer al menos una cuenta de soporte activa."
+msgstr "Pelo menos uma conta de suporte ativa deve permanecer."
+
+#, fuzzy
+msgid "Desactivada"
+msgstr "Desativado"
+
+#, fuzzy
+msgid "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+msgstr "Desative a conta para remover o acesso sem excluir seu histórico."
+
+#, fuzzy
+msgid "Disponibilidad de estadísticas aprobadas"
+msgstr "Disponibilidade de estatísticas aprovadas"
+
+#, fuzzy
+msgid "Editar"
+msgstr "Editar"
+
+#, fuzzy
+msgid "Editar cuenta"
+msgstr "Editar conta"
+
+#, fuzzy
+msgid "El archivo supera el límite de 12 MB."
+msgstr "O arquivo excede o limite de 12 MB."
+
+#, fuzzy
+msgid ""
+"Elija su nueva contraseña. No necesita indicar la anterior para recuperar el"
+" acceso."
+msgstr ""
+"Escolha sua nova senha. Você não precisa fornecer a senha antiga para "
+"recuperar o acesso."
+
+#, fuzzy
+msgid "En cola"
+msgstr "Na fila"
+
+#, fuzzy
+msgid "En revisión"
+msgstr "Em revisão"
+
+#, fuzzy
+msgid ""
+"Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."
+msgstr ""
+"Insira de 10 a 250 caracteres. Esta decisão será registrada no histórico de "
+"auditoria."
+
+#, fuzzy
+msgid "Ese correo ya está asignado a otra cuenta."
+msgstr "Esse endereço de e-mail já está atribuído a outra conta."
+
+#, fuzzy
+msgid "Ese nombre de usuario ya está en uso. Elija otro."
+msgstr "Esse nome de usuário já está em uso. Escolha outro."
+
+#, fuzzy
+msgid "Establecer contraseña"
+msgstr "Definir senha"
+
+#, fuzzy
+msgid "Establecer contraseña · RNC"
+msgstr "Definir senha · RNC"
+
+#, fuzzy
+msgid "Falló el envío"
+msgstr "Falha na entrega"
+
+#, fuzzy
+msgid "Gestionar cuentas del portal"
+msgstr "Gerenciar contas do portal"
+
+#, fuzzy
+msgid "Gestionar entregas sintéticas"
+msgstr "Gerenciar versões sintéticas"
+
+#, fuzzy
+msgid "Gestione las cuentas del personal autorizado y sus responsabilidades."
+msgstr ""
+"Gerenciar contas de funcionários autorizados e suas responsabilidades."
+
+#, fuzzy
+msgid "Grupo de localización ilustrativo"
+msgstr "Grupo ilustrativo de localização do câncer"
+
+#, fuzzy
+msgid "Guardar contraseña"
+msgstr "Salvar senha"
+
+#, fuzzy
+msgid "Guardar cuenta"
+msgstr "Salvar conta"
+
+#, fuzzy
+msgid "Incorporación"
+msgstr "Ingestão"
+
+#, fuzzy
+msgid "Incorporación y publicación"
+msgstr "Ingestão e publicação"
+
+#, fuzzy
+msgid ""
+"Indique el correo registrado. Si la cuenta está habilitada, recibirá "
+"instrucciones."
+msgstr ""
+"Digite o endereço de e-mail registrado. Se a conta estiver ativa, instruções"
+" serão enviadas."
+
+#, fuzzy
+msgid "Introduzca su contraseña actual y elija una nueva."
+msgstr "Digite sua senha atual e escolha uma nova."
+
+#, fuzzy
+msgid ""
+"Invitación en cola de envío. El servicio de correo procesará la solicitud."
+msgstr "Convite na fila. O serviço de correio processará a solicitação."
+
+#, fuzzy
+msgid ""
+"La composición requiere conteos o porcentajes de categorías excluyentes; "
+"para personas, compare por sexo."
+msgstr ""
+"Os gráficos de composição exigem contagens ou porcentagens para categorias "
+"mutuamente exclusivas; ao contar pessoas, compare por sexo."
+
+#, fuzzy
+msgid ""
+"Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni "
+"porcentajes."
+msgstr ""
+"Barras empilhadas requerem frequências absolutas; taxas e porcentagens não "
+"devem ser adicionadas."
+
+#, fuzzy
+msgid ""
+"Las invitaciones permiten elegir una contraseña privada. Una contraseña "
+"temporal obliga a cambiarla antes de utilizar el panel. Desactive las "
+"cuentas que ya no deban acceder."
+msgstr ""
+"Os convites permitem que os usuários escolham uma senha privada. Uma senha "
+"temporária deve ser alterada antes de usar o painel. Desative contas que não"
+" deveriam mais ter acesso."
+
+#, fuzzy
+msgid "Las líneas requieren comparar por período."
+msgstr "Os gráficos de linhas exigem comparação por período."
+
+#, fuzzy
+msgid ""
+"Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 "
+"caracteres."
+msgstr ""
+"Use letras, números, pontos, hífens ou sublinhados não acentuados. Pelo "
+"menos 3 caracteres."
+
+#, fuzzy
+msgid "Motivo de la decisión"
+msgstr "Motivo da decisão"
+
+#, fuzzy
+msgid "No hay cortes registrados."
+msgstr "Nenhum lançamento foi gravado."
+
+#, fuzzy
+msgid "No puede desactivar ni retirar su propio rol de soporte."
+msgstr ""
+"Você não pode desabilitar sua própria conta ou remover sua função de "
+"suporte."
+
+#, fuzzy
+msgid "No se encontraron cuentas."
+msgstr "Nenhuma conta encontrada."
+
+#, fuzzy
+msgid "No se pudo confirmar la operación con esa contraseña."
+msgstr "A operação não pôde ser confirmada com essa senha."
+
+#, fuzzy
+msgid "Nombre"
+msgstr "Nome"
+
+#, fuzzy
+msgid "Nombre del corte"
+msgstr "Nome de lançamento"
+
+#, fuzzy
+msgid "Nombre, usuario o correo"
+msgstr "Nome, nome de usuário ou e-mail"
+
+#, fuzzy
+msgid ""
+"Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con "
+"ella, se exigirá cambiarla al entrar."
+msgstr ""
+"Opcional. Sem ele, será enviado um convite para escolha de senha. Com ele, o"
+" usuário deverá alterar a senha no momento do login."
+
+#, fuzzy
+msgid "Operación"
+msgstr "Ação"
+
+#, fuzzy
+msgid "Operador:"
+msgstr "Operador:"
+
+#, fuzzy
+msgid "Período"
+msgstr "Período"
+
+#, fuzzy
+msgid "Procesado"
+msgstr "Processado"
+
+#, fuzzy
+msgid "Procesando"
+msgstr "Processamento"
+
+#, fuzzy
+msgid "Proceso de gestión"
+msgstr "Processo de gestão"
+
+#, fuzzy
+msgid "Publicaciones"
+msgstr "Publicações"
+
+#, fuzzy
+msgid "Publicado"
+msgstr "Publicado"
+
+#, fuzzy
+msgid "Publicados"
+msgstr "Publicado"
+
+#, fuzzy
+msgid "Publicar"
+msgstr "Publicar"
+
+#, fuzzy
+msgid "Publicar y revocar cortes sintéticos"
+msgstr "Publicar e retirar lançamentos sintéticos"
+
+#, fuzzy
+msgid "Rechazado"
+msgstr "Rejeitado"
+
+#, fuzzy
+msgid "Registro del corte y procedencia"
+msgstr "Registro de liberação e procedência"
+
+#, fuzzy
+msgid "Responsabilidades"
+msgstr "Responsabilidades"
+
+#, fuzzy
+msgid "Responsable"
+msgstr "Proprietário"
+
+#, fuzzy
+msgid "Responsable de publicación:"
+msgstr "Gerente de publicação:"
+
+#, fuzzy
+msgid "Resumen de cortes"
+msgstr "Resumo do lançamento"
+
+#, fuzzy
+msgid "Retirados"
+msgstr "Retirado"
+
+#, fuzzy
+msgid "Revisión técnica"
+msgstr "Revisão técnica"
+
+#, fuzzy
+msgid "Revocado"
+msgstr "Retirado"
+
+#, fuzzy
+msgid "Revocar"
+msgstr "Retirar"
+
+#, fuzzy
+msgid "Rol"
+msgstr "Função"
+
+#, fuzzy
+msgid "Se admiten tildes, espacios, apóstrofos y guiones."
+msgstr "Acentos, espaços, apóstrofos e hifens são permitidos."
+
+#, fuzzy
+msgid ""
+"Se ha solicitado establecer una contraseña para su cuenta RNC.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"El enlace vence en una hora y solo puede utilizarse una vez. Si no reconoce esta solicitud, contacte con soporte."
+msgstr ""
+"Uma senha foi solicitada para sua conta RNC.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"Este link expira em uma hora e só pode ser usado uma vez. Se você não solicitou isso, entre em contato com o suporte."
+
+#, fuzzy
+msgid "Se utilizará para invitaciones y recuperación de acceso."
+msgstr "Usado para convites e recuperação de conta."
+
+#, fuzzy
+msgid "Seleccione un archivo con extensión .csv."
+msgstr "Escolha um arquivo .csv."
+
+#, fuzzy
+msgid "Solicitar enlace"
+msgstr "Solicitar link"
+
+#, fuzzy
+msgid "Solo soporte puede modificar cuentas de soporte."
+msgstr "Somente administradores de suporte podem alterar contas de suporte."
+
+#, fuzzy
+msgid "Su contraseña de soporte"
+msgstr "Sua senha de suporte"
+
+#, fuzzy
+msgid "Tabla de resultados con desplazamiento horizontal"
+msgstr "Tabela de resultados com rolagem horizontal"
+
+#, fuzzy
+msgid "Territorio"
+msgstr "Território"
+
+#, fuzzy
+msgid "Un nombre que identifique el período y la entrega."
+msgstr "Um nome que identifica o período e o lançamento."
+
+#, fuzzy
+msgid "Use como máximo 128 caracteres."
+msgstr "Use no máximo 128 caracteres."
+
+#, fuzzy
+msgid "Usuario"
+msgstr "Nome de usuário"
+
+#, fuzzy
+msgid "Validado"
+msgstr "Validado"
+
+#, fuzzy
+msgid "Ver portal público"
+msgstr "Ver portal público"
+
+#, fuzzy
+msgid "Verificación de estructura e integridad"
+msgstr "Verificações de estrutura e integridade"
+
+#, fuzzy
+msgid "además, publica y revoca cortes."
+msgstr "também publica e retira lançamentos."
+
+#, fuzzy
+msgid "gestiona cuentas y todas las funciones."
+msgstr "gerencia contas e todos os recursos."
+
+#, fuzzy
+msgid "registra y revisa cargas."
+msgstr "registros e análises de uploads."
+
+#, fuzzy
+msgid "Último correo"
+msgstr "Último e-mail"
+
+#, fuzzy
+msgid "Administración · Corte"
+msgstr "Administração · Liberação"
+
+#, fuzzy
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#, fuzzy
+msgid "Confirmar publicación"
+msgstr "Confirmar publicação"
+
+#, fuzzy
+msgid "Continuar"
+msgstr "Continuar"
+
+#, fuzzy
+msgid "Contraseña actualizada"
+msgstr "Senha atualizada"
+
+#, fuzzy
+msgid "Contraseña guardada"
+msgstr "Senha salva"
+
+#, fuzzy
+msgid "Cuenta y seguridad"
+msgstr "Conta e segurança"
+
+#, fuzzy
+msgid "Datos sintéticos validados"
+msgstr "Dados sintéticos validados"
+
+#, fuzzy
+msgid ""
+"El archivo no superó la validación como sintético y no se conservó en el "
+"almacenamiento de la aplicación."
+msgstr ""
+"O arquivo não passou na validação de dados sintéticos e não foi retido no "
+"armazenamento do aplicativo."
+
+#, fuzzy
+msgid ""
+"El archivo sintético validado permanece en almacenamiento privado. Este "
+"contrato no habilita cargas clínicas del RNC."
+msgstr ""
+"O arquivo sintético validado permanece no armazenamento privado. Este "
+"contrato não permite uploads de dados clínicos do RNC."
+
+#, fuzzy
+msgid ""
+"El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo."
+msgstr "Este link é inválido, já foi usado ou expirou. Solicite um novo."
+
+#, fuzzy
+msgid ""
+"Esta entrega rechazada pertenece a una versión anterior del prototipo; el "
+"archivo asociado quedó en almacenamiento privado. Las nuevas cargas "
+"rechazadas ya no se conservan."
+msgstr ""
+"Este envio rejeitado é de uma versão de protótipo anterior; seu arquivo "
+"permaneceu em armazenamento privado. Os uploads recentemente rejeitados não "
+"serão mais retidos."
+
+#, fuzzy
+msgid ""
+"Esta publicación sustituirá el conjunto completo anterior. Revise los "
+"períodos y la cobertura; no se sumarán ambas entregas."
+msgstr ""
+"Esta publicação substituirá todo o conjunto de dados anterior. Revise "
+"períodos e cobertura; os dois lançamentos não serão somados."
+
+#, fuzzy
+msgid "Filas incorporadas"
+msgstr "Linhas aceitas"
+
+#, fuzzy
+msgid "Filas no incorporadas"
+msgstr "Linhas rejeitadas"
+
+#, fuzzy
+msgid "Filas recibidas"
+msgstr "Linhas recebidas"
+
+#, fuzzy
+msgid "Historial del corte"
+msgstr "Histórico de lançamento"
+
+#, fuzzy
+msgid "Informe técnico"
+msgstr "Relatório técnico"
+
+#, fuzzy
+msgid "Integridad SHA-256"
+msgstr "Integridade SHA-256"
+
+#, fuzzy
+msgid ""
+"La revocación retirará inmediatamente el corte del inicio, las consultas y "
+"las nuevas exportaciones. Los archivos ya descargados no pueden retirarse."
+msgstr ""
+"A retirada remove imediatamente o lançamento da página inicial, consultas e "
+"novas exportações. Os arquivos já baixados não podem ser retirados."
+
+#, fuzzy
+msgid "Los campos con"
+msgstr "Campos marcados com"
+
+#, fuzzy
+msgid "No determinado"
+msgstr "Indeterminado"
+
+#, fuzzy
+msgid "No hay archivo fuente conservado para esta entrega."
+msgstr "Nenhum arquivo de origem foi retido para esta versão."
+
+#, fuzzy
+msgid "No validado como sintético"
+msgstr "Não validado como sintético"
+
+#, fuzzy
+msgid "Períodos"
+msgstr "Períodos"
+
+#, fuzzy
+msgid "Publicar corte"
+msgstr "Publicar lançamento"
+
+#, fuzzy
+msgid "Recepción"
+msgstr "Recebido"
+
+#, fuzzy
+msgid "Reenviar enlace para establecer contraseña"
+msgstr "Reenviar link de configuração de senha"
+
+#, fuzzy
+msgid "Revocar corte"
+msgstr "Retirar liberação"
+
+#, fuzzy
+msgid "Revocar publicación"
+msgstr "Retirar publicação"
+
+#, fuzzy
+msgid ""
+"Se comprobaron estructura, categorías, claves de tumor únicas, consistencia "
+"de personas y denominadores, y cobertura de edad y sexo. La validación es "
+"atómica: si falla una fila, la entrega no se incorpora parcialmente."
+msgstr ""
+"Estrutura, categorias, chaves tumorais únicas, consistência de pessoas e "
+"denominadores e cobertura de idade e sexo foram verificadas. A validação é "
+"atômica: se alguma linha falhar, nenhuma versão será ingerida."
+
+#, fuzzy
+msgid ""
+"Si existe una cuenta activa con ese correo, recibirá un enlace para "
+"establecer su contraseña. Revise también la carpeta de correo no deseado."
+msgstr ""
+"Se existir uma conta ativa para este endereço de e-mail, um link de "
+"configuração de senha será enviado. Verifique sua pasta de spam também."
+
+#, fuzzy
+msgid "Solicitud recibida"
+msgstr "Solicitação recebida"
+
+#, fuzzy
+msgid "Soporte:"
+msgstr "Suporte:"
+
+#, fuzzy
+msgid "Su contraseña se guardó correctamente."
+msgstr "Sua senha foi salva com sucesso."
+
+#, fuzzy
+msgid "Territorios"
+msgstr "Territórios"
+
+#, fuzzy
+msgid "Tumores aceptados"
+msgstr "Tumores aceitos"
+
+#, fuzzy
+msgid "Ya puede iniciar sesión con su nueva contraseña."
+msgstr "Agora você pode fazer login com sua nova senha."
+
+#, fuzzy
+msgid "son obligatorios."
+msgstr "são necessários."
+
+#, fuzzy
+msgid "← Volver a administración"
+msgstr "← Voltar para administração"
+
+#, fuzzy
+msgid "Acción"
+msgstr "Ação"
+
+#, fuzzy
+msgid "Actividad reciente"
+msgstr "Atividade recente"
+
+#, fuzzy
+msgid ""
+"Contrato sintético de demostración · hasta 12 MB y 60 000 filas. Cada "
+"entrega representa un conjunto completo, no un incremento. El ejemplo "
+"descargable añade un tumor sintético al corte activo para recorrer la "
+"actualización completa."
+msgstr ""
+"Contrato de dados de demonstração sintéticos · até 12 MB e 60.000 linhas. "
+"Cada entrega representa um conjunto de dados completo, não um incremento. O "
+"exemplo para download adiciona um tumor sintético à versão ativa para "
+"demonstrar uma atualização completa."
+
+#, fuzzy
+msgid "Descargar CSV de actualización"
+msgstr "Baixar atualização CSV"
+
+#, fuzzy
+msgid "Entregas registradas"
+msgstr "Entregas registradas"
+
+#, fuzzy
+msgid "Entregas y cortes"
+msgstr "Entregas e lançamentos"
+
+#, fuzzy
+msgid "Gestión de información"
+msgstr "Gestão de informações"
+
+#, fuzzy
+msgid "Incorporar archivo"
+msgstr "Adicionar arquivo"
+
+#, fuzzy
+msgid ""
+"Incorpore entregas, revise sus resultados técnicos y gestione la "
+"publicación."
+msgstr ""
+"Adicione entregas, revise seus resultados técnicos e gerencie a publicação."
+
+#, fuzzy
+msgid "No hay entregas registradas."
+msgstr "Nenhuma entrega foi registrada."
+
+#, fuzzy
+msgid "Publicación activa"
+msgstr "Publicação ativa"
+
+#, fuzzy
+msgid "Recibido"
+msgstr "Recebido"
+
+#, fuzzy
+msgid "Revisar corte →"
+msgstr "Revise o lançamento →"
+
+#, fuzzy
+msgid "Sin corte publicado"
+msgstr "Nenhum lançamento publicado"
+
+#, fuzzy
+msgid "Subir y validar CSV"
+msgstr "Carregar e validar CSV"
+
+#, fuzzy
+msgid "El Registro Nacional de Cáncer"
+msgstr "O Registro Nacional de Câncer"
+
+#, fuzzy
+msgid "Alcance nacional"
+msgstr "Cobertura nacional"
+
+#, fuzzy
+msgid "Atención"
+msgstr "Informações de contato"
+
+#, fuzzy
+msgid "Cómo trabajamos"
+msgstr "Como trabalhamos"
+
+#, fuzzy
+msgid "Dónde trabajamos"
+msgstr "Onde trabalhamos"
+
+#, fuzzy
+msgid "Contactos"
+msgstr "Contatos"
+
+#, fuzzy
+msgid "Guía de interpretación"
+msgstr "Guia de interpretação"
+
+#, fuzzy
+msgid "Frecuencia relativa"
+msgstr "Frequência relativa"
+
+#, fuzzy
+msgid "Fuentes y límites"
+msgstr "Fontes e limitações"
+
+#, fuzzy
+msgid "Fuentes, versiones y límites de comparación"
+msgstr "Fontes, versões e limites de comparabilidade"
+
+#, fuzzy
+msgid "Métodos y cálculos"
+msgstr "Métodos e cálculos"
+
+#, fuzzy
+msgid "Métodos y cálculos estadísticos"
+msgstr "Métodos estatísticos e cálculos"
+
+#, fuzzy
+msgid "Objetivos"
+msgstr "Objetivos"
+
+#, fuzzy
+msgid "Oficina central"
+msgstr "Escritório central"
+
+#, fuzzy
+msgid "Organización"
+msgstr "Organização"
+
+#, fuzzy
+msgid "Participación de sus profesionales"
+msgstr "Participação de seus profissionais"
+
+#, fuzzy
+msgid "Provincia"
+msgstr "Província"
+
+#, fuzzy
+msgid "Referentes metodológicos consultados"
+msgstr "Referências metodológicas consultadas"
+
+#, fuzzy
+msgid "Registros provinciales"
+msgstr "Registros provinciais"
+
+#, fuzzy
+msgid "Responsable publicado"
+msgstr "Contato listado"
+
+#, fuzzy
+msgid "Trabajo territorial"
+msgstr "Trabalho territorial"
+
+#, fuzzy
+msgid "Transparencia estadística"
+msgstr "Transparência estatística"
+
+#, fuzzy
+msgid "Directorio provincial histórico del sitio institucional (2015)"
+msgstr "Diretório histórico provincial do site institucional (2015)"
+
+#, fuzzy
+msgid "Composición publicada en la copia histórica"
+msgstr "Composição listada na cópia histórica"
+
+#, fuzzy
+msgid "Objetivo principal:"
+msgstr "Objetivo principal:"
+
+#, fuzzy
+msgid "Detección y notificación:"
+msgstr "Detecção e notificação de casos:"
+
+#, fuzzy
+msgid "Registro en la unidad informante:"
+msgstr "Registro na unidade relatora:"
+
+#, fuzzy
+msgid "Revisión provincial:"
+msgstr "Revisão provincial:"
+
+#, fuzzy
+msgid "Cierre y remisión:"
+msgstr "Fechamento estatístico e submissão:"
+
+#, fuzzy
+msgid "Validación central:"
+msgstr "Validação central:"
+
+#, fuzzy
+msgid "Consolidación y estadísticas:"
+msgstr "Consolidação e estatísticas:"
+
+#, fuzzy
+msgid "Correo publicado"
+msgstr "E-mail listado"
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias y tasas de incidencia específicas por edad y sexo para "
+"cada localización topográfica y morfológica, además de tasas ajustadas para "
+"Cuba y cada provincia."
+msgstr ""
+"Relate frequências e taxas de incidência específicas por idade e sexo para "
+"cada sítio topográfico e morfológico, bem como taxas ajustadas para Cuba e "
+"cada província."
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias absolutas y relativas por localización según la etapa "
+"clínica al diagnóstico, la provincia y la unidad informante, la base más "
+"válida para el diagnóstico y otras variables de interés."
+msgstr ""
+"Relate frequências absolutas e relativas por local, estágio clínico no "
+"momento do diagnóstico, província, unidade notificadora, base mais válida "
+"para o diagnóstico e outras variáveis relevantes."
+
+#, fuzzy
+msgid ""
+"Calcular indicadores de calidad de los datos por provincia y localización."
+msgstr "Calcular indicadores de qualidade de dados por província e local."
+
+#, fuzzy
+msgid "Estimar las cifras de supervivencia poblacional por cáncer."
+msgstr "Estimar a sobrevivência ao câncer com base na população."
+
+#, fuzzy
+msgid ""
+"Para ello, la información institucional de referencia atribuye al RNC estos "
+"objetivos específicos:"
+msgstr ""
+"A informação de referência institucional atribui estes objetivos específicos"
+" à RNC:"
+
+#, fuzzy
+msgid "Aplica la misma razón dentro de cada grupo etario:"
+msgstr "Aplica-se a mesma proporção dentro de cada faixa etária:"
+
+#, fuzzy
+msgid ""
+"Relaciona los casos nuevos observados con la población correspondiente al "
+"mismo período y territorio:"
+msgstr ""
+"Relaciona os novos casos observados com a população do mesmo período e "
+"território:"
+
+#, fuzzy
+msgid ""
+"Resume tasas específicas aplicando los pesos de una población estándar:"
+msgstr ""
+"Resume taxas específicas por idade usando os pesos de uma população padrão:"
+
+#, fuzzy
+msgid "Expresa qué parte de un total corresponde a una categoría:"
+msgstr "Mostra qual fração de um total pertence a uma categoria:"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer de Cuba (RNC) es de base poblacional y "
+"alcance nacional, y forma parte del sistema de información estadística del "
+"Ministerio de Salud Pública. La copia archivada del sitio institucional "
+"indica que fue creado en 1964, que perteneció al Instituto Nacional de "
+"Oncología y Radiobiología (INOR) hasta diciembre de 2007 y que, desde enero "
+"de 2008, se subordinaba metodológica y funcionalmente a la Sección "
+"Independiente de Control de Cáncer junto con el Programa Integral de Control"
+" de Cáncer en Cuba."
+msgstr ""
+"O Registro Nacional de Câncer de Cuba (RNC) é de base populacional, abrange "
+"todo o país e faz parte do sistema de informação estatística do Ministério "
+"da Saúde Pública. Uma cópia arquivada do site institucional afirma que foi "
+"criado em 1964, pertenceu ao Instituto Nacional de Oncologia e Radiobiologia"
+" (INOR) até dezembro de 2007 e, a partir de janeiro de 2008, esteve "
+"subordinado metodologicamente e funcionalmente à Seção Independente de "
+"Controle do Câncer juntamente com o Programa Integral de Controle do Câncer "
+"em Cuba."
+
+#, fuzzy
+msgid ""
+"El RNC es un registro de base poblacional con cobertura de residentes "
+"permanentes de Cuba. Su red se organiza en tres niveles: la Oficina Central,"
+" los equipos o registros provinciales y las unidades informantes que "
+"detectan y notifican los casos."
+msgstr ""
+"O RNC é um registo de base populacional que abrange os residentes "
+"permanentes de Cuba. A sua rede tem três níveis: o Escritório Central, "
+"equipas ou registos provinciais e unidades notificadoras que identificam e "
+"notificam os casos."
+
+#, fuzzy
+msgid ""
+"La cobertura documentada comprende las 15 provincias y el municipio especial"
+" Isla de la Juventud. En los territorios, los departamentos de salud "
+"coordinan las unidades informantes; estas incluyen centros hospitalarios y "
+"otras fuentes asistenciales previstas por los procedimientos del Registro."
+msgstr ""
+"A cobertura documentada inclui todas as 15 províncias e o município especial"
+" de Isla de la Juventud. Em cada território, os departamentos de saúde "
+"coordenam as unidades notificadoras, incluindo hospitais e outras fontes de "
+"cuidados especificadas pelos procedimentos do Registro."
+
+#, fuzzy
+msgid ""
+"La red territorial permite reunir información de distintos puntos de "
+"atención y consolidarla con alcance nacional. La copia del sitio "
+"institucional organiza esa red con una comisión o registro de cáncer en cada"
+" provincia y un directorio territorial de responsables."
+msgstr ""
+"A rede territorial reúne informações de diferentes cenários de cuidado e "
+"consolida-as nacionalmente. O arquivo do website institucional descreve uma "
+"comissão ou registo oncológico em cada província e um directório de "
+"contactos territoriais."
+
+#, fuzzy
+msgid ""
+"El directorio que se reproduce en esta página procede de una copia histórica"
+" del sitio: la información de Oficina Central fue publicada en 2013 y el "
+"directorio provincial en 2015. Se muestra como referencia histórica; sus "
+"nombres y canales no están confirmados como vigentes."
+msgstr ""
+"O directório aqui reproduzido provém de uma cópia histórica do website: a "
+"informação do Gabinete Central foi publicada em 2013 e o directório "
+"provincial em 2015. É apresentado para referência histórica; seus nomes e "
+"canais de contato não foram confirmados como atuais."
+
+#, fuzzy
+msgid ""
+"La copia histórica describe una Oficina Central y comisiones provinciales "
+"que asesoran a las autoridades de salud y apoyan la aplicación de los "
+"procedimientos. El Manual de Procedimientos del RNC, versión VII (2024), "
+"detalla el recorrido operativo de la información:"
+msgstr ""
+"A cópia histórica descreve um Gabinete Central e comités provinciais que "
+"aconselham as autoridades de saúde e apoiam os procedimentos. O Manual de "
+"Procedimentos do RNC, versão VII (2024), detalha o fluxo de informação:"
+
+#, fuzzy
+msgid ""
+"Este flujo corresponde al trabajo del Registro. El portal público es una "
+"herramienta de consulta de resultados agregados y no recibe reportes de "
+"casos ni sustituye los sistemas internos del RNC."
+msgstr ""
+"Este fluxo de trabalho descreve as operações do Registro. O portal público "
+"fornece acesso a resultados agregados; não recebe relatos de casos nem "
+"substitui os sistemas internos do RNC."
+
+#, fuzzy
+msgid ""
+"La Oficina Central dirige técnicamente el sistema nacional, controla los "
+"procedimientos y la calidad de la información, ofrece asesoría metodológica "
+"y produce estadísticas. Recibe los cierres territoriales y coordina su "
+"validación y consolidación."
+msgstr ""
+"O Escritório Central fornece orientação técnica para o sistema nacional, "
+"supervisiona os procedimentos e a qualidade da informação, fornece "
+"aconselhamento metodológico e produz estatísticas. Recebe submissões "
+"territoriais e coordena sua validação e consolidação."
+
+#, fuzzy
+msgid ""
+"El Manual RNC VII describe tareas centrales como comprobar la consistencia y"
+" completitud de los datos, revisar codificaciones, investigar duplicados y "
+"múltiples primarios, cotejar casos con información de mortalidad, pedir "
+"aclaraciones a los territorios e incorporar a la base consolidada solo los "
+"casos validados."
+msgstr ""
+"O Manual RNC VII descreve tarefas centrais como verificação da consistência "
+"e integridade dos dados, revisão de códigos, investigação de duplicados e "
+"múltiplos primários, comparação de casos com informação de mortalidade, "
+"solicitação de esclarecimentos aos territórios e adição apenas de casos "
+"validados à base de dados consolidada."
+
+#, fuzzy
+msgid ""
+"El Manual también describe funciones de control de calidad, análisis de "
+"datos, informatización, procesamiento y edición, además de una Comisión "
+"Técnica Asesora para cambios a los procedimientos administrativos y "
+"técnicos."
+msgstr ""
+"O Manual também descreve controle de qualidade, análise de dados, "
+"informatização, processamento e edição, bem como uma Comissão Técnica "
+"Assessora para alterações em procedimentos administrativos e técnicos."
+
+#, fuzzy
+msgid ""
+"La composición y los datos de contacto actuales deben confirmarse con el "
+"RNC."
+msgstr ""
+"A composição atual e as informações de contato devem ser confirmadas com o "
+"RNC."
+
+#, fuzzy
+msgid ""
+"Los equipos provinciales conectan las unidades informantes con la Oficina "
+"Central. Revisan reportes y bases, verifican datos y códigos, gestionan "
+"reparos con las unidades y preparan los cierres que se remiten al nivel "
+"nacional. La versión histórica del sitio describe también comisiones "
+"provinciales que asesoran a las autoridades de salud, controlan la "
+"aplicación de los procedimientos y emiten estadísticas preliminares."
+msgstr ""
+"As equipas provinciais ligam as unidades relatoras ao Escritório Central. "
+"Eles revisam relatórios e bancos de dados, verificam dados e códigos, "
+"resolvem dúvidas com as unidades e preparam submissões para o nível "
+"nacional. O website histórico também descreve comités provinciais que "
+"aconselham as autoridades de saúde, supervisionam procedimentos e emitem "
+"estatísticas preliminares."
+
+#, fuzzy
+msgid ""
+"A continuación se transcribe el directorio de responsables y correos de la "
+"copia histórica del sitio, publicada en 2015. Se conserva como referencia "
+"documental, no como lista confirmada de contactos activos:"
+msgstr ""
+"Os seguintes contactos e endereços de e-mail são transcritos da cópia "
+"histórica do site publicada em 2015. São mantidos como referência documental"
+" e não como lista confirmada de contactos ativos:"
+
+#, fuzzy
+msgid ""
+"No se garantiza la entrega de mensajes a estos correos. El directorio, los "
+"cargos y las direcciones necesitan confirmación antes de usarse para "
+"gestiones actuales."
+msgstr ""
+"A entrega para esses endereços de e-mail não é garantida. O diretório, as "
+"funções e os endereços precisam de confirmação antes de serem usados ​​para "
+"assuntos atuais."
+
+#, fuzzy
+msgid ""
+"La página de contacto de la copia histórica publicaba los siguientes datos "
+"de la Oficina Central:"
+msgstr ""
+"A cópia histórica da página de contato listava as seguintes informações do "
+"Escritório Central:"
+
+#, fuzzy
+msgid ""
+"Esta versión del portal no recibe reportes clínicos ni solicitudes de "
+"modificación de registros. Para proteger la confidencialidad, no envíes "
+"datos de pacientes mediante canales de consulta pública."
+msgstr ""
+"Esta versão do portal não aceita laudos clínicos ou solicitações de "
+"modificação de registros cadastrais. Para proteger a confidencialidade, não "
+"envie dados de pacientes através de canais públicos de consulta."
+
+#, fuzzy
+msgid ""
+"Los datos de ubicación, teléfono, correo y responsables se transcribieron de"
+" las páginas institucionales archivadas de Contacto y Dónde estamos, "
+"publicadas en 2013. Confirma su vigencia con el RNC antes de utilizarlos."
+msgstr ""
+"Localização, telefone, e-mail e detalhes de contato foram transcritos das "
+"páginas institucionais arquivadas de Contato e Localização publicadas em "
+"2013. Confirme se estão atualizados com o RNC antes de usar."
+
+#, fuzzy
+msgid ""
+"Las fórmulas siguientes explican conceptos usados en epidemiología "
+"descriptiva y en referentes internacionales. Para que un resultado del "
+"portal sea oficial, el RNC debe confirmar el método, las agrupaciones, los "
+"denominadores y las reglas de presentación aplicables al corte."
+msgstr ""
+"As fórmulas abaixo explicam conceitos utilizados em epidemiologia descritiva"
+" e referências internacionais. Para que o resultado do portal seja oficial, "
+"o RNC deve confirmar o método, agrupamentos, denominadores e regras de "
+"apresentação que se aplicam à divulgação."
+
+#, fuzzy
+msgid ""
+"La versión local actual del portal está conectada a un agregado de "
+"demostración sintético. Esta interfaz no acredita cifras oficiales ni "
+"sustituye la aprobación de un corte público."
+msgstr ""
+"A versão local atual do portal utiliza um agregado de demonstração "
+"sintético. Esta interface não certifica números oficiais nem substitui a "
+"aprovação de um lançamento público."
+
+#, fuzzy
+msgid ""
+"Las descripciones de organización se basan en páginas de la copia "
+"institucional consultadas entre 2013 y 2015 y requieren validación de "
+"vigencia. Los métodos se presentan con fines explicativos y las decisiones "
+"pendientes se identifican expresamente."
+msgstr ""
+"As descrições organizacionais são baseadas em cópias de sites institucionais"
+" consultados entre 2013 e 2015 e exigem confirmação de que permanecem "
+"atuais. Os métodos são apresentados para explicação e as decisões pendentes "
+"são explicitamente identificadas."
+
+#, fuzzy
+msgid "Coordinación nacional"
+msgstr "Coordenação nacional"
+
+#, fuzzy
+msgid ""
+"Este portal ofrece actualmente consultas estadísticas de incidencia. No "
+"presenta aquí resultados de supervivencia, etapas clínicas, bases "
+"diagnósticas ni indicadores de calidad del RNC."
+msgstr ""
+"Este portal disponibiliza atualmente consultas estatísticas sobre "
+"incidência. Não apresenta resultados do RNC sobre sobrevida, estágios "
+"clínicos, bases diagnósticas ou indicadores de qualidade."
+
+#, fuzzy
+msgid ""
+"La información del RNC también contribuye a la investigación clínica y "
+"epidemiológica sobre el cáncer, a planificar y evaluar las acciones de "
+"control, y a planificar los recursos materiales y humanos para la atención "
+"oncológica."
+msgstr ""
+"A informação do RNC também contribui para a investigação clínica e "
+"epidemiológica do cancro, planeando e avaliando medidas de controlo e "
+"planeando os recursos materiais e humanos necessários para o tratamento do "
+"cancro."
+
+#, fuzzy
+msgid ""
+"La información institucional de referencia señala que profesionales del "
+"departamento forman parte de:"
+msgstr ""
+"Informações de referência institucional afirmam que os profissionais do "
+"departamento participam de:"
+
+#, fuzzy
+msgid ""
+"La pertenencia y denominación actual de estos grupos y comisiones debe "
+"confirmarse con el RNC antes de presentarse como vigente."
+msgstr ""
+"A adesão atual e os nomes desses grupos e comitês devem ser confirmados com "
+"o RNC antes de serem apresentados como atuais."
+
+#, fuzzy
+msgid "Tasa ajustada directamente por edad"
+msgstr "Taxa direta ajustada por idade"
+
+#, fuzzy
+msgid "Tasa cruda de incidencia"
+msgstr "Taxa bruta de incidência"
+
+#, fuzzy
+msgid "Tasa específica por edad"
+msgstr "Taxa específica por idade"
+
+#, fuzzy
+msgid "Tasa indirecta e intervalos de confianza"
+msgstr "Taxa indireta e intervalos de confiança"
+
+#, fuzzy
+msgid ""
+"El estándar es una población de ponderación, no el denominador de los casos."
+" Como referencia metodológica de trabajo se estudia la estándar mundial "
+"Segi–Doll de 18 grupos quinquenales; el RNC debe validar su correspondencia,"
+" fórmula operativa, grupos abiertos, datos faltantes y redondeo antes de "
+"atribuirle cifras oficiales. Las comparaciones solo son interpretables si "
+"usan el mismo estándar y definiciones compatibles."
+msgstr ""
+"A população padrão fornece pesos; não é o denominador do caso. O padrão "
+"mundial Segi-Doll de 18 faixas etárias de cinco anos está sendo considerado "
+"como referência metodológica. O RNC deve validar a sua correspondência, "
+"fórmula operacional, grupos abertos, dados faltantes e arredondamentos antes"
+" de quaisquer números lhe serem atribuídos como oficiais. As comparações são"
+" interpretáveis ​​apenas quando são utilizadas as mesmas definições padrão e"
+" compatíveis."
+
+#, fuzzy
+msgid ""
+"El total puede depender de la pregunta y de la unidad de análisis. El "
+"tratamiento de valores desconocidos, categorías excluidas y redondeo "
+"requiere una regla explícita; no se debe asumir que tumor y persona son "
+"unidades intercambiables."
+msgstr ""
+"O total pode depender da questão e da unidade de análise. Valores "
+"desconhecidos, categorias excluídas e arredondamentos exigem regras "
+"explícitas; tumores e pessoas não devem ser tratados como unidades "
+"intercambiáveis."
+
+#, fuzzy
+msgid ""
+"En la organización descrita por la copia histórica, cada comisión provincial"
+" asesora al Director Provincial de Salud sobre el control del cáncer y el "
+"funcionamiento del sistema de información. La integran perfiles de "
+"coordinación de cáncer, oncología, estadística, epidemiología, hospitales y "
+"especialistas o técnicos de los hospitales que diagnostican casos. Su "
+"función es exigir y controlar el cumplimiento de los procedimientos, cuidar "
+"la calidad y continuidad del dato primario, emitir estadísticas provinciales"
+" preliminares y promover investigaciones epidemiológicas y clínicas."
+msgstr ""
+"Na organização descrita na cópia histórica, cada comité provincial aconselha"
+" o Director Provincial da Saúde sobre o controlo do cancro e o funcionamento"
+" do sistema de informação. Seus membros representam coordenação de câncer, "
+"oncologia, estatística, epidemiologia, hospitais e especialistas ou técnicos"
+" de hospitais que diagnosticam casos. As suas funções incluem supervisionar "
+"o cumprimento dos procedimentos, manter a qualidade e continuidade dos dados"
+" primários, emitir estatísticas provinciais preliminares e promover a "
+"investigação epidemiológica e clínica."
+
+#, fuzzy
+msgid ""
+"La escala por 100 000 es una forma habitual de presentación. Numerador, "
+"período, territorio, sexo, grupo de edad y población deben coincidir. El "
+"proyecto identifica la población residente de ONEI como denominador de "
+"trabajo; la serie, edición y convención temporal exactas deben quedar "
+"identificadas con el RNC."
+msgstr ""
+"As taxas por 100.000 são uma escala de apresentação comum. O numerador, "
+"período, território, sexo, faixa etária e população devem corresponder. O "
+"projeto identifica a população residente da ONEI como um denominador "
+"funcional; a série exata, edição e convenção de tempo devem ser confirmadas "
+"com o RNC."
+
+#, fuzzy
+msgid ""
+"La estandarización indirecta suele comparar los casos observados con los "
+"esperados según tasas de referencia por estrato. La elección de esas tasas "
+"de referencia y la forma de presentar el resultado requieren una definición "
+"institucional."
+msgstr ""
+"A padronização indireta geralmente compara os casos observados com os casos "
+"esperados com base em taxas de referência para cada estrato. A escolha "
+"dessas taxas de referência e a decisão de como apresentar o resultado "
+"requerem uma definição institucional."
+
+#, fuzzy
+msgid ""
+"La página archivada “Oficina Central” identificaba un Jefe del Registro y "
+"tres grupos: Calidad de los Datos, Informatización y Procesamiento y "
+"Edición. La relación siguiente reproduce los nombres y correos que aparecían"
+" allí; no confirma que las personas ocupen hoy esos cargos ni que las "
+"direcciones sigan activas."
+msgstr ""
+"A página arquivada do “Escritório Central” identificou um Chefe de Registro "
+"e três grupos: Qualidade de Dados, Informatização e Processamento e Edição. "
+"A lista abaixo reproduz os nomes e endereços de e-mail ali indicados; não "
+"confirma se essas pessoas ocupam atualmente esses cargos ou se os endereços "
+"ainda estão ativos."
+
+#, fuzzy
+msgid ""
+"La página “Dónde estamos” de esa misma copia identifica al Instituto "
+"Nacional de Oncología y Radiobiología, en 29 y F, Vedado, CP 10400, y "
+"publica el teléfono +53 7 838 3970. Estos datos se incluyen como información"
+" histórica, no como canales confirmados en la actualidad."
+msgstr ""
+"A página “Onde estamos” no mesmo exemplar identifica o Instituto Nacional de"
+" Oncologia e Radiobiologia em 29 e F, Vedado, CP 10400, e lista o telefone "
+"+53 7 838 3970. Esses detalhes são informações históricas, não canais de "
+"contato atualmente confirmados."
+
+#, fuzzy
+msgid ""
+"Los intervalos de confianza describen incertidumbre estadística y dependen "
+"del indicador, el volumen de casos y el método elegido. Su incorporación al "
+"portal es una propuesta de trabajo, no una regla aprobada por el RNC. El "
+"método de tasa indirecta y el de intervalos permanecen pendientes de "
+"validación."
+msgstr ""
+"Os intervalos de confiança descrevem a incerteza estatística e dependem do "
+"indicador, do número de casos e do método selecionado. Adicioná-los ao "
+"portal é uma proposta e não uma regra aprovada pela RNC. O método da taxa "
+"indireta e os intervalos de confiança permanecem pendentes de validação."
+
+#, fuzzy
+msgid ""
+"Los procedimientos describen frecuencias distintas para las tareas locales, "
+"la revisión territorial y los cierres al nivel central. El calendario "
+"concreto puede variar y debe consultarse en la edición vigente del Manual."
+msgstr ""
+"Os procedimentos especificam frequências diferentes para tarefas locais, "
+"revisão territorial e submissões ao nível central. O cronograma pode variar "
+"e deverá ser verificado na edição vigente do Manual."
+
+#, fuzzy
+msgid ""
+"Los referentes consultados muestran por qué cada resultado debe documentar "
+"su procedencia y su versión. Cancer Today organiza visualizaciones junto a "
+"sus fuentes y métodos; ECIS diferencia datos observados de estimaciones; "
+"SEER acompaña sus tablas y gráficos con definiciones, notas y metodología. "
+"Estas prácticas inspiran la presentación, pero sus reglas no se trasladan "
+"automáticamente al RNC."
+msgstr ""
+"As referências consultadas mostram porque cada resultado deve documentar sua"
+" fonte e versão. Cancer Today apresenta visualizações com suas fontes e "
+"métodos; O ECIS distingue dados observados de estimativas; SEER fornece "
+"definições, notas e métodos com suas tabelas e gráficos. Estas práticas "
+"informam a apresentação, mas as suas regras não se aplicam automaticamente "
+"ao RNC."
+
+#, fuzzy
+msgid "La adscripción organizativa debe actualizarse con el RNC: el"
+msgstr "A afiliação organizacional deve ser confirmada junto ao RNC: o"
+
+#, fuzzy
+msgid "Comparabilidad:"
+msgstr "Comparabilidade:"
+
+#, fuzzy
+msgid "Denominador:"
+msgstr "Denominador:"
+
+#, fuzzy
+msgid "Divulgación:"
+msgstr "Divulgação:"
+
+#, fuzzy
+msgid "Método:"
+msgstr "Método:"
+
+#, fuzzy
+msgid "Numerador:"
+msgstr "Numerador:"
+
+#, fuzzy
+msgid ""
+"corte de casos identificado, con período, estado y fecha de publicación."
+msgstr ""
+"uma liberação de caso identificado, incluindo período, status e data de "
+"publicação."
+
+#, fuzzy
+msgid ""
+"fuente y versión de la población, con cobertura territorial, edad y sexo."
+msgstr ""
+"a fonte e versão da população, incluindo cobertura territorial, etária e "
+"sexual."
+
+#, fuzzy
+msgid "unidad de análisis, escala, estándar de edad y forma de cálculo."
+msgstr "unidade de análise, escala, padrão de idade e método de cálculo."
+
+#, fuzzy
+msgid ""
+"tasas calculadas con estándares, períodos, coberturas y definiciones "
+"compatibles."
+msgstr ""
+"taxas calculadas usando padrões, períodos, coberturas e definições "
+"compatíveis."
+
+#, fuzzy
+msgid ""
+"agregados autorizados y reglas para evitar identificación indirecta; el "
+"umbral o método de supresión para el portal requiere acuerdo institucional."
+msgstr ""
+"agregados e regras autorizados para evitar identificação indireta; o limite "
+"ou método de supressão do portal requer acordo institucional."
+
+#, fuzzy
+msgid "Correo publicado:"
+msgstr "E-mail listado:"
+
+#, fuzzy
+msgid "Teléfono publicado:"
+msgstr "Telefone listado:"
+
+#, fuzzy
+msgid "Grupo Nacional de Oncología."
+msgstr "Grupo Nacional de Oncologia."
+
+#, fuzzy
+msgid "Grupo de Calidad de los Datos:"
+msgstr "Grupo de qualidade de dados:"
+
+#, fuzzy
+msgid ""
+"Grupo de Epidemiología y Registros de Cáncer de Países de Lengua Latina."
+msgstr ""
+"Grupo de Países de Língua Latina para Epidemiologia e Registros de Câncer."
+
+#, fuzzy
+msgid "Grupo de Informatización:"
+msgstr "Grupo de Informatização:"
+
+#, fuzzy
+msgid "Grupo de Oncopediatría."
+msgstr "Grupo de Oncologia Pediátrica."
+
+#, fuzzy
+msgid "Grupo de Procesamiento y Edición:"
+msgstr "Grupo de Processamento e Edição:"
+
+#, fuzzy
+msgid "Jefatura del RNC:"
+msgstr "Chefe RNC:"
+
+#, fuzzy
+msgid "Comité de Ensayos Clínicos del INOR."
+msgstr "Comitê de Ensaios Clínicos do INOR."
+
+#, fuzzy
+msgid "Consejo Científico del INOR."
+msgstr "Conselho Científico do INOR."
+
+#, fuzzy
+msgid "Comisión Nacional del Programa de Cáncer Bucal."
+msgstr "Comissão Nacional do Programa de Câncer Oral."
+
+#, fuzzy
+msgid "Comisión de Expertos del Programa Ramal Cáncer."
+msgstr "Comissão de Especialistas do Programa da Filial do Câncer."
+
+#, fuzzy
+msgid ""
+"Red Iberoamericana de Epidemiología y Sistemas de Información en Cáncer."
+msgstr ""
+"Rede Ibero-Americana de Epidemiologia e Sistemas de Informação do Câncer."
+
+#, fuzzy
+msgid "Comisión Europea · European Cancer Information System (ECIS)"
+msgstr ""
+"Comissão Europeia · Sistema Europeu de Informação sobre o Cancro (ECIS)"
+
+#, fuzzy
+msgid "IARC/WHO · Global Cancer Observatory, Cancer Today"
+msgstr "IARC/OMS · Observatório Global do Câncer, Câncer Hoje"
+
+#, fuzzy
+msgid "NCI/SEER · SEER*Explorer"
+msgstr "NCI/SEER · SEER*Explorador"
+
+#, fuzzy
+msgid "NCI/SEER · definición y cálculo de tasas ajustadas por edad"
+msgstr "NCI/SEER · definição e cálculo de taxas ajustadas por idade"
+
+#, fuzzy
+msgid "Sistema de Información Estadística Complementaria de Salud (2017)"
+msgstr "Sistema de Informação Estatística Complementar de Saúde (2017)"
+
+#, fuzzy
+msgid "El RNC · Registro Nacional de Cáncer de Cuba"
+msgstr "RNC · Registro Nacional de Câncer de Cuba"
+
+#, fuzzy
+msgid "El subíndice"
+msgstr "O subscrito"
+
+#, fuzzy
+msgid ""
+"la Oficina Central revisa integridad y consistencia, investiga posibles "
+"duplicados o tumores múltiples, contrasta la información con mortalidad y "
+"solicita aclaraciones cuando son necesarias."
+msgstr ""
+"o Escritório Central verifica a integridade e consistência, investiga "
+"possíveis duplicatas ou tumores múltiplos, compara informações com dados de "
+"mortalidade e solicita esclarecimentos quando necessário."
+
+#, fuzzy
+msgid ""
+"las provincias preparan los cierres estadísticos y remiten al nivel central "
+"los casos nuevos validados junto con la documentación requerida, según el "
+"calendario estadístico."
+msgstr ""
+"as províncias preparam submissões estatísticas e enviam ao nível central os "
+"novos casos validados com a documentação necessária, de acordo com o "
+"calendário estatístico."
+
+#, fuzzy
+msgid ""
+"los equipos territoriales cotejan reportes y bases de datos, verifican "
+"variables y códigos, solicitan correcciones y coordinan las unidades "
+"informantes."
+msgstr ""
+"equipes territoriais comparam relatórios e bases de dados, verificam "
+"variáveis e códigos, solicitam correções e coordenam unidades relatoras."
+
+#, fuzzy
+msgid ""
+"los médicos notifican los casos y los registradores buscan casos adicionales"
+" en fuentes como anatomía patológica, laboratorios, egresos hospitalarios, "
+"certificados de defunción e historias clínicas."
+msgstr ""
+"os médicos relatam casos e os registradores identificam casos adicionais em "
+"fontes como patologia, laboratórios, altas hospitalares, certidões de óbito "
+"e registros médicos."
+
+#, fuzzy
+msgid ""
+"se confeccionan y codifican los reportes, se revisan las fuentes y se "
+"introducen los casos en el sistema automatizado del Registro."
+msgstr ""
+"os relatórios são preparados e codificados, as fontes são revisadas e os "
+"casos são inseridos no sistema automatizado do Registro."
+
+#, fuzzy
+msgid ""
+"solo los casos validados se incorporan a la base consolidada; con ellos el "
+"RNC prepara y emite resultados estadísticos."
+msgstr ""
+"apenas os casos validados são adicionados à base de dados consolidada; o RNC"
+" prepara e emite os resultados estatísticos dos mesmos."
+
+#, fuzzy
+msgid "porcentaje = (casos de la categoría / total de referencia) × 100"
+msgstr "porcentagem = (categoria de casos/total de referência) × 100"
+
+#, fuzzy
+msgid ""
+"tasa ajustada = Σ (peso estándarᵢ × tasa específicaᵢ) / Σ (peso estándarᵢ)"
+msgstr ""
+"taxa ajustada = Σ (peso padrãoᵢ × taxa específica por idadeᵢ) / Σ (peso "
+"padrãoᵢ)"
+
+#, fuzzy
+msgid "tasa cruda = (casos nuevos / población correspondiente) × 100 000"
+msgstr "taxa bruta = (novos casos/população correspondente) × 100.000"
+
+#, fuzzy
+msgid "tasa específicaᵢ = (casos nuevosᵢ / poblaciónᵢ) × 100 000"
+msgstr "taxa específica por idadeᵢ = (novos casosᵢ / populaçãoᵢ) × 100.000"
+
+#, fuzzy
+msgid "describir la magnitud del cáncer como problema de salud en Cuba."
+msgstr "descrever a magnitude do câncer como um problema de saúde em Cuba."
+
+#, fuzzy
+msgid ""
+"transcribe la Resolución 31/2008 como traslado de la Oficina Central a la "
+"Unidad Nacional para el Control del Cáncer, bajo su dirección y en "
+"coordinación con Estadísticas del MINSAP. Las denominaciones de las fuentes "
+"no coinciden literalmente."
+msgstr ""
+"descreve a Resolução 31/2008 como a transferência do Escritório Central para"
+" a Unidade Nacional de Controle do Câncer, sob sua direção e em coordenação "
+"com as Estatísticas do MINSAP. As fontes não usam nomes idênticos."
+
+#, fuzzy
+msgid ""
+" representa un estrato de edad (y cualquier otra dimensión que se mantenga "
+"fija). Comparar estratos exige que la definición de grupo y el período sean "
+"consistentes."
+msgstr ""
+"  representa um estrato de idade (e qualquer outra dimensão mantida "
+"constante). A comparação de estratos requer definições de grupos e períodos "
+"consistentes."
+
+#, fuzzy
+msgid " y "
+msgstr " e "
+
+#, fuzzy
+msgid "Agrupación"
+msgstr "Agrupamento"
+
+#, fuzzy
+msgid ""
+"Al combinar años, la población denominadora acumula las poblaciones anuales "
+"seleccionadas."
+msgstr ""
+"Quando os anos são combinados, a população do denominador é a soma das "
+"populações anuais selecionadas."
+
+#, fuzzy
+msgid "Consulta"
+msgstr "Consulta"
+
+#, fuzzy
+msgid "Contexto de la consulta"
+msgstr "Contexto de consulta"
+
+#, fuzzy
+msgid "Frecuencia relativa (%%) · %(unit)s"
+msgstr "Frequência relativa (%%) · %(unit)s"
+
+#, fuzzy
+msgid "Fuente y corte"
+msgstr "Fonte e lançamento"
+
+#, fuzzy
+msgid "Gráfico"
+msgstr "Gráfico"
+
+#, fuzzy
+msgid "Indicador del gráfico"
+msgstr "Métrica do gráfico"
+
+#, fuzzy
+msgid ""
+"Las tasas se calculan con la unidad elegida; los grupos de localización "
+"pueden solaparse en personas distintas. "
+msgstr ""
+"As tarifas utilizam a unidade selecionada; grupos de sites podem se sobrepor"
+" para pessoas distintas. "
+
+#, fuzzy
+msgid ""
+"Métodos candidatos; denominadores sintéticos, no son resultados oficiales. "
+msgstr ""
+"Métodos candidatos; os denominadores são sintéticos e não são resultados "
+"oficiais. "
+
+#, fuzzy
+msgid "No disponible en este corte"
+msgstr "Não disponível nesta versão"
+
+#, fuzzy
+msgid "Nota"
+msgstr "Nota"
+
+#, fuzzy
+msgid "Personas distintas (frecuencia absoluta)"
+msgstr "Pessoas distintas (frequência absoluta)"
+
+#, fuzzy
+msgid "Porcentaje (%)"
+msgstr "Porcentagem (%)"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "Porcentagem de cada categoria (%)"
+
+#, fuzzy
+msgid "Selección"
+msgstr "Seleção"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000 · %(unit)s"
+msgstr "Taxa ajustada por idade da Segi–Doll por 100.000 · %(unit)s"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000 · %(unit)s"
+msgstr "Taxa bruta/específica por idade por 100.000 · %(unit)s"
+
+#, fuzzy
+msgid "Todas las provincias"
+msgstr "Todas as províncias"
+
+#, fuzzy
+msgid "Todos (%(first)s–%(last)s)"
+msgstr "Todos (%(first)s – %(last)s)"
+
+#, fuzzy
+msgid "Todos los municipios"
+msgstr "Todos os municípios"
+
+#, fuzzy
+msgid "Tumores (frecuencia absoluta)"
+msgstr "Tumores (frequência absoluta)"
+
+#, fuzzy
+msgid "rnc-synthetic-query"
+msgstr "consulta sintética rnc"
+
+#, fuzzy
+msgid "Datos sintéticos · %(period)s"
+msgstr "Dados sintéticos · %(period)s"
+
+#, fuzzy
+msgid "Datos sintéticos · %(title)s · Versión %(release)s"
+msgstr "Dados sintéticos · %(title)s · Versão %(release)s"
+
+#, fuzzy
+msgid "Distribución por sexo (%)"
+msgstr "Distribuição por sexo (%)"
+
+#, fuzzy
+msgid ""
+"El tamaño o rótulo del punto indica cuántas categorías coinciden en las "
+"mismas coordenadas."
+msgstr ""
+"O tamanho do ponto ou rótulo indica quantas categorias se sobrepõem nas "
+"mesmas coordenadas."
+
+#, fuzzy
+msgid "Frecuencias absolutas"
+msgstr "Frequências absolutas"
+
+#, fuzzy
+msgid "Localizaciones más frecuentes"
+msgstr "Sites mais frequentes"
+
+#, fuzzy
+msgid "No hay cobertura de población completa para el ajuste seleccionado."
+msgstr "Não há cobertura populacional completa para o ajuste selecionado."
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "Não há valores positivos para exibir como composição."
+
+#, fuzzy
+msgid "RNC / Cuba · Detalle de consulta"
+msgstr "RNC / Cuba · Detalhes da consulta"
+
+#, fuzzy
+msgid ""
+"Seleccione una dimensión con hasta ocho categorías para circular o anillo."
+msgstr ""
+"Selecione uma dimensão com no máximo oito categorias para um gráfico de "
+"pizza ou de rosca."
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "Tumores e pessoas distintas"
+
+#, fuzzy
+msgid "Detalle %(page)s"
+msgstr "Detalhes %(page)s"
+
+#, fuzzy
+msgid "Cuba (nacional)"
+msgstr "Cuba (nacional)"
+
+#, fuzzy
+msgid ""
+"Este gráfico necesita al menos dos categorías con datos en la dimensión "
+"elegida."
+msgstr ""
+"Este gráfico requer pelo menos duas categorias com dados na dimensão "
+"selecionada."
+
+#, fuzzy
+msgid ""
+"La comparación por sexo requiere datos disponibles de mujeres y hombres."
+msgstr ""
+"A comparação entre os sexos requer dados tanto para mulheres como para "
+"homens."
+
+#, fuzzy
+msgid "Provincias disponibles; cobertura nacional incompleta"
+msgstr "Províncias disponíveis; a cobertura nacional está incompleta"
+
+#, fuzzy
+msgid "Administración RNC"
+msgstr "Administração RNC"
+
+#, fuzzy
+msgid "Filtros de la consulta"
+msgstr "Filtros de consulta"
+
+#, fuzzy
+msgid "Navegación RNC"
+msgstr "Navegação RNC"
+
+#, fuzzy
+msgid "Portal público"
+msgstr "Portal público"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "Mulheres"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "Homens"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "Traquéia, brônquios e pulmão"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "Próstata"
+
+#, fuzzy
+msgid "Mama"
+msgstr "Peito"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "Cólon e reto"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "Estômago"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "Colo do útero"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "Corpo uterino"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "Tireóide"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "Pâncreas"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "Bexiga urinária"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "Rim"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "Fígado e ductos biliares"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "Ovário"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "Laringe e faringe"
+
+#, fuzzy
+msgid ""
+"Grupo ilustrativo sintético; no representa un código TOPO ni una "
+"equivalencia ICD-O: %(category)s."
+msgstr ""
+"Grupo sintético ilustrativo; não é um código TOPO ou uma equivalência CID-O:"
+" %(category)s."
+
+#, fuzzy
+msgid "Código de provincia documentado en el Manual RNC VII, Anexo 1."
+msgstr "Código da província documentado no Manual RNC VII, Anexo 1."
+
+#, fuzzy
+msgid "Ampliar barra lateral"
+msgstr "Expandir barra lateral"
+
+#, fuzzy
+msgid "La consulta local aún no está disponible en este dispositivo."
+msgstr "A consulta off-line ainda não está disponível neste dispositivo."
+
+#, fuzzy
+msgid "Use letras de la A a la Z, números, punto, guion o guion bajo."
+msgstr "Use letras de A a Z, números, pontos, hífens ou sublinhados."
+
+#, fuzzy
+msgid "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."
+msgstr "Use letras, espaços, apóstrofos ou hífens; por exemplo, Maria José."
+
+#, fuzzy
+msgid "Use texto, números y puntuación habitual; sin etiquetas HTML."
+msgstr "Use texto, números e pontuação comum; sem tags HTML."
+
+#, fuzzy
+msgid ""
+"Busque por nombre, usuario o correo; no se admiten símbolos de programación."
+msgstr ""
+"Pesquise por nome, nome de usuário ou e-mail; símbolos de programação não "
+"são permitidos."
+
+#, fuzzy
+msgid "Incluya una descripción con letras o números."
+msgstr "Inclua uma descrição com letras ou números."
+
+#, fuzzy
+msgid "Complete este campo."
+msgstr "Preencha este campo."
+
+#, fuzzy
+msgid "Marque esta casilla para continuar."
+msgstr "Marque esta caixa para continuar."
+
+#, fuzzy
+msgid "No se pudo enviar el formulario"
+msgstr "Não foi possível enviar o formulário."
+
+#, fuzzy
+msgid ""
+"La sesión del formulario ha caducado o no se pudo verificar. Vuelva a abrir "
+"la página e inténtelo otra vez. No se guardó este envío."
+msgstr ""
+"Sua sessão de formulário expirou ou não pôde ser verificada. Reabra a página"
+" e tente novamente. Este envio não foi salvo."
+
+#, fuzzy
+msgid ""
+"La dirección no existe o el recurso ya no está disponible. Puede continuar "
+"desde la navegación del portal."
+msgstr ""
+"Este endereço não existe ou o recurso não está mais disponível. Você pode "
+"continuar usando a navegação do portal."
+
+#, fuzzy
+msgid "%(label)s, código %(number)s"
+msgstr "%(label)s, código %(number)s"
+
+#, fuzzy
+msgid "%(label)s: código repetido para el mismo sistema y edición."
+msgstr "%(label)s: código duplicado para o mesmo sistema e edição."
+
+#, fuzzy
+msgid "%(label)s: debe contener uno o más códigos."
+msgstr "%(label)s: deve conter um ou mais códigos."
+
+#, fuzzy
+msgid "%(label)s: eje no admitido."
+msgstr "%(label)s: eixo não suportado."
+
+#, fuzzy
+msgid "%(label)s: estado de código no admitido."
+msgstr "%(label)s: status de código não suportado."
+
+#, fuzzy
+msgid "%(label)s: estado de publicación no admitido."
+msgstr "%(label)s: status de publicação não suportado."
+
+#, fuzzy
+msgid "%(label)s: estado de relación no admitido."
+msgstr "%(label)s: status de relacionamento não suportado."
+
+#, fuzzy
+msgid "%(label)s: faltan campos requeridos."
+msgstr "%(label)s: faltam campos obrigatórios."
+
+#, fuzzy
+msgid "%(label)s: hay campos vacíos o con tipo inválido."
+msgstr "%(label)s: os campos estão vazios ou possuem tipo inválido."
+
+#, fuzzy
+msgid "%(label)s: identificador de concepto duplicado."
+msgstr "%(label)s: identificador de conceito duplicado."
+
+#, fuzzy
+msgid "%(label)s: la fuente debe ser una URL HTTP o HTTPS."
+msgstr "%(label)s: a fonte deve ser uma URL HTTP ou HTTPS."
+
+#, fuzzy
+msgid "%(label)s: relación de concepto no admitida."
+msgstr "%(label)s: relacionamento de conceito não suportado."
+
+#, fuzzy
+msgid "Archivo validado y registrado. Revise el corte antes de publicarlo."
+msgstr "Arquivo validado e gravado. Revise o lançamento antes de publicá-lo."
+
+#, fuzzy
+msgid "CSV no válido; revise codificación y estructura."
+msgstr "CSV inválido; verifique sua codificação e estrutura."
+
+#, fuzzy
+msgid "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+msgstr ""
+"Cada território e ano deve abranger ambos os sexos e todas as faixas etárias"
+" de 18 anos."
+
+#, fuzzy
+msgid "Comportamiento"
+msgstr "Comportamento"
+
+#, fuzzy
+msgid "Concepto %(number)s"
+msgstr "Conceito %(number)s"
+
+#, fuzzy
+msgid "Correspondencia exacta"
+msgstr "Correspondência exata"
+
+#, fuzzy
+msgid "Código del concepto"
+msgstr "Código conceitual"
+
+#, fuzzy
+msgid "Declarado por la fuente"
+msgstr "Declarado pela fonte"
+
+#, fuzzy
+msgid "Ejecute seed_demo para generar el ejemplo local."
+msgstr "Execute seed_demo para gerar a amostra local."
+
+#, fuzzy
+msgid "El archivo debe contener un arreglo 'concepts'."
+msgstr "O arquivo deve conter uma matriz de 'conceitos'."
+
+#, fuzzy
+msgid "El archivo no contiene registros."
+msgstr "O arquivo não contém registros."
+
+#, fuzzy
+msgid "El catálogo configurado no se puede leer como JSON UTF-8."
+msgstr "O catálogo configurado não pode ser lido como UTF-8 JSON."
+
+#, fuzzy
+msgid "El catálogo declara validación RNC"
+msgstr "O catálogo declara validação RNC"
+
+#, fuzzy
+msgid "El ejemplo ya alcanzó el límite de filas del entorno local."
+msgstr "A amostra local atingiu o limite de linhas para este ambiente."
+
+#, fuzzy
+msgid "El límite local es de 60 000 filas."
+msgstr "O limite local é de 60.000 linhas."
+
+#, fuzzy
+msgid "El service worker solo está habilitado en el perfil público."
+msgstr "O service worker está disponível apenas no perfil público."
+
+#, fuzzy
+msgid "Esta entrega ya está registrada."
+msgstr "Esta entrega já foi registrada."
+
+#, fuzzy
+msgid "Esta entrega ya está registrada; no se incorporó otra copia."
+msgstr "Esta entrega já foi registrada; nenhuma duplicata foi adicionada."
+
+#, fuzzy
+msgid "Estadio"
+msgstr "Palco"
+
+#, fuzzy
+msgid "Estado actualizado. El portal público ya refleja este cambio."
+msgstr "Status atualizado. O site público agora reflete essa mudança."
+
+#, fuzzy
+msgid "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+msgstr "Estrutura incompatível. Baixe o CSV de amostra sintética."
+
+#, fuzzy
+msgid "Fila %(number)s: categoría no admitida."
+msgstr "Linha %(number)s: categoria não suportada."
+
+#, fuzzy
+msgid "Fila %(number)s: denominador inconsistente."
+msgstr "Linha %(number)s: denominador inconsistente."
+
+#, fuzzy
+msgid "Fila %(number)s: estructura o longitud incorrecta."
+msgstr "Linha %(number)s: estrutura ou comprimento inválido."
+
+#, fuzzy
+msgid "Fila %(number)s: formato de identificador sintético no admitido."
+msgstr "Linha %(number)s: formato de identificador sintético não suportado."
+
+#, fuzzy
+msgid "Fila %(number)s: identidad sintética inconsistente."
+msgstr "Linha %(number)s: identidade sintética inconsistente."
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de catálogo desconocido."
+msgstr "Linha %(number)s: identificador de catálogo desconhecido."
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de tumor repetido."
+msgstr "Linha %(number)s: identificador de tumor duplicado."
+
+#, fuzzy
+msgid "Fila %(number)s: persona incompatible con el estrato declarado."
+msgstr "Linha %(number)s: pessoa não corresponde ao estrato declarado."
+
+#, fuzzy
+msgid "Fila %(number)s: período, población o peso incompatible."
+msgstr "Linha %(number)s: período, população ou peso incompatíveis."
+
+#, fuzzy
+msgid "Fila %(number)s: se requieren números enteros."
+msgstr "Linha %(number)s: os valores devem ser números inteiros."
+
+#, fuzzy
+msgid "Fila %(number)s: solo se admite el contrato sintético de demostración."
+msgstr ""
+"Linha %(number)s: somente o contrato de demonstração sintético é aceito."
+
+#, fuzzy
+msgid "Formato no disponible"
+msgstr "Formato não disponível"
+
+#, fuzzy
+msgid "Grado"
+msgstr "Nota"
+
+#, fuzzy
+msgid "Grupo de clasificación"
+msgstr "Grupo de classificação"
+
+#, fuzzy
+msgid "Identificador de publicación inválido."
+msgstr "Identificador de versão inválido."
+
+#, fuzzy
+msgid "La acción ya no es válida para el estado actual."
+msgstr "Esta ação não é mais válida para o status atual."
+
+#, fuzzy
+msgid "Mismo concepto"
+msgstr "Mesmo conceito"
+
+#, fuzzy
+msgid "Morfología"
+msgstr "Morfologia"
+
+#, fuzzy
+msgid "Más amplio"
+msgstr "Mais amplo"
+
+#, fuzzy
+msgid "Más específico"
+msgstr "Mais estreito"
+
+#, fuzzy
+msgid "No hay paquete offline disponible."
+msgstr "Nenhum pacote offline está disponível."
+
+#, fuzzy
+msgid "No se encontró el service worker."
+msgstr "O trabalhador de serviço não foi encontrado."
+
+#, fuzzy
+msgid "No se pudo iniciar sesión. Espere unos minutos."
+msgstr "Falha no login. Aguarde alguns minutos."
+
+#, fuzzy
+msgid "Otro"
+msgstr "Outro"
+
+#, fuzzy
+msgid "Relacionado"
+msgstr "Relacionado"
+
+#, fuzzy
+msgid "Se alcanzó el límite temporal de exportaciones. Espere un minuto."
+msgstr ""
+"O limite temporário de exportação foi atingido. Por favor, espere um minuto."
+
+#, fuzzy
+msgid "Solo se puede liberar el conjunto sintético de demostración."
+msgstr ""
+"Apenas o conjunto de dados de demonstração sintético pode ser publicado."
+
+#, fuzzy
+msgid "Topografía"
+msgstr "Topografia"
+
+#, fuzzy
+msgid "Utilice un CSV de hasta 12 MB."
+msgstr "Use um arquivo CSV com no máximo 12 MB."
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito mayor que cero."
+msgstr "%(label)s deve ser um número finito maior que zero."
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito no negativo."
+msgstr "%(label)s deve ser um número finito não negativo."
+
+#, fuzzy
+msgid "Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos."
+msgstr ""
+"Os casos, as populações e os pesos devem cobrir os mesmos estratos não "
+"vazios."
+
+#, fuzzy
+msgid "El conteo debe ser un entero no negativo."
+msgstr "A contagem deve ser um número inteiro não negativo."
+
+#, fuzzy
+msgid "El nivel de confianza debe estar entre cero y uno."
+msgstr "O nível de confiança deve estar entre zero e um."
+
+#, fuzzy
+msgid "El numerador no puede exceder el universo declarado."
+msgstr "O numerador não pode exceder o universo declarado."
+
+#, fuzzy
+msgid "El universo debe ser mayor que cero."
+msgstr "O universo deve ser maior que zero."
+
+#, fuzzy
+msgid "La suma de los pesos estándar debe ser mayor que cero."
+msgstr "Os pesos padrão devem somar mais que zero."
+
+#, fuzzy
+msgid "Valor numérico fuera de rango."
+msgstr "O valor numérico está fora do intervalo."
+
+#: public_site/portal.py:387
+#, fuzzy
+msgid "actualizacion_sintetica"
+msgstr "atualizacao_sintetica"
+
+#: public_site/validation.py:29 public_site/validation.py:58
+#, fuzzy
+msgid "Use al menos %(limit_value)s caracteres."
+msgstr "Use pelo menos %(limit_value)s caracteres."
+
+#: public_site/validation.py:30 public_site/validation.py:62
+#, fuzzy
+msgid "Use como máximo %(limit_value)s caracteres."
+msgstr "Use no máximo %(limit_value)s caracteres."
+
+#: public_site/validation.py:88
+#, fuzzy
+msgid "Ingrese un correo electrónico válido."
+msgstr "Informe um endereço de e-mail válido."
+
+#: public_site/validation.py:101
+#, fuzzy
+msgid "Seleccione una opción válida."
+msgstr "Selecione uma opção válida."
+
+#, fuzzy
+msgid "Contraseña"
+msgstr "Senha"
+
+#, fuzzy
+msgid "Contraseña actual"
+msgstr "Senha antiga"
+
+#, fuzzy
+msgid "Nueva contraseña"
+msgstr "Nova senha"
+
+#, fuzzy
+msgid "Confirmar nueva contraseña"
+msgstr "Confirme a nova senha"
+
+#, fuzzy
+msgid "Repita la misma contraseña para confirmar."
+msgstr "Digite a mesma senha de antes, para verificação."
+
+#, fuzzy
+msgid "La contraseña no debe parecerse a sus datos personales."
+msgstr ""
+"Escolha uma senha que não seja muito semelhante às suas informações "
+"pessoais."
+
+#, fuzzy
+msgid "La contraseña no debe ser muy similar a sus otros datos personales."
+msgstr ""
+"Sua senha não pode ser muito semelhante às suas outras informações pessoais."
+
+#, fuzzy
+msgid ""
+"La contraseña es demasiado corta; debe contener al menos %(min_length)s "
+"caracteres."
+msgstr ""
+"Esta senha é muito curta. Deve conter pelo menos %(min_length)s caracteres."
+
+#, fuzzy
+msgid "La contraseña debe tener al menos %(min_length)s caracteres."
+msgstr "Sua senha deve conter pelo menos %(min_length)s caracteres."
+
+#, fuzzy
+msgid "Elija una contraseña que no sea de uso común."
+msgstr "Escolha uma senha que não seja comumente usada."
+
+#, fuzzy
+msgid "No utilice una contraseña de uso común."
+msgstr "Sua senha não pode ser uma senha comumente usada."
+
+#, fuzzy
+msgid "La contraseña no puede contener solo números."
+msgstr "Esta senha é inteiramente numérica."
+
+#, fuzzy
+msgid "No utilice solo números como contraseña."
+msgstr "Sua senha não pode ser totalmente numérica."
+
+#, fuzzy
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "Os dois campos de senha não correspondiam."
+
+#, fuzzy
+msgid "La contraseña actual no es correcta."
+msgstr "Sua senha antiga foi digitada incorretamente."
+
+#, fuzzy
+msgid "El usuario o la contraseña no son válidos."
+msgstr "Por favor, insira um nome de usuário e senha corretos."
+
+#, fuzzy
+msgid "La cuenta no está activa."
+msgstr "Esta conta está inativa."
+
+#, fuzzy
+msgid "Correo electrónico"
+msgstr "Endereço de e-mail"
+
+#, fuzzy
+msgid "Vista previa de traducción automática"
+msgstr "Prévia de tradução automática (rascunho)"
+
+#, fuzzy
+msgid ""
+"Este idioma usa un borrador no revisado ni aprobado. No lo use para "
+"interpretar estadísticas de cáncer."
+msgstr ""
+"Este idioma usa um rascunho sem revisão linguística humana ou aprovação "
+"institucional. Não o use para interpretar estatísticas de câncer."
+
+#, fuzzy
+msgid "borrador de vista previa"
+msgstr "— rascunho de prévia"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · Administração"
+
+#, fuzzy
+msgid "Roles"
+msgstr "Papéis"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "Escolha uma ação"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr ""
+"Se houver uma conta ativa com este endereço de e-mail, você receberá "
+"instruções."

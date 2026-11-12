@@ -38,6 +38,9 @@ coverage.xml
 /playwright-report/
 /screenshots/
 /artifacts/
+/deploy/pythonanywhere/rnc-web-qa.zip
+locale/*/LC_MESSAGES/*.mo
+/locale-preview/
 
 # Datos de entrada: solo se versionan fixtures sintéticas explícitas
 *.csv

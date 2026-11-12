@@ -1,0 +1,723 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Check this box to continue."
+msgstr "Centang kotak ini untuk melanjutkan."
+
+#, fuzzy
+msgid "Complete this field."
+msgstr "Lengkapi bidang ini."
+
+#, fuzzy
+msgid "Check the characters entered in this field."
+msgstr "Periksa karakter yang dimasukkan di bidang ini."
+
+#, fuzzy
+msgid "Enter at least %(length)s characters."
+msgstr "Masukkan setidaknya %(length)s karakter."
+
+#, fuzzy
+msgid "Enter no more than %(length)s characters."
+msgstr "Masukkan maksimal %(length)s karakter."
+
+#, fuzzy
+msgid "Enter a valid email address, for example name@domain.com."
+msgstr "Masukkan alamat email yang valid, misalnya nama@domain.com."
+
+#, fuzzy
+msgid "Choose a .csv file."
+msgstr "Pilih file .csv."
+
+#, fuzzy
+msgid "The file exceeds the 12 MB limit."
+msgstr "File melebihi batas 12 MB."
+
+#, fuzzy
+msgid ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+msgstr ""
+"Pisahkan bagian nama dengan spasi, apostrof, atau tanda hubung; jangan "
+"memulai atau mengakhiri dengan tanda baca."
+
+#, fuzzy
+msgid "The password cannot contain only numbers."
+msgstr "Kata sandi tidak boleh hanya berisi angka."
+
+#, fuzzy
+msgid "The passwords do not match. Enter the same password again."
+msgstr "Kata sandinya tidak cocok. Masukkan kata sandi yang sama lagi."
+
+#, fuzzy
+msgid "Text was not added: enter no more than %(length)s characters."
+msgstr ""
+"Teks tidak ditambahkan: masukkan tidak lebih dari %(length)s karakter."
+
+#, fuzzy
+msgid "Disallowed text was not added. "
+msgstr "Teks yang tidak diizinkan tidak ditambahkan. "
+
+#, fuzzy
+msgid "Check the format of this field."
+msgstr "Periksa format bidang ini."
+
+#, fuzzy
+msgid "No file selected"
+msgstr "Tidak ada berkas yang dipilih"
+
+#, fuzzy
+msgid "All"
+msgstr "Semua"
+
+#, fuzzy
+msgid "This chart does not support the selected dimension."
+msgstr "Diagram ini tidak mendukung dimensi yang dipilih."
+
+#, fuzzy
+msgid "This chart does not support the selected indicator."
+msgstr "Grafik ini tidak mendukung indikator yang dipilih."
+
+#, fuzzy
+msgid "This chart does not support the selected unit."
+msgstr "Bagan ini tidak mendukung unit yang dipilih."
+
+#, fuzzy
+msgid "For distinct people, compare composition by sex."
+msgstr ""
+"Untuk orang yang berbeda, bandingkan komposisi berdasarkan jenis kelamin."
+
+#, fuzzy
+msgid "Line charts require comparison by period."
+msgstr "Bagan garis memerlukan perbandingan berdasarkan periode."
+
+#, fuzzy
+msgid "The series needs at least two years; clear the single-year selection."
+msgstr ""
+"Serial ini membutuhkan setidaknya dua tahun; menghapus seleksi satu tahun."
+
+#, fuzzy
+msgid "Point charts compare values by province of residence or age group."
+msgstr ""
+"Bagan poin membandingkan nilai berdasarkan provinsi tempat tinggal atau "
+"kelompok umur."
+
+#, fuzzy
+msgid ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+msgstr ""
+"Bagan ini memerlukan setidaknya dua kategori; hapus filter satu provinsi "
+"atau satu usia."
+
+#, fuzzy
+msgid "Scatter plots compare provinces or age groups."
+msgstr "Plot sebar membandingkan provinsi atau kelompok umur."
+
+#, fuzzy
+msgid "Scatter plots compare absolute counts of tumors and distinct people."
+msgstr "Plot sebar membandingkan jumlah absolut tumor dan orang yang berbeda."
+
+#, fuzzy
+msgid ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+msgstr ""
+"Plot sebar memerlukan pilihan di mana orang-orang yang berbeda dapat "
+"dihitung tanpa tumpang tindih."
+
+#, fuzzy
+msgid "Calculando en este dispositivo…"
+msgstr "Menghitung di perangkat ini…"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "Kategori"
+
+#, fuzzy
+msgid "Datos sintéticos"
+msgstr "Data sintetis"
+
+#, fuzzy
+msgid ""
+"Deja un filtro sin selección para incluir todos sus valores; puedes elegir "
+"varios."
+msgstr ""
+"Biarkan filter kosong untuk memasukkan semua nilainya; Anda dapat memilih "
+"beberapa."
+
+#, fuzzy
+msgid "Dimensión"
+msgstr "Dimensi"
+
+#, fuzzy
+msgid "El cálculo local encontró un error."
+msgstr "Perhitungan lokal mengalami kesalahan."
+
+#, fuzzy
+msgid "El cálculo local se interrumpió."
+msgstr "Perhitungan lokal terhenti."
+
+#, fuzzy
+msgid "El navegador no ofrece una estimación de almacenamiento."
+msgstr "Browser ini tidak memberikan perkiraan penyimpanan."
+
+#, fuzzy
+msgid "El paquete está incompleto y no se guardó."
+msgstr "Paket tidak lengkap dan tidak disimpan."
+
+#, fuzzy
+msgid ""
+"El servidor no respondió; la consulta local sigue disponible si ya guardaste"
+" el paquete."
+msgstr ""
+"Server tidak merespons. Konsultasi lokal tetap tersedia jika Anda sudah "
+"menyimpan paket."
+
+#, fuzzy
+msgid ""
+"Este navegador no permite el almacenamiento local requerido por la consulta "
+"offline."
+msgstr ""
+"Browser ini tidak mengizinkan penyimpanan lokal yang diperlukan untuk "
+"konsultasi offline."
+
+#, fuzzy
+msgid ""
+"Este paquete no incluye el contrato estadístico requerido. Conéctate y "
+"actualízalo."
+msgstr ""
+"Paket ini tidak termasuk kontrak statistik yang disyaratkan. Hubungkan ke "
+"internet dan perbarui."
+
+#, fuzzy
+msgid ""
+"Este prototipo solo admite el paquete sintético autorizado para pruebas."
+msgstr ""
+"Prototipe ini hanya menerima paket sintetis yang diotorisasi untuk "
+"pengujian."
+
+#, fuzzy
+msgid "Fecha de publicación"
+msgstr "Tanggal publikasi"
+
+#, fuzzy
+msgid "Filtros"
+msgstr "Filter"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "Frekuensi relatif (%)"
+
+#, fuzzy
+msgid "Guarda primero la publicación sintética en este dispositivo."
+msgstr "Pertama-tama simpan rilis sintetis ke perangkat ini."
+
+#, fuzzy
+msgid ""
+"Guarda una publicación mientras tienes conexión para consultar desde este "
+"dispositivo."
+msgstr "Simpan rilis saat online untuk melihatnya di perangkat ini."
+
+#, fuzzy
+msgid "Indicador"
+msgstr "Metrik"
+
+#, fuzzy
+msgid "Método"
+msgstr "Metode"
+
+#, fuzzy
+msgid "No disponible"
+msgstr "Tidak tersedia"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "Tidak tersedia dalam rilis ini"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "Tidak ada paket yang disimpan."
+
+#, fuzzy
+msgid "No hay publicación disponible para guardar."
+msgstr "Tidak ada rilis yang tersedia untuk disimpan."
+
+#, fuzzy
+msgid "No se pudo cargar la biblioteca local de gráficos."
+msgstr "Pustaka bagan lokal tidak dapat dimuat."
+
+#, fuzzy
+msgid "No se pudo completar el cálculo local."
+msgstr "Perhitungan lokal tidak dapat diselesaikan."
+
+#, fuzzy
+msgid "No se pudo eliminar el paquete local."
+msgstr "Paket lokal tidak dapat dihapus."
+
+#, fuzzy
+msgid "No se pudo estimar el almacenamiento disponible."
+msgstr "Penyimpanan yang tersedia tidak dapat diperkirakan."
+
+#, fuzzy
+msgid "No se pudo guardar el paquete local."
+msgstr "Paket lokal tidak dapat disimpan."
+
+#, fuzzy
+msgid "No se pudo guardar la publicación."
+msgstr "Rilisan tidak dapat disimpan."
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "Orang unik"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "Populasi penyebut"
+
+#, fuzzy
+msgid "Posición"
+msgstr "Pangkat"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "Lepaskan"
+
+#, fuzzy
+msgid ""
+"Publicación sintética guardada en este dispositivo. El navegador puede "
+"retirar datos locales por cuota o configuración."
+msgstr ""
+"Rilis sintetis disimpan di perangkat ini. Browser mungkin menghapus data "
+"lokal karena batasan atau pengaturan penyimpanan."
+
+#, fuzzy
+msgid ""
+"Puedes combinar varios valores. Para personas distintas, selecciona como "
+"máximo un valor en cada filtro."
+msgstr ""
+"Anda dapat menggabungkan beberapa nilai. Untuk orang yang berbeda, pilih "
+"maksimal satu nilai di setiap filter."
+
+#, fuzzy
+msgid "Se eliminó el paquete local de este navegador."
+msgstr "Paket lokal telah dihapus dari browser ini."
+
+#, fuzzy
+msgid "Seleccione un gráfico"
+msgstr "Pilih bagan"
+
+#, fuzzy
+msgid "Seleccione un indicador"
+msgstr "Pilih metrik"
+
+#, fuzzy
+msgid "Seleccione una dimensión"
+msgstr "Pilih dimensi"
+
+#, fuzzy
+msgid "Sí"
+msgstr "Ya"
+
+#, fuzzy
+msgid "Tasa ajustada por 100 000"
+msgstr "Angka disesuaikan usia per 100.000"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000"
+msgstr "Angka kasar/khusus usia per 100.000"
+
+#, fuzzy
+msgid "Todos"
+msgstr "Semua"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "Tumor"
+
+#, fuzzy
+msgid "Título"
+msgstr "Judul"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "Satuan"
+
+#, fuzzy
+msgid "no disponible para filtros múltiples"
+msgstr "tidak tersedia dengan banyak filter"
+
+#, fuzzy
+msgid "todos"
+msgstr "semua"
+
+#, fuzzy
+msgid ""
+"Almacenamiento del sitio usado: %(used)s MB%(quota)s. Estimación del "
+"navegador."
+msgstr ""
+"Penyimpanan situs yang digunakan: %(used)s MB%(quota)s. Perkiraan peramban."
+
+#, fuzzy
+msgid " de %(quota)s MB estimados"
+msgstr " dari perkiraan %(quota)s MB"
+
+#, fuzzy
+msgid ""
+"Tumores: %(tumors)s · Personas distintas: %(persons)s · Población: "
+"%(population)s · cálculo local: %(elapsed)s ms"
+msgstr ""
+"Tumor: %(tumors)s · Orang unik: %(persons)s · Populasi: %(population)s · "
+"perhitungan lokal: %(elapsed)s ms"
+
+#, fuzzy
+msgid ""
+"Consulta calculada localmente · publicación %(release)s · método %(method)s."
+msgstr ""
+"Kueri dihitung pada perangkat ini · rilis %(release)s · metode %(method)s."
+
+#, fuzzy
+msgid "El servidor respondió HTTP %(status)s."
+msgstr "Server merespons dengan HTTP %(status)s."
+
+#, fuzzy
+msgid ""
+"Servidor: %(elapsed)s ms de ida y vuelta · %(bytes)s bytes de HTML. No mide "
+"CPU del servidor."
+msgstr ""
+"Server: %(elapsed)s ms pulang pergi · %(bytes)s byte HTML. Ini tidak "
+"mengukur CPU server."
+
+#, fuzzy
+msgid "Categorías"
+msgstr "Kategori"
+
+#, fuzzy
+msgid "categoría"
+msgid_plural "categorías"
+msgstr[0] "kategori"
+
+#, fuzzy
+msgid "categoría con el mismo valor"
+msgid_plural "categorías con los mismos valores"
+msgstr[0] "Kategori dengan nilai yang sama"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "Kueri statistik"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "Persentase tiap kategori (%)"
+
+#, fuzzy
+msgid "tumores"
+msgstr "tumor"
+
+#, fuzzy
+msgid "personas distintas"
+msgstr "orang yang berbeda"
+
+#, fuzzy
+msgid "El gráfico circular necesita hasta ocho categorías."
+msgstr "Diagram lingkaran mendukung hingga delapan kategori."
+
+#, fuzzy
+msgid "Este gráfico necesita al menos dos categorías con datos."
+msgstr "Bagan ini memerlukan setidaknya dua kategori dengan data."
+
+#, fuzzy
+msgid "Falta población en algún grupo de edad para calcular la tasa ajustada."
+msgstr ""
+"Populasi tidak ada untuk kelompok umur yang diperlukan untuk menghitung "
+"angka yang disesuaikan."
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "Frekuensi absolut"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "Laki-laki"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "Wanita"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "Tidak ada nilai positif untuk ditampilkan sebagai sebuah komposisi."
+
+#, fuzzy
+msgid "No se cargó una publicación local."
+msgstr "Tidak ada rilis lokal yang dimuat."
+
+#, fuzzy
+msgid "Selección no compatible: %(errors)s."
+msgstr "Pilihan yang tidak kompatibel: %(errors)s."
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Angka terstandarisasi menurut usia (Segi–Doll) per 100.000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "Angka kasar/khusus usia per 100.000"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "Tumor dan orang yang berbeda"
+
+#, fuzzy
+msgid "ajuste por edad incompatible con la selección"
+msgstr "penyesuaian usia tidak sesuai dengan seleksi"
+
+#, fuzzy
+msgid "comparación por sexo necesita ambos sexos"
+msgstr "perbandingan jenis kelamin membutuhkan kedua jenis kelamin"
+
+#, fuzzy
+msgid "composición de personas solo por sexo"
+msgstr "komposisi orang hanya tersedia berdasarkan jenis kelamin"
+
+#, fuzzy
+msgid "dimensión"
+msgstr "dimensi"
+
+#, fuzzy
+msgid "dispersión requiere filtros simples"
+msgstr "plot sebar memerlukan filter sederhana"
+
+#, fuzzy
+msgid "indicador"
+msgstr "metrik"
+
+#, fuzzy
+msgid "la publicación no contiene ambos sexos"
+msgstr "rilis ini tidak memuat kedua jenis kelamin"
+
+#, fuzzy
+msgid "personas distintas con selección múltiple"
+msgstr "orang yang berbeda tidak dapat digabungkan dengan banyak pilihan"
+
+#, fuzzy
+msgid "unidad"
+msgstr "satuan"
+
+#, fuzzy
+msgid "valor de %(key)s fuera del paquete"
+msgstr "Nilai %(key)s berada di luar paket"
+
+#, fuzzy
+msgid ""
+"Paquete local: %(title)s · versión %(release)s · publicado %(published)s · "
+"%(size)s KB"
+msgstr ""
+"Paket lokal: %(title)s · versi %(release)s · diterbitkan %(published)s · "
+"%(size)s KB"
+
+#, fuzzy
+msgid "Publicación %(release)s · %(date)s"
+msgstr "Rilis %(release)s · %(date)s"
+
+#, fuzzy
+msgid "Página %(page)s de %(pages)s · %(count)s %(categories)s"
+msgstr "Halaman %(page)s dari %(pages)s · %(count)s %(categories)s"
+
+#, fuzzy
+msgid "fecha no disponible"
+msgstr "tanggal tidak tersedia"
+
+#, fuzzy
+msgid "consulta-local"
+msgstr "permintaan lokal"
+
+#, fuzzy
+msgid "grafico-local"
+msgstr "grafik lokal"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "Trakea, bronkus, dan paru-paru"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "prostat"
+
+#, fuzzy
+msgid "Mama"
+msgstr "Payudara"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "Usus besar dan rektum"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "Perut"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "Serviks rahim"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "Korpus uteri"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "tiroid"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "pankreas"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "Kandung kemih"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "Ginjal"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "Saluran hati dan empedu"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "ovarium"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "Laring dan faring"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "Diagram donat"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "Tahun diagnosis"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "Diagram batang berkelompok menurut jenis kelamin"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "Batangan ditumpuk berdasarkan jenis kelamin"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "Batang horizontal"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "Batang persentase berdasarkan jenis kelamin"
+
+#, fuzzy
+msgid "Circular"
+msgstr "Diagram lingkaran"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "Kolom"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "Sebaran: tumor dan penduduk menurut provinsi/umur"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "Distribusi teritorial (kawanan)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "Usia"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "Kelompok lokasi kanker"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "Garis"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "Provinsi tempat tinggal"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "Poin berdasarkan provinsi atau kelompok umur"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "Peringkat indikator"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "Jenis kelamin"
+
+#, fuzzy
+msgid "Campo"
+msgstr "Bidang"
+
+#, fuzzy
+msgid "%(count)s option selected"
+msgid_plural "%(count)s options selected"
+msgstr[0] "Opsi %(count)s dipilih"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr ""
+"Membandingkan berdasarkan jenis kelamin memerlukan kedua jenis kelamin dan "
+"dimensi lain."
+
+#, fuzzy
+msgid "Las barras apiladas requieren frecuencias absolutas."
+msgstr "Batang bertumpuk memerlukan frekuensi absolut."
+
+#, fuzzy
+msgid ""
+"La composición requiere categorías excluyentes; para personas, compare por "
+"sexo."
+msgstr ""
+"Komposisi memerlukan kategori yang saling eksklusif; bagi manusia, "
+"bandingkan berdasarkan jenis kelamin."
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "Dimensi ini tidak tersedia untuk diagram yang dipilih."
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "Metrik ini tidak tersedia untuk diagram yang dipilih."
+
+#, fuzzy
+msgid "Esta unidad no está disponible para el gráfico seleccionado."
+msgstr "Unit ini tidak tersedia untuk bagan yang dipilih."
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "Penyesuaian usia memerlukan semua kelompok umur dan dimensi lain."
+
+#, fuzzy
+msgid ""
+"Datos sintéticos · método %(method)s · guardado en este navegador. La fecha "
+"de publicación identifica el corte; no indica cuándo se conectó el "
+"dispositivo."
+msgstr ""
+"Data sintetis · metode %(method)s · disimpan di browser ini. Tanggal "
+"publikasi menunjukkan rilis; itu tidak muncul saat perangkat terhubung."

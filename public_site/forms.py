@@ -7,110 +7,111 @@ from django.contrib.auth.forms import (
     SetPasswordForm,
 )
 from django.contrib.auth.password_validation import validate_password
+from django.utils.translation import gettext_lazy as _
 from .validation import AccessibleForm, TextField, validate_text
 
 
 class UploadForm(AccessibleForm, forms.Form):
     title = TextField(
-        label="Nombre del corte",
+        label=_("Nombre del corte"),
         max_length=120,
         min_length=3,
-        help_text="Un nombre que identifique el período y la entrega.",
+        help_text=_("Un nombre que identifique el período y la entrega."),
     )
     file = forms.FileField(
-        label="Archivo CSV sintético",
+        label=_("Archivo CSV sintético"),
         widget=forms.ClearableFileInput(
             attrs={"accept": ".csv,text/csv", "data-max-bytes": 12582912}
         ),
-        help_text="CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos.",
+        help_text=_("CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."),
     )
     synthetic = forms.BooleanField(
-        label="Confirmo que el archivo contiene exclusivamente datos sintéticos"
+        label=_("Confirmo que el archivo contiene exclusivamente datos sintéticos")
     )
 
     def clean_file(self):
         value = self.cleaned_data["file"]
         if not value.name.lower().endswith(".csv"):
-            raise forms.ValidationError("Seleccione un archivo con extensión .csv.")
+            raise forms.ValidationError(_("Seleccione un archivo con extensión .csv."))
         if value.size > 12 * 1024 * 1024:
-            raise forms.ValidationError("El archivo supera el límite de 12 MB.")
+            raise forms.ValidationError(_("El archivo supera el límite de 12 MB."))
         return value
 
 
 class DecisionForm(AccessibleForm, forms.Form):
     action = forms.ChoiceField(
-        label="Operación",
-        choices=[("publish", "Publicar"), ("revoke", "Revocar")],
+        label=_("Operación"),
+        choices=[("publish", _("Publicar")), ("revoke", _("Revocar"))],
         widget=forms.HiddenInput,
     )
     reason = TextField(
-        label="Motivo de la decisión",
+        label=_("Motivo de la decisión"),
         min_length=10,
         max_length=250,
         widget=forms.Textarea(attrs={"rows": 3}),
-        help_text="Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial.",
+        help_text=_("Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."),
     )
 
 
 class SearchForm(AccessibleForm, forms.Form):
     q = TextField(
-        label="Buscar usuario",
+        label=_("Buscar usuario"),
         required=False,
         max_length=100,
         rule="search",
         widget=forms.TextInput(
-            attrs={"type": "search", "placeholder": "Nombre, usuario o correo"}
+            attrs={"type": "search", "placeholder": _("Nombre, usuario o correo")}
         ),
     )
 
 
 class AccountForm(AccessibleForm, forms.ModelForm):
     username = TextField(
-        label="Usuario",
+        label=_("Usuario"),
         rule="username",
         max_length=150,
         min_length=3,
-        help_text="Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 caracteres.",
+        help_text=_("Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 caracteres."),
     )
     first_name = TextField(
-        label="Nombre",
+        label=_("Nombre"),
         rule="person-name",
         max_length=150,
-        help_text="Se admiten tildes, espacios, apóstrofos y guiones.",
+        help_text=_("Se admiten tildes, espacios, apóstrofos y guiones."),
     )
-    last_name = TextField(label="Apellidos", rule="person-name", max_length=150)
+    last_name = TextField(label=_("Apellidos"), rule="person-name", max_length=150)
     email = forms.EmailField(
-        label="Correo electrónico",
+        label=_("Correo electrónico"),
         max_length=254,
-        help_text="Se utilizará para invitaciones y recuperación de acceso.",
+        help_text=_("Se utilizará para invitaciones y recuperación de acceso."),
     )
     role = forms.ChoiceField(
-        label="Rol",
+        label=_("Rol"),
         choices=[
-            ("reader", "Consulta pública"),
-            ("operator", "Operador de cargas"),
-            ("publisher", "Responsable de publicación"),
-            ("superadmin", "Administrador de soporte"),
+            ("reader", _("Consulta pública")),
+            ("operator", _("Operador de cargas")),
+            ("publisher", _("Responsable de publicación")),
+            ("superadmin", _("Administrador de soporte")),
         ],
     )
     initial_password = forms.CharField(
-        label="Contraseña temporal",
+        label=_("Contraseña temporal"),
         required=False,
         widget=forms.PasswordInput,
-        help_text="Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con ella, se exigirá cambiarla al entrar.",
+        help_text=_("Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con ella, se exigirá cambiarla al entrar."),
     )
     confirm_password = forms.CharField(
-        label="Su contraseña de soporte",
+        label=_("Su contraseña de soporte"),
         widget=forms.PasswordInput(attrs={"autocomplete": "current-password"}),
-        help_text="Confirme su identidad para guardar los cambios.",
+        help_text=_("Confirme su identidad para guardar los cambios."),
     )
 
     class Meta:
         model = get_user_model()
         fields = ["username", "first_name", "last_name", "email", "is_active"]
-        labels = {"is_active": "Cuenta activa"}
+        labels = {"is_active": _("Cuenta activa")}
         help_texts = {
-            "is_active": "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+            "is_active": _("Desactive la cuenta para retirar el acceso sin eliminar su historial.")
         }
 
     def clean_username(self):
@@ -120,7 +121,7 @@ class AccountForm(AccessibleForm, forms.ModelForm):
             q = q.exclude(pk=self.instance.pk)
         if q.exists():
             raise forms.ValidationError(
-                "Ese nombre de usuario ya está en uso. Elija otro."
+                _("Ese nombre de usuario ya está en uso. Elija otro.")
             )
         return value
 
@@ -130,14 +131,14 @@ class AccountForm(AccessibleForm, forms.ModelForm):
         if self.instance.pk:
             q = q.exclude(pk=self.instance.pk)
         if q.exists():
-            raise forms.ValidationError("Ese correo ya está asignado a otra cuenta.")
+            raise forms.ValidationError(_("Ese correo ya está asignado a otra cuenta."))
         return email
 
     def clean_initial_password(self):
         password = self.cleaned_data.get("initial_password")
         if password:
             if len(password) > 128:
-                raise forms.ValidationError("Use como máximo 128 caracteres.")
+                raise forms.ValidationError(_("Use como máximo 128 caracteres."))
             candidate = get_user_model()(
                 username=self.cleaned_data.get("username", ""),
                 first_name=self.cleaned_data.get("first_name", ""),
@@ -149,22 +150,56 @@ class AccountForm(AccessibleForm, forms.ModelForm):
 
 
 class LoginForm(AccessibleForm, AuthenticationForm):
-    username = TextField(label="Usuario", rule="username", max_length=150)
+    username = TextField(label=_("Usuario"), rule="username", max_length=150)
+
+    error_messages = {
+        **AuthenticationForm.error_messages,
+        "invalid_login": _("El usuario o la contraseña no son válidos."),
+        "inactive": _("La cuenta no está activa."),
+    }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["password"].label = _("Contraseña")
 
 
 class ChangePasswordForm(AccessibleForm, PasswordChangeForm):
-    pass
+    error_messages = {
+        **PasswordChangeForm.error_messages,
+        "password_mismatch": _("Las contraseñas nuevas no coinciden."),
+        "password_incorrect": _("La contraseña actual no es correcta."),
+    }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["old_password"].label = _("Contraseña actual")
+        self.fields["new_password1"].label = _("Nueva contraseña")
+        self.fields["new_password2"].label = _("Confirmar nueva contraseña")
+        self.fields["new_password2"].help_text = _("Repita la misma contraseña para confirmar.")
 
 
 class RecoveryForm(AccessibleForm, PasswordResetForm):
-    pass
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["email"].label = _("Correo electrónico")
 
 
 class NewPasswordForm(AccessibleForm, SetPasswordForm):
+    error_messages = {
+        **SetPasswordForm.error_messages,
+        "password_mismatch": _("Las contraseñas nuevas no coinciden."),
+    }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["new_password1"].label = _("Nueva contraseña")
+        self.fields["new_password2"].label = _("Confirmar nueva contraseña")
+        self.fields["new_password2"].help_text = _("Repita la misma contraseña para confirmar.")
+
     def clean_new_password1(self):
         value = self.cleaned_data["new_password1"]
         if len(value) > 128:
-            raise forms.ValidationError("Use como máximo 128 caracteres.")
+            raise forms.ValidationError(_("Use como máximo 128 caracteres."))
         return value
 
 
@@ -172,34 +207,34 @@ class ExplorerForm(AccessibleForm, forms.Form):
     def __init__(self, *args, options, dimensions, charts, metrics, **kwargs):
         super().__init__(*args, **kwargs)
         labels = {
-            "year": "Período",
-            "territory": "Territorio",
-            "sex": "Sexo",
-            "age": "Edad",
-            "site": "Grupo de localización ilustrativo",
+            "year": _("Período"),
+            "territory": _("Territorio"),
+            "sex": _("Sexo"),
+            "age": _("Edad"),
+            "site": _("Grupo de localización ilustrativo"),
         }
         for key, values in options.items():
             self.fields[key] = forms.ChoiceField(
                 label=labels[key],
                 required=False,
-                choices=[("", "Todos")] + [(str(v), str(v)) for v in values],
+                choices=[("", _("Todos"))] + [(str(v), str(v)) for v in values],
             )
         self.fields["unit"] = forms.ChoiceField(
-            label="Unidad de conteo",
-            choices=[("tumors", "Tumores"), ("persons", "Personas distintas")],
+            label=_("Unidad de conteo"),
+            choices=[("tumors", _("Tumores")), ("persons", _("Personas distintas"))],
         )
         self.fields["metric"] = forms.ChoiceField(
-            label="Indicador",
+            label=_("Indicador"),
             choices=list(metrics.items()),
-            help_text="El ajuste por edad necesita todos los grupos de edad.",
+            help_text=_("El ajuste por edad necesita todos los grupos de edad."),
         )
         self.fields["dimension"] = forms.ChoiceField(
-            label="Comparar por", choices=list(dimensions.items())
+            label=_("Comparar por"), choices=list(dimensions.items())
         )
         self.fields["chart"] = forms.ChoiceField(
-            label="Tipo de gráfico",
+            label=_("Tipo de gráfico"),
             choices=list(charts.items()),
-            help_text="Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta 8 categorías excluyentes.",
+            help_text=_("Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta 8 categorías excluyentes."),
         )
         for key, field in self.fields.items():
             field.widget.attrs["data-label"] = field.label
@@ -210,23 +245,23 @@ class ExplorerForm(AccessibleForm, forms.Form):
         metric = d.get("metric")
         dimension = d.get("dimension")
         if chart == "line" and dimension != "period":
-            self.add_error("chart", "Las líneas requieren comparar por período.")
+            self.add_error("chart", _("Las líneas requieren comparar por período."))
         if metric == "asr" and (d.get("age") or dimension == "age_group"):
             self.add_error(
                 "metric",
-                "El ajuste por edad requiere todos los grupos de edad y otra dimensión.",
+                _("El ajuste por edad requiere todos los grupos de edad y otra dimensión."),
             )
         if chart in {"grouped", "stacked", "percent"} and (
             d.get("sex") or dimension == "sex"
         ):
             self.add_error(
                 "chart",
-                "La comparación por sexo requiere ambos sexos y otra dimensión.",
+                _("La comparación por sexo requiere ambos sexos y otra dimensión."),
             )
         if chart in {"stacked", "percent"} and metric != "count":
             self.add_error(
                 "chart",
-                "Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni porcentajes.",
+                _("Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni porcentajes."),
             )
         if chart in {"pie", "doughnut"} and (
             metric not in {"count", "share"}
@@ -234,6 +269,6 @@ class ExplorerForm(AccessibleForm, forms.Form):
         ):
             self.add_error(
                 "chart",
-                "La composición requiere conteos o porcentajes de categorías excluyentes; para personas, compare por sexo.",
+                _("La composición requiere conteos o porcentajes de categorías excluyentes; para personas, compare por sexo."),
             )
         return d

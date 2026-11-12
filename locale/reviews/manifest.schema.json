@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RNC Web translation release evidence",
+  "description": "Evidence record required to mark one locale complete. A green gate is not an automatic locale activation or an institutional approval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["locale", "catalogs", "linguistic_review", "institutional_review", "functional_validation", "release"],
+  "properties": {
+    "locale": {"type": "string", "minLength": 2},
+    "source_copy_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sha256", "reviewed_entries"],
+      "properties": {
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "reviewed_entries": {"type": "integer", "minimum": 1}
+      }
+    },
+    "catalogs": {
+      "type": "object",
+      "description": "Only the domains required for this locale; hashes must match the reviewed PO bytes.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sha256", "reviewed_entries"],
+        "properties": {
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "reviewed_entries": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "linguistic_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "qualification", "reviewed_at", "report"],
+      "properties": {
+        "status": {"const": "approved"},
+        "reviewer": {"type": "string", "minLength": 1},
+        "qualification": {"type": "string", "minLength": 1},
+        "reviewed_at": {"type": "string", "format": "date"},
+        "report": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256"],
+          "properties": {
+            "path": {"type": "string", "minLength": 1},
+            "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+          }
+        }
+      }
+    },
+    "institutional_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "authority", "reviewed_at", "evidence"],
+      "properties": {
+        "status": {"const": "approved"},
+        "authority": {"type": "string", "minLength": 1},
+        "reviewed_at": {"type": "string", "format": "date"},
+        "evidence": {"type": "string", "minLength": 1}
+      }
+    },
+    "functional_validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "revision", "validated_at", "report", "surfaces"],
+      "properties": {
+        "status": {"const": "passed"},
+        "revision": {"type": "string", "pattern": "^[0-9a-f]{7,64}$"},
+        "validated_at": {"type": "string", "format": "date"},
+        "report": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256"],
+          "properties": {
+            "path": {"type": "string", "minLength": 1},
+            "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+          }
+        },
+        "surfaces": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"enum": ["public", "admin", "javascript", "exports", "offline", "formats"]},
+          "allOf": [
+            {"contains": {"const": "public"}},
+            {"contains": {"const": "admin"}},
+            {"contains": {"const": "javascript"}},
+            {"contains": {"const": "exports"}},
+            {"contains": {"const": "offline"}},
+            {"contains": {"const": "formats"}}
+          ]
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "approved_by", "approved_at"],
+      "properties": {
+        "status": {"const": "complete"},
+        "approved_by": {"type": "string", "minLength": 1},
+        "approved_at": {"type": "string", "format": "date"}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"locale": {"const": "es"}}, "required": ["locale"]},
+      "then": {
+        "required": ["source_copy_review"],
+        "properties": {
+          "source_copy_review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["sha256", "reviewed_entries"],
+            "properties": {
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "reviewed_entries": {"type": "integer", "minimum": 1}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

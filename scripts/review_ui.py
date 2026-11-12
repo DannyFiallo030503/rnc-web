@@ -6,6 +6,7 @@ captures the page and inspects DOM geometry/field errors, then verifies state.
 
 import csv
 import email
+from datetime import date
 from email import policy
 import hashlib
 import io
@@ -24,7 +25,7 @@ from wsgiref.simple_server import WSGIRequestHandler, make_server
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
-OUTPUT = ROOT / "docs" / "revision-completa-2026-10-20"
+OUTPUT = ROOT / "docs" / f"revision-completa-{date.today().isoformat()}"
 
 
 def run():
@@ -126,6 +127,22 @@ def run():
 
         def check(ok, label):
             if not ok:
+                if "desbordamiento" in label:
+                    print(json.dumps(page.evaluate("""() => ({
+                      viewport: innerWidth,
+                      devicePixelRatio,
+                      document: document.documentElement.scrollWidth,
+                      client: document.documentElement.clientWidth,
+                      header: (() => { const e=document.querySelector('.site-header');
+                        return {rect:e.getBoundingClientRect().toJSON(), css:getComputedStyle(e).cssText,
+                          width:getComputedStyle(e).width, box:getComputedStyle(e).boxSizing}; })(),
+                      overflowing: [...document.querySelectorAll('body *')]
+                        .map(el => ({tag: el.tagName, className: String(el.className),
+                          right: Math.round(el.getBoundingClientRect().right),
+                          left: Math.round(el.getBoundingClientRect().left)}))
+                        .filter(el => el.right > innerWidth + 1 || el.left < -1)
+                        .slice(0, 20)
+                    })"""), ensure_ascii=False))
                 try:
                     page.screenshot(
                         path=str(OUTPUT / f"fallo-{current_label}-{number:03}.png"),
@@ -957,17 +974,16 @@ def run():
                     )
                     goto("/")
                     check(
-                        int(
-                            page.locator(
-                                ".synthetic-summary article strong"
-                            ).first.inner_text()
-                        )
-                        == 38 + index,
-                        "Inicio refleja exactamente el nuevo corte del último año",
+                        page.get_by_role(
+                            "heading",
+                            name="Información para comprender la incidencia del cáncer",
+                        ).is_visible()
+                        and page.locator(".home-publication-note").count() == 0,
+                        "Inicio conserva su explicación y acceso cuando hay una publicación activa",
                     )
                     capture(
-                        "inicio-actualizado",
-                        "Publicar actualiza las cifras del Inicio mediante el backend.",
+                        "inicio-publicacion-activa",
+                        "Inicio describe el propósito del RNC y mantiene sus accesos con un corte publicado.",
                     )
                     goto("/administracion/cortes/")
                     page.locator("#id_title").fill("Reenvío de la misma entrega")
@@ -989,12 +1005,16 @@ def run():
                     for kind, dimension in [
                         ("bar", "site"),
                         ("column", "site"),
+                        ("ranking", "site"),
                         ("line", "period"),
                         ("grouped", "site"),
                         ("stacked", "site"),
                         ("percent", "site"),
                         ("pie", "sex"),
                         ("doughnut", "sex"),
+                        ("scatter", "age_group"),
+                        ("strip", "age_group"),
+                        ("swarm", "age_group"),
                     ]:
                         goto("/consulta/")
                         page.locator("#id_dimension").select_option(dimension)
@@ -1008,7 +1028,7 @@ def run():
                             payload["type"] == kind
                             and page.locator("canvas").count() == 1
                             and payload.get("axis_unit")
-                            and "Período:" in payload.get("filter_summary", "")
+                            and "Año de incidencia:" in payload.get("filter_summary", "")
                             and page.get_by_text("Filtros aplicados:").is_visible(),
                             f"Gráfico {kind}: datos, unidad y filtros visibles",
                         )
@@ -1023,6 +1043,57 @@ def run():
                             ),
                             f"Gráfico {kind}: instancia renderizada",
                         )
+                        check(
+                            page.locator("#chart-compatibility-data").count() == 1,
+                            f"Gráfico {kind}: contrato de compatibilidad cargado",
+                        )
+                        if kind in {"scatter", "strip", "swarm"}:
+                            check(
+                                page.locator("#id_dimension option[value=site]").is_disabled()
+                                and not page.locator("#id_dimension option[value=age_group]").is_disabled(),
+                                f"Gráfico {kind}: dimensión compatible disponible",
+                            )
+                        if kind in {"stacked", "percent"}:
+                            check(
+                                page.locator("#id_metric option[value=count]").is_enabled()
+                                and page.locator("#id_metric option[value=rate]").is_disabled(),
+                                f"Gráfico {kind}: indicadores incompatibles deshabilitados",
+                            )
+                        if kind == "scatter":
+                            check(
+                                page.locator("#id_metric option[value=count]").is_enabled()
+                                and page.locator("#id_metric option[value=share]").is_disabled()
+                                and page.locator("#id_unit option[value=tumors]").is_enabled()
+                                and page.locator("#id_unit option[value=persons]").is_disabled(),
+                                "Dispersión: solo conteos absolutos de tumores",
+                            )
+                            overlap = page.evaluate("""() => {
+                              const chart=Chart.getChart(document.getElementById('result-chart'));
+                              const points=chart.data.datasets[0].data;
+                              return {
+                                categories:points.flatMap(point=>point.categories || []),
+                                sizes:chart.getDatasetMeta(0).data.map(point=>point.options.radius),
+                                labels:JSON.parse(document.getElementById('chart-payload').textContent).labels,
+                                axes:{x:chart.scales.x, y:chart.scales.y},
+                                max:{x:Math.max(...points.map(point=>point.x)),y:Math.max(...points.map(point=>point.y))},
+                              };
+                            }""")
+                            check(
+                                sorted(overlap["categories"]) == sorted(overlap["labels"])
+                                and len(overlap["categories"]) > len(overlap["sizes"])
+                                and max(overlap["sizes"]) > min(overlap["sizes"]),
+                                "Dispersión: categorías coincidentes agrupadas en burbujas sin mover los ejes",
+                            )
+                            check(
+                                overlap["axes"]["x"]["max"] > overlap["max"]["x"]
+                                and overlap["axes"]["y"]["max"] > overlap["max"]["y"],
+                                "Dispersión: los ejes dejan margen para el último punto y sus burbujas",
+                            )
+                        if kind in {"grouped", "stacked", "percent"}:
+                            check(
+                                page.locator('[data-field="sex"] input[type=checkbox]').first.is_disabled(),
+                                f"Gráfico {kind}: filtro Sexo bloqueado para conservar ambas categorías",
+                            )
                         capture(
                             "grafico-" + kind,
                             "Tipo elegido: "
@@ -1031,14 +1102,41 @@ def run():
                         )
                     goto("/consulta/")
                     check(
+                        page.locator("#query-filters-tip[role=tooltip]").count() == 1
+                        and page.locator(".query-filter-sidebar [data-help-trigger]").count() >= 1,
+                        "El panel de filtros expone ayudas emergentes accesibles",
+                    )
+                    check(
+                        page.locator("#query-form .required-mark").count() == 10
+                        and page.locator('#query-form [data-chart-required-indicator][data-required-filter="site"]:not([hidden])').count() == 1
+                        and page.locator('#query-form [data-chart-required-indicator][data-required-filter="year"][hidden]').count() == 1,
+                        "Asteriscos dinámicos según gráfico y dimensión",
+                    )
+                    check(
+                        page.locator("#query-form").inner_text().find("Grupo de localización") >= 0
+                        and page.locator("body").inner_text().find("Grupo de localización ilustrativo") == -1
+                        and page.locator("#query-form").inner_text().find("Opcional") == -1
+                        and page.locator("#query-form option").all_inner_texts().count("Todos") == 0,
+                        "Los filtros no muestran anotaciones opcionales ni opción Todos",
+                    )
+                    capture(
+                        "panel-filtros",
+                        "Ayudas emergentes, etiquetas de filtros y asteriscos solo en controles requeridos.",
+                    )
+                    check(
                         page.locator("#id_chart option[value=line]").is_disabled(),
                         "No se ofrece línea para categorías sin orden temporal",
                     )
-                    goto("/consulta/?chart=line&dimension=site")
-                    check(
-                        page.locator("#id_chart_error").is_visible(),
-                        "El backend rechaza una combinación forzada por URL",
-                    )
+                    for path, field in [
+                        ("/consulta/?chart=line&dimension=site", "dimension"),
+                        ("/consulta/?chart=stacked&metric=rate", "metric"),
+                        ("/consulta/?chart=scatter&unit=persons", "unit"),
+                    ]:
+                        goto(path)
+                        check(
+                            page.locator(f"#id_{field}_error").is_visible(),
+                            f"Backend rechaza combinación forzada en {field}",
+                        )
                     capture(
                         "grafico-incompatible",
                         "Una combinación manipulada se señala en el selector correspondiente.",
@@ -1073,10 +1171,18 @@ def run():
                             from openpyxl import load_workbook
 
                             book = load_workbook(io.BytesIO(content))
+                            sheet = book.active
+                            header_row = next(
+                                row_index
+                                for row_index, row in enumerate(
+                                    sheet.iter_rows(values_only=True), start=1
+                                )
+                                if "Categoría" in row
+                            )
                             check(
-                                book.active.max_row == 32
-                                and book.active.cell(14, 1).value == "Categoría"
-                                and book.active.cell(3, 2).value == "2024",
+                                sheet.max_row - header_row == 18
+                                and header_row > 1
+                                and sheet.cell(3, 2).value == "2024",
                                 "Excel: selección, 18 grupos etarios y cabeceras guardados",
                             )
                         if fmt == "png":
@@ -1121,14 +1227,16 @@ def run():
                     )
                     goto("/")
                     check(
-                        page.get_by_role(
-                            "heading", name="No hay un corte publicado"
+                        page.locator(".home-publication-note").is_visible()
+                        and page.get_by_role(
+                            "heading",
+                            name="Información para comprender la incidencia del cáncer",
                         ).is_visible(),
-                        "Inicio deja de mostrar el corte revocado",
+                        "Inicio informa que la consulta espera una nueva publicación",
                     )
                     capture(
                         "inicio-tras-revocar",
-                        "Inicio refleja inmediatamente la ausencia de publicación.",
+                        "Inicio mantiene la información del RNC y avisa que la consulta espera una publicación.",
                     )
                     goto(
                         "/consulta/?year=2024&dimension=age_group&metric=rate&format=csv"

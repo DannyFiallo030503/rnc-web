@@ -1,0 +1,719 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0?0:n==1?1:n==2?2:n%100>=3&&n%100<=10?3:n%100>=11&&n%100<=99?4:5);\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Check this box to continue."
+msgstr "حدد هذا المربع للمتابعة."
+
+#, fuzzy
+msgid "Complete this field."
+msgstr "أكمل هذا الحقل."
+
+#, fuzzy
+msgid "Check the characters entered in this field."
+msgstr "تحقق من الأحرف المدخلة في هذا الحقل."
+
+#, fuzzy
+msgid "Enter at least %(length)s characters."
+msgstr "أدخل ما لا يقل عن %(length)s أحرف."
+
+#, fuzzy
+msgid "Enter no more than %(length)s characters."
+msgstr "أدخل ما لا يزيد عن %(length)s حرفًا."
+
+#, fuzzy
+msgid "Enter a valid email address, for example name@domain.com."
+msgstr "أدخل عنوان بريد إلكتروني صالحًا، على سبيل المثال name@domain.com."
+
+#, fuzzy
+msgid "Choose a .csv file."
+msgstr "اختر ملف .csv."
+
+#, fuzzy
+msgid "The file exceeds the 12 MB limit."
+msgstr "يتجاوز الملف الحد المسموح به وهو 12 ميجابايت."
+
+#, fuzzy
+msgid ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+msgstr ""
+"فصل أجزاء الاسم بمسافة أو فاصلة عليا أو واصلة؛ لا تبدأ أو تنتهي بعلامات "
+"الترقيم."
+
+#, fuzzy
+msgid "The password cannot contain only numbers."
+msgstr "لا يمكن أن تحتوي كلمة المرور على أرقام فقط."
+
+#, fuzzy
+msgid "The passwords do not match. Enter the same password again."
+msgstr "كلمات المرور غير متطابقة. أدخل نفس كلمة المرور مرة أخرى."
+
+#, fuzzy
+msgid "Text was not added: enter no more than %(length)s characters."
+msgstr "لم تتم إضافة النص: أدخل ما لا يزيد عن %(length)s من الأحرف."
+
+#, fuzzy
+msgid "Disallowed text was not added. "
+msgstr "لم تتم إضافة النص غير المسموح به. "
+
+#, fuzzy
+msgid "Check the format of this field."
+msgstr "تحقق من تنسيق هذا الحقل."
+
+#, fuzzy
+msgid "No file selected"
+msgstr "لم يتم تحديد أي ملف"
+
+#, fuzzy
+msgid "All"
+msgstr "الكل"
+
+#, fuzzy
+msgid "This chart does not support the selected dimension."
+msgstr "لا يدعم هذا المخطط البُعد المحدد."
+
+#, fuzzy
+msgid "This chart does not support the selected indicator."
+msgstr "هذا المخطط لا يدعم المؤشر المحدد."
+
+#, fuzzy
+msgid "This chart does not support the selected unit."
+msgstr "هذا المخطط لا يدعم الوحدة المحددة."
+
+#, fuzzy
+msgid "For distinct people, compare composition by sex."
+msgstr "بالنسبة للأشخاص المتميزين، قارن التكوين حسب الجنس."
+
+#, fuzzy
+msgid "Line charts require comparison by period."
+msgstr "تتطلب المخططات الخطية المقارنة حسب الفترة."
+
+#, fuzzy
+msgid "The series needs at least two years; clear the single-year selection."
+msgstr "المسلسل يحتاج إلى سنتين على الأقل؛ قم بمسح التحديد لسنة واحدة."
+
+#, fuzzy
+msgid "Point charts compare values by province of residence or age group."
+msgstr "تقارن المخططات النقطية القيم حسب مقاطعة الإقامة أو الفئة العمرية."
+
+#, fuzzy
+msgid ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+msgstr ""
+"يحتاج هذا المخطط إلى فئتين على الأقل؛ قم بمسح مرشح المقاطعة الواحدة أو مرشح "
+"العمر الواحد."
+
+#, fuzzy
+msgid "Scatter plots compare provinces or age groups."
+msgstr "تقارن المخططات المتناثرة بين المقاطعات أو الفئات العمرية."
+
+#, fuzzy
+msgid "Scatter plots compare absolute counts of tumors and distinct people."
+msgstr "تقارن المخططات المبعثرة الأعداد المطلقة للأورام والأشخاص المتميزين."
+
+#, fuzzy
+msgid ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+msgstr ""
+"يحتاج المخطط المبعثر إلى تحديد حيث يمكن إحصاء الأشخاص المتميزين دون تداخل."
+
+#, fuzzy
+msgid "Calculando en este dispositivo…"
+msgstr "جارٍ إجراء الحساب على هذا الجهاز…"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "الفئة"
+
+#, fuzzy
+msgid "Datos sintéticos"
+msgstr "البيانات الاصطناعية"
+
+#, fuzzy
+msgid ""
+"Deja un filtro sin selección para incluir todos sus valores; puedes elegir "
+"varios."
+msgstr "اترك الفلتر فارغًا ليشمل جميع قيمه؛ يمكنك اختيار عدة."
+
+#, fuzzy
+msgid "Dimensión"
+msgstr "البعد"
+
+#, fuzzy
+msgid "El cálculo local encontró un error."
+msgstr "واجه الحساب المحلي خطأ."
+
+#, fuzzy
+msgid "El cálculo local se interrumpió."
+msgstr "تمت مقاطعة الحساب المحلي."
+
+#, fuzzy
+msgid "El navegador no ofrece una estimación de almacenamiento."
+msgstr "لا يوفر هذا المتصفح تقديرًا للتخزين."
+
+#, fuzzy
+msgid "El paquete está incompleto y no se guardó."
+msgstr "الحزمة غير كاملة ولم يتم حفظها."
+
+#, fuzzy
+msgid ""
+"El servidor no respondió; la consulta local sigue disponible si ya guardaste"
+" el paquete."
+msgstr ""
+"الخادم لم يستجب. تظل الاستشارة المحلية متاحة إذا كنت قد حفظت الحزمة بالفعل."
+
+#, fuzzy
+msgid ""
+"Este navegador no permite el almacenamiento local requerido por la consulta "
+"offline."
+msgstr ""
+"لا يسمح هذا المتصفح بالتخزين المحلي المطلوب للتشاور دون الاتصال بالإنترنت."
+
+#, fuzzy
+msgid ""
+"Este paquete no incluye el contrato estadístico requerido. Conéctate y "
+"actualízalo."
+msgstr ""
+"هذه الباقة لا تتضمن العقد الإحصائي المطلوب. الاتصال بالإنترنت وتحديثه."
+
+#, fuzzy
+msgid ""
+"Este prototipo solo admite el paquete sintético autorizado para pruebas."
+msgstr "يقبل هذا النموذج الأولي فقط الحزمة الاصطناعية المعتمدة للاختبار."
+
+#, fuzzy
+msgid "Fecha de publicación"
+msgstr "تاريخ النشر"
+
+#, fuzzy
+msgid "Filtros"
+msgstr "المرشحات"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "التكرار النسبي (%)"
+
+#, fuzzy
+msgid "Guarda primero la publicación sintética en este dispositivo."
+msgstr "قم أولاً بحفظ الإصدار الاصطناعي على هذا الجهاز."
+
+#, fuzzy
+msgid ""
+"Guarda una publicación mientras tienes conexión para consultar desde este "
+"dispositivo."
+msgstr ""
+"احفظ أحد الإصدارات أثناء اتصالك بالإنترنت للاطلاع عليه على هذا الجهاز."
+
+#, fuzzy
+msgid "Indicador"
+msgstr "متري"
+
+#, fuzzy
+msgid "Método"
+msgstr "الطريقة"
+
+#, fuzzy
+msgid "No disponible"
+msgstr "غير متوفر"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "غير متوفر في هذا الإصدار"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "لم يتم حفظ أي حزمة."
+
+#, fuzzy
+msgid "No hay publicación disponible para guardar."
+msgstr "لا يوجد إصدار متاح للحفظ."
+
+#, fuzzy
+msgid "No se pudo cargar la biblioteca local de gráficos."
+msgstr "تعذر تحميل مكتبة المخططات المحلية."
+
+#, fuzzy
+msgid "No se pudo completar el cálculo local."
+msgstr "لا يمكن إكمال الحساب المحلي."
+
+#, fuzzy
+msgid "No se pudo eliminar el paquete local."
+msgstr "لا يمكن حذف الحزمة المحلية."
+
+#, fuzzy
+msgid "No se pudo estimar el almacenamiento disponible."
+msgstr "لا يمكن تقدير مساحة التخزين المتاحة."
+
+#, fuzzy
+msgid "No se pudo guardar el paquete local."
+msgstr "لا يمكن حفظ الحزمة المحلية."
+
+#, fuzzy
+msgid "No se pudo guardar la publicación."
+msgstr "لا يمكن حفظ الإصدار."
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "أشخاص فريدون"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "السكان في المقام"
+
+#, fuzzy
+msgid "Posición"
+msgstr "رتبة"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "الافراج"
+
+#, fuzzy
+msgid ""
+"Publicación sintética guardada en este dispositivo. El navegador puede "
+"retirar datos locales por cuota o configuración."
+msgstr ""
+"تم حفظ الإصدار الاصطناعي على هذا الجهاز. قد يقوم المتصفح بإزالة البيانات "
+"المحلية بسبب حدود التخزين أو الإعدادات."
+
+#, fuzzy
+msgid ""
+"Puedes combinar varios valores. Para personas distintas, selecciona como "
+"máximo un valor en cada filtro."
+msgstr ""
+"يمكنك الجمع بين عدة قيم. بالنسبة للأشخاص المتميزين، حدد قيمة واحدة على "
+"الأكثر في كل مرشح."
+
+#, fuzzy
+msgid "Se eliminó el paquete local de este navegador."
+msgstr "تمت إزالة الحزمة المحلية من هذا المتصفح."
+
+#, fuzzy
+msgid "Seleccione un gráfico"
+msgstr "حدد مخططًا"
+
+#, fuzzy
+msgid "Seleccione un indicador"
+msgstr "حدد مقياسًا"
+
+#, fuzzy
+msgid "Seleccione una dimensión"
+msgstr "حدد البعد"
+
+#, fuzzy
+msgid "Sí"
+msgstr "نعم"
+
+#, fuzzy
+msgid "Tasa ajustada por 100 000"
+msgstr "المعدل المعدل حسب العمر لكل 000 100"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000"
+msgstr "المعدل الخام/العمر المحدد لكل 100.000"
+
+#, fuzzy
+msgid "Todos"
+msgstr "الكل"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "الأورام"
+
+#, fuzzy
+msgid "Título"
+msgstr "العنوان"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "وحدة"
+
+#, fuzzy
+msgid "no disponible para filtros múltiples"
+msgstr "غير متوفر مع مرشحات متعددة"
+
+#, fuzzy
+msgid "todos"
+msgstr "الكل"
+
+#, fuzzy
+msgid ""
+"Almacenamiento del sitio usado: %(used)s MB%(quota)s. Estimación del "
+"navegador."
+msgstr "تخزين الموقع المستخدم: %(used)s MB%(quota)s. تقدير المتصفح."
+
+#, fuzzy
+msgid " de %(quota)s MB estimados"
+msgstr "  بما يقدر بـ %(quota)s ميجابايت"
+
+#, fuzzy
+msgid ""
+"Tumores: %(tumors)s · Personas distintas: %(persons)s · Población: "
+"%(population)s · cálculo local: %(elapsed)s ms"
+msgstr ""
+"الأورام: %(tumors)s · الأشخاص المميزون: %(persons)s · عدد السكان: "
+"%(population)s · الحساب المحلي: %(elapsed)s ms"
+
+#, fuzzy
+msgid ""
+"Consulta calculada localmente · publicación %(release)s · método %(method)s."
+msgstr ""
+"الاستعلام المحسوب على هذا الجهاز · إصدار %(release)s · طريقة %(method)s."
+
+#, fuzzy
+msgid "El servidor respondió HTTP %(status)s."
+msgstr "استجاب الخادم بـ HTTP %(status)s."
+
+#, fuzzy
+msgid ""
+"Servidor: %(elapsed)s ms de ida y vuelta · %(bytes)s bytes de HTML. No mide "
+"CPU del servidor."
+msgstr ""
+"الخادم: %(elapsed)s مللي ذهابًا وإيابًا · %(bytes)s بايت من HTML. هذا لا "
+"يقيس وحدة المعالجة المركزية للخادم."
+
+#, fuzzy
+msgid "Categorías"
+msgstr "الفئات"
+
+#, fuzzy
+msgid "categoría"
+msgid_plural "categorías"
+msgstr[0] "فئات"
+msgstr[1] "فئة"
+msgstr[2] "فئتان"
+msgstr[3] "فئات"
+msgstr[4] "فئات"
+msgstr[5] "فئة"
+
+#, fuzzy
+msgid "categoría con el mismo valor"
+msgid_plural "categorías con los mismos valores"
+msgstr[0] "فئات لها القيمة نفسها"
+msgstr[1] "فئة لها القيمة نفسها"
+msgstr[2] "فئتان لهما القيمة نفسها"
+msgstr[3] "فئات لها القيمة نفسها"
+msgstr[4] "فئات لها القيمة نفسها"
+msgstr[5] "فئة لها القيمة نفسها"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "الاستعلام الإحصائي"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "نسبة كل فئة (%)"
+
+#, fuzzy
+msgid "tumores"
+msgstr "الأورام"
+
+#, fuzzy
+msgid "personas distintas"
+msgstr "أشخاص متميزون"
+
+#, fuzzy
+msgid "El gráfico circular necesita hasta ocho categorías."
+msgstr "تدعم المخططات الدائرية ما يصل إلى ثماني فئات."
+
+#, fuzzy
+msgid "Este gráfico necesita al menos dos categorías con datos."
+msgstr "يتطلب هذا المخطط فئتين على الأقل مع البيانات."
+
+#, fuzzy
+msgid "Falta población en algún grupo de edad para calcular la tasa ajustada."
+msgstr "عدد السكان مفقود بالنسبة للفئة العمرية المطلوبة لحساب المعدل المعدل."
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "التكرار المطلق"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "الرجال"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "النساء"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "لا توجد قيم موجبة لعرضها كمقطوعة موسيقية."
+
+#, fuzzy
+msgid "No se cargó una publicación local."
+msgstr "لم يتم تحميل أي إصدار محلي."
+
+#, fuzzy
+msgid "Selección no compatible: %(errors)s."
+msgstr "تحديد غير متوافق: %(errors)s."
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "معدل Segi – Doll المعدل حسب العمر لكل 100000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "المعدل الخام/العمر المحدد لكل 100.000"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "الأورام والأشخاص المتميزين"
+
+#, fuzzy
+msgid "ajuste por edad incompatible con la selección"
+msgstr "تعديل العمر غير متوافق مع التحديد"
+
+#, fuzzy
+msgid "comparación por sexo necesita ambos sexos"
+msgstr "المقارنة بين الجنسين تتطلب كلا الجنسين"
+
+#, fuzzy
+msgid "composición de personas solo por sexo"
+msgstr "تكوين الناس متاح فقط حسب الجنس"
+
+#, fuzzy
+msgid "dimensión"
+msgstr "البعد"
+
+#, fuzzy
+msgid "dispersión requiere filtros simples"
+msgstr "تتطلب المخططات المبعثرة مرشحات بسيطة"
+
+#, fuzzy
+msgid "indicador"
+msgstr "متري"
+
+#, fuzzy
+msgid "la publicación no contiene ambos sexos"
+msgstr "الإصدار لا يشمل كلا الجنسين"
+
+#, fuzzy
+msgid "personas distintas con selección múltiple"
+msgstr "لا يمكن دمج الأشخاص المميزين مع تحديدات متعددة"
+
+#, fuzzy
+msgid "unidad"
+msgstr "وحدة"
+
+#, fuzzy
+msgid "valor de %(key)s fuera del paquete"
+msgstr "قيمة %(key)s خارج الحزمة"
+
+#, fuzzy
+msgid ""
+"Paquete local: %(title)s · versión %(release)s · publicado %(published)s · "
+"%(size)s KB"
+msgstr ""
+"الحزمة المحلية: %(title)s · الإصدار %(release)s · المنشور %(published)s · "
+"%(size)s كيلوبايت"
+
+#, fuzzy
+msgid "Publicación %(release)s · %(date)s"
+msgstr "الافراج عن %(release)s · %(date)s"
+
+#, fuzzy
+msgid "Página %(page)s de %(pages)s · %(count)s %(categories)s"
+msgstr "الصفحة %(page)s من %(pages)s · %(count)s %(categories)s"
+
+#, fuzzy
+msgid "fecha no disponible"
+msgstr "التاريخ غير متاح"
+
+#, fuzzy
+msgid "consulta-local"
+msgstr "الاستعلام المحلي"
+
+#, fuzzy
+msgid "grafico-local"
+msgstr "مخطط محلي"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "القصبة الهوائية والقصبات الهوائية والرئة"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "البروستاتا"
+
+#, fuzzy
+msgid "Mama"
+msgstr "الثدي"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "القولون والمستقيم"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "المعدة"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "عنق الرحم"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "جسم الرحم"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "الغدة الدرقية"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "البنكرياس"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "المثانة البولية"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "الكلى"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "الكبد والقنوات الصفراوية"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "المبيض"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "الحنجرة والبلعوم"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "مخطط حلقي"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "سنة التشخيص"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "مخطط أعمدة مجمّعة حسب الجنس"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "مخطط أعمدة مكدّسة حسب الجنس"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "مخطط أعمدة أفقي"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "مخطط أعمدة للنسب المئوية حسب الجنس"
+
+#, fuzzy
+msgid "Circular"
+msgstr "مخطط دائري"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "أعمدة"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "مبعثر: الأورام والأشخاص حسب المقاطعة/العمر"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "التوزيع الإقليمي (سرب)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "العمر"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "مجموعة مواقع السرطان"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "خطوط"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "مقاطعة الإقامة"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "النقاط حسب المقاطعة أو الفئة العمرية"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "تصنيف المؤشر"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "الجنس"
+
+#, fuzzy
+msgid "Campo"
+msgstr "الميدان"
+
+#, fuzzy
+msgid "%(count)s option selected"
+msgid_plural "%(count)s options selected"
+msgstr[0] "الخيارات المحددة: %(count)s"
+msgstr[1] "الخيارات المحددة: %(count)s"
+msgstr[2] "الخيارات المحددة: %(count)s"
+msgstr[3] "الخيارات المحددة: %(count)s"
+msgstr[4] "الخيارات المحددة: %(count)s"
+msgstr[5] "الخيارات المحددة: %(count)s"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "إن المقارنة حسب الجنس تتطلب كلا الجنسين وبعدا آخر."
+
+#, fuzzy
+msgid "Las barras apiladas requieren frecuencias absolutas."
+msgstr "تتطلب الأشرطة المكدسة ترددات مطلقة."
+
+#, fuzzy
+msgid ""
+"La composición requiere categorías excluyentes; para personas, compare por "
+"sexo."
+msgstr "يتطلب التكوين فئات متنافية؛ بالنسبة للأشخاص، قارن حسب الجنس."
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "هذا البُعد غير متاح للمخطط المحدد."
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "هذا المقياس غير متوفر للمخطط المحدد."
+
+#, fuzzy
+msgid "Esta unidad no está disponible para el gráfico seleccionado."
+msgstr "هذه الوحدة غير متوفرة للمخطط المحدد."
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "تعديل العمر يتطلب جميع الفئات العمرية وبعدا آخر."
+
+#, fuzzy
+msgid ""
+"Datos sintéticos · método %(method)s · guardado en este navegador. La fecha "
+"de publicación identifica el corte; no indica cuándo se conectó el "
+"dispositivo."
+msgstr ""
+"البيانات الاصطناعية · طريقة %(method)s · محفوظة في هذا المتصفح. تاريخ النشر "
+"يحدد الإصدار؛ ولا يظهر عند توصيل الجهاز."

@@ -1,13 +1,14 @@
 import uuid
 from django.conf import settings
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class Delivery(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=120)
     checksum = models.CharField(max_length=64, unique=True)
-    storage_key = models.CharField(max_length=100)
+    storage_key = models.CharField(max_length=100, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
     row_count = models.PositiveIntegerField(default=0)
@@ -16,10 +17,10 @@ class Delivery(models.Model):
         max_length=20,
         default="validated",
         choices=[
-            ("rejected", "Rechazado"),
-            ("validated", "Validado"),
-            ("published", "Publicado"),
-            ("revoked", "Revocado"),
+            ("rejected", _("Rechazado")),
+            ("validated", _("Validado")),
+            ("published", _("Publicado")),
+            ("revoked", _("Revocado")),
         ],
     )
     report = models.JSONField(default=dict)
@@ -28,8 +29,8 @@ class Delivery(models.Model):
     class Meta:
         ordering = ["-created_at"]
         permissions = [
-            ("operate_deliveries", "Gestionar entregas sintéticas"),
-            ("publish_deliveries", "Publicar y revocar cortes sintéticos"),
+            ("operate_deliveries", _("Gestionar entregas sintéticas")),
+            ("publish_deliveries", _("Publicar y revocar cortes sintéticos")),
         ]
 
 
@@ -52,7 +53,7 @@ class AuditEvent(models.Model):
 
 class AccountPolicy(models.Model):
     class Meta:
-        permissions = [("manage_accounts", "Gestionar cuentas del portal")]
+        permissions = [("manage_accounts", _("Gestionar cuentas del portal"))]
 
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     must_change_password = models.BooleanField(default=False)
@@ -60,6 +61,7 @@ class AccountPolicy(models.Model):
 
 class AccountMail(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    language = models.CharField(max_length=20, default=settings.LANGUAGE_CODE)
     status = models.CharField(max_length=12, default="pending")
     created_at = models.DateTimeField(auto_now_add=True)
     processed_at = models.DateTimeField(null=True)

@@ -1,11 +1,13 @@
 from django.urls import path, reverse_lazy
 from django.contrib.auth import views as auth_views
 from django.views.generic import TemplateView
+from django.utils.translation import gettext_lazy as _
 from . import views, portal, accounts, public_portal
 
 app_name = "public_site"
 urlpatterns = [
     path("", public_portal.home, name="home"),
+    path("el-rnc/", public_portal.about, name="about"),
     path("acceso/", views.RoleLoginView.as_view(), name="login"),
     path(
         "salir/",
@@ -13,6 +15,7 @@ urlpatterns = [
         name="logout",
     ),
     path("consulta/", public_portal.explorer, name="synthetic_explorer"),
+    path("nomencladores/", public_portal.coding_nomenclators, name="coding_nomenclators"),
     path("consulta-sintetica/", public_portal.explorer, name="legacy_explorer"),
     path("administracion/cortes/", portal.administration, name="intake_prototype"),
     path("administracion/cortes/ejemplo/", portal.sample, name="sample"),
@@ -33,8 +36,8 @@ urlpatterns = [
         TemplateView.as_view(
             template_name="public_site/account_notice.html",
             extra_context={
-                "heading": "Contraseña actualizada",
-                "intro": "Su contraseña se guardó correctamente.",
+                "heading": _("Contraseña actualizada"),
+                "intro": _("Su contraseña se guardó correctamente."),
             },
         ),
         name="password_change_done",
@@ -45,8 +48,8 @@ urlpatterns = [
         TemplateView.as_view(
             template_name="public_site/account_notice.html",
             extra_context={
-                "heading": "Solicitud recibida",
-                "intro": "Si existe una cuenta activa con ese correo, recibirá un enlace para establecer su contraseña. Revise también la carpeta de correo no deseado.",
+                "heading": _("Solicitud recibida"),
+                "intro": _("Si existe una cuenta activa con ese correo, recibirá un enlace para establecer su contraseña. Revise también la carpeta de correo no deseado."),
             },
         ),
         name="password_reset_done",
@@ -61,8 +64,8 @@ urlpatterns = [
         TemplateView.as_view(
             template_name="public_site/account_notice.html",
             extra_context={
-                "heading": "Contraseña guardada",
-                "intro": "Ya puede iniciar sesión con su nueva contraseña.",
+                "heading": _("Contraseña guardada"),
+                "intro": _("Ya puede iniciar sesión con su nueva contraseña."),
             },
         ),
         name="password_reset_complete",

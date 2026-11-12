@@ -1,0 +1,734 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Check this box to continue."
+msgstr "Cochez cette case pour continuer."
+
+#, fuzzy
+msgid "Complete this field."
+msgstr "Remplissez ce champ."
+
+#, fuzzy
+msgid "Check the characters entered in this field."
+msgstr "Vérifiez les caractères saisis dans ce champ."
+
+#, fuzzy
+msgid "Enter at least %(length)s characters."
+msgstr "Saisissez au moins %(length)s caractères."
+
+#, fuzzy
+msgid "Enter no more than %(length)s characters."
+msgstr "N'entrez pas plus de %(length)s caractères."
+
+#, fuzzy
+msgid "Enter a valid email address, for example name@domain.com."
+msgstr "Saisissez une adresse e-mail valide, par exemple nom@domaine.com."
+
+#, fuzzy
+msgid "Choose a .csv file."
+msgstr "Choisissez un fichier .csv."
+
+#, fuzzy
+msgid "The file exceeds the 12 MB limit."
+msgstr "Le fichier dépasse la limite de 12 Mo."
+
+#, fuzzy
+msgid ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+msgstr ""
+"Séparez les parties du nom par un espace, une apostrophe ou un trait "
+"d'union ; ne commencez ni ne terminez par un signe de ponctuation."
+
+#, fuzzy
+msgid "The password cannot contain only numbers."
+msgstr "Le mot de passe ne peut pas contenir uniquement des chiffres."
+
+#, fuzzy
+msgid "The passwords do not match. Enter the same password again."
+msgstr ""
+"Les mots de passe ne correspondent pas. Saisissez à nouveau le même mot de "
+"passe."
+
+#, fuzzy
+msgid "Text was not added: enter no more than %(length)s characters."
+msgstr ""
+"Le texte n'a pas été ajouté : saisissez au maximum %(length)s caractères."
+
+#, fuzzy
+msgid "Disallowed text was not added. "
+msgstr "Le texte non autorisé n'a pas été ajouté."
+
+#, fuzzy
+msgid "Check the format of this field."
+msgstr "Vérifiez le format de ce champ."
+
+#, fuzzy
+msgid "No file selected"
+msgstr "Aucun fichier sélectionné"
+
+#, fuzzy
+msgid "All"
+msgstr "Tout"
+
+#, fuzzy
+msgid "This chart does not support the selected dimension."
+msgstr "Ce graphique ne prend pas en charge la dimension sélectionnée."
+
+#, fuzzy
+msgid "This chart does not support the selected indicator."
+msgstr "Ce graphique ne prend pas en charge l'indicateur sélectionné."
+
+#, fuzzy
+msgid "This chart does not support the selected unit."
+msgstr "Ce graphique ne prend pas en charge l'unité sélectionnée."
+
+#, fuzzy
+msgid "For distinct people, compare composition by sex."
+msgstr "Pour des personnes distinctes, comparez la composition selon le sexe."
+
+#, fuzzy
+msgid "Line charts require comparison by period."
+msgstr "Les graphiques linéaires nécessitent une comparaison par période."
+
+#, fuzzy
+msgid "The series needs at least two years; clear the single-year selection."
+msgstr ""
+"La série a besoin d'au moins deux ans ; effacer la sélection d’une seule "
+"année."
+
+#, fuzzy
+msgid "Point charts compare values by province of residence or age group."
+msgstr ""
+"Les graphiques à points comparent les valeurs selon la province de résidence"
+" ou le groupe d'âge."
+
+#, fuzzy
+msgid ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+msgstr ""
+"Ce graphique nécessite au moins deux catégories ; effacez le filtre par "
+"province ou par âge."
+
+#, fuzzy
+msgid "Scatter plots compare provinces or age groups."
+msgstr "Les nuages de points comparent les provinces ou les groupes d’âge."
+
+#, fuzzy
+msgid "Scatter plots compare absolute counts of tumors and distinct people."
+msgstr ""
+"Les nuages de points comparent le nombre absolu de tumeurs et de personnes "
+"distinctes."
+
+#, fuzzy
+msgid ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+msgstr ""
+"Un nuage de points nécessite une sélection dans laquelle des personnes "
+"distinctes peuvent être comptées sans chevauchement."
+
+#, fuzzy
+msgid "Calculando en este dispositivo…"
+msgstr "Calculer sur cet appareil…"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "Catégorie"
+
+#, fuzzy
+msgid "Datos sintéticos"
+msgstr "Données synthétiques"
+
+#, fuzzy
+msgid ""
+"Deja un filtro sin selección para incluir todos sus valores; puedes elegir "
+"varios."
+msgstr ""
+"Ajoutez un filtre sans sélection pour inclure toutes vos valeurs ; vous "
+"pouvez choisir plusieurs options."
+
+#, fuzzy
+msgid "Dimensión"
+msgstr "Dimensions"
+
+#, fuzzy
+msgid "El cálculo local encontró un error."
+msgstr "Le calcul local a rencontré une erreur."
+
+#, fuzzy
+msgid "El cálculo local se interrumpió."
+msgstr "Le calcul local est interrompu."
+
+#, fuzzy
+msgid "El navegador no ofrece una estimación de almacenamiento."
+msgstr "Le navigateur ne fournit pas d’estimation de stockage."
+
+#, fuzzy
+msgid "El paquete está incompleto y no se guardó."
+msgstr "Le paquet est incomplet et n’est pas gardé."
+
+#, fuzzy
+msgid ""
+"El servidor no respondió; la consulta local sigue disponible si ya guardaste"
+" el paquete."
+msgstr ""
+"Le serveur n'a pas répondu ; la consultation locale est disponible si vous "
+"conservez le paquet."
+
+#, fuzzy
+msgid ""
+"Este navegador no permite el almacenamiento local requerido por la consulta "
+"offline."
+msgstr ""
+"Ce navigateur ne permet pas le stockage local requis pour la consultation "
+"hors ligne."
+
+#, fuzzy
+msgid ""
+"Este paquete no incluye el contrato estadístico requerido. Conéctate y "
+"actualízalo."
+msgstr ""
+"Ce paquet ne comprend pas le contrat technique requis. Connectez-vous et "
+"actualisez."
+
+#, fuzzy
+msgid ""
+"Este prototipo solo admite el paquete sintético autorizado para pruebas."
+msgstr ""
+"Ce prototype n'accepte que le paquet synthétique autorisé pour les essais."
+
+#, fuzzy
+msgid "Fecha de publicación"
+msgstr "Date de publication"
+
+#, fuzzy
+msgid "Filtros"
+msgstr "Filtres"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "Fréquence relative (%)"
+
+#, fuzzy
+msgid "Guarda primero la publicación sintética en este dispositivo."
+msgstr "Gardez d’abord la publication synthétique sur cet appareil."
+
+#, fuzzy
+msgid ""
+"Guarda una publicación mientras tienes conexión para consultar desde este "
+"dispositivo."
+msgstr ""
+"Gardez une publication pendant votre connexion pour consulter cet appareil."
+
+#, fuzzy
+msgid "Indicador"
+msgstr "Indicateur"
+
+#, fuzzy
+msgid "Método"
+msgstr "Méthode"
+
+#, fuzzy
+msgid "No disponible"
+msgstr "Non disponible"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "Non disponible dans cette publication"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "Aucun paquet de foin n'est gardé."
+
+#, fuzzy
+msgid "No hay publicación disponible para guardar."
+msgstr "Aucune publication n'est disponible pour le gardien."
+
+#, fuzzy
+msgid "No se pudo cargar la biblioteca local de gráficos."
+msgstr "Vous ne pouvez pas charger la bibliothèque locale de graphiques."
+
+#, fuzzy
+msgid "No se pudo completar el cálculo local."
+msgstr "Vous ne pouvez pas compléter le calcul local."
+
+#, fuzzy
+msgid "No se pudo eliminar el paquete local."
+msgstr "Vous ne pouvez pas éliminer le paquet local."
+
+#, fuzzy
+msgid "No se pudo estimar el almacenamiento disponible."
+msgstr "Vous ne pouvez pas estimer le stockage disponible."
+
+#, fuzzy
+msgid "No se pudo guardar el paquete local."
+msgstr "Vous ne pouvez pas garder le paquet local."
+
+#, fuzzy
+msgid "No se pudo guardar la publicación."
+msgstr "Vous ne pouvez pas garder la publication."
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "Personnes distinctes"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "Population au dénominateur"
+
+#, fuzzy
+msgid "Posición"
+msgstr "Position"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "Publication"
+
+#, fuzzy
+msgid ""
+"Publicación sintética guardada en este dispositivo. El navegador puede "
+"retirar datos locales por cuota o configuración."
+msgstr ""
+"Publication synthétique protégée sur cet appareil. Le navigateur peut "
+"supprimer les données locales en fonction de la configuration."
+
+#, fuzzy
+msgid ""
+"Puedes combinar varios valores. Para personas distintas, selecciona como "
+"máximo un valor en cada filtro."
+msgstr ""
+"Vous pouvez combiner plusieurs valeurs. Pour compter des personnes "
+"distinctes, sélectionnez au plus une valeur par filtre."
+
+#, fuzzy
+msgid "Se eliminó el paquete local de este navegador."
+msgstr "Éliminez le paquet local de ce navigateur."
+
+#, fuzzy
+msgid "Seleccione un gráfico"
+msgstr "Sélectionnez un graphique"
+
+#, fuzzy
+msgid "Seleccione un indicador"
+msgstr "Sélectionnez un indicateur"
+
+#, fuzzy
+msgid "Seleccione una dimensión"
+msgstr "Sélectionnez une dimension"
+
+#, fuzzy
+msgid "Sí"
+msgstr "Oui"
+
+#, fuzzy
+msgid "Tasa ajustada por 100 000"
+msgstr "Tasa ajusté pour 100 000"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000"
+msgstr "Taux brut/spécifique pour 100 000"
+
+#, fuzzy
+msgid "Todos"
+msgstr "Toutes les tâches"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "Tumeurs"
+
+#, fuzzy
+msgid "Título"
+msgstr "Titre"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "Unité"
+
+#, fuzzy
+msgid "no disponible para filtros múltiples"
+msgstr "non disponible pour les filtres multiples"
+
+#, fuzzy
+msgid "todos"
+msgstr "toutes les choses"
+
+#, fuzzy
+msgid ""
+"Almacenamiento del sitio usado: %(used)s MB%(quota)s. Estimación del "
+"navegador."
+msgstr "Nom du site utilisé : %(used)s MB%(quota)s. Estimation du navigateur."
+
+#, fuzzy
+msgid " de %(quota)s MB estimados"
+msgstr "de %(quota)s MB estimés"
+
+#, fuzzy
+msgid ""
+"Tumores: %(tumors)s · Personas distintas: %(persons)s · Población: "
+"%(population)s · cálculo local: %(elapsed)s ms"
+msgstr ""
+"Tumeurs : %(tumors)s · Personnes distinctes : %(persons)s · Población : "
+"%(population)s · calcul local : %(elapsed)s ms"
+
+#, fuzzy
+msgid ""
+"Consulta calculada localmente · publicación %(release)s · método %(method)s."
+msgstr ""
+"Consultez localement le calcul · publication %(release)s · méthode "
+"%(method)s."
+
+#, fuzzy
+msgid "El servidor respondió HTTP %(status)s."
+msgstr "Le serveur a répondu HTTP %(status)s."
+
+#, fuzzy
+msgid ""
+"Servidor: %(elapsed)s ms de ida y vuelta · %(bytes)s bytes de HTML. No mide "
+"CPU del servidor."
+msgstr ""
+"Serveur : %(elapsed)s ms de l'ida et vuelta · %(bytes)s octets de HTML. Pas "
+"de processeur intermédiaire du serveur."
+
+#, fuzzy
+msgid "Categorías"
+msgstr "Catégories"
+
+#, fuzzy
+msgid "categoría"
+msgid_plural "categorías"
+msgstr[0] "catégorie"
+msgstr[1] "catégories"
+
+#, fuzzy
+msgid "categoría con el mismo valor"
+msgid_plural "categorías con los mismos valores"
+msgstr[0] "catégorie avec la même valeur"
+msgstr[1] "catégories avec les mêmes valeurs"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "Consulta Estadística"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "Pourcentage de chaque catégorie (%)"
+
+#, fuzzy
+msgid "tumores"
+msgstr "tumeurs"
+
+#, fuzzy
+msgid "personas distintas"
+msgstr "personnalités distinctes"
+
+#, fuzzy
+msgid "El gráfico circular necesita hasta ocho categorías."
+msgstr "Les graphiques circulaires acceptent jusqu’à huit catégories."
+
+#, fuzzy
+msgid "Este gráfico necesita al menos dos categorías con datos."
+msgstr "Ce graphique doit présenter au moins deux catégories de données."
+
+#, fuzzy
+msgid "Falta población en algún grupo de edad para calcular la tasa ajustada."
+msgstr ""
+"Il manque la population pour au moins une classe d’âge afin de calculer le "
+"taux standardisé."
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "Fréquence absolue"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "Hommes"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "Femmes"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "Il n’y a pas de valeurs positives pour représenter une composition."
+
+#, fuzzy
+msgid "No se cargó una publicación local."
+msgstr "Vous ne recevrez pas une publication locale."
+
+#, fuzzy
+msgid "Selección no compatible: %(errors)s."
+msgstr "Sélection non compatible : %(errors)s."
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "Taux standardisé selon Segi–Doll pour 100 000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "Taux brut / spécifique selon l’âge pour 100 000"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "Tumeurs et personnalités distinctes"
+
+#, fuzzy
+msgid "ajuste por edad incompatible con la selección"
+msgstr "La standardisation par âge est incompatible avec la sélection"
+
+#, fuzzy
+msgid "comparación por sexo necesita ambos sexos"
+msgstr "comparaison de sexe nécessite d'autres sexes"
+
+#, fuzzy
+msgid "composición de personas solo por sexo"
+msgstr ""
+"la composition des personnes distinctes est disponible uniquement selon le "
+"sexe"
+
+#, fuzzy
+msgid "dimensión"
+msgstr "dimension"
+
+#, fuzzy
+msgid "dispersión requiere filtros simples"
+msgstr "dispersion nécessite des filtres simples"
+
+#, fuzzy
+msgid "indicador"
+msgstr "indicateur"
+
+#, fuzzy
+msgid "la publicación no contiene ambos sexos"
+msgstr "la publication ne contient pas de sexe"
+
+#, fuzzy
+msgid "personas distintas con selección múltiple"
+msgstr "personnes distinctes avec sélection multiple"
+
+#, fuzzy
+msgid "unidad"
+msgstr "unité"
+
+#, fuzzy
+msgid "valor de %(key)s fuera del paquete"
+msgstr "valeur de %(key)s hors du paquet"
+
+#, fuzzy
+msgid ""
+"Paquete local: %(title)s · versión %(release)s · publicado %(published)s · "
+"%(size)s KB"
+msgstr ""
+"Paquet local : %(title)s · version %(release)s · publié %(published)s · "
+"%(size)s KB"
+
+#, fuzzy
+msgid "Publicación %(release)s · %(date)s"
+msgstr "Publication %(release)s · %(date)s"
+
+#, fuzzy
+msgid "Página %(page)s de %(pages)s · %(count)s %(categories)s"
+msgstr "Page %(page)s de %(pages)s · %(count)s %(categories)s"
+
+#, fuzzy
+msgid "fecha no disponible"
+msgstr "fecha non disponible"
+
+#, fuzzy
+msgid "consulta-local"
+msgstr "consultation-locale"
+
+#, fuzzy
+msgid "grafico-local"
+msgstr "graphique-local"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "Traque, bronches et poumon"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "prostate"
+
+#, fuzzy
+msgid "Mama"
+msgstr "Maman"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "Colon et recto"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "Estomago"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "Cuello de l'utérus"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "Corps de l'utérus"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "Tiroïdes"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "Pancréas"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "Vejiga urinaire"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "Rein"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "Higado et voies biliaires"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "Ovaire"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "Laringe et faringe"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "Graphique en anneau"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "Année d'incidence"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "Barres groupées par sexe"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "Barres apiladas por sexo"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "Barres horizontales"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "Barres en pourcentage par sexe"
+
+#, fuzzy
+msgid "Circular"
+msgstr "Diagramme circulaire"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "Colonnes"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "Dispersion : tumeurs et personnes par province/État"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "Distribución territoriale (essaim)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "Âge"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "Groupe de sites tumoraux"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "Lignes"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "Province de résidence"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "Points par province ou groupe d'âge"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "Classement par indicateur"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "Sexe"
+
+#, fuzzy
+msgid "Campo"
+msgstr "Champ"
+
+#, fuzzy
+msgid "%(count)s option selected"
+msgid_plural "%(count)s options selected"
+msgstr[0] "Option %(count)s sélectionnée"
+msgstr[1] "Options %(count)s sélectionnées"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr ""
+"La comparaison par sexe nécessite les deux sexes et une autre dimension."
+
+#, fuzzy
+msgid "Las barras apiladas requieren frecuencias absolutas."
+msgstr "Les barres empilées nécessitent des fréquences absolues."
+
+#, fuzzy
+msgid ""
+"La composición requiere categorías excluyentes; para personas, compare por "
+"sexo."
+msgstr ""
+"La composition nécessite des catégories mutuellement exclusives ; pour les "
+"personnes, comparez par sexe."
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "Cette dimension n'est pas disponible pour le graphique sélectionné."
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "Cette métrique n'est pas disponible pour le graphique sélectionné."
+
+#, fuzzy
+msgid "Esta unidad no está disponible para el gráfico seleccionado."
+msgstr "Cette unité n'est pas disponible pour le graphique sélectionné."
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr ""
+"L’ajustement selon l’âge nécessite tous les groupes d’âge et une autre "
+"dimension."
+
+#, fuzzy
+msgid ""
+"Datos sintéticos · método %(method)s · guardado en este navegador. La fecha "
+"de publicación identifica el corte; no indica cuándo se conectó el "
+"dispositivo."
+msgstr ""
+"Données synthétiques · méthode %(method)s · enregistrée dans ce navigateur. "
+"La date de publication identifie la version ; il ne s'affiche pas lorsque "
+"l'appareil est connecté."

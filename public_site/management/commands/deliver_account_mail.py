@@ -1,8 +1,10 @@
 """Private mail outbox worker; configure SMTP for real delivery."""
 
 import time
+from django.conf import settings
 from django.core.management.base import BaseCommand
 from django.utils import timezone
+from django.utils import translation
 from public_site.models import AccountMail
 from public_site.accounts import deliver_invitation
 
@@ -27,7 +29,13 @@ class Command(BaseCommand):
                 status = "sent"
                 try:
                     if item.user.is_active:
-                        deliver_invitation(item.user)
+                        language = (
+                            item.language
+                            if item.language in dict(settings.LANGUAGES)
+                            else settings.LANGUAGE_CODE
+                        )
+                        with translation.override(language):
+                            deliver_invitation(item.user)
                     else:
                         status = "cancelled"
                 except Exception:

@@ -1,0 +1,3547 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0?0:n==1?1:n==2?2:n%100>=3&&n%100<=10?3:n%100>=11&&n%100<=99?4:5);\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba."
+msgstr "إحصائيات الإصابة من السجل الوطني للسرطان في كوبا."
+
+#, fuzzy
+msgid "RNC · Estadísticas de cáncer en Cuba"
+msgstr "RNC · إحصائيات السرطان في كوبا"
+
+#, fuzzy
+msgid "RNC Cuba · Inicio"
+msgstr "RNC كوبا · الصفحة الرئيسية"
+
+#, fuzzy
+msgid "Inicio"
+msgstr "الصفحة الرئيسية"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer"
+msgstr "السجل الوطني للسرطان"
+
+#, fuzzy
+msgid "Sesión iniciada"
+msgstr "تم تسجيل الدخول"
+
+#, fuzzy
+msgid "Administración"
+msgstr "الإدارة"
+
+#, fuzzy
+msgid "Usuarios y permisos"
+msgstr "المستخدمون والأذونات"
+
+#, fuzzy
+msgid "Cambiar contraseña"
+msgstr "تغيير كلمة المرور"
+
+#, fuzzy
+msgid "Cerrar sesión y cambiar de cuenta"
+msgstr "تسجيل الخروج وتبديل الحساب"
+
+#, fuzzy
+msgid "Acceso del personal"
+msgstr "دخول الموظفين"
+
+#, fuzzy
+msgid "Estadísticas públicas"
+msgstr "الإحصائيات العامة"
+
+#, fuzzy
+msgid "Idioma"
+msgstr "اللغة"
+
+#, fuzzy
+msgid "Aplicar"
+msgstr "تطبيق"
+
+#, fuzzy
+msgid "Menú"
+msgstr "القائمة"
+
+#, fuzzy
+msgid "Páginas del sitio"
+msgstr "صفحات الموقع"
+
+#, fuzzy
+msgid "Secciones de esta página"
+msgstr "الأقسام الموجودة في هذه الصفحة"
+
+#, fuzzy
+msgid "Secciones sobre el RNC"
+msgstr "أقسام حول RNC"
+
+#, fuzzy
+msgid "En esta página"
+msgstr "في هذه الصفحة"
+
+#, fuzzy
+msgid "Plegar barra lateral"
+msgstr "طي الشريط الجانبي"
+
+#, fuzzy
+msgid "Plegar menú"
+msgstr "طي القائمة"
+
+#, fuzzy
+msgid "Navegación"
+msgstr "الملاحة"
+
+#, fuzzy
+msgid "Páginas"
+msgstr "الصفحات"
+
+#, fuzzy
+msgid "Gestión de usuarios"
+msgstr "إدارة المستخدم"
+
+#, fuzzy
+msgid "Gestionar usuarios"
+msgstr "إدارة المستخدمين"
+
+#, fuzzy
+msgid "Usuarios y roles"
+msgstr "المستخدمون والأدوار"
+
+#, fuzzy
+msgid "Índice de la página"
+msgstr "فهرس الصفحة"
+
+#, fuzzy
+msgid "Entorno con datos sintéticos"
+msgstr "بيئة البيانات الاصطناعية"
+
+#, fuzzy
+msgid "Información que acerca"
+msgstr "تقريب المعلومات"
+
+#, fuzzy
+msgid "las estadísticas a las personas."
+msgstr "تقديم الإحصائيات للناس."
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer de Cuba."
+msgstr "السجل الوطني للسرطان في كوبا."
+
+#, fuzzy
+msgid "Consulta de incidencia y resultados agregados."
+msgstr "إحصائيات الإصابة والنتائج الإجمالية."
+
+#, fuzzy
+msgid "Navegación del pie de página"
+msgstr "التنقل في التذييل"
+
+#, fuzzy
+msgid "Explorar"
+msgstr "استكشاف"
+
+#, fuzzy
+msgid "Ayuda y acceso"
+msgstr "المساعدة والوصول"
+
+#, fuzzy
+msgid "Información y acceso"
+msgstr "المعلومات والوصول"
+
+#, fuzzy
+msgid "Cómo leer los resultados"
+msgstr "كيفية قراءة النتائج"
+
+#, fuzzy
+msgid "Seguridad de mi cuenta"
+msgstr "أمان الحساب"
+
+#, fuzzy
+msgid "Subir al comienzo"
+msgstr "العودة إلى الأعلى"
+
+#, fuzzy
+msgid "Registro Nacional de Cáncer · Cuba"
+msgstr "السجل الوطني للسرطان · كوبا"
+
+#, fuzzy
+msgid ""
+"Los datos de esta instalación son inventados. No representan estadísticas "
+"oficiales."
+msgstr ""
+"البيانات الموجودة في هذا الموقع هي بيانات اصطناعية ولا تمثل إحصاءات رسمية."
+
+#, fuzzy
+msgid "El RNC"
+msgstr "حول RNC"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "مستكشف إحصائي"
+
+#, fuzzy
+msgid "Nomencladores"
+msgstr "كتالوجات الكود"
+
+#, fuzzy
+msgid "Consulta sin conexión"
+msgstr "التشاور دون اتصال"
+
+#, fuzzy
+msgid "Crear usuario"
+msgstr "إنشاء مستخدم"
+
+#, fuzzy
+msgid "Editar usuario"
+msgstr "تحرير المستخدم"
+
+#, fuzzy
+msgid "Detalle del corte"
+msgstr "تفاصيل الإصدار"
+
+#, fuzzy
+msgid "Iniciar sesión"
+msgstr "تسجيل الدخول"
+
+#, fuzzy
+msgid "Recuperar acceso"
+msgstr "استرداد الحساب"
+
+#, fuzzy
+msgid "Administrador de soporte"
+msgstr "مسؤول الدعم"
+
+#, fuzzy
+msgid "Responsable de publicación"
+msgstr "مدير النشر"
+
+#, fuzzy
+msgid "Operador de cargas"
+msgstr "عامل إدخال البيانات"
+
+#, fuzzy
+msgid "Consulta pública"
+msgstr "استشارة عامة"
+
+#, fuzzy
+msgid "Información para comprender la incidencia del cáncer"
+msgstr "معلومات لفهم الإصابة بالسرطان"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer reúne y analiza información sobre los casos "
+"de cáncer en Cuba. Este portal permite consultar estadísticas por año, "
+"territorio, sexo, edad y localización, y preparar tablas, gráficos y "
+"descargas."
+msgstr ""
+"يقوم السجل الوطني للسرطان بجمع وتحليل المعلومات حول حالات السرطان في كوبا. "
+"تتيح لك هذه البوابة استكشاف الإحصائيات حسب السنة والإقليم والجنس والعمر "
+"وموقع السرطان، وإعداد الجداول والرسوم البيانية والتنزيلات."
+
+#, fuzzy
+msgid "Consultar estadísticas"
+msgstr "استكشاف الإحصائيات"
+
+#, fuzzy
+msgid "Conocer el RNC"
+msgstr "حول RNC"
+
+#, fuzzy
+msgid "Qué ofrece este portal"
+msgstr "ما تقدمه هذه البوابة"
+
+#, fuzzy
+msgid "Explora los datos disponibles"
+msgstr "استكشاف البيانات المتاحة"
+
+#, fuzzy
+msgid "Filtra por año y territorio"
+msgstr "تصفية حسب السنة والمنطقة"
+
+#, fuzzy
+msgid "Compara sexo, edad y localización"
+msgstr "قارن بين الجنس والعمر وموقع السرطان"
+
+#, fuzzy
+msgid "Consulta tablas y visualizaciones"
+msgstr "استكشاف الجداول والمرئيات"
+
+#, fuzzy
+msgid "Descarga resultados con su contexto"
+msgstr "تنزيل النتائج مع سياقها"
+
+#, fuzzy
+msgid "Información sobre el Registro"
+msgstr "حول التسجيل"
+
+#, fuzzy
+msgid "El Registro"
+msgstr "التسجيل"
+
+#, fuzzy
+msgid "¿Qué es el RNC?"
+msgstr "ما هو RNC؟"
+
+#, fuzzy
+msgid ""
+"Es el sistema nacional que recopila, revisa y analiza información de cáncer "
+"con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del"
+" cáncer y sirven de apoyo a la investigación y la planificación sanitaria."
+msgstr ""
+"إنه النظام الوطني القائم على السكان الذي يقوم بجمع ومراجعة وتحليل المعلومات "
+"المتعلقة بالسرطان. وتساعد إحصاءاتها في وصف عبء السرطان ودعم البحوث والتخطيط "
+"الصحي."
+
+#, fuzzy
+msgid "Qué hacemos"
+msgstr "ماذا نفعل"
+
+#, fuzzy
+msgid "La plataforma"
+msgstr "المنصة"
+
+#, fuzzy
+msgid "¿Qué puedes hacer aquí?"
+msgstr "ماذا يمكنك أن تفعل هنا؟"
+
+#, fuzzy
+msgid ""
+"Construir una consulta, elegir el indicador y la dimensión de análisis, "
+"revisar la tabla que acompaña cada gráfico y exportar los resultados "
+"seleccionados."
+msgstr ""
+"أنشئ استعلامًا، واختر بُعدًا للمؤشر والتحليل، وراجع الجدول المصاحب لكل مخطط،"
+" وقم بتصدير النتائج المحددة."
+
+#, fuzzy
+msgid "Abrir la consulta estadística"
+msgstr "افتح المستكشف الإحصائي"
+
+#, fuzzy
+msgid "Cómo usar el portal"
+msgstr "كيفية استخدام البوابة"
+
+#, fuzzy
+msgid "De la pregunta al resultado"
+msgstr "من السؤال إلى النتيجة"
+
+#, fuzzy
+msgid "Define la consulta."
+msgstr "تحديد الاستعلام الخاص بك."
+
+#, fuzzy
+msgid ""
+"Selecciona el período y las dimensiones disponibles, como territorio, sexo, "
+"edad y localización."
+msgstr "حدد الفترة والأبعاد المتاحة، مثل المنطقة والجنس والعمر وموقع السرطان."
+
+#, fuzzy
+msgid "Elige qué medir."
+msgstr "اختر ما تريد قياسه."
+
+#, fuzzy
+msgid ""
+"Distingue el número de casos, una proporción o una tasa; cada medida "
+"responde a una pregunta diferente."
+msgstr ""
+"اختر بين عدد الحالات، أو النسبة، أو المعدل؛ كل قياس يجيب على سؤال مختلف."
+
+#, fuzzy
+msgid "Interpreta y conserva el contexto."
+msgstr "تفسير النتائج في السياق."
+
+#, fuzzy
+msgid ""
+"Revisa tabla, unidad, población de referencia, fuente y notas del método "
+"antes de comparar o descargar."
+msgstr ""
+"قم بمراجعة الجدول والوحدة والسكان المرجعيين والمصدر وملاحظات الطريقة قبل "
+"مقارنة النتائج أو تنزيلها."
+
+#, fuzzy
+msgid ""
+"La disponibilidad de cada indicador depende del corte publicado. Las "
+"estimaciones, los datos observados y los períodos preliminares deben "
+"identificarse por separado."
+msgstr ""
+"يعتمد توفر المؤشر على الإصدار المنشور. ويجب تحديد التقديرات والبيانات "
+"المرصودة والفترات الأولية بشكل منفصل."
+
+#, fuzzy
+msgid "Ver cómo se calculan los indicadores"
+msgstr "انظر كيف يتم حساب المؤشرات"
+
+#, fuzzy
+msgid "Conceptos estadísticos básicos"
+msgstr "المفاهيم الإحصائية الأساسية"
+
+#, fuzzy
+msgid "Casos y frecuencias"
+msgstr "الحالات والترددات"
+
+#, fuzzy
+msgid ""
+"Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa"
+" compara una parte con un total y se expresa como porcentaje. El denominador"
+" y la unidad deben acompañar siempre al resultado."
+msgstr ""
+"يُظهر العدد عدد الحالات التي تتوافق مع عوامل التصفية المحددة. يقارن التكرار "
+"النسبي الجزء بالمجموع ويتم التعبير عنه كنسبة مئوية. يجب أن يصاحب المقام "
+"والوحدة النتيجة دائمًا."
+
+#, fuzzy
+msgid "Tasas de incidencia"
+msgstr "معدلات الإصابة"
+
+#, fuzzy
+msgid ""
+"Una tasa relaciona los casos nuevos con la población correspondiente al "
+"mismo período y estrato. Las tasas por edad ayudan a describir grupos; el "
+"ajuste por edad facilita comparaciones entre poblaciones con estructuras "
+"etarias diferentes."
+msgstr ""
+"معدل يربط الحالات الجديدة بالسكان لنفس الفترة والطبقة. تساعد المعدلات الخاصة"
+" بالعمر في وصف المجموعات؛ يدعم تعديل العمر إجراء مقارنات بين المجموعات "
+"السكانية ذات الهياكل العمرية المختلفة."
+
+#, fuzzy
+msgid ""
+"Las consultas estarán disponibles cuando exista una publicación activa."
+msgstr "ستكون الاستفسارات متاحة عند نشر الإصدار."
+
+#, fuzzy
+msgid "Anillo"
+msgstr "مخطط حلقي"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "سنة التشخيص"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "مخطط أعمدة مجمّعة حسب الجنس"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "مخطط أعمدة مكدّسة حسب الجنس"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "مخطط أعمدة أفقي"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "مخطط أعمدة للنسب المئوية حسب الجنس"
+
+#, fuzzy
+msgid "Circular"
+msgstr "مخطط دائري"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "أعمدة"
+
+#, fuzzy
+msgid "Comparar por"
+msgstr "قارن بواسطة"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "مؤامرة مبعثرة: الأورام والأشخاص حسب المقاطعة/العمر"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "التوزيع الإقليمي (سرب)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "العمر"
+
+#, fuzzy
+msgid "El ajuste por edad necesita todos los grupos de edad."
+msgstr "تعديل العمر يتطلب جميع الفئات العمرية."
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "تعديل العمر يتطلب جميع الفئات العمرية وبعدا آخر."
+
+#, fuzzy
+msgid ""
+"El corte activo no incluye desglose por municipio; solo contiene provincia "
+"de residencia."
+msgstr ""
+"الإصدار النشط لا يحتوي على تفصيل للبلدية؛ أنه يحتوي فقط على مقاطعة الإقامة."
+
+#, fuzzy
+msgid ""
+"El corte agregado no permite deduplicar personas distintas al combinar "
+"varios valores. Use Tumores o seleccione un solo valor por filtro."
+msgstr ""
+"لا يمكن للإصدار المجمع إلغاء تكرار الأشخاص عبر قيم متعددة محددة. استخدم "
+"الأورام أو حدد قيمة واحدة فقط لكل مرشح."
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "هذا البُعد غير متاح للمخطط المحدد."
+
+#, fuzzy
+msgid "Este gráfico requiere la unidad Tumores."
+msgstr "يتطلب هذا المخطط وحدة الأورام."
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "هذا المؤشر غير متوفر للمخطط المحدد."
+
+#, fuzzy
+msgid "Filtra los casos por municipio de residencia. Puede elegir varios."
+msgstr "تصفية الحالات حسب بلدية السكن. يمكنك اختيار أكثر من واحد."
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "التكرار المطلق"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "التكرار النسبي (%)"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "مجموعة مواقع السرطان"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "المؤشر"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "والمقارنة حسب الجنس تتطلب كلا الجنسين وبعدا آخر."
+
+#, fuzzy
+msgid ""
+"La dispersión necesita una selección que permita contar personas distintas "
+"sin solapamientos."
+msgstr ""
+"يحتاج المخطط المبعثر إلى تحديد حيث يمكن إحصاء الأشخاص المتميزين دون تداخل."
+
+#, fuzzy
+msgid "Líneas"
+msgstr "خطوط"
+
+#, fuzzy
+msgid "Municipio de residencia"
+msgstr "بلدية السكن"
+
+#, fuzzy
+msgid ""
+"Para personas distintas, la composición solo se puede comparar por sexo."
+msgstr "بالنسبة للأشخاص المتميزين، لا يمكن مقارنة التكوين إلا حسب الجنس."
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "أشخاص فريدون"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "مقاطعة الإقامة"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "النقاط حسب المقاطعة أو الفئة العمرية"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "الترتيب حسب المؤشر"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "الجنس"
+
+#, fuzzy
+msgid "Sin seleccionar opciones se incluyen todos; puede elegir varias."
+msgstr ""
+"إذا لم تحدد أي خيارات، فسيتم تضمين كافة القيم. يمكنك اختيار أكثر من واحد."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen solo las provincias presentes en este corte, que "
+"puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia "
+"de la unidad informante; puede elegir varias."
+msgstr ""
+"مع عدم وجود أي تحديد، يتم تضمين المقاطعات فقط في هذا الإصدار؛ قد لا تغطي كل "
+"كوبا. هذه هي مقاطعات الإقامة، وليست مقاطعات وحدات الإبلاغ. يمكنك اختيار أكثر"
+" من واحد."
+
+#, fuzzy
+msgid ""
+"Sin selección se incluyen todas las provincias disponibles. Es la provincia "
+"de residencia, no la provincia de la unidad informante; puede elegir varias."
+msgstr ""
+"مع عدم وجود تحديد، يتم تضمين جميع المحافظات المتاحة. هذه هي مقاطعة الإقامة، "
+"وليست مقاطعة وحدة الإبلاغ. يمكنك اختيار أكثر من واحد."
+
+#, fuzzy
+msgid ""
+"Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta"
+" 8 categorías excluyentes."
+msgstr ""
+"لا تُعرض إلا أنواع المخططات المتوافقة مع اختيارك. يدعم المخطط الدائري "
+"والمخطط الحلقي ما يصل إلى 8 فئات متنافية."
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "معدل Segi-Doll المعدل حسب العمر لكل 100000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "المعدل الخام / العمري لكل 100.000"
+
+#, fuzzy
+msgid "Tipo de gráfico"
+msgstr "نوع الرسم البياني"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "الأورام"
+
+#, fuzzy
+msgid "Unidad de conteo"
+msgstr "وحدة العد"
+
+#, fuzzy
+msgid "Cuenta"
+msgstr "الحساب"
+
+#, fuzzy
+msgid "Consulta sin conexión · RNC Cuba"
+msgstr "التشاور حاليا · RNC كوبا"
+
+#, fuzzy
+msgid "Consulta pública local"
+msgstr "المشاورة العامة المحلية"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación agregada sintética mientras tienes conexión. Después "
+"puedes filtrar, calcular, graficar, paginar e imprimir desde este "
+"dispositivo. La aplicación pública continúa disponible sin el servidor; la "
+"administración requiere conexión."
+msgstr ""
+"احفظ إصدارًا مجمعًا اصطناعيًا أثناء اتصالك بالإنترنت. يمكنك بعد ذلك التصفية "
+"والحساب والتخطيط وترقيم الصفحات والطباعة من هذا الجهاز. يظل التطبيق العام "
+"متاحًا بدون الخادم؛ الإدارة تتطلب اتصال."
+
+#, fuzzy
+msgid "Publicación local"
+msgstr "الإصدار المحلي"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "لا توجد حزمة محفوظة."
+
+#, fuzzy
+msgid "Instalar consulta pública"
+msgstr "تثبيت الاستشارة العامة"
+
+#, fuzzy
+msgid "Guardar / actualizar publicación"
+msgstr "حفظ / تحديث الإصدار"
+
+#, fuzzy
+msgid "Eliminar copia local"
+msgstr "حذف النسخة المحلية"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo acepta publicaciones sintéticas. La copia queda en el "
+"almacenamiento del navegador hasta que la elimines o el navegador la retire."
+" Una copia sin conexión no puede actualizarse ni revocarse mientras el "
+"dispositivo está desconectado."
+msgstr ""
+"يقبل هذا النموذج الأولي الإصدارات الاصطناعية فقط. تظل النسخة في مساحة تخزين "
+"المتصفح حتى تقوم بحذفها أو يقوم المتصفح بإزالتها. لا يمكن تحديث النسخة غير "
+"المتصلة بالإنترنت أو إبطالها أثناء قطع اتصال الجهاز."
+
+#, fuzzy
+msgid "Filtros y visualización"
+msgstr "المرشحات والتصور"
+
+#, fuzzy
+msgid "Guarda una publicación para cargar los filtros disponibles."
+msgstr "احفظ إصدارًا لتحميل المرشحات المتاحة."
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "غير متوفر في هذا الإصدار"
+
+#, fuzzy
+msgid "Localización"
+msgstr "الموقع"
+
+#, fuzzy
+msgid "Calcular en este dispositivo"
+msgstr "احسب على هذا الجهاز"
+
+#, fuzzy
+msgid "Comparar con el servidor"
+msgstr "قارن مع الخادم"
+
+#, fuzzy
+msgid "Descargar CSV"
+msgstr "قم بتنزيل ملف CSV"
+
+#, fuzzy
+msgid "Descargar gráfico PNG"
+msgstr "تحميل المخطط PNG"
+
+#, fuzzy
+msgid "Imprimir / guardar PDF"
+msgstr "طباعة / حفظ PDF"
+
+#, fuzzy
+msgid "Gráfico del resultado calculado localmente"
+msgstr "الرسم البياني للنتيجة محسوبة محليا"
+
+#, fuzzy
+msgid "Paginación de resultados"
+msgstr "ترقيم الصفحات النتائج"
+
+#, fuzzy
+msgid "Anterior"
+msgstr "السابق"
+
+#, fuzzy
+msgid "Siguiente"
+msgstr "التالي"
+
+#, fuzzy
+msgid "Barras"
+msgstr "مخطط أعمدة"
+
+#, fuzzy
+msgid "Actualizar resultados"
+msgstr "تحديث النتائج"
+
+#, fuzzy
+msgid ""
+"Actualmente no hay un corte publicado. Las consultas y descargas estarán "
+"disponibles cuando se publique una nueva versión."
+msgstr ""
+"لم يتم نشر أي إصدار حاليا. ستكون الاستعلامات والتنزيلات متاحة عند نشر إصدار "
+"جديد."
+
+#, fuzzy
+msgid ""
+"Cada barra suma 100 % y muestra la distribución por sexo dentro de esa "
+"categoría."
+msgstr "يبلغ مجموع كل عمود 100% ويعرض التوزيع حسب الجنس ضمن تلك الفئة."
+
+#, fuzzy
+msgid "Cambiar filtros"
+msgstr "تغيير المرشحات"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "الفئة"
+
+#, fuzzy
+msgid ""
+"Categorías ordenadas de mayor a menor según el indicador seleccionado. Las "
+"posiciones también aparecen en las exportaciones."
+msgstr ""
+"يتم فرز الفئات من الأعلى إلى الأدنى حسب المقياس المحدد. يتم تضمين الرتب "
+"أيضًا في الصادرات."
+
+#, fuzzy
+msgid "Eje de valores:"
+msgstr "محور القيمة:"
+
+#, fuzzy
+msgid ""
+"El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los "
+"conteos exactos de tumores y personas distintas."
+msgstr ""
+"يقوم حجم الفقاعة بتجميع الفئات بنفس التكرار؛ تحتفظ المحاور بالورم الدقيق "
+"وعدد الأشخاص المتميزين."
+
+#, fuzzy
+msgid "Filtros aplicados:"
+msgstr "المرشحات المطبقة:"
+
+#, fuzzy
+msgid "Filtros de consulta"
+msgstr "مرشحات الاستعلام"
+
+#, fuzzy
+msgid "Frecuencias y tasas calculadas para cada categoría de la comparación."
+msgstr "التكرارات والمعدلات المحسوبة لكل فئة مقارنة."
+
+#, fuzzy
+msgid "Frecuencias, población denominadora y tasas por categoría"
+msgstr "التكرارات، والمقام السكاني، والمعدلات حسب الفئة"
+
+#, fuzzy
+msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
+msgstr "مخطط الاستعلام؛ القيم متوفرة في الجدول أدناه"
+
+#, fuzzy
+msgid "Hay campos por corregir en el panel de filtros."
+msgstr "تحتاج بعض الحقول في لوحة التصفية إلى التصحيح."
+
+#, fuzzy
+msgid "Imagen PNG"
+msgstr "صورة PNG"
+
+#, fuzzy
+msgid "Informe PDF"
+msgstr "تقرير بصيغة PDF"
+
+#, fuzzy
+msgid ""
+"La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La "
+"tasa cruda es frecuencia / población denominadora × 100 000; al comparar por"
+" edad corresponde a una tasa específica por edad. Al seleccionar varios años"
+" se acumulan las poblaciones anuales seleccionadas, por lo que la tasa "
+"resume el período y no corresponde a un solo año."
+msgstr ""
+"يستخدم التكرار والمعدلات النسبية الوحدة المحددة أعلاه. المعدل الخام هو "
+"التكرار / مقام السكان × 100000؛ بالنسبة للمقارنات العمرية فهو معدل خاص "
+"بالعمر. عند تحديد سنوات متعددة، تتم إضافة عدد سكانها السنوي، وبالتالي يلخص "
+"المعدل الفترة بدلاً من سنة واحدة."
+
+#, fuzzy
+msgid ""
+"La separación vertical de los puntos solo facilita distinguirlos; no "
+"representa otro indicador."
+msgstr ""
+"التباعد الرأسي بين النقاط مخصص لسهولة القراءة فقط؛ ولا يمثل مقياسًا آخر."
+
+#, fuzzy
+msgid ""
+"La tasa ajustada aplica la población estándar Segi–Doll al conjunto de "
+"edades disponible. Si falta cobertura en alguno de los grupos requeridos, se"
+" muestra “—”. La fórmula, los denominadores y la presentación de los métodos"
+" siguen pendientes de cotejo con el RNC."
+msgstr ""
+"يطبق المعدل المعدل حسب العمر عدد السكان القياسي Segi-Doll على الفئات العمرية"
+" المتاحة. إذا كانت التغطية مفقودة لأي مجموعة مطلوبة، فسيتم عرض \"-\". لا "
+"تزال الصيغة والمقامات وطرق العرض تتطلب المراجعة مع RNC."
+
+#, fuzzy
+msgid ""
+"Las personas distintas no se calculan cuando se combinan varios valores; una"
+" persona puede aparecer en más de un período, territorio, grupo de edad o "
+"localización."
+msgstr ""
+"لا يتم حساب الأشخاص المميزين عند دمج قيم متعددة؛ قد يظهر شخص واحد في أكثر من"
+" فترة أو منطقة أو فئة عمرية أو موقع واحد."
+
+#, fuzzy
+msgid "No hay resultados"
+msgstr "لا توجد نتائج"
+
+#, fuzzy
+msgid "No hay una publicación activa o la selección no contiene registros."
+msgstr "لا يوجد إصدار نشط، أو أن التحديد لا يحتوي على سجلات."
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "السكان في المقام"
+
+#, fuzzy
+msgid "Posición"
+msgstr "رتبة"
+
+#, fuzzy
+msgid ""
+"Puede combinar valores de provincia y municipio de residencia cuando el "
+"corte los incluya. Si un filtro está vacío, se incluyen todos sus valores "
+"disponibles. Los grupos tumorales corresponden a esta publicación; no forman"
+" un catálogo completo ni representan códigos TOPO o ICD‑O."
+msgstr ""
+"يمكنك الجمع بين قيم المقاطعة والبلدية الخاصة بالإقامة عندما يتم تضمينها في "
+"الإصدار. يؤدي ترك الفلتر فارغًا إلى تضمين كافة القيم المتاحة له. مجموعات "
+"الأورام خاصة بهذا الإصدار؛ فهي ليست كتالوجًا كاملاً ولا تمثل رموز TOPO أو "
+"ICD-O."
+
+#, fuzzy
+msgid "Restablecer"
+msgstr "إعادة تعيين"
+
+#, fuzzy
+msgid "Resultados"
+msgstr "النتائج"
+
+#, fuzzy
+msgid "Revise los filtros"
+msgstr "قم بمراجعة المرشحات"
+
+#, fuzzy
+msgid "Tabla CSV"
+msgstr "جدول CSV"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll"
+msgstr "معدل Segi-Doll المعدل حسب العمر"
+
+#, fuzzy
+msgid "Tasa cruda/específica"
+msgstr "المعدل الخام/العمر المحدد"
+
+#, fuzzy
+msgid "Vector SVG"
+msgstr "صورة متجهة بصيغة SVG"
+
+#, fuzzy
+msgid "Visualización"
+msgstr "التصور"
+
+#, fuzzy
+msgid "por 100 000"
+msgstr "لكل 100000"
+
+#, fuzzy
+msgid "Excel"
+msgstr "اكسل"
+
+#, fuzzy
+msgid ""
+"Una persona puede aparecer en distintas localizaciones; esos conteos pueden "
+"solaparse y no se suman para obtener personas únicas."
+msgstr ""
+"قد يظهر شخص واحد في مواقع متعددة؛ قد تتداخل هذه الأعداد ولا يجب إضافتها "
+"للحصول على عدد الأشخاص الفريدين."
+
+#, fuzzy
+msgid "Unidad"
+msgstr "وحدة"
+
+#, fuzzy
+msgid "Acceso restringido"
+msgstr "الوصول مقيد"
+
+#, fuzzy
+msgid "Bienvenido de nuevo"
+msgstr "مرحبًا بعودتك"
+
+#, fuzzy
+msgid "Entre con su cuenta para acceder a sus herramientas de trabajo."
+msgstr "قم بتسجيل الدخول للوصول إلى أدوات العمل الخاصة بك."
+
+#, fuzzy
+msgid "Incluir todos"
+msgstr "حدد الكل"
+
+#, fuzzy
+msgid "Incluir todos los valores de"
+msgstr "تضمين كافة القيم ل"
+
+#, fuzzy
+msgid "La dirección no existe o el recurso ya no está disponible."
+msgstr "هذا العنوان غير موجود أو أن المورد لم يعد متوفرًا."
+
+#, fuzzy
+msgid ""
+"Las cuentas son creadas por el equipo administrador. No hay registro "
+"público."
+msgstr "يتم إنشاء الحسابات من قبل فريق الإدارة. التسجيل العام غير متوفر."
+
+#, fuzzy
+msgid "No encontramos esa página"
+msgstr "لم نتمكن من العثور على تلك الصفحة"
+
+#, fuzzy
+msgid "No hay acciones registradas."
+msgstr "لم يتم تسجيل أي إجراءات."
+
+#, fuzzy
+msgid "No se ha seleccionado un archivo"
+msgstr "لم يتم تحديد أي ملف"
+
+#, fuzzy
+msgid "Paginación"
+msgstr "ترقيم الصفحات"
+
+#, fuzzy
+msgid "Primera"
+msgstr "أولا"
+
+#, fuzzy
+msgid "Página"
+msgstr "الصفحة"
+
+#, fuzzy
+msgid "Revise los campos indicados"
+msgstr "قم بمراجعة الحقول المشار إليها"
+
+#, fuzzy
+msgid "Seleccionar CSV"
+msgstr "اختر CSV"
+
+#, fuzzy
+msgid ""
+"Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar "
+"consultando las estadísticas públicas."
+msgstr ""
+"حسابك ليس لديه إذن للوصول إلى هذا القسم. يمكنك متابعة تصفح الإحصائيات "
+"العامة."
+
+#, fuzzy
+msgid "Volver al inicio"
+msgstr "العودة إلى المنزل"
+
+#, fuzzy
+msgid "Vuelva a seleccionar el CSV para reenviar el formulario."
+msgstr "حدد ملف CSV مرة أخرى لإعادة إرسال النموذج."
+
+#, fuzzy
+msgid "de"
+msgstr "من"
+
+#, fuzzy
+msgid "seleccionados"
+msgstr "مختارة"
+
+#, fuzzy
+msgid "¿Olvidó su contraseña?"
+msgstr "هل نسيت كلمة المرور؟"
+
+#, fuzzy
+msgid "Última"
+msgstr "الاخير"
+
+#, fuzzy
+msgid "Nomencladores · RNC Cuba"
+msgstr "كتالوجات رمز السرطان · RNC كوبا"
+
+#, fuzzy
+msgid "Consulta de clasificadores"
+msgstr "بحث التصنيف"
+
+#, fuzzy
+msgid "Nomencladores de cáncer"
+msgstr "كتالوجات رمز السرطان"
+
+#, fuzzy
+msgid ""
+"Busque un código o término y vea a qué sistema, edición y eje pertenece."
+msgstr "ابحث عن الكود أو المصطلح لمعرفة نظامه وإصداره ومحوره."
+
+#, fuzzy
+msgid "Referencia inicial de este proyecto, pendiente de validación del RNC:"
+msgstr "المرجع الأولي لهذا المشروع، في انتظار التحقق من صحة RNC:"
+
+#, fuzzy
+msgid ""
+"ICD-O-3 para topografía y morfología; ICCC-3 para grupos diagnósticos "
+"infantiles. Se conserva el sistema y la edición con que llega cada código; "
+"no se traducen ni mezclan códigos entre ediciones sin una equivalencia "
+"validada."
+msgstr ""
+"ICD-O-3 للتضاريس والتشكل؛ ICCC-3 لمجموعات تشخيص الطفولة. يحتفظ كل رمز بنظامه"
+" المصدري وإصداره؛ لا تتم ترجمة الرموز أو خلطها عبر الإصدارات دون معادلة "
+"مصادق عليها."
+
+#, fuzzy
+msgid "No se pudo cargar el catálogo"
+msgstr "لا يمكن تحميل الكتالوج"
+
+#, fuzzy
+msgid "Catálogo oficial aún no disponible"
+msgstr "لا يوجد كتالوج معتمد متاح حتى الآن"
+
+#, fuzzy
+msgid ""
+"Esta instalación no tiene cargado un diccionario autorizado. Los grupos de "
+"localización de la demostración son sintéticos y no equivalen a códigos "
+"TOPO."
+msgstr ""
+"لم يتم تحميل أي قاموس معتمد لهذا التثبيت. مجموعات مواقع العرض التوضيحي "
+"اصطناعية ولا تعادل رموز TOPO."
+
+#, fuzzy
+msgid "Fuentes para la referencia inicial:"
+msgstr "مصادر المرجع الأولي:"
+
+#, fuzzy
+msgid "OMS · ICD‑O‑3"
+msgstr "منظمة الصحة العالمية · التصنيف الدولي للأمراض-O-3"
+
+#, fuzzy
+msgid "IARC · ICCC‑3"
+msgstr "الوكالة الدولية لبحوث السرطان · ICCC-3"
+
+#, fuzzy
+msgid ""
+"es una edición internacional posterior, no la referencia inicial elegida "
+"para este prototipo."
+msgstr "هي طبعة دولية لاحقة، وليست المرجع الأولي المحدد لهذا النموذج الأولي."
+
+#, fuzzy
+msgid "Versión del catálogo:"
+msgstr "نسخة الكتالوج:"
+
+#, fuzzy
+msgid "Fuente:"
+msgstr "المصدر:"
+
+#, fuzzy
+msgid "Código o texto"
+msgstr "الرمز أو النص"
+
+#, fuzzy
+msgid "Buscar códigos, nombres y descripciones"
+msgstr "رموز البحث والأسماء والأوصاف"
+
+#, fuzzy
+msgid "Sistema"
+msgstr "النظام"
+
+#, fuzzy
+msgid "Edición"
+msgstr "الطبعة"
+
+#, fuzzy
+msgid "Todas"
+msgstr "الكل"
+
+#, fuzzy
+msgid "Eje"
+msgstr "المحور"
+
+#, fuzzy
+msgid "Todos"
+msgstr "الكل"
+
+#, fuzzy
+msgid "Buscar"
+msgstr "بحث"
+
+#, fuzzy
+msgid ""
+"conceptos encontrados. La aplicación no deduce equivalencias entre sistemas "
+"o ediciones. Solo se muestran conceptos marcados como autorizados y "
+"relaciones declaradas por una fuente o marcadas en el catálogo como "
+"validadas por el RNC; los borradores y vínculos pendientes no aparecen."
+msgstr ""
+"تم العثور على المفاهيم. لا يستنتج التطبيق التكافؤ عبر الأنظمة أو الإصدارات. "
+"يتم عرض فقط المفاهيم التي تم وضع علامة عليها كمصرح بها والعلاقات التي تم "
+"الإعلان عنها بواسطة مصدر أو تم وضع علامة عليها على أنها تم التحقق من صحتها "
+"بواسطة RNC؛ تم حذف المسودات والروابط المعلقة."
+
+#, fuzzy
+msgid "identificadores asociados"
+msgstr "المعرفات المرتبطة"
+
+#, fuzzy
+msgid "Código"
+msgstr "الكود"
+
+#, fuzzy
+msgid "Sistema · edición · eje"
+msgstr "النظام · الطبعة · المحور"
+
+#, fuzzy
+msgid "Nombre y descripción"
+msgstr "الاسم والوصف"
+
+#, fuzzy
+msgid "Estado"
+msgstr "الحالة"
+
+#, fuzzy
+msgid "Relación"
+msgstr "العلاقة"
+
+#, fuzzy
+msgid "Fuente y licencia"
+msgstr "المصدر والترخيص"
+
+#, fuzzy
+msgid "Ver descripción"
+msgstr "عرض الوصف"
+
+#, fuzzy
+msgid "Vigente"
+msgstr "الحالي"
+
+#, fuzzy
+msgid "Histórico/deprecado"
+msgstr "تاريخي/مهمل"
+
+#, fuzzy
+msgid "Opcional"
+msgstr "اختياري"
+
+#, fuzzy
+msgid "Fuente del código"
+msgstr "مصدر الكود"
+
+#, fuzzy
+msgid "Fuente del concepto"
+msgstr "مصدر المفهوم"
+
+#, fuzzy
+msgid "Licencia"
+msgstr "الترخيص"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "النشر"
+
+#, fuzzy
+msgid "Marcado como histórico"
+msgstr "تم وضع علامة على أنها تاريخية"
+
+#, fuzzy
+msgid "Marcado como autorizado"
+msgstr "تم وضع علامة على أنها معتمدة"
+
+#, fuzzy
+msgid "No hay conceptos que coincidan con los filtros."
+msgstr "لا توجد مفاهيم تتطابق مع عوامل التصفية هذه."
+
+#, fuzzy
+msgid "Navegación lateral"
+msgstr "الملاحة الجانبية"
+
+#, fuzzy
+msgid "Navegación principal"
+msgstr "الملاحة الرئيسية"
+
+#, fuzzy
+msgid "Ruta de navegación"
+msgstr "التنقل التفصيلي"
+
+#, fuzzy
+msgid "Saltar al contenido"
+msgstr "انتقل إلى المحتوى"
+
+#, fuzzy
+msgid "0 cortes"
+msgstr "0 الإصدارات"
+
+#, fuzzy
+msgid "Acceso individual"
+msgstr "الوصول الفردي"
+
+#, fuzzy
+msgid "Acciones"
+msgstr "الإجراءات"
+
+#, fuzzy
+msgid "Activa"
+msgstr "نشط"
+
+#, fuzzy
+msgid "Actualización"
+msgstr "تم التحديث"
+
+#, fuzzy
+msgid "Administración de cortes · RNC Cuba"
+msgstr "إدارة الإصدار · RNC كوبا"
+
+#, fuzzy
+msgid "Administración · Identidad"
+msgstr "الإدارة · الحسابات"
+
+#, fuzzy
+msgid "Apellidos"
+msgstr "الاسم الأخير"
+
+#, fuzzy
+msgid "Archivo CSV sintético"
+msgstr "ملف CSV الاصطناعي"
+
+#, fuzzy
+msgid ""
+"Asigne el rol y el correo. Sin contraseña temporal, una cuenta nueva recibe "
+"una invitación."
+msgstr ""
+"تعيين دور وعنوان البريد الإلكتروني. تتلقى الحسابات الجديدة دعوة ما لم تقم "
+"بتعيين كلمة مرور مؤقتة."
+
+#, fuzzy
+msgid "Buscar usuario"
+msgstr "بحث المستخدمين"
+
+#, fuzzy
+msgid "CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."
+msgstr ""
+"UTF-8 CSV، يصل حجمه إلى 12 ميجابايت و60000 صف. البيانات الاصطناعية فقط."
+
+#, fuzzy
+msgid "Confirme su identidad para guardar los cambios."
+msgstr "قم بتأكيد هويتك لحفظ التغييرات."
+
+#, fuzzy
+msgid "Confirmo que el archivo contiene exclusivamente datos sintéticos"
+msgstr "أؤكد أن الملف يحتوي على بيانات تركيبية فقط"
+
+#, fuzzy
+msgid ""
+"Consulta el estado de incorporación y publicación de los cortes de "
+"incidencia."
+msgstr "مراجعة حالة الاستيعاب والنشر لإصدارات الإصابة."
+
+#, fuzzy
+msgid "Contraseña temporal"
+msgstr "كلمة مرور مؤقتة"
+
+#, fuzzy
+msgid "Correo"
+msgstr "البريد الإلكتروني"
+
+#, fuzzy
+msgid "Corte"
+msgstr "الافراج"
+
+#, fuzzy
+msgid "Cortes disponibles en el portal"
+msgstr "الإصدارات المتاحة على البوابة"
+
+#, fuzzy
+msgid "Cortes en proceso"
+msgstr "الإصدارات قيد التقدم"
+
+#, fuzzy
+msgid "Cortes estadísticos"
+msgstr "الإصدارات الإحصائية"
+
+#, fuzzy
+msgid "Cortes estadísticos disponibles para gestión."
+msgstr "الإصدارات الإحصائية المتاحة للإدارة."
+
+#, fuzzy
+msgid "Cortes no visibles al público"
+msgstr "الإصدارات غير مرئية للعامة"
+
+#, fuzzy
+msgid "Cortes recientes"
+msgstr "الإصدارات الأخيرة"
+
+#, fuzzy
+msgid "Crear cuenta"
+msgstr "إنشاء حساب"
+
+#, fuzzy
+msgid "Crear usuario +"
+msgstr "إنشاء مستخدم +"
+
+#, fuzzy
+msgid "Cuenta activa"
+msgstr "الحساب نشط"
+
+#, fuzzy
+msgid "Cuenta guardada."
+msgstr "تم حفظ الحساب."
+
+#, fuzzy
+msgid ""
+"Cuenta guardada; no se pudo encolar el correo. Puede reintentar la "
+"invitación."
+msgstr ""
+"تم حفظ الحساب؛ لا يمكن وضع البريد الإلكتروني في قائمة الانتظار. يمكنك إعادة "
+"محاولة الدعوة."
+
+#, fuzzy
+msgid "Debe permanecer al menos una cuenta de soporte activa."
+msgstr "يجب أن يبقى حساب دعم نشط واحد على الأقل."
+
+#, fuzzy
+msgid "Desactivada"
+msgstr "معطل"
+
+#, fuzzy
+msgid "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+msgstr "قم بتعطيل الحساب لإزالة الوصول دون حذف سجله."
+
+#, fuzzy
+msgid "Disponibilidad de estadísticas aprobadas"
+msgstr "توفر الإحصائيات المعتمدة"
+
+#, fuzzy
+msgid "Editar"
+msgstr "تحرير"
+
+#, fuzzy
+msgid "Editar cuenta"
+msgstr "تحرير الحساب"
+
+#, fuzzy
+msgid "El archivo supera el límite de 12 MB."
+msgstr "يتجاوز الملف الحد المسموح به وهو 12 ميجابايت."
+
+#, fuzzy
+msgid ""
+"Elija su nueva contraseña. No necesita indicar la anterior para recuperar el"
+" acceso."
+msgstr ""
+"اختر كلمة المرور الجديدة. لا تحتاج إلى تقديم كلمة المرور القديمة لاستعادة "
+"الوصول."
+
+#, fuzzy
+msgid "En cola"
+msgstr "في قائمة الانتظار"
+
+#, fuzzy
+msgid "En revisión"
+msgstr "قيد المراجعة"
+
+#, fuzzy
+msgid ""
+"Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."
+msgstr "أدخل من 10 إلى 250 حرفًا. سيتم تسجيل هذا القرار في سجل التدقيق."
+
+#, fuzzy
+msgid "Ese correo ya está asignado a otra cuenta."
+msgstr "لقد تم بالفعل تعيين عنوان البريد الإلكتروني هذا لحساب آخر."
+
+#, fuzzy
+msgid "Ese nombre de usuario ya está en uso. Elija otro."
+msgstr "اسم المستخدم هذا قيد الاستخدام بالفعل. اختر آخر."
+
+#, fuzzy
+msgid "Establecer contraseña"
+msgstr "تعيين كلمة المرور"
+
+#, fuzzy
+msgid "Establecer contraseña · RNC"
+msgstr "تعيين كلمة المرور · RNC"
+
+#, fuzzy
+msgid "Falló el envío"
+msgstr "فشل التسليم"
+
+#, fuzzy
+msgid "Gestionar cuentas del portal"
+msgstr "إدارة حسابات البوابة"
+
+#, fuzzy
+msgid "Gestionar entregas sintéticas"
+msgstr "إدارة الإصدارات الاصطناعية"
+
+#, fuzzy
+msgid "Gestione las cuentas del personal autorizado y sus responsabilidades."
+msgstr "إدارة حسابات الموظفين المصرح لهم ومسؤولياتهم."
+
+#, fuzzy
+msgid "Grupo de localización ilustrativo"
+msgstr "مجموعة المواقع التوضيحية"
+
+#, fuzzy
+msgid "Guardar contraseña"
+msgstr "حفظ كلمة المرور"
+
+#, fuzzy
+msgid "Guardar cuenta"
+msgstr "حفظ الحساب"
+
+#, fuzzy
+msgid "Incorporación"
+msgstr "الابتلاع"
+
+#, fuzzy
+msgid "Incorporación y publicación"
+msgstr "الاستيعاب والنشر"
+
+#, fuzzy
+msgid ""
+"Indique el correo registrado. Si la cuenta está habilitada, recibirá "
+"instrucciones."
+msgstr ""
+"أدخل عنوان البريد الإلكتروني المسجل. إذا كان الحساب نشطا، سيتم إرسال "
+"التعليمات."
+
+#, fuzzy
+msgid "Introduzca su contraseña actual y elija una nueva."
+msgstr "أدخل كلمة المرور الحالية واختر كلمة مرور جديدة."
+
+#, fuzzy
+msgid ""
+"Invitación en cola de envío. El servicio de correo procesará la solicitud."
+msgstr "الدعوة في قائمة الانتظار. ستقوم خدمة البريد بمعالجة الطلب."
+
+#, fuzzy
+msgid ""
+"La composición requiere conteos o porcentajes de categorías excluyentes; "
+"para personas, compare por sexo."
+msgstr ""
+"تتطلب مخططات التركيب أعدادًا أو نسبًا مئوية للفئات الحصرية المتبادلة؛ عند عد"
+" الأشخاص، قارن حسب الجنس."
+
+#, fuzzy
+msgid ""
+"Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni "
+"porcentajes."
+msgstr ""
+"تتطلب مخططات الأعمدة المكدسة تكرارات مطلقة؛ ولا تُجمع المعدلات أو النسب "
+"المئوية."
+
+#, fuzzy
+msgid ""
+"Las invitaciones permiten elegir una contraseña privada. Una contraseña "
+"temporal obliga a cambiarla antes de utilizar el panel. Desactive las "
+"cuentas que ya no deban acceder."
+msgstr ""
+"تتيح الدعوات للمستخدمين اختيار كلمة مرور خاصة. يجب تغيير كلمة المرور المؤقتة"
+" قبل استخدام لوحة التحكم. قم بتعطيل الحسابات التي لم يعد بإمكانها الوصول "
+"إليها."
+
+#, fuzzy
+msgid "Las líneas requieren comparar por período."
+msgstr "تتطلب المخططات الخطية المقارنة حسب الفترة."
+
+#, fuzzy
+msgid ""
+"Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 "
+"caracteres."
+msgstr ""
+"استخدم أحرفًا أو أرقامًا أو نقاطًا أو واصلات أو شرطات سفلية غير معلمة. 3 "
+"أحرف على الأقل."
+
+#, fuzzy
+msgid "Motivo de la decisión"
+msgstr "سبب القرار"
+
+#, fuzzy
+msgid "No hay cortes registrados."
+msgstr "لم يتم تسجيل أي إصدارات."
+
+#, fuzzy
+msgid "No puede desactivar ni retirar su propio rol de soporte."
+msgstr "لا يمكنك تعطيل حسابك الخاص أو إزالة دور الدعم الخاص بك."
+
+#, fuzzy
+msgid "No se encontraron cuentas."
+msgstr "لم يتم العثور على حسابات."
+
+#, fuzzy
+msgid "No se pudo confirmar la operación con esa contraseña."
+msgstr "لا يمكن تأكيد العملية باستخدام كلمة المرور هذه."
+
+#, fuzzy
+msgid "Nombre"
+msgstr "الاسم"
+
+#, fuzzy
+msgid "Nombre del corte"
+msgstr "اسم الإصدار"
+
+#, fuzzy
+msgid "Nombre, usuario o correo"
+msgstr "الاسم أو اسم المستخدم أو البريد الإلكتروني"
+
+#, fuzzy
+msgid ""
+"Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con "
+"ella, se exigirá cambiarla al entrar."
+msgstr ""
+"اختياري. وبدونها، سيتم إرسال دعوة لاختيار كلمة المرور. باستخدامه، يجب على "
+"المستخدم تغيير كلمة المرور عند تسجيل الدخول."
+
+#, fuzzy
+msgid "Operación"
+msgstr "العمل"
+
+#, fuzzy
+msgid "Operador:"
+msgstr "المشغل:"
+
+#, fuzzy
+msgid "Período"
+msgstr "الفترة"
+
+#, fuzzy
+msgid "Procesado"
+msgstr "معالجتها"
+
+#, fuzzy
+msgid "Procesando"
+msgstr "المعالجة"
+
+#, fuzzy
+msgid "Proceso de gestión"
+msgstr "عملية الإدارة"
+
+#, fuzzy
+msgid "Publicaciones"
+msgstr "المنشورات"
+
+#, fuzzy
+msgid "Publicado"
+msgstr "تم النشر"
+
+#, fuzzy
+msgid "Publicados"
+msgstr "تم النشر"
+
+#, fuzzy
+msgid "Publicar"
+msgstr "نشر"
+
+#, fuzzy
+msgid "Publicar y revocar cortes sintéticos"
+msgstr "نشر وسحب الإصدارات الاصطناعية"
+
+#, fuzzy
+msgid "Rechazado"
+msgstr "مرفوض"
+
+#, fuzzy
+msgid "Registro del corte y procedencia"
+msgstr "سجل الإصدار والمصدر"
+
+#, fuzzy
+msgid "Responsabilidades"
+msgstr "المسؤوليات"
+
+#, fuzzy
+msgid "Responsable"
+msgstr "المالك"
+
+#, fuzzy
+msgid "Responsable de publicación:"
+msgstr "مدير النشر:"
+
+#, fuzzy
+msgid "Resumen de cortes"
+msgstr "ملخص الإصدار"
+
+#, fuzzy
+msgid "Retirados"
+msgstr "انسحبت"
+
+#, fuzzy
+msgid "Revisión técnica"
+msgstr "المراجعة الفنية"
+
+#, fuzzy
+msgid "Revocado"
+msgstr "انسحبت"
+
+#, fuzzy
+msgid "Revocar"
+msgstr "انسحاب"
+
+#, fuzzy
+msgid "Rol"
+msgstr "الدور"
+
+#, fuzzy
+msgid "Se admiten tildes, espacios, apóstrofos y guiones."
+msgstr "يُسمح باستخدام العلامات، والمسافات، والفواصل العليا، والواصلات."
+
+#, fuzzy
+msgid ""
+"Se ha solicitado establecer una contraseña para su cuenta RNC.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"El enlace vence en una hora y solo puede utilizarse una vez. Si no reconoce esta solicitud, contacte con soporte."
+msgstr ""
+"لقد تم طلب كلمة مرور لحساب RNC الخاص بك.\n"
+"\n"
+"%(link)s\n"
+"\n"
+"تنتهي صلاحية هذا الرابط خلال ساعة واحدة ولا يمكن استخدامه إلا مرة واحدة. إذا لم تطلب ذلك، فاتصل بالدعم."
+
+#, fuzzy
+msgid "Se utilizará para invitaciones y recuperación de acceso."
+msgstr "يستخدم للدعوات واسترداد الحساب."
+
+#, fuzzy
+msgid "Seleccione un archivo con extensión .csv."
+msgstr "اختر ملف .csv."
+
+#, fuzzy
+msgid "Solicitar enlace"
+msgstr "رابط الطلب"
+
+#, fuzzy
+msgid "Solo soporte puede modificar cuentas de soporte."
+msgstr "يمكن لمسؤولي الدعم فقط تغيير حسابات الدعم."
+
+#, fuzzy
+msgid "Su contraseña de soporte"
+msgstr "كلمة مرور الدعم الخاصة بك"
+
+#, fuzzy
+msgid "Tabla de resultados con desplazamiento horizontal"
+msgstr "جدول النتائج مع التمرير الأفقي"
+
+#, fuzzy
+msgid "Territorio"
+msgstr "المنطقة"
+
+#, fuzzy
+msgid "Un nombre que identifique el período y la entrega."
+msgstr "اسم يحدد الفترة والإفراج."
+
+#, fuzzy
+msgid "Use como máximo 128 caracteres."
+msgstr "لا تستخدم أكثر من 128 حرفًا."
+
+#, fuzzy
+msgid "Usuario"
+msgstr "اسم المستخدم"
+
+#, fuzzy
+msgid "Validado"
+msgstr "تم التحقق من صحتها"
+
+#, fuzzy
+msgid "Ver portal público"
+msgstr "عرض البوابة العامة"
+
+#, fuzzy
+msgid "Verificación de estructura e integridad"
+msgstr "فحص الهيكلة والنزاهة"
+
+#, fuzzy
+msgid "además, publica y revoca cortes."
+msgstr "كما ينشر ويسحب الإصدارات."
+
+#, fuzzy
+msgid "gestiona cuentas y todas las funciones."
+msgstr "يدير الحسابات وجميع الميزات."
+
+#, fuzzy
+msgid "registra y revisa cargas."
+msgstr "سجلات ومراجعات التحميلات."
+
+#, fuzzy
+msgid "Último correo"
+msgstr "البريد الإلكتروني الأخير"
+
+#, fuzzy
+msgid "Administración · Corte"
+msgstr "الإدارة · الإصدار"
+
+#, fuzzy
+msgid "Cancelar"
+msgstr "إلغاء"
+
+#, fuzzy
+msgid "Confirmar publicación"
+msgstr "تأكيد النشر"
+
+#, fuzzy
+msgid "Continuar"
+msgstr "متابعة"
+
+#, fuzzy
+msgid "Contraseña actualizada"
+msgstr "تم تحديث كلمة المرور"
+
+#, fuzzy
+msgid "Contraseña guardada"
+msgstr "تم حفظ كلمة المرور"
+
+#, fuzzy
+msgid "Cuenta y seguridad"
+msgstr "الحساب والأمن"
+
+#, fuzzy
+msgid "Datos sintéticos validados"
+msgstr "التحقق من صحة البيانات الاصطناعية"
+
+#, fuzzy
+msgid ""
+"El archivo no superó la validación como sintético y no se conservó en el "
+"almacenamiento de la aplicación."
+msgstr ""
+"لم ينجح الملف في التحقق من صحة البيانات الاصطناعية ولم يتم الاحتفاظ به في "
+"مخزن التطبيقات."
+
+#, fuzzy
+msgid ""
+"El archivo sintético validado permanece en almacenamiento privado. Este "
+"contrato no habilita cargas clínicas del RNC."
+msgstr ""
+"يبقى الملف الاصطناعي الذي تم التحقق من صحته في مخزن خاص. لا يسمح هذا العقد "
+"بتحميل البيانات السريرية من RNC."
+
+#, fuzzy
+msgid ""
+"El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo."
+msgstr ""
+"هذا الارتباط غير صالح، وقد تم استخدامه بالفعل، أو انتهت صلاحيته. طلب واحدة "
+"جديدة."
+
+#, fuzzy
+msgid ""
+"Esta entrega rechazada pertenece a una versión anterior del prototipo; el "
+"archivo asociado quedó en almacenamiento privado. Las nuevas cargas "
+"rechazadas ya no se conservan."
+msgstr ""
+"هذا الإرسال المرفوض مأخوذ من نسخة أولية سابقة؛ بقي ملفه في مخزن خاص. لن يتم "
+"الاحتفاظ بالتحميلات المرفوضة حديثًا."
+
+#, fuzzy
+msgid ""
+"Esta publicación sustituirá el conjunto completo anterior. Revise los "
+"períodos y la cobertura; no se sumarán ambas entregas."
+msgstr ""
+"سيحل هذا المنشور محل مجموعة البيانات السابقة بأكملها. فترات المراجعة "
+"والتغطية؛ ولن يتم إضافة الإصدارين معًا."
+
+#, fuzzy
+msgid "Filas incorporadas"
+msgstr "تم قبول الصفوف"
+
+#, fuzzy
+msgid "Filas no incorporadas"
+msgstr "الصفوف مرفوضة"
+
+#, fuzzy
+msgid "Filas recibidas"
+msgstr "تم استلام الصفوف"
+
+#, fuzzy
+msgid "Historial del corte"
+msgstr "تاريخ الإصدار"
+
+#, fuzzy
+msgid "Informe técnico"
+msgstr "التقرير الفني"
+
+#, fuzzy
+msgid "Integridad SHA-256"
+msgstr "سلامة SHA-256"
+
+#, fuzzy
+msgid ""
+"La revocación retirará inmediatamente el corte del inicio, las consultas y "
+"las nuevas exportaciones. Los archivos ya descargados no pueden retirarse."
+msgstr ""
+"يؤدي السحب على الفور إلى إزالة الإصدار من الصفحة الرئيسية والاستعلامات "
+"والصادرات الجديدة. لا يمكن سحب الملفات التي تم تنزيلها بالفعل."
+
+#, fuzzy
+msgid "Los campos con"
+msgstr "الحقول التي تحمل علامة"
+
+#, fuzzy
+msgid "No determinado"
+msgstr "غير محدد"
+
+#, fuzzy
+msgid "No hay archivo fuente conservado para esta entrega."
+msgstr "لم يتم الاحتفاظ بالملف المصدر لهذا الإصدار."
+
+#, fuzzy
+msgid "No validado como sintético"
+msgstr "لم يتم التحقق من صحتها على أنها اصطناعية"
+
+#, fuzzy
+msgid "Períodos"
+msgstr "فترات"
+
+#, fuzzy
+msgid "Publicar corte"
+msgstr "نشر الافراج"
+
+#, fuzzy
+msgid "Recepción"
+msgstr "تم الاستلام"
+
+#, fuzzy
+msgid "Reenviar enlace para establecer contraseña"
+msgstr "إعادة إرسال رابط إعداد كلمة المرور"
+
+#, fuzzy
+msgid "Revocar corte"
+msgstr "سحب الافراج"
+
+#, fuzzy
+msgid "Revocar publicación"
+msgstr "سحب النشر"
+
+#, fuzzy
+msgid ""
+"Se comprobaron estructura, categorías, claves de tumor únicas, consistencia "
+"de personas y denominadores, y cobertura de edad y sexo. La validación es "
+"atómica: si falla una fila, la entrega no se incorpora parcialmente."
+msgstr ""
+"تم فحص البنية والفئات ومفاتيح الورم الفريدة واتساق الأشخاص والقواسم وتغطية "
+"العمر والجنس. التحقق من الصحة أمر ذري: إذا فشل أي صف، فلن يتم استيعاب أي "
+"إصدار."
+
+#, fuzzy
+msgid ""
+"Si existe una cuenta activa con ese correo, recibirá un enlace para "
+"establecer su contraseña. Revise también la carpeta de correo no deseado."
+msgstr ""
+"في حالة وجود حساب نشط لعنوان البريد الإلكتروني هذا، سيتم إرسال رابط إعداد "
+"كلمة المرور. تحقق من مجلد الرسائل غير المرغوب فيها أيضًا."
+
+#, fuzzy
+msgid "Solicitud recibida"
+msgstr "تم استلام الطلب"
+
+#, fuzzy
+msgid "Soporte:"
+msgstr "الدعم:"
+
+#, fuzzy
+msgid "Su contraseña se guardó correctamente."
+msgstr "تم حفظ كلمة المرور الخاصة بك بنجاح."
+
+#, fuzzy
+msgid "Territorios"
+msgstr "الأقاليم"
+
+#, fuzzy
+msgid "Tumores aceptados"
+msgstr "الأورام المقبولة"
+
+#, fuzzy
+msgid "Ya puede iniciar sesión con su nueva contraseña."
+msgstr "يمكنك الآن تسجيل الدخول باستخدام كلمة المرور الجديدة الخاصة بك."
+
+#, fuzzy
+msgid "son obligatorios."
+msgstr "مطلوبة."
+
+#, fuzzy
+msgid "← Volver a administración"
+msgstr "← العودة إلى الإدارة"
+
+#, fuzzy
+msgid "Acción"
+msgstr "العمل"
+
+#, fuzzy
+msgid "Actividad reciente"
+msgstr "النشاط الأخير"
+
+#, fuzzy
+msgid ""
+"Contrato sintético de demostración · hasta 12 MB y 60 000 filas. Cada "
+"entrega representa un conjunto completo, no un incremento. El ejemplo "
+"descargable añade un tumor sintético al corte activo para recorrer la "
+"actualización completa."
+msgstr ""
+"عقد بيانات العرض التوضيحي الاصطناعي · ما يصل إلى 12 ميجابايت و60.000 صف. "
+"يمثل كل تسليم مجموعة بيانات كاملة، وليس زيادة. يضيف المثال القابل للتنزيل "
+"ورمًا اصطناعيًا واحدًا إلى الإصدار النشط لتوضيح التحديث الكامل."
+
+#, fuzzy
+msgid "Descargar CSV de actualización"
+msgstr "قم بتنزيل التحديث بتنسيق CSV"
+
+#, fuzzy
+msgid "Entregas registradas"
+msgstr "التسليمات المسجلة"
+
+#, fuzzy
+msgid "Entregas y cortes"
+msgstr "عمليات التسليم والإصدارات"
+
+#, fuzzy
+msgid "Gestión de información"
+msgstr "إدارة المعلومات"
+
+#, fuzzy
+msgid "Incorporar archivo"
+msgstr "إضافة ملف"
+
+#, fuzzy
+msgid ""
+"Incorpore entregas, revise sus resultados técnicos y gestione la "
+"publicación."
+msgstr "إضافة عمليات التسليم ومراجعة نتائجها الفنية وإدارة النشر."
+
+#, fuzzy
+msgid "No hay entregas registradas."
+msgstr "لم يتم تسجيل أي تسليمات."
+
+#, fuzzy
+msgid "Publicación activa"
+msgstr "النشر النشط"
+
+#, fuzzy
+msgid "Recibido"
+msgstr "تم الاستلام"
+
+#, fuzzy
+msgid "Revisar corte →"
+msgstr "إصدار المراجعة →"
+
+#, fuzzy
+msgid "Sin corte publicado"
+msgstr "لم يتم نشر أي إصدار"
+
+#, fuzzy
+msgid "Subir y validar CSV"
+msgstr "تحميل والتحقق من صحة CSV"
+
+#, fuzzy
+msgid "El Registro Nacional de Cáncer"
+msgstr "السجل الوطني للسرطان"
+
+#, fuzzy
+msgid "Alcance nacional"
+msgstr "التغطية الوطنية"
+
+#, fuzzy
+msgid "Atención"
+msgstr "معلومات الاتصال"
+
+#, fuzzy
+msgid "Cómo trabajamos"
+msgstr "كيف نعمل"
+
+#, fuzzy
+msgid "Dónde trabajamos"
+msgstr "أين نعمل"
+
+#, fuzzy
+msgid "Contactos"
+msgstr "اتصالات"
+
+#, fuzzy
+msgid "Guía de interpretación"
+msgstr "دليل التفسير"
+
+#, fuzzy
+msgid "Frecuencia relativa"
+msgstr "التردد النسبي"
+
+#, fuzzy
+msgid "Fuentes y límites"
+msgstr "المصادر والقيود"
+
+#, fuzzy
+msgid "Fuentes, versiones y límites de comparación"
+msgstr "المصادر والإصدارات وحدود المقارنة"
+
+#, fuzzy
+msgid "Métodos y cálculos"
+msgstr "الطرق والحسابات"
+
+#, fuzzy
+msgid "Métodos y cálculos estadísticos"
+msgstr "الأساليب الإحصائية والحسابات"
+
+#, fuzzy
+msgid "Objetivos"
+msgstr "الأهداف"
+
+#, fuzzy
+msgid "Oficina central"
+msgstr "المكتب المركزي"
+
+#, fuzzy
+msgid "Organización"
+msgstr "التنظيم"
+
+#, fuzzy
+msgid "Participación de sus profesionales"
+msgstr "مشاركة المتخصصين فيها"
+
+#, fuzzy
+msgid "Provincia"
+msgstr "مقاطعة"
+
+#, fuzzy
+msgid "Referentes metodológicos consultados"
+msgstr "تم الرجوع إلى المراجع المنهجية"
+
+#, fuzzy
+msgid "Registros provinciales"
+msgstr "سجلات المقاطعات"
+
+#, fuzzy
+msgid "Responsable publicado"
+msgstr "جهة الاتصال المدرجة"
+
+#, fuzzy
+msgid "Trabajo territorial"
+msgstr "العمل الإقليمي"
+
+#, fuzzy
+msgid "Transparencia estadística"
+msgstr "الشفافية الإحصائية"
+
+#, fuzzy
+msgid "Directorio provincial histórico del sitio institucional (2015)"
+msgstr "دليل المحافظات التاريخي من الموقع المؤسسي (2015)"
+
+#, fuzzy
+msgid "Composición publicada en la copia histórica"
+msgstr "تكوين المدرجة في النسخة التاريخية"
+
+#, fuzzy
+msgid "Objetivo principal:"
+msgstr "الهدف الرئيسي:"
+
+#, fuzzy
+msgid "Detección y notificación:"
+msgstr "كشف الحالات والإبلاغ عنها:"
+
+#, fuzzy
+msgid "Registro en la unidad informante:"
+msgstr "التسجيل في وحدة التقارير:"
+
+#, fuzzy
+msgid "Revisión provincial:"
+msgstr "المراجعة الإقليمية:"
+
+#, fuzzy
+msgid "Cierre y remisión:"
+msgstr "الإغلاق الإحصائي والتقديم:"
+
+#, fuzzy
+msgid "Validación central:"
+msgstr "التحقق المركزي:"
+
+#, fuzzy
+msgid "Consolidación y estadísticas:"
+msgstr "التوحيد والإحصائيات:"
+
+#, fuzzy
+msgid "Correo publicado"
+msgstr "البريد الإلكتروني المدرج"
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias y tasas de incidencia específicas por edad y sexo para "
+"cada localización topográfica y morfológica, además de tasas ajustadas para "
+"Cuba y cada provincia."
+msgstr ""
+"قم بالإبلاغ عن ترددات ومعدلات الإصابة الخاصة بالعمر والجنس لكل موقع طبوغرافي"
+" ومورفولوجي، بالإضافة إلى المعدلات المعدلة لكوبا وكل مقاطعة."
+
+#, fuzzy
+msgid ""
+"Emitir frecuencias absolutas y relativas por localización según la etapa "
+"clínica al diagnóstico, la provincia y la unidad informante, la base más "
+"válida para el diagnóstico y otras variables de interés."
+msgstr ""
+"قم بالإبلاغ عن الترددات المطلقة والنسبية حسب الموقع، والمرحلة السريرية عند "
+"التشخيص، والمقاطعة، ووحدة الإبلاغ، والأساس الأكثر صحة للتشخيص، والمتغيرات "
+"الأخرى ذات الصلة."
+
+#, fuzzy
+msgid ""
+"Calcular indicadores de calidad de los datos por provincia y localización."
+msgstr "حساب مؤشرات جودة البيانات حسب المحافظة والموقع."
+
+#, fuzzy
+msgid "Estimar las cifras de supervivencia poblacional por cáncer."
+msgstr "تقدير بقاء السرطان على أساس السكان."
+
+#, fuzzy
+msgid ""
+"Para ello, la información institucional de referencia atribuye al RNC estos "
+"objetivos específicos:"
+msgstr "تقوم المعلومات المرجعية المؤسسية بتعيين هذه الأهداف المحددة إلى RNC:"
+
+#, fuzzy
+msgid "Aplica la misma razón dentro de cada grupo etario:"
+msgstr "تطبق نفس النسبة ضمن كل فئة عمرية:"
+
+#, fuzzy
+msgid ""
+"Relaciona los casos nuevos observados con la población correspondiente al "
+"mismo período y territorio:"
+msgstr "علاقة الحالات الجديدة المرصودة بالسكان لنفس الفترة والإقليم:"
+
+#, fuzzy
+msgid ""
+"Resume tasas específicas aplicando los pesos de una población estándar:"
+msgstr "يلخص المعدلات الخاصة بالعمر باستخدام أوزان السكان القياسية:"
+
+#, fuzzy
+msgid "Expresa qué parte de un total corresponde a una categoría:"
+msgstr "يُظهر جزء الإجمالي الذي ينتمي إلى فئة ما:"
+
+#, fuzzy
+msgid ""
+"El Registro Nacional de Cáncer de Cuba (RNC) es de base poblacional y "
+"alcance nacional, y forma parte del sistema de información estadística del "
+"Ministerio de Salud Pública. La copia archivada del sitio institucional "
+"indica que fue creado en 1964, que perteneció al Instituto Nacional de "
+"Oncología y Radiobiología (INOR) hasta diciembre de 2007 y que, desde enero "
+"de 2008, se subordinaba metodológica y funcionalmente a la Sección "
+"Independiente de Control de Cáncer junto con el Programa Integral de Control"
+" de Cáncer en Cuba."
+msgstr ""
+"يعتمد السجل الوطني للسرطان في كوبا (RNC) على السكان، ويغطي البلاد بأكملها، "
+"وهو جزء من نظام المعلومات الإحصائية التابع لوزارة الصحة العامة. تشير نسخة "
+"مؤرشفة من الموقع الإلكتروني المؤسسي إلى أنه تم إنشاؤه في عام 1964، وكان "
+"تابعًا للمعهد الوطني لعلم الأورام والبيولوجيا الإشعاعية (INOR) حتى ديسمبر "
+"2007، ومن يناير 2008 كان تابعًا منهجيًا ووظيفيًا لقسم مكافحة السرطان المستقل"
+" جنبًا إلى جنب مع البرنامج الشامل لمكافحة السرطان في كوبا."
+
+#, fuzzy
+msgid ""
+"El RNC es un registro de base poblacional con cobertura de residentes "
+"permanentes de Cuba. Su red se organiza en tres niveles: la Oficina Central,"
+" los equipos o registros provinciales y las unidades informantes que "
+"detectan y notifican los casos."
+msgstr ""
+"RNC هو سجل قائم على السكان ويغطي المقيمين الدائمين في كوبا. وتتكون شبكتها من"
+" ثلاثة مستويات: المكتب المركزي، والفرق أو السجلات الإقليمية، ووحدات الإبلاغ "
+"التي تحدد الحالات وتبلغ عنها."
+
+#, fuzzy
+msgid ""
+"La cobertura documentada comprende las 15 provincias y el municipio especial"
+" Isla de la Juventud. En los territorios, los departamentos de salud "
+"coordinan las unidades informantes; estas incluyen centros hospitalarios y "
+"otras fuentes asistenciales previstas por los procedimientos del Registro."
+msgstr ""
+"وتشمل التغطية الموثقة جميع المقاطعات الخمسة عشر وبلدية جزيرة خوفينتود "
+"الخاصة. في كل إقليم، تقوم الإدارات الصحية بتنسيق وحدات الإبلاغ، بما في ذلك "
+"المستشفيات ومصادر الرعاية الأخرى التي تحددها إجراءات التسجيل."
+
+#, fuzzy
+msgid ""
+"La red territorial permite reunir información de distintos puntos de "
+"atención y consolidarla con alcance nacional. La copia del sitio "
+"institucional organiza esa red con una comisión o registro de cáncer en cada"
+" provincia y un directorio territorial de responsables."
+msgstr ""
+"تقوم الشبكة الإقليمية بجمع المعلومات من أماكن الرعاية المختلفة وتوحيدها على "
+"المستوى الوطني. يصف أرشيف الموقع الإلكتروني المؤسسي لجنة أو سجلًا للسرطان في"
+" كل مقاطعة ودليلًا للاتصالات الإقليمية."
+
+#, fuzzy
+msgid ""
+"El directorio que se reproduce en esta página procede de una copia histórica"
+" del sitio: la información de Oficina Central fue publicada en 2013 y el "
+"directorio provincial en 2015. Se muestra como referencia histórica; sus "
+"nombres y canales no están confirmados como vigentes."
+msgstr ""
+"الدليل المستنسخ هنا مأخوذ من نسخة موقع تاريخي: تم نشر معلومات المكتب المركزي"
+" في عام 2013 ودليل المقاطعات في عام 2015. وهو معروض كمرجع تاريخي؛ ولم يتم "
+"التأكد من أن أسمائها وقنوات الاتصال الخاصة بها حديثة."
+
+#, fuzzy
+msgid ""
+"La copia histórica describe una Oficina Central y comisiones provinciales "
+"que asesoran a las autoridades de salud y apoyan la aplicación de los "
+"procedimientos. El Manual de Procedimientos del RNC, versión VII (2024), "
+"detalla el recorrido operativo de la información:"
+msgstr ""
+"تصف النسخة التاريخية المكتب المركزي واللجان الإقليمية التي تقدم المشورة "
+"للسلطات الصحية وتدعم الإجراءات. دليل إجراءات RNC، الإصدار السابع (2024)، "
+"يعرض تفاصيل سير عمل المعلومات:"
+
+#, fuzzy
+msgid ""
+"Este flujo corresponde al trabajo del Registro. El portal público es una "
+"herramienta de consulta de resultados agregados y no recibe reportes de "
+"casos ni sustituye los sistemas internos del RNC."
+msgstr ""
+"يصف سير العمل هذا عمليات التسجيل. توفر البوابة العامة إمكانية الوصول إلى "
+"النتائج المجمعة؛ ولا تتلقى تقارير الحالة أو تستبدل أنظمة RNC الداخلية."
+
+#, fuzzy
+msgid ""
+"La Oficina Central dirige técnicamente el sistema nacional, controla los "
+"procedimientos y la calidad de la información, ofrece asesoría metodológica "
+"y produce estadísticas. Recibe los cierres territoriales y coordina su "
+"validación y consolidación."
+msgstr ""
+"ويقدم المكتب المركزي التوجيه الفني للنظام الوطني، ويشرف على الإجراءات وجودة "
+"المعلومات، ويقدم المشورة المنهجية، وينتج الإحصاءات. يتلقى الطلبات الإقليمية "
+"وينسق التحقق من صحتها وتوحيدها."
+
+#, fuzzy
+msgid ""
+"El Manual RNC VII describe tareas centrales como comprobar la consistencia y"
+" completitud de los datos, revisar codificaciones, investigar duplicados y "
+"múltiples primarios, cotejar casos con información de mortalidad, pedir "
+"aclaraciones a los territorios e incorporar a la base consolidada solo los "
+"casos validados."
+msgstr ""
+"يصف دليل RNC VII المهام المركزية مثل التحقق من اتساق البيانات واكتمالها، "
+"ومراجعة الرموز، والتحقيق في التكرارات والانتخابات التمهيدية المتعددة، "
+"ومطابقة الحالات مع معلومات الوفيات، وطلب التوضيح من المناطق، وإضافة الحالات "
+"التي تم التحقق من صحتها فقط إلى قاعدة البيانات الموحدة."
+
+#, fuzzy
+msgid ""
+"El Manual también describe funciones de control de calidad, análisis de "
+"datos, informatización, procesamiento y edición, además de una Comisión "
+"Técnica Asesora para cambios a los procedimientos administrativos y "
+"técnicos."
+msgstr ""
+"ويصف الدليل أيضًا مراقبة الجودة، وتحليل البيانات، والحوسبة، والمعالجة "
+"والتحرير، بالإضافة إلى اللجنة الاستشارية الفنية لإجراء تغييرات على الإجراءات"
+" الإدارية والفنية."
+
+#, fuzzy
+msgid ""
+"La composición y los datos de contacto actuales deben confirmarse con el "
+"RNC."
+msgstr "يجب تأكيد التكوين الحالي ومعلومات الاتصال مع RNC."
+
+#, fuzzy
+msgid ""
+"Los equipos provinciales conectan las unidades informantes con la Oficina "
+"Central. Revisan reportes y bases, verifican datos y códigos, gestionan "
+"reparos con las unidades y preparan los cierres que se remiten al nivel "
+"nacional. La versión histórica del sitio describe también comisiones "
+"provinciales que asesoran a las autoridades de salud, controlan la "
+"aplicación de los procedimientos y emiten estadísticas preliminares."
+msgstr ""
+"تقوم فرق المقاطعات بربط وحدات التقارير بالمكتب المركزي. ويقومون بمراجعة "
+"التقارير وقواعد البيانات، والتحقق من البيانات والرموز، وحل الاستفسارات مع "
+"الوحدات، وإعداد الطلبات على المستوى الوطني. ويصف الموقع التاريخي أيضًا لجان "
+"المحافظات التي تقدم المشورة للسلطات الصحية، وتشرف على الإجراءات، وتصدر "
+"الإحصائيات الأولية."
+
+#, fuzzy
+msgid ""
+"A continuación se transcribe el directorio de responsables y correos de la "
+"copia histórica del sitio, publicada en 2015. Se conserva como referencia "
+"documental, no como lista confirmada de contactos activos:"
+msgstr ""
+"تم نسخ جهات الاتصال وعناوين البريد الإلكتروني التالية من نسخة الموقع "
+"التاريخية المنشورة في عام 2015. ويتم الاحتفاظ بها كمرجع وثائقي، وليس كقائمة "
+"مؤكدة لجهات الاتصال النشطة:"
+
+#, fuzzy
+msgid ""
+"No se garantiza la entrega de mensajes a estos correos. El directorio, los "
+"cargos y las direcciones necesitan confirmación antes de usarse para "
+"gestiones actuales."
+msgstr ""
+"التسليم إلى عناوين البريد الإلكتروني هذه غير مضمون. يحتاج الدليل والأدوار "
+"والعناوين إلى تأكيد قبل استخدامها في الأمور الحالية."
+
+#, fuzzy
+msgid ""
+"La página de contacto de la copia histórica publicaba los siguientes datos "
+"de la Oficina Central:"
+msgstr ""
+"تحتوي النسخة التاريخية لصفحة الاتصال على معلومات المكتب المركزي التالية:"
+
+#, fuzzy
+msgid ""
+"Esta versión del portal no recibe reportes clínicos ni solicitudes de "
+"modificación de registros. Para proteger la confidencialidad, no envíes "
+"datos de pacientes mediante canales de consulta pública."
+msgstr ""
+"لا يقبل هذا الإصدار من البوابة التقارير السريرية أو طلبات تعديل سجلات "
+"التسجيل. لحماية السرية، لا ترسل بيانات المريض من خلال قنوات الاستفسار "
+"العامة."
+
+#, fuzzy
+msgid ""
+"Los datos de ubicación, teléfono, correo y responsables se transcribieron de"
+" las páginas institucionales archivadas de Contacto y Dónde estamos, "
+"publicadas en 2013. Confirma su vigencia con el RNC antes de utilizarlos."
+msgstr ""
+"تم نسخ الموقع والهاتف والبريد الإلكتروني وتفاصيل الاتصال من صفحات الاتصال "
+"والموقع المؤسسية المؤرشفة المنشورة في عام 2013. تأكد من أنها محدثة مع RNC "
+"قبل الاستخدام."
+
+#, fuzzy
+msgid ""
+"Las fórmulas siguientes explican conceptos usados en epidemiología "
+"descriptiva y en referentes internacionales. Para que un resultado del "
+"portal sea oficial, el RNC debe confirmar el método, las agrupaciones, los "
+"denominadores y las reglas de presentación aplicables al corte."
+msgstr ""
+"تشرح الصيغ أدناه المفاهيم المستخدمة في علم الأوبئة الوصفي والمراجع الدولية. "
+"لكي تصبح نتيجة البوابة رسمية، يجب على RNC تأكيد الطريقة والتجمعات والمقامات "
+"وقواعد العرض التي تنطبق على الإصدار."
+
+#, fuzzy
+msgid ""
+"La versión local actual del portal está conectada a un agregado de "
+"demostración sintético. Esta interfaz no acredita cifras oficiales ni "
+"sustituye la aprobación de un corte público."
+msgstr ""
+"يستخدم الإصدار المحلي الحالي للبوابة مجموعة توضيحية تركيبية. لا تصدق هذه "
+"الواجهة على الأرقام الرسمية ولا تحل محل الموافقة على الإصدار العام."
+
+#, fuzzy
+msgid ""
+"Las descripciones de organización se basan en páginas de la copia "
+"institucional consultadas entre 2013 y 2015 y requieren validación de "
+"vigencia. Los métodos se presentan con fines explicativos y las decisiones "
+"pendientes se identifican expresamente."
+msgstr ""
+"تستند الأوصاف التنظيمية إلى نسخ الموقع الإلكتروني المؤسسي التي تمت الرجوع "
+"إليها بين عامي 2013 و2015 وتتطلب تأكيدًا بأنها تظل محدثة. يتم عرض الطرق "
+"للتفسير، ويتم تحديد القرارات المعلقة بشكل واضح."
+
+#, fuzzy
+msgid "Coordinación nacional"
+msgstr "التنسيق الوطني"
+
+#, fuzzy
+msgid ""
+"Este portal ofrece actualmente consultas estadísticas de incidencia. No "
+"presenta aquí resultados de supervivencia, etapas clínicas, bases "
+"diagnósticas ni indicadores de calidad del RNC."
+msgstr ""
+"توفر هذه البوابة حاليًا استعلامات إحصائية حول حالات الإصابة. ولا يقدم نتائج "
+"RNC بشأن البقاء، أو المراحل السريرية، أو قواعد التشخيص، أو مؤشرات الجودة."
+
+#, fuzzy
+msgid ""
+"La información del RNC también contribuye a la investigación clínica y "
+"epidemiológica sobre el cáncer, a planificar y evaluar las acciones de "
+"control, y a planificar los recursos materiales y humanos para la atención "
+"oncológica."
+msgstr ""
+"تساهم معلومات RNC أيضًا في أبحاث السرطان السريرية والوبائية، وتخطيط وتقييم "
+"تدابير المكافحة، وتخطيط المواد والموارد البشرية اللازمة لرعاية مرضى السرطان."
+
+#, fuzzy
+msgid ""
+"La información institucional de referencia señala que profesionales del "
+"departamento forman parte de:"
+msgstr "تنص المعلومات المرجعية المؤسسية على أن المتخصصين في القسم يشاركون في:"
+
+#, fuzzy
+msgid ""
+"La pertenencia y denominación actual de estos grupos y comisiones debe "
+"confirmarse con el RNC antes de presentarse como vigente."
+msgstr ""
+"ويجب التأكد من العضوية الحالية وأسماء هذه المجموعات واللجان مع RNC قبل "
+"تقديمها على أنها حالية."
+
+#, fuzzy
+msgid "Tasa ajustada directamente por edad"
+msgstr "المعدل المباشر المعدل حسب العمر"
+
+#, fuzzy
+msgid "Tasa cruda de incidencia"
+msgstr "معدل الإصابة الخام"
+
+#, fuzzy
+msgid "Tasa específica por edad"
+msgstr "معدل خاص بالعمر"
+
+#, fuzzy
+msgid "Tasa indirecta e intervalos de confianza"
+msgstr "المعدل غير المباشر وفترات الثقة"
+
+#, fuzzy
+msgid ""
+"El estándar es una población de ponderación, no el denominador de los casos."
+" Como referencia metodológica de trabajo se estudia la estándar mundial "
+"Segi–Doll de 18 grupos quinquenales; el RNC debe validar su correspondencia,"
+" fórmula operativa, grupos abiertos, datos faltantes y redondeo antes de "
+"atribuirle cifras oficiales. Las comparaciones solo son interpretables si "
+"usan el mismo estándar y definiciones compatibles."
+msgstr ""
+"يوفر السكان القياسيون الأوزان؛ ليس هذا هو قاسم القضية. يعتبر معيار Segi-Doll"
+" العالمي لـ 18 فئة عمرية من خمس سنوات بمثابة مرجع منهجي. يجب على RNC التحقق "
+"من صحة مراسلاتها، وصيغتها التشغيلية، ومجموعاتها المفتوحة، والبيانات "
+"المفقودة، والتقريب قبل أن تنسب إليها أي أرقام رسمية. لا تكون المقارنات قابلة"
+" للتفسير إلا عند استخدام نفس التعريفات القياسية والمتوافقة."
+
+#, fuzzy
+msgid ""
+"El total puede depender de la pregunta y de la unidad de análisis. El "
+"tratamiento de valores desconocidos, categorías excluidas y redondeo "
+"requiere una regla explícita; no se debe asumir que tumor y persona son "
+"unidades intercambiables."
+msgstr ""
+"قد يعتمد المجموع على السؤال ووحدة التحليل. تتطلب القيم غير المعروفة والفئات "
+"المستبعدة والتقريب قواعد واضحة؛ ويجب ألا يتم التعامل مع الأورام والأشخاص "
+"كوحدات قابلة للتبديل."
+
+#, fuzzy
+msgid ""
+"En la organización descrita por la copia histórica, cada comisión provincial"
+" asesora al Director Provincial de Salud sobre el control del cáncer y el "
+"funcionamiento del sistema de información. La integran perfiles de "
+"coordinación de cáncer, oncología, estadística, epidemiología, hospitales y "
+"especialistas o técnicos de los hospitales que diagnostican casos. Su "
+"función es exigir y controlar el cumplimiento de los procedimientos, cuidar "
+"la calidad y continuidad del dato primario, emitir estadísticas provinciales"
+" preliminares y promover investigaciones epidemiológicas y clínicas."
+msgstr ""
+"في التنظيم الموصوف في النسخة التاريخية، تقدم كل لجنة إقليمية المشورة لمدير "
+"الصحة الإقليمي بشأن مكافحة السرطان وتشغيل نظام المعلومات. ويمثل أعضاؤها "
+"تنسيقية السرطان والأورام والإحصاء وعلم الأوبئة والمستشفيات والمتخصصين أو "
+"الفنيين في المستشفيات التي تقوم بتشخيص الحالات. وتشمل مهامها الإشراف على "
+"الامتثال للإجراءات، والحفاظ على جودة واستمرارية البيانات الأولية، وإصدار "
+"الإحصاءات الأولية على مستوى المقاطعات، وتعزيز البحوث الوبائية والسريرية."
+
+#, fuzzy
+msgid ""
+"La escala por 100 000 es una forma habitual de presentación. Numerador, "
+"período, territorio, sexo, grupo de edad y población deben coincidir. El "
+"proyecto identifica la población residente de ONEI como denominador de "
+"trabajo; la serie, edición y convención temporal exactas deben quedar "
+"identificadas con el RNC."
+msgstr ""
+"المعدلات لكل 100000 هي مقياس عرض شائع. يجب أن يتطابق البسط والفترة والإقليم "
+"والجنس والفئة العمرية والسكان. يحدد المشروع السكان المقيمين في ONEI كقاسم "
+"عامل؛ يجب تأكيد السلسلة والإصدار والاتفاقية الزمنية الدقيقة مع RNC."
+
+#, fuzzy
+msgid ""
+"La estandarización indirecta suele comparar los casos observados con los "
+"esperados según tasas de referencia por estrato. La elección de esas tasas "
+"de referencia y la forma de presentar el resultado requieren una definición "
+"institucional."
+msgstr ""
+"عادةً ما يقارن التقييس غير المباشر الحالات المرصودة بالحالات المتوقعة بناءً "
+"على المعدلات المرجعية لكل طبقة. ويتطلب اختيار تلك المعدلات المرجعية وتحديد "
+"كيفية عرض النتيجة تعريفًا مؤسسيًا."
+
+#, fuzzy
+msgid ""
+"La página archivada “Oficina Central” identificaba un Jefe del Registro y "
+"tres grupos: Calidad de los Datos, Informatización y Procesamiento y "
+"Edición. La relación siguiente reproduce los nombres y correos que aparecían"
+" allí; no confirma que las personas ocupen hoy esos cargos ni que las "
+"direcciones sigan activas."
+msgstr ""
+"حددت صفحة \"المكتب المركزي\" المؤرشفة رئيس السجل وثلاث مجموعات: جودة "
+"البيانات، والحوسبة، والمعالجة والتحرير. تستنسخ القائمة أدناه الأسماء وعناوين"
+" البريد الإلكتروني الموضحة هناك؛ ولا يؤكد أن هؤلاء الأشخاص يشغلون هذه "
+"المناصب حاليًا أو أن العناوين لا تزال نشطة."
+
+#, fuzzy
+msgid ""
+"La página “Dónde estamos” de esa misma copia identifica al Instituto "
+"Nacional de Oncología y Radiobiología, en 29 y F, Vedado, CP 10400, y "
+"publica el teléfono +53 7 838 3970. Estos datos se incluyen como información"
+" histórica, no como canales confirmados en la actualidad."
+msgstr ""
+"تحدد صفحة \"أين نحن\" الموجودة في نفس النسخة المعهد الوطني لعلم الأورام "
+"والبيولوجيا الإشعاعية على 29 وF، Vedado، CP 10400، وتسرد رقم الهاتف +53 7 "
+"838 3970. هذه التفاصيل هي معلومات تاريخية، وليست قنوات اتصال مؤكدة حاليًا."
+
+#, fuzzy
+msgid ""
+"Los intervalos de confianza describen incertidumbre estadística y dependen "
+"del indicador, el volumen de casos y el método elegido. Su incorporación al "
+"portal es una propuesta de trabajo, no una regla aprobada por el RNC. El "
+"método de tasa indirecta y el de intervalos permanecen pendientes de "
+"validación."
+msgstr ""
+"تصف فترات الثقة عدم اليقين الإحصائي وتعتمد على المؤشر وعدد الحالات والطريقة "
+"المختارة. وإضافتهم إلى البوابة هو مقترح وليس قاعدة وافقت عليها RNC. تظل "
+"طريقة المعدل غير المباشر وفترات الثقة في انتظار التحقق من الصحة."
+
+#, fuzzy
+msgid ""
+"Los procedimientos describen frecuencias distintas para las tareas locales, "
+"la revisión territorial y los cierres al nivel central. El calendario "
+"concreto puede variar y debe consultarse en la edición vigente del Manual."
+msgstr ""
+"تحدد الإجراءات ترددات مختلفة للمهام المحلية، والمراجعة الإقليمية، وتقديم "
+"الطلبات إلى المستوى المركزي. قد يختلف الجدول الزمني ويجب التحقق منه في "
+"الإصدار الحالي من الدليل."
+
+#, fuzzy
+msgid ""
+"Los referentes consultados muestran por qué cada resultado debe documentar "
+"su procedencia y su versión. Cancer Today organiza visualizaciones junto a "
+"sus fuentes y métodos; ECIS diferencia datos observados de estimaciones; "
+"SEER acompaña sus tablas y gráficos con definiciones, notas y metodología. "
+"Estas prácticas inspiran la presentación, pero sus reglas no se trasladan "
+"automáticamente al RNC."
+msgstr ""
+"توضح المراجع التي تم الرجوع إليها سبب ضرورة توثيق كل نتيجة مصدرها ونسختها. "
+"يقدم موقع السرطان اليوم تصورات مع مصادرها وطرقها؛ يميز ECIS البيانات "
+"المرصودة عن التقديرات؛ يوفر SEER التعريفات والملاحظات والأساليب من خلال "
+"جداوله ومخططاته. تفيد هذه الممارسات العرض التقديمي، لكن قواعدها لا تنطبق "
+"تلقائيًا على RNC."
+
+#, fuzzy
+msgid "La adscripción organizativa debe actualizarse con el RNC: el"
+msgstr "يجب تأكيد الانتماء التنظيمي مع RNC:"
+
+#, fuzzy
+msgid "Comparabilidad:"
+msgstr "المقارنة:"
+
+#, fuzzy
+msgid "Denominador:"
+msgstr "القاسم:"
+
+#, fuzzy
+msgid "Divulgación:"
+msgstr "الإفصاح:"
+
+#, fuzzy
+msgid "Método:"
+msgstr "الطريقة:"
+
+#, fuzzy
+msgid "Numerador:"
+msgstr "البسط:"
+
+#, fuzzy
+msgid ""
+"corte de casos identificado, con período, estado y fecha de publicación."
+msgstr "إصدار الحالة المحددة، بما في ذلك الفترة والحالة وتاريخ النشر."
+
+#, fuzzy
+msgid ""
+"fuente y versión de la población, con cobertura territorial, edad y sexo."
+msgstr "مصدر السكان وإصدارهم، بما في ذلك التغطية الإقليمية والعمرية والجنسية."
+
+#, fuzzy
+msgid "unidad de análisis, escala, estándar de edad y forma de cálculo."
+msgstr "وحدة التحليل، والمقياس، ومعيار العمر، وطريقة الحساب."
+
+#, fuzzy
+msgid ""
+"tasas calculadas con estándares, períodos, coberturas y definiciones "
+"compatibles."
+msgstr "المعدلات المحسوبة باستخدام معايير وفترات وتغطية وتعريفات متوافقة."
+
+#, fuzzy
+msgid ""
+"agregados autorizados y reglas para evitar identificación indirecta; el "
+"umbral o método de supresión para el portal requiere acuerdo institucional."
+msgstr ""
+"المجاميع والقواعد المعتمدة لمنع تحديد الهوية غير المباشرة؛ تتطلب عتبة أو "
+"طريقة قمع البوابة موافقة مؤسسية."
+
+#, fuzzy
+msgid "Correo publicado:"
+msgstr "البريد الإلكتروني المدرج:"
+
+#, fuzzy
+msgid "Teléfono publicado:"
+msgstr "الهاتف المدرج:"
+
+#, fuzzy
+msgid "Grupo Nacional de Oncología."
+msgstr "المجموعة الوطنية للأورام."
+
+#, fuzzy
+msgid "Grupo de Calidad de los Datos:"
+msgstr "مجموعة جودة البيانات:"
+
+#, fuzzy
+msgid ""
+"Grupo de Epidemiología y Registros de Cáncer de Países de Lengua Latina."
+msgstr "مجموعة دول اللغة اللاتينية لسجلات علم الأوبئة والسرطان."
+
+#, fuzzy
+msgid "Grupo de Informatización:"
+msgstr "مجموعة الحوسبة:"
+
+#, fuzzy
+msgid "Grupo de Oncopediatría."
+msgstr "مجموعة أورام الأطفال."
+
+#, fuzzy
+msgid "Grupo de Procesamiento y Edición:"
+msgstr "مجموعة المعالجة والتحرير:"
+
+#, fuzzy
+msgid "Jefatura del RNC:"
+msgstr "رئيس RNC:"
+
+#, fuzzy
+msgid "Comité de Ensayos Clínicos del INOR."
+msgstr "لجنة التجارب السريرية INOR."
+
+#, fuzzy
+msgid "Consejo Científico del INOR."
+msgstr "المجلس العلمي INOR."
+
+#, fuzzy
+msgid "Comisión Nacional del Programa de Cáncer Bucal."
+msgstr "اللجنة الوطنية لبرنامج سرطان الفم."
+
+#, fuzzy
+msgid "Comisión de Expertos del Programa Ramal Cáncer."
+msgstr "لجنة خبراء برنامج فرع السرطان."
+
+#, fuzzy
+msgid ""
+"Red Iberoamericana de Epidemiología y Sistemas de Información en Cáncer."
+msgstr "الشبكة الأيبيرية الأمريكية لعلم أوبئة السرطان ونظم المعلومات."
+
+#, fuzzy
+msgid "Comisión Europea · European Cancer Information System (ECIS)"
+msgstr "المفوضية الأوروبية · النظام الأوروبي لمعلومات السرطان (ECIS)"
+
+#, fuzzy
+msgid "IARC/WHO · Global Cancer Observatory, Cancer Today"
+msgstr ""
+"الوكالة الدولية لبحوث السرطان/منظمة الصحة العالمية · المرصد العالمي للسرطان،"
+" السرطان اليوم"
+
+#, fuzzy
+msgid "NCI/SEER · SEER*Explorer"
+msgstr "NCI/SEER · SEER*Explorer"
+
+#, fuzzy
+msgid "NCI/SEER · definición y cálculo de tasas ajustadas por edad"
+msgstr "NCI/SEER · تعريف وحساب المعدلات المعدلة حسب العمر"
+
+#, fuzzy
+msgid "Sistema de Información Estadística Complementaria de Salud (2017)"
+msgstr "نظام المعلومات الإحصائية الصحية التكميلية (2017)"
+
+#, fuzzy
+msgid "El RNC · Registro Nacional de Cáncer de Cuba"
+msgstr "RNC · السجل الوطني للسرطان في كوبا"
+
+#, fuzzy
+msgid "El subíndice"
+msgstr "المنخفض"
+
+#, fuzzy
+msgid ""
+"la Oficina Central revisa integridad y consistencia, investiga posibles "
+"duplicados o tumores múltiples, contrasta la información con mortalidad y "
+"solicita aclaraciones cuando son necesarias."
+msgstr ""
+"يتحقق المكتب المركزي من الاكتمال والاتساق، ويتحقق من التكرارات المحتملة أو "
+"الأورام المتعددة، ويقارن المعلومات ببيانات الوفيات، ويطلب التوضيح عند "
+"الحاجة."
+
+#, fuzzy
+msgid ""
+"las provincias preparan los cierres estadísticos y remiten al nivel central "
+"los casos nuevos validados junto con la documentación requerida, según el "
+"calendario estadístico."
+msgstr ""
+"تقوم المحافظات بإعداد التقارير الإحصائية وإرسال الحالات الجديدة التي تم "
+"التحقق من صحتها مع الوثائق المطلوبة إلى المستوى المركزي، وفقا للتقويم "
+"الإحصائي."
+
+#, fuzzy
+msgid ""
+"los equipos territoriales cotejan reportes y bases de datos, verifican "
+"variables y códigos, solicitan correcciones y coordinan las unidades "
+"informantes."
+msgstr ""
+"تقوم الفرق الإقليمية بمقارنة التقارير وقواعد البيانات، والتحقق من المتغيرات "
+"والرموز، وطلب التصحيحات، وتنسيق وحدات التقارير."
+
+#, fuzzy
+msgid ""
+"los médicos notifican los casos y los registradores buscan casos adicionales"
+" en fuentes como anatomía patológica, laboratorios, egresos hospitalarios, "
+"certificados de defunción e historias clínicas."
+msgstr ""
+"يقوم الأطباء بالإبلاغ عن الحالات، ويحدد المسجلون الحالات الإضافية في مصادر "
+"مثل علم الأمراض، والمختبرات، وحالات الخروج من المستشفى، وشهادات الوفاة، "
+"والسجلات الطبية."
+
+#, fuzzy
+msgid ""
+"se confeccionan y codifican los reportes, se revisan las fuentes y se "
+"introducen los casos en el sistema automatizado del Registro."
+msgstr ""
+"يتم إعداد التقارير وترميزها، ومراجعة المصادر، وإدخال الحالات في نظام السجل "
+"الآلي."
+
+#, fuzzy
+msgid ""
+"solo los casos validados se incorporan a la base consolidada; con ellos el "
+"RNC prepara y emite resultados estadísticos."
+msgstr ""
+"تتم إضافة الحالات التي تم التحقق منها فقط إلى قاعدة البيانات الموحدة؛ يقوم "
+"RNC بإعداد وإصدار النتائج الإحصائية منها."
+
+#, fuzzy
+msgid "porcentaje = (casos de la categoría / total de referencia) × 100"
+msgstr "النسبة المئوية = (حالات الفئة / إجمالي المرجع) × 100"
+
+#, fuzzy
+msgid ""
+"tasa ajustada = Σ (peso estándarᵢ × tasa específicaᵢ) / Σ (peso estándarᵢ)"
+msgstr ""
+"المعدل المعدل = Σ (الوزن القياسيᵢ × المعدل الخاص بالعمرᵢ) / Σ (الوزن "
+"القياسيᵢ)"
+
+#, fuzzy
+msgid "tasa cruda = (casos nuevos / población correspondiente) × 100 000"
+msgstr "المعدل الخام = (الحالات الجديدة / عدد السكان المقابل) × 100000"
+
+#, fuzzy
+msgid "tasa específicaᵢ = (casos nuevosᵢ / poblaciónᵢ) × 100 000"
+msgstr "المعدل الخاص بالعمرᵢ = (الحالات الجديدةᵢ / السكانᵢ) × 100000"
+
+#, fuzzy
+msgid "describir la magnitud del cáncer como problema de salud en Cuba."
+msgstr "وصف حجم السرطان كمشكلة صحية في كوبا."
+
+#, fuzzy
+msgid ""
+"transcribe la Resolución 31/2008 como traslado de la Oficina Central a la "
+"Unidad Nacional para el Control del Cáncer, bajo su dirección y en "
+"coordinación con Estadísticas del MINSAP. Las denominaciones de las fuentes "
+"no coinciden literalmente."
+msgstr ""
+"يصف القرار 31/2008 بأنه نقل المكتب المركزي إلى الوحدة الوطنية لمكافحة "
+"السرطان، تحت إدارتها وبالتنسيق مع إحصائيات وزارة الصحة والسكان. المصادر لا "
+"تستخدم أسماء متطابقة."
+
+#, fuzzy
+msgid ""
+" representa un estrato de edad (y cualquier otra dimensión que se mantenga "
+"fija). Comparar estratos exige que la definición de grupo y el período sean "
+"consistentes."
+msgstr ""
+"  يمثل طبقة عمرية (وأي بعد آخر يظل ثابتًا). تتطلب مقارنة الطبقات تعريفات "
+"وفترات متسقة للمجموعة."
+
+#, fuzzy
+msgid " y "
+msgstr " و "
+
+#, fuzzy
+msgid "Agrupación"
+msgstr "التجميع"
+
+#, fuzzy
+msgid ""
+"Al combinar años, la población denominadora acumula las poblaciones anuales "
+"seleccionadas."
+msgstr ""
+"عند جمع السنوات، يكون مقام السكان هو مجموع التعداد السكاني السنوي المحدد."
+
+#, fuzzy
+msgid "Consulta"
+msgstr "الاستعلام"
+
+#, fuzzy
+msgid "Contexto de la consulta"
+msgstr "سياق الاستعلام"
+
+#, fuzzy
+msgid "Frecuencia relativa (%%) · %(unit)s"
+msgstr "التردد النسبي (%%) · %(unit)s"
+
+#, fuzzy
+msgid "Fuente y corte"
+msgstr "المصدر والاصدار"
+
+#, fuzzy
+msgid "Gráfico"
+msgstr "الرسم البياني"
+
+#, fuzzy
+msgid "Indicador del gráfico"
+msgstr "مقياس الرسم البياني"
+
+#, fuzzy
+msgid ""
+"Las tasas se calculan con la unidad elegida; los grupos de localización "
+"pueden solaparse en personas distintas. "
+msgstr ""
+"تستخدم الأسعار الوحدة المحددة؛ قد تتداخل مجموعات المواقع لأشخاص مختلفين. "
+
+#, fuzzy
+msgid ""
+"Métodos candidatos; denominadores sintéticos, no son resultados oficiales. "
+msgstr "أساليب المرشح؛ المقامات اصطناعية وليست نتائج رسمية. "
+
+#, fuzzy
+msgid "No disponible en este corte"
+msgstr "غير متوفر في هذا الإصدار"
+
+#, fuzzy
+msgid "Nota"
+msgstr "ملاحظة"
+
+#, fuzzy
+msgid "Personas distintas (frecuencia absoluta)"
+msgstr "أشخاص مميزون (التكرار المطلق)"
+
+#, fuzzy
+msgid "Porcentaje (%)"
+msgstr "النسبة المئوية (%)"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "نسبة كل فئة (%)"
+
+#, fuzzy
+msgid "Selección"
+msgstr "التحديد"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000 · %(unit)s"
+msgstr "معدل Segi – Doll المعدل حسب العمر لكل 100000 · %(unit)s"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000 · %(unit)s"
+msgstr "المعدل الخام/العمر المحدد لكل 100000 · %(unit)s"
+
+#, fuzzy
+msgid "Todas las provincias"
+msgstr "جميع المحافظات"
+
+#, fuzzy
+msgid "Todos (%(first)s–%(last)s)"
+msgstr "الكل (%(first)s–%(last)s)"
+
+#, fuzzy
+msgid "Todos los municipios"
+msgstr "جميع البلديات"
+
+#, fuzzy
+msgid "Tumores (frecuencia absoluta)"
+msgstr "الأورام (التكرار المطلق)"
+
+#, fuzzy
+msgid "rnc-synthetic-query"
+msgstr "RNC-الاستعلام الاصطناعي"
+
+#, fuzzy
+msgid "Datos sintéticos · %(period)s"
+msgstr "البيانات الاصطناعية · %(period)s"
+
+#, fuzzy
+msgid "Datos sintéticos · %(title)s · Versión %(release)s"
+msgstr "البيانات الاصطناعية · %(title)s · الإصدار %(release)s"
+
+#, fuzzy
+msgid "Distribución por sexo (%)"
+msgstr "التوزيع حسب الجنس (%)"
+
+#, fuzzy
+msgid ""
+"El tamaño o rótulo del punto indica cuántas categorías coinciden en las "
+"mismas coordenadas."
+msgstr ""
+"يشير حجم النقطة أو التسمية إلى عدد الفئات المتداخلة في نفس الإحداثيات."
+
+#, fuzzy
+msgid "Frecuencias absolutas"
+msgstr "الترددات المطلقة"
+
+#, fuzzy
+msgid "Localizaciones más frecuentes"
+msgstr "المواقع الأكثر شيوعا"
+
+#, fuzzy
+msgid "No hay cobertura de población completa para el ajuste seleccionado."
+msgstr "لا توجد تغطية سكانية كاملة للتعديل المحدد."
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "لا توجد قيم موجبة لعرضها كمقطوعة موسيقية."
+
+#, fuzzy
+msgid "RNC / Cuba · Detalle de consulta"
+msgstr "RNC / كوبا · تفاصيل الاستعلام"
+
+#, fuzzy
+msgid ""
+"Seleccione una dimensión con hasta ocho categorías para circular o anillo."
+msgstr ""
+"حدد بُعدًا لا يحتوي على أكثر من ثماني فئات للمخطط الدائري أو الدائري المجوف."
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "الأورام والأشخاص المتميزين"
+
+#, fuzzy
+msgid "Detalle %(page)s"
+msgstr "التفاصيل %(page)s"
+
+#, fuzzy
+msgid "Cuba (nacional)"
+msgstr "كوبا (وطنية)"
+
+#, fuzzy
+msgid ""
+"Este gráfico necesita al menos dos categorías con datos en la dimensión "
+"elegida."
+msgstr "يتطلب هذا المخطط فئتين على الأقل ببيانات في البعد المحدد."
+
+#, fuzzy
+msgid ""
+"La comparación por sexo requiere datos disponibles de mujeres y hombres."
+msgstr "تتطلب المقارنة بين الجنسين بيانات لكل من النساء والرجال."
+
+#, fuzzy
+msgid "Provincias disponibles; cobertura nacional incompleta"
+msgstr "المحافظات المتاحة التغطية الوطنية غير مكتملة"
+
+#, fuzzy
+msgid "Administración RNC"
+msgstr "إدارة RNC"
+
+#, fuzzy
+msgid "Filtros de la consulta"
+msgstr "مرشحات الاستعلام"
+
+#, fuzzy
+msgid "Navegación RNC"
+msgstr "الملاحة RNC"
+
+#, fuzzy
+msgid "Portal público"
+msgstr "البوابة العامة"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "النساء"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "الرجال"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "القصبة الهوائية والقصبات الهوائية والرئة"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "البروستاتا"
+
+#, fuzzy
+msgid "Mama"
+msgstr "الثدي"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "القولون والمستقيم"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "المعدة"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "عنق الرحم"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "جسم الرحم"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "الغدة الدرقية"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "البنكرياس"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "المثانة البولية"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "الكلى"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "الكبد والقنوات الصفراوية"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "المبيض"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "الحنجرة والبلعوم"
+
+#, fuzzy
+msgid ""
+"Grupo ilustrativo sintético; no representa un código TOPO ni una "
+"equivalencia ICD-O: %(category)s."
+msgstr ""
+"مجموعة تركيبية توضيحية؛ إنه ليس رمز TOPO أو مكافئ ICD-O: %(category)s."
+
+#, fuzzy
+msgid "Código de provincia documentado en el Manual RNC VII, Anexo 1."
+msgstr "رمز المقاطعة موثق في دليل RNC السابع، الملحق 1."
+
+#, fuzzy
+msgid "Ampliar barra lateral"
+msgstr "قم بتوسيع الشريط الجانبي"
+
+#, fuzzy
+msgid "La consulta local aún no está disponible en este dispositivo."
+msgstr "الاستعلام دون اتصال غير متاح على هذا الجهاز حتى الآن."
+
+#, fuzzy
+msgid "Use letras de la A a la Z, números, punto, guion o guion bajo."
+msgstr ""
+"استخدم الحروف من A إلى Z أو الأرقام أو النقاط أو الواصلات أو الشرطات "
+"السفلية."
+
+#, fuzzy
+msgid "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."
+msgstr ""
+"استخدم الحروف أو المسافات أو الفواصل العليا أو الواصلات؛ على سبيل المثال، "
+"ماريا خوسيه."
+
+#, fuzzy
+msgid "Use texto, números y puntuación habitual; sin etiquetas HTML."
+msgstr "استخدم النص والأرقام وعلامات الترقيم الشائعة؛ لا توجد علامات HTML."
+
+#, fuzzy
+msgid ""
+"Busque por nombre, usuario o correo; no se admiten símbolos de programación."
+msgstr ""
+"البحث حسب الاسم أو اسم المستخدم أو البريد الإلكتروني؛ رموز البرمجة غير مسموح"
+" بها."
+
+#, fuzzy
+msgid "Incluya una descripción con letras o números."
+msgstr "قم بتضمين وصف بأحرف أو أرقام."
+
+#, fuzzy
+msgid "Complete este campo."
+msgstr "أكمل هذا الحقل."
+
+#, fuzzy
+msgid "Marque esta casilla para continuar."
+msgstr "حدّد هذا المربع للمتابعة."
+
+#, fuzzy
+msgid "No se pudo enviar el formulario"
+msgstr "لا يمكن تقديم النموذج."
+
+#, fuzzy
+msgid ""
+"La sesión del formulario ha caducado o no se pudo verificar. Vuelva a abrir "
+"la página e inténtelo otra vez. No se guardó este envío."
+msgstr ""
+"انتهت صلاحية جلسة النموذج الخاصة بك أو لا يمكن التحقق منها. أعد فتح الصفحة "
+"وحاول مرة أخرى. لم يتم حفظ هذا الإرسال."
+
+#, fuzzy
+msgid ""
+"La dirección no existe o el recurso ya no está disponible. Puede continuar "
+"desde la navegación del portal."
+msgstr ""
+"هذا العنوان غير موجود أو أن المورد لم يعد متوفرًا. يمكنك الاستمرار في "
+"استخدام التنقل عبر البوابة الإلكترونية."
+
+#, fuzzy
+msgid "%(label)s, código %(number)s"
+msgstr "%(label)s، الكود %(number)s"
+
+#, fuzzy
+msgid "%(label)s: código repetido para el mismo sistema y edición."
+msgstr "%(label)s: رمز مكرر لنفس النظام والإصدار."
+
+#, fuzzy
+msgid "%(label)s: debe contener uno o más códigos."
+msgstr "%(label)s: يجب أن يحتوي على رمز واحد أو أكثر."
+
+#, fuzzy
+msgid "%(label)s: eje no admitido."
+msgstr "%(label)s: محور غير معتمد."
+
+#, fuzzy
+msgid "%(label)s: estado de código no admitido."
+msgstr "%(label)s: حالة الكود غير مدعومة."
+
+#, fuzzy
+msgid "%(label)s: estado de publicación no admitido."
+msgstr "%(label)s: حالة النشر غير مدعومة."
+
+#, fuzzy
+msgid "%(label)s: estado de relación no admitido."
+msgstr "%(label)s: حالة العلاقة غير مدعومة."
+
+#, fuzzy
+msgid "%(label)s: faltan campos requeridos."
+msgstr "%(label)s: الحقول المطلوبة مفقودة."
+
+#, fuzzy
+msgid "%(label)s: hay campos vacíos o con tipo inválido."
+msgstr "%(label)s: الحقول فارغة أو تحتوي على نوع غير صالح."
+
+#, fuzzy
+msgid "%(label)s: identificador de concepto duplicado."
+msgstr "%(label)s: معرف مفهوم مكرر."
+
+#, fuzzy
+msgid "%(label)s: la fuente debe ser una URL HTTP o HTTPS."
+msgstr "%(label)s: يجب أن يكون المصدر عنوان URL HTTP أو HTTPS."
+
+#, fuzzy
+msgid "%(label)s: relación de concepto no admitida."
+msgstr "%(label)s: علاقة مفهوم غير مدعومة."
+
+#, fuzzy
+msgid "Archivo validado y registrado. Revise el corte antes de publicarlo."
+msgstr "تم التحقق من صحة الملف وتسجيله. قم بمراجعة الإصدار قبل نشره."
+
+#, fuzzy
+msgid "CSV no válido; revise codificación y estructura."
+msgstr "ملف CSV غير صالح؛ تحقق من ترميزه وبنيته."
+
+#, fuzzy
+msgid "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+msgstr "يجب أن تغطي كل منطقة وسنة كلا الجنسين وجميع الفئات العمرية الـ 18."
+
+#, fuzzy
+msgid "Comportamiento"
+msgstr "السلوك"
+
+#, fuzzy
+msgid "Concepto %(number)s"
+msgstr "المفهوم %(number)s"
+
+#, fuzzy
+msgid "Correspondencia exacta"
+msgstr "تطابق تام"
+
+#, fuzzy
+msgid "Código del concepto"
+msgstr "رمز المفهوم"
+
+#, fuzzy
+msgid "Declarado por la fuente"
+msgstr "صرح بذلك المصدر"
+
+#, fuzzy
+msgid "Ejecute seed_demo para generar el ejemplo local."
+msgstr "قم بتشغيل Seed_demo لإنشاء العينة المحلية."
+
+#, fuzzy
+msgid "El archivo debe contener un arreglo 'concepts'."
+msgstr "يجب أن يحتوي الملف على مصفوفة \"مفاهيم\"."
+
+#, fuzzy
+msgid "El archivo no contiene registros."
+msgstr "الملف لا يحتوي على سجلات."
+
+#, fuzzy
+msgid "El catálogo configurado no se puede leer como JSON UTF-8."
+msgstr "لا يمكن قراءة الكتالوج الذي تم تكوينه كـ UTF-8 JSON."
+
+#, fuzzy
+msgid "El catálogo declara validación RNC"
+msgstr "يعلن الكتالوج عن التحقق من صحة RNC"
+
+#, fuzzy
+msgid "El ejemplo ya alcanzó el límite de filas del entorno local."
+msgstr "وصلت العينة المحلية إلى الحد الأقصى للصفوف لهذه البيئة."
+
+#, fuzzy
+msgid "El límite local es de 60 000 filas."
+msgstr "الحد المحلي هو 60.000 صف."
+
+#, fuzzy
+msgid "El service worker solo está habilitado en el perfil público."
+msgstr "عامل الخدمة متاح فقط في الملف الشخصي العام."
+
+#, fuzzy
+msgid "Esta entrega ya está registrada."
+msgstr "لقد تم بالفعل تسجيل هذا التسليم."
+
+#, fuzzy
+msgid "Esta entrega ya está registrada; no se incorporó otra copia."
+msgstr "لقد تم بالفعل تسجيل هذا التسليم؛ لم تتم إضافة أي نسخة مكررة."
+
+#, fuzzy
+msgid "Estadio"
+msgstr "المرحلة"
+
+#, fuzzy
+msgid "Estado actualizado. El portal público ya refleja este cambio."
+msgstr "تم تحديث الحالة. يعكس الموقع العام الآن هذا التغيير."
+
+#, fuzzy
+msgid "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+msgstr "هيكل غير متوافق. قم بتنزيل العينة الاصطناعية بتنسيق CSV."
+
+#, fuzzy
+msgid "Fila %(number)s: categoría no admitida."
+msgstr "الصف %(number)s: فئة غير مدعومة."
+
+#, fuzzy
+msgid "Fila %(number)s: denominador inconsistente."
+msgstr "الصف %(number)s: مقام غير متناسق."
+
+#, fuzzy
+msgid "Fila %(number)s: estructura o longitud incorrecta."
+msgstr "الصف %(number)s: بنية أو طول غير صالح."
+
+#, fuzzy
+msgid "Fila %(number)s: formato de identificador sintético no admitido."
+msgstr "الصف %(number)s: تنسيق معرف اصطناعي غير مدعوم."
+
+#, fuzzy
+msgid "Fila %(number)s: identidad sintética inconsistente."
+msgstr "الصف %(number)s: هوية تركيبية غير متناسقة."
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de catálogo desconocido."
+msgstr "الصف %(number)s: معرف كتالوج غير معروف."
+
+#, fuzzy
+msgid "Fila %(number)s: identificador de tumor repetido."
+msgstr "الصف %(number)s: معرف الورم المكرر."
+
+#, fuzzy
+msgid "Fila %(number)s: persona incompatible con el estrato declarado."
+msgstr "الصف %(number)s: الشخص لا يطابق الطبقة المعلنة."
+
+#, fuzzy
+msgid "Fila %(number)s: período, población o peso incompatible."
+msgstr "الصف %(number)s: الفترة أو عدد السكان أو الوزن غير متوافق."
+
+#, fuzzy
+msgid "Fila %(number)s: se requieren números enteros."
+msgstr "الصف %(number)s: يجب أن تكون القيم أرقامًا صحيحة."
+
+#, fuzzy
+msgid "Fila %(number)s: solo se admite el contrato sintético de demostración."
+msgstr "الصف %(number)s: يتم قبول العقد التجريبي الاصطناعي فقط."
+
+#, fuzzy
+msgid "Formato no disponible"
+msgstr "التنسيق غير متوفر"
+
+#, fuzzy
+msgid "Grado"
+msgstr "الصف"
+
+#, fuzzy
+msgid "Grupo de clasificación"
+msgstr "مجموعة التصنيف"
+
+#, fuzzy
+msgid "Identificador de publicación inválido."
+msgstr "معرف الإصدار غير صالح."
+
+#, fuzzy
+msgid "La acción ya no es válida para el estado actual."
+msgstr "لم يعد هذا الإجراء صالحًا للحالة الحالية."
+
+#, fuzzy
+msgid "Mismo concepto"
+msgstr "نفس المفهوم"
+
+#, fuzzy
+msgid "Morfología"
+msgstr "مورفولوجيا"
+
+#, fuzzy
+msgid "Más amplio"
+msgstr "أوسع"
+
+#, fuzzy
+msgid "Más específico"
+msgstr "أضيق"
+
+#, fuzzy
+msgid "No hay paquete offline disponible."
+msgstr "لا توجد حزمة غير متاحة."
+
+#, fuzzy
+msgid "No se encontró el service worker."
+msgstr "تعذر العثور على عامل الخدمة."
+
+#, fuzzy
+msgid "No se pudo iniciar sesión. Espere unos minutos."
+msgstr "فشل تسجيل الدخول. يرجى الانتظار بضع دقائق."
+
+#, fuzzy
+msgid "Otro"
+msgstr "أخرى"
+
+#, fuzzy
+msgid "Relacionado"
+msgstr "ذات صلة"
+
+#, fuzzy
+msgid "Se alcanzó el límite temporal de exportaciones. Espere un minuto."
+msgstr "تم الوصول إلى حد التصدير المؤقت. من فضلك انتظر دقيقة واحدة."
+
+#, fuzzy
+msgid "Solo se puede liberar el conjunto sintético de demostración."
+msgstr "يمكن نشر مجموعة البيانات التجريبية الاصطناعية فقط."
+
+#, fuzzy
+msgid "Topografía"
+msgstr "التضاريس"
+
+#, fuzzy
+msgid "Utilice un CSV de hasta 12 MB."
+msgstr "استخدم ملف CSV لا يزيد حجمه عن 12 ميجابايت."
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito mayor que cero."
+msgstr "يجب أن يكون %(label)s عددًا محدودًا أكبر من الصفر."
+
+#, fuzzy
+msgid "%(label)s debe ser un número finito no negativo."
+msgstr "يجب أن يكون %(label)s عددًا غير سالب ومحدود."
+
+#, fuzzy
+msgid "Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos."
+msgstr "يجب أن تغطي الحالات والتعدادات والأوزان نفس الطبقات غير الفارغة."
+
+#, fuzzy
+msgid "El conteo debe ser un entero no negativo."
+msgstr "يجب أن يكون العدد عددًا صحيحًا غير سالب."
+
+#, fuzzy
+msgid "El nivel de confianza debe estar entre cero y uno."
+msgstr "يجب أن يكون مستوى الثقة بين صفر وواحد."
+
+#, fuzzy
+msgid "El numerador no puede exceder el universo declarado."
+msgstr "لا يمكن للبسط أن يتجاوز الكون المذكور."
+
+#, fuzzy
+msgid "El universo debe ser mayor que cero."
+msgstr "يجب أن يكون الكون أكبر من الصفر."
+
+#, fuzzy
+msgid "La suma de los pesos estándar debe ser mayor que cero."
+msgstr "يجب أن يكون مجموع الأوزان القياسية أكثر من الصفر."
+
+#, fuzzy
+msgid "Valor numérico fuera de rango."
+msgstr "القيمة الرقمية خارج النطاق."
+
+#: public_site/portal.py:387
+#, fuzzy
+msgid "actualizacion_sintetica"
+msgstr "تحديث_بيانات_اصطناعي"
+
+#: public_site/validation.py:29 public_site/validation.py:58
+#, fuzzy
+msgid "Use al menos %(limit_value)s caracteres."
+msgstr "أدخل %(limit_value)s أحرف على الأقل."
+
+#: public_site/validation.py:30 public_site/validation.py:62
+#, fuzzy
+msgid "Use como máximo %(limit_value)s caracteres."
+msgstr "أدخل %(limit_value)s أحرف كحد أقصى."
+
+#: public_site/validation.py:88
+#, fuzzy
+msgid "Ingrese un correo electrónico válido."
+msgstr "أدخل عنوان بريد إلكتروني صالحًا."
+
+#: public_site/validation.py:101
+#, fuzzy
+msgid "Seleccione una opción válida."
+msgstr "اختر خيارًا صالحًا."
+
+#, fuzzy
+msgid "Contraseña"
+msgstr "كلمة المرور"
+
+#, fuzzy
+msgid "Contraseña actual"
+msgstr "كلمة المرور القديمة"
+
+#, fuzzy
+msgid "Nueva contraseña"
+msgstr "كلمة المرور الجديدة"
+
+#, fuzzy
+msgid "Confirmar nueva contraseña"
+msgstr "تأكيد كلمة المرور الجديدة"
+
+#, fuzzy
+msgid "Repita la misma contraseña para confirmar."
+msgstr "أدخل نفس كلمة المرور كما كان من قبل، للتحقق."
+
+#, fuzzy
+msgid "La contraseña no debe parecerse a sus datos personales."
+msgstr "اختر كلمة مرور لا تشبه معلوماتك الشخصية كثيرًا."
+
+#, fuzzy
+msgid "La contraseña no debe ser muy similar a sus otros datos personales."
+msgstr ""
+"لا يمكن أن تكون كلمة المرور الخاصة بك مشابهة جدًا لمعلوماتك الشخصية الأخرى."
+
+#, fuzzy
+msgid ""
+"La contraseña es demasiado corta; debe contener al menos %(min_length)s "
+"caracteres."
+msgstr ""
+"كلمة المرور هذه قصيرة جدًا. يجب أن يحتوي على %(min_length)s من الأحرف على "
+"الأقل."
+
+#, fuzzy
+msgid "La contraseña debe tener al menos %(min_length)s caracteres."
+msgstr ""
+"يجب أن تحتوي كلمة المرور الخاصة بك على %(min_length)s من الأحرف على الأقل."
+
+#, fuzzy
+msgid "Elija una contraseña que no sea de uso común."
+msgstr "اختر كلمة مرور غير شائعة الاستخدام."
+
+#, fuzzy
+msgid "No utilice una contraseña de uso común."
+msgstr "لا يمكن أن تكون كلمة المرور الخاصة بك كلمة مرور شائعة الاستخدام."
+
+#, fuzzy
+msgid "La contraseña no puede contener solo números."
+msgstr "كلمة المرور هذه رقمية بالكامل."
+
+#, fuzzy
+msgid "No utilice solo números como contraseña."
+msgstr "لا يمكن أن تكون كلمة المرور الخاصة بك رقمية بالكامل."
+
+#, fuzzy
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "حقلا كلمة المرور غير متطابقين."
+
+#, fuzzy
+msgid "La contraseña actual no es correcta."
+msgstr "تم إدخال كلمة المرور القديمة بشكل غير صحيح."
+
+#, fuzzy
+msgid "El usuario o la contraseña no son válidos."
+msgstr "الرجاء إدخال اسم المستخدم وكلمة المرور الصحيحة."
+
+#, fuzzy
+msgid "La cuenta no está activa."
+msgstr "هذا الحساب غير نشط."
+
+#, fuzzy
+msgid "Correo electrónico"
+msgstr "عنوان البريد الإلكتروني"
+
+#, fuzzy
+msgid "Vista previa de traducción automática"
+msgstr "معاينة الترجمة الآلية (مسودة)"
+
+#, fuzzy
+msgid ""
+"Este idioma usa un borrador no revisado ni aprobado. No lo use para "
+"interpretar estadísticas de cáncer."
+msgstr ""
+"تستخدم هذه اللغة مسودة لم تخضع لمراجعة بشرية أو موافقة مؤسسية. لا تستخدمها "
+"لتفسير إحصاءات السرطان."
+
+#, fuzzy
+msgid "borrador de vista previa"
+msgstr "— مسودة معاينة"
+
+#, fuzzy
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · الإدارة"
+
+#, fuzzy
+msgid "Roles"
+msgstr "الأدوار"
+
+#, fuzzy
+msgid "Selecciona una acción"
+msgstr "اختر إجراءً"
+
+#, fuzzy
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr "إذا وُجد حساب نشط بهذا البريد الإلكتروني، فستتلقى التعليمات."

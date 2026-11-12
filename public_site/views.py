@@ -1,5 +1,6 @@
 from django.contrib.auth.views import LoginView
 from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 from .access import can
 from .forms import LoginForm
 
@@ -13,7 +14,7 @@ class RoleLoginView(LoginView):
 
         if limited(request, "login", 10):
             form = self.get_form()
-            form.add_error(None, "No se pudo iniciar sesión. Espere unos minutos.")
+            form.add_error(None, _("No se pudo iniciar sesión. Espere unos minutos."))
             return self.form_invalid(form)
         return super().post(request, *args, **kwargs)
 
