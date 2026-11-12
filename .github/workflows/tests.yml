@@ -90,6 +90,8 @@ jobs:
         run: python scripts/compile_translations.py
       - name: Install Chromium
         run: python -m playwright install --with-deps chromium
+      - name: Review the browser-based translation site
+        run: python scripts/review_translation_site.py
       - name: Run PWA offline and functional review
         run: python scripts/review_pwa.py
       - name: Run synthetic PWA stress profile
