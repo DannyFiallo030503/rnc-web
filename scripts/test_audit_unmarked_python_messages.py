@@ -66,6 +66,50 @@ class UnmarkedPythonMessageAuditTests(unittest.TestCase):
         )
         self.assertEqual(findings, [])
 
+    def test_unmarked_form_labels_choices_errors_and_widget_text_are_detected(self):
+        findings = self.scan(
+            'from django import forms\n'
+            'forms.CharField(label="Account", help_text="Enter your account name")\n'
+            'forms.ChoiceField(choices=[("a", "A choice")], '
+            'error_messages={"invalid_choice": "Choose a valid option"}, '
+            'widget=forms.Select(attrs={"aria-label": "Account role"}))\n'
+            'field.label = "User name"\n'
+            'field.help_text = "You can change this later"\n'
+            'attrs.update({"placeholder": "Choose an account"})\n'
+        )
+        self.assertEqual(len(findings), 8)
+        for expected in (
+            "Account", "Enter your account name", "A choice",
+            "Choose a valid option", "Account role", "User name",
+            "You can change this later", "Choose an account",
+        ):
+            self.assertTrue(any(expected in finding for finding in findings), expected)
+
+    def test_gettext_field_copy_is_accepted(self):
+        findings = self.scan(
+            'from django import forms\n'
+            'from django.utils.translation import gettext_lazy as _\n'
+            'forms.CharField(label=_("Account"), help_text=_("Enter an account name"))\n'
+            'forms.ChoiceField(choices=[("a", _("A choice"))], '
+            'error_messages={"invalid_choice": _("Choose a valid option")}, '
+            'widget=forms.Select(attrs={"aria-label": _("Account role")}))\n'
+            'field.label = _("User name")\n'
+            'field.help_text = _("You can change this later")\n'
+            'attrs.update({"placeholder": _("Choose an account")})\n'
+        )
+        self.assertEqual(findings, [])
+
+    def test_database_migration_snapshots_are_not_treated_as_live_ui_source(self):
+        with tempfile.TemporaryDirectory(prefix="rnc-migration-audit-") as directory:
+            migrations = Path(directory) / "migrations"
+            migrations.mkdir()
+            path = migrations / "0001_initial.py"
+            path.write_text(
+                'models.CharField(verbose_name="ID", choices=[("a", "Archived label")])\n',
+                encoding="utf-8",
+            )
+            self.assertEqual(scan_paths([path]), [])
+
 
 if __name__ == "__main__":
     unittest.main()

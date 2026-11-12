@@ -25,6 +25,12 @@ MESSAGE_SINK_ARGUMENTS = {
 }
 ADMIN_SITE_LABELS = {"site_header", "site_title", "index_title"}
 TEMPLATE_CONTEXT_LABELS = {"heading", "intro", "submit_label", "title"}
+FIELD_TEXT_KEYWORDS = {
+    "label", "help_text", "verbose_name", "verbose_name_plural", "error_messages"
+}
+WIDGET_TEXT_ATTRIBUTES = {
+    "alt", "aria-label", "data-label", "data-rule-message", "placeholder", "title"
+}
 
 
 def _callee_name(function):
@@ -158,6 +164,92 @@ def _admin_translation_findings(tree, source, path):
     return findings
 
 
+def _field_translation_findings(tree, source, path):
+    """Check labels, help, choices and validation copy attached to Django fields."""
+    findings = []
+    # Migration files are frozen database-state snapshots, not live UI source.
+    if "migrations" in Path(path).parts:
+        return findings
+
+    def add(node, expression):
+        if _is_localized(expression):
+            return
+        if _literal_string(expression) and expression.value.strip():
+            snippet = ast.get_source_segment(source, expression) or repr(expression.value)
+            findings.append(
+                f"{path}:{node.lineno}: texto visible de campo sin gettext: {snippet}"
+            )
+
+    def dictionary_values(expression):
+        if isinstance(expression, ast.Dict):
+            return zip(expression.keys, expression.values)
+        return ()
+
+    def choice_labels(expression):
+        if not isinstance(expression, (ast.List, ast.Tuple)):
+            return
+        for option in expression.elts:
+            if isinstance(option, (ast.List, ast.Tuple)) and len(option.elts) >= 2:
+                yield option.elts[1]
+
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call):
+            callee = _callee_name(node.func).split(".")[-1]
+            if callee == "update" and node.args and isinstance(node.args[0], ast.Dict):
+                receiver = _callee_name(node.func.value).lower()
+                for key, value in dictionary_values(node.args[0]):
+                    if not _literal_string(key):
+                        continue
+                    if key.value in WIDGET_TEXT_ATTRIBUTES and "attrs" in receiver:
+                        add(node, value)
+                    elif key.value in FIELD_TEXT_KEYWORDS and "error_messages" in receiver:
+                        add(node, value)
+            if not callee.endswith("Field"):
+                continue
+            for keyword in node.keywords:
+                if keyword.arg in FIELD_TEXT_KEYWORDS:
+                    values = (
+                        [value for _key, value in dictionary_values(keyword.value)]
+                        if keyword.arg == "error_messages"
+                        else [keyword.value]
+                    )
+                    for value in values:
+                        add(node, value)
+                elif keyword.arg == "choices":
+                    for value in choice_labels(keyword.value):
+                        add(node, value)
+                elif keyword.arg == "widget" and isinstance(keyword.value, ast.Call):
+                    for widget_keyword in keyword.value.keywords:
+                        if widget_keyword.arg != "attrs":
+                            continue
+                        for key, value in dictionary_values(widget_keyword.value):
+                            if _literal_string(key) and key.value in WIDGET_TEXT_ATTRIBUTES:
+                                add(node, value)
+
+        if isinstance(node, (ast.Assign, ast.AnnAssign)):
+            targets = node.targets if isinstance(node, ast.Assign) else [node.target]
+            value = node.value
+            for target in targets:
+                if isinstance(target, ast.Attribute) and target.attr in {"label", "help_text"}:
+                    add(node, value)
+                elif (
+                    isinstance(target, ast.Subscript)
+                    and isinstance(target.value, ast.Attribute)
+                    and target.value.attr == "error_messages"
+                ):
+                    add(node, value)
+                elif (
+                    isinstance(target, ast.Subscript)
+                    and isinstance(target.value, ast.Attribute)
+                    and target.value.attr == "attrs"
+                    and isinstance(target.slice, ast.Constant)
+                    and target.slice.value in WIDGET_TEXT_ATTRIBUTES
+                ):
+                    add(node, value)
+
+    return findings
+
+
 def scan_paths(paths):
     findings = []
     for path in paths:
@@ -172,6 +264,7 @@ def scan_paths(paths):
         except ValueError:
             display_path = path
         findings.extend(_admin_translation_findings(tree, source, display_path))
+        findings.extend(_field_translation_findings(tree, source, display_path))
         raised_calls = {
             id(node.exc)
             for node in ast.walk(tree)
