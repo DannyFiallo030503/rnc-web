@@ -1,5 +1,8 @@
 "use strict";
 (() => {
+  window.RncQueryTemplate ||= document.querySelector(".query-workspace")?.cloneNode(true);
+  let dismissBound = false;
+  function initialize(root = document) {
   const t = message => window.gettext ? window.gettext(message) : message;
   const format = (message, values) => window.interpolate
     ? window.interpolate(t(message), values, true)
@@ -12,7 +15,7 @@
     email: /^[A-Za-z0-9.!#$%&'*+\/=?^_`{|}~@-]+$/u,
   };
   const validCharacters = (input, value) => !rules[input.dataset.rule] || !value || rules[input.dataset.rule].test(value.normalize("NFC").replace(/\u00a0/g," "));
-  document.querySelectorAll("[data-help-trigger]").forEach((help) => {
+  root.querySelectorAll("[data-help-trigger]").forEach((help) => {
     const popover=help?.querySelector(".filter-help-popover");
     let holdTimer, longPressed=false;
     const place=()=>{
@@ -39,10 +42,13 @@
     });
     help.addEventListener("keydown",(event)=>{if(event.key==="Escape")help.classList.remove("is-open");});
   });
-  document.addEventListener("click",(event)=>{
-    if(!event.target.closest(".filter-help")) document.querySelectorAll(".filter-help.is-open").forEach(item=>item.classList.remove("is-open"));
-  });
-  document.querySelectorAll("form[data-validate]").forEach((form) => {
+  if (!dismissBound) {
+    dismissBound = true;
+    document.addEventListener("click",(event)=>{
+      if(!event.target.closest(".filter-help")) document.querySelectorAll(".filter-help.is-open").forEach(item=>item.classList.remove("is-open"));
+    });
+  }
+  root.querySelectorAll("form[data-validate]").forEach((form) => {
     form.noValidate = true; // Inline messages replace browser bubbles; backend still validates.
     const inputs = [...form.querySelectorAll("input:not([type=hidden]),select,textarea")];
     const summary = form.querySelector("[data-error-summary]");
@@ -126,15 +132,39 @@
     });
     if (form.matches("[data-query-form]")) {
       const get=(name)=>form.elements.namedItem(name);
-      const applyButton=form.querySelector(".apply-filters");
+      let updateTimer;
+      function updateResults() {
+        clearTimeout(updateTimer);
+        updateTimer=setTimeout(()=>form.requestSubmit(),350);
+      }
       const requirementsNode=document.getElementById("chart-requirements-data");
       const requirementsData=requirementsNode ? JSON.parse(requirementsNode.textContent) : {};
       const compatibilityNode=document.getElementById("chart-compatibility-data");
       const compatibilityData=compatibilityNode ? JSON.parse(compatibilityNode.textContent) : {};
+      const dimensionField={period:"year",territory:"territory",municipality:"municipality",sex:"sex",age_group:"age",site:"site",site_group:"site"};
+      const categoryCount=dimension=>form.querySelectorAll(`input[name="${dimensionField[dimension]}"]`).length;
+      function prepareChart() {
+        const chart=get("chart").value;
+        const rule=compatibilityData[chart];
+        if(!rule)return;
+        // Each chart starts with a complete, compatible selection.
+        form.querySelectorAll('.query-multi-option input').forEach(input=>{input.checked=false;});
+        get("unit").value="tumors";
+        get("metric").value="count";
+        let dimension=["pie","doughnut"].includes(chart) ? "sex" : ["line","trend"].includes(chart) ? "period" : chart==="curve" ? "age_group" : ["scatter","strip","swarm","map"].includes(chart) ? "territory" : "site";
+        if(!rule.dimensions.includes(dimension) || categoryCount(dimension)<2) {
+          dimension=rule.dimensions.find(value=>categoryCount(value)>=2) || rule.dimensions[0];
+        }
+        get("dimension").value=dimension;
+        form.querySelectorAll(".query-multi-field").forEach(group=>{
+          clearFieldError(group.closest("[data-field]"));
+          refreshMultiGroup(group);
+        });
+      }
       function updateRequiredMarkers() {
         const profile=requirementsData[get("chart").value];
         if(!profile) return;
-        const dimensionFields={period:"year",territory:"territory",sex:"sex",age_group:"age",site:"site"};
+        const dimensionFields={period:"year",territory:"territory",municipality:"municipality",sex:"sex",age_group:"age",site:"site",site_group:"site"};
         const requiredFilters=new Set((profile.filter_fields || []).map(field=>field==="dimension" ? dimensionFields[get("dimension").value] : field).filter(Boolean));
         const axisField=dimensionFields[get("dimension").value];
         if(axisField)requiredFilters.add(axisField);
@@ -142,9 +172,6 @@
         form.querySelectorAll("[data-chart-required-indicator]").forEach(mark=>{
           mark.hidden=!requiredFilters.has(mark.dataset.requiredFilter);
         });
-      }
-      function updateApplyButton() {
-        if(applyButton) applyButton.disabled=Boolean(form.querySelector(".form-field.has-error"));
       }
       function clearFieldError(container) {
         if(!container) return;
@@ -174,12 +201,11 @@
           clearFieldError(group.closest("[data-field]"));
           refreshMultiGroup(group);
           compatible();
-          updateApplyButton();
+          updateResults();
         });
         group.querySelectorAll(".query-multi-option input").forEach(input=>input.addEventListener("change",()=>{
           clearFieldError(group.closest("[data-field]"));
           refreshMultiGroup(group);
-          updateApplyButton();
         }));
       });
       function compatible() {
@@ -199,22 +225,27 @@
           if(["strip","swarm","scatter"].includes(option.value) && ["territory","age_group"].includes(dimension) && selectedCount(dimension==="territory" ? "territory" : "age")===1) reason=t("This chart needs at least two categories; clear the single-province or single-age filter.");
           if(option.value==="scatter" && !["territory","age_group"].includes(dimension)) reason=t("Scatter plots compare provinces or age groups.");
           if(option.value==="scatter" && (metric!=="count" || unit!=="tumors")) reason=t("Scatter plots compare absolute counts of tumors and distinct people.");
-          if(option.value==="scatter" && ["year","territory","municipality","sex","age","site"].some(key=>selectedCount(key)>1)) reason=t("A scatter plot needs a selection where distinct people can be counted without overlap.");
+          if(option.value==="scatter" && form.dataset.personsDisjoint!=="true" && ["year","territory","municipality","sex","age","site"].some(key=>selectedCount(key)>1)) reason=t("A scatter plot needs a selection where distinct people can be counted without overlap.");
           if(["grouped","stacked","percent"].includes(option.value) && (selectedCount("sex")>0 || dimension==="sex")) reason=t("La comparación por sexo requiere ambos sexos y otra dimensión.");
           if(["stacked","percent"].includes(option.value) && metric!=="count") reason=t("Las barras apiladas requieren frecuencias absolutas.");
           if(["pie","doughnut"].includes(option.value) && (!["count","share"].includes(metric) || (unit==="persons" && dimension!=="sex"))) reason=t("La composición requiere categorías excluyentes; para personas, compare por sexo.");
-          option.disabled=Boolean(reason);option.title=reason;
+          // A different chart prepares its own selection instead of inheriting
+          // incompatibilities from the current chart.
+          option.disabled=false;option.title=option.selected ? reason : "";
           if(option.selected)get("chart").dataset.compatError=reason;
         }
         const activeRule=compatibilityData[get("chart").value] || {};
         for(const option of dimensionOptions) {
           let allowed=(activeRule.dimensions || []).includes(option.value);
           if(["pie","doughnut"].includes(get("chart").value) && unit==="persons") allowed=option.value==="sex";
+
           option.disabled=!allowed && !option.selected;
           option.title=allowed ? "" : t("Esta dimensión no está disponible para el gráfico seleccionado.");
         }
         for(const option of metricOptions) {
-          const allowed=(activeRule.metrics || []).includes(option.value);
+          let allowed=(activeRule.metrics || []).includes(option.value);
+          if(get("dimension").value==="stage" && !["count","share"].includes(option.value))allowed=false;
+          if((["site","site_group"].includes(dimension) || selectedCount("site")) && get("cohort")?.value==="all" && ["rate","asr"].includes(option.value))allowed=false;
           option.disabled=!allowed && !option.selected;
           option.title=allowed ? "" : t("Este indicador no está disponible para el gráfico seleccionado.");
         }
@@ -225,28 +256,41 @@
           option.title=allowed ? "" : t("Esta unidad no está disponible para el gráfico seleccionado.");
         }
         const chart=get("chart").value;
-        const limitOne=unit==="persons" || chart==="scatter";
+        const limitOne=form.dataset.personsDisjoint!=="true" && (unit==="persons" || chart==="scatter");
         for(const group of form.querySelectorAll(".query-multi-field")) {
           const field=group.querySelector("input")?.name;
           const selected=group.querySelectorAll("input:checked").length;
           const sexMustStayAll=["grouped","stacked","percent"].includes(chart) && field==="sex";
           const singleValueOnly=limitOne && ["year","territory","municipality","sex","age","site"].includes(field) && selected>0;
+          const axisMustStayAll=(["line","trend","curve","map","scatter","strip","swarm"].includes(chart) && field===dimensionField[dimension]) || (metric==="asr" && field==="age");
           group.querySelectorAll("input").forEach(input=>{
-            input.disabled=(sexMustStayAll && !input.checked) || (singleValueOnly && !input.checked);
+            const provinces=[...form.querySelectorAll('input[name="territory"]:checked')].map(item=>item.value);
+            const outsideProvince=field==="municipality" && provinces.length && !provinces.includes(input.value.slice(0,2));
+            input.disabled=Boolean(outsideProvince || axisMustStayAll || (sexMustStayAll && !input.checked) || (singleValueOnly && !input.checked));
           });
           const clearAll=group.querySelector("[data-select-all]");
           if(clearAll)clearAll.disabled=!(sexMustStayAll || (singleValueOnly && selected>0));
         }
         updateRequiredMarkers();
         const asr=get("metric").querySelector('[value="asr"]');
-        asr.disabled=Boolean(selectedCount("age") || dimension==="age_group");
+        asr.disabled=Boolean(selectedCount("age") || ["age_group","stage"].includes(dimension) || ((["site","site_group"].includes(dimension) || selectedCount("site")) && get("cohort")?.value==="all"));
         get("metric").dataset.compatError=asr.selected && asr.disabled ? t("El ajuste por edad requiere todos los grupos de edad y otra dimensión.") : "";
       }
       compatible();
-      form.addEventListener("change",()=>{compatible();show(get("chart"),message(get("chart")));show(get("metric"),message(get("metric")));});
-      form.addEventListener("input",updateApplyButton);
-      form.addEventListener("change",updateApplyButton);
-      updateApplyButton();
+      form.addEventListener("change",event=>{
+        if(event.target.name==="territory") {
+          const provinces=[...form.querySelectorAll('input[name="territory"]:checked')].map(item=>item.value);
+          form.querySelectorAll('input[name="municipality"]:checked').forEach(input=>{if(provinces.length && !provinces.includes(input.value.slice(0,2)))input.checked=false;});
+        }
+        if(event.target===get("chart"))prepareChart();
+        if(["cohort","dimension"].includes(event.target.name)) {
+          get("metric").value="count";
+          if(get("dimension").value==="stage")get("cohort").value="adult";
+          form.querySelectorAll('input[name="age"],input[name="site"]').forEach(input=>{input.checked=false;});
+        }
+        compatible();show(get("chart"),message(get("chart")));show(get("metric"),message(get("metric")));
+      });
+      form.addEventListener("change",updateResults);
     }
     form.addEventListener("submit", (event) => {
       const errors=[];
@@ -268,4 +312,7 @@
     });
     if (summary && !summary.hidden && links?.children.length) summary.focus({preventScroll:false});
   });
+  }
+  window.RncForms = {initialize};
+  initialize();
 })();

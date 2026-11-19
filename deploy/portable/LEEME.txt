@@ -1,0 +1,24 @@
+RNC - CONSULTA LOCAL PARA WINDOWS DE 64 BITS
+
+1. Extraiga todo el ZIP en una carpeta de su equipo (por ejemplo, Documentos).
+2. Abra la carpeta y haga doble clic en "Abrir RNC.cmd".
+3. El navegador se abre automaticamente. Mantenga abierta la ventana de RNC.
+
+No necesita instalar Python, Docker ni paquetes. No necesita Internet.
+Para terminar, cierre la ventana de RNC o pulse Ctrl+C dentro de ella.
+Para volver a entrar, abra de nuevo "Abrir RNC.cmd".
+
+La direccion local es http://127.0.0.1:8765/ y solo admite conexiones desde
+este equipo. No ofrece administracion, cuentas ni cargas de archivos clinicos.
+Incluye el corte agregado de 2022 y los recursos del sitio. No incluye
+registros individuales, identificadores ni contrasenas.
+
+El estado Online indica acceso al servidor local, no conexion a Internet.
+Cerrar el servidor no impide abrir la copia PWA si el navegador la preparo.
+Una copia PWA requiere visitar previamente el sitio desde ese navegador.
+
+No abra el comando desde dentro del ZIP. Conserve las subcarpetas juntas.
+Si el puerto esta ocupado, cierre la ventana anterior de RNC. No se detienen
+automaticamente otros programas. Ante errores, conserve el mensaje mostrado.
+
+Esta entrega requiere comprobarse tambien en un equipo Windows real del RNC.

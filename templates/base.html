@@ -1,25 +1,28 @@
 {% load static i18n %}
 <!doctype html>
-<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}" data-offline-unavailable="{% translate 'La consulta local aún no está disponible en este dispositivo.' %}">
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}" data-server-connection="checking" data-offline-unavailable="{% translate 'La consulta local aún no está disponible en este dispositivo.' %}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f5f4ef">
     <meta name="description" content="{% translate 'Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba.' %}">
     <title>{% block title %}{% translate "RNC · Estadísticas de cáncer en Cuba" %}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}?v=chart-overflow-20261113">
     <link rel="stylesheet" href="{% static 'css/components.css' %}">
     <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
     {% if public_pwa_enabled %}<link rel="manifest" href="{% static 'pwa/manifest.webmanifest' %}"><script src="{% static 'js/register-service-worker.js' %}" defer></script>{% endif %}
     <script src="{% url 'javascript-catalog' %}?lang={{ LANGUAGE_CODE }}" defer></script>
     <script src="{% static 'js/navigation.js' %}" defer></script>
     <script src="{% static 'js/session-sync.js' %}" defer></script>
-    <script src="{% static 'js/forms.js' %}" defer></script>
-    {% if chart_payload.labels %}
+    <script src="{% static 'js/language.js' %}?v=navigation-20261113" defer></script>
+    <script src="{% static 'js/forms.js' %}?v=navigation-20261113" defer></script>
+    <script src="{% static 'js/chart-layout.js' %}?v=chart-overflow-20261113" defer></script>
+    {% if chart_payload.labels or public_pwa_enabled %}
     <script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>
-    <script src="{% static 'js/charts.js' %}" defer></script>
+    <script src="{% static 'js/charts.js' %}?v=chart-overflow-20261113" defer></script>
     {% endif %}
-    {% if offline_mode %}<link rel="stylesheet" href="{% static 'css/offline.css' %}"><script src="{% static 'js/offline-consult.js' %}" defer></script>{% endif %}
+    <script src="{% static 'js/explorer-layout.js' %}?v=navigation-20261113" defer></script>
+    {% if public_pwa_enabled %}<script src="{% static 'js/unified-consult.js' %}?v=navigation-20261113" defer></script>{% endif %}
   </head>
   <body id="arriba" data-session-identity="{{ session_identity }}">
     <a class="skip-link" href="#contenido">{% translate "Saltar al contenido" %}</a>
@@ -47,8 +50,8 @@
           </div>
         </details>
         {% else %}<a class="login-link" href="{% url 'public_site:login' %}"><svg width="16" height="18" viewBox="0 0 20 22" fill="none" aria-hidden="true"><rect x="3" y="9" width="14" height="11" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M6 9V6a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="14" r="1.5" fill="currentColor"/></svg>{% translate "Acceso del personal" %}</a>{% endif %}
-      </div>{% else %}<div class="account-nav"><span>{% translate "Estadísticas públicas" %}</span></div>{% endif %}
-      <form class="language-picker" method="post" action="{% url 'set_language' %}">{% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}"><label for="site-language">{% translate "Idioma" %}</label><select id="site-language" name="language" aria-label="{% translate 'Idioma' %}">{% get_current_language as CURRENT_LANGUAGE %}{% get_available_languages as AVAILABLE_LANGUAGES %}{% for language_code, language_name in AVAILABLE_LANGUAGES %}<option value="{{ language_code }}"{% if language_code == CURRENT_LANGUAGE %} selected{% endif %}>{{ language_name }}{% if language_code in draft_translation_locales %} — {% translate "borrador de vista previa" %}{% endif %}</option>{% endfor %}</select><button type="submit">{% translate "Aplicar" %}</button></form>
+      </div>{% elif admin_login_url %}<div class="account-nav"><a class="login-link" data-admin-web-link hidden href="{{ admin_login_url }}" title="{% translate 'Acceso del personal' %}">{% translate "Administración" %}</a></div>{% endif %}
+      <form class="language-picker" method="post" action="{% url 'set_language' %}">{% csrf_token %}<input type="hidden" name="next" value="{{ language_next_url|default:request.get_full_path }}"><label for="site-language">{% translate "Idioma" %}</label><select id="site-language" name="language" aria-label="{% translate 'Idioma' %}">{% get_current_language as CURRENT_LANGUAGE %}{% get_available_languages as AVAILABLE_LANGUAGES %}{% for language_code, language_name in AVAILABLE_LANGUAGES %}<option value="{{ language_code }}"{% if language_code == CURRENT_LANGUAGE %} selected{% endif %}>{{ language_name }}{% if language_code in draft_translation_locales %} — {% translate "borrador de vista previa" %}{% endif %}</option>{% endfor %}</select><button type="submit">{% translate "Aplicar" %}</button></form>
       <details class="mobile-menu" data-header-menu>
         <summary>{% translate "Menú" %} <span aria-hidden="true">☰</span></summary>
         <div class="mobile-menu-panel">
@@ -59,7 +62,7 @@
             <a href="{% url 'public_site:password_change' %}">{% translate "Cambiar contraseña" %}</a>
             {% if can_manage_users %}<a href="{% url 'public_site:users' %}">{% translate "Gestionar usuarios" %}</a>{% endif %}
             <form method="post" action="{% url 'public_site:logout' %}">{% csrf_token %}<button type="submit">{% translate "Cerrar sesión y cambiar de cuenta" %}</button></form>
-          {% elif portal_login_available %}<a href="{% url 'public_site:login' %}">{% translate "Acceso del personal" %}</a>{% endif %}
+          {% elif portal_login_available %}<a href="{% url 'public_site:login' %}">{% translate "Acceso del personal" %}</a>{% elif admin_login_url %}<a data-admin-web-link hidden href="{{ admin_login_url }}">{% translate "Administración" %}</a>{% endif %}
         </div>
       </details>
     </header>
@@ -81,6 +84,11 @@
           <nav class="sidebar-sections" aria-label="{% translate 'Índice de la página' %}">{% include "includes/section_links.html" %}</nav>{% endif %}
 
           </div>
+          {% if public_pwa_enabled %}<div class="connection-status" id="connection-status" role="status" aria-live="polite" data-state="checking">
+            <span class="connection-dot" aria-hidden="true"></span><span class="connection-label">{% translate "Comprobando conexión" %}</span>
+            <small class="connection-copy"></small>
+            <button type="button" id="install-public-app" hidden>{% translate "Instalar aplicación" %}</button>
+          </div>{% endif %}
         </div>
       </aside>
       <div class="page-body">
@@ -96,13 +104,13 @@
     </div>
 
     <footer class="site-footer">
-      <div class="footer-topline"><span class="footer-kicker">RNC / CUBA</span><span class="footer-data-tag"><span aria-hidden="true"></span>{% translate "Entorno con datos sintéticos" %}</span></div>
+      <div class="footer-topline"><span class="footer-kicker">RNC / CUBA</span><span class="footer-data-tag"><span aria-hidden="true"></span>{% translate "Datos del RNC · 2022" %}</span></div>
       <div class="footer-grid">
         <div class="footer-about"><a class="footer-brand" href="{% url 'public_site:home' %}">{% translate "Información que acerca" %}<br>{% translate "las estadísticas a las personas." %}</a><p>{% translate "Registro Nacional de Cáncer de Cuba." %}<br>{% translate "Consulta de incidencia y resultados agregados." %}</p></div>
         <nav aria-label="{% translate 'Navegación del pie de página' %}"><h2>{% translate "Explorar" %}</h2>{% include "includes/page_links.html" %}</nav>
         <nav aria-label="{% translate 'Ayuda y acceso' %}"><h2>{% translate "Información y acceso" %}</h2><a href="{% url 'public_site:home' %}#criterios">{% translate "Cómo leer los resultados" %}</a>{% if portal_login_available %}{% if user.is_authenticated %}<a href="{% url 'public_site:password_change' %}">{% translate "Seguridad de mi cuenta" %}</a>{% else %}<a href="{% url 'public_site:login' %}">{% translate "Acceso del personal" %}</a>{% endif %}{% endif %}<a href="#arriba" class="footer-up">{% translate "Subir al comienzo" %} <span aria-hidden="true">↑</span></a></nav>
       </div>
-      <div class="footer-bottom"><span>{% translate "Registro Nacional de Cáncer · Cuba" %}</span><span>{% translate "Los datos de esta instalación son inventados. No representan estadísticas oficiales." %}</span></div>
+      <div class="footer-bottom"><span>{% translate "Registro Nacional de Cáncer · Cuba" %}</span><span>{% translate "Consulte la fuente y la versión de los datos en cada resultado." %}</span></div>
     </footer>
   </body>
 </html>

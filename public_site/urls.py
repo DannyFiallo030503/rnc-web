@@ -2,10 +2,13 @@ from django.urls import path, reverse_lazy
 from django.contrib.auth import views as auth_views
 from django.views.generic import TemplateView
 from django.utils.translation import gettext_lazy as _
-from . import views, portal, accounts, public_portal
+from . import views, portal, accounts, public_portal, chart_admin
+from django.conf import settings
+from config.i18n import localized
 
 app_name = "public_site"
 urlpatterns = [
+    path("administracion/visualizaciones/", chart_admin.visualizations, name="visualizations"),
     path("", public_portal.home, name="home"),
     path("el-rnc/", public_portal.about, name="about"),
     path("acceso/", views.RoleLoginView.as_view(), name="login"),
@@ -18,7 +21,6 @@ urlpatterns = [
     path("nomencladores/", public_portal.coding_nomenclators, name="coding_nomenclators"),
     path("consulta-sintetica/", public_portal.explorer, name="legacy_explorer"),
     path("administracion/cortes/", portal.administration, name="intake_prototype"),
-    path("administracion/cortes/ejemplo/", portal.sample, name="sample"),
     path("administracion/cortes/<uuid:pk>/", portal.delivery, name="delivery"),
     path(
         "administracion/cortes/<uuid:pk>/estado/",
@@ -71,3 +73,13 @@ urlpatterns = [
         name="password_reset_complete",
     ),
 ]
+
+if settings.PUBLIC_PWA_ENABLED:
+    for route in urlpatterns:
+        if getattr(route.callback, "__module__", "") == "public_site.public_portal":
+            route.callback = localized(route.callback)
+    urlpatterns += [
+        path("conexion.json", public_portal.connection_status, name="connection_status"),
+        path("paquete-offline.json", public_portal.offline_package, name="offline_package"),
+        path("consulta-offline/", public_portal.offline_consult, name="offline_consult"),
+    ]

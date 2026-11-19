@@ -4,6 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 FILTER_LABELS = {
+    "cohort": _("Población analizada"),
     "year": _("Año de incidencia"),
     "territory": _("Provincia de residencia"),
     "municipality": _("Municipio de residencia"),
@@ -24,6 +25,9 @@ def describe_query(
 ):
     filters = []
     for key, label in FILTER_LABELS.items():
+        if key == "cohort":
+            filters.append({"key": key, "label": label, "value": {"all": _("Todas las edades"), "adult": _("20 años o más"), "child": _("Menores de 20 años")}[params.get("cohort", "all")]})
+            continue
         selected = params.get(key) or []
         if not isinstance(selected, (list, tuple, set)):
             selected = [selected]

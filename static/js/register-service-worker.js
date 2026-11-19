@@ -13,7 +13,6 @@ if ("serviceWorker" in navigator) {
         }
       }
       const registration = await navigator.serviceWorker.register("/service-worker.js", { scope: "/" });
-      let languageChangePending = false;
       const supported = new Set([...document.querySelectorAll("#site-language option")].map(option => option.value));
       const preferenceKey = "rnc-language-preference";
       let fallbackPreference = null;
@@ -58,20 +57,6 @@ if ("serviceWorker" in navigator) {
         fallbackPreference = preference;
         return preference;
       };
-      const selectPreference = language => {
-        const previous = currentPreference();
-        const preference = {
-          language,
-          revision: Math.max(Date.now(), previous.revision + 1),
-        };
-        fallbackPreference = preference;
-        try {
-          localStorage.setItem(preferenceKey, JSON.stringify(preference));
-        } catch {
-          // The worker still receives the monotonic revision from this page.
-        }
-        return preference;
-      };
       const postLanguage = (language, revision) => new Promise(resolve => {
         const worker = navigator.serviceWorker.controller || registration.active;
         if (!worker || !supported.has(language) || !Number.isSafeInteger(revision)) {
@@ -99,22 +84,9 @@ if ("serviceWorker" in navigator) {
         worker.postMessage(message, [channel.port2]);
       });
       const syncLanguage = () => {
-        if (languageChangePending) return Promise.resolve(false);
         const preference = currentPreference();
         return postLanguage(preference.language, preference.revision);
       };
-      document.querySelector(".language-picker")?.addEventListener("submit", async event => {
-        const form = event.currentTarget;
-        if (form.dataset.languageReady === "true") return;
-        const selected = form.querySelector("select[name=language]")?.value;
-        if (!selected) return;
-        event.preventDefault();
-        languageChangePending = true;
-        const preference = selectPreference(selected);
-        await postLanguage(preference.language, preference.revision);
-        form.dataset.languageReady = "true";
-        form.requestSubmit(event.submitter);
-      });
       window.addEventListener("storage", event => {
         if (event.key !== preferenceKey) return;
         const preference = parsePreference(event.newValue);

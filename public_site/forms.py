@@ -19,14 +19,11 @@ class UploadForm(AccessibleForm, forms.Form):
         help_text=_("Un nombre que identifique el período y la entrega."),
     )
     file = forms.FileField(
-        label=_("Archivo CSV sintético"),
+        label=_("Archivo CSV RNC"),
         widget=forms.ClearableFileInput(
             attrs={"accept": ".csv,text/csv", "data-max-bytes": 12582912}
         ),
-        help_text=_("CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."),
-    )
-    synthetic = forms.BooleanField(
-        label=_("Confirmo que el archivo contiene exclusivamente datos sintéticos")
+        help_text=_("CSV UTF-8 del RNC, hasta 12 MB."),
     )
 
     def clean_file(self):

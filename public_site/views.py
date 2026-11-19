@@ -8,6 +8,7 @@ from .forms import LoginForm
 class RoleLoginView(LoginView):
     template_name = "public_site/login.html"
     authentication_form = LoginForm
+    redirect_authenticated_user = True
 
     def post(self, request, *args, **kwargs):
         from .accounts import limited

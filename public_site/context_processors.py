@@ -1,9 +1,18 @@
+from config.i18n import language_return_path
 from .access import has_admin_access, can
 from django.conf import settings
 from django.utils.translation import get_language, gettext as _
 
 
 def navigation(request):
+    match = request.resolver_match
+    if (
+        getattr(settings, "PUBLIC_PWA_ENABLED", False)
+        and match
+        and match.func.__module__ == "public_site.public_portal"
+    ):
+        from config.public_context import navigation as public_navigation
+        return public_navigation(request)
     current = request.resolver_match.url_name if request.resolver_match else ""
     pages = [
         {"name": "home", "label": _("Inicio"), "icon": "home"},
@@ -20,6 +29,7 @@ def navigation(request):
             {"name": "intake_prototype", "label": _("Administración"), "icon": "folder"}
         )
     labels = {
+        "visualizations": _("Visualizaciones"),
         "users": _("Usuarios y permisos"),
         "user_create": _("Crear usuario"),
         "user_edit": _("Editar usuario"),
@@ -28,6 +38,8 @@ def navigation(request):
         "password_change": _("Cambiar contraseña"),
         "password_reset": _("Recuperar acceso"),
     }
+    if can(request.user, "publish_deliveries"):
+        pages.append({"name": "visualizations", "label": _("Visualizaciones"), "icon": "chart"})
     display_name = (
         request.user.get_short_name() or request.user.get_username()
         if request.user.is_authenticated
@@ -53,6 +65,7 @@ def navigation(request):
             ]
         )
     return {
+        "language_next_url": language_return_path(request),
         "account_display_name": display_name,
         "account_role_label": role_label,
         "session_identity": session_identity,

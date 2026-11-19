@@ -147,7 +147,7 @@
     }
     const size = pkg.bytes || new Blob([JSON.stringify(pkg)]).size;
     $("#offline-release").textContent = fmt("Paquete local: %(title)s · versión %(release)s · publicado %(published)s · %(size)s KB", {title: pkg.title, release: pkg.release_id, published: displayDateTime(pkg.published_at), size: (size / 1024).toFixed(1)});
-    $("#offline-context").textContent = fmt("Datos sintéticos · método %(method)s · guardado en este navegador. La fecha de publicación identifica el corte; no indica cuándo se conectó el dispositivo.", {method: pkg.standard_id});
+    $("#offline-context").textContent = fmt("Datos reales de 2022 · método %(method)s · todas las edades. Para tasas por grupo tumoral, seleccione la población adulta o infantil en la consulta online.", {method: pkg.standard_id});
     fill(pkg);
   }
 
@@ -193,12 +193,14 @@
         || (allowedUnits && !allowedUnits.includes(unit))
         || (["pie", "doughnut"].includes(option.value) && unit === "persons" && dimension !== "sex")
         || (sexChart && (selected("sex").length || dimension === "sex"))
-        || (option.value === "scatter" && multi)
+        || (option.value === "scatter" && multi && !pkg.persons_disjoint)
       );
     });
     [...$("#dimension").options].forEach(option => { option.disabled = Boolean(dimensions && !dimensions.includes(option.value)); });
-    [...$("#metric").options].forEach(option => { option.disabled = Boolean(metrics && !metrics.includes(option.value)); });
-    [...$("#unit").options].forEach(option => { option.disabled = (Boolean(units && !units.includes(option.value)) || (option.value === "persons" && multi)); });
+    [...$("#metric").options].forEach(option => { option.disabled = Boolean(metrics && !metrics.includes(option.value)) || ((dimension === "site" || selected("site").length) && ["rate", "asr"].includes(option.value)); });
+    [...$("#unit").options].forEach(option => { option.disabled = (Boolean(units && !units.includes(option.value)) || (option.value === "persons" && ((multi && !pkg.persons_disjoint) || !pkg.person_identity_verified))); });
+    if (!pkg.person_identity_verified) $("#unit").value = "tumors";
+    if ((dimension === "site" || selected("site").length) && ["rate", "asr"].includes(metric)) $("#metric").value = "count";
     const bothSexes = ["grouped", "stacked", "percent"].includes(chart);
     $("#sex").disabled = bothSexes;
     if (bothSexes) [...$("#sex").options].forEach(option => { option.selected = false; });
@@ -208,7 +210,7 @@
     if (dimensions && !dimensions.includes(dimension)) $("#dimension").value = dimensions[0];
     if (metrics && !metrics.includes(metric)) $("#metric").value = metrics[0];
     if (units && !units.includes(unit)) $("#unit").value = units[0];
-    if (multi && $("#unit").value === "persons") $("#unit").value = "tumors";
+    if (multi && !pkg.persons_disjoint && $("#unit").value === "persons") $("#unit").value = "tumors";
   }
 
   function terminateWorker() {
@@ -255,7 +257,7 @@
   }
 
   async function queryLocally(params) {
-    if (!pkg) return status(t("Guarda primero la publicación sintética en este dispositivo."), true);
+    if (!pkg) return status(t("Guarda primero la publicación real en este dispositivo."), true);
     if (!pkg.query_contract || !pkg.standard_weights) return status(t("Este paquete no incluye el contrato estadístico requerido. Conéctate y actualízalo."), true);
     $("#run-local").disabled = true;
     $("#clear-package").disabled = true;
@@ -283,7 +285,7 @@
   function chartConfig(result, params) {
     const kind = params.chart;
     const circular = ["pie", "doughnut"].includes(kind);
-    const horizontal = ["bar", "ranking"].includes(kind);
+    const horizontal = ["bar", "ranking", "strip", "swarm"].includes(kind) || (["grouped", "stacked", "percent"].includes(kind) && result.rows.length > 10);
     const points = ["scatter", "strip", "swarm"].includes(kind);
     const colors = ["#177c70", "#df785d", "#778fb5", "#b89b52", "#8c78ad", "#65a3a5", "#bd7795", "#809763"];
     const datasets = result.datasets.map((dataset, index) => ({
@@ -313,7 +315,7 @@
         animation: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? false : { duration: 250 },
         indexAxis: horizontal ? "y" : "x",
         plugins: {
-          legend: { display: circular || datasets.length > 1, position: "bottom" },
+          legend: { display: circular || datasets.length > 1, position: "bottom", labels:{generateLabels:chart => (circular ? Chart.overrides[kind].plugins.legend.labels.generateLabels : Chart.defaults.plugins.legend.labels.generateLabels)(chart).map(item => ({...item,text:item.text.length>36 ? item.text.slice(0,33)+"…" : item.text}))} },
           title: { display: true, text: [METRIC_LABELS[params.metric], DIMENSION_LABELS[params.dimension]].join(" · ") },
           subtitle: { display: true, text: fmt("Publicación %(release)s · %(date)s", {release: pkg.release_id, date: displayDateTime(pkg.published_at)}) },
         },
@@ -391,7 +393,23 @@
     if (!chart) return status(t("No se pudo cargar la biblioteca local de gráficos."), true);
     const previous = chart.getChart($("#offline-chart"));
     previous?.destroy();
-    window.offlineChart = new chart($("#offline-chart"), chartConfig(result, params));
+    const config = chartConfig(result, params);
+    const canvas = $("#offline-chart");
+    const layout = window.RncChartLayout.prepare(canvas, params.chart, config.data.labels);
+    config.options.devicePixelRatio = layout.pixelRatio;
+    if (["pie", "doughnut"].includes(params.chart)) {
+      const composition = window.RncChartLayout.composition(config.data.labels, config.data.datasets, t("Otras categorías"));
+      config.data.labels = composition.labels; config.data.datasets = composition.datasets;
+      let note = document.getElementById("composition-note");
+      if (!note) { note = document.createElement("p"); note.id = "composition-note"; note.className = "muted"; canvas.parentElement.parentElement.after(note); }
+      note.textContent = composition.grouped ? t("El gráfico muestra las siete categorías mayores y agrupa el resto en Otras categorías. La tabla conserva todas las categorías.") : "";
+    } else {
+      document.getElementById("composition-note")?.remove();
+      if (layout.horizontal && ["grouped", "stacked", "percent"].includes(params.chart)) { delete config.options.scales.y.max; if (params.chart === "percent") config.options.scales.x.max = 100; }
+      if (layout.horizontal) config.options.scales.y.ticks = {...config.options.scales.y.ticks, autoSkip:false, callback:value => layout.wrapped[Math.round(value)] || ""};
+      else if (params.chart !== "scatter") config.options.scales.x.ticks = {maxRotation:0, autoSkip:false, callback:value => window.RncChartLayout.wrap(config.data.labels[value] || "",16)};
+    }
+    window.offlineChart = new chart(canvas, config);
     if (["grouped", "stacked", "percent"].includes(params.chart)) {
       result.rows.forEach((row, index) => {
         row.series = result.datasets.map(dataset => ({ label: dataset.label, value: dataset.data[index] }));
@@ -437,7 +455,7 @@
       return values.map(csvCell).join(",");
     });
     const metadata = [
-      [t("Datos sintéticos"), t("Sí")],
+      [t("Datos reales"), t("Sí")],
       [t("Publicación"), pkg.release_id],
       [t("Título"), pkg.title],
       [t("Fecha de publicación"), pkg.published_at || t("No disponible")],
@@ -458,7 +476,7 @@
       const response = await fetch("/paquete-offline.json", { cache: "no-store", credentials: "omit" });
       if (!response.ok) throw new Error(t("No hay publicación disponible para guardar."));
       const next = await response.json();
-      if (next.synthetic !== true) throw new Error(t("Este prototipo solo admite el paquete sintético autorizado para pruebas."));
+      if (next.synthetic !== false || next.schema_version !== 3 || next.publication_approved !== true) throw new Error(t("El paquete no corresponde a la publicación real activa."));
       if (!next.query_contract || !next.standard_weights || !next.release_id || !next.published_at) throw new Error(t("El paquete está incompleto y no se guardó."));
       next.bytes = new Blob([JSON.stringify(next)]).size;
       await savePackage(next);
@@ -467,7 +485,7 @@
       try { await navigator.storage?.persist?.(); } catch { /* Browser policy may decline persistent storage. */ }
       renderPackage();
       await storageInfo();
-      status(t("Publicación sintética guardada en este dispositivo. El navegador puede retirar datos locales por cuota o configuración."));
+      status(t("Publicación real guardada en este dispositivo. El navegador puede retirar datos locales por cuota o configuración."));
     } catch (error) {
       status(error.message || t("No se pudo guardar la publicación."), true);
     } finally {
@@ -507,6 +525,7 @@
     try {
       await dbOpen();
       pkg = await loadPackage();
+      if (pkg && (pkg.schema_version !== 3 || pkg.synthetic !== false)) pkg = null;
       renderPackage();
     } catch {
       status(t("Este navegador no permite el almacenamiento local requerido por la consulta offline."), true);

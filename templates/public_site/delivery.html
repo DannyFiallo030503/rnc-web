@@ -1,66 +1,55 @@
 {% extends "base.html" %}
 {% load i18n %}
-
 {% block content %}
 <div class="page-heading">
-  <p class="eyebrow">{% translate 'Administración · Corte' %}</p>
+  <p class="eyebrow">{% translate "Administración · Corte" %}</p>
   <h1>{{ delivery.title }}</h1>
   <span class="badge">{{ delivery.get_status_display }}</span>
-  {% if delivery.status == "rejected" %}<span class="badge">{% translate 'No validado como sintético' %}</span>{% else %}<span class="badge">{% translate 'Datos sintéticos validados' %}</span>{% endif %}
+  {% if delivery.report.synthetic %}<span class="badge">{% translate "Entrega histórica de demostración" %}</span>{% elif delivery.status == "rejected" %}<span class="badge">{% translate "Carga rechazada" %}</span>{% else %}<span class="badge">{% translate "Datos reales · almacenamiento privado" %}</span>{% endif %}
 </div>
 
-{% if delivery.status == "revoked" and decision_form.errors %}
-  <div class="form-error-summary" role="alert">
-    {% for error in decision_form.non_field_errors %}<p>{{ error }}</p>{% endfor %}
-  </div>
-{% endif %}
-
 <section class="panel">
-  <h2>{% translate 'Informe técnico' %}</h2>
+  <h2>{% translate "Informe de incorporación" %}</h2>
   {% if delivery.report.error %}<p class="notice error">{{ delivery.report.error }}</p>{% endif %}
+  {% if delivery.report.errors %}<div class="notice error" role="alert"><p>{% translate "No se incorporaron datos de esta carga." %}</p><ul>{% for error in delivery.report.errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
   <dl class="metadata">
-    <dt>{% translate 'Responsable' %}</dt><dd>{{ delivery.created_by.username }}</dd>
-    <dt>{% translate 'Recepción' %}</dt><dd>{{ delivery.created_at|date:"SHORT_DATETIME_FORMAT" }}</dd>
-    <dt>{% translate 'Filas recibidas' %}</dt><dd>{{ delivery.report.received_rows|default_if_none:no_value_label }}</dd>
-    <dt>{% translate 'Filas incorporadas' %}</dt><dd>{{ delivery.report.accepted_rows|default_if_none:no_value_label }}</dd>
-    <dt>{% translate 'Filas no incorporadas' %}</dt><dd>{{ delivery.report.rejected_rows|default_if_none:no_value_label }}</dd>
-    <dt>{% translate 'Tumores aceptados' %}</dt><dd>{{ delivery.row_count }}</dd>
-    <dt>{% translate 'Personas distintas' %}</dt><dd>{{ delivery.person_count }}</dd>
-    <dt>{% translate 'Períodos' %}</dt><dd>{{ delivery.report.periods|join:", " }}</dd>
-    <dt>{% translate 'Territorios' %}</dt><dd>{{ delivery.report.territories }}</dd>
-    {% if delivery.storage_key %}<dt>{% translate 'Integridad SHA-256' %}</dt><dd class="checksum">{{ delivery.checksum }}</dd>{% endif %}
+    <dt>{% translate "Responsable" %}</dt><dd>{{ delivery.created_by.username }}</dd>
+    <dt>{% translate "Recepción" %}</dt><dd>{{ delivery.created_at|date:"SHORT_DATETIME_FORMAT" }}</dd>
+    <dt>{% translate "Filas recibidas" %}</dt><dd>{{ delivery.report.received_rows|default_if_none:no_value_label }}</dd>
+    <dt>{% translate "Filas incorporadas" %}</dt><dd>{{ delivery.report.accepted_rows|default_if_none:no_value_label }}</dd>
+    <dt>{% translate "Filas no incorporadas" %}</dt><dd>{{ delivery.report.rejected_rows|default_if_none:no_value_label }}</dd>
+    <dt>{% translate "Filas vacías eliminadas" %}</dt><dd>{{ delivery.report.empty_rows_removed }}</dd>
+    <dt>{% translate "Columnas conservadas" %}</dt><dd>{{ delivery.report.kept_columns }}</dd>
+    <dt>{% translate "Columnas descartadas" %}</dt><dd>{{ delivery.report.unused_columns_removed }}</dd>
+    {% if delivery.report.optional_blanks %}<dt>{% translate "Campos opcionales con vacíos" %}</dt><dd>{% for field, count in delivery.report.optional_blanks.items %}{% if count %}{{ field }}: {{ count }}{% if not forloop.last %}; {% endif %}{% endif %}{% endfor %}</dd>{% endif %}
+    {% if delivery.storage_key %}<dt>{% translate "Integridad SHA-256" %}</dt><dd class="checksum">{{ delivery.checksum }}</dd>{% endif %}
   </dl>
-  {% if delivery.status != "rejected" %}
-    <p>{% translate 'Se comprobaron estructura, categorías, claves de tumor únicas, consistencia de personas y denominadores, y cobertura de edad y sexo. La validación es atómica: si falla una fila, la entrega no se incorpora parcialmente.' %}</p>
-  {% elif delivery.report.source_retained == False %}
-    <p>{% translate 'El archivo no superó la validación como sintético y no se conservó en el almacenamiento de la aplicación.' %}</p>
-  {% endif %}
-  {% if delivery.storage_key %}
-    {% if delivery.status == "rejected" %}
-      <p class="muted">{% translate 'Esta entrega rechazada pertenece a una versión anterior del prototipo; el archivo asociado quedó en almacenamiento privado. Las nuevas cargas rechazadas ya no se conservan.' %}</p>
-    {% else %}
-      <p class="muted">{% translate 'El archivo sintético validado permanece en almacenamiento privado. Este contrato no habilita cargas clínicas del RNC.' %}</p>
-    {% endif %}
-  {% else %}
-    <p class="muted">{% translate 'No hay archivo fuente conservado para esta entrega.' %}</p>
-  {% endif %}
+  <p class="muted">{% translate "El CSV limpio y los identificadores permanecen en almacenamiento privado. Esta pantalla no expone ni permite descargar microdatos." %}</p>
+  {% if delivery.status == "published" %}<p class="notice">{% translate "Este corte está publicado en el portal y disponible para la consulta offline." %}</p>{% else %}<p class="notice">{% translate "El personal con permiso de publicación puede activar este corte real. Los microdatos y NOCASO no se publican; solo se entrega el cubo agregado." %}</p>{% endif %}
 </section>
 
-{% if may_publish and delivery.status == "validated" or may_publish and delivery.status == "published" %}
-  <section class="panel">
-    <h2>{% if delivery.status == "published" %}{% translate 'Revocar publicación' %}{% else %}{% translate 'Publicar corte' %}{% endif %}</h2>
-    <p>{% if delivery.status == "published" %}{% translate 'La revocación retirará inmediatamente el corte del inicio, las consultas y las nuevas exportaciones. Los archivos ya descargados no pueden retirarse.' %}{% else %}{% translate 'Esta publicación sustituirá el conjunto completo anterior. Revise los períodos y la cobertura; no se sumarán ambas entregas.' %}{% endif %}</p>
-    <form method="post" action="{% url 'public_site:delivery_action' delivery.pk %}" class="portal-form" data-validate>
-      {% csrf_token %}
-      {% include "includes/form_fields.html" with form=decision_form %}
-      <button type="submit" class="{% if delivery.status == 'published' %}danger-button{% else %}apply-filters{% endif %}">{% if delivery.status == "published" %}{% translate 'Revocar corte' %}{% else %}{% translate 'Confirmar publicación' %}{% endif %}</button>
-    </form>
-  </section>
+{% if may_publish and delivery.status == "validated" and delivery.report.synthetic == False %}
+<section class="panel"><h2>{% translate "Publicar corte agregado" %}</h2>
+  {% for error in decision_form.non_field_errors %}<p class="notice error">{{ error }}</p>{% endfor %}
+  <form method="post" action="{% url 'public_site:delivery_action' delivery.pk %}" class="portal-form" data-validate>
+    {% csrf_token %}<input type="hidden" name="action" value="publish">
+    {% for error in decision_form.reason.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+    {{ decision_form.reason.label_tag }}{{ decision_form.reason }}{{ decision_form.reason.help_text }}
+    <button class="apply-filters" type="submit">{% translate "Publicar corte real" %}</button>
+  </form>
+</section>
+{% elif may_publish and delivery.status == "published" %}
+<section class="panel"><h2>{% translate "Retirar publicación" %}</h2>
+  {% for error in decision_form.non_field_errors %}<p class="notice error">{{ error }}</p>{% endfor %}
+  <form method="post" action="{% url 'public_site:delivery_action' delivery.pk %}" class="portal-form" data-validate>
+    {% csrf_token %}<input type="hidden" name="action" value="revoke">
+    {% for error in decision_form.reason.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+    {{ decision_form.reason.label_tag }}{{ decision_form.reason }}{{ decision_form.reason.help_text }}
+    <button class="apply-filters" type="submit">{% translate "Revocar publicación" %}</button>
+  </form>
+</section>
 {% endif %}
 
-<section class="panel">
-  <h2>{% translate 'Historial del corte' %}</h2>
-  {% include "public_site/events.html" %}
-</section>
-<p><a href="{% url 'public_site:intake_prototype' %}">{% translate '← Volver a administración' %}</a></p>
+<section class="panel"><h2>{% translate "Historial del corte" %}</h2>{% include "public_site/events.html" %}</section>
+<p><a href="{% url 'public_site:intake_prototype' %}">{% translate "← Volver a administración" %}</a></p>
 {% endblock %}

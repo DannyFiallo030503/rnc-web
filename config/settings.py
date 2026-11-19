@@ -12,6 +12,7 @@ from .languages import (
 )
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+os.environ.setdefault("MPLCONFIGDIR", str(BASE_DIR / ".runtime-cache" / str(os.getpid()) / "matplotlib"))
 
 SECRET_KEY = os.environ.get(
     "DJANGO_SECRET_KEY",
@@ -175,6 +176,9 @@ PRIVATE_STORAGE_ROOT = Path(os.environ.get("RNC_PRIVATE_STORAGE", BASE_DIR / "pr
 PUBLIC_RELEASE_ROOT = Path(
     os.environ.get("RNC_PUBLIC_RELEASE_ROOT", BASE_DIR / "public_releases")
 )
+RNC_REAL_PREVIEW_ENABLED = False
+RNC_POPULATION_XLSX = Path(os.environ.get("RNC_POPULATION_XLSX", BASE_DIR.parent / "Nuevo" / "POBLACION _2022.xlsx"))
+RNC_DICTIONARY_DOCX = Path(os.environ.get("RNC_DICTIONARY_DOCX", BASE_DIR.parent / "Nuevo" / "variables para Danny_OK.docx"))
 RNC_CODING_CATALOG = os.environ.get("RNC_CODING_CATALOG", "")
 EMAIL_BACKEND = os.environ.get(
     "EMAIL_BACKEND", "django.core.mail.backends.filebased.EmailBackend"
@@ -210,3 +214,9 @@ SECURE_SSL_REDIRECT = os.environ.get(
 ).lower() in {"1", "true", "yes"}
 
 CSRF_FAILURE_VIEW = "public_site.errors.csrf_failure"
+
+# Absolute administrative session duration, measured from successful login.
+SESSION_COOKIE_AGE = 12 * 60 * 60
+SESSION_SAVE_EVERY_REQUEST = False
+ADMIN_SITE_URL = os.environ.get("RNC_ADMIN_SITE_URL", "http://127.0.0.1:8011")
+PUBLIC_PWA_ENABLED = os.environ.get("RNC_PUBLIC_PWA_ENABLED", "0") == "1"

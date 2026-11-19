@@ -553,3 +553,3567 @@ msgid ""
 msgstr ""
 "Synthetic data · method %(method)s · saved in this browser. The publication "
 "date identifies the release; it does not show when the device connected."
+
+#: public_site/public_portal.py static/js/chart-layout.js
+msgid "Otras categorías"
+msgstr "Other categories"
+
+#: public_site/public_portal.py static/js/chart-layout.js
+msgid "El gráfico muestra las siete categorías mayores y agrupa el resto en Otras categorías. La tabla conserva todas las categorías."
+msgstr "The chart shows the seven largest categories and groups the rest as Other categories. The table retains every category."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Comprobando conexión"
+msgstr "Checking connection"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Online"
+msgstr "Online"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Offline"
+msgstr "Offline"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Instalar aplicación"
+msgstr "Install app"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Conexión con el servidor disponible."
+msgstr "Connection to the server is available."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Sin conexión con el servidor. Se utiliza la publicación guardada."
+msgstr "The server is unavailable. The saved publication is used."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Datos disponibles sin conexión"
+msgstr "Data available offline"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Sin copia guardada"
+msgstr "No saved copy"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Preparando datos sin conexión…"
+msgstr "Preparing offline data…"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Copia anterior disponible sin conexión"
+msgstr "Previous copy available offline"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "No se pudo guardar una copia local"
+msgstr "Could not save a local copy"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "No hay publicación disponible"
+msgstr "No publication is available"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "El almacenamiento local no está disponible"
+msgstr "Local storage is unavailable"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "No hay una publicación guardada en este dispositivo. Conéctese para prepararla."
+msgstr "No publication is saved on this device. Connect to prepare it."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Consulte la fuente y la versión de los datos en cada resultado."
+msgstr "Check the data source and version in each result."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Imagen SVG"
+msgstr "SVG image"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Tasa cruda / específica"
+msgstr "Crude / age-specific rate"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Tasa ajustada Segi–Doll"
+msgstr "Segi–Doll age-standardized rate"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "por"
+msgstr "per"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "El SVG contiene una imagen del gráfico. El mapa conserva formato vectorial."
+msgstr "The SVG contains an image of the chart. Maps retain vector format."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Acerca de"
+msgstr "About"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Población analizada"
+msgstr "Study population"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Todas las edades"
+msgstr "All ages"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "20 años o más"
+msgstr "Ages 20 and older"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Menores de 20 años"
+msgstr "Under age 20"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "20 años o más · CIE-10"
+msgstr "Ages 20 and older · ICD-10"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Menores de 20 años · CICN"
+msgstr "Under age 20 · ICCC"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo tumoral principal"
+msgstr "Main tumour group"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tipo histológico (MORF)"
+msgstr "Histological type (MORF)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Etapa clínica (código recibido)"
+msgstr "Clinical stage (source code)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tendencia temporal"
+msgstr "Time trend"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Curva por edad"
+msgstr "Age curve"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mapa provincial de Cuba"
+msgstr "Cuba provincial map"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tabla de datos"
+msgstr "Data table"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa cruda / específica por %(scale)s"
+msgstr "Crude / age-specific rate per %(scale)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa ajustada truncada Segi–Doll (%(ages)s)"
+msgstr "Truncated Segi–Doll age-standardized rate (%(ages)s)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta visualización está desactivada por administración."
+msgstr "This visualization has been disabled by administration."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La cartografía no permite identificar todas las provincias de esta selección."
+msgstr "The map cannot identify every province in this selection."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Total C00–97 · diccionario RNC"
+msgstr "Total C00–97 · RNC dictionary"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Total C00–96 · Anuario 2022"
+msgstr "Total C00–96 · 2022 Yearbook"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(title)s · Versión %(release)s"
+msgstr "%(title)s · Version %(release)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "por %(scale)s"
+msgstr "per %(scale)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Agrupación del diccionario suministrado: %(category)s."
+msgstr "Group from the supplied dictionary: %(category)s."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Agrupa los tumores según su localización anatómica."
+msgstr "Groups tumours by anatomical site."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Provincia donde reside la persona."
+msgstr "Province of residence."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Provincia donde reside la persona. Esta publicación no cubre todas las provincias."
+msgstr "Province of residence. This publication does not cover every province."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta publicación no incluye datos por municipio."
+msgstr "This publication does not include municipal data."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La tasa ajustada por edad requiere incluir todos los grupos de edad."
+msgstr "Age standardization requires all applicable age groups."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La etapa clínica se consulta en adultos, mediante frecuencias o porcentajes."
+msgstr "Clinical stage is available for adults as counts or percentages."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Seleccione población adulta o infantil para calcular tasas por grupo tumoral."
+msgstr "Select the adult or childhood population to calculate tumour-group rates."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comparación"
+msgstr "Comparison"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Composición"
+msgstr "Composition"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Puntos"
+msgstr "Points"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Barras"
+msgstr "Bars"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Escala"
+msgstr "Scale"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Opciones del gráfico"
+msgstr "Chart options"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tamaño de los puntos"
+msgstr "Point size"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grosor de la línea"
+msgstr "Line width"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mostrar puntos"
+msgstr "Show points"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grosor de las barras"
+msgstr "Bar thickness"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tamaño del centro"
+msgstr "Centre size"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mostrar valores"
+msgstr "Show values"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mostrar leyenda"
+msgstr "Show legend"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Iniciar escala en cero"
+msgstr "Start scale at zero"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La serie temporal requiere al menos dos años disponibles."
+msgstr "A time series requires at least two available years."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La población denominadora y los pesos de la tasa ajustada se limitan a las edades de la población analizada."
+msgstr "Population denominators and standard weights are restricted to the ages of the study population."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Se muestran los códigos de etapa recibidos. Leucemias y linfomas están excluidos; la excepción incompleta del diccionario sigue pendiente de aclaración."
+msgstr "Source stage codes are shown. Leukaemias and lymphomas are excluded; the incomplete dictionary exception still needs clarification."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "CIE-10: 20 años o más. CICN: menores de 20 años. Para las tasas por grupo tumoral, seleccione la población correspondiente."
+msgstr "ICD-10: ages 20 and older. ICCC: under age 20. Select the corresponding population for tumour-group rates."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los porcentajes y las tasas usan la unidad de conteo seleccionada. — indica un cálculo no disponible para esta selección."
+msgstr "Percentages and rates use the selected counting unit. — marks a calculation unavailable for this selection."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Versión"
+msgstr "Version"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa cruda/específica"
+msgstr "Crude / age-specific rate"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Paginación de resultados"
+msgstr "Results pagination"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Anterior"
+msgstr "Previous"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Siguiente"
+msgstr "Next"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Página"
+msgstr "Page"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mapa de incidencia por provincia"
+msgstr "Incidence map by province"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sin datos"
+msgstr "No data"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Visualización"
+msgstr "Visualization"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gráfico de la consulta; valores disponibles en la tabla inferior"
+msgstr "Query chart; values are available in the table below"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Imagen PNG"
+msgstr "PNG image"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Informe PDF"
+msgstr "PDF report"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tabla CSV"
+msgstr "CSV table"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Excel"
+msgstr "Excel"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Resultados"
+msgstr "Results"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuente y corte"
+msgstr "Source and release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtros aplicados"
+msgstr "Applied filters"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Estadísticas de incidencia del Registro Nacional de Cáncer de Cuba."
+msgstr "Incidence statistics from the National Cancer Registry of Cuba."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "RNC · Estadísticas de cáncer en Cuba"
+msgstr "RNC · Cancer statistics in Cuba"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "RNC Cuba · Inicio"
+msgstr "RNC Cuba · Home"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Inicio"
+msgstr "Home"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Registro Nacional de Cáncer"
+msgstr "National Cancer Registry"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sesión iniciada"
+msgstr "Signed in"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Administración"
+msgstr "Administration"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Usuarios y permisos"
+msgstr "Users and permissions"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cambiar contraseña"
+msgstr "Change password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cerrar sesión y cambiar de cuenta"
+msgstr "Sign out and switch account"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Acceso del personal"
+msgstr "Staff sign in"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Estadísticas públicas"
+msgstr "Public statistics"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Idioma"
+msgstr "Language"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Aplicar"
+msgstr "Apply"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Menú"
+msgstr "Menu"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Páginas del sitio"
+msgstr "Site pages"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Secciones de esta página"
+msgstr "Sections on this page"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Secciones sobre el RNC"
+msgstr "Sections about the RNC"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "En esta página"
+msgstr "On this page"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Plegar barra lateral"
+msgstr "Collapse sidebar"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Plegar menú"
+msgstr "Collapse menu"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Navegación"
+msgstr "Navigation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Páginas"
+msgstr "Pages"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gestión de usuarios"
+msgstr "User management"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gestionar usuarios"
+msgstr "Manage users"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Usuarios y roles"
+msgstr "Users and roles"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Índice de la página"
+msgstr "Page contents"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Entorno con datos sintéticos"
+msgstr "Synthetic data environment"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Información que acerca"
+msgstr "Bringing information closer"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "las estadísticas a las personas."
+msgstr "Bringing statistics to people."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Registro Nacional de Cáncer de Cuba."
+msgstr "National Cancer Registry of Cuba."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta de incidencia y resultados agregados."
+msgstr "Incidence statistics and aggregate results."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Navegación del pie de página"
+msgstr "Footer navigation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Explorar"
+msgstr "Explore"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ayuda y acceso"
+msgstr "Help and access"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Información y acceso"
+msgstr "Information and access"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cómo leer los resultados"
+msgstr "How to read the results"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Seguridad de mi cuenta"
+msgstr "Account security"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Subir al comienzo"
+msgstr "Back to top"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Registro Nacional de Cáncer · Cuba"
+msgstr "National Cancer Registry · Cuba"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los datos de esta instalación son inventados. No representan estadísticas oficiales."
+msgstr "The data on this site are synthetic and do not represent official statistics."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El RNC"
+msgstr "About the RNC"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nomencladores"
+msgstr "Code catalogs"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta sin conexión"
+msgstr "Offline consultation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Crear usuario"
+msgstr "Create user"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Editar usuario"
+msgstr "Edit user"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Detalle del corte"
+msgstr "Release details"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Iniciar sesión"
+msgstr "Sign in"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Recuperar acceso"
+msgstr "Recover account"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Administrador de soporte"
+msgstr "Support administrator"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Responsable de publicación"
+msgstr "Publication manager"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Operador de cargas"
+msgstr "Data intake operator"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta pública"
+msgstr "Public consultation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Información para comprender la incidencia del cáncer"
+msgstr "Information to understand cancer incidence"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El Registro Nacional de Cáncer reúne y analiza información sobre los casos de cáncer en Cuba. Este portal permite consultar estadísticas por año, territorio, sexo, edad y localización, y preparar tablas, gráficos y descargas."
+msgstr "The National Cancer Registry collects and analyzes information about cancer cases in Cuba. This portal lets you explore statistics by year, territory, sex, age, and cancer site, and prepare tables, charts, and downloads."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consultar estadísticas"
+msgstr "Explore statistics"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Conocer el RNC"
+msgstr "About the RNC"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Qué ofrece este portal"
+msgstr "What this portal offers"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Explora los datos disponibles"
+msgstr "Explore the available data"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtra por año y territorio"
+msgstr "Filter by year and territory"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Compara sexo, edad y localización"
+msgstr "Compare sex, age, and cancer site"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta tablas y visualizaciones"
+msgstr "Explore tables and visualizations"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Descarga resultados con su contexto"
+msgstr "Download results with their context"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Información sobre el Registro"
+msgstr "About the Registry"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El Registro"
+msgstr "The Registry"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "¿Qué es el RNC?"
+msgstr "What is the RNC?"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Es el sistema nacional que recopila, revisa y analiza información de cáncer con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del cáncer y sirven de apoyo a la investigación y la planificación sanitaria."
+msgstr "It is the national population-based system that collects, reviews, and analyzes cancer information. Its statistics help describe the burden of cancer and support research and health planning."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Qué hacemos"
+msgstr "What we do"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La plataforma"
+msgstr "The platform"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "¿Qué puedes hacer aquí?"
+msgstr "What can you do here?"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Construir una consulta, elegir el indicador y la dimensión de análisis, revisar la tabla que acompaña cada gráfico y exportar los resultados seleccionados."
+msgstr "Build a query, choose an indicator and analysis dimension, review the table accompanying each chart, and export the selected results."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Abrir la consulta estadística"
+msgstr "Open the statistical explorer"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cómo usar el portal"
+msgstr "How to use the portal"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "De la pregunta al resultado"
+msgstr "From question to result"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Define la consulta."
+msgstr "Define your query."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Selecciona el período y las dimensiones disponibles, como territorio, sexo, edad y localización."
+msgstr "Select the available period and dimensions, such as territory, sex, age, and cancer site."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Elige qué medir."
+msgstr "Choose what to measure."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Distingue el número de casos, una proporción o una tasa; cada medida responde a una pregunta diferente."
+msgstr "Choose between a case count, a proportion, or a rate; each measure answers a different question."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Interpreta y conserva el contexto."
+msgstr "Interpret the results in context."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revisa tabla, unidad, población de referencia, fuente y notas del método antes de comparar o descargar."
+msgstr "Review the table, unit, reference population, source, and method notes before comparing or downloading results."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La disponibilidad de cada indicador depende del corte publicado. Las estimaciones, los datos observados y los períodos preliminares deben identificarse por separado."
+msgstr "Indicator availability depends on the published release. Estimates, observed data, and preliminary periods must be identified separately."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ver cómo se calculan los indicadores"
+msgstr "See how indicators are calculated"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Conceptos estadísticos básicos"
+msgstr "Basic statistical concepts"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Casos y frecuencias"
+msgstr "Cases and frequencies"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa compara una parte con un total y se expresa como porcentaje. El denominador y la unidad deben acompañar siempre al resultado."
+msgstr "A count shows how many cases meet the selected filters. A relative frequency compares a part with a total and is expressed as a percentage. The denominator and unit should always accompany the result."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasas de incidencia"
+msgstr "Incidence rates"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Una tasa relaciona los casos nuevos con la población correspondiente al mismo período y estrato. Las tasas por edad ayudan a describir grupos; el ajuste por edad facilita comparaciones entre poblaciones con estructuras etarias diferentes."
+msgstr "A rate relates new cases to the population for the same period and stratum. Age-specific rates help describe groups; age adjustment supports comparisons between populations with different age structures."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las consultas estarán disponibles cuando exista una publicación activa."
+msgstr "Queries will be available when a release is published."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comparar por"
+msgstr "Compare by"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El ajuste por edad necesita todos los grupos de edad."
+msgstr "Age adjustment requires all age groups."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El corte activo no incluye desglose por municipio; solo contiene provincia de residencia."
+msgstr "The active release has no municipality breakdown; it only contains province of residence."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El corte agregado no permite deduplicar personas distintas al combinar varios valores. Use Tumores o seleccione un solo valor por filtro."
+msgstr "The aggregate release cannot deduplicate people across multiple selected values. Use tumors or select only one value per filter."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Este gráfico requiere la unidad Tumores."
+msgstr "This chart requires the Tumors unit."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtra los casos por municipio de residencia. Puede elegir varios."
+msgstr "Filter cases by municipality of residence. You can select more than one."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La dispersión necesita una selección que permita contar personas distintas sin solapamientos."
+msgstr "A scatter plot needs a selection where distinct people can be counted without overlap."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Municipio de residencia"
+msgstr "Municipality of residence"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Para personas distintas, la composición solo se puede comparar por sexo."
+msgstr "For distinct people, composition can only be compared by sex."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sin seleccionar opciones se incluyen todos; puede elegir varias."
+msgstr "If you select no options, all values are included. You can select more than one."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sin selección se incluyen solo las provincias presentes en este corte, que puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia de la unidad informante; puede elegir varias."
+msgstr "With no selection, only provinces in this release are included; they may not cover all of Cuba. These are provinces of residence, not provinces of reporting units. You can select more than one."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sin selección se incluyen todas las provincias disponibles. Es la provincia de residencia, no la provincia de la unidad informante; puede elegir varias."
+msgstr "With no selection, all available provinces are included. This is the province of residence, not the province of the reporting unit. You can select more than one."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta 8 categorías excluyentes."
+msgstr "Only chart types compatible with your selection are offered. Pie and doughnut charts support up to 8 mutually exclusive categories."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tipo de gráfico"
+msgstr "Chart type"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Unidad de conteo"
+msgstr "Counting unit"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cuenta"
+msgstr "Account"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta sin conexión · RNC Cuba"
+msgstr "Offline consultation · RNC Cuba"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta pública local"
+msgstr "Local public consultation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Guarda una publicación agregada sintética mientras tienes conexión. Después puedes filtrar, calcular, graficar, paginar e imprimir desde este dispositivo. La aplicación pública continúa disponible sin el servidor; la administración requiere conexión."
+msgstr "Save a synthetic aggregate release while you are online. You can then filter, calculate, chart, paginate, and print from this device. The public app remains available without the server; administration requires a connection."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicación local"
+msgstr "Local release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Instalar consulta pública"
+msgstr "Install public consultation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Guardar / actualizar publicación"
+msgstr "Save / update release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Eliminar copia local"
+msgstr "Delete local copy"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Este prototipo solo acepta publicaciones sintéticas. La copia queda en el almacenamiento del navegador hasta que la elimines o el navegador la retire. Una copia sin conexión no puede actualizarse ni revocarse mientras el dispositivo está desconectado."
+msgstr "This prototype accepts synthetic releases only. The copy remains in browser storage until you delete it or the browser removes it. An offline copy cannot be updated or revoked while the device is disconnected."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtros y visualización"
+msgstr "Filters and visualization"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Guarda una publicación para cargar los filtros disponibles."
+msgstr "Save a release to load the available filters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Localización"
+msgstr "Site"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Calcular en este dispositivo"
+msgstr "Calculate on this device"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comparar con el servidor"
+msgstr "Compare with server"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Descargar CSV"
+msgstr "Download CSV"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Descargar gráfico PNG"
+msgstr "Download chart PNG"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Imprimir / guardar PDF"
+msgstr "Print / save PDF"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gráfico del resultado calculado localmente"
+msgstr "Chart of the result calculated locally"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Actualizar resultados"
+msgstr "Update results"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Actualmente no hay un corte publicado. Las consultas y descargas estarán disponibles cuando se publique una nueva versión."
+msgstr "No release is currently published. Queries and downloads will be available when a new version is published."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cada barra suma 100 % y muestra la distribución por sexo dentro de esa categoría."
+msgstr "Each bar totals 100% and shows the sex distribution within that category."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cambiar filtros"
+msgstr "Change filters"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Categorías ordenadas de mayor a menor según el indicador seleccionado. Las posiciones también aparecen en las exportaciones."
+msgstr "Categories are sorted from highest to lowest by the selected measure. Ranks are also included in exports."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Eje de valores:"
+msgstr "Value axis:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El tamaño agrupa categorías con iguales frecuencias; los ejes conservan los conteos exactos de tumores y personas distintas."
+msgstr "Bubble size groups categories with the same frequency; the axes retain exact tumor and distinct-person counts."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtros aplicados:"
+msgstr "Applied filters:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtros de consulta"
+msgstr "Query filters"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Frecuencias y tasas calculadas para cada categoría de la comparación."
+msgstr "Frequencies and rates calculated for each comparison category."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Frecuencias, población denominadora y tasas por categoría"
+msgstr "Frequencies, denominator population, and rates by category"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Hay campos por corregir en el panel de filtros."
+msgstr "Some fields in the filter panel need correction."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La tasa cruda es frecuencia / población denominadora × 100 000; al comparar por edad corresponde a una tasa específica por edad. Al seleccionar varios años se acumulan las poblaciones anuales seleccionadas, por lo que la tasa resume el período y no corresponde a un solo año."
+msgstr "Relative frequency and rates use the unit selected above. The crude rate is frequency / denominator population × 100,000; for age comparisons it is an age-specific rate. When multiple years are selected, their annual populations are added, so the rate summarizes the period rather than a single year."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La separación vertical de los puntos solo facilita distinguirlos; no representa otro indicador."
+msgstr "Vertical spacing between points is only for readability; it does not represent another measure."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La tasa ajustada aplica la población estándar Segi–Doll al conjunto de edades disponible. Si falta cobertura en alguno de los grupos requeridos, se muestra “—”. La fórmula, los denominadores y la presentación de los métodos siguen pendientes de cotejo con el RNC."
+msgstr "The age-adjusted rate applies the Segi–Doll standard population to the available age groups. If coverage is missing for any required group, “—” is shown. The formula, denominators, and presentation of methods still require review with the RNC."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las personas distintas no se calculan cuando se combinan varios valores; una persona puede aparecer en más de un período, territorio, grupo de edad o localización."
+msgstr "Distinct people are not calculated when multiple values are combined; one person may appear in more than one period, territory, age group, or site."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay resultados"
+msgstr "No results"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay una publicación activa o la selección no contiene registros."
+msgstr "There is no active release, or the selection contains no records."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Puede combinar valores de provincia y municipio de residencia cuando el corte los incluya. Si un filtro está vacío, se incluyen todos sus valores disponibles. Los grupos tumorales corresponden a esta publicación; no forman un catálogo completo ni representan códigos TOPO o ICD‑O."
+msgstr "You can combine province and municipality of residence values when they are included in the release. Leaving a filter empty includes all its available values. Tumor groups are specific to this release; they are not a complete catalogue and do not represent TOPO or ICD-O codes."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Restablecer"
+msgstr "Reset"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revise los filtros"
+msgstr "Review the filters"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Vector SVG"
+msgstr "SVG vector image"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "por 100 000"
+msgstr "per 100,000"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Una persona puede aparecer en distintas localizaciones; esos conteos pueden solaparse y no se suman para obtener personas únicas."
+msgstr "One person may appear at multiple sites; those counts may overlap and should not be added to obtain the number of unique people."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Acceso restringido"
+msgstr "Access restricted"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Bienvenido de nuevo"
+msgstr "Welcome back"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Entre con su cuenta para acceder a sus herramientas de trabajo."
+msgstr "Sign in to access your work tools."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Incluir todos"
+msgstr "Select all"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Incluir todos los valores de"
+msgstr "Include all values for"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La dirección no existe o el recurso ya no está disponible."
+msgstr "This address does not exist or the resource is no longer available."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las cuentas son creadas por el equipo administrador. No hay registro público."
+msgstr "Accounts are created by the administration team. Public registration is not available."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No encontramos esa página"
+msgstr "We couldn't find that page"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay acciones registradas."
+msgstr "No actions have been recorded."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se ha seleccionado un archivo"
+msgstr "No file selected"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Paginación"
+msgstr "Pagination"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Primera"
+msgstr "First"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revise los campos indicados"
+msgstr "Review the indicated fields"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Seleccionar CSV"
+msgstr "Choose CSV"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tu cuenta no tiene permisos para acceder a esta sección. Puedes continuar consultando las estadísticas públicas."
+msgstr "Your account does not have permission to access this section. You can continue browsing the public statistics."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Volver al inicio"
+msgstr "Back to home"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Vuelva a seleccionar el CSV para reenviar el formulario."
+msgstr "Select the CSV file again to resubmit the form."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "de"
+msgstr "of"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "seleccionados"
+msgstr "selected"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "¿Olvidó su contraseña?"
+msgstr "Forgot your password?"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Última"
+msgstr "Last"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nomencladores · RNC Cuba"
+msgstr "Cancer code catalogues · RNC Cuba"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta de clasificadores"
+msgstr "Classification lookup"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nomencladores de cáncer"
+msgstr "Cancer code catalogues"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Busque un código o término y vea a qué sistema, edición y eje pertenece."
+msgstr "Search for a code or term to see its system, edition, and axis."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Referencia inicial de este proyecto, pendiente de validación del RNC:"
+msgstr "Initial reference for this project, pending RNC validation:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "ICD-O-3 para topografía y morfología; ICCC-3 para grupos diagnósticos infantiles. Se conserva el sistema y la edición con que llega cada código; no se traducen ni mezclan códigos entre ediciones sin una equivalencia validada."
+msgstr "ICD-O-3 for topography and morphology; ICCC-3 for childhood diagnostic groups. Each code retains its source system and edition; codes are not translated or mixed across editions without a validated equivalence."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se pudo cargar el catálogo"
+msgstr "The catalogue could not be loaded"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Catálogo oficial aún no disponible"
+msgstr "No authorized catalogue is available yet"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta instalación no tiene cargado un diccionario autorizado. Los grupos de localización de la demostración son sintéticos y no equivalen a códigos TOPO."
+msgstr "This installation has no authorized dictionary loaded. The demonstration site groups are synthetic and are not equivalent to TOPO codes."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuentes para la referencia inicial:"
+msgstr "Sources for the initial reference:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "OMS · ICD‑O‑3"
+msgstr "WHO · ICD‑O‑3"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "IARC · ICCC‑3"
+msgstr "IARC · ICCC‑3"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "es una edición internacional posterior, no la referencia inicial elegida para este prototipo."
+msgstr "is a later international edition, not the initial reference selected for this prototype."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Versión del catálogo:"
+msgstr "Catalogue version:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuente:"
+msgstr "Source:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Código o texto"
+msgstr "Code or text"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Buscar códigos, nombres y descripciones"
+msgstr "Search codes, names, and descriptions"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sistema"
+msgstr "System"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Edición"
+msgstr "Edition"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Todas"
+msgstr "All"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Eje"
+msgstr "Axis"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Buscar"
+msgstr "Search"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "conceptos encontrados. La aplicación no deduce equivalencias entre sistemas o ediciones. Solo se muestran conceptos marcados como autorizados y relaciones declaradas por una fuente o marcadas en el catálogo como validadas por el RNC; los borradores y vínculos pendientes no aparecen."
+msgstr "concepts found. The application does not infer equivalences across systems or editions. Only concepts marked as authorized and relationships declared by a source or marked as validated by the RNC are shown; drafts and pending links are omitted."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "identificadores asociados"
+msgstr "associated identifiers"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Código"
+msgstr "Code"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sistema · edición · eje"
+msgstr "System · edition · axis"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nombre y descripción"
+msgstr "Name and description"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Estado"
+msgstr "Status"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Relación"
+msgstr "Relationship"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuente y licencia"
+msgstr "Source and licence"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ver descripción"
+msgstr "View description"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Vigente"
+msgstr "Current"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Histórico/deprecado"
+msgstr "Historical/deprecated"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Opcional"
+msgstr "Optional"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuente del código"
+msgstr "Code source"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuente del concepto"
+msgstr "Concept source"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Licencia"
+msgstr "Licence"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Marcado como histórico"
+msgstr "Marked as historical"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Marcado como autorizado"
+msgstr "Marked as authorized"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay conceptos que coincidan con los filtros."
+msgstr "No concepts match these filters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Navegación lateral"
+msgstr "Side navigation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Navegación principal"
+msgstr "Main navigation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ruta de navegación"
+msgstr "Breadcrumb navigation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Saltar al contenido"
+msgstr "Skip to content"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "0 cortes"
+msgstr "0 releases"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Acceso individual"
+msgstr "Individual access"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Acciones"
+msgstr "Actions"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Activa"
+msgstr "Active"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Actualización"
+msgstr "Updated"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Administración de cortes · RNC Cuba"
+msgstr "Release administration · RNC Cuba"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Administración · Identidad"
+msgstr "Administration · Accounts"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Apellidos"
+msgstr "Last name"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Archivo CSV sintético"
+msgstr "Synthetic CSV file"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Asigne el rol y el correo. Sin contraseña temporal, una cuenta nueva recibe una invitación."
+msgstr "Assign a role and email address. New accounts receive an invitation unless you set a temporary password."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Buscar usuario"
+msgstr "Search users"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "CSV UTF-8, hasta 12 MB y 60 000 filas. Solo datos sintéticos."
+msgstr "UTF-8 CSV, up to 12 MB and 60,000 rows. Synthetic data only."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Confirme su identidad para guardar los cambios."
+msgstr "Confirm your identity to save changes."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Confirmo que el archivo contiene exclusivamente datos sintéticos"
+msgstr "I confirm that the file contains synthetic data only"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta el estado de incorporación y publicación de los cortes de incidencia."
+msgstr "Review ingestion and publication status for incidence releases."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contraseña temporal"
+msgstr "Temporary password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Correo"
+msgstr "Email"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Corte"
+msgstr "Release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cortes disponibles en el portal"
+msgstr "Releases available on the portal"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cortes en proceso"
+msgstr "Releases in progress"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cortes estadísticos"
+msgstr "Statistical releases"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cortes estadísticos disponibles para gestión."
+msgstr "Statistical releases available for management."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cortes no visibles al público"
+msgstr "Releases not visible to the public"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cortes recientes"
+msgstr "Recent releases"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Crear cuenta"
+msgstr "Create account"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Crear usuario +"
+msgstr "Create user +"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cuenta activa"
+msgstr "Account active"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cuenta guardada."
+msgstr "Account saved."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cuenta guardada; no se pudo encolar el correo. Puede reintentar la invitación."
+msgstr "Account saved; the email could not be queued. You can retry the invitation."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Debe permanecer al menos una cuenta de soporte activa."
+msgstr "At least one active support account must remain."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Desactivada"
+msgstr "Disabled"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Desactive la cuenta para retirar el acceso sin eliminar su historial."
+msgstr "Disable the account to remove access without deleting its history."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Disponibilidad de estadísticas aprobadas"
+msgstr "Availability of approved statistics"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Editar"
+msgstr "Edit"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Editar cuenta"
+msgstr "Edit account"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El archivo supera el límite de 12 MB."
+msgstr "The file exceeds the 12 MB limit."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Elija su nueva contraseña. No necesita indicar la anterior para recuperar el acceso."
+msgstr "Choose your new password. You do not need to provide the old password to recover access."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "En cola"
+msgstr "Queued"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "En revisión"
+msgstr "Under review"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Entre 10 y 250 caracteres. Esta decisión queda registrada en el historial."
+msgstr "Enter 10 to 250 characters. This decision will be recorded in the audit history."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ese correo ya está asignado a otra cuenta."
+msgstr "That email address is already assigned to another account."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ese nombre de usuario ya está en uso. Elija otro."
+msgstr "That username is already in use. Choose another."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Establecer contraseña"
+msgstr "Set password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Establecer contraseña · RNC"
+msgstr "Set password · RNC"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Falló el envío"
+msgstr "Delivery failed"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gestionar cuentas del portal"
+msgstr "Manage portal accounts"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gestionar entregas sintéticas"
+msgstr "Manage synthetic releases"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gestione las cuentas del personal autorizado y sus responsabilidades."
+msgstr "Manage authorized staff accounts and their responsibilities."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo de localización ilustrativo"
+msgstr "Illustrative site group"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Guardar contraseña"
+msgstr "Save password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Guardar cuenta"
+msgstr "Save account"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Incorporación"
+msgstr "Ingestion"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Incorporación y publicación"
+msgstr "Ingestion and publication"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Indique el correo registrado. Si la cuenta está habilitada, recibirá instrucciones."
+msgstr "Enter the registered email address. If the account is active, instructions will be sent."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Introduzca su contraseña actual y elija una nueva."
+msgstr "Enter your current password and choose a new one."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Invitación en cola de envío. El servicio de correo procesará la solicitud."
+msgstr "Invitation queued. The mail service will process the request."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La composición requiere conteos o porcentajes de categorías excluyentes; para personas, compare por sexo."
+msgstr "Composition charts require counts or percentages for mutually exclusive categories; when counting people, compare by sex."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las barras apiladas requieren frecuencias absolutas; no se suman tasas ni porcentajes."
+msgstr "Stacked bars require absolute frequencies; rates and percentages must not be added."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las invitaciones permiten elegir una contraseña privada. Una contraseña temporal obliga a cambiarla antes de utilizar el panel. Desactive las cuentas que ya no deban acceder."
+msgstr "Invitations let users choose a private password. A temporary password must be changed before using the dashboard. Disable accounts that should no longer have access."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las líneas requieren comparar por período."
+msgstr "Line charts require comparison by period."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Letras sin tildes, números, puntos, guiones o guion bajo. Al menos 3 caracteres."
+msgstr "Use unaccented letters, numbers, periods, hyphens, or underscores. At least 3 characters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Motivo de la decisión"
+msgstr "Reason for decision"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay cortes registrados."
+msgstr "No releases have been recorded."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No puede desactivar ni retirar su propio rol de soporte."
+msgstr "You cannot disable your own account or remove your support role."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se encontraron cuentas."
+msgstr "No accounts found."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se pudo confirmar la operación con esa contraseña."
+msgstr "The operation could not be confirmed with that password."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nombre"
+msgstr "Name"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nombre del corte"
+msgstr "Release name"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nombre, usuario o correo"
+msgstr "Name, username, or email"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Opcional. Sin ella, se enviará una invitación para elegir contraseña. Con ella, se exigirá cambiarla al entrar."
+msgstr "Optional. Without it, an invitation to choose a password will be sent. With it, the user must change the password at sign-in."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Operación"
+msgstr "Action"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Operador:"
+msgstr "Operator:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Período"
+msgstr "Period"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Procesado"
+msgstr "Processed"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Procesando"
+msgstr "Processing"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Proceso de gestión"
+msgstr "Management process"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicaciones"
+msgstr "Publications"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicado"
+msgstr "Published"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicados"
+msgstr "Published"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicar"
+msgstr "Publish"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicar y revocar cortes sintéticos"
+msgstr "Publish and withdraw synthetic releases"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Rechazado"
+msgstr "Rejected"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Registro del corte y procedencia"
+msgstr "Release record and provenance"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Responsabilidades"
+msgstr "Responsibilities"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Responsable"
+msgstr "Owner"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Responsable de publicación:"
+msgstr "Publication manager:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Resumen de cortes"
+msgstr "Release summary"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Retirados"
+msgstr "Withdrawn"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revisión técnica"
+msgstr "Technical review"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revocado"
+msgstr "Withdrawn"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revocar"
+msgstr "Withdraw"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Rol"
+msgstr "Role"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Se admiten tildes, espacios, apóstrofos y guiones."
+msgstr "Accents, spaces, apostrophes, and hyphens are allowed."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Se ha solicitado establecer una contraseña para su cuenta RNC.\n\n%(link)s\n\nEl enlace vence en una hora y solo puede utilizarse una vez. Si no reconoce esta solicitud, contacte con soporte."
+msgstr "A password has been requested for your RNC account.\n\n%(link)s\n\nThis link expires in one hour and can only be used once. If you did not request this, contact support."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Se utilizará para invitaciones y recuperación de acceso."
+msgstr "Used for invitations and account recovery."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Seleccione un archivo con extensión .csv."
+msgstr "Choose a .csv file."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Solicitar enlace"
+msgstr "Request link"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Solo soporte puede modificar cuentas de soporte."
+msgstr "Only support administrators can change support accounts."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Su contraseña de soporte"
+msgstr "Your support password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tabla de resultados con desplazamiento horizontal"
+msgstr "Results table with horizontal scrolling"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Territorio"
+msgstr "Territory"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Un nombre que identifique el período y la entrega."
+msgstr "A name that identifies the period and release."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Use como máximo 128 caracteres."
+msgstr "Use no more than 128 characters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Usuario"
+msgstr "Username"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Validado"
+msgstr "Validated"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ver portal público"
+msgstr "View public portal"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Verificación de estructura e integridad"
+msgstr "Structure and integrity checks"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "además, publica y revoca cortes."
+msgstr "also publishes and withdraws releases."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "gestiona cuentas y todas las funciones."
+msgstr "manages accounts and all features."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "registra y revisa cargas."
+msgstr "records and reviews uploads."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Último correo"
+msgstr "Last email"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Administración · Corte"
+msgstr "Administration · Release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Confirmar publicación"
+msgstr "Confirm publication"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Continuar"
+msgstr "Continue"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contraseña actualizada"
+msgstr "Password updated"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contraseña guardada"
+msgstr "Password saved"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cuenta y seguridad"
+msgstr "Account and security"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Datos sintéticos validados"
+msgstr "Synthetic data validated"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El archivo no superó la validación como sintético y no se conservó en el almacenamiento de la aplicación."
+msgstr "The file did not pass synthetic-data validation and was not retained in application storage."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El archivo sintético validado permanece en almacenamiento privado. Este contrato no habilita cargas clínicas del RNC."
+msgstr "The validated synthetic file remains in private storage. This contract does not allow clinical data uploads from the RNC."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El enlace no es válido, ya fue utilizado o ha caducado. Solicite uno nuevo."
+msgstr "This link is invalid, has already been used, or has expired. Request a new one."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta entrega rechazada pertenece a una versión anterior del prototipo; el archivo asociado quedó en almacenamiento privado. Las nuevas cargas rechazadas ya no se conservan."
+msgstr "This rejected submission is from an earlier prototype version; its file remained in private storage. Newly rejected uploads are no longer retained."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta publicación sustituirá el conjunto completo anterior. Revise los períodos y la cobertura; no se sumarán ambas entregas."
+msgstr "This publication will replace the entire previous dataset. Review periods and coverage; the two releases will not be added together."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filas incorporadas"
+msgstr "Rows accepted"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filas no incorporadas"
+msgstr "Rows rejected"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filas recibidas"
+msgstr "Rows received"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Historial del corte"
+msgstr "Release history"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Informe técnico"
+msgstr "Technical report"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Integridad SHA-256"
+msgstr "SHA-256 integrity"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La revocación retirará inmediatamente el corte del inicio, las consultas y las nuevas exportaciones. Los archivos ya descargados no pueden retirarse."
+msgstr "Withdrawal immediately removes the release from the home page, queries, and new exports. Files already downloaded cannot be withdrawn."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los campos con"
+msgstr "Fields marked with"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No determinado"
+msgstr "Undetermined"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay archivo fuente conservado para esta entrega."
+msgstr "No source file was retained for this release."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No validado como sintético"
+msgstr "Not validated as synthetic"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Períodos"
+msgstr "Periods"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicar corte"
+msgstr "Publish release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Recepción"
+msgstr "Received"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Reenviar enlace para establecer contraseña"
+msgstr "Resend password setup link"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revocar corte"
+msgstr "Withdraw release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revocar publicación"
+msgstr "Withdraw publication"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Se comprobaron estructura, categorías, claves de tumor únicas, consistencia de personas y denominadores, y cobertura de edad y sexo. La validación es atómica: si falla una fila, la entrega no se incorpora parcialmente."
+msgstr "Structure, categories, unique tumour keys, consistency of people and denominators, and age and sex coverage were checked. Validation is atomic: if any row fails, none of the release is ingested."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Si existe una cuenta activa con ese correo, recibirá un enlace para establecer su contraseña. Revise también la carpeta de correo no deseado."
+msgstr "If an active account exists for this email address, a password setup link will be sent. Check your spam folder too."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Solicitud recibida"
+msgstr "Request received"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Soporte:"
+msgstr "Support:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Su contraseña se guardó correctamente."
+msgstr "Your password was saved successfully."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Territorios"
+msgstr "Territories"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tumores aceptados"
+msgstr "Accepted tumours"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ya puede iniciar sesión con su nueva contraseña."
+msgstr "You can now sign in with your new password."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "son obligatorios."
+msgstr "are required."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "← Volver a administración"
+msgstr "← Back to administration"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Acción"
+msgstr "Action"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Actividad reciente"
+msgstr "Recent activity"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contrato sintético de demostración · hasta 12 MB y 60 000 filas. Cada entrega representa un conjunto completo, no un incremento. El ejemplo descargable añade un tumor sintético al corte activo para recorrer la actualización completa."
+msgstr "Synthetic demonstration data contract · up to 12 MB and 60,000 rows. Each delivery represents a complete dataset, not an increment. The downloadable example adds one synthetic tumor to the active release to demonstrate a complete update."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Descargar CSV de actualización"
+msgstr "Download update CSV"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Entregas registradas"
+msgstr "Recorded deliveries"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Entregas y cortes"
+msgstr "Deliveries and releases"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gestión de información"
+msgstr "Information management"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Incorporar archivo"
+msgstr "Add file"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Incorpore entregas, revise sus resultados técnicos y gestione la publicación."
+msgstr "Add deliveries, review their technical results, and manage publication."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay entregas registradas."
+msgstr "No deliveries have been recorded."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Publicación activa"
+msgstr "Active publication"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Recibido"
+msgstr "Received"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revisar corte →"
+msgstr "Review release →"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sin corte publicado"
+msgstr "No release published"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Subir y validar CSV"
+msgstr "Upload and validate CSV"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El Registro Nacional de Cáncer"
+msgstr "The National Cancer Registry"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Alcance nacional"
+msgstr "National coverage"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Atención"
+msgstr "Contact information"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cómo trabajamos"
+msgstr "How we work"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Dónde trabajamos"
+msgstr "Where we work"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contactos"
+msgstr "Contacts"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Guía de interpretación"
+msgstr "Interpretation guide"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Frecuencia relativa"
+msgstr "Relative frequency"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuentes y límites"
+msgstr "Sources and limitations"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fuentes, versiones y límites de comparación"
+msgstr "Sources, versions, and comparability limits"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Métodos y cálculos"
+msgstr "Methods and calculations"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Métodos y cálculos estadísticos"
+msgstr "Statistical methods and calculations"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Objetivos"
+msgstr "Objectives"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Oficina central"
+msgstr "Central office"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Organización"
+msgstr "Organization"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Participación de sus profesionales"
+msgstr "Participation of its professionals"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Provincia"
+msgstr "Province"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Referentes metodológicos consultados"
+msgstr "Methodological references consulted"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Registros provinciales"
+msgstr "Provincial registries"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Responsable publicado"
+msgstr "Listed contact"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Trabajo territorial"
+msgstr "Territorial work"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Transparencia estadística"
+msgstr "Statistical transparency"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Directorio provincial histórico del sitio institucional (2015)"
+msgstr "Historical provincial directory from the institutional website (2015)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Composición publicada en la copia histórica"
+msgstr "Composition listed in the historical copy"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Objetivo principal:"
+msgstr "Main objective:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Detección y notificación:"
+msgstr "Case detection and reporting:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Registro en la unidad informante:"
+msgstr "Registration at the reporting unit:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Revisión provincial:"
+msgstr "Provincial review:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cierre y remisión:"
+msgstr "Statistical close and submission:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Validación central:"
+msgstr "Central validation:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consolidación y estadísticas:"
+msgstr "Consolidation and statistics:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Correo publicado"
+msgstr "Listed email"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Emitir frecuencias y tasas de incidencia específicas por edad y sexo para cada localización topográfica y morfológica, además de tasas ajustadas para Cuba y cada provincia."
+msgstr "Report age- and sex-specific incidence frequencies and rates for each topographic and morphological site, as well as adjusted rates for Cuba and each province."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Emitir frecuencias absolutas y relativas por localización según la etapa clínica al diagnóstico, la provincia y la unidad informante, la base más válida para el diagnóstico y otras variables de interés."
+msgstr "Report absolute and relative frequencies by site, clinical stage at diagnosis, province, reporting unit, most valid basis for diagnosis, and other relevant variables."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Calcular indicadores de calidad de los datos por provincia y localización."
+msgstr "Calculate data quality indicators by province and site."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Estimar las cifras de supervivencia poblacional por cáncer."
+msgstr "Estimate population-based cancer survival."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Para ello, la información institucional de referencia atribuye al RNC estos objetivos específicos:"
+msgstr "Institutional reference information assigns these specific objectives to the RNC:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Aplica la misma razón dentro de cada grupo etario:"
+msgstr "Applies the same ratio within each age group:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Relaciona los casos nuevos observados con la población correspondiente al mismo período y territorio:"
+msgstr "Relates observed new cases to the population for the same period and territory:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Resume tasas específicas aplicando los pesos de una población estándar:"
+msgstr "Summarizes age-specific rates using the weights of a standard population:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Expresa qué parte de un total corresponde a una categoría:"
+msgstr "Shows what fraction of a total belongs to a category:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El Registro Nacional de Cáncer de Cuba (RNC) es de base poblacional y alcance nacional, y forma parte del sistema de información estadística del Ministerio de Salud Pública. La copia archivada del sitio institucional indica que fue creado en 1964, que perteneció al Instituto Nacional de Oncología y Radiobiología (INOR) hasta diciembre de 2007 y que, desde enero de 2008, se subordinaba metodológica y funcionalmente a la Sección Independiente de Control de Cáncer junto con el Programa Integral de Control de Cáncer en Cuba."
+msgstr "The National Cancer Registry of Cuba (RNC) is population based, covers the whole country, and is part of the statistical information system of the Ministry of Public Health. An archived copy of the institutional website states that it was created in 1964, belonged to the National Institute of Oncology and Radiobiology (INOR) until December 2007, and from January 2008 was methodologically and functionally subordinate to the Independent Cancer Control Section together with the Comprehensive Cancer Control Program in Cuba."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El RNC es un registro de base poblacional con cobertura de residentes permanentes de Cuba. Su red se organiza en tres niveles: la Oficina Central, los equipos o registros provinciales y las unidades informantes que detectan y notifican los casos."
+msgstr "The RNC is a population-based registry covering permanent residents of Cuba. Its network has three levels: the Central Office, provincial teams or registries, and reporting units that identify and report cases."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La cobertura documentada comprende las 15 provincias y el municipio especial Isla de la Juventud. En los territorios, los departamentos de salud coordinan las unidades informantes; estas incluyen centros hospitalarios y otras fuentes asistenciales previstas por los procedimientos del Registro."
+msgstr "The documented coverage includes all 15 provinces and the special municipality of Isla de la Juventud. In each territory, health departments coordinate reporting units, including hospitals and other care sources specified by Registry procedures."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La red territorial permite reunir información de distintos puntos de atención y consolidarla con alcance nacional. La copia del sitio institucional organiza esa red con una comisión o registro de cáncer en cada provincia y un directorio territorial de responsables."
+msgstr "The territorial network gathers information from different care settings and consolidates it nationally. The institutional website archive describes a cancer commission or registry in each province and a directory of territorial contacts."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El directorio que se reproduce en esta página procede de una copia histórica del sitio: la información de Oficina Central fue publicada en 2013 y el directorio provincial en 2015. Se muestra como referencia histórica; sus nombres y canales no están confirmados como vigentes."
+msgstr "The directory reproduced here comes from a historical website copy: Central Office information was published in 2013 and the provincial directory in 2015. It is shown for historical reference; its names and contact channels have not been confirmed as current."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La copia histórica describe una Oficina Central y comisiones provinciales que asesoran a las autoridades de salud y apoyan la aplicación de los procedimientos. El Manual de Procedimientos del RNC, versión VII (2024), detalla el recorrido operativo de la información:"
+msgstr "The historical copy describes a Central Office and provincial committees that advise health authorities and support the procedures. The RNC Procedures Manual, version VII (2024), details the information workflow:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Este flujo corresponde al trabajo del Registro. El portal público es una herramienta de consulta de resultados agregados y no recibe reportes de casos ni sustituye los sistemas internos del RNC."
+msgstr "This workflow describes Registry operations. The public portal provides access to aggregate results; it does not receive case reports or replace the RNC internal systems."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La Oficina Central dirige técnicamente el sistema nacional, controla los procedimientos y la calidad de la información, ofrece asesoría metodológica y produce estadísticas. Recibe los cierres territoriales y coordina su validación y consolidación."
+msgstr "The Central Office provides technical direction for the national system, oversees procedures and information quality, provides methodological advice, and produces statistics. It receives territorial submissions and coordinates their validation and consolidation."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El Manual RNC VII describe tareas centrales como comprobar la consistencia y completitud de los datos, revisar codificaciones, investigar duplicados y múltiples primarios, cotejar casos con información de mortalidad, pedir aclaraciones a los territorios e incorporar a la base consolidada solo los casos validados."
+msgstr "The RNC VII Manual describes central tasks such as checking data consistency and completeness, reviewing codes, investigating duplicates and multiple primaries, matching cases against mortality information, requesting clarification from territories, and adding only validated cases to the consolidated database."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El Manual también describe funciones de control de calidad, análisis de datos, informatización, procesamiento y edición, además de una Comisión Técnica Asesora para cambios a los procedimientos administrativos y técnicos."
+msgstr "The Manual also describes quality control, data analysis, computerization, processing and editing, as well as a Technical Advisory Commission for changes to administrative and technical procedures."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La composición y los datos de contacto actuales deben confirmarse con el RNC."
+msgstr "Current composition and contact information must be confirmed with the RNC."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los equipos provinciales conectan las unidades informantes con la Oficina Central. Revisan reportes y bases, verifican datos y códigos, gestionan reparos con las unidades y preparan los cierres que se remiten al nivel nacional. La versión histórica del sitio describe también comisiones provinciales que asesoran a las autoridades de salud, controlan la aplicación de los procedimientos y emiten estadísticas preliminares."
+msgstr "Provincial teams connect reporting units with the Central Office. They review reports and databases, check data and codes, resolve queries with units, and prepare submissions for the national level. The historical website also describes provincial committees that advise health authorities, oversee procedures, and issue preliminary statistics."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "A continuación se transcribe el directorio de responsables y correos de la copia histórica del sitio, publicada en 2015. Se conserva como referencia documental, no como lista confirmada de contactos activos:"
+msgstr "The following contacts and email addresses are transcribed from the historical website copy published in 2015. They are retained as documentary reference, not as a confirmed list of active contacts:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se garantiza la entrega de mensajes a estos correos. El directorio, los cargos y las direcciones necesitan confirmación antes de usarse para gestiones actuales."
+msgstr "Delivery to these email addresses is not guaranteed. The directory, roles, and addresses need confirmation before they are used for current matters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La página de contacto de la copia histórica publicaba los siguientes datos de la Oficina Central:"
+msgstr "The historical copy of the contact page listed the following Central Office information:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta versión del portal no recibe reportes clínicos ni solicitudes de modificación de registros. Para proteger la confidencialidad, no envíes datos de pacientes mediante canales de consulta pública."
+msgstr "This version of the portal does not accept clinical reports or requests to modify registry records. To protect confidentiality, do not send patient data through public inquiry channels."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los datos de ubicación, teléfono, correo y responsables se transcribieron de las páginas institucionales archivadas de Contacto y Dónde estamos, publicadas en 2013. Confirma su vigencia con el RNC antes de utilizarlos."
+msgstr "Location, telephone, email, and contact details were transcribed from archived institutional Contact and Location pages published in 2013. Confirm that they are current with the RNC before use."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las fórmulas siguientes explican conceptos usados en epidemiología descriptiva y en referentes internacionales. Para que un resultado del portal sea oficial, el RNC debe confirmar el método, las agrupaciones, los denominadores y las reglas de presentación aplicables al corte."
+msgstr "The formulas below explain concepts used in descriptive epidemiology and international references. For a portal result to be official, the RNC must confirm the method, groupings, denominators, and presentation rules that apply to the release."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La versión local actual del portal está conectada a un agregado de demostración sintético. Esta interfaz no acredita cifras oficiales ni sustituye la aprobación de un corte público."
+msgstr "The current local version of the portal uses a synthetic demonstration aggregate. This interface does not certify official figures or replace approval of a public release."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las descripciones de organización se basan en páginas de la copia institucional consultadas entre 2013 y 2015 y requieren validación de vigencia. Los métodos se presentan con fines explicativos y las decisiones pendientes se identifican expresamente."
+msgstr "Organizational descriptions are based on institutional website copies consulted between 2013 and 2015 and require confirmation that they remain current. Methods are presented for explanation, and pending decisions are explicitly identified."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Coordinación nacional"
+msgstr "National coordination"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Este portal ofrece actualmente consultas estadísticas de incidencia. No presenta aquí resultados de supervivencia, etapas clínicas, bases diagnósticas ni indicadores de calidad del RNC."
+msgstr "This portal currently provides statistical queries on incidence. It does not present RNC results on survival, clinical stages, diagnostic bases, or quality indicators."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La información del RNC también contribuye a la investigación clínica y epidemiológica sobre el cáncer, a planificar y evaluar las acciones de control, y a planificar los recursos materiales y humanos para la atención oncológica."
+msgstr "RNC information also contributes to clinical and epidemiological cancer research, planning and evaluating control measures, and planning the material and human resources needed for cancer care."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La información institucional de referencia señala que profesionales del departamento forman parte de:"
+msgstr "Institutional reference information states that department professionals participate in:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La pertenencia y denominación actual de estos grupos y comisiones debe confirmarse con el RNC antes de presentarse como vigente."
+msgstr "Current membership and names of these groups and committees must be confirmed with the RNC before being presented as current."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa ajustada directamente por edad"
+msgstr "Direct age-adjusted rate"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa cruda de incidencia"
+msgstr "Crude incidence rate"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa específica por edad"
+msgstr "Age-specific rate"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa indirecta e intervalos de confianza"
+msgstr "Indirect rate and confidence intervals"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El estándar es una población de ponderación, no el denominador de los casos. Como referencia metodológica de trabajo se estudia la estándar mundial Segi–Doll de 18 grupos quinquenales; el RNC debe validar su correspondencia, fórmula operativa, grupos abiertos, datos faltantes y redondeo antes de atribuirle cifras oficiales. Las comparaciones solo son interpretables si usan el mismo estándar y definiciones compatibles."
+msgstr "The standard population supplies weights; it is not the case denominator. The Segi–Doll world standard of 18 five-year age groups is being considered as a methodological reference. The RNC must validate its correspondence, operational formula, open-ended groups, missing data, and rounding before any figures are attributed to it as official. Comparisons are interpretable only when the same standard and compatible definitions are used."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El total puede depender de la pregunta y de la unidad de análisis. El tratamiento de valores desconocidos, categorías excluidas y redondeo requiere una regla explícita; no se debe asumir que tumor y persona son unidades intercambiables."
+msgstr "The total may depend on the question and unit of analysis. Unknown values, excluded categories, and rounding require explicit rules; tumors and people must not be treated as interchangeable units."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "En la organización descrita por la copia histórica, cada comisión provincial asesora al Director Provincial de Salud sobre el control del cáncer y el funcionamiento del sistema de información. La integran perfiles de coordinación de cáncer, oncología, estadística, epidemiología, hospitales y especialistas o técnicos de los hospitales que diagnostican casos. Su función es exigir y controlar el cumplimiento de los procedimientos, cuidar la calidad y continuidad del dato primario, emitir estadísticas provinciales preliminares y promover investigaciones epidemiológicas y clínicas."
+msgstr "In the organization described by the historical copy, each provincial committee advises the Provincial Director of Health on cancer control and operation of the information system. Its members represent cancer coordination, oncology, statistics, epidemiology, hospitals, and specialists or technicians at hospitals that diagnose cases. Its functions include overseeing compliance with procedures, maintaining the quality and continuity of primary data, issuing preliminary provincial statistics, and promoting epidemiological and clinical research."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La escala por 100 000 es una forma habitual de presentación. Numerador, período, territorio, sexo, grupo de edad y población deben coincidir. El proyecto identifica la población residente de ONEI como denominador de trabajo; la serie, edición y convención temporal exactas deben quedar identificadas con el RNC."
+msgstr "Rates per 100,000 are a common presentation scale. The numerator, period, territory, sex, age group, and population must match. The project identifies ONEI resident population as a working denominator; the exact series, edition, and time convention must be confirmed with the RNC."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La estandarización indirecta suele comparar los casos observados con los esperados según tasas de referencia por estrato. La elección de esas tasas de referencia y la forma de presentar el resultado requieren una definición institucional."
+msgstr "Indirect standardization usually compares observed cases with expected cases based on reference rates for each stratum. Choosing those reference rates and deciding how to present the result require an institutional definition."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La página archivada “Oficina Central” identificaba un Jefe del Registro y tres grupos: Calidad de los Datos, Informatización y Procesamiento y Edición. La relación siguiente reproduce los nombres y correos que aparecían allí; no confirma que las personas ocupen hoy esos cargos ni que las direcciones sigan activas."
+msgstr "The archived “Central Office” page identified a Registry Head and three groups: Data Quality, Computerization, and Processing and Editing. The list below reproduces the names and email addresses shown there; it does not confirm that these people currently hold those positions or that the addresses are still active."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La página “Dónde estamos” de esa misma copia identifica al Instituto Nacional de Oncología y Radiobiología, en 29 y F, Vedado, CP 10400, y publica el teléfono +53 7 838 3970. Estos datos se incluyen como información histórica, no como canales confirmados en la actualidad."
+msgstr "The “Where we are” page in the same copy identifies the National Institute of Oncology and Radiobiology at 29 and F, Vedado, CP 10400, and lists telephone +53 7 838 3970. These details are historical information, not currently confirmed contact channels."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los intervalos de confianza describen incertidumbre estadística y dependen del indicador, el volumen de casos y el método elegido. Su incorporación al portal es una propuesta de trabajo, no una regla aprobada por el RNC. El método de tasa indirecta y el de intervalos permanecen pendientes de validación."
+msgstr "Confidence intervals describe statistical uncertainty and depend on the indicator, number of cases, and selected method. Adding them to the portal is a proposal, not a rule approved by the RNC. The indirect rate method and confidence intervals remain pending validation."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los procedimientos describen frecuencias distintas para las tareas locales, la revisión territorial y los cierres al nivel central. El calendario concreto puede variar y debe consultarse en la edición vigente del Manual."
+msgstr "The procedures specify different frequencies for local tasks, territorial review, and submissions to the central level. The schedule may vary and should be checked in the current edition of the Manual."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los referentes consultados muestran por qué cada resultado debe documentar su procedencia y su versión. Cancer Today organiza visualizaciones junto a sus fuentes y métodos; ECIS diferencia datos observados de estimaciones; SEER acompaña sus tablas y gráficos con definiciones, notas y metodología. Estas prácticas inspiran la presentación, pero sus reglas no se trasladan automáticamente al RNC."
+msgstr "The references consulted show why each result should document its source and version. Cancer Today presents visualizations with their sources and methods; ECIS distinguishes observed data from estimates; SEER provides definitions, notes, and methods with its tables and charts. These practices inform the presentation, but their rules do not automatically apply to the RNC."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La adscripción organizativa debe actualizarse con el RNC: el"
+msgstr "The organizational affiliation must be confirmed with the RNC: the"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comparabilidad:"
+msgstr "Comparability:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Denominador:"
+msgstr "Denominator:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Divulgación:"
+msgstr "Disclosure:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Método:"
+msgstr "Method:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Numerador:"
+msgstr "Numerator:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "corte de casos identificado, con período, estado y fecha de publicación."
+msgstr "an identified case release, including period, status, and publication date."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "fuente y versión de la población, con cobertura territorial, edad y sexo."
+msgstr "the population source and version, including territorial, age, and sex coverage."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "unidad de análisis, escala, estándar de edad y forma de cálculo."
+msgstr "the unit of analysis, scale, age standard, and calculation method."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "tasas calculadas con estándares, períodos, coberturas y definiciones compatibles."
+msgstr "rates calculated using compatible standards, periods, coverage, and definitions."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "agregados autorizados y reglas para evitar identificación indirecta; el umbral o método de supresión para el portal requiere acuerdo institucional."
+msgstr "authorized aggregates and rules to prevent indirect identification; the portal suppression threshold or method requires institutional agreement."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Correo publicado:"
+msgstr "Listed email:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Teléfono publicado:"
+msgstr "Listed telephone:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo Nacional de Oncología."
+msgstr "National Oncology Group."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo de Calidad de los Datos:"
+msgstr "Data Quality Group:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo de Epidemiología y Registros de Cáncer de Países de Lengua Latina."
+msgstr "Latin Language Countries Group for Epidemiology and Cancer Registries."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo de Informatización:"
+msgstr "Computerization Group:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo de Oncopediatría."
+msgstr "Pediatric Oncology Group."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo de Procesamiento y Edición:"
+msgstr "Processing and Editing Group:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Jefatura del RNC:"
+msgstr "RNC Head:"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comité de Ensayos Clínicos del INOR."
+msgstr "INOR Clinical Trials Committee."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consejo Científico del INOR."
+msgstr "INOR Scientific Council."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comisión Nacional del Programa de Cáncer Bucal."
+msgstr "National Oral Cancer Program Commission."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comisión de Expertos del Programa Ramal Cáncer."
+msgstr "Cancer Branch Program Expert Commission."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Red Iberoamericana de Epidemiología y Sistemas de Información en Cáncer."
+msgstr "Ibero-American Network for Cancer Epidemiology and Information Systems."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comisión Europea · European Cancer Information System (ECIS)"
+msgstr "European Commission · European Cancer Information System (ECIS)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "IARC/WHO · Global Cancer Observatory, Cancer Today"
+msgstr "IARC/WHO · Global Cancer Observatory, Cancer Today"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "NCI/SEER · SEER*Explorer"
+msgstr "NCI/SEER · SEER*Explorer"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "NCI/SEER · definición y cálculo de tasas ajustadas por edad"
+msgstr "NCI/SEER · definition and calculation of age-adjusted rates"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sistema de Información Estadística Complementaria de Salud (2017)"
+msgstr "Complementary Health Statistical Information System (2017)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El RNC · Registro Nacional de Cáncer de Cuba"
+msgstr "The RNC · National Cancer Registry of Cuba"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El subíndice"
+msgstr "The subscript"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "la Oficina Central revisa integridad y consistencia, investiga posibles duplicados o tumores múltiples, contrasta la información con mortalidad y solicita aclaraciones cuando son necesarias."
+msgstr "the Central Office checks completeness and consistency, investigates potential duplicates or multiple tumors, compares information with mortality data, and requests clarification when needed."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "las provincias preparan los cierres estadísticos y remiten al nivel central los casos nuevos validados junto con la documentación requerida, según el calendario estadístico."
+msgstr "the provinces prepare statistical submissions and send validated new cases with the required documentation to the central level, according to the statistical calendar."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "los equipos territoriales cotejan reportes y bases de datos, verifican variables y códigos, solicitan correcciones y coordinan las unidades informantes."
+msgstr "territorial teams compare reports and databases, check variables and codes, request corrections, and coordinate reporting units."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "los médicos notifican los casos y los registradores buscan casos adicionales en fuentes como anatomía patológica, laboratorios, egresos hospitalarios, certificados de defunción e historias clínicas."
+msgstr "physicians report cases, and registrars identify additional cases in sources such as pathology, laboratories, hospital discharges, death certificates, and medical records."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "se confeccionan y codifican los reportes, se revisan las fuentes y se introducen los casos en el sistema automatizado del Registro."
+msgstr "reports are prepared and coded, sources are reviewed, and cases are entered into the Registry automated system."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "solo los casos validados se incorporan a la base consolidada; con ellos el RNC prepara y emite resultados estadísticos."
+msgstr "only validated cases are added to the consolidated database; the RNC prepares and issues statistical results from them."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "porcentaje = (casos de la categoría / total de referencia) × 100"
+msgstr "percentage = (category cases / reference total) × 100"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "tasa ajustada = Σ (peso estándarᵢ × tasa específicaᵢ) / Σ (peso estándarᵢ)"
+msgstr "adjusted rate = Σ (standard weightᵢ × age-specific rateᵢ) / Σ (standard weightᵢ)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "tasa cruda = (casos nuevos / población correspondiente) × 100 000"
+msgstr "crude rate = (new cases / corresponding population) × 100,000"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "tasa específicaᵢ = (casos nuevosᵢ / poblaciónᵢ) × 100 000"
+msgstr "age-specific rateᵢ = (new casesᵢ / populationᵢ) × 100,000"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "describir la magnitud del cáncer como problema de salud en Cuba."
+msgstr "describe the magnitude of cancer as a health problem in Cuba."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "transcribe la Resolución 31/2008 como traslado de la Oficina Central a la Unidad Nacional para el Control del Cáncer, bajo su dirección y en coordinación con Estadísticas del MINSAP. Las denominaciones de las fuentes no coinciden literalmente."
+msgstr "describes Resolution 31/2008 as transferring the Central Office to the National Cancer Control Unit, under its direction and in coordination with MINSAP Statistics. The sources do not use identical names."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid " representa un estrato de edad (y cualquier otra dimensión que se mantenga fija). Comparar estratos exige que la definición de grupo y el período sean consistentes."
+msgstr " represents an age stratum (and any other dimension held constant). Comparing strata requires consistent group definitions and periods."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid " y "
+msgstr " and "
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Agrupación"
+msgstr "Grouping"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Al combinar años, la población denominadora acumula las poblaciones anuales seleccionadas."
+msgstr "When years are combined, denominator population is the sum of the selected annual populations."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Consulta"
+msgstr "Query"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contexto de la consulta"
+msgstr "Query context"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Frecuencia relativa (%%) · %(unit)s"
+msgstr "Relative frequency (%%) · %(unit)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Gráfico"
+msgstr "Chart"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Indicador del gráfico"
+msgstr "Chart metric"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las tasas se calculan con la unidad elegida; los grupos de localización pueden solaparse en personas distintas. "
+msgstr "Rates use the selected unit; site groups may overlap for distinct people. "
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Métodos candidatos; denominadores sintéticos, no son resultados oficiales. "
+msgstr "Candidate methods; denominators are synthetic and are not official results. "
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No disponible en este corte"
+msgstr "Not available in this release"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nota"
+msgstr "Note"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Personas distintas (frecuencia absoluta)"
+msgstr "Distinct people (absolute frequency)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Porcentaje (%)"
+msgstr "Percentage (%)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Selección"
+msgstr "Selection"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa ajustada Segi–Doll por 100 000 · %(unit)s"
+msgstr "Segi–Doll age-adjusted rate per 100,000 · %(unit)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa cruda/específica por 100 000 · %(unit)s"
+msgstr "Crude/age-specific rate per 100,000 · %(unit)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Todas las provincias"
+msgstr "All provinces"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Todos (%(first)s–%(last)s)"
+msgstr "All (%(first)s–%(last)s)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Todos los municipios"
+msgstr "All municipalities"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tumores (frecuencia absoluta)"
+msgstr "Tumors (absolute frequency)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "rnc-synthetic-query"
+msgstr "rnc-synthetic-query"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Datos sintéticos · %(period)s"
+msgstr "Synthetic data · %(period)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Datos sintéticos · %(title)s · Versión %(release)s"
+msgstr "Synthetic data · %(title)s · Release %(release)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Distribución por sexo (%)"
+msgstr "Distribution by sex (%)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El tamaño o rótulo del punto indica cuántas categorías coinciden en las mismas coordenadas."
+msgstr "Point size or label indicates how many categories overlap at the same coordinates."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Frecuencias absolutas"
+msgstr "Absolute frequencies"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Localizaciones más frecuentes"
+msgstr "Most frequent sites"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay cobertura de población completa para el ajuste seleccionado."
+msgstr "There is not complete population coverage for the selected adjustment."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "RNC / Cuba · Detalle de consulta"
+msgstr "RNC / Cuba · Query details"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Seleccione una dimensión con hasta ocho categorías para circular o anillo."
+msgstr "Select a dimension with no more than eight categories for a pie or doughnut chart."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Detalle %(page)s"
+msgstr "Details %(page)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cuba (nacional)"
+msgstr "Cuba (national)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Este gráfico necesita al menos dos categorías con datos en la dimensión elegida."
+msgstr "This chart requires at least two categories with data in the selected dimension."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La comparación por sexo requiere datos disponibles de mujeres y hombres."
+msgstr "Sex comparison requires data for both women and men."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Provincias disponibles; cobertura nacional incompleta"
+msgstr "Available provinces; national coverage is incomplete"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Administración RNC"
+msgstr "RNC administration"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtros de la consulta"
+msgstr "Query filters"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Navegación RNC"
+msgstr "RNC navigation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Portal público"
+msgstr "Public portal"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo ilustrativo sintético; no representa un código TOPO ni una equivalencia ICD-O: %(category)s."
+msgstr "Illustrative synthetic group; it is not a TOPO code or an ICD-O equivalence: %(category)s."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Código de provincia documentado en el Manual RNC VII, Anexo 1."
+msgstr "Province code documented in the RNC Manual VII, Annex 1."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ampliar barra lateral"
+msgstr "Expand sidebar"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La consulta local aún no está disponible en este dispositivo."
+msgstr "The offline query is not available on this device yet."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Use letras de la A a la Z, números, punto, guion o guion bajo."
+msgstr "Use letters A to Z, numbers, periods, hyphens, or underscores."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."
+msgstr "Use letters, spaces, apostrophes, or hyphens; for example, María José."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Use texto, números y puntuación habitual; sin etiquetas HTML."
+msgstr "Use text, numbers, and common punctuation; no HTML tags."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Busque por nombre, usuario o correo; no se admiten símbolos de programación."
+msgstr "Search by name, username, or email; programming symbols are not allowed."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Incluya una descripción con letras o números."
+msgstr "Include a description with letters or numbers."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Complete este campo."
+msgstr "Complete this field."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Marque esta casilla para continuar."
+msgstr "Check this box to continue."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se pudo enviar el formulario"
+msgstr "The form could not be submitted."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La sesión del formulario ha caducado o no se pudo verificar. Vuelva a abrir la página e inténtelo otra vez. No se guardó este envío."
+msgstr "Your form session expired or could not be verified. Reopen the page and try again. This submission was not saved."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La dirección no existe o el recurso ya no está disponible. Puede continuar desde la navegación del portal."
+msgstr "This address does not exist or the resource is no longer available. You can continue using the portal navigation."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s, código %(number)s"
+msgstr "%(label)s, code %(number)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: código repetido para el mismo sistema y edición."
+msgstr "%(label)s: duplicate code for the same system and edition."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: debe contener uno o más códigos."
+msgstr "%(label)s: must contain one or more codes."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: eje no admitido."
+msgstr "%(label)s: unsupported axis."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: estado de código no admitido."
+msgstr "%(label)s: unsupported code status."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: estado de publicación no admitido."
+msgstr "%(label)s: unsupported publication status."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: estado de relación no admitido."
+msgstr "%(label)s: unsupported relationship status."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: faltan campos requeridos."
+msgstr "%(label)s: required fields are missing."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: hay campos vacíos o con tipo inválido."
+msgstr "%(label)s: fields are empty or have an invalid type."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: identificador de concepto duplicado."
+msgstr "%(label)s: duplicate concept identifier."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: la fuente debe ser una URL HTTP o HTTPS."
+msgstr "%(label)s: the source must be an HTTP or HTTPS URL."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s: relación de concepto no admitida."
+msgstr "%(label)s: unsupported concept relationship."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Archivo validado y registrado. Revise el corte antes de publicarlo."
+msgstr "File validated and recorded. Review the release before publishing it."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "CSV no válido; revise codificación y estructura."
+msgstr "Invalid CSV; check its encoding and structure."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Cada territorio y año debe cubrir ambos sexos y los 18 grupos de edad."
+msgstr "Each territory and year must cover both sexes and all 18 age groups."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comportamiento"
+msgstr "Behavior"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Concepto %(number)s"
+msgstr "Concept %(number)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Correspondencia exacta"
+msgstr "Exact match"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Código del concepto"
+msgstr "Concept code"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Declarado por la fuente"
+msgstr "Declared by the source"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ejecute seed_demo para generar el ejemplo local."
+msgstr "Run seed_demo to generate the local sample."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El archivo debe contener un arreglo 'concepts'."
+msgstr "The file must contain a 'concepts' array."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El archivo no contiene registros."
+msgstr "The file contains no records."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El catálogo configurado no se puede leer como JSON UTF-8."
+msgstr "The configured catalog cannot be read as UTF-8 JSON."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El catálogo declara validación RNC"
+msgstr "The catalog declares RNC validation"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El ejemplo ya alcanzó el límite de filas del entorno local."
+msgstr "The local sample has reached the row limit for this environment."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El límite local es de 60 000 filas."
+msgstr "The local limit is 60,000 rows."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El service worker solo está habilitado en el perfil público."
+msgstr "The service worker is available only in the public profile."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta entrega ya está registrada."
+msgstr "This delivery has already been registered."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta entrega ya está registrada; no se incorporó otra copia."
+msgstr "This delivery has already been registered; no duplicate was added."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Estadio"
+msgstr "Stage"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Estado actualizado. El portal público ya refleja este cambio."
+msgstr "Status updated. The public site now reflects this change."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Estructura incompatible. Descargue el CSV sintético de ejemplo."
+msgstr "Incompatible structure. Download the synthetic sample CSV."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: categoría no admitida."
+msgstr "Row %(number)s: unsupported category."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: denominador inconsistente."
+msgstr "Row %(number)s: inconsistent denominator."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: estructura o longitud incorrecta."
+msgstr "Row %(number)s: invalid structure or length."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: formato de identificador sintético no admitido."
+msgstr "Row %(number)s: unsupported synthetic identifier format."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: identidad sintética inconsistente."
+msgstr "Row %(number)s: inconsistent synthetic identity."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: identificador de catálogo desconocido."
+msgstr "Row %(number)s: unknown catalog identifier."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: identificador de tumor repetido."
+msgstr "Row %(number)s: duplicate tumor identifier."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: persona incompatible con el estrato declarado."
+msgstr "Row %(number)s: person does not match the declared stratum."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: período, población o peso incompatible."
+msgstr "Row %(number)s: incompatible period, population, or weight."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: se requieren números enteros."
+msgstr "Row %(number)s: values must be whole numbers."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Fila %(number)s: solo se admite el contrato sintético de demostración."
+msgstr "Row %(number)s: only the synthetic demo contract is accepted."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Formato no disponible"
+msgstr "Format not available"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grado"
+msgstr "Grade"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo de clasificación"
+msgstr "Classification group"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Identificador de publicación inválido."
+msgstr "Invalid release identifier."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La acción ya no es válida para el estado actual."
+msgstr "This action is no longer valid for the current status."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mismo concepto"
+msgstr "Same concept"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Morfología"
+msgstr "Morphology"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Más amplio"
+msgstr "Broader"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Más específico"
+msgstr "Narrower"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No hay paquete offline disponible."
+msgstr "No offline package is available."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se encontró el service worker."
+msgstr "The service worker could not be found."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No se pudo iniciar sesión. Espere unos minutos."
+msgstr "Sign-in failed. Please wait a few minutes."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Otro"
+msgstr "Other"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Relacionado"
+msgstr "Related"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Se alcanzó el límite temporal de exportaciones. Espere un minuto."
+msgstr "The temporary export limit has been reached. Please wait one minute."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Solo se puede liberar el conjunto sintético de demostración."
+msgstr "Only the synthetic demo dataset can be published."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Topografía"
+msgstr "Topography"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Utilice un CSV de hasta 12 MB."
+msgstr "Use a CSV file no larger than 12 MB."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s debe ser un número finito mayor que cero."
+msgstr "%(label)s must be a finite number greater than zero."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(label)s debe ser un número finito no negativo."
+msgstr "%(label)s must be a finite nonnegative number."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Casos, poblaciones y pesos deben cubrir los mismos estratos no vacíos."
+msgstr "Cases, populations, and weights must cover the same non-empty strata."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El conteo debe ser un entero no negativo."
+msgstr "The count must be a nonnegative integer."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El nivel de confianza debe estar entre cero y uno."
+msgstr "The confidence level must be between zero and one."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El numerador no puede exceder el universo declarado."
+msgstr "The numerator cannot exceed the stated universe."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El universo debe ser mayor que cero."
+msgstr "The universe must be greater than zero."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La suma de los pesos estándar debe ser mayor que cero."
+msgstr "The standard weights must sum to more than zero."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Valor numérico fuera de rango."
+msgstr "Numeric value is out of range."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "actualizacion_sintetica"
+msgstr "synthetic_update"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Use al menos %(limit_value)s caracteres."
+msgstr "Use at least %(limit_value)s characters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Use como máximo %(limit_value)s caracteres."
+msgstr "Use no more than %(limit_value)s characters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Ingrese un correo electrónico válido."
+msgstr "Enter a valid email address."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Seleccione una opción válida."
+msgstr "Select a valid choice."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contraseña"
+msgstr "Password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Contraseña actual"
+msgstr "Old password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Nueva contraseña"
+msgstr "New password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Confirmar nueva contraseña"
+msgstr "Confirm new password"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Repita la misma contraseña para confirmar."
+msgstr "Enter the same password as before, for verification."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La contraseña no debe parecerse a sus datos personales."
+msgstr "Choose a password that is not too similar to your personal information."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La contraseña no debe ser muy similar a sus otros datos personales."
+msgstr "Your password cannot be too similar to your other personal information."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La contraseña es demasiado corta; debe contener al menos %(min_length)s caracteres."
+msgstr "This password is too short. It must contain at least %(min_length)s characters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La contraseña debe tener al menos %(min_length)s caracteres."
+msgstr "Your password must contain at least %(min_length)s characters."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Elija una contraseña que no sea de uso común."
+msgstr "Choose a password that is not commonly used."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No utilice una contraseña de uso común."
+msgstr "Your password cannot be a commonly used password."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La contraseña no puede contener solo números."
+msgstr "This password is entirely numeric."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "No utilice solo números como contraseña."
+msgstr "Your password cannot be entirely numeric."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "The two password fields did not match."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La contraseña actual no es correcta."
+msgstr "Your old password was entered incorrectly."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "El usuario o la contraseña no son válidos."
+msgstr "Please enter a correct username and password."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La cuenta no está activa."
+msgstr "This account is inactive."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Correo electrónico"
+msgstr "Email address"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Vista previa de traducción automática"
+msgstr "Machine translation preview (draft)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Este idioma usa un borrador no revisado ni aprobado. No lo use para interpretar estadísticas de cáncer."
+msgstr "This language uses an unreviewed, unapproved draft. Do not use it to interpret cancer statistics."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "borrador de vista previa"
+msgstr "— preview draft"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "RNC Cuba · Administración"
+msgstr "RNC Cuba · Administration"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Roles"
+msgstr "Roles"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Selecciona una acción"
+msgstr "Choose an action"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
+msgstr "If an active account exists with this email address, you will receive instructions."
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Labio, cavidad bucal y faringe"
+msgstr "Lip, oral cavity and pharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Lengua"
+msgstr "Tongue"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Boca"
+msgstr "Mouth"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Glándulas salivales"
+msgstr "Salivary glands"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Encía"
+msgstr "Gum"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros orofaringe"
+msgstr "Other oropharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Nasofaringe"
+msgstr "Nasopharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Hipofaringe"
+msgstr "Hypopharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Faringe sin especificar"
+msgstr "Unspecified pharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos digestivos"
+msgstr "Digestive organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Esófago"
+msgstr "Oesophagus"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Intestino delgado"
+msgstr "Small intestine"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Colon"
+msgstr "Colon"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Recto"
+msgstr "Rectum"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ano y conducto anal"
+msgstr "Anus and anal canal"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Hígado"
+msgstr "Liver"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vesícula biliar"
+msgstr "Gallbladder and biliary tract"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros sitios y mal definidos de los órganos digestivos"
+msgstr "Other and ill-defined digestive sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos respiratorio e intratorácicos"
+msgstr "Respiratory and intrathoracic organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Nariz, Senos paranasales, etc."
+msgstr "Nose and paranasal sinuses"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Laringe"
+msgstr "Larynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Bronquios y Pulmón"
+msgstr "Bronchi and lung"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos torácicos"
+msgstr "Other thoracic organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros y mal definidos del sistema respiratorio y los órganos intratorácicos"
+msgstr "Other and ill-defined respiratory and intrathoracic sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Hueso y cartílagos articulares"
+msgstr "Bone and articular cartilage"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Melanoma y Otros de la piel"
+msgstr "Melanoma and other skin tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Piel melanoma"
+msgstr "Skin melanoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Piel no melanoma"
+msgstr "Non-melanoma skin"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Tejidos mesoteliales y tejidos blandos"
+msgstr "Mesothelial and soft tissues"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Mesotelioma"
+msgstr "Mesothelioma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Sarcoma de Kaposi"
+msgstr "Kaposi sarcoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Tejido blando y conectivos"
+msgstr "Soft and connective tissues"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Peritoneo y retroperitoneo"
+msgstr "Peritoneum and retroperitoneum"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos genitales femeninos"
+msgstr "Female genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vulva"
+msgstr "Vulva"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vagina"
+msgstr "Vagina"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Cuello de útero"
+msgstr "Cervix uteri"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Cuerpo de útero"
+msgstr "Corpus uteri"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Útero sin especificar"
+msgstr "Unspecified uterus"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ovarios"
+msgstr "Ovary"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos genitales femeninos"
+msgstr "Other female genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Placenta"
+msgstr "Placenta"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos genitales masculinos"
+msgstr "Male genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Pene"
+msgstr "Penis"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Testículos"
+msgstr "Testis"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos genitales masculinos"
+msgstr "Other male genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vías urinarias"
+msgstr "Urinary tract"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Pelvis renal"
+msgstr "Renal pelvis"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Uréter"
+msgstr "Ureter"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vejiga"
+msgstr "Bladder"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos urinarios"
+msgstr "Other urinary organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ojo, encéfalo y otras partes del sistema nervioso central"
+msgstr "Eye, brain and other central nervous system sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ojo"
+msgstr "Eye"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Cerebro y otras partes del sistema nervioso central"
+msgstr "Brain and other central nervous system sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Tiroides y otras glándulas endocrinas"
+msgstr "Thyroid and other endocrine glands"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Glándula suprarrenal"
+msgstr "Adrenal gland"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otras glándulas endocrinas"
+msgstr "Other endocrine glands"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Sitios mal definidos, secundarios y sitios no especificados"
+msgstr "Ill-defined, secondary and unspecified sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Linfoma"
+msgstr "Lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Linfoma Hodgkin"
+msgstr "Hodgkin lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Linfoma no Hodgkin"
+msgstr "Non-Hodgkin lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Enfermedades Inmunoproliferativas"
+msgstr "Immunoproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Mieloma múltiple"
+msgstr "Multiple myeloma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia"
+msgstr "Leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia linfoide"
+msgstr "Lymphoid leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia mieloide"
+msgstr "Myeloid leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia sin especificar"
+msgstr "Unspecified leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Enfermedades mieloproliferativas"
+msgstr "Myeloproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Síndromes Mielodisplásicos"
+msgstr "Myelodysplastic syndromes"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros tipos especificados de linfomas de células T/NK"
+msgstr "Other specified T/NK-cell lymphomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Total"
+msgstr "Total"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "I LEUCEMIAS, ENFERMEDADES MIELOPROLIFERATIVAS Y MIELODISPLASICAS"
+msgstr "I LEUKAEMIAS, MYELOPROLIFERATIVE AND MYELODYSPLASTIC DISEASES"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Leucemias linfoides"
+msgstr "a Lymphoid leukaemias"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Leucemias mieloides agudas"
+msgstr "b Acute myeloid leukaemias"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Enfermedades mieloproliferativas crónicas"
+msgstr "c Chronic myeloproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Síndrome mielodisplásico y otras enfermedades mieloproliferativas"
+msgstr "d Myelodysplastic syndrome and other myeloproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Leucemias no especificadas y otras especificadas"
+msgstr "e Unspecified and other specified leukaemias"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "II LINFOMAS Y NEOPLASIAS RETICULOENDOTELIALES"
+msgstr "II LYMPHOMAS AND RETICULOENDOTHELIAL NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Linfomas de Hodgkin"
+msgstr "a Hodgkin lymphomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Linfomas no Hodgkin (excepto linfoma de Burkitt)"
+msgstr "b Non-Hodgkin lymphomas (except Burkitt lymphoma)"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Linfoma de Burkitt"
+msgstr "c Burkitt lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Neoplasias linforeticulares misceláneas"
+msgstr "d Miscellaneous lymphoreticular neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Linfomas no especificados"
+msgstr "e Unspecified lymphomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "III NEOPLASIAS DEL SNC Y VARIAS INTRACRANEALES E INTRASPINAL"
+msgstr "III CNS AND MISCELLANEOUS INTRACRANIAL AND INTRASPINAL NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Ependimomas y tumor de plexo coroideo"
+msgstr "a Ependymomas and choroid plexus tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Astrocitomas"
+msgstr "b Astrocytomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores embrionarios intracraneales e intraespinales"
+msgstr "c Intracranial and intraspinal embryonal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Otros gliomas"
+msgstr "d Other gliomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Otras neoplasias intracraneales e intraespinales especificadas"
+msgstr "e Other specified intracranial and intraspinal neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "f Intracraneal no especificado y neoplasias intraespinales"
+msgstr "f Unspecified intracranial and intraspinal neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "IV NEUROBLASTOMA Y OTROS TUMORES DE CÉLULAS NERVIOSAS PERIFÉRICAS"
+msgstr "IV NEUROBLASTOMA AND OTHER PERIPHERAL NERVOUS CELL TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Neuroblastoma y ganglioneuroblastoma"
+msgstr "a Neuroblastoma and ganglioneuroblastoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Otros tumores de células nerviosas periféricas"
+msgstr "b Other peripheral nervous cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "V RETINOBLASTOMA"
+msgstr "V RETINOBLASTOMA"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "VI TUMORES RENALES"
+msgstr "VI RENAL TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Nefroblastoma y otros tumores renales no epiteliales"
+msgstr "a Nephroblastoma and other non-epithelial renal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Carcinomas renales"
+msgstr "b Renal carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores renales malignos no especificados"
+msgstr "c Unspecified malignant renal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "VII TUMORES HEPATICOS"
+msgstr "VII HEPATIC TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Hepatoblastoma y tumores mesenquimales de Higado"
+msgstr "a Hepatoblastoma and mesenchymal liver tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Carcinomas hepáticos"
+msgstr "b Hepatic carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores hepáticos malignos no especificados"
+msgstr "c Unspecified malignant hepatic tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "VIII TUMORES ÓSEOS MALIGNOS"
+msgstr "VIII MALIGNANT BONE TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Osteosarcomas"
+msgstr "a Osteosarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Condrosarcomas"
+msgstr "b Chondrosarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumor de Ewing y sarcomas óseos relacionados"
+msgstr "c Ewing tumour and related bone sarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Otros tumores óseos malignos especificados"
+msgstr "d Other specified malignant bone tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Tumores óseos malignos no especificados"
+msgstr "e Unspecified malignant bone tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "IX SARCOMAS DE TEJIDOS BLANDOS Y OTROS EXTRAÓSEOS"
+msgstr "IX SOFT TISSUE AND OTHER EXTRAOSSEOUS SARCOMAS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Rabdomiosarcomas"
+msgstr "a Rhabdomyosarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Fibrosarcomas, tumores de la vaina de los nervios periféricos y otras neoplasias fibrosas"
+msgstr "b Fibrosarcomas, peripheral nerve sheath tumours and other fibrous neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Sarcoma de Kaposi"
+msgstr "c Kaposi sarcoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Otros sarcomas de tejidos blandos especificados"
+msgstr "d Other specified soft tissue sarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Sarcomas de tejidos blandos no especificados"
+msgstr "e Unspecified soft tissue sarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "X TUMORES DE CÉLULAS GERMINALES, TUMORES TROFOBLÁSTICOS Y NEOPLASIAS DE GÓNADAS"
+msgstr "X GERM CELL TUMOURS, TROPHOBLASTIC TUMOURS AND GONADAL NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Tumores de células germinales intracraneales e intraespinales"
+msgstr "a Intracranial and intraspinal germ cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Germen maligno extracraneal y extragonadal tumores celulares"
+msgstr "b Malignant extracranial and extragonadal germ cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores gonadales malignos de células germinativas"
+msgstr "c Malignant gonadal germ cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Carcinomas gonadales"
+msgstr "d Gonadal carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Otros tumores gonadales malignos y los no especificados."
+msgstr "e Other and unspecified malignant gonadal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "XI OTRAS NEOPLASIAS EPITELIALES MALIGNAS Y MELANOMAS MALIGNOS"
+msgstr "XI OTHER MALIGNANT EPITHELIAL NEOPLASMS AND MALIGNANT MELANOMAS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Carcinomas adrenocorticales"
+msgstr "a Adrenocortical carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Carcinomas de tiroides"
+msgstr "b Thyroid carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Carcinomas nasofaríngeos"
+msgstr "c Nasopharyngeal carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Melanomas malignos"
+msgstr "d Malignant melanomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Carcinomas de piel"
+msgstr "e Skin carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "f Otros carcinomas y los no especificados"
+msgstr "f Other and unspecified carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "XII OTRAS NEOPLASIAS MALIGNAS Y LAS NO ESPECIFICADAS"
+msgstr "XII OTHER AND UNSPECIFIED MALIGNANT NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Otros tumores malignos especificados"
+msgstr "a Other specified malignant tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Otros tumores malignos no especificados"
+msgstr "b Other unspecified malignant tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Etapa"
+msgstr "Stage"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "código"
+msgstr "code"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Sin información"
+msgstr "Unknown"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Datos del RNC · 2022"
+msgstr "RNC data · 2022"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Verificación histológica"
+msgstr "Histological verification"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Casos reportados solo por certificado de defunción"
+msgstr "Cases reported by death certificate only"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La tasa cruda es frecuencia / población denominadora × la escala indicada; al comparar por edad corresponde a una tasa específica por edad. Al seleccionar varios años se acumulan las poblaciones anuales seleccionadas, por lo que la tasa resume el período y no corresponde a un solo año."
+msgstr "Relative frequencies and rates use the selected counting unit. The crude rate is count / population denominator × the stated scale; comparisons by age use age-specific rates. Selecting several years sums their annual populations, so the rate summarizes the period rather than a single year."
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Personas distintas: valores únicos de NOCASO. VH: MORF distinto de 8000. SCD: UNIDIDAD igual a 0000."
+msgstr "Distinct people: unique NOCASO values. HV: MORF other than 8000. DCO: UNIDIDAD equal to 0000."
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Verificación histológica (%)"
+msgstr "Histological verification (%)"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Solo certificado de defunción (%)"
+msgstr "Death certificate only (%)"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Fuente: BD_2022 y población municipal de 2022. "
+msgstr "Source: BD_2022 and municipal population for 2022. "
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Las tasas utilizan la población de las edades seleccionadas; el ajuste truncado normaliza los pesos de ese intervalo. "
+msgstr "Rates use the population of the selected ages; truncated standardization normalizes the weights within that age range. "
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "SHA-256 CSV original"
+msgstr "Original CSV SHA-256"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "SHA-256 diccionario"
+msgstr "Dictionary SHA-256"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Archivo poblacional"
+msgstr "Population file"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "SHA-256 población"
+msgstr "Population SHA-256"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Tasa cruda/específica por %(scale)s · %(unit)s"
+msgstr "Crude / age-specific rate per %(scale)s · %(unit)s"

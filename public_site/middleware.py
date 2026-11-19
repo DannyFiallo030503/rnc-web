@@ -8,6 +8,15 @@ class AccountSecurityMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
+        if request.user.is_authenticated and not request.path.startswith("/static/"):
+            from django.conf import settings
+            from django.contrib.auth import logout
+            from django.utils import timezone
+            now = timezone.now()
+            opened = request.session.get("rnc_login_started_at")
+            if not isinstance(opened, (float, int)) or now.timestamp() - opened >= settings.SESSION_COOKIE_AGE:
+                logout(request)
+                return redirect("public_site:login")
         try:
             match = resolve(request.path_info)
         except Resolver404:

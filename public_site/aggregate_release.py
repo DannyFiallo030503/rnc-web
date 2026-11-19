@@ -1,6 +1,7 @@
-"""Build and read the public aggregate package for the synthetic prototype."""
+"""Read only approved real aggregate releases for the public portal."""
 
 import hashlib
+import gzip
 import json
 import os
 import re
@@ -10,77 +11,18 @@ from functools import lru_cache
 from pathlib import Path
 
 from django.conf import settings
-from django.utils.translation import gettext_lazy as _
-from analytics.standard import AGE_STANDARD_ID, AGE_STANDARD_WEIGHTS
+from django.utils import timezone
 
-FIELDS = ("period", "territory", "sex", "age_group", "site")
+FIELDS = ("period", "territory", "municipality", "sex", "age_group", "site")
 STRATUM = ("period", "territory", "sex", "age_group")
+POPULATION_FIELDS = ("period", "territory", "municipality", "sex", "age_group")
 
 
-def _cube_key(fields):
-    return ",".join(fields)
-
-
-def build_release(delivery, records):
-    """Aggregate all filter/grouping combinations without retaining row IDs."""
-    if not records or any(
-        row.get("synthetic") != "TRUE"
-        or not str(row.get("person_id", "")).startswith("SYN-P-")
-        or not str(row.get("tumor_id", "")).startswith("SYN-T-")
-        for row in records
-    ):
-        raise ValueError(_("Solo se puede liberar el conjunto sintético de demostración."))
-
-    cube = {}
-    for mask in range(1 << len(FIELDS)):
-        fields = tuple(field for i, field in enumerate(FIELDS) if mask & (1 << i))
-        groups = {}
-        for row in records:
-            key = tuple(str(row[field]) for field in fields)
-            state = groups.setdefault(key, [0, set(), {}])
-            state[0] += 1
-            state[1].add(row["person_id"])
-            stratum = tuple(row[field] for field in STRATUM)
-            state[2][stratum] = int(row["population"])
-        cube[_cube_key(fields)] = [
-            {
-                **dict(zip(fields, key)),
-                "tumors": tumors,
-                "persons": len(persons),
-                "population": sum(strata.values()),
-            }
-            for key, (tumors, persons, strata) in groups.items()
-        ]
-
-    options = {
-        "period": sorted({str(row["period"]) for row in records}),
-        "territory": sorted({row["territory"] for row in records}),
-        "sex": sorted({row["sex"] for row in records}),
-        "age_group": sorted({row["age_group"] for row in records}),
-        "site": sorted({row["site"] for row in records}),
-    }
-    return {
-        "schema_version": 1,
-        "synthetic": True,
-        "release_id": str(delivery.pk),
-        "title": delivery.title,
-        "published_at": delivery.published_at.isoformat()
-        if delivery.published_at
-        else None,
-        "report": delivery.report,
-        "options": options,
-        "fields": list(FIELDS),
-        "standard_id": AGE_STANDARD_ID,
-        "standard_weights": AGE_STANDARD_WEIGHTS,
-        "cube": cube,
-    }
-
-
-def _atomic_json(path, payload):
+def _atomic_json(path, payload, *, compressed=False):
     path.parent.mkdir(parents=True, exist_ok=True, mode=0o755)
-    encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode(
-        "utf-8"
-    )
+    encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    if compressed:
+        encoded = gzip.compress(encoded, mtime=0)
     handle, temporary = tempfile.mkstemp(prefix=".release-", dir=path.parent)
     try:
         with os.fdopen(handle, "wb") as output:
@@ -95,31 +37,40 @@ def _atomic_json(path, payload):
     return hashlib.sha256(encoded).hexdigest()
 
 
-def prepare_release(delivery, records):
-    """Write a versioned artifact, without making it the active public release."""
-    payload = build_release(delivery, records)
+def prepare_release(delivery):
+    """Create an identifier-free real aggregate for an authorized publisher."""
+    from analytics.rnc_aggregation import build_real_aggregate
+
+    if delivery.report.get("synthetic") is not False or not delivery.storage_key:
+        raise ValueError("Solo se puede publicar una entrega real validada.")
+    private_root = Path(settings.PRIVATE_STORAGE_ROOT).resolve()
+    source = (private_root / delivery.storage_key).resolve()
+    if private_root not in source.parents or not source.is_file():
+        raise ValueError("No se encontró el archivo real en almacenamiento privado.")
+    payload = build_real_aggregate(
+        source,
+        settings.RNC_POPULATION_XLSX,
+        release_id=str(delivery.pk),
+        title=delivery.title,
+    )
+    payload["publication_approved"] = True
+    payload["provenance"]["original_csv_sha256"] = delivery.checksum
+    payload["provenance"]["source_name"] = "BD_2022.csv"
+    payload["published_at"] = timezone.now().isoformat()
     root = Path(settings.PUBLIC_RELEASE_ROOT)
     release_id = str(delivery.pk)
     if not re.fullmatch(r"[0-9a-fA-F-]{36}", release_id):
-        raise ValueError(_("Identificador de publicación inválido."))
-    artifact = root / f"{release_id}.json"
-    digest = _atomic_json(artifact, payload)
-    return {"release_id": release_id, "sha256": digest}
+        raise ValueError("Identificador de publicación inválido.")
+    digest = _atomic_json(root / f"{release_id}.json.gz", payload, compressed=True)
+    return {"release_id": release_id, "sha256": digest, "encoding": "gzip"}
 
 
 def activate_release(manifest):
-    """Atomically point public readers at an already written aggregate artifact."""
     _atomic_json(Path(settings.PUBLIC_RELEASE_ROOT) / "current.json", manifest)
 
 
-def publish_release(delivery, records):
-    """Write a versioned aggregate artifact and switch the public pointer."""
-    activate_release(prepare_release(delivery, records))
-
-
 def revoke_public_release():
-    root = Path(settings.PUBLIC_RELEASE_ROOT)
-    _atomic_json(root / "current.json", {"release_id": None, "sha256": None})
+    activate_release({"release_id": None, "sha256": None})
 
 
 @lru_cache(maxsize=2)
@@ -127,8 +78,12 @@ def _read_artifact(path, expected_digest):
     raw = Path(path).read_bytes()
     if hashlib.sha256(raw).hexdigest() != expected_digest:
         return None
-    data = json.loads(raw.decode("utf-8"))
-    if data.get("schema_version") != 1 or data.get("synthetic") is not True:
+    data = json.loads(gzip.decompress(raw).decode("utf-8") if str(path).endswith(".gz") else raw.decode("utf-8"))
+    if (
+        data.get("schema_version") != 3
+        or data.get("synthetic") is not False
+        or data.get("publication_approved") is not True
+    ):
         return None
     return data
 
@@ -144,7 +99,11 @@ def current_public_release():
             return None
         if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
             return None
-        data = _read_artifact(str(root / f"{release_id}.json"), digest)
+        encoding = pointer.get("encoding")
+        if encoding not in (None, "gzip"):
+            return None
+        suffix = ".json.gz" if encoding == "gzip" else ".json"
+        data = _read_artifact(str(root / f"{release_id}{suffix}"), digest)
         if not data or data.get("release_id") != release_id:
             return None
         public_data = dict(data)

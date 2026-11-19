@@ -1,0 +1,16 @@
+{% load i18n locale_format %}
+<figure class="province-map">
+  <svg viewBox="{{ province_map.viewbox }}" role="img" aria-labelledby="province-map-title province-map-description">
+    <title id="province-map-title">{% translate "Mapa provincial de Cuba" %}</title>
+    <desc id="province-map-description">{{ chart_payload.metric }} · {{ chart_payload.unit }}. {% translate "Los valores por provincia aparecen en la tabla de resultados. Gris: sin datos en la selección." %}</desc>
+    {% for region in province_map.regions %}
+    <path d="{{ region.path }}" fill="{{ region.color }}" fill-rule="evenodd" stroke="#fff" stroke-width="1" tabindex="0" aria-label="{{ region.name }}: {% if region.value is not None %}{{ region.value|localized_number:2 }}{% else %}{% translate 'Sin datos' %}{% endif %}">
+      <title>{{ region.name }}: {% if region.value is not None %}{{ region.value|localized_number:2 }}{% else %}{% translate "Sin datos" %}{% endif %}</title>
+    </path>
+    {% endfor %}
+  </svg>
+  <figcaption>
+    <div class="province-map-legend"><span>{{ province_map.minimum|localized_number:2 }}</span>{% for color in province_map.colors %}<span class="map-color" style="--map-color:{{ color }}" aria-hidden="true"></span>{% endfor %}<span>{{ province_map.maximum|localized_number:2 }}</span> · {{ chart_payload.axis_unit }} · {% translate "Gris: sin datos" %}</div>
+    <small>{% translate "Cartografía:" %} <a href="https://www.geoboundaries.org/">geoBoundaries</a> · © OpenStreetMap contributors / Wambacher · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a> · 2017.</small>
+  </figcaption>
+</figure>

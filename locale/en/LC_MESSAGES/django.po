@@ -2877,3 +2877,887 @@ msgid "Si existe una cuenta activa con ese correo, recibirá instrucciones."
 msgstr ""
 "If an active account exists with this email address, you will receive "
 "instructions."
+
+#: public_site/public_portal.py static/js/chart-layout.js
+msgid "Otras categorías"
+msgstr "Other categories"
+
+#: public_site/public_portal.py static/js/chart-layout.js
+msgid "El gráfico muestra las siete categorías mayores y agrupa el resto en Otras categorías. La tabla conserva todas las categorías."
+msgstr "The chart shows the seven largest categories and groups the rest as Other categories. The table retains every category."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Comprobando conexión"
+msgstr "Checking connection"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Online"
+msgstr "Online"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Offline"
+msgstr "Offline"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Instalar aplicación"
+msgstr "Install app"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Conexión con el servidor disponible."
+msgstr "Connection to the server is available."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Sin conexión con el servidor. Se utiliza la publicación guardada."
+msgstr "The server is unavailable. The saved publication is used."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Datos disponibles sin conexión"
+msgstr "Data available offline"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Sin copia guardada"
+msgstr "No saved copy"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Preparando datos sin conexión…"
+msgstr "Preparing offline data…"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Copia anterior disponible sin conexión"
+msgstr "Previous copy available offline"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "No se pudo guardar una copia local"
+msgstr "Could not save a local copy"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "No hay publicación disponible"
+msgstr "No publication is available"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "El almacenamiento local no está disponible"
+msgstr "Local storage is unavailable"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "No hay una publicación guardada en este dispositivo. Conéctese para prepararla."
+msgstr "No publication is saved on this device. Connect to prepare it."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Consulte la fuente y la versión de los datos en cada resultado."
+msgstr "Check the data source and version in each result."
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Imagen SVG"
+msgstr "SVG image"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "Tasa cruda / específica"
+msgstr "Crude / age-specific rate"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "por"
+msgstr "per"
+
+#: templates/base.html static/js/unified-consult.js
+msgid "El SVG contiene una imagen del gráfico. El mapa conserva formato vectorial."
+msgstr "The SVG contains an image of the chart. Maps retain vector format."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Acerca de"
+msgstr "About"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Población analizada"
+msgstr "Study population"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Todas las edades"
+msgstr "All ages"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "20 años o más"
+msgstr "Ages 20 and older"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Menores de 20 años"
+msgstr "Under age 20"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "20 años o más · CIE-10"
+msgstr "Ages 20 and older · ICD-10"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Menores de 20 años · CICN"
+msgstr "Under age 20 · ICCC"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grupo tumoral principal"
+msgstr "Main tumour group"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tipo histológico (MORF)"
+msgstr "Histological type (MORF)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Etapa clínica (código recibido)"
+msgstr "Clinical stage (source code)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tendencia temporal"
+msgstr "Time trend"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Curva por edad"
+msgstr "Age curve"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mapa provincial de Cuba"
+msgstr "Cuba provincial map"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tabla de datos"
+msgstr "Data table"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa cruda / específica por %(scale)s"
+msgstr "Crude / age-specific rate per %(scale)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tasa ajustada truncada Segi–Doll (%(ages)s)"
+msgstr "Truncated Segi–Doll age-standardized rate (%(ages)s)"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta visualización está desactivada por administración."
+msgstr "This visualization has been disabled by administration."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La cartografía no permite identificar todas las provincias de esta selección."
+msgstr "The map cannot identify every province in this selection."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Total C00–97 · diccionario RNC"
+msgstr "Total C00–97 · RNC dictionary"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Total C00–96 · Anuario 2022"
+msgstr "Total C00–96 · 2022 Yearbook"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "%(title)s · Versión %(release)s"
+msgstr "%(title)s · Version %(release)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "por %(scale)s"
+msgstr "per %(scale)s"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Agrupación del diccionario suministrado: %(category)s."
+msgstr "Group from the supplied dictionary: %(category)s."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Agrupa los tumores según su localización anatómica."
+msgstr "Groups tumours by anatomical site."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Provincia donde reside la persona."
+msgstr "Province of residence."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Provincia donde reside la persona. Esta publicación no cubre todas las provincias."
+msgstr "Province of residence. This publication does not cover every province."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Esta publicación no incluye datos por municipio."
+msgstr "This publication does not include municipal data."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La tasa ajustada por edad requiere incluir todos los grupos de edad."
+msgstr "Age standardization requires all applicable age groups."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La etapa clínica se consulta en adultos, mediante frecuencias o porcentajes."
+msgstr "Clinical stage is available for adults as counts or percentages."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Seleccione población adulta o infantil para calcular tasas por grupo tumoral."
+msgstr "Select the adult or childhood population to calculate tumour-group rates."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtros"
+msgstr "Filters"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Comparación"
+msgstr "Comparison"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Composición"
+msgstr "Composition"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Puntos"
+msgstr "Points"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Escala"
+msgstr "Scale"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Opciones del gráfico"
+msgstr "Chart options"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tamaño de los puntos"
+msgstr "Point size"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grosor de la línea"
+msgstr "Line width"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mostrar puntos"
+msgstr "Show points"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Grosor de las barras"
+msgstr "Bar thickness"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Tamaño del centro"
+msgstr "Centre size"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mostrar valores"
+msgstr "Show values"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mostrar leyenda"
+msgstr "Show legend"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Iniciar escala en cero"
+msgstr "Start scale at zero"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La serie temporal requiere al menos dos años disponibles."
+msgstr "A time series requires at least two available years."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "La población denominadora y los pesos de la tasa ajustada se limitan a las edades de la población analizada."
+msgstr "Population denominators and standard weights are restricted to the ages of the study population."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Se muestran los códigos de etapa recibidos. Leucemias y linfomas están excluidos; la excepción incompleta del diccionario sigue pendiente de aclaración."
+msgstr "Source stage codes are shown. Leukaemias and lymphomas are excluded; the incomplete dictionary exception still needs clarification."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "CIE-10: 20 años o más. CICN: menores de 20 años. Para las tasas por grupo tumoral, seleccione la población correspondiente."
+msgstr "ICD-10: ages 20 and older. ICCC: under age 20. Select the corresponding population for tumour-group rates."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Los porcentajes y las tasas usan la unidad de conteo seleccionada. — indica un cálculo no disponible para esta selección."
+msgstr "Percentages and rates use the selected counting unit. — marks a calculation unavailable for this selection."
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Versión"
+msgstr "Version"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Mapa de incidencia por provincia"
+msgstr "Incidence map by province"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Sin datos"
+msgstr "No data"
+
+#: public_site/public_forms.py static/js/unified-consult.js
+msgid "Filtros aplicados"
+msgstr "Applied filters"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Labio, cavidad bucal y faringe"
+msgstr "Lip, oral cavity and pharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Lengua"
+msgstr "Tongue"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Boca"
+msgstr "Mouth"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Glándulas salivales"
+msgstr "Salivary glands"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Encía"
+msgstr "Gum"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros orofaringe"
+msgstr "Other oropharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Nasofaringe"
+msgstr "Nasopharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Hipofaringe"
+msgstr "Hypopharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Faringe sin especificar"
+msgstr "Unspecified pharynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos digestivos"
+msgstr "Digestive organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Esófago"
+msgstr "Oesophagus"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Intestino delgado"
+msgstr "Small intestine"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Colon"
+msgstr "Colon"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Recto"
+msgstr "Rectum"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ano y conducto anal"
+msgstr "Anus and anal canal"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Hígado"
+msgstr "Liver"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vesícula biliar"
+msgstr "Gallbladder and biliary tract"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros sitios y mal definidos de los órganos digestivos"
+msgstr "Other and ill-defined digestive sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos respiratorio e intratorácicos"
+msgstr "Respiratory and intrathoracic organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Nariz, Senos paranasales, etc."
+msgstr "Nose and paranasal sinuses"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Laringe"
+msgstr "Larynx"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Bronquios y Pulmón"
+msgstr "Bronchi and lung"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos torácicos"
+msgstr "Other thoracic organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros y mal definidos del sistema respiratorio y los órganos intratorácicos"
+msgstr "Other and ill-defined respiratory and intrathoracic sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Hueso y cartílagos articulares"
+msgstr "Bone and articular cartilage"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Melanoma y Otros de la piel"
+msgstr "Melanoma and other skin tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Piel melanoma"
+msgstr "Skin melanoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Piel no melanoma"
+msgstr "Non-melanoma skin"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Tejidos mesoteliales y tejidos blandos"
+msgstr "Mesothelial and soft tissues"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Mesotelioma"
+msgstr "Mesothelioma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Sarcoma de Kaposi"
+msgstr "Kaposi sarcoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Tejido blando y conectivos"
+msgstr "Soft and connective tissues"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Peritoneo y retroperitoneo"
+msgstr "Peritoneum and retroperitoneum"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos genitales femeninos"
+msgstr "Female genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vulva"
+msgstr "Vulva"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vagina"
+msgstr "Vagina"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Cuello de útero"
+msgstr "Cervix uteri"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Cuerpo de útero"
+msgstr "Corpus uteri"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Útero sin especificar"
+msgstr "Unspecified uterus"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ovarios"
+msgstr "Ovary"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos genitales femeninos"
+msgstr "Other female genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Placenta"
+msgstr "Placenta"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Órganos genitales masculinos"
+msgstr "Male genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Pene"
+msgstr "Penis"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Testículos"
+msgstr "Testis"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos genitales masculinos"
+msgstr "Other male genital organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vías urinarias"
+msgstr "Urinary tract"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Pelvis renal"
+msgstr "Renal pelvis"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Uréter"
+msgstr "Ureter"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Vejiga"
+msgstr "Bladder"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros órganos urinarios"
+msgstr "Other urinary organs"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ojo, encéfalo y otras partes del sistema nervioso central"
+msgstr "Eye, brain and other central nervous system sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Ojo"
+msgstr "Eye"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Cerebro y otras partes del sistema nervioso central"
+msgstr "Brain and other central nervous system sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Tiroides y otras glándulas endocrinas"
+msgstr "Thyroid and other endocrine glands"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Glándula suprarrenal"
+msgstr "Adrenal gland"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otras glándulas endocrinas"
+msgstr "Other endocrine glands"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Sitios mal definidos, secundarios y sitios no especificados"
+msgstr "Ill-defined, secondary and unspecified sites"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Linfoma"
+msgstr "Lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Linfoma Hodgkin"
+msgstr "Hodgkin lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Linfoma no Hodgkin"
+msgstr "Non-Hodgkin lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Enfermedades Inmunoproliferativas"
+msgstr "Immunoproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Mieloma múltiple"
+msgstr "Multiple myeloma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia"
+msgstr "Leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia linfoide"
+msgstr "Lymphoid leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia mieloide"
+msgstr "Myeloid leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Leucemia sin especificar"
+msgstr "Unspecified leukaemia"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Enfermedades mieloproliferativas"
+msgstr "Myeloproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Síndromes Mielodisplásicos"
+msgstr "Myelodysplastic syndromes"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Otros tipos especificados de linfomas de células T/NK"
+msgstr "Other specified T/NK-cell lymphomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Total"
+msgstr "Total"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "I LEUCEMIAS, ENFERMEDADES MIELOPROLIFERATIVAS Y MIELODISPLASICAS"
+msgstr "I LEUKAEMIAS, MYELOPROLIFERATIVE AND MYELODYSPLASTIC DISEASES"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Leucemias linfoides"
+msgstr "a Lymphoid leukaemias"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Leucemias mieloides agudas"
+msgstr "b Acute myeloid leukaemias"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Enfermedades mieloproliferativas crónicas"
+msgstr "c Chronic myeloproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Síndrome mielodisplásico y otras enfermedades mieloproliferativas"
+msgstr "d Myelodysplastic syndrome and other myeloproliferative diseases"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Leucemias no especificadas y otras especificadas"
+msgstr "e Unspecified and other specified leukaemias"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "II LINFOMAS Y NEOPLASIAS RETICULOENDOTELIALES"
+msgstr "II LYMPHOMAS AND RETICULOENDOTHELIAL NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Linfomas de Hodgkin"
+msgstr "a Hodgkin lymphomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Linfomas no Hodgkin (excepto linfoma de Burkitt)"
+msgstr "b Non-Hodgkin lymphomas (except Burkitt lymphoma)"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Linfoma de Burkitt"
+msgstr "c Burkitt lymphoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Neoplasias linforeticulares misceláneas"
+msgstr "d Miscellaneous lymphoreticular neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Linfomas no especificados"
+msgstr "e Unspecified lymphomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "III NEOPLASIAS DEL SNC Y VARIAS INTRACRANEALES E INTRASPINAL"
+msgstr "III CNS AND MISCELLANEOUS INTRACRANIAL AND INTRASPINAL NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Ependimomas y tumor de plexo coroideo"
+msgstr "a Ependymomas and choroid plexus tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Astrocitomas"
+msgstr "b Astrocytomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores embrionarios intracraneales e intraespinales"
+msgstr "c Intracranial and intraspinal embryonal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Otros gliomas"
+msgstr "d Other gliomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Otras neoplasias intracraneales e intraespinales especificadas"
+msgstr "e Other specified intracranial and intraspinal neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "f Intracraneal no especificado y neoplasias intraespinales"
+msgstr "f Unspecified intracranial and intraspinal neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "IV NEUROBLASTOMA Y OTROS TUMORES DE CÉLULAS NERVIOSAS PERIFÉRICAS"
+msgstr "IV NEUROBLASTOMA AND OTHER PERIPHERAL NERVOUS CELL TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Neuroblastoma y ganglioneuroblastoma"
+msgstr "a Neuroblastoma and ganglioneuroblastoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Otros tumores de células nerviosas periféricas"
+msgstr "b Other peripheral nervous cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "V RETINOBLASTOMA"
+msgstr "V RETINOBLASTOMA"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "VI TUMORES RENALES"
+msgstr "VI RENAL TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Nefroblastoma y otros tumores renales no epiteliales"
+msgstr "a Nephroblastoma and other non-epithelial renal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Carcinomas renales"
+msgstr "b Renal carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores renales malignos no especificados"
+msgstr "c Unspecified malignant renal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "VII TUMORES HEPATICOS"
+msgstr "VII HEPATIC TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Hepatoblastoma y tumores mesenquimales de Higado"
+msgstr "a Hepatoblastoma and mesenchymal liver tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Carcinomas hepáticos"
+msgstr "b Hepatic carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores hepáticos malignos no especificados"
+msgstr "c Unspecified malignant hepatic tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "VIII TUMORES ÓSEOS MALIGNOS"
+msgstr "VIII MALIGNANT BONE TUMOURS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Osteosarcomas"
+msgstr "a Osteosarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Condrosarcomas"
+msgstr "b Chondrosarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumor de Ewing y sarcomas óseos relacionados"
+msgstr "c Ewing tumour and related bone sarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Otros tumores óseos malignos especificados"
+msgstr "d Other specified malignant bone tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Tumores óseos malignos no especificados"
+msgstr "e Unspecified malignant bone tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "IX SARCOMAS DE TEJIDOS BLANDOS Y OTROS EXTRAÓSEOS"
+msgstr "IX SOFT TISSUE AND OTHER EXTRAOSSEOUS SARCOMAS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Rabdomiosarcomas"
+msgstr "a Rhabdomyosarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Fibrosarcomas, tumores de la vaina de los nervios periféricos y otras neoplasias fibrosas"
+msgstr "b Fibrosarcomas, peripheral nerve sheath tumours and other fibrous neoplasms"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Sarcoma de Kaposi"
+msgstr "c Kaposi sarcoma"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Otros sarcomas de tejidos blandos especificados"
+msgstr "d Other specified soft tissue sarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Sarcomas de tejidos blandos no especificados"
+msgstr "e Unspecified soft tissue sarcomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "X TUMORES DE CÉLULAS GERMINALES, TUMORES TROFOBLÁSTICOS Y NEOPLASIAS DE GÓNADAS"
+msgstr "X GERM CELL TUMOURS, TROPHOBLASTIC TUMOURS AND GONADAL NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Tumores de células germinales intracraneales e intraespinales"
+msgstr "a Intracranial and intraspinal germ cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Germen maligno extracraneal y extragonadal tumores celulares"
+msgstr "b Malignant extracranial and extragonadal germ cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Tumores gonadales malignos de células germinativas"
+msgstr "c Malignant gonadal germ cell tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Carcinomas gonadales"
+msgstr "d Gonadal carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Otros tumores gonadales malignos y los no especificados."
+msgstr "e Other and unspecified malignant gonadal tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "XI OTRAS NEOPLASIAS EPITELIALES MALIGNAS Y MELANOMAS MALIGNOS"
+msgstr "XI OTHER MALIGNANT EPITHELIAL NEOPLASMS AND MALIGNANT MELANOMAS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Carcinomas adrenocorticales"
+msgstr "a Adrenocortical carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Carcinomas de tiroides"
+msgstr "b Thyroid carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "c Carcinomas nasofaríngeos"
+msgstr "c Nasopharyngeal carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "d Melanomas malignos"
+msgstr "d Malignant melanomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "e Carcinomas de piel"
+msgstr "e Skin carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "f Otros carcinomas y los no especificados"
+msgstr "f Other and unspecified carcinomas"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "XII OTRAS NEOPLASIAS MALIGNAS Y LAS NO ESPECIFICADAS"
+msgstr "XII OTHER AND UNSPECIFIED MALIGNANT NEOPLASMS"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "a Otros tumores malignos especificados"
+msgstr "a Other specified malignant tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "b Otros tumores malignos no especificados"
+msgstr "b Other unspecified malignant tumours"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Etapa"
+msgstr "Stage"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "código"
+msgstr "code"
+
+#: analytics/rnc_site_groups.json analytics/rnc_child_groups.json
+msgid "Sin información"
+msgstr "Unknown"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Datos del RNC · 2022"
+msgstr "RNC data · 2022"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Verificación histológica"
+msgstr "Histological verification"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Casos reportados solo por certificado de defunción"
+msgstr "Cases reported by death certificate only"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "La frecuencia relativa y las tasas usan la unidad seleccionada arriba. La tasa cruda es frecuencia / población denominadora × la escala indicada; al comparar por edad corresponde a una tasa específica por edad. Al seleccionar varios años se acumulan las poblaciones anuales seleccionadas, por lo que la tasa resume el período y no corresponde a un solo año."
+msgstr "Relative frequencies and rates use the selected counting unit. The crude rate is count / population denominator × the stated scale; comparisons by age use age-specific rates. Selecting several years sums their annual populations, so the rate summarizes the period rather than a single year."
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Personas distintas: valores únicos de NOCASO. VH: MORF distinto de 8000. SCD: UNIDIDAD igual a 0000."
+msgstr "Distinct people: unique NOCASO values. HV: MORF other than 8000. DCO: UNIDIDAD equal to 0000."
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Verificación histológica (%)"
+msgstr "Histological verification (%)"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Solo certificado de defunción (%)"
+msgstr "Death certificate only (%)"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Fuente: BD_2022 y población municipal de 2022. "
+msgstr "Source: BD_2022 and municipal population for 2022. "
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Las tasas utilizan la población de las edades seleccionadas; el ajuste truncado normaliza los pesos de ese intervalo. "
+msgstr "Rates use the population of the selected ages; truncated standardization normalizes the weights within that age range. "
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "SHA-256 CSV original"
+msgstr "Original CSV SHA-256"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "SHA-256 diccionario"
+msgstr "Dictionary SHA-256"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Archivo poblacional"
+msgstr "Population file"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "SHA-256 población"
+msgstr "Population SHA-256"
+
+#: templates/public_site/explorer.html public_site/exports.py
+msgid "Tasa cruda/específica por %(scale)s · %(unit)s"
+msgstr "Crude / age-specific rate per %(scale)s · %(unit)s"

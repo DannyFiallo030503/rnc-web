@@ -12,7 +12,7 @@ class Delivery(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
     row_count = models.PositiveIntegerField(default=0)
-    person_count = models.PositiveIntegerField(default=0)
+    person_count = models.PositiveIntegerField(null=True, blank=True, default=None)
     status = models.CharField(
         max_length=20,
         default="validated",
@@ -29,13 +29,13 @@ class Delivery(models.Model):
     class Meta:
         ordering = ["-created_at"]
         permissions = [
-            ("operate_deliveries", _("Gestionar entregas sintéticas")),
-            ("publish_deliveries", _("Publicar y revocar cortes sintéticos")),
+            ("operate_deliveries", _("Gestionar cargas del RNC")),
+            ("publish_deliveries", _("Publicar y revocar cortes")),
         ]
 
 
 class Publication(models.Model):
-    # Singleton pointer: a release replaces the complete previous synthetic dataset.
+    # Singleton pointer to the active aggregate release.
     key = models.PositiveSmallIntegerField(primary_key=True, default=1, editable=False)
     delivery = models.ForeignKey(Delivery, null=True, on_delete=models.PROTECT)
 

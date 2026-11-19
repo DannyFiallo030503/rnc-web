@@ -8,9 +8,12 @@ from .validation import AccessibleForm
 
 CHART_DIMENSION_LIMITS = {
     "line": ("period",),
-    "grouped": ("period", "territory", "age_group", "site"),
-    "stacked": ("period", "territory", "age_group", "site"),
-    "percent": ("period", "territory", "age_group", "site"),
+    "trend": ("period",),
+    "curve": ("age_group",),
+    "map": ("territory",),
+    "grouped": ("period", "territory", "age_group", "site", "site_group", "morphology"),
+    "stacked": ("period", "territory", "age_group", "site", "site_group", "morphology"),
+    "percent": ("period", "territory", "age_group", "site", "site_group", "morphology"),
     "scatter": ("territory", "age_group"),
     "strip": ("territory", "age_group"),
     "swarm": ("territory", "age_group"),
@@ -35,9 +38,13 @@ class ExplorerForm(AccessibleForm, forms.Form):
         metrics,
         national_coverage=False,
         municipality_available=False,
+        person_identity_verified=False,
+        persons_disjoint=False,
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
+        self.persons_disjoint = persons_disjoint
+        self.fields["cohort"] = forms.ChoiceField(label=_("Población analizada"), choices=[("all", _("Todas las edades")), ("adult", _("20 años o más · CIE-10")), ("child", _("Menores de 20 años · CICN"))])
         options = {**options, "municipality": options.get("municipality", [])}
         labels = {
             "year": _("Año de incidencia"),
@@ -59,27 +66,27 @@ class ExplorerForm(AccessibleForm, forms.Form):
                 required=False,
                 choices=choices,
                 widget=forms.CheckboxSelectMultiple,
-                help_text=_("Sin seleccionar opciones se incluyen todos; puede elegir varias."),
             )
         self.fields["territory"].help_text = (
-            _("Sin selección se incluyen todas las provincias disponibles. Es la provincia de residencia, no la provincia de la unidad informante; puede elegir varias.")
+            _("Provincia donde reside la persona.")
             if national_coverage
-            else _("Sin selección se incluyen solo las provincias presentes en este corte, que puede no cubrir Cuba completa. Corresponden a residencia, no a la provincia de la unidad informante; puede elegir varias.")
+            else _("Provincia donde reside la persona. Esta publicación no cubre todas las provincias.")
         )
         self.fields["municipality"].disabled = not municipality_available
         self.fields["municipality"].help_text = (
-            _("Filtra los casos por municipio de residencia. Puede elegir varios.")
+            ""
             if municipality_available
-            else _("El corte activo no incluye desglose por municipio; solo contiene provincia de residencia.")
+            else _("Esta publicación no incluye datos por municipio.")
         )
+        self.fields["site"].help_text = _("Agrupa los tumores según su localización anatómica.")
         self.fields["unit"] = forms.ChoiceField(
             label=_("Unidad de conteo"),
-            choices=[("tumors", _("Tumores")), ("persons", _("Personas distintas"))],
+            choices=[("tumors", _("Tumores"))] + ([("persons", _("Personas distintas"))] if person_identity_verified else []),
         )
         self.fields["metric"] = forms.ChoiceField(
             label=_("Indicador"),
             choices=list(metrics.items()),
-            help_text=_("El ajuste por edad necesita todos los grupos de edad."),
+            help_text=_("La tasa ajustada por edad requiere incluir todos los grupos de edad."),
         )
         self.fields["dimension"] = forms.ChoiceField(
             label=_("Comparar por"),
@@ -91,7 +98,6 @@ class ExplorerForm(AccessibleForm, forms.Form):
         self.fields["chart"] = forms.ChoiceField(
             label=_("Tipo de gráfico"),
             choices=list(charts.items()),
-            help_text=_("Solo se ofrecen tipos compatibles con la selección. Circular y anillo: hasta 8 categorías excluyentes."),
         )
         for key, field in self.fields.items():
             field.widget.attrs["data-label"] = field.label
@@ -102,6 +108,11 @@ class ExplorerForm(AccessibleForm, forms.Form):
         metric = data.get("metric")
         dimension = data.get("dimension")
         unit = data.get("unit")
+        cohort = data.get("cohort", "all")
+        if dimension == "stage" and (cohort != "adult" or metric not in {"count", "share"}):
+            self.add_error("dimension", _("La etapa clínica se consulta en adultos, mediante frecuencias o porcentajes."))
+        if (dimension in {"site", "site_group"} or data.get("site")) and cohort == "all" and metric in {"rate", "asr"}:
+            self.add_error("metric", _("Seleccione población adulta o infantil para calcular tasas por grupo tumoral."))
         if chart in CHART_DIMENSION_LIMITS and dimension not in CHART_DIMENSION_LIMITS[chart]:
             self.add_error("dimension", _("Esta dimensión no está disponible para el gráfico seleccionado."))
         if chart in CHART_METRIC_LIMITS and metric not in CHART_METRIC_LIMITS[chart]:
@@ -110,7 +121,7 @@ class ExplorerForm(AccessibleForm, forms.Form):
             self.add_error("unit", _("Este gráfico requiere la unidad Tumores."))
         if chart in {"pie", "doughnut"} and unit == "persons" and dimension != "sex":
             self.add_error("unit", _("Para personas distintas, la composición solo se puede comparar por sexo."))
-        if chart == "scatter":
+        if chart == "scatter" and not self.persons_disjoint:
             if any(len(data.get(key) or []) > 1 for key in ("year", "territory", "municipality", "sex", "age", "site")):
                 self.add_error(
                     "chart",
@@ -121,7 +132,7 @@ class ExplorerForm(AccessibleForm, forms.Form):
                 "metric",
                 _("El ajuste por edad requiere todos los grupos de edad y otra dimensión."),
             )
-        if unit == "persons" and any(
+        if unit == "persons" and not self.persons_disjoint and any(
             len(data.get(key) or []) > 1
             for key in ("year", "territory", "municipality", "sex", "age", "site")
         ):
