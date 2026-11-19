@@ -1,6 +1,6 @@
 # Revisión técnica del prototipo RNC
 
-**Fecha:** 2026-11-04  
+**Fecha:** 2026-11-04
 **Alcance:** revisión estática del repositorio `rnc-web`: estructura Django, configuración, vistas/formularios, permisos/cuentas, ingestión, publicaciones/agregados, cálculo/exportación, catálogos, JavaScript/PWA y plantillas. La revisión se hizo sin abrir archivos de datos locales, paquetes de despliegue ni contenido del almacenamiento privado.
 
 ## Hallazgos y cambios
