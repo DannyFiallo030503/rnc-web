@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RNC versioned tumor coding catalog",
+  "type": "object",
+  "required": ["version", "source", "concepts"],
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "format": "uri" },
+    "concepts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/concept" }
+    }
+  },
+  "$defs": {
+    "concept": {
+      "type": "object",
+      "required": [
+        "concept_id", "name", "description", "language", "source",
+        "license", "publication_status", "codes"
+      ],
+      "properties": {
+        "concept_id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "language": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "format": "uri" },
+        "license": { "type": "string", "minLength": 1 },
+        "publication_status": {
+          "enum": ["authorized", "draft", "deprecated"]
+        },
+        "codes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/code" }
+        }
+      }
+    },
+    "code": {
+      "type": "object",
+      "required": [
+        "system", "edition", "axis", "code", "name", "description", "status",
+        "source", "license", "relationship", "relationship_status"
+      ],
+      "properties": {
+        "system": { "type": "string", "minLength": 1 },
+        "edition": { "type": "string", "minLength": 1 },
+        "axis": {
+          "enum": [
+            "topography", "morphology", "behavior", "grade", "stage", "classification", "other"
+          ]
+        },
+        "code": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["current", "deprecated", "optional"] },
+        "source": { "type": "string", "format": "uri" },
+        "license": { "type": "string", "minLength": 1 },
+        "relationship": {
+          "enum": ["primary", "same-concept", "exact", "broader", "narrower", "related"]
+        },
+        "relationship_status": {
+          "enum": ["source-declared", "validated-rnc", "pending"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{% extends "base_public.html" %}
+{% load static i18n %}
+{% block title %}{% translate "Consulta sin conexión · RNC Cuba" %}{% endblock %}
+{% block content %}
+<section class="page-heading"><p class="eyebrow">{% translate "Consulta pública local" %}</p><h1>{% translate "Consulta sin conexión" %}</h1><p>{% translate "Guarda una publicación agregada sintética mientras tienes conexión. Después puedes filtrar, calcular, graficar, paginar e imprimir desde este dispositivo. La aplicación pública continúa disponible sin el servidor; la administración requiere conexión." %}</p></section>
+<section class="offline-panel" aria-labelledby="offline-package-heading">
+  <h2 id="offline-package-heading">{% translate "Publicación local" %}</h2>
+  <p id="offline-release">{% translate "No hay paquete guardado." %}</p><p id="offline-context" class="offline-note"></p><p id="offline-storage" class="offline-note"></p>
+  <div class="offline-actions"><button type="button" id="install-pwa" hidden>{% translate "Instalar consulta pública" %}</button><button type="button" id="save-package">{% translate "Guardar / actualizar publicación" %}</button><button type="button" class="button-secondary" id="clear-package">{% translate "Eliminar copia local" %}</button></div>
+  <p class="offline-note">{% translate "Este prototipo solo acepta publicaciones sintéticas. La copia queda en el almacenamiento del navegador hasta que la elimines o el navegador la retire. Una copia sin conexión no puede actualizarse ni revocarse mientras el dispositivo está desconectado." %}</p>
+</section>
+<section class="offline-panel"><h2>{% translate "Filtros y visualización" %}</h2>
+<p id="filter-help" class="offline-note">{% translate "Guarda una publicación para cargar los filtros disponibles." %}</p>
+<div class="offline-filters" id="filters">
+  <label for="year">{% translate "Año de incidencia" %}<select id="year" multiple size="4"></select></label><label for="territory">{% translate "Provincia de residencia" %}<select id="territory" multiple size="4"></select></label><label for="municipality">{% translate "Municipio de residencia" %}<select id="municipality" multiple size="4" disabled><option value="">{% translate "No disponible en esta publicación" %}</option></select></label><label for="sex">{% translate "Sexo" %}<select id="sex" multiple size="3"></select></label><label for="age">{% translate "Edad" %}<select id="age" multiple size="6"></select></label><label for="site">{% translate "Localización" %}<select id="site" multiple size="4"></select></label>
+  <label for="dimension">{% translate "Comparar por" %}<select id="dimension"><option value="site">{% translate "Grupo de localización" %}</option></select></label>
+  <label for="chart-kind">{% translate "Tipo de gráfico" %}<select id="chart-kind"><option value="bar">{% translate "Barras" %}</option></select></label>
+  <label for="unit">{% translate "Unidad" %}<select id="unit"><option value="tumors">{% translate "Tumores" %}</option><option value="persons">{% translate "Personas distintas" %}</option></select></label>
+  <label for="metric">{% translate "Indicador" %}<select id="metric"><option value="count">{% translate "Frecuencia absoluta" %}</option></select></label>
+</div>
+<div class="offline-actions"><button type="button" id="run-local">{% translate "Calcular en este dispositivo" %}</button><button type="button" class="button-secondary" id="compare-online">{% translate "Comparar con el servidor" %}</button><button type="button" class="button-secondary" id="export-csv" disabled>{% translate "Descargar CSV" %}</button><button type="button" class="button-secondary" id="export-png" disabled>{% translate "Descargar gráfico PNG" %}</button><button type="button" class="button-secondary" id="print-results" disabled>{% translate "Imprimir / guardar PDF" %}</button></div>
+<p id="offline-status" role="status" aria-live="polite"></p><p id="offline-summary"></p><p id="offline-filter-summary" class="offline-note"></p>
+<div class="chart-frame"><canvas id="offline-chart" aria-label="{% translate 'Gráfico del resultado calculado localmente' %}"></canvas></div>
+<div class="table-scroll"><table id="offline-results"><thead></thead><tbody></tbody></table></div>
+<nav id="table-pagination" class="offline-pagination" aria-label="{% translate 'Paginación de resultados' %}" hidden><button type="button" id="previous-page" class="button-secondary">{% translate "Anterior" %}</button><span id="page-indicator"></span><button type="button" id="next-page" class="button-secondary">{% translate "Siguiente" %}</button></nav>
+</section>
+<script src="{% static 'vendor/chart.umd.min.js' %}" defer></script><script src="{% static 'js/charts.js' %}" defer></script>
+{% endblock %}

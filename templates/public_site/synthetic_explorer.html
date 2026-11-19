@@ -22,7 +22,7 @@
         {% for value in options.year %}<option value="{{ value }}" {% if filters.year == value|stringformat:"s" %}selected{% endif %}>{{ value }}</option>{% endfor %}
       </select>
     </label>
-    <label for="filter-territory">Territorio
+    <label for="filter-territory">Provincia de residencia
       <select id="filter-territory" name="territory">
         <option value="" {% if not filters.territory %}selected{% endif %}>Todos los territorios</option>
         {% for value in options.territory %}<option value="{{ value }}" {% if filters.territory == value %}selected{% endif %}>{{ value }}</option>{% endfor %}

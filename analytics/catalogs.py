@@ -55,7 +55,7 @@ AGES = _items(
 )
 SITES = _items(
     [
-            (f"{i:03}", name, f"Grupo ilustrativo sintético; no representa un código TOPO ni un crosswalk: {name}.")
+            (f"{i:03}", name, f"Grupo ilustrativo sintético; no representa un código TOPO ni una equivalencia ICD-O: {name}.")
         for i, name in enumerate(
             [
                 "Tráquea, bronquios y pulmón", "Próstata", "Mama", "Colon y recto",
@@ -71,6 +71,8 @@ SITES = _items(
 
 def _load_unit_informants():
     path = Path(__file__).parent / "fixtures" / "catalogo_unidades_informantes_manual_vii.csv"
+    if not path.is_file():
+        return {}
     with path.open(encoding="utf-8", newline="") as source:
         return {
             row["id"]: {

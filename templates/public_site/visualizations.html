@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% load i18n %}
+{% block content %}
+<header class="page-heading"><h1>{% translate "Visualizaciones" %}</h1><p>{% translate "Seleccione las vistas disponibles en Consulta estadística." %}</p></header>
+<section class="panel">
+  <form method="post" class="portal-form" data-validate>
+    {% csrf_token %}
+    {% include "includes/form_fields.html" %}
+    <p class="muted">{% translate "La tendencia requiere al menos dos años con datos. El mapa representa las provincias con información disponible." %}</p>
+    <button type="submit">{% translate "Guardar cambios" %}</button>
+  </form>
+</section>
+{% endblock %}

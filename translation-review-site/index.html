@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RNC Web · Revisión de traducciones</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="RNC Web, inicio">
+      <span class="brand-mark">RNC</span>
+      <span><strong>Registro Nacional de Cáncer</strong><small>Portal de revisión lingüística</small></span>
+    </a>
+    <span class="review-badge">REVISIÓN / REVIEW</span>
+  </header>
+  <main id="top">
+    <section class="notice" role="note">
+      <strong>Traducciones pendientes de revisión humana / Draft translations awaiting human review</strong>
+      <p>Estas propuestas se muestran para recibir comentarios. No están aprobadas ni deben usarse para interpretar estadísticas. Este sitio de revisión no es operado por el RNC y no publica datos ni decisiones institucionales. / These proposals are for review only. They are not approved and must not be used to interpret statistics. This review site is not operated by RNC and publishes no data or institutional decisions.</p>
+    </section>
+    <section class="intro">
+      <p class="eyebrow">RNC WEB / LOCALIZACIÓN</p>
+      <h1>Revisión de traducciones / Translation review</h1>
+      <p>Explora los textos de la interfaz por idioma, busca términos y compara cada propuesta con el texto fuente. / Browse interface text by language, search terms, and compare each proposal with its source.</p>
+    </section>
+    <section class="toolbar" aria-label="Filtros de traducción">
+      <label>Idioma / Language
+        <select id="language"></select>
+      </label>
+      <label>Área / Area
+        <select id="domain">
+          <option value="all">Todas / All</option>
+          <option value="django">Portal y administración / Portal and administration</option>
+          <option value="djangojs">JavaScript y PWA / JavaScript and PWA</option>
+        </select>
+      </label>
+      <label class="search-label">Buscar / Search
+        <input id="search" type="search" placeholder="Palabra o frase / Word or phrase" autocomplete="off">
+      </label>
+      <label>Mostrar / Show
+        <select id="status">
+          <option value="all">Todos / All messages</option>
+          <option value="fuzzy">Pendientes / Pending (fuzzy)</option>
+          <option value="missing">Sin propuesta / No proposal</option>
+        </select>
+      </label>
+    </section>
+    <section class="summary" aria-live="polite">
+      <div><span id="shown-count">0</span><small>mensajes visibles / visible messages</small></div>
+      <div><span id="draft-count">0</span><small>pendientes / pending review</small></div>
+      <div><span id="missing-count">0</span><small>sin propuesta / missing</small></div>
+      <p id="language-status"></p>
+    </section>
+    <section id="messages" class="messages" aria-live="polite"></section>
+    <button id="load-more" class="load-more" type="button" hidden>Mostrar más / Load more</button>
+    <footer>
+      <p>Al enviar comentarios, identifica el idioma, texto fuente y propuesta. Los catálogos siguen parciales hasta completar sus revisiones lingüística, funcional e institucional. / When sending feedback, include the language, source text, and proposal. Catalogs remain partial until linguistic, functional, and institutional reviews are complete.</p>
+      <p class="footer-mark">RNC WEB · REVISIÓN DE TRADUCCIONES · DATOS SINTÉTICOS / SYNTHETIC DATA</p>
+    </footer>
+  </main>
+</body>
+</html>

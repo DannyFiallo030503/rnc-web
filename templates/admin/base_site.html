@@ -1,6 +1,6 @@
 {% extends "admin/base.html" %}
-{% load static %}
-{% block title %}{{ title }} · Administración RNC{% endblock %}
+{% load static i18n %}
+{% block title %}{{ title }} · {% translate "Administración RNC" %}{% endblock %}
 {% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'css/admin_theme.css' %}"><link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">{% endblock %}
-{% block branding %}<div id="site-name"><a href="{% url 'public_site:intake_prototype' %}">RNC <span>/ Cuba</span></a><small>Administración</small></div>{% endblock %}
-{% block nav-global %}<nav class="rnc-admin-navigation" aria-label="Navegación RNC"><a href="{% url 'public_site:intake_prototype' %}">Cortes estadísticos</a><a href="{% url 'public_site:home' %}">Portal público</a></nav>{% endblock %}
+{% block branding %}<div id="site-name"><a href="{% url 'public_site:intake_prototype' %}">RNC <span>/ Cuba</span></a><small>{% translate "Administración" %}</small></div>{% endblock %}
+{% block nav-global %}<nav class="rnc-admin-navigation" aria-label="{% translate 'Navegación RNC' %}"><a href="{% url 'public_site:intake_prototype' %}">{% translate "Cortes estadísticos" %}</a><a href="{% url 'public_site:home' %}">{% translate "Portal público" %}</a></nav>{% endblock %}

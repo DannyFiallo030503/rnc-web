@@ -1,0 +1,1 @@
+Paquetes de revisión lingüística separados por locale. Cada archivo ZIP contiene el catálogo Django y DjangoJS requeridos para ese locale y fija los hashes de origen. Revise cada fila y complete REVIEW-MANIFEST.json. No son aprobaciones ni activan locales. Paquete combinado de referencia: ../pending-human-review-2026-11-11.zip.

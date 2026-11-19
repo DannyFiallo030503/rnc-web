@@ -1,12 +1,67 @@
 {% extends "base_public.html" %}
+{% load i18n %}
 {% block content %}
-  <section class="portal-hero" id="inicio"><div><p class="eyebrow">Registro Nacional de Cáncer · Cuba</p><h1>Información para comprender<br>la incidencia del cáncer</h1><p>Explore la distribución por territorio, edad, sexo y localización. Consulte indicadores, compare resultados y prepare sus visualizaciones.</p><a class="primary-link"
-   href="{% url 'public_site:synthetic_explorer' %}">Explorar estadísticas →</a></div><div class="release-card"><span class="badge">Datos sintéticos</span><h2 class="{% if not latest %}release-empty{% endif %}">{% if latest %}{{ latest }}{% else %}Sin publicaciones{% endif %}</h2><p>Último período disponible</p>{% if delivery %}<strong>{{ delivery.title }}</strong><p>Publicado el {{ delivery.published_at|date:"d/m/Y" }}</p>{% endif %}</div></section>
-  {% if delivery %}
-    <section class="synthetic-summary" id="explorador">
-      <article><span>Tumores registrados · {{ latest }}</span><strong>{{ summary.tumors }}</strong><small>Unidad: tumor</small></article><article><span>Personas distintas · {{ latest }}</span><strong>{{ summary.persons }}</strong><small>Una persona puede presentar varios tumores</small></article><article><span>Territorios cubiertos</span><strong>{{ territories }}</strong><small>Provincias y municipio especial</small></article><article><span>Período disponible</span><strong>{{ delivery.report.periods|first }}–{{ latest }}</strong><small>Consulte cada año o combine períodos</small></article>
-    </section>
-    <section class="panel"><div class="panel-heading"><div><p class="eyebrow">Distribución sintética · {{ latest }}</p><h2>Grupos de localización ilustrativos</h2></div><a href="{% url 'public_site:synthetic_explorer' %}?year={{ latest }}">Ver todas →</a></div><div class="chart-frame"><canvas id="result-chart" aria-label="Tumores por grupo de localización ilustrativo" role="img"></canvas></div>{{ chart_payload|json_script:"chart-payload" }}<div class="table-scroll"><table class="result-table"><thead><tr><th>Grupo ilustrativo</th><th class="numeric">Tumores sintéticos</th></tr></thead><tbody>{% for r in top %}<tr><td>{{ r.label }}</td><td class="numeric">{{ r.tumors }}</td></tr>{% endfor %}</tbody></table></div><p class="muted">Estos grupos no representan códigos TOPO ni equivalencias ICD-O.</p></section>
-{% else %}<section class="panel"><h2>No hay un corte publicado</h2><p>Los resultados estarán disponibles cuando el personal autorizado publique un corte.</p></section>{% endif %}
-<section class="info-grid" id="criterios"><article class="panel"><h2>Una consulta a su medida</h2><p>Seleccione filtros, indicador y dimensión. Genere únicamente el gráfico que necesita y descargue resultados con su contexto.</p><a href="{% url 'public_site:synthetic_explorer' %}">Construir una consulta →</a></article><article class="panel"><h2>Cómo interpretar los resultados</h2><p>Los conteos de tumores y personas son distintos. Las tasas relacionan los casos con la población del mismo estrato. La tasa ajustada utiliza la referencia mundial Segi–Doll.</p><p class="muted">Esta instalación utiliza exclusivamente datos sintéticos y denominadores modelados. No representa cifras oficiales del RNC o de ONEI.</p></article></section>
+<section class="portal-hero portal-home-hero" id="inicio">
+  <div>
+    <p class="eyebrow">{% translate "Registro Nacional de Cáncer · Cuba" %}</p>
+    <h1>{% translate "Información para comprender la incidencia del cáncer" %}</h1>
+    <p>{% translate "El Registro Nacional de Cáncer reúne y analiza información sobre los casos de cáncer en Cuba. Este portal permite consultar estadísticas por año, territorio, sexo, edad y localización, y preparar tablas, gráficos y descargas." %}</p>
+    <div class="actions home-actions">
+      <a class="primary-link" href="{% url 'public_site:synthetic_explorer' %}">{% translate "Consultar estadísticas" %} <span aria-hidden="true">→</span></a>
+      <a class="secondary-link" href="{% url 'public_site:about' %}">{% translate "Conocer el RNC" %}</a>
+    </div>
+  </div>
+  <aside class="home-purpose-card" aria-label="{% translate 'Qué ofrece este portal' %}">
+    <p class="eyebrow">{% translate "Consulta pública" %}</p>
+    <h2>{% translate "Explora los datos disponibles" %}</h2>
+    <ul>
+      <li>{% translate "Filtra por año y territorio" %}</li>
+      <li>{% translate "Compara sexo, edad y localización" %}</li>
+      <li>{% translate "Consulta tablas y visualizaciones" %}</li>
+      <li>{% translate "Descarga resultados con su contexto" %}</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="home-intro-grid" aria-label="{% translate 'Información sobre el Registro' %}">
+  <article class="panel">
+    <p class="eyebrow">{% translate "El Registro" %}</p>
+    <h2>{% translate "¿Qué es el RNC?" %}</h2>
+    <p>{% translate "Es el sistema nacional que recopila, revisa y analiza información de cáncer con alcance poblacional. Sus estadísticas ayudan a describir la magnitud del cáncer y sirven de apoyo a la investigación y la planificación sanitaria." %}</p>
+    <a href="{% url 'public_site:about' %}#que-hacemos">{% translate "Qué hacemos" %} <span aria-hidden="true">→</span></a>
+  </article>
+  <article class="panel">
+    <p class="eyebrow">{% translate "La plataforma" %}</p>
+    <h2>{% translate "¿Qué puedes hacer aquí?" %}</h2>
+    <p>{% translate "Construir una consulta, elegir el indicador y la dimensión de análisis, revisar la tabla que acompaña cada gráfico y exportar los resultados seleccionados." %}</p>
+    <a href="{% url 'public_site:synthetic_explorer' %}">{% translate "Abrir la consulta estadística" %} <span aria-hidden="true">→</span></a>
+  </article>
+</section>
+
+<section class="panel home-guide-section" aria-labelledby="home-uso-title">
+  <p class="eyebrow">{% translate "Cómo usar el portal" %}</p>
+  <h2 id="home-uso-title">{% translate "De la pregunta al resultado" %}</h2>
+  <ol class="home-steps">
+    <li><strong>{% translate "Define la consulta." %}</strong> {% translate "Selecciona el período y las dimensiones disponibles, como territorio, sexo, edad y localización." %}</li>
+    <li><strong>{% translate "Elige qué medir." %}</strong> {% translate "Distingue el número de casos, una proporción o una tasa; cada medida responde a una pregunta diferente." %}</li>
+    <li><strong>{% translate "Interpreta y conserva el contexto." %}</strong> {% translate "Revisa tabla, unidad, población de referencia, fuente y notas del método antes de comparar o descargar." %}</li>
+  </ol>
+  <p>{% translate "La disponibilidad de cada indicador depende del corte publicado. Las estimaciones, los datos observados y los períodos preliminares deben identificarse por separado." %}</p>
+  <a href="{% url 'public_site:about' %}#metodos">{% translate "Ver cómo se calculan los indicadores" %} <span aria-hidden="true">→</span></a>
+</section>
+
+<section class="home-methods-grid" aria-label="{% translate 'Conceptos estadísticos básicos' %}">
+  <article class="panel">
+    <h2>{% translate "Casos y frecuencias" %}</h2>
+    <p>{% translate "Un conteo expresa cuántos casos cumplen los filtros. Una frecuencia relativa compara una parte con un total y se expresa como porcentaje. El denominador y la unidad deben acompañar siempre al resultado." %}</p>
+  </article>
+  <article class="panel">
+    <h2>{% translate "Tasas de incidencia" %}</h2>
+    <p>{% translate "Una tasa relaciona los casos nuevos con la población correspondiente al mismo período y estrato. Las tasas por edad ayudan a describir grupos; el ajuste por edad facilita comparaciones entre poblaciones con estructuras etarias diferentes." %}</p>
+  </article>
+</section>
+
+{% if not delivery %}
+<p class="muted home-publication-note">{% translate "Las consultas estarán disponibles cuando exista una publicación activa." %}</p>
+{% endif %}
 {% endblock %}

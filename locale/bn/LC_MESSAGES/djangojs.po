@@ -1,0 +1,719 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Check this box to continue."
+msgstr "চালিয়ে যেতে এই বাক্সটি চেক করুন।"
+
+#, fuzzy
+msgid "Complete this field."
+msgstr "এই ক্ষেত্রটি সম্পূর্ণ করুন।"
+
+#, fuzzy
+msgid "Check the characters entered in this field."
+msgstr "এই ক্ষেত্রে প্রবেশ করা অক্ষর পরীক্ষা করুন."
+
+#, fuzzy
+msgid "Enter at least %(length)s characters."
+msgstr "কমপক্ষে %(length)s অক্ষর লিখুন।"
+
+#, fuzzy
+msgid "Enter no more than %(length)s characters."
+msgstr "%(length)s অক্ষরের বেশি লিখবেন না।"
+
+#, fuzzy
+msgid "Enter a valid email address, for example name@domain.com."
+msgstr "একটি বৈধ ইমেল ঠিকানা লিখুন, উদাহরণস্বরূপ name@domain.com।"
+
+#, fuzzy
+msgid "Choose a .csv file."
+msgstr "একটি .csv ফাইল বেছে নিন।"
+
+#, fuzzy
+msgid "The file exceeds the 12 MB limit."
+msgstr "ফাইলটি 12 MB সীমা অতিক্রম করেছে৷"
+
+#, fuzzy
+msgid ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+msgstr ""
+"একটি স্থান, apostrophe, বা হাইফেন সহ নামের অংশগুলিকে আলাদা করুন; বিরাম চিহ্ন"
+" দিয়ে শুরু বা শেষ করবেন না।"
+
+#, fuzzy
+msgid "The password cannot contain only numbers."
+msgstr "পাসওয়ার্ডে শুধুমাত্র সংখ্যা থাকতে পারে না।"
+
+#, fuzzy
+msgid "The passwords do not match. Enter the same password again."
+msgstr "পাসওয়ার্ড মেলে না. আবার একই পাসওয়ার্ড দিন।"
+
+#, fuzzy
+msgid "Text was not added: enter no more than %(length)s characters."
+msgstr "পাঠ্য যোগ করা হয়নি: %(length)s অক্ষরের বেশি লিখবেন না।"
+
+#, fuzzy
+msgid "Disallowed text was not added. "
+msgstr "অননুমোদিত পাঠ্য যোগ করা হয়নি৷ ৷"
+
+#, fuzzy
+msgid "Check the format of this field."
+msgstr "এই ক্ষেত্রের বিন্যাস পরীক্ষা করুন."
+
+#, fuzzy
+msgid "No file selected"
+msgstr "কোনো ফাইল নির্বাচন করা হয়নি"
+
+#, fuzzy
+msgid "All"
+msgstr "সব"
+
+#, fuzzy
+msgid "This chart does not support the selected dimension."
+msgstr "এই চার্টটি নির্বাচিত মাত্রা সমর্থন করে না।"
+
+#, fuzzy
+msgid "This chart does not support the selected indicator."
+msgstr "এই চার্ট নির্বাচিত সূচক সমর্থন করে না."
+
+#, fuzzy
+msgid "This chart does not support the selected unit."
+msgstr "এই চার্ট নির্বাচিত ইউনিট সমর্থন করে না."
+
+#, fuzzy
+msgid "For distinct people, compare composition by sex."
+msgstr "স্বতন্ত্র ব্যক্তিদের জন্য, লিঙ্গ দ্বারা রচনা তুলনা করুন."
+
+#, fuzzy
+msgid "Line charts require comparison by period."
+msgstr "লাইন চার্টের সময়কাল অনুসারে তুলনা করা প্রয়োজন।"
+
+#, fuzzy
+msgid "The series needs at least two years; clear the single-year selection."
+msgstr "সিরিজের জন্য কমপক্ষে দুই বছর প্রয়োজন; একক বছরের নির্বাচন সাফ করুন।"
+
+#, fuzzy
+msgid "Point charts compare values by province of residence or age group."
+msgstr "পয়েন্ট চার্ট বসবাসের প্রদেশ বা বয়স গোষ্ঠী অনুসারে মান তুলনা করে।"
+
+#, fuzzy
+msgid ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+msgstr ""
+"এই চার্টের কমপক্ষে দুটি বিভাগ প্রয়োজন; একক-প্রদেশ বা একক-বয়স ফিল্টার সাফ "
+"করুন।"
+
+#, fuzzy
+msgid "Scatter plots compare provinces or age groups."
+msgstr "স্ক্যাটার প্লটগুলি প্রদেশ বা বয়স গোষ্ঠীর তুলনা করে।"
+
+#, fuzzy
+msgid "Scatter plots compare absolute counts of tumors and distinct people."
+msgstr "স্ক্যাটার প্লটগুলি টিউমার এবং স্বতন্ত্র লোকের পরম সংখ্যার তুলনা করে।"
+
+#, fuzzy
+msgid ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+msgstr ""
+"একটি বিক্ষিপ্ত প্লট একটি নির্বাচন প্রয়োজন যেখানে স্বতন্ত্র মানুষ ওভারল্যাপ "
+"ছাড়াই গণনা করা যেতে পারে।"
+
+#, fuzzy
+msgid "Calculando en este dispositivo…"
+msgstr "এই ডিভাইসে গণনা করা হচ্ছে..."
+
+#, fuzzy
+msgid "Categoría"
+msgstr "শ্রেণী"
+
+#, fuzzy
+msgid "Datos sintéticos"
+msgstr "সিন্থেটিক ডেটা"
+
+#, fuzzy
+msgid ""
+"Deja un filtro sin selección para incluir todos sus valores; puedes elegir "
+"varios."
+msgstr ""
+"একটি ফিল্টার এর সমস্ত মান অন্তর্ভুক্ত করতে খালি রাখুন; আপনি বেশ কয়েকটি "
+"নির্বাচন করতে পারেন।"
+
+#, fuzzy
+msgid "Dimensión"
+msgstr "মাত্রা"
+
+#, fuzzy
+msgid "El cálculo local encontró un error."
+msgstr "স্থানীয় গণনা একটি ত্রুটির সম্মুখীন হয়েছে৷"
+
+#, fuzzy
+msgid "El cálculo local se interrumpió."
+msgstr "স্থানীয় গণনা ব্যাহত হয়।"
+
+#, fuzzy
+msgid "El navegador no ofrece una estimación de almacenamiento."
+msgstr "এই ব্রাউজার একটি সঞ্চয় অনুমান প্রদান করে না."
+
+#, fuzzy
+msgid "El paquete está incompleto y no se guardó."
+msgstr "প্যাকেজটি অসম্পূর্ণ এবং সংরক্ষিত হয়নি৷"
+
+#, fuzzy
+msgid ""
+"El servidor no respondió; la consulta local sigue disponible si ya guardaste"
+" el paquete."
+msgstr ""
+"সার্ভার সাড়া দেয়নি। আপনি যদি ইতিমধ্যে প্যাকেজটি সংরক্ষণ করে থাকেন তবে "
+"স্থানীয় পরামর্শ উপলব্ধ থাকে।"
+
+#, fuzzy
+msgid ""
+"Este navegador no permite el almacenamiento local requerido por la consulta "
+"offline."
+msgstr ""
+"এই ব্রাউজারটি অফলাইন পরামর্শের জন্য প্রয়োজনীয় স্থানীয় স্টোরেজের অনুমতি "
+"দেয় না।"
+
+#, fuzzy
+msgid ""
+"Este paquete no incluye el contrato estadístico requerido. Conéctate y "
+"actualízalo."
+msgstr ""
+"এই প্যাকেজ প্রয়োজনীয় পরিসংখ্যান চুক্তি অন্তর্ভুক্ত না. ইন্টারনেটের সাথে "
+"সংযোগ করুন এবং এটি আপডেট করুন।"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo admite el paquete sintético autorizado para pruebas."
+msgstr ""
+"এই প্রোটোটাইপ শুধুমাত্র পরীক্ষার জন্য অনুমোদিত সিন্থেটিক প্যাকেজ গ্রহণ করে।"
+
+#, fuzzy
+msgid "Fecha de publicación"
+msgstr "প্রকাশের তারিখ"
+
+#, fuzzy
+msgid "Filtros"
+msgstr "ফিল্টার"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "আপেক্ষিক ফ্রিকোয়েন্সি (%)"
+
+#, fuzzy
+msgid "Guarda primero la publicación sintética en este dispositivo."
+msgstr "প্রথমে এই ডিভাইসে সিন্থেটিক রিলিজ সংরক্ষণ করুন।"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación mientras tienes conexión para consultar desde este "
+"dispositivo."
+msgstr ""
+"এই ডিভাইসে এটির সাথে পরামর্শ করতে অনলাইন থাকাকালীন একটি রিলিজ সংরক্ষণ করুন।"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "মেট্রিক"
+
+#, fuzzy
+msgid "Método"
+msgstr "পদ্ধতি"
+
+#, fuzzy
+msgid "No disponible"
+msgstr "পাওয়া যায় না"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "এই রিলিজে উপলব্ধ নেই"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "কোন প্যাকেজ সংরক্ষিত."
+
+#, fuzzy
+msgid "No hay publicación disponible para guardar."
+msgstr "সংরক্ষণ করার জন্য কোন রিলিজ উপলব্ধ নেই."
+
+#, fuzzy
+msgid "No se pudo cargar la biblioteca local de gráficos."
+msgstr "স্থানীয় চার্ট লাইব্রেরি লোড করা যায়নি।"
+
+#, fuzzy
+msgid "No se pudo completar el cálculo local."
+msgstr "স্থানীয় গণনা সম্পূর্ণ করা যায়নি।"
+
+#, fuzzy
+msgid "No se pudo eliminar el paquete local."
+msgstr "স্থানীয় প্যাকেজ মুছে ফেলা যাবে না."
+
+#, fuzzy
+msgid "No se pudo estimar el almacenamiento disponible."
+msgstr "উপলব্ধ সঞ্চয়স্থান অনুমান করা যায়নি."
+
+#, fuzzy
+msgid "No se pudo guardar el paquete local."
+msgstr "স্থানীয় প্যাকেজ সংরক্ষণ করা যায়নি."
+
+#, fuzzy
+msgid "No se pudo guardar la publicación."
+msgstr "মুক্তি সংরক্ষণ করা যায়নি."
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "স্বতন্ত্র মানুষ"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "হর জনসংখ্যা"
+
+#, fuzzy
+msgid "Posición"
+msgstr "পদমর্যাদা"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "মুক্তি"
+
+#, fuzzy
+msgid ""
+"Publicación sintética guardada en este dispositivo. El navegador puede "
+"retirar datos locales por cuota o configuración."
+msgstr ""
+"সিন্থেটিক রিলিজ এই ডিভাইসে সংরক্ষিত. স্টোরেজ সীমা বা সেটিংসের কারণে ব্রাউজার"
+" স্থানীয় ডেটা মুছে ফেলতে পারে।"
+
+#, fuzzy
+msgid ""
+"Puedes combinar varios valores. Para personas distintas, selecciona como "
+"máximo un valor en cada filtro."
+msgstr ""
+"আপনি বেশ কয়েকটি মান একত্রিত করতে পারেন। স্বতন্ত্র ব্যক্তিদের জন্য, প্রতিটি "
+"ফিল্টারে সর্বাধিক একটি মান নির্বাচন করুন৷"
+
+#, fuzzy
+msgid "Se eliminó el paquete local de este navegador."
+msgstr "স্থানীয় প্যাকেজ এই ব্রাউজার থেকে সরানো হয়েছে."
+
+#, fuzzy
+msgid "Seleccione un gráfico"
+msgstr "একটি চার্ট নির্বাচন করুন"
+
+#, fuzzy
+msgid "Seleccione un indicador"
+msgstr "একটি মেট্রিক নির্বাচন করুন"
+
+#, fuzzy
+msgid "Seleccione una dimensión"
+msgstr "একটি মাত্রা নির্বাচন করুন"
+
+#, fuzzy
+msgid "Sí"
+msgstr "হ্যাঁ"
+
+#, fuzzy
+msgid "Tasa ajustada por 100 000"
+msgstr "প্রতি 100,000 বয়সের সাথে সামঞ্জস্য করা হার"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000"
+msgstr "প্রতি 100,000-এ অপরিশোধিত/বয়স-নির্দিষ্ট হার"
+
+#, fuzzy
+msgid "Todos"
+msgstr "সব"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "টিউমার"
+
+#, fuzzy
+msgid "Título"
+msgstr "শিরোনাম"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "ইউনিট"
+
+#, fuzzy
+msgid "no disponible para filtros múltiples"
+msgstr "একাধিক ফিল্টার সহ উপলব্ধ নয়"
+
+#, fuzzy
+msgid "todos"
+msgstr "সব"
+
+#, fuzzy
+msgid ""
+"Almacenamiento del sitio usado: %(used)s MB%(quota)s. Estimación del "
+"navegador."
+msgstr "ব্যবহৃত সাইট স্টোরেজ: %(used)s MB%(quota)s। ব্রাউজার অনুমান।"
+
+#, fuzzy
+msgid " de %(quota)s MB estimados"
+msgstr "আনুমানিক %(quota)s MB এর  "
+
+#, fuzzy
+msgid ""
+"Tumores: %(tumors)s · Personas distintas: %(persons)s · Población: "
+"%(population)s · cálculo local: %(elapsed)s ms"
+msgstr ""
+"টিউমার: %(tumors)s · স্বতন্ত্র ব্যক্তি: %(persons)s · জনসংখ্যা: "
+"%(population)s · স্থানীয় গণনা: %(elapsed)s ms"
+
+#, fuzzy
+msgid ""
+"Consulta calculada localmente · publicación %(release)s · método %(method)s."
+msgstr ""
+"এই ডিভাইসে কোয়েরি গণনা করা হয়েছে · %(release)s প্রকাশ করুন · পদ্ধতি "
+"%(method)s।"
+
+#, fuzzy
+msgid "El servidor respondió HTTP %(status)s."
+msgstr "সার্ভার HTTP %(status)s এর সাথে সাড়া দিয়েছে।"
+
+#, fuzzy
+msgid ""
+"Servidor: %(elapsed)s ms de ida y vuelta · %(bytes)s bytes de HTML. No mide "
+"CPU del servidor."
+msgstr ""
+"সার্ভার: %(elapsed)s ms রাউন্ড ট্রিপ · %(bytes)s HTML এর বাইট। এটি সার্ভার "
+"CPU পরিমাপ করে না।"
+
+#, fuzzy
+msgid "Categorías"
+msgstr "ক্যাটাগরি"
+
+#, fuzzy
+msgid "categoría"
+msgid_plural "categorías"
+msgstr[0] "বিভাগ"
+msgstr[1] "বিভাগ"
+
+#, fuzzy
+msgid "categoría con el mismo valor"
+msgid_plural "categorías con los mismos valores"
+msgstr[0] "একই মানের বিভাগ"
+msgstr[1] "একই মানের বিভাগগুলো"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "পরিসংখ্যানগত প্রশ্ন"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "প্রতিটি বিভাগের শতকরা হার (%)"
+
+#, fuzzy
+msgid "tumores"
+msgstr "টিউমার"
+
+#, fuzzy
+msgid "personas distintas"
+msgstr "স্বতন্ত্র মানুষ"
+
+#, fuzzy
+msgid "El gráfico circular necesita hasta ocho categorías."
+msgstr "পাই চার্ট আটটি বিভাগ পর্যন্ত সমর্থন করে।"
+
+#, fuzzy
+msgid "Este gráfico necesita al menos dos categorías con datos."
+msgstr "এই চার্টে ডেটা সহ কমপক্ষে দুটি বিভাগ প্রয়োজন।"
+
+#, fuzzy
+msgid "Falta población en algún grupo de edad para calcular la tasa ajustada."
+msgstr ""
+"সামঞ্জস্যপূর্ণ হার গণনা করার জন্য প্রয়োজনীয় একটি বয়সের জন্য জনসংখ্যা "
+"অনুপস্থিত।"
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "পরম গণসংখ্যা"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "পুরুষ"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "নারী"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "একটি রচনা হিসাবে প্রদর্শন করার জন্য কোন ইতিবাচক মান নেই৷"
+
+#, fuzzy
+msgid "No se cargó una publicación local."
+msgstr "কোনো স্থানীয় রিলিজ লোড হয় না."
+
+#, fuzzy
+msgid "Selección no compatible: %(errors)s."
+msgstr "বেমানান নির্বাচন: %(errors)s।"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "প্রতি 100,000 সেগি–ডলের বয়স-সামঞ্জস্য হার"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "প্রতি 100,000-এ অপরিশোধিত/বয়স-নির্দিষ্ট হার"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "টিউমার এবং স্বতন্ত্র মানুষ"
+
+#, fuzzy
+msgid "ajuste por edad incompatible con la selección"
+msgstr "বয়স সমন্বয় নির্বাচনের সাথে বেমানান"
+
+#, fuzzy
+msgid "comparación por sexo necesita ambos sexos"
+msgstr "লিঙ্গ তুলনা উভয় লিঙ্গ প্রয়োজন"
+
+#, fuzzy
+msgid "composición de personas solo por sexo"
+msgstr "মানুষের রচনা শুধুমাত্র লিঙ্গ দ্বারা উপলব্ধ"
+
+#, fuzzy
+msgid "dimensión"
+msgstr "মাত্রা"
+
+#, fuzzy
+msgid "dispersión requiere filtros simples"
+msgstr "স্ক্যাটার প্লটের জন্য সাধারণ ফিল্টার প্রয়োজন"
+
+#, fuzzy
+msgid "indicador"
+msgstr "মেট্রিক"
+
+#, fuzzy
+msgid "la publicación no contiene ambos sexos"
+msgstr "রিলিজ উভয় লিঙ্গ ধারণ করে না"
+
+#, fuzzy
+msgid "personas distintas con selección múltiple"
+msgstr "স্বতন্ত্র ব্যক্তিদের একাধিক নির্বাচনের সাথে একত্রিত করা যায় না"
+
+#, fuzzy
+msgid "unidad"
+msgstr "ইউনিট"
+
+#, fuzzy
+msgid "valor de %(key)s fuera del paquete"
+msgstr "%(key)s মান প্যাকেজের বাইরে"
+
+#, fuzzy
+msgid ""
+"Paquete local: %(title)s · versión %(release)s · publicado %(published)s · "
+"%(size)s KB"
+msgstr ""
+"স্থানীয় প্যাকেজ: %(title)s · সংস্করণ %(release)s · প্রকাশিত %(published)s ·"
+" %(size)s KB"
+
+#, fuzzy
+msgid "Publicación %(release)s · %(date)s"
+msgstr "রিলিজ %(release)s · %(date)s"
+
+#, fuzzy
+msgid "Página %(page)s de %(pages)s · %(count)s %(categories)s"
+msgstr "%(pages)s এর %(page)s পৃষ্ঠা · %(count)s %(categories)s"
+
+#, fuzzy
+msgid "fecha no disponible"
+msgstr "তারিখ অনুপলব্ধ"
+
+#, fuzzy
+msgid "consulta-local"
+msgstr "স্থানীয় প্রশ্ন"
+
+#, fuzzy
+msgid "grafico-local"
+msgstr "স্থানীয় চার্ট"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "শ্বাসনালী, ব্রঙ্কাস এবং ফুসফুস"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "প্রোস্টেট"
+
+#, fuzzy
+msgid "Mama"
+msgstr "স্তন"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "কোলন এবং মলদ্বার"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "পেট"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "সার্ভিক্স জরায়ু"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "কর্পাস জরায়ু"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "থাইরয়েড"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "অগ্ন্যাশয়"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "মূত্রথলি"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "কিডনি"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "যকৃত এবং পিত্ত নালী"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "ডিম্বাশয়"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "স্বরযন্ত্র এবং গলবিল"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "ডোনাট চার্ট"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "রোগ নির্ণয়ের বছর"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "লিঙ্গ অনুযায়ী গুচ্ছ বার চার্ট"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "লিঙ্গ অনুযায়ী স্তূপিত বার চার্ট"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "অনুভূমিক বার চার্ট"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "লিঙ্গ অনুযায়ী শতকরা বার চার্ট"
+
+#, fuzzy
+msgid "Circular"
+msgstr "পাই চার্ট"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "কলাম"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "বিক্ষিপ্ত: প্রদেশ/বয়স অনুসারে টিউমার এবং মানুষ"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "আঞ্চলিক বন্টন (ঝাঁক)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "বয়স"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "ক্যান্সারের স্থানভিত্তিক গোষ্ঠী"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "লাইন"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "বসবাসের প্রদেশ"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "প্রদেশ বা বয়স গোষ্ঠী অনুসারে পয়েন্ট"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "সূচক র‌্যাঙ্কিং"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "লিঙ্গ"
+
+#, fuzzy
+msgid "Campo"
+msgstr "মাঠ"
+
+#, fuzzy
+msgid "%(count)s option selected"
+msgid_plural "%(count)s options selected"
+msgstr[0] "%(count)sটি বিকল্প নির্বাচন করা হয়েছে"
+msgstr[1] "%(count)sটি বিকল্প নির্বাচন করা হয়েছে"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr "লিঙ্গ দ্বারা তুলনা উভয় লিঙ্গ এবং অন্য মাত্রা প্রয়োজন."
+
+#, fuzzy
+msgid "Las barras apiladas requieren frecuencias absolutas."
+msgstr "স্ট্যাকড বারগুলির জন্য পরম ফ্রিকোয়েন্সি প্রয়োজন।"
+
+#, fuzzy
+msgid ""
+"La composición requiere categorías excluyentes; para personas, compare por "
+"sexo."
+msgstr ""
+"রচনার জন্য পারস্পরিক একচেটিয়া বিভাগ প্রয়োজন; মানুষের জন্য, লিঙ্গ দ্বারা "
+"তুলনা."
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "এই মাত্রা নির্বাচিত চার্টের জন্য উপলব্ধ নয়৷"
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "এই মেট্রিকটি নির্বাচিত চার্টের জন্য উপলব্ধ নয়৷"
+
+#, fuzzy
+msgid "Esta unidad no está disponible para el gráfico seleccionado."
+msgstr "এই ইউনিটটি নির্বাচিত চার্টের জন্য উপলব্ধ নয়৷"
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr "বয়স সামঞ্জস্যের জন্য সমস্ত বয়সের গ্রুপ এবং অন্য মাত্রা প্রয়োজন।"
+
+#, fuzzy
+msgid ""
+"Datos sintéticos · método %(method)s · guardado en este navegador. La fecha "
+"de publicación identifica el corte; no indica cuándo se conectó el "
+"dispositivo."
+msgstr ""
+"সিন্থেটিক ডেটা · পদ্ধতি %(method)s · এই ব্রাউজারে সংরক্ষিত। প্রকাশনার তারিখ "
+"প্রকাশের তারিখ চিহ্নিত করে; ডিভাইসটি সংযুক্ত হলে এটি দেখায় না।"

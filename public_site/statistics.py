@@ -6,7 +6,7 @@ from analytics.metrics import direct_standardized_rate
 
 DIMENSIONS = {
     "site": "Grupo de localización ilustrativo",
-    "territory": "Territorio",
+    "territory": "Provincia de residencia",
     "sex": "Sexo",
     "age_group": "Edad",
     "period": "Período",
@@ -39,6 +39,34 @@ def summary(rows):
     }
     population = sum(denominators.values())
     return {"tumors": len(rows), "persons": len(people), "population": population}
+
+
+def _adjusted_rate(all_rows, params, dimension, label, unit):
+    if params.get("age") or dimension == "age_group":
+        return None
+    cases_params = {key: params.get(key) for key in ("year", "territory", "sex", "site") if params.get(key)}
+    population_params = {key: value for key, value in cases_params.items() if key != "site"}
+    if dimension != "site":
+        dimension_param = {
+            "period": "year",
+            "territory": "territory",
+            "sex": "sex",
+        }[dimension]
+        cases_params[dimension_param] = label
+        population_params[dimension_param] = label
+    else:
+        cases_params["site"] = label
+
+    age_cases = {}
+    age_population = {}
+    for age in WEIGHTS:
+        cases = summary(select_records({**cases_params, "age": age}, all_rows))[unit]
+        population = summary(select_records({**population_params, "age": age}, all_rows))["population"]
+        if population <= 0:
+            return None
+        age_cases[age] = cases
+        age_population[age] = population
+    return round(direct_standardized_rate(age_cases, age_population, WEIGHTS), 2)
 
 
 def results(params, records=None):
@@ -103,6 +131,9 @@ def results(params, records=None):
                 "tumors": s["tumors"],
                 "persons": s["persons"],
                 "population": denominator,
+                "relative_frequency": round(count / total[unit] * 100, 2) if total[unit] else None,
+                "crude_rate": round(count / denominator * 100000, 2) if denominator else None,
+                "adjusted_rate": _adjusted_rate(all_rows, params, dimension, label, unit),
                 "value": round(value, 2) if value is not None else None,
             }
         )

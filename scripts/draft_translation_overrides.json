@@ -1,0 +1,126 @@
+{
+  "zh-hans": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · 管理",
+      "Roles": "角色",
+      "Selecciona una acción": "选择一个操作",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "如果存在使用此电子邮件地址的有效账户，您将收到相关说明。",
+      "Aplicar": "应用",
+      "Índice de la página": "本页目录",
+      "Menú": "菜单",
+      "Siguiente": "下一页",
+      "Territorio": "地区",
+      "Territorios": "地区",
+      "Puntos por provincia o grupo de edad": "按省份或年龄组划分的数据点",
+      "Casos y frecuencias": "病例和频数",
+      "Municipio de residencia": "居住地市镇",
+      "Acceso del personal": "员工登录"
+    }
+  },
+  "hi": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · प्रशासन",
+      "Roles": "भूमिकाएँ",
+      "Selecciona una acción": "एक कार्रवाई चुनें",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "यदि इस ईमेल पते वाला सक्रिय खाता मौजूद है, तो आपको निर्देश प्राप्त होंगे।",
+      "Aplicar": "लागू करें",
+      "Índice de la página": "पृष्ठ की विषय-सूची",
+      "Menú": "मेन्यू",
+      "Territorio": "क्षेत्र",
+      "Territorios": "क्षेत्र",
+      "Puntos por provincia o grupo de edad": "प्रांत या आयु समूह के अनुसार डेटा बिंदु",
+      "Frecuencias, población denominadora y tasas por categoría": "आवृत्तियाँ, हर में जनसंख्या और श्रेणी के अनुसार दरें",
+      "Acceso del personal": "कर्मचारी लॉगिन"
+    }
+  },
+  "ar": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · الإدارة",
+      "Roles": "الأدوار",
+      "Selecciona una acción": "اختر إجراءً",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "إذا وُجد حساب نشط بهذا البريد الإلكتروني، فستتلقى التعليمات.",
+      "Índice de la página": "فهرس الصفحة",
+      "Menú": "القائمة",
+      "Frecuencias, población denominadora y tasas por categoría": "التكرارات، والمقام السكاني، والمعدلات حسب الفئة",
+      "Acceso del personal": "دخول الموظفين"
+    }
+  },
+  "fr": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Administration",
+      "Roles": "Rôles",
+      "Selecciona una acción": "Choisissez une action",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Si un compte actif est associé à cette adresse e-mail, vous recevrez des instructions.",
+      "Aplicar": "Appliquer",
+      "Índice de la página": "Sommaire de la page",
+      "Menú": "Menu",
+      "Acceso del personal": "Connexion du personnel"
+    }
+  },
+  "bn": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · প্রশাসন",
+      "Roles": "ভূমিকা",
+      "Selecciona una acción": "একটি কাজ নির্বাচন করুন",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "এই ইমেল ঠিকানায় কোনো সক্রিয় অ্যাকাউন্ট থাকলে, আপনি নির্দেশাবলি পাবেন।",
+      "Aplicar": "প্রয়োগ করুন",
+      "Índice de la página": "এই পৃষ্ঠার সূচিপত্র",
+      "Menú": "মেনু",
+      "Territorio": "অঞ্চল",
+      "Frecuencias, población denominadora y tasas por categoría": "গণসংখ্যা, হরের জনসংখ্যা এবং বিভাগ অনুসারে হার",
+      "Acceso del personal": "কর্মীদের লগইন"
+    }
+  },
+  "pt-br": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Administração",
+      "Roles": "Papéis",
+      "Selecciona una acción": "Escolha uma ação",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Se houver uma conta ativa com este endereço de e-mail, você receberá instruções.",
+      "Índice de la página": "Índice da página",
+      "Menú": "Menu",
+      "Frecuencias, población denominadora y tasas por categoría": "Frequências, população denominadora e taxas por categoria",
+      "Acceso del personal": "Acesso da equipe"
+    }
+  },
+  "id": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Administrasi",
+      "Roles": "Peran",
+      "Selecciona una acción": "Pilih tindakan",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Jika ada akun aktif dengan alamat email ini, Anda akan menerima petunjuk.",
+      "Índice de la página": "Daftar isi halaman",
+      "Menú": "Menu",
+      "Período": "Periode",
+      "Acceso del personal": "Login staf"
+    }
+  },
+  "ur": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · انتظامیہ",
+      "Roles": "کردار",
+      "Selecciona una acción": "ایک کارروائی منتخب کریں",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "اگر اس ای میل پتے کے ساتھ کوئی فعال اکاؤنٹ موجود ہے، تو آپ کو ہدایات موصول ہوں گی۔",
+      "Aplicar": "لاگو کریں",
+      "Índice de la página": "اس صفحے کا اشاریہ",
+      "Menú": "مینو",
+      "Acceso del personal": "عملے کے لیے سائن اِن",
+      "Buscar": "تلاش کریں",
+      "Casos y frecuencias": "کیسز اور تعدد",
+      "Frecuencias, población denominadora y tasas por categoría": "تواتر، مخرج میں آبادی، اور زمرے کے لحاظ سے شرحیں",
+      "Tasa ajustada Segi–Doll por 100 000": "عمر کے مطابق ایڈجسٹ شدہ شرح Segi–Doll فی 100,000"
+    }
+  },
+  "ru": {
+    "django": {
+      "RNC Cuba · Administración": "RNC Cuba · Администрирование",
+      "Roles": "Роли",
+      "Selecciona una acción": "Выберите действие",
+      "Si existe una cuenta activa con ese correo, recibirá instrucciones.": "Если существует активная учетная запись с этим адресом электронной почты, вы получите инструкции.",
+      "Índice de la página": "Оглавление страницы",
+      "Menú": "Меню",
+      "Frecuencias, población denominadora y tasas por categoría": "Частоты, население в знаменателе и показатели по категориям",
+      "Acceso del personal": "Вход для сотрудников"
+    }
+  }
+}

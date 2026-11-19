@@ -1,6 +1,6 @@
-{% load form_ui %}
+{% load form_ui i18n %}
 <div class="form-error-summary" data-error-summary tabindex="-1" {% if not form.errors %}hidden{% endif %}>
-  <strong>Revise los campos indicados</strong>
+  <strong>{% translate "Revise los campos indicados" %}</strong>
   <ul data-error-links>
     {% for field in form %}{% for error in field.errors %}<li>{% if field.is_hidden %}{{ field.label }}: {{ error }}{% else %}<a href="#{{ field.id_for_label }}">{{ field.label }}: {{ error }}</a>{% endif %}</li>{% endfor %}{% endfor %}
     {% for error in form.non_field_errors %}<li>{{ error }}</li>{% endfor %}
@@ -10,16 +10,25 @@
 {% for field in form %}
   {% if field.is_hidden %}{{ field }}{% else %}
   <div class="form-field{% if field.field.widget.input_type == 'checkbox' %} checkbox-field{% endif %}{% if field.errors %} has-error{% endif %}" data-field="{{ field.name }}">
-    {% if field.field.widget.input_type == 'checkbox' %}
-      <div class="checkbox-control">{% field_control field %}<label for="{{ field.id_for_label }}">{{ field.label }}</label></div>
+    {% if field.field.widget.allow_multiple_selected %}
+      <details class="query-multi-field" {% if field.value %}open{% endif %}>
+        <summary>{% if help_tips and field.help_text %}<span class="filter-help" tabindex="0" aria-describedby="{{ field.auto_id }}_tip" data-help-trigger><span>{{ field.label }}{% if field.field.required %}<span class="required-mark" aria-hidden="true"> *</span>{% endif %}{% if field.name in required_chart_filters %}<span class="required-mark" data-chart-required-indicator data-required-filter="{{ field.name }}" aria-hidden="true"> *</span>{% else %}<span class="required-mark" data-chart-required-indicator data-required-filter="{{ field.name }}" aria-hidden="true" hidden> *</span>{% endif %}</span><span class="filter-help-popover" role="tooltip" id="{{ field.auto_id }}_tip">{{ field.help_text }}</span></span>{% else %}<span>{{ field.label }}{% if field.field.required %}<span class="required-mark" aria-hidden="true"> *</span>{% endif %}{% if field.name in required_chart_filters %}<span class="required-mark" data-chart-required-indicator data-required-filter="{{ field.name }}" aria-hidden="true"> *</span>{% else %}<span class="required-mark" data-chart-required-indicator data-required-filter="{{ field.name }}" aria-hidden="true" hidden> *</span>{% endif %}</span>{% endif %}{% if field.value %}<small>{{ field.value|length }} {% translate "seleccionados" %}</small>{% endif %}</summary>
+        <fieldset class="query-multi-options">
+          <legend class="visually-hidden">{{ field.label }}</legend>
+          <button class="query-select-all" type="button" data-select-all aria-label="{% translate 'Incluir todos los valores de' %} {{ field.label }}">{% translate "Incluir todos" %}</button>
+          {% for option in field %}<label class="query-multi-option">{{ option.tag }}<span>{{ option.choice_label }}</span></label>{% endfor %}
+        </fieldset>
+      </details>
+    {% elif field.field.widget.input_type == 'checkbox' %}
+      <div class="checkbox-control">{% field_control field %}<label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %}<span class="required-mark" aria-hidden="true"> *</span>{% endif %}</label></div>
     {% else %}
-      <label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %}<span class="required-mark" aria-hidden="true"> *</span>{% else %}<span class="optional-mark"> · Opcional</span>{% endif %}</label>
+      <div class="form-label-row">{% if help_tips and field.help_text %}<span class="filter-help" tabindex="0" aria-describedby="{{ field.auto_id }}_tip" data-help-trigger><label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %}<span class="required-mark" aria-hidden="true"> *</span>{% endif %}</label><span class="filter-help-popover" role="tooltip" id="{{ field.auto_id }}_tip">{{ field.help_text }}</span></span>{% else %}<label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %}<span class="required-mark" aria-hidden="true"> *</span>{% endif %}</label>{% endif %}</div>
       {% if field.field.widget.input_type == 'file' %}
-      <div class="file-picker"><span class="file-picker-button" aria-hidden="true">Seleccionar CSV</span><span class="file-picker-name" data-file-name>No se ha seleccionado un archivo</span>{% field_control field %}</div>
-      {% if form.is_bound and form.errors %}<div class="field-help">Vuelva a seleccionar el CSV para reenviar el formulario.</div>{% endif %}
+      <div class="file-picker"><span class="file-picker-button" aria-hidden="true">{% translate "Seleccionar CSV" %}</span><span class="file-picker-name" data-file-name>{% translate "No se ha seleccionado un archivo" %}</span>{% field_control field %}</div>
+      {% if form.is_bound and form.errors %}<div class="field-help">{% translate "Vuelva a seleccionar el CSV para reenviar el formulario." %}</div>{% endif %}
       {% else %}{% field_control field %}{% endif %}
     {% endif %}
-    {% if field.help_text %}<div class="field-help" id="{{ field.auto_id }}_help">{{ field.help_text|safe }}</div>{% endif %}
+    {% if field.help_text and not help_tips %}<div class="field-help" id="{{ field.auto_id }}_help">{{ field.help_text }}</div>{% endif %}
     <div class="field-error" id="{{ field.auto_id }}_error" aria-live="polite" {% if not field.errors %}hidden{% endif %}>{% for error in field.errors %}<span>{{ error }}</span>{% endfor %}</div>
   </div>
   {% endif %}

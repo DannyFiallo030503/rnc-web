@@ -1,26 +1,99 @@
-"""Backend regression: isolated DB/files, fictitious identities and no SMTP."""
+"""Account, access and catalog regressions, independent of clinical fixtures.
+
+Real numerical validation is in scripts/verify_real_data.py; real source flow
+checks are in test_real_data.py. The former synthetic positive-flow scenarios
+are replaced by those checks rather than accepted by the real importer.
+"""
 
 import io
+
 import json
+
+import re
+
+import shutil
+
+import subprocess
+
 import tempfile
-from pathlib import Path
-from unittest.mock import patch
+
 from datetime import timedelta
+
+from pathlib import Path
+
+from types import SimpleNamespace
+
+from unittest.mock import patch
+
 from django.contrib.auth import get_user_model
+
 from django.contrib.auth.models import Group, Permission
+
 from django.contrib.auth.tokens import default_token_generator
+
 from django.core import mail
+
 from django.core.cache import cache
+
 from django.core.management import call_command
-from django.core.files.uploadedfile import SimpleUploadedFile
-from django.test import Client, TestCase, override_settings
+
+from django.test import Client, TestCase, SimpleTestCase, override_settings
+
 from django.utils.encoding import force_bytes
+
 from django.utils.http import urlsafe_base64_encode
-from .models import Delivery, Publication, AuditEvent, AccountPolicy, AccountMail
-from .services import ingest, transition, delivery_records
-from .testing import uploaded, synthetic_rows, csv_bytes
+
+from .models import AccountMail, AccountPolicy, AuditEvent, Delivery, Publication
+
+from analytics.rnc_aggregation import build_real_aggregate
+
+from analytics.standard import AGE_STANDARD_WEIGHTS
+
+from public_site.aggregate_statistics import DIMENSIONS, results
+
+from public_site import public_portal
+
+from config.settings_public import TEMPLATES as PUBLIC_TEMPLATES
+
+from django.contrib import admin
+from django.utils.translation import override as override_language
 
 PASSWORD = "Review-test<> 'Secure-2026!"
+
+class DjangoAdminTranslationTests(SimpleTestCase):
+    def test_admin_site_labels_follow_the_active_language(self):
+        with override_language("en"):
+            self.assertEqual(str(admin.site.site_header), "RNC Cuba · Administration")
+            self.assertEqual(str(admin.site.site_title), "RNC administration")
+            self.assertEqual(str(admin.site.index_title), "Users and permissions")
+        with override_language("es"):
+            self.assertEqual(str(admin.site.site_header), "RNC Cuba · Administración")
+            self.assertEqual(str(admin.site.site_title), "Administración RNC")
+            self.assertEqual(str(admin.site.index_title), "Usuarios y permisos")
+
+    def test_admin_role_labels_translate_known_role_codes(self):
+        from .admin import SupportUserAdmin
+
+        account = SimpleNamespace(
+            is_superuser=False,
+            groups=SimpleNamespace(
+                all=lambda: [
+                    SimpleNamespace(name="operator"),
+                    SimpleNamespace(name="publisher"),
+                ]
+            ),
+        )
+        with override_language("en"):
+            self.assertEqual(
+                SupportUserAdmin.account_roles(None, account),
+                "Data intake operator, Publication manager",
+            )
+            account.is_superuser = True
+            self.assertEqual(
+                SupportUserAdmin.account_roles(None, account), "Support administrator"
+            )
+        with override_language("es"):
+            self.assertEqual(SupportUserAdmin.account_roles(None, account), "Administrador de soporte")
 
 
 @override_settings(
@@ -30,85 +103,272 @@ PASSWORD = "Review-test<> 'Secure-2026!"
 )
 class PortalTests(TestCase):
     def setUp(self):
-        self.temporary = tempfile.TemporaryDirectory(prefix="rnc-backend-")
+        self.temporary = tempfile.TemporaryDirectory(prefix="rnc-web-tests-")
         self.addCleanup(self.temporary.cleanup)
         self.override = override_settings(
-            PRIVATE_STORAGE_ROOT=Path(self.temporary.name),
-            EMAIL_FILE_PATH=Path(self.temporary.name) / "mail",
-            PUBLIC_ORIGIN="https://rnc.example.invalid",
-            PUBLIC_RELEASE_ROOT=Path(self.temporary.name) / "public-releases",
+        PRIVATE_STORAGE_ROOT=Path(self.temporary.name),
+        EMAIL_FILE_PATH=Path(self.temporary.name) / "mail",
+        PUBLIC_ORIGIN="https://rnc.example.invalid",
+        PUBLIC_RELEASE_ROOT=Path(self.temporary.name) / "public-releases",
         )
         self.override.enable()
         self.addCleanup(self.override.disable)
         cache.clear()
-        delivery_records.cache_clear()
         self.User = get_user_model()
         self.root = self.User.objects.create_superuser(
-            "qa_root",
-            email="root@example.invalid",
-            password=PASSWORD,
-            first_name="Elena",
-            last_name="García",
+        "qa_root", email="root@example.invalid", password=PASSWORD,
+        first_name="Elena", last_name="García",
         )
         self.reader = self.User.objects.create_user(
-            "qa_reader", email="reader@example.invalid", password=PASSWORD
+        "qa_reader", email="reader@example.invalid", password=PASSWORD
         )
         self.operator = self.User.objects.create_user("qa_operator", password=PASSWORD)
         self.operator.groups.add(Group.objects.get(name="operator"))
-        self.publisher = self.User.objects.create_user(
-            "qa_publisher", password=PASSWORD
-        )
+        self.publisher = self.User.objects.create_user("qa_publisher", password=PASSWORD)
         self.publisher.groups.add(Group.objects.get(name="publisher"))
 
     def account_data(self, **updates):
         data = {
-            "username": "cuenta_nueva",
-            "first_name": "María José",
-            "last_name": "O’Neill-Pérez",
-            "email": "nueva@example.invalid",
-            "role": "operator",
-            "is_active": "on",
-            "initial_password": "",
-            "confirm_password": PASSWORD,
+        "username": "cuenta_nueva", "first_name": "María José",
+        "last_name": "O’Neill-Pérez", "email": "nueva@example.invalid",
+        "role": "operator", "is_active": "on", "initial_password": "",
+        "confirm_password": PASSWORD,
         }
         data.update(updates)
         return data
 
-    def delivery(self, extra=1, publish=False):
-        d = ingest(uploaded(extra), "Corte sintético 2023–2024", self.root)
-        if publish:
-            self.apply_transition(
-                d.pk,
-                "publish",
-                self.root,
-                "Publicación sintética autorizada para la prueba.",
-            )
-        return d
-
-    def apply_transition(self, *args, **kwargs):
-        with self.captureOnCommitCallbacks(execute=True):
-            return transition(*args, **kwargs)
-
     def post_account(self, **updates):
         self.client.force_login(self.root)
         return self.client.post(
-            "/administracion/usuarios/nuevo/", self.account_data(**updates)
+        "/administracion/usuarios/nuevo/", self.account_data(**updates)
         )
 
     def test_public_pages_and_no_redundant_home_button(self):
-        for path in ["/", "/consulta/", "/acceso/", "/cuenta/recuperar/"]:
+        for path in ["/", "/el-rnc/", "/consulta/", "/acceso/", "/cuenta/recuperar/"]:
             with self.subTest(path=path):
                 r = self.client.get(path)
                 self.assertEqual(r.status_code, 200)
                 self.assertNotContains(r, "sidebar-home")
                 self.assertNotContains(r, 'href="/administracion/cortes/"')
-                if path in {"/", "/consulta/"}:
+                if path in {"/", "/el-rnc/", "/consulta/"}:
                     self.assertContains(r, 'aria-label="Páginas"')
+
+    def test_javascript_translation_catalog_follows_selected_language(self):
+        spanish = self.client.get("/jsi18n/")
+        self.assertEqual(spanish.status_code, 200)
+        self.assertContains(spanish, "Complete este campo.")
+
+        self.client.cookies["rnc_language"] = "en"
+        english = self.client.get("/jsi18n/")
+        self.assertEqual(english.status_code, 200)
+        self.assertContains(english, "Check this box to continue.")
+        self.assertContains(english, "The local calculation encountered an error.")
+        self.assertContains(english, "categories with the same values")
+        self.assertContains(english, "Age-adjusted rate per 100,000")
+
+    @override_settings(ROOT_URLCONF="config.urls_public", DEPLOYMENT_ROLE="public")
+    def test_public_worker_uses_public_origin_scope_and_excludes_private_routes(self):
+        response = self.client.get("/service-worker.js")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response["Service-Worker-Allowed"], "/")
+        self.assertEqual(response["Cache-Control"], "no-store")
+        source = response.content.decode()
+        for private_prefix in ('"/admin/"', '"/acceso/"', '"/administracion/"', '"/cuenta/"'):
+            self.assertIn(private_prefix, source)
+        self.assertIn("/paquete-offline.json", source)
+        self.assertIn('"/consulta/"', source)
+        from django.urls import resolve
+        from .public_portal import not_found
+
+        self.assertIs(resolve("/admin/", urlconf="config.urls_public").func, not_found)
+
+    @override_settings(ROOT_URLCONF="config.urls_public", DEPLOYMENT_ROLE="public", TEMPLATES=PUBLIC_TEMPLATES)
+    def test_public_admin_entry_is_hidden_until_server_connectivity_is_confirmed(self):
+        from html.parser import HTMLParser
+
+        class AdminLinks(HTMLParser):
+            links = None
+
+            def __init__(self):
+                super().__init__()
+                self.links = []
+
+            def handle_starttag(self, tag, attributes):
+                attrs = dict(attributes)
+                if tag == "a" and "data-admin-web-link" in attrs:
+                    self.links.append(attrs)
+
+        for path in ("/", "/el-rnc/", "/consulta/", "/nomencladores/"):
+            with self.subTest(path=path):
+                response = self.client.get(path)
+                self.assertEqual(response.status_code, 200)
+                parser = AdminLinks()
+                parser.feed(response.content.decode())
+                self.assertEqual(len(parser.links), 2)
+                self.assertTrue(all("hidden" in link for link in parser.links))
+                self.assertContains(response, 'data-server-connection="checking"')
+
+        for path in ("/", "/el-rnc/", "/nomencladores/"):
+            with self.subTest(path=path, language="en"):
+                response = self.client.get(path, {"__rnc_locale": "en"})
+                self.assertContains(response, '<html lang="en"')
+
+    def test_install_manifest_starts_at_explorer_and_combined_site_does_not_register_worker(self):
+        from django.conf import settings
+
+        manifest = json.loads((Path(settings.BASE_DIR) / "static/pwa/manifest.webmanifest").read_text())
+        self.assertEqual(manifest["start_url"], "/consulta/")
+        self.assertEqual(manifest["scope"], "/")
+        response = self.client.get("/")
+        self.assertNotContains(response, "register-service-worker.js")
+
+    def test_coding_nomenclators_explains_missing_authorized_catalog(self):
+        response = self.client.get("/nomencladores/")
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Catálogo oficial aún no disponible")
+        self.assertContains(response, "OMS · ICD‑O‑3")
+        self.assertContains(response, "IARC · ICCC‑3")
+        self.assertContains(response, "ICD‑O‑4")
+
+        self.client.cookies["rnc_language"] = "en"
+        english = self.client.get("/nomencladores/")
+        self.assertEqual(english.status_code, 200)
+        self.assertContains(english, "Cancer code catalogues")
+        self.assertContains(english, "No authorized catalogue is available yet")
+        self.assertContains(english, "WHO · ICD‑O‑3")
+
+    def test_coding_nomenclators_fails_closed_on_invalid_file(self):
+        path = Path(self.temporary.name) / "invalid-catalog.json"
+        path.write_text("{not-json", encoding="utf-8")
+        with override_settings(RNC_CODING_CATALOG=path):
+            response = self.client.get("/nomencladores/")
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "No se pudo cargar el catálogo")
+        self.assertContains(response, 'role="alert"')
+
+    def test_coding_nomenclators_searches_versioned_file_and_shows_provenance(self):
+        path = Path(self.temporary.name) / "catalog.json"
+        path.write_text(json.dumps({
+            "version": "test-catalog-v1",
+            "source": "https://example.invalid/catalog",
+            "concepts": [{
+                "concept_id": "concept-alpha", "name": "Example concept",
+                "description": "Structural test concept description", "language": "es",
+                "source": "https://example.invalid/catalog", "license": "Test-only",
+                "publication_status": "authorized", "codes": [{
+                    "system": "TEST", "edition": "test-edition", "axis": "other",
+                    "code": "alpha", "name": "Example entry", "description": "Structural test description",
+                    "status": "current", "source": "https://example.invalid/catalog",
+                    "license": "Test-only", "relationship": "primary",
+                    "relationship_status": "source-declared",
+                }, {
+                    "system": "TEST", "edition": "test-edition", "axis": "other",
+                    "code": "gamma", "name": "Pending relation", "description": "Relation awaiting validation",
+                    "status": "current", "source": "https://example.invalid/catalog",
+                    "license": "Test-only", "relationship": "exact",
+                    "relationship_status": "pending",
+                }],
+            }, {
+                "concept_id": "concept-beta", "name": "Draft concept",
+                "description": "Unapproved test concept", "language": "es",
+                "source": "https://example.invalid/catalog", "license": "Test-only",
+                "publication_status": "draft", "codes": [{
+                    "system": "TEST", "edition": "test-edition", "axis": "other",
+                    "code": "beta", "name": "Draft entry", "description": "Unapproved test term",
+                    "status": "current", "source": "https://example.invalid/catalog",
+                    "license": "Test-only", "relationship": "primary",
+                    "relationship_status": "source-declared",
+                }],
+            }],
+        }), encoding="utf-8")
+        with override_settings(RNC_CODING_CATALOG=path):
+            response = self.client.get("/nomencladores/?q=structural")
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "alpha")
+        self.assertContains(response, "Structural test description")
+        self.assertContains(response, "Test-only")
+        self.assertNotContains(response, "beta")
+        self.assertNotContains(response, "gamma")
+        validation_output = io.StringIO()
+        call_command("validate_coding_catalog", str(path), stdout=validation_output)
+        self.assertIn("Catálogo válido", validation_output.getvalue())
+        self.assertIn("códigos: 3", validation_output.getvalue())
+        self.assertNotIn("alpha", validation_output.getvalue())
+
+    def test_normalized_coding_csv_import_preserves_literal_codes(self):
+        from analytics.coding_nomenclators import load_catalog
+
+        csv_path = Path(self.temporary.name) / "normalized.csv"
+        output_path = Path(self.temporary.name) / "catalog.json"
+        fields = [
+            "concept_id", "concept_name", "concept_description", "language",
+            "concept_source", "concept_license", "publication_status", "system",
+            "edition", "axis", "code", "code_name", "code_description",
+            "code_status", "code_source", "code_license", "relationship",
+            "relationship_status",
+        ]
+        base = [
+            "example-concept", "Example concept", "Generic test concept", "es",
+            "https://example.invalid/test", "Test-only", "draft", "TEST",
+            "edition-test", "classification", "0007", "Example code", "Generic test code",
+            "current", "https://example.invalid/test", "Test-only", "primary",
+            "pending",
+        ]
+        import csv
+        with csv_path.open("w", encoding="utf-8", newline="") as output:
+            writer = csv.writer(output)
+            writer.writerow(fields)
+            writer.writerow(base)
+            writer.writerow([*base[:10], "0010", *base[11:]])
+
+        call_command(
+            "import_coding_catalog_csv", str(csv_path), str(output_path),
+            catalog_version="test-v1", source="https://example.invalid/catalog",
+        )
+        catalog = load_catalog(output_path)
+        self.assertEqual(catalog["concepts"][0]["codes"][0]["code"], "0007")
+        self.assertEqual(catalog["concepts"][0]["codes"][1]["code"], "0010")
+        self.assertEqual(len(catalog["concepts"]), 1)
+
+    def test_normalized_coding_csv_import_rejects_inconsistent_concept_metadata(self):
+        from django.core.management.base import CommandError
+        import csv
+
+        csv_path = Path(self.temporary.name) / "conflicting.csv"
+        output_path = Path(self.temporary.name) / "should-not-exist.json"
+        fields = [
+            "concept_id", "concept_name", "concept_description", "language",
+            "concept_source", "concept_license", "publication_status", "system",
+            "edition", "axis", "code", "code_name", "code_description",
+            "code_status", "code_source", "code_license", "relationship",
+            "relationship_status",
+        ]
+        base = [
+            "example-concept", "Example concept", "Generic test concept", "es",
+            "https://example.invalid/test", "Test-only", "draft", "TEST",
+            "edition-test", "other", "A1", "Example code", "Generic test code",
+            "current", "https://example.invalid/test", "Test-only", "primary",
+            "pending",
+        ]
+        conflict = list(base)
+        conflict[1] = "Conflicting concept name"
+        with csv_path.open("w", encoding="utf-8", newline="") as output:
+            writer = csv.writer(output)
+            writer.writerow(fields)
+            writer.writerow(base)
+            writer.writerow(conflict)
+
+        with self.assertRaisesRegex(CommandError, "metadatos del concepto"):
+            call_command(
+                "import_coding_catalog_csv", str(csv_path), str(output_path),
+                catalog_version="test-v1", source="https://example.invalid/catalog",
+            )
+        self.assertFalse(output_path.exists())
 
     def test_anonymous_requires_login_on_every_private_route(self):
         for path in [
             "/administracion/cortes/",
-            "/administracion/cortes/ejemplo/",
+            "/administracion/cortes/00000000-0000-0000-0000-000000000001/",
             "/administracion/usuarios/",
             "/administracion/usuarios/nuevo/",
         ]:
@@ -381,11 +641,17 @@ class PortalTests(TestCase):
         self.assertEqual(self.User.objects.count(), 19)
 
     def test_mail_worker_and_invitation_activation_end_to_end(self):
+        self.client.cookies["rnc_language"] = "en"
         self.post_account()
         u = self.User.objects.get(username="cuenta_nueva")
+        queued_mail = AccountMail.objects.get(user=u)
+        self.assertEqual(queued_mail.language, "en")
         call_command("deliver_account_mail", stdout=io.StringIO())
-        self.assertEqual(AccountMail.objects.get(user=u).status, "sent")
+        queued_mail.refresh_from_db()
+        self.assertEqual(queued_mail.status, "sent")
         self.assertEqual(len(mail.outbox), 1)
+        self.assertEqual(mail.outbox[0].subject, "Set password · RNC")
+        self.assertIn("A password has been requested for your RNC account.", mail.outbox[0].body)
         link = next(
             line
             for line in mail.outbox[0].body.splitlines()
@@ -405,6 +671,22 @@ class PortalTests(TestCase):
         u.refresh_from_db()
         self.assertTrue(u.check_password(new))
         self.assertFalse(Client().get(path, follow=True).context["validlink"])
+
+    def test_recovery_email_uses_selected_language(self):
+        self.client.cookies["rnc_language"] = "en"
+        response = self.client.post(
+            "/cuenta/recuperar/", {"email": self.reader.email}
+        )
+        self.assertRedirects(response, "/cuenta/recuperar/solicitado/")
+        queued_mail = AccountMail.objects.get(user=self.reader)
+        self.assertEqual(queued_mail.language, "en")
+
+        call_command("deliver_account_mail", stdout=io.StringIO())
+        queued_mail.refresh_from_db()
+        self.assertEqual(queued_mail.status, "sent")
+        self.assertEqual(len(mail.outbox), 1)
+        self.assertEqual(mail.outbox[0].subject, "Set password · RNC")
+        self.assertIn("A password has been requested for your RNC account.", mail.outbox[0].body)
 
     def test_recovery_unknown_inactive_and_known_account_have_same_public_result(self):
         for address in ["reader@example.invalid", "missing@example.invalid"]:
@@ -468,467 +750,6 @@ class PortalTests(TestCase):
         self.assertContains(r, "Falló el envío")
         self.assertNotContains(r, "private-transport-details")
 
-    def test_upload_stores_private_original_json_and_metadata(self):
-        d = self.delivery()
-        self.assertEqual(d.row_count, 73)
-        self.assertEqual(d.person_count, 36)
-        self.assertEqual(d.report["accepted_rows"], 73)
-        path = Path(self.temporary.name) / d.storage_key
-        self.assertTrue(path.exists())
-        self.assertTrue(path.with_suffix(".csv").exists())
-        self.assertEqual(len(json.loads(path.read_text())), 73)
-        self.assertEqual(path.stat().st_mode & 0o777, 0o600)
-        self.assertEqual(
-            d.checksum, __import__("hashlib").sha256(csv_bytes()).hexdigest()
-        )
-
-    def test_upload_duplicate_is_not_another_delivery(self):
-        self.delivery()
-        with self.assertRaisesMessage(ValueError, "ya está registrada"):
-            self.delivery()
-        self.assertEqual(Delivery.objects.count(), 1)
-
-    def test_upload_empty_missing_file_or_confirmation_is_field_specific(self):
-        self.client.force_login(self.root)
-        r = self.client.post("/administracion/cortes/", {})
-        for field in ["title", "file", "synthetic"]:
-            self.assertIn(field, r.context["form"].errors)
-        self.assertFalse(Delivery.objects.exists())
-
-    def test_upload_wrong_extension_and_title_rejected_before_storage(self):
-        self.client.force_login(self.root)
-        for title, name, field in [
-            ("Corte válido", "sintetico.exe", "file"),
-            ("<script>alert(1)</script>", "sintetico.csv", "title"),
-        ]:
-            r = self.client.post(
-                "/administracion/cortes/",
-                {"title": title, "file": uploaded(name=name), "synthetic": "on"},
-            )
-            self.assertIn(field, r.context["form"].errors)
-        self.assertFalse(Delivery.objects.exists())
-
-    def test_uploaded_oversize_file_rejected(self):
-        from .forms import UploadForm
-
-        file = uploaded()
-        file.size = 12 * 1024 * 1024 + 1
-        f = UploadForm({"title": "Corte válido", "synthetic": "on"}, {"file": file})
-        self.assertFalse(f.is_valid())
-        self.assertIn("file", f.errors)
-
-    def test_bad_csv_variants_are_rejected_atomically_and_audited(self):
-        variants = []
-        variants.append(b"header,no-compatible\n1,2\n")
-        variants.append(b"\xff\xfeinvalid")
-        for field, value in [
-            ("synthetic", "FALSE"),
-            ("person_id", "real-id"),
-            ("tumor_id", "real-tumor"),
-            ("period", "2024<script>"),
-            ("population", "0"),
-            ("standard_weight", "99"),
-            ("sex_id", "99"),
-            ("site_id", "999"),
-            ("territory_id", "999"),
-        ]:
-            rows = synthetic_rows()
-            rows[0][field] = value
-            variants.append(csv_bytes(rows))
-        rows = synthetic_rows()
-        rows[1]["tumor_id"] = rows[0]["tumor_id"]
-        variants.append(csv_bytes(rows))
-        rows = synthetic_rows()
-        rows.pop(0)
-        variants.append(csv_bytes(rows))
-        for index, raw in enumerate(variants):
-            with self.subTest(variant=index):
-                with self.assertRaises(ValueError):
-                    ingest(
-                        SimpleUploadedFile("invalid.csv", raw),
-                        "Carga inválida",
-                        self.root,
-                    )
-                self.assertFalse(Delivery.objects.filter(status="validated").exists())
-        self.assertEqual(
-            Delivery.objects.filter(status="rejected").count(), len(variants)
-        )
-        self.assertEqual(
-            AuditEvent.objects.filter(action="Carga rechazada técnicamente").count(),
-            len(variants),
-        )
-
-    def test_bad_upload_renders_file_error_and_preserves_title(self):
-        self.client.force_login(self.root)
-        r = self.client.post(
-            "/administracion/cortes/",
-            {
-                "title": "Mi corte",
-                "synthetic": "on",
-                "file": SimpleUploadedFile("invalid.csv", b"wrong\n"),
-            },
-        )
-        self.assertIn("file", r.context["form"].errors)
-        self.assertContains(r, 'value="Mi corte"')
-
-    def test_publish_replace_revoke_and_audit_are_persistent(self):
-        first = self.delivery(publish=True)
-        second = self.delivery(extra=2)
-        self.apply_transition(
-            second.pk, "publish", self.publisher, "Nueva versión sintética revisada."
-        )
-        first.refresh_from_db()
-        self.assertEqual(first.status, "revoked")
-        self.assertEqual(Publication.objects.get(pk=1).delivery_id, second.pk)
-        self.assertEqual(self.client.get("/").context["summary"]["tumors"], 38)
-        self.apply_transition(
-            second.pk, "revoke", self.publisher, "Revocación sintética para revisión."
-        )
-        self.assertIsNone(Publication.objects.get(pk=1).delivery_id)
-        self.assertFalse(self.client.get("/consulta/").context["table"])
-        self.assertTrue(
-            AuditEvent.objects.filter(
-                action="Revocación", actor=self.publisher, target=str(second.pk)
-            ).exists()
-        )
-
-    def test_admin_upload_publish_public_profile_and_revoke_flow(self):
-        self.client.force_login(self.root)
-        upload = self.client.post(
-            "/administracion/cortes/",
-            {
-                "title": "Corte sintético para flujo público",
-                "synthetic": "on",
-                "file": uploaded(extra=1),
-            },
-        )
-        self.assertEqual(upload.status_code, 302)
-        delivery = Delivery.objects.get(title="Corte sintético para flujo público")
-        self.assertEqual(delivery.status, "validated")
-
-        publish_path = f"/administracion/cortes/{delivery.pk}/estado/"
-        with self.captureOnCommitCallbacks(execute=True):
-            publish = self.client.post(
-                publish_path,
-                {
-                    "action": "publish",
-                    "reason": "Publicación sintética para probar el flujo.",
-                },
-            )
-        self.assertEqual(publish.status_code, 302)
-        delivery.refresh_from_db()
-        self.assertEqual(delivery.status, "published")
-
-        release_root = Path(self.temporary.name) / "public-releases"
-        artifact = release_root / f"{delivery.pk}.json"
-        artifact_text = artifact.read_text(encoding="utf-8")
-        self.assertNotIn("SYN-P-", artifact_text)
-        self.assertNotIn("SYN-T-", artifact_text)
-        self.assertNotIn('"person_id"', artifact_text)
-        self.assertNotIn('"tumor_id"', artifact_text)
-
-        public_settings = {
-            "ROOT_URLCONF": "config.urls_public",
-            "MIDDLEWARE": [
-                "django.middleware.security.SecurityMiddleware",
-                "django.middleware.common.CommonMiddleware",
-                "django.middleware.clickjacking.XFrameOptionsMiddleware",
-            ],
-            "TEMPLATES": [
-                {
-                    "BACKEND": "django.template.backends.django.DjangoTemplates",
-                    "DIRS": [Path(__file__).resolve().parent.parent / "templates"],
-                    "APP_DIRS": True,
-                    "OPTIONS": {
-                        "context_processors": [
-                            "django.template.context_processors.request"
-                        ]
-                    },
-                }
-            ],
-            "DATABASES": {"default": {"ENGINE": "django.db.backends.dummy"}},
-            "PRIVATE_STORAGE_ROOT": None,
-            "PUBLIC_RELEASE_ROOT": release_root,
-        }
-        with override_settings(**public_settings):
-            public_client = Client()
-            home = public_client.get("/")
-            self.assertEqual(home.status_code, 200)
-            self.assertEqual(home.context["summary"]["tumors"], 37)
-            self.assertNotContains(home, "SYN-P-")
-            self.assertNotContains(home, "SYN-T-")
-
-            explorer = public_client.get("/consulta/", {"unit": "persons"})
-            self.assertEqual(explorer.status_code, 200)
-            self.assertEqual(explorer.context["summary"]["persons"], 36)
-            self.assertEqual(public_client.get("/administracion/cortes/").status_code, 404)
-            self.assertEqual(public_client.get("/acceso/").status_code, 404)
-
-        with self.captureOnCommitCallbacks(execute=True):
-            revoke = self.client.post(
-                publish_path,
-                {
-                    "action": "revoke",
-                    "reason": "Revocación sintética para probar el flujo.",
-                },
-            )
-        self.assertEqual(revoke.status_code, 302)
-        delivery.refresh_from_db()
-        self.assertEqual(delivery.status, "revoked")
-        empty_home = self.client.get("/")
-        self.assertEqual(empty_home.status_code, 200)
-        self.assertIsNone(empty_home.context["delivery"])
-        self.assertEqual(empty_home.context["summary"], {})
-
-    def test_operator_cannot_publish_even_with_forged_post(self):
-        d = self.delivery()
-        self.client.force_login(self.operator)
-        self.assertEqual(
-            self.client.post(
-                f"/administracion/cortes/{d.pk}/estado/",
-                {"action": "publish", "reason": "Intento sin autorización."},
-            ).status_code,
-            403,
-        )
-        d.refresh_from_db()
-        self.assertEqual(d.status, "validated")
-
-    def test_decision_invalid_reason_action_and_stale_state_not_saved(self):
-        d = self.delivery()
-        self.client.force_login(self.root)
-        path = f"/administracion/cortes/{d.pk}/estado/"
-        for data in [
-            {"action": "publish", "reason": "corto"},
-            {"action": "publish", "reason": "<script>alert(1)</script>"},
-            {"action": "drop_database", "reason": "Una razón de longitud suficiente."},
-        ]:
-            r = self.client.post(path, data)
-            self.assertEqual(r.status_code, 400)
-            self.assertTrue(r.context["decision_form"].errors)
-            d.refresh_from_db()
-            self.assertEqual(d.status, "validated")
-        self.apply_transition(d.pk, "publish", self.root, "Publicación inicial de prueba.")
-        r = self.client.post(
-            path, {"action": "publish", "reason": "Acción antigua repetida."}
-        )
-        self.assertEqual(r.status_code, 400)
-        self.assertTrue(r.context["decision_form"].non_field_errors())
-
-    def test_home_query_and_exports_never_include_private_people(self):
-        self.delivery(publish=True)
-        for path in ["/", "/consulta/", "/consulta/?format=csv"]:
-            r = self.client.get(path)
-            self.assertNotContains(r, "Ana O’Neill")
-            self.assertNotContains(r, "SYN-P-")
-            self.assertNotContains(r, "SYN-T-")
-        self.assertEqual(
-            self.client.get("/private/ejemplo_sintetico.csv").status_code, 404
-        )
-
-    def test_people_unique_across_tumors_years_and_denominators_deduplicated(self):
-        self.delivery(publish=True)
-        r = self.client.get("/consulta/", {"unit": "persons"})
-        self.assertEqual(r.context["summary"]["persons"], 36)
-        self.assertEqual(r.context["summary"]["tumors"], 73)
-        r = self.client.get("/consulta/", {"metric": "rate", "dimension": "sex"})
-        self.assertEqual(sum(row["population"] for row in r.context["table"]), 720000)
-        r = self.client.get(
-            "/consulta/",
-            {
-                "year": "2024",
-                "site": "Colon y recto",
-                "dimension": "sex",
-                "metric": "rate",
-            },
-        )
-        self.assertEqual(sum(row["population"] for row in r.context["table"]), 360000)
-
-    def test_unknown_filter_and_incompatible_graphs_have_field_errors(self):
-        self.delivery(publish=True)
-        for data, field in [
-            ({"year": "bad"}, "year"),
-            ({"chart": "line"}, "chart"),
-            ({"metric": "asr", "age": "0-4"}, "metric"),
-            ({"chart": "stacked", "metric": "rate"}, "chart"),
-            ({"chart": "pie", "unit": "persons"}, "chart"),
-            ({"chart": "grouped", "sex": "Mujeres"}, "chart"),
-        ]:
-            r = self.client.get("/consulta/", data)
-            self.assertIn(field, r.context["form"].errors)
-            self.assertFalse(r.context["table"])
-
-    def test_all_eight_graph_types_render_compatible_data(self):
-        self.delivery(publish=True)
-        for kind in [
-            "bar",
-            "column",
-            "line",
-            "grouped",
-            "stacked",
-            "percent",
-            "pie",
-            "doughnut",
-        ]:
-            data = {
-                "chart": kind,
-                "dimension": (
-                    "period"
-                    if kind == "line"
-                    else "sex" if kind in {"pie", "doughnut"} else "site"
-                ),
-            }
-            r = self.client.get("/consulta/", data)
-            with self.subTest(kind=kind):
-                self.assertFalse(r.context["form"].errors)
-                self.assertTrue(r.context["table"])
-                self.assertEqual(r.context["chart_payload"]["type"], kind)
-
-    def test_all_export_formats_signatures_metadata_and_no_private_values(self):
-        self.delivery(publish=True)
-        for fmt, signature in [
-            ("csv", b"\xef\xbb\xbf"),
-            ("xlsx", b"PK"),
-            ("png", b"\x89PNG"),
-            ("svg", b"<?xml"),
-            ("pdf", b"%PDF"),
-        ]:
-            with self.subTest(fmt=fmt):
-                r = self.client.get("/consulta/", {"year": "2024", "format": fmt})
-                self.assertEqual(r.status_code, 200)
-                self.assertTrue(r.content.startswith(signature))
-                self.assertIn(fmt, r["Content-Disposition"])
-                self.assertEqual(r["Cache-Control"], "no-store")
-        r = self.client.get("/consulta/", {"year": "2024", "format": "csv"})
-        self.assertIn("2024", r.content.decode("utf-8-sig"))
-        self.assertIn("Datos sintéticos", r.content.decode("utf-8-sig"))
-
-    def test_every_graph_and_export_format_preserves_selection_and_values(self):
-        import csv
-        import xml.etree.ElementTree as ET
-        from openpyxl import load_workbook
-        from PIL import Image
-
-        self.delivery(publish=True)
-        charts = [
-            ("bar", "site"),
-            ("column", "site"),
-            ("line", "period"),
-            ("grouped", "site"),
-            ("stacked", "site"),
-            ("percent", "site"),
-            ("pie", "sex"),
-            ("doughnut", "sex"),
-        ]
-        signatures = {
-            "csv": b"\xef\xbb\xbf",
-            "xlsx": b"PK",
-            "png": b"\x89PNG",
-            "svg": b"<?xml",
-            "pdf": b"%PDF",
-        }
-        for chart, dimension in charts:
-            query = {"chart": chart, "dimension": dimension}
-            if chart != "line":
-                query["year"] = "2024"
-            page = self.client.get("/consulta/", query)
-            payload = page.context["chart_payload"]
-            self.assertIn("Período:", payload["filter_summary"])
-            self.assertIn("Territorio: Todos", payload["filter_summary"])
-            self.assertTrue(payload["axis_unit"])
-            if len(payload["datasets"]) == 1:
-                self.assertEqual(
-                    payload["datasets"][0]["data"],
-                    [row["value"] for row in page.context["table"]],
-                )
-            else:
-                for index, row in enumerate(page.context["table"]):
-                    self.assertEqual(
-                        [dataset["data"][index] for dataset in payload["datasets"]],
-                        [series["value"] for series in row["series"]],
-                    )
-
-            def assert_exported_rows(actual_rows):
-                expected_rows = []
-                for row in page.context["table"]:
-                    expected = [row[key] for key in ("label", "tumors", "persons", "population", "value")]
-                    if len(payload["datasets"]) > 1:
-                        expected.extend(series["value"] for series in row["series"])
-                    expected_rows.append(expected)
-                self.assertEqual(len(actual_rows), len(expected_rows))
-                for actual, expected in zip(actual_rows, expected_rows):
-                    self.assertEqual(actual[0], expected[0])
-                    for actual_value, expected_value in zip(actual[1:], expected[1:]):
-                        self.assertAlmostEqual(float(actual_value), float(expected_value))
-
-            for fmt, signature in signatures.items():
-                with self.subTest(chart=chart, fmt=fmt):
-                    cache.clear()
-                    response = self.client.get("/consulta/", {**query, "format": fmt})
-                    self.assertEqual(response.status_code, 200)
-                    self.assertTrue(response.content.startswith(signature))
-                    if fmt == "csv":
-                        text = response.content.decode("utf-8-sig")
-                        self.assertIn("Contexto de la consulta", text)
-                        self.assertIn("Período", text)
-                        self.assertIn("2024", text)
-                        self.assertIn("Categoría", text)
-                        rows = list(csv.reader(io.StringIO(text)))
-                        header_index = next(i for i, row in enumerate(rows) if row and row[0] == "Categoría")
-                        assert_exported_rows(rows[header_index + 1 :])
-                    elif fmt == "xlsx":
-                        sheet = load_workbook(io.BytesIO(response.content), data_only=True).active
-                        self.assertEqual(sheet.cell(1, 1).value, "Contexto de la consulta")
-                        self.assertIn("Período", [sheet.cell(row, 1).value for row in range(2, 13)])
-                        self.assertEqual(sheet.cell(14, 1).value, "Categoría")
-                        assert_exported_rows(
-                            [list(row) for row in sheet.iter_rows(min_row=15, values_only=True)]
-                        )
-                    elif fmt == "png":
-                        image = Image.open(io.BytesIO(response.content))
-                        self.assertGreater(image.width, 1000)
-                        self.assertGreater(image.height, 600)
-                    elif fmt == "svg":
-                        root = ET.fromstring(response.content)
-                        self.assertTrue(root.tag.endswith("svg"))
-                        expected_period = "Todos (2023–2024)" if chart == "line" else "2024"
-                        self.assertIn(expected_period, " ".join(root.itertext()))
-
-        for chart in ("pie", "doughnut"):
-            with self.subTest(chart=chart, metric="share"):
-                cache.clear()
-                response = self.client.get(
-                    "/consulta/", {"chart": chart, "dimension": "site", "metric": "share", "format": "svg"}
-                )
-                self.assertEqual(response.status_code, 200)
-                text = " ".join(ET.fromstring(response.content).itertext())
-                self.assertIn("Frecuencia relativa (%)", text)
-                page = self.client.get("/consulta/", {"chart": chart, "dimension": "site", "metric": "share"})
-                for row in page.context["table"]:
-                    expected = f"{row['value']:.2f}".replace(".", ",") + "%"
-                    self.assertIn(expected, text)
-
-    def test_revocation_does_not_serve_cached_export(self):
-        d = self.delivery(publish=True)
-        self.assertEqual(
-            self.client.get("/consulta/?format=csv")["Content-Type"],
-            "text/csv; charset=utf-8",
-        )
-        self.apply_transition(d.pk, "revoke", self.root, "Retirar corte sintético de prueba.")
-        r = self.client.get("/consulta/?format=csv")
-        self.assertNotIn("attachment", r.get("Content-Disposition", ""))
-
-    def test_downloaded_update_is_valid_and_adds_one_tumor(self):
-        d = self.delivery(publish=True)
-        self.client.force_login(self.root)
-        r = self.client.get("/administracion/cortes/ejemplo/")
-        updated = ingest(
-            SimpleUploadedFile("update.csv", r.content),
-            "Actualización sintética",
-            self.root,
-        )
-        self.assertEqual(updated.row_count, d.row_count + 1)
-        self.assertEqual(updated.person_count, d.person_count)
-
     def test_html_is_escaped_and_does_not_create_account(self):
         self.client.force_login(self.root)
         payload = "<script>alert('probe')</script>"
@@ -943,7 +764,7 @@ class PortalTests(TestCase):
 
     def test_login_throttle_cannot_be_bypassed_with_correct_credentials_after_limit(
         self,
-    ):
+        ):
         for _ in range(11):
             self.client.post(
                 "/acceso/", {"username": self.reader.username, "password": "wrong"}
@@ -953,21 +774,6 @@ class PortalTests(TestCase):
         )
         self.assertTrue(r.context["form"].non_field_errors())
         self.assertNotIn("_auth_user_id", self.client.session)
-
-    def test_control_characters_and_injected_identifiers_are_not_stored_as_valid_records(
-        self,
-    ):
-        for field, value in [
-            ("person_id", "SYN-P-<script>"),
-            ("tumor_id", "SYN-T-../evil"),
-            ("site_id", "<script>"),
-        ]:
-            rows = synthetic_rows()
-            rows[0][field] = value
-            with self.subTest(field=field):
-                with self.assertRaises(ValueError):
-                    ingest(uploaded(rows=rows), "Revisión sintética", self.root)
-                self.assertFalse(Delivery.objects.filter(status="validated").exists())
 
     def test_csrf_error_is_themed_and_does_not_echo_internal_reason(self):
         c = Client(enforce_csrf_checks=True)
@@ -997,26 +803,3 @@ class PortalTests(TestCase):
             },
         )
         self.assertNotIn("_auth_user_id", second.get("/").wsgi_request.session)
-
-    def test_privileged_actions_get_do_not_mutate(self):
-        d = self.delivery()
-        self.client.force_login(self.root)
-        self.assertEqual(
-            self.client.get(f"/administracion/cortes/{d.pk}/estado/").status_code, 405
-        )
-        d.refresh_from_db()
-        self.assertEqual(d.status, "validated")
-        self.assertFalse(Publication.objects.exists())
-
-    def test_revoked_cut_with_saved_filters_shows_empty_state_not_field_errors(self):
-        d = self.delivery(publish=True)
-        self.client.get(
-            "/consulta/?year=2024&dimension=age_group&metric=rate&format=csv"
-        )
-        self.apply_transition(d.pk, "revoke", self.root, "Retiro de revisión sintética.")
-        r = self.client.get(
-            "/consulta/?year=2024&dimension=age_group&metric=rate&format=csv"
-        )
-        self.assertContains(r, "No hay resultados")
-        self.assertFalse(r.context["form"].errors)
-        self.assertNotIn("attachment", r.get("Content-Disposition", ""))

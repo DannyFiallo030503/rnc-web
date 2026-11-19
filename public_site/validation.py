@@ -4,26 +4,30 @@ import re
 import unicodedata
 from django import forms
 from django.core.exceptions import ValidationError
-from django.core.validators import MaxLengthValidator
+from django.core.validators import MaxLengthValidator, MinLengthValidator
+from django.utils.translation import gettext_lazy as _
 
 RULES = {
     "username": (
         r"[A-Za-z0-9._-]+",
-        "Use letras de la A a la Z, números, punto, guion o guion bajo.",
+        _("Use letras de la A a la Z, números, punto, guion o guion bajo."),
     ),
     "person-name": (
         r"[^\W\d_]+(?:[ '’-][^\W\d_]+)*",
-        "Use letras, espacios, apóstrofos o guiones; por ejemplo, María José.",
+        _("Use letras, espacios, apóstrofos o guiones; por ejemplo, María José."),
     ),
     "plain-text": (
         r"[\w\s.,;:()'·’–—+/%&!?@#-]+",
-        "Use texto, números y puntuación habitual; sin etiquetas HTML.",
+        _("Use texto, números y puntuación habitual; sin etiquetas HTML."),
     ),
     "search": (
         r"[\w .@+'’-]*",
-        "Busque por nombre, usuario o correo; no se admiten símbolos de programación.",
+        _("Busque por nombre, usuario o correo; no se admiten símbolos de programación."),
     ),
 }
+
+MIN_LENGTH_MESSAGE = _("Use al menos %(limit_value)s caracteres.")
+MAX_LENGTH_MESSAGE = _("Use como máximo %(limit_value)s caracteres.")
 
 
 def validate_text(value, rule):
@@ -36,7 +40,7 @@ def validate_text(value, rule):
     ) or not re.fullmatch(RULES[rule][0], value):
         raise ValidationError(RULES[rule][1], code="invalid")
     if rule == "plain-text" and not any(c.isalnum() for c in value):
-        raise ValidationError("Incluya una descripción con letras o números.")
+        raise ValidationError(_("Incluya una descripción con letras o números."))
     return value
 
 
@@ -44,6 +48,19 @@ class TextField(forms.CharField):
     def __init__(self, *args, rule="plain-text", **kwargs):
         self.rule = rule
         super().__init__(*args, **kwargs)
+        self.validators = [
+            validator
+            for validator in self.validators
+            if not isinstance(validator, (MinLengthValidator, MaxLengthValidator))
+        ]
+        if self.min_length is not None:
+            self.validators.append(
+                MinLengthValidator(self.min_length, message=MIN_LENGTH_MESSAGE)
+            )
+        if self.max_length is not None:
+            self.validators.append(
+                MaxLengthValidator(self.max_length, message=MAX_LENGTH_MESSAGE)
+            )
         self.widget.attrs.update(
             {"data-rule": rule, "data-rule-message": RULES[rule][1]}
         )
@@ -58,15 +75,18 @@ class AccessibleForm:
         super().__init__(*args, **kwargs)
         for name, field in self.fields.items():
             field.error_messages["required"] = (
-                "Complete este campo."
+                _("Complete este campo.")
                 if not isinstance(field, forms.BooleanField)
-                else "Marque esta confirmación para continuar."
+                else _("Marque esta casilla para continuar.")
             )
             attrs = field.widget.attrs
             attrs["data-label"] = field.label or name.replace("_", " ").capitalize()
             if getattr(field, "min_length", None):
                 attrs["minlength"] = field.min_length
             if isinstance(field, forms.EmailField):
+                field.error_messages["invalid"] = _(
+                    "Ingrese un correo electrónico válido."
+                )
                 attrs.update(
                     {
                         "data-rule": "email",
@@ -75,6 +95,10 @@ class AccessibleForm:
                         "inputmode": "email",
                         "autocapitalize": "none",
                     }
+                )
+            if isinstance(field, forms.ChoiceField):
+                field.error_messages["invalid_choice"] = _(
+                    "Seleccione una opción válida."
                 )
             if isinstance(field.widget, forms.PasswordInput):
                 attrs.setdefault(

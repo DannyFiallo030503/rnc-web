@@ -1,6 +1,7 @@
-"""Initialize the product's first administrative role after migrations."""
+"""Initialize roles and stamp absolute administrative login sessions."""
 
 from django.contrib.auth.models import Group, Permission
+from django.contrib.auth.signals import user_logged_in
 from django.db.models.signals import post_migrate
 from django.dispatch import receiver
 
@@ -32,3 +33,15 @@ def ensure_operational_roles(sender, using, **kwargs):
                 content_type__app_label="public_site", codename__in=codenames
             )
         )
+
+
+@receiver(user_logged_in)
+def stamp_absolute_login(sender, request, user, **kwargs):
+    if request is None:
+        return
+    from datetime import timedelta
+    from django.conf import settings
+    from django.utils import timezone
+    opened = timezone.now()
+    request.session["rnc_login_started_at"] = opened.timestamp()
+    request.session.set_expiry(opened + timedelta(seconds=settings.SESSION_COOKIE_AGE))

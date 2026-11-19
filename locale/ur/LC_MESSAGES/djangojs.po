@@ -1,0 +1,718 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rnc-web\n"
+"Last-Translator: Machine translation draft (unreviewed)\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Content-Review: Human linguistic review required; institutional claims require RNC review\n"
+"X-Translation-Status: machine-draft-unreviewed\n"
+
+#, fuzzy
+msgid "Check this box to continue."
+msgstr "جاری رکھنے کے لیے اس باکس کو چیک کریں۔"
+
+#, fuzzy
+msgid "Complete this field."
+msgstr "اس فیلڈ کو مکمل کریں۔"
+
+#, fuzzy
+msgid "Check the characters entered in this field."
+msgstr "اس فیلڈ میں درج کردہ حروف کو چیک کریں۔"
+
+#, fuzzy
+msgid "Enter at least %(length)s characters."
+msgstr "کم از کم %(length)s حروف درج کریں۔"
+
+#, fuzzy
+msgid "Enter no more than %(length)s characters."
+msgstr "%(length)s حروف سے زیادہ درج نہ کریں۔"
+
+#, fuzzy
+msgid "Enter a valid email address, for example name@domain.com."
+msgstr "ایک درست ای میل ایڈریس درج کریں، مثال کے طور پر name@domain.com۔"
+
+#, fuzzy
+msgid "Choose a .csv file."
+msgstr "ایک .csv فائل منتخب کریں۔"
+
+#, fuzzy
+msgid "The file exceeds the 12 MB limit."
+msgstr "فائل 12 MB کی حد سے زیادہ ہے۔"
+
+#, fuzzy
+msgid ""
+"Separate name parts with a space, apostrophe, or hyphen; do not start or end"
+" with punctuation."
+msgstr ""
+"اسپیس، اپوسٹروف، یا ہائفن کے ساتھ نام کے حصوں کو الگ کریں؛ اوقاف کے ساتھ "
+"شروع یا ختم نہ کریں۔"
+
+#, fuzzy
+msgid "The password cannot contain only numbers."
+msgstr "پاس ورڈ میں صرف نمبر نہیں ہو سکتے۔"
+
+#, fuzzy
+msgid "The passwords do not match. Enter the same password again."
+msgstr "پاس ورڈز مماثل نہیں ہیں۔ وہی پاس ورڈ دوبارہ درج کریں۔"
+
+#, fuzzy
+msgid "Text was not added: enter no more than %(length)s characters."
+msgstr "متن شامل نہیں کیا گیا: %(length)s حروف سے زیادہ درج نہ کریں۔"
+
+#, fuzzy
+msgid "Disallowed text was not added. "
+msgstr "نامنظور متن شامل نہیں کیا گیا۔ "
+
+#, fuzzy
+msgid "Check the format of this field."
+msgstr "اس فیلڈ کا فارمیٹ چیک کریں۔"
+
+#, fuzzy
+msgid "No file selected"
+msgstr "کوئی فائل منتخب نہیں کی گئی۔"
+
+#, fuzzy
+msgid "All"
+msgstr "تمام"
+
+#, fuzzy
+msgid "This chart does not support the selected dimension."
+msgstr "یہ چارٹ منتخب کردہ جہت کو سپورٹ نہیں کرتا ہے۔"
+
+#, fuzzy
+msgid "This chart does not support the selected indicator."
+msgstr "یہ چارٹ منتخب اشارے کی حمایت نہیں کرتا ہے۔"
+
+#, fuzzy
+msgid "This chart does not support the selected unit."
+msgstr "یہ چارٹ منتخب یونٹ کو سپورٹ نہیں کرتا ہے۔"
+
+#, fuzzy
+msgid "For distinct people, compare composition by sex."
+msgstr "مختلف لوگوں کے لیے، جنس کے لحاظ سے ساخت کا موازنہ کریں۔"
+
+#, fuzzy
+msgid "Line charts require comparison by period."
+msgstr "لائن چارٹس میں مدت کے لحاظ سے موازنہ کی ضرورت ہوتی ہے۔"
+
+#, fuzzy
+msgid "The series needs at least two years; clear the single-year selection."
+msgstr "سیریز کو کم از کم دو سال درکار ہیں۔ ایک سال کے انتخاب کو صاف کریں۔"
+
+#, fuzzy
+msgid "Point charts compare values by province of residence or age group."
+msgstr ""
+"پوائنٹ چارٹس رہائش کے صوبے یا عمر گروپ کے لحاظ سے اقدار کا موازنہ کرتے ہیں۔"
+
+#, fuzzy
+msgid ""
+"This chart needs at least two categories; clear the single-province or "
+"single-age filter."
+msgstr ""
+"اس چارٹ کو کم از کم دو زمروں کی ضرورت ہے۔ واحد صوبہ یا واحد عمر کا فلٹر صاف "
+"کریں۔"
+
+#, fuzzy
+msgid "Scatter plots compare provinces or age groups."
+msgstr "سکیٹر پلاٹ صوبوں یا عمر کے گروپوں کا موازنہ کرتے ہیں۔"
+
+#, fuzzy
+msgid "Scatter plots compare absolute counts of tumors and distinct people."
+msgstr "سکیٹر پلاٹ ٹیومر اور الگ الگ لوگوں کی مطلق گنتی کا موازنہ کرتے ہیں۔"
+
+#, fuzzy
+msgid ""
+"A scatter plot needs a selection where distinct people can be counted "
+"without overlap."
+msgstr ""
+"ایک سکیٹر پلاٹ کو ایک انتخاب کی ضرورت ہوتی ہے جہاں الگ الگ لوگوں کو اوورلیپ "
+"کے بغیر شمار کیا جا سکے۔"
+
+#, fuzzy
+msgid "Calculando en este dispositivo…"
+msgstr "اس آلہ پر حساب کیا جا رہا ہے…"
+
+#, fuzzy
+msgid "Categoría"
+msgstr "زمرہ"
+
+#, fuzzy
+msgid "Datos sintéticos"
+msgstr "مصنوعی ڈیٹا"
+
+#, fuzzy
+msgid ""
+"Deja un filtro sin selección para incluir todos sus valores; puedes elegir "
+"varios."
+msgstr ""
+"فلٹر کو اس کی تمام اقدار شامل کرنے کے لیے خالی چھوڑ دیں۔ آپ کئی منتخب کر "
+"سکتے ہیں."
+
+#, fuzzy
+msgid "Dimensión"
+msgstr "طول و عرض"
+
+#, fuzzy
+msgid "El cálculo local encontró un error."
+msgstr "مقامی حساب کتاب میں ایک خرابی کا سامنا کرنا پڑا۔"
+
+#, fuzzy
+msgid "El cálculo local se interrumpió."
+msgstr "مقامی حساب کتاب میں خلل پڑا۔"
+
+#, fuzzy
+msgid "El navegador no ofrece una estimación de almacenamiento."
+msgstr "یہ براؤزر اسٹوریج کا تخمینہ فراہم نہیں کرتا ہے۔"
+
+#, fuzzy
+msgid "El paquete está incompleto y no se guardó."
+msgstr "پیکیج نامکمل ہے اور محفوظ نہیں کیا گیا تھا۔"
+
+#, fuzzy
+msgid ""
+"El servidor no respondió; la consulta local sigue disponible si ya guardaste"
+" el paquete."
+msgstr ""
+"سرور نے جواب نہیں دیا۔ اگر آپ نے پہلے ہی پیکیج کو محفوظ کر لیا ہے تو مقامی "
+"مشاورت دستیاب رہتی ہے۔"
+
+#, fuzzy
+msgid ""
+"Este navegador no permite el almacenamiento local requerido por la consulta "
+"offline."
+msgstr ""
+"یہ براؤزر آف لائن مشاورت کے لیے درکار مقامی اسٹوریج کی اجازت نہیں دیتا ہے۔"
+
+#, fuzzy
+msgid ""
+"Este paquete no incluye el contrato estadístico requerido. Conéctate y "
+"actualízalo."
+msgstr ""
+"اس پیکج میں مطلوبہ شماریاتی معاہدہ شامل نہیں ہے۔ انٹرنیٹ سے جڑیں اور اسے اپ "
+"ڈیٹ کریں۔"
+
+#, fuzzy
+msgid ""
+"Este prototipo solo admite el paquete sintético autorizado para pruebas."
+msgstr "یہ پروٹو ٹائپ صرف جانچ کے لیے مجاز مصنوعی پیکج کو قبول کرتا ہے۔"
+
+#, fuzzy
+msgid "Fecha de publicación"
+msgstr "اشاعت کی تاریخ"
+
+#, fuzzy
+msgid "Filtros"
+msgstr "فلٹرز"
+
+#, fuzzy
+msgid "Frecuencia relativa (%)"
+msgstr "متعلقہ تعدد (%)"
+
+#, fuzzy
+msgid "Guarda primero la publicación sintética en este dispositivo."
+msgstr "پہلے مصنوعی ریلیز کو اس ڈیوائس میں محفوظ کریں۔"
+
+#, fuzzy
+msgid ""
+"Guarda una publicación mientras tienes conexión para consultar desde este "
+"dispositivo."
+msgstr ""
+"اس ڈیوائس پر اس سے مشورہ کرنے کے لیے آن لائن رہتے ہوئے ریلیز کو محفوظ کریں۔"
+
+#, fuzzy
+msgid "Indicador"
+msgstr "میٹرک"
+
+#, fuzzy
+msgid "Método"
+msgstr "طریقہ"
+
+#, fuzzy
+msgid "No disponible"
+msgstr "دستیاب نہیں۔"
+
+#, fuzzy
+msgid "No disponible en esta publicación"
+msgstr "اس ریلیز میں دستیاب نہیں ہے۔"
+
+#, fuzzy
+msgid "No hay paquete guardado."
+msgstr "کوئی پیکیج محفوظ نہیں ہوا۔"
+
+#, fuzzy
+msgid "No hay publicación disponible para guardar."
+msgstr "بچانے کے لیے کوئی ریلیز دستیاب نہیں ہے۔"
+
+#, fuzzy
+msgid "No se pudo cargar la biblioteca local de gráficos."
+msgstr "مقامی چارٹ لائبریری کو لوڈ نہیں کیا جا سکا۔"
+
+#, fuzzy
+msgid "No se pudo completar el cálculo local."
+msgstr "مقامی حساب کتاب مکمل نہیں ہو سکا۔"
+
+#, fuzzy
+msgid "No se pudo eliminar el paquete local."
+msgstr "مقامی پیکیج کو حذف نہیں کیا جا سکا۔"
+
+#, fuzzy
+msgid "No se pudo estimar el almacenamiento disponible."
+msgstr "دستیاب اسٹوریج کا اندازہ نہیں لگایا جا سکا۔"
+
+#, fuzzy
+msgid "No se pudo guardar el paquete local."
+msgstr "مقامی پیکیج کو محفوظ نہیں کیا جا سکا۔"
+
+#, fuzzy
+msgid "No se pudo guardar la publicación."
+msgstr "رہائی کو محفوظ نہیں کیا جا سکا۔"
+
+#, fuzzy
+msgid "Personas distintas"
+msgstr "الگ الگ لوگ"
+
+#, fuzzy
+msgid "Población denominadora"
+msgstr "ڈینومینیٹر آبادی"
+
+#, fuzzy
+msgid "Posición"
+msgstr "رینک"
+
+#, fuzzy
+msgid "Publicación"
+msgstr "رہائی"
+
+#, fuzzy
+msgid ""
+"Publicación sintética guardada en este dispositivo. El navegador puede "
+"retirar datos locales por cuota o configuración."
+msgstr ""
+"اس آلہ پر مصنوعی ریلیز محفوظ ہو گئی۔ براؤزر اسٹوریج کی حدود یا ترتیبات کی "
+"وجہ سے مقامی ڈیٹا کو ہٹا سکتا ہے۔"
+
+#, fuzzy
+msgid ""
+"Puedes combinar varios valores. Para personas distintas, selecciona como "
+"máximo un valor en cada filtro."
+msgstr ""
+"آپ کئی اقدار کو یکجا کر سکتے ہیں۔ الگ الگ لوگوں کے لیے، ہر فلٹر میں زیادہ سے"
+" زیادہ ایک قدر منتخب کریں۔"
+
+#, fuzzy
+msgid "Se eliminó el paquete local de este navegador."
+msgstr "مقامی پیکیج کو اس براؤزر سے ہٹا دیا گیا تھا۔"
+
+#, fuzzy
+msgid "Seleccione un gráfico"
+msgstr "ایک چارٹ منتخب کریں۔"
+
+#, fuzzy
+msgid "Seleccione un indicador"
+msgstr "ایک میٹرک منتخب کریں۔"
+
+#, fuzzy
+msgid "Seleccione una dimensión"
+msgstr "ایک طول و عرض منتخب کریں۔"
+
+#, fuzzy
+msgid "Sí"
+msgstr "جی ہاں"
+
+#, fuzzy
+msgid "Tasa ajustada por 100 000"
+msgstr "عمر کے مطابق ایڈجسٹ شدہ شرح فی 100,000"
+
+#, fuzzy
+msgid "Tasa cruda/específica por 100 000"
+msgstr "خام/عمر کے لحاظ سے مخصوص شرح فی 100,000"
+
+#, fuzzy
+msgid "Todos"
+msgstr "تمام"
+
+#, fuzzy
+msgid "Tumores"
+msgstr "ٹیومر"
+
+#, fuzzy
+msgid "Título"
+msgstr "عنوان"
+
+#, fuzzy
+msgid "Unidad"
+msgstr "یونٹ"
+
+#, fuzzy
+msgid "no disponible para filtros múltiples"
+msgstr "متعدد فلٹرز کے ساتھ دستیاب نہیں ہے۔"
+
+#, fuzzy
+msgid "todos"
+msgstr "تمام"
+
+#, fuzzy
+msgid ""
+"Almacenamiento del sitio usado: %(used)s MB%(quota)s. Estimación del "
+"navegador."
+msgstr "استعمال شدہ سائٹ اسٹوریج: %(used)s MB%(quota)s۔ براؤزر کا تخمینہ۔"
+
+#, fuzzy
+msgid " de %(quota)s MB estimados"
+msgstr "ایک اندازے کے مطابق %(quota)s MB کا  "
+
+#, fuzzy
+msgid ""
+"Tumores: %(tumors)s · Personas distintas: %(persons)s · Población: "
+"%(population)s · cálculo local: %(elapsed)s ms"
+msgstr ""
+"ٹیومر: %(tumors)s · الگ الگ لوگ: %(persons)s · آبادی: %(population)s · مقامی"
+" حساب: %(elapsed)s ms"
+
+#, fuzzy
+msgid ""
+"Consulta calculada localmente · publicación %(release)s · método %(method)s."
+msgstr "اس آلہ پر استفسار کیا گیا · %(release)s ریلیز · طریقہ %(method)s۔"
+
+#, fuzzy
+msgid "El servidor respondió HTTP %(status)s."
+msgstr "سرور نے HTTP %(status)s کے ساتھ جواب دیا۔"
+
+#, fuzzy
+msgid ""
+"Servidor: %(elapsed)s ms de ida y vuelta · %(bytes)s bytes de HTML. No mide "
+"CPU del servidor."
+msgstr ""
+"سرور: %(elapsed)s ms راؤنڈ ٹرپ · %(bytes)s HTML کے بائٹس۔ یہ سرور CPU کی "
+"پیمائش نہیں کرتا ہے۔"
+
+#, fuzzy
+msgid "Categorías"
+msgstr "زمرہ جات"
+
+#, fuzzy
+msgid "categoría"
+msgid_plural "categorías"
+msgstr[0] "زمرہ"
+msgstr[1] "زمرے"
+
+#, fuzzy
+msgid "categoría con el mismo valor"
+msgid_plural "categorías con los mismos valores"
+msgstr[0] "ایک ہی قدر والا زمرہ"
+msgstr[1] "ایک جیسی قدروں والے زمرے"
+
+#, fuzzy
+msgid "Consulta estadística"
+msgstr "شماریاتی استفسار"
+
+#, fuzzy
+msgid "Porcentaje de cada categoría (%)"
+msgstr "ہر زمرے کا فیصد (%)"
+
+#, fuzzy
+msgid "tumores"
+msgstr "ٹیومر"
+
+#, fuzzy
+msgid "personas distintas"
+msgstr "الگ الگ لوگ"
+
+#, fuzzy
+msgid "El gráfico circular necesita hasta ocho categorías."
+msgstr "پائی چارٹس آٹھ زمروں تک سپورٹ کرتے ہیں۔"
+
+#, fuzzy
+msgid "Este gráfico necesita al menos dos categorías con datos."
+msgstr "اس چارٹ کو ڈیٹا کے ساتھ کم از کم دو زمرے درکار ہیں۔"
+
+#, fuzzy
+msgid "Falta población en algún grupo de edad para calcular la tasa ajustada."
+msgstr ""
+"ایڈجسٹ شدہ شرح کا حساب لگانے کے لیے درکار عمر کے گروپ کے لیے آبادی غائب ہے۔"
+
+#, fuzzy
+msgid "Frecuencia absoluta"
+msgstr "مطلق تعدد"
+
+#, fuzzy
+msgid "Hombres"
+msgstr "مرد"
+
+#, fuzzy
+msgid "Mujeres"
+msgstr "خواتین"
+
+#, fuzzy
+msgid "No hay valores positivos para representar una composición."
+msgstr "کمپوزیشن کے بطور ڈسپلے کرنے کے لیے کوئی مثبت قدریں نہیں ہیں۔"
+
+#, fuzzy
+msgid "No se cargó una publicación local."
+msgstr "کوئی مقامی ریلیز لوڈ نہیں ہے۔"
+
+#, fuzzy
+msgid "Selección no compatible: %(errors)s."
+msgstr "غیر مطابقت پذیر انتخاب: %(errors)s۔"
+
+#, fuzzy
+msgid "Tasa ajustada Segi–Doll por 100 000"
+msgstr "سیگی–ڈول کی عمر کے مطابق ایڈجسٹ شدہ شرح فی 100,000"
+
+#, fuzzy
+msgid "Tasa cruda / específica por 100 000"
+msgstr "خام/عمر کے لحاظ سے مخصوص شرح فی 100,000"
+
+#, fuzzy
+msgid "Tumores y personas distintas"
+msgstr "ٹیومر اور الگ الگ لوگ"
+
+#, fuzzy
+msgid "ajuste por edad incompatible con la selección"
+msgstr "عمر کی ایڈجسٹمنٹ انتخاب کے ساتھ مطابقت نہیں رکھتی ہے۔"
+
+#, fuzzy
+msgid "comparación por sexo necesita ambos sexos"
+msgstr "جنسی موازنہ دونوں جنسوں کی ضرورت ہے۔"
+
+#, fuzzy
+msgid "composición de personas solo por sexo"
+msgstr "لوگوں کی ترکیب صرف جنس سے دستیاب ہے۔"
+
+#, fuzzy
+msgid "dimensión"
+msgstr "طول و عرض"
+
+#, fuzzy
+msgid "dispersión requiere filtros simples"
+msgstr "سکیٹر پلاٹوں کو سادہ فلٹرز کی ضرورت ہوتی ہے۔"
+
+#, fuzzy
+msgid "indicador"
+msgstr "میٹرک"
+
+#, fuzzy
+msgid "la publicación no contiene ambos sexos"
+msgstr "ریلیز دونوں جنسوں پر مشتمل نہیں ہے۔"
+
+#, fuzzy
+msgid "personas distintas con selección múltiple"
+msgstr "مختلف لوگوں کو متعدد انتخاب کے ساتھ جوڑا نہیں جا سکتا"
+
+#, fuzzy
+msgid "unidad"
+msgstr "یونٹ"
+
+#, fuzzy
+msgid "valor de %(key)s fuera del paquete"
+msgstr "%(key)s قدر پیکیج سے باہر ہے۔"
+
+#, fuzzy
+msgid ""
+"Paquete local: %(title)s · versión %(release)s · publicado %(published)s · "
+"%(size)s KB"
+msgstr ""
+"مقامی پیکیج: %(title)s · ورژن %(release)s · شائع شدہ %(published)s · "
+"%(size)s KB"
+
+#, fuzzy
+msgid "Publicación %(release)s · %(date)s"
+msgstr "%(release)s · %(date)s ریلیز کریں۔"
+
+#, fuzzy
+msgid "Página %(page)s de %(pages)s · %(count)s %(categories)s"
+msgstr "%(pages)s کا صفحہ %(page)s · %(count)s %(categories)s"
+
+#, fuzzy
+msgid "fecha no disponible"
+msgstr "تاریخ دستیاب نہیں ہے۔"
+
+#, fuzzy
+msgid "consulta-local"
+msgstr "مقامی سوال"
+
+#, fuzzy
+msgid "grafico-local"
+msgstr "مقامی چارٹ"
+
+#, fuzzy
+msgid "Tráquea, bronquios y pulmón"
+msgstr "ٹریچیا، bronchus اور پھیپھڑوں"
+
+#, fuzzy
+msgid "Próstata"
+msgstr "پروسٹیٹ"
+
+#, fuzzy
+msgid "Mama"
+msgstr "چھاتی"
+
+#, fuzzy
+msgid "Colon y recto"
+msgstr "بڑی آنت اور ملاشی"
+
+#, fuzzy
+msgid "Estómago"
+msgstr "پیٹ"
+
+#, fuzzy
+msgid "Cuello del útero"
+msgstr "گریوا بچہ دانی"
+
+#, fuzzy
+msgid "Cuerpo del útero"
+msgstr "جسم کا بچہ دانی"
+
+#, fuzzy
+msgid "Tiroides"
+msgstr "تھائیرائیڈ"
+
+#, fuzzy
+msgid "Páncreas"
+msgstr "لبلبہ"
+
+#, fuzzy
+msgid "Vejiga urinaria"
+msgstr "پیشاب کا مثانہ"
+
+#, fuzzy
+msgid "Riñón"
+msgstr "گردہ"
+
+#, fuzzy
+msgid "Hígado y vías biliares"
+msgstr "جگر اور پت کی نالیوں"
+
+#, fuzzy
+msgid "Ovario"
+msgstr "بیضہ دانی"
+
+#, fuzzy
+msgid "Laringe y faringe"
+msgstr "larynx اور pharynx"
+
+#, fuzzy
+msgid "Anillo"
+msgstr "ڈونٹ چارٹ"
+
+#, fuzzy
+msgid "Año de incidencia"
+msgstr "تشخیص کا سال"
+
+#, fuzzy
+msgid "Barras agrupadas por sexo"
+msgstr "جنس کے لحاظ سے گروپ کردہ بار چارٹ"
+
+#, fuzzy
+msgid "Barras apiladas por sexo"
+msgstr "جنس کے لحاظ سے اسٹیکڈ بار چارٹ"
+
+#, fuzzy
+msgid "Barras horizontales"
+msgstr "افقی بار چارٹ"
+
+#, fuzzy
+msgid "Barras porcentuales por sexo"
+msgstr "جنس کے لحاظ سے فیصدی بار چارٹ"
+
+#, fuzzy
+msgid "Circular"
+msgstr "پائی چارٹ"
+
+#, fuzzy
+msgid "Columnas"
+msgstr "کالم"
+
+#, fuzzy
+msgid "Dispersión: tumores y personas por provincia/edad"
+msgstr "سکیٹر: ٹیومر اور لوگ صوبہ/عمر کے لحاظ سے"
+
+#, fuzzy
+msgid "Distribución territorial (swarm)"
+msgstr "علاقائی تقسیم (بھیڑ)"
+
+#, fuzzy
+msgid "Edad"
+msgstr "عمر"
+
+#, fuzzy
+msgid "Grupo de localización"
+msgstr "کینسر کے مقام کا گروپ"
+
+#, fuzzy
+msgid "Líneas"
+msgstr "لکیریں"
+
+#, fuzzy
+msgid "Provincia de residencia"
+msgstr "رہائش کا صوبہ"
+
+#, fuzzy
+msgid "Puntos por provincia o grupo de edad"
+msgstr "صوبے یا عمر کے گروپ کے لحاظ سے پوائنٹس"
+
+#, fuzzy
+msgid "Ranking por indicador"
+msgstr "اشارے کی درجہ بندی"
+
+#, fuzzy
+msgid "Sexo"
+msgstr "جنس"
+
+#, fuzzy
+msgid "Campo"
+msgstr "میدان"
+
+#, fuzzy
+msgid "%(count)s option selected"
+msgid_plural "%(count)s options selected"
+msgstr[0] "%(count)s آپشن منتخب کیا گیا۔"
+msgstr[1] "%(count)s اختیارات منتخب ہوئے۔"
+
+#, fuzzy
+msgid "La comparación por sexo requiere ambos sexos y otra dimensión."
+msgstr ""
+"جنس کے لحاظ سے موازنہ کرنے کے لیے جنس اور ایک اور جہت دونوں کی ضرورت ہوتی "
+"ہے۔"
+
+#, fuzzy
+msgid "Las barras apiladas requieren frecuencias absolutas."
+msgstr "اسٹیک شدہ سلاخوں کو مطلق تعدد کی ضرورت ہوتی ہے۔"
+
+#, fuzzy
+msgid ""
+"La composición requiere categorías excluyentes; para personas, compare por "
+"sexo."
+msgstr ""
+"کمپوزیشن کو باہمی طور پر خصوصی زمروں کی ضرورت ہوتی ہے۔ لوگوں کے لیے، جنس کے "
+"لحاظ سے موازنہ کریں۔"
+
+#, fuzzy
+msgid "Esta dimensión no está disponible para el gráfico seleccionado."
+msgstr "یہ طول و عرض منتخب چارٹ کے لیے دستیاب نہیں ہے۔"
+
+#, fuzzy
+msgid "Este indicador no está disponible para el gráfico seleccionado."
+msgstr "یہ میٹرک منتخب چارٹ کے لیے دستیاب نہیں ہے۔"
+
+#, fuzzy
+msgid "Esta unidad no está disponible para el gráfico seleccionado."
+msgstr "یہ یونٹ منتخب کردہ چارٹ کے لیے دستیاب نہیں ہے۔"
+
+#, fuzzy
+msgid "El ajuste por edad requiere todos los grupos de edad y otra dimensión."
+msgstr ""
+"عمر کی ایڈجسٹمنٹ کے لیے تمام عمر گروپوں اور ایک اور جہت کی ضرورت ہوتی ہے۔"
+
+#, fuzzy
+msgid ""
+"Datos sintéticos · método %(method)s · guardado en este navegador. La fecha "
+"de publicación identifica el corte; no indica cuándo se conectó el "
+"dispositivo."
+msgstr ""
+"مصنوعی ڈیٹا · طریقہ %(method)s · اس براؤزر میں محفوظ کیا گیا ہے۔ اشاعت کی "
+"تاریخ ریلیز کی شناخت کرتی ہے۔ جب آلہ منسلک ہوتا ہے تو یہ ظاہر نہیں ہوتا ہے۔"

@@ -1,1 +1,55 @@
-{% extends "base.html" %}{% block content %}<div class="page-heading"><p class="eyebrow">Administración · Corte</p><h1>{{ delivery.title }}</h1><span class="badge">{{ delivery.get_status_display }}</span> <span class="badge">Datos sintéticos</span></div>{% if delivery.status == 'revoked' and decision_form.errors %}<div class="form-error-summary" role="alert">{% for error in decision_form.non_field_errors %}<p>{{ error }}</p>{% endfor %}</div>{% endif %}<section class="panel"><h2>Informe técnico</h2>{% if delivery.report.error %}<p class="notice error">{{ delivery.report.error }}</p>{% endif %}<dl class="metadata"><dt>Responsable</dt><dd>{{ delivery.created_by.username }}</dd><dt>Recepción</dt><dd>{{ delivery.created_at|date:'d/m/Y H:i' }}</dd><dt>Filas recibidas</dt><dd>{{ delivery.report.received_rows|default_if_none:"No determinado" }}</dd><dt>Filas incorporadas</dt><dd>{{ delivery.report.accepted_rows|default_if_none:"No determinado" }}</dd><dt>Filas no incorporadas</dt><dd>{{ delivery.report.rejected_rows|default_if_none:"No determinado" }}</dd><dt>Tumores aceptados</dt><dd>{{ delivery.row_count }}</dd><dt>Personas distintas</dt><dd>{{ delivery.person_count }}</dd><dt>Períodos</dt><dd>{{ delivery.report.periods|join:', ' }}</dd><dt>Territorios</dt><dd>{{ delivery.report.territories }}</dd><dt>Integridad SHA-256</dt><dd class="checksum">{{ delivery.checksum }}</dd></dl>{% if delivery.status != "rejected" %}<p>Se comprobaron estructura, categorías, claves de tumor únicas, consistencia de personas y denominadores, y cobertura de edad y sexo. La validación es atómica: si falla una fila, la entrega no se incorpora parcialmente.</p>{% endif %}<p class="muted">El archivo permanece en almacenamiento privado. Este contrato sintético no habilita cargas clínicas del RNC.</p></section>{% if may_publish and delivery.status == "validated" or may_publish and delivery.status == "published" %}<section class="panel"><h2>{% if delivery.status == "published" %}Revocar publicación{% else %}Publicar corte{% endif %}</h2><p>{% if delivery.status == "published" %}La revocación retirará inmediatamente el corte del inicio, las consultas y las nuevas exportaciones. Los archivos ya descargados no pueden retirarse.{% else %}Esta publicación sustituirá el conjunto completo anterior. Revise los períodos y la cobertura; no se sumarán ambas entregas.{% endif %}</p><form method="post" action="{% url 'public_site:delivery_action' delivery.pk %}" class="portal-form" data-validate>{% csrf_token %}{% include "includes/form_fields.html" with form=decision_form %}<button type="submit" class="{% if delivery.status == 'published' %}danger-button{% else %}apply-filters{% endif %}">{% if delivery.status == 'published' %}Revocar corte{% else %}Confirmar publicación{% endif %}</button></form></section>{% endif %}<section class="panel"><h2>Historial del corte</h2>{% include "public_site/events.html" %}</section><p><a href="{% url 'public_site:intake_prototype' %}">← Volver a administración</a></p>{% endblock %}
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<div class="page-heading">
+  <p class="eyebrow">{% translate "Administración · Corte" %}</p>
+  <h1>{{ delivery.title }}</h1>
+  <span class="badge">{{ delivery.get_status_display }}</span>
+  {% if delivery.report.synthetic %}<span class="badge">{% translate "Entrega histórica de demostración" %}</span>{% elif delivery.status == "rejected" %}<span class="badge">{% translate "Carga rechazada" %}</span>{% else %}<span class="badge">{% translate "Datos reales · almacenamiento privado" %}</span>{% endif %}
+</div>
+
+<section class="panel">
+  <h2>{% translate "Informe de incorporación" %}</h2>
+  {% if delivery.report.error %}<p class="notice error">{{ delivery.report.error }}</p>{% endif %}
+  {% if delivery.report.errors %}<div class="notice error" role="alert"><p>{% translate "No se incorporaron datos de esta carga." %}</p><ul>{% for error in delivery.report.errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
+  <dl class="metadata">
+    <dt>{% translate "Responsable" %}</dt><dd>{{ delivery.created_by.username }}</dd>
+    <dt>{% translate "Recepción" %}</dt><dd>{{ delivery.created_at|date:"SHORT_DATETIME_FORMAT" }}</dd>
+    <dt>{% translate "Filas recibidas" %}</dt><dd>{{ delivery.report.received_rows|default_if_none:no_value_label }}</dd>
+    <dt>{% translate "Filas incorporadas" %}</dt><dd>{{ delivery.report.accepted_rows|default_if_none:no_value_label }}</dd>
+    <dt>{% translate "Filas no incorporadas" %}</dt><dd>{{ delivery.report.rejected_rows|default_if_none:no_value_label }}</dd>
+    <dt>{% translate "Filas vacías eliminadas" %}</dt><dd>{{ delivery.report.empty_rows_removed }}</dd>
+    <dt>{% translate "Columnas conservadas" %}</dt><dd>{{ delivery.report.kept_columns }}</dd>
+    <dt>{% translate "Columnas descartadas" %}</dt><dd>{{ delivery.report.unused_columns_removed }}</dd>
+    {% if delivery.report.optional_blanks %}<dt>{% translate "Campos opcionales con vacíos" %}</dt><dd>{% for field, count in delivery.report.optional_blanks.items %}{% if count %}{{ field }}: {{ count }}{% if not forloop.last %}; {% endif %}{% endif %}{% endfor %}</dd>{% endif %}
+    {% if delivery.storage_key %}<dt>{% translate "Integridad SHA-256" %}</dt><dd class="checksum">{{ delivery.checksum }}</dd>{% endif %}
+  </dl>
+  <p class="muted">{% translate "El CSV limpio y los identificadores permanecen en almacenamiento privado. Esta pantalla no expone ni permite descargar microdatos." %}</p>
+  {% if delivery.status == "published" %}<p class="notice">{% translate "Este corte está publicado en el portal y disponible para la consulta offline." %}</p>{% else %}<p class="notice">{% translate "El personal con permiso de publicación puede activar este corte real. Los microdatos y NOCASO no se publican; solo se entrega el cubo agregado." %}</p>{% endif %}
+</section>
+
+{% if may_publish and delivery.status == "validated" and delivery.report.synthetic == False %}
+<section class="panel"><h2>{% translate "Publicar corte agregado" %}</h2>
+  {% for error in decision_form.non_field_errors %}<p class="notice error">{{ error }}</p>{% endfor %}
+  <form method="post" action="{% url 'public_site:delivery_action' delivery.pk %}" class="portal-form" data-validate>
+    {% csrf_token %}<input type="hidden" name="action" value="publish">
+    {% for error in decision_form.reason.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+    {{ decision_form.reason.label_tag }}{{ decision_form.reason }}{{ decision_form.reason.help_text }}
+    <button class="apply-filters" type="submit">{% translate "Publicar corte real" %}</button>
+  </form>
+</section>
+{% elif may_publish and delivery.status == "published" %}
+<section class="panel"><h2>{% translate "Retirar publicación" %}</h2>
+  {% for error in decision_form.non_field_errors %}<p class="notice error">{{ error }}</p>{% endfor %}
+  <form method="post" action="{% url 'public_site:delivery_action' delivery.pk %}" class="portal-form" data-validate>
+    {% csrf_token %}<input type="hidden" name="action" value="revoke">
+    {% for error in decision_form.reason.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+    {{ decision_form.reason.label_tag }}{{ decision_form.reason }}{{ decision_form.reason.help_text }}
+    <button class="apply-filters" type="submit">{% translate "Revocar publicación" %}</button>
+  </form>
+</section>
+{% endif %}
+
+<section class="panel"><h2>{% translate "Historial del corte" %}</h2>{% include "public_site/events.html" %}</section>
+<p><a href="{% url 'public_site:intake_prototype' %}">{% translate "← Volver a administración" %}</a></p>
+{% endblock %}

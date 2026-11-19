@@ -1,15 +1,16 @@
 {% extends "base.html" %}
-{% block title %}Iniciar sesión · RNC Cuba{% endblock %}
+{% load i18n %}
+{% block title %}{% translate "Iniciar sesión" %} · RNC Cuba{% endblock %}
 {% block content %}
 <section class="login-page" aria-labelledby="login-title"><div class="login-card">
-  <span class="login-emblem" aria-hidden="true">R</span><p class="eyebrow">Acceso del personal</p>
-  <h1 id="login-title">Bienvenido de nuevo</h1><p class="login-intro">Entre con su cuenta para acceder a sus herramientas de trabajo.</p>
+  <span class="login-emblem" aria-hidden="true">R</span><p class="eyebrow">{% translate "Acceso del personal" %}</p>
+  <h1 id="login-title">{% translate "Bienvenido de nuevo" %}</h1><p class="login-intro">{% translate "Entre con su cuenta para acceder a sus herramientas de trabajo." %}</p>
   <form method="post" class="login-form portal-form" data-validate>
     {% csrf_token %}<input type="hidden" name="next" value="{{ next }}">
     {% include "includes/form_fields.html" %}
-    <button class="apply-filters" type="submit">Iniciar sesión <span aria-hidden="true">→</span></button>
+    <button class="apply-filters" type="submit">{% translate "Iniciar sesión" %} <span aria-hidden="true">→</span></button>
   </form>
-  <a class="forgot-link" href="{% url 'public_site:password_reset' %}">¿Olvidó su contraseña?</a>
-  <p class="login-footnote">Las cuentas son creadas por el equipo administrador. No hay registro público.</p>
+  <a class="forgot-link" href="{% url 'public_site:password_reset' %}">{% translate "¿Olvidó su contraseña?" %}</a>
+  <p class="login-footnote">{% translate "Las cuentas son creadas por el equipo administrador. No hay registro público." %}</p>
 </div></section>
 {% endblock %}
